@@ -1,0 +1,8 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Config locale de l'éditeur / preview (chemins spécifiques à la machine)
+.claude/

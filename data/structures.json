@@ -1,0 +1,568 @@
+[
+  {
+    "id": 1,
+    "name": "Atelier de civilisation avancée",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Broyeur réfrigéré",
+    "category": "Production",
+    "requires": [
+      "cooling"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Camp de bûcheronnage",
+    "category": "Production",
+    "requires": [
+      "lumbering"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Carrière de pierre",
+    "category": "Production",
+    "requires": [
+      "mining"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Chaîne de production",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Chaîne de production II",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Chaîne de production d'armes",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Chaîne de production d'armes II",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Chaîne de production d'armes avancée",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Chaîne de production de Pal-Spheres",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Chaîne de production de Pal-Spheres II",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Chaîne de production de Pal-Spheres avancée",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Chaîne de production de pièces d'or",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Concasseur",
+    "category": "Production",
+    "requires": [
+      "watering"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Four amélioré",
+    "category": "Production",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Four géant",
+    "category": "Production",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Four primitif",
+    "category": "Production",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Four électrique",
+    "category": "Production",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Grand étang de pêche",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Mine de charbon",
+    "category": "Production",
+    "requires": [
+      "mining"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Mine de quartz hexolite",
+    "category": "Production",
+    "requires": [
+      "mining"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Mine de quartz pur",
+    "category": "Production",
+    "requires": [
+      "mining"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Mine de soufre",
+    "category": "Production",
+    "requires": [
+      "mining"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Moulin",
+    "category": "Production",
+    "requires": [
+      "watering"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Site d'extraction de minerai",
+    "category": "Production",
+    "requires": [
+      "mining"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Site d'extraction de minerai II",
+    "category": "Production",
+    "requires": [
+      "mining"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Table à dessin",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Établi avancé de médicaments",
+    "category": "Production",
+    "requires": [
+      "medicine"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Établi d'armurerie",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Établi d'équipement Pal",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Établi de Pal-Spheres",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Établi de fortune",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Établi de qualité supérieure",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Établi de réparation",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Établi médiéval de médicaments",
+    "category": "Production",
+    "requires": [
+      "medicine"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Établi électrique de médicaments",
+    "category": "Production",
+    "requires": [
+      "medicine"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Étang de pêche",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Cuisine électrique",
+    "category": "Nourriture",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Feu de camp",
+    "category": "Nourriture",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Grand four en pierre",
+    "category": "Nourriture",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Mangeoire réfrigérée",
+    "category": "Nourriture",
+    "requires": [
+      "cooling"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Marmite",
+    "category": "Nourriture",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Plantation d'oignons",
+    "category": "Nourriture",
+    "requires": [
+      "planting",
+      "watering",
+      "gathering"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Plantation de baies",
+    "category": "Nourriture",
+    "requires": [
+      "planting",
+      "watering",
+      "gathering"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Plantation de blé",
+    "category": "Nourriture",
+    "requires": [
+      "planting",
+      "watering",
+      "gathering"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Plantation de carottes",
+    "category": "Nourriture",
+    "requires": [
+      "planting",
+      "watering",
+      "gathering"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Plantation de laitues",
+    "category": "Nourriture",
+    "requires": [
+      "planting",
+      "watering",
+      "gathering"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Plantation de pommes de terre",
+    "category": "Nourriture",
+    "requires": [
+      "planting",
+      "watering",
+      "gathering"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Plantation de tomates",
+    "category": "Nourriture",
+    "requires": [
+      "planting",
+      "watering",
+      "gathering"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Chauffage",
+    "category": "Infrastructure",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Chauffage électrique",
+    "category": "Infrastructure",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Grand générateur d'énergie",
+    "category": "Infrastructure",
+    "requires": [
+      "electricity"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Générateur d'énergie",
+    "category": "Infrastructure",
+    "requires": [
+      "electricity"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Refroidisseur",
+    "category": "Infrastructure",
+    "requires": [
+      "cooling"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Refroidisseur électrique",
+    "category": "Infrastructure",
+    "requires": [
+      "cooling"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Arbalète montée",
+    "category": "Défense",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Lance-missiles monté",
+    "category": "Défense",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Mitrailleuse montée",
+    "category": "Défense",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Glacière",
+    "category": "Stockage",
+    "requires": [
+      "cooling"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Réfrigérateur",
+    "category": "Stockage",
+    "requires": [
+      "cooling"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Cheminée",
+    "category": "Éclairage",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Cheminée en brique",
+    "category": "Éclairage",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Torche murale",
+    "category": "Éclairage",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Torche murale majestueuse",
+    "category": "Éclairage",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Torche sur pied",
+    "category": "Éclairage",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Ranch",
+    "category": "Pals",
+    "requires": [
+      "farming"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Table de chirurgie Pal",
+    "category": "Pals",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Chandelier cérémonial",
+    "category": "Autre",
+    "requires": [
+      "kindling"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Chandelier majestueux",
+    "category": "Autre",
+    "requires": [
+      "kindling"
+    ]
+  }
+]

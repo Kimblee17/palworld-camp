@@ -1,0 +1,70 @@
+﻿Nom (FR);Catégorie;Compétences requises
+Atelier de civilisation avancée;Production;Travail manuel
+Broyeur réfrigéré;Production;Refroidissement
+Camp de bûcheronnage;Production;Bûcheronnage
+Carrière de pierre;Production;Minage
+Chaîne de production;Production;Travail manuel
+Chaîne de production II;Production;Travail manuel
+Chaîne de production d'armes;Production;Travail manuel
+Chaîne de production d'armes II;Production;Travail manuel
+Chaîne de production d'armes avancée;Production;Travail manuel
+Chaîne de production de Pal-Spheres;Production;Travail manuel
+Chaîne de production de Pal-Spheres II;Production;Travail manuel
+Chaîne de production de Pal-Spheres avancée;Production;Travail manuel
+Chaîne de production de pièces d'or;Production;Travail manuel
+Concasseur;Production;Arrosage
+Four amélioré;Production;Allumage
+Four géant;Production;Allumage
+Four primitif;Production;Allumage
+Four électrique;Production;Allumage
+Grand étang de pêche;Production;Travail manuel
+Mine de charbon;Production;Minage
+Mine de quartz hexolite;Production;Minage
+Mine de quartz pur;Production;Minage
+Mine de soufre;Production;Minage
+Moulin;Production;Arrosage
+Site d'extraction de minerai;Production;Minage
+Site d'extraction de minerai II;Production;Minage
+Table à dessin;Production;Travail manuel
+Établi avancé de médicaments;Production;Médicaments
+Établi d'armurerie;Production;Travail manuel
+Établi d'équipement Pal;Production;Travail manuel
+Établi de Pal-Spheres;Production;Travail manuel
+Établi de fortune;Production;Travail manuel
+Établi de qualité supérieure;Production;Travail manuel
+Établi de réparation;Production;Travail manuel
+Établi médiéval de médicaments;Production;Médicaments
+Établi électrique de médicaments;Production;Médicaments
+Étang de pêche;Production;Travail manuel
+Cuisine électrique;Nourriture;Allumage
+Feu de camp;Nourriture;Allumage
+Grand four en pierre;Nourriture;Allumage
+Mangeoire réfrigérée;Nourriture;Refroidissement
+Marmite;Nourriture;Allumage
+Plantation d'oignons;Nourriture;Plantation, Arrosage, Récolte
+Plantation de baies;Nourriture;Plantation, Arrosage, Récolte
+Plantation de blé;Nourriture;Plantation, Arrosage, Récolte
+Plantation de carottes;Nourriture;Plantation, Arrosage, Récolte
+Plantation de laitues;Nourriture;Plantation, Arrosage, Récolte
+Plantation de pommes de terre;Nourriture;Plantation, Arrosage, Récolte
+Plantation de tomates;Nourriture;Plantation, Arrosage, Récolte
+Chauffage;Infrastructure;Allumage
+Chauffage électrique;Infrastructure;Allumage
+Grand générateur d'énergie;Infrastructure;Électricité
+Générateur d'énergie;Infrastructure;Électricité
+Refroidisseur;Infrastructure;Refroidissement
+Refroidisseur électrique;Infrastructure;Refroidissement
+Arbalète montée;Défense;Travail manuel
+Lance-missiles monté;Défense;Travail manuel
+Mitrailleuse montée;Défense;Travail manuel
+Glacière;Stockage;Refroidissement
+Réfrigérateur;Stockage;Refroidissement
+Cheminée;Éclairage;Allumage
+Cheminée en brique;Éclairage;Allumage
+Torche murale;Éclairage;Allumage
+Torche murale majestueuse;Éclairage;Allumage
+Torche sur pied;Éclairage;Allumage
+Ranch;Pals;Élevage
+Table de chirurgie Pal;Pals;Travail manuel
+Chandelier cérémonial;Autre;Allumage
+Chandelier majestueux;Autre;Allumage

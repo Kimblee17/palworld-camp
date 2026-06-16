@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palworld — Assistant de camp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🏕️ Palworld — Assistant de camp</h1>
+    <p class="subtitle">Gère plusieurs camps : ajoute des Pals et les constructions, et vérifie que les compétences requises sont couvertes.</p>
+    <div id="legend" class="legend"><span class="legend-label">Niveau :</span></div>
+  </header>
+
+  <!-- Barre de gestion des camps -->
+  <div class="camp-bar">
+    <label class="camp-select-label">Camp&nbsp;
+      <select id="camp-select"></select>
+    </label>
+    <button id="camp-new" class="bar-btn">＋ Nouveau</button>
+    <button id="camp-rename" class="bar-btn">✎ Renommer</button>
+    <button id="camp-delete" class="bar-btn danger">🗑 Supprimer</button>
+  </div>
+
+  <main>
+    <!-- Colonne gauche : catalogue (Pals / Constructions) -->
+    <section class="panel" id="catalog">
+      <div class="tabs">
+        <button class="tab active" data-tab="pals">🐾 Pals (<span id="pals-total">0</span>)</button>
+        <button class="tab" data-tab="structures">🏗️ Constructions (<span id="structs-total">0</span>)</button>
+      </div>
+
+      <div class="controls tab-pals">
+        <input type="search" id="search" placeholder="Rechercher un Pal…" autocomplete="off">
+        <select id="filter-work"><option value="">Toutes les compétences</option></select>
+        <label class="night-toggle"><input type="checkbox" id="night-only"> 🌙 Nuit</label>
+      </div>
+      <div class="controls tab-structures" hidden>
+        <input type="search" id="search-struct" placeholder="Rechercher une construction…" autocomplete="off">
+        <select id="filter-category"><option value="">Toutes les catégories</option></select>
+      </div>
+
+      <ul id="pal-list" class="pal-list tab-pals"></ul>
+      <ul id="struct-list" class="pal-list tab-structures" hidden></ul>
+    </section>
+
+    <!-- Colonne droite : contenu du camp + récapitulatif -->
+    <section class="panel" id="camp">
+      <div class="camp-head">
+        <h2>Contenu — <span id="count-wrap"><span id="camp-count">0</span> / <span id="camp-limit">15</span></span> Pal(s) · 🌙 <span id="night-count">0</span> · 🏗️ <span id="struct-count">0</span></h2>
+        <label class="limit-ctrl">Limite <input type="number" id="limit-input" min="1" value="15"></label>
+      </div>
+      <div id="limit-msg" class="limit-msg"></div>
+
+      <h3 class="sub">🐾 Pals</h3>
+      <ul id="camp-pals" class="pal-list compact"></ul>
+      <h3 class="sub">🏗️ Constructions</h3>
+      <ul id="camp-structs" class="pal-list compact"></ul>
+      <button id="clear-camp" class="btn-clear" hidden>Vider ce camp</button>
+
+      <h2>Compétences <span id="cover-warn" class="cover-warn" hidden></span></h2>
+      <ul id="summary" class="summary"></ul>
+    </section>
+  </main>
+
+  <!-- Données embarquées (générées par build_data.py) puis logique -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
