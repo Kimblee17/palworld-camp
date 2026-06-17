@@ -3,11 +3,16 @@ Génère les données de l'application depuis les fichiers CSV :
   - data/pals.json + data/structures.json   (utilisés par la version Flask, app.py)
   - docs/data.js                            (données embarquées pour la version statique)
 
+Les rangs de tier-list (palworld.gg) sont fusionnés dans chaque Pal de pals.json
+via fetch_tier_lists.load_tier_lists (téléchargement live + cache de repli).
+
 Relance ce script après avoir modifié un CSV :  python build_data.py
 """
 import csv
 import json
 from pathlib import Path
+
+from fetch_tier_lists import load_tier_lists
 
 BASE_DIR = Path(__file__).parent
 PALS_CSV = BASE_DIR / "Liste pals.csv"
@@ -52,9 +57,44 @@ COLUMN_TO_WORK = {
 NIGHT_COLUMN = "Travailleur de nuit"
 LABEL_TO_WORK = dict(COLUMN_TO_WORK)
 
+# Onglet de tier-list -> clé du champ "tiers" de chaque Pal.
+TIER_CATEGORIES = {
+    "best-overall":  "overall",
+    "workers":       "workers",
+    "combat":        "combat",
+    "flying-mounts": "flyingMount",
+    "ground-mounts": "groundMount",
+}
+
+
+def _norm(name):
+    """Normalise un nom de Pal pour faire correspondre CSV et tier-list."""
+    return name.lower().strip().replace(" ", "").replace("-", "")
+
+
+def index_tiers(tier_data):
+    """Construit {nom normalisé: {"tiers": {...}, "mountSpeed": {...}}} depuis les 5 onglets."""
+    index = {}
+    for page_key, category in TIER_CATEGORIES.items():
+        page = tier_data.get(page_key)
+        if not page:
+            continue
+        for tier, pals in page["tiers"].items():
+            for p in pals:
+                entry = index.setdefault(_norm(p["name"]), {"tiers": {}, "mountSpeed": {}})
+                entry["tiers"][category] = tier
+                if "speed" in p:
+                    # flyingMount -> flying, groundMount -> ground
+                    entry["mountSpeed"][category.replace("Mount", "").lower()] = p["speed"]
+    return index
+
 
 def build_pals():
+    tier_index = index_tiers(load_tier_lists())
+    all_categories = list(TIER_CATEGORIES.values())
+
     pals = []
+    matched = set()
     with PALS_CSV.open(encoding="utf-8-sig", newline="") as f:
         reader = csv.DictReader(f, delimiter=";")
         for i, row in enumerate(reader, start=1):
@@ -69,15 +109,35 @@ def build_pals():
                     lvl = 0
                 if lvl > 0:
                     work[wid] = lvl
-            pals.append({
+
+            info = tier_index.get(_norm(name))
+            # Toutes les catégories présentes (None si le Pal n'y figure pas).
+            tiers = {cat: None for cat in all_categories}
+            if info:
+                tiers.update(info["tiers"])
+                matched.add(_norm(name))
+
+            pal = {
                 "id": i,
                 "name": name,
                 "work": work,
                 "nightWorker": (row.get(NIGHT_COLUMN, "").strip().lower() == "oui"),
-            })
+                "tiers": tiers,
+            }
+            if info and info["mountSpeed"]:
+                pal["mountSpeed"] = info["mountSpeed"]
+            pals.append(pal)
+
     PALS_OUT.parent.mkdir(exist_ok=True)
     PALS_OUT.write_text(json.dumps(pals, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"{len(pals)} Pals écrits dans {PALS_OUT}")
+
+    no_tier = [p["name"] for p in pals if all(v is None for v in p["tiers"].values())]
+    if no_tier:
+        print(f"  ⚠ {len(no_tier)} Pal(s) sans aucun rang de tier-list : {', '.join(no_tier)}")
+    unused = set(tier_index) - matched
+    if unused:
+        print(f"  ⚠ {len(unused)} Pal(s) de tier-list non présents dans le CSV (ignorés).")
     return pals
 
 
