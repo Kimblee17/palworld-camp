@@ -14,6 +14,7 @@
     <div class="view-switch">
       <button class="view-btn active" data-view="camp">🏕️ Assistant de camp</button>
       <button class="view-btn" data-view="palpedia">📖 Palpedia</button>
+      <button class="view-btn" data-view="drops">💎 Drops</button>
     </div>
   </header>
 
@@ -94,6 +95,15 @@
         <tbody id="pedia-body"></tbody>
       </table>
     </div>
+  </section>
+
+  <!-- Vue Drops : recherche d'objet -> Pals qui le lâchent -->
+  <section class="panel view-drops" id="drops" hidden>
+    <div class="controls">
+      <input type="search" id="drop-search" placeholder="Rechercher un objet…" autocomplete="off">
+      <span class="pedia-total"><span id="drop-count">0</span> objets</span>
+    </div>
+    <ul id="drop-list" class="drop-list"></ul>
   </section>
 
   <!-- Données embarquées (générées par build_data.py) puis logique -->

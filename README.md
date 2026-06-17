@@ -48,8 +48,9 @@ Le site statique (`docs/`) est prêt à être publié. Une fois le dépôt pouss
 
 ## Fonctionnalités
 
-L'app a **deux vues**, accessibles via la bascule en haut à droite : **🏕️ Assistant de
-camp** (gestion des camps) et **📖 Palpedia** (référence de tous les Pals).
+L'app a **trois vues**, accessibles via la bascule en haut à droite : **🏕️ Assistant de
+camp** (gestion des camps), **📖 Palpedia** (référence de tous les Pals) et **💎 Drops**
+(recherche d'objet → Pals qui le lâchent).
 
 - **Plusieurs camps** : barre en haut pour créer / renommer / supprimer / changer de camp.
   Chaque camp garde ses Pals, ses constructions et sa limite. Tout est sauvegardé
@@ -61,6 +62,8 @@ camp** (gestion des camps) et **📖 Palpedia** (référence de tous les Pals).
   **niveau**, **rareté**, **taux de capture**, **compétences** et **rangs dans les 5
   tier-lists** (Global, Workers, Combat, Vol, Sol — vitesse pour les montures). Le nom
   renvoie à la fiche palworld.gg, et un lien mène au calculateur de capture.
+- **Drops** : recherche d'un objet (parmi 91) ; pour chacun, la liste des Pals qui le
+  lâchent avec **quantité** et **taux**, triés du taux le plus élevé au plus faible.
 - **Exemplaires** : `+` pour ajouter, compteur `− [n] +` puis `×` pour retirer, aussi bien
   pour les Pals que pour les constructions.
 - **Limite de Pals modifiable** par camp (défaut 15) ; les `+` se désactivent une fois atteinte.
