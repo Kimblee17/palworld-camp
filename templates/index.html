@@ -11,10 +11,14 @@
     <h1>🏕️ Palworld — Assistant de camp</h1>
     <p class="subtitle">Gère plusieurs camps : ajoute des Pals et les constructions, et vérifie que les compétences requises sont couvertes.</p>
     <div id="legend" class="legend"><span class="legend-label">Niveau :</span></div>
+    <div class="view-switch">
+      <button class="view-btn active" data-view="camp">🏕️ Assistant de camp</button>
+      <button class="view-btn" data-view="palpedia">📖 Palpedia</button>
+    </div>
   </header>
 
   <!-- Barre de gestion des camps -->
-  <div class="camp-bar">
+  <div class="camp-bar view-camp">
     <label class="camp-select-label">Camp&nbsp;
       <select id="camp-select"></select>
     </label>
@@ -23,7 +27,7 @@
     <button id="camp-delete" class="bar-btn danger">🗑 Supprimer</button>
   </div>
 
-  <main>
+  <main class="view-camp">
     <!-- Colonne gauche : catalogue (Pals / Constructions) -->
     <section class="panel" id="catalog">
       <div class="tabs">
@@ -63,6 +67,30 @@
       <ul id="summary" class="summary"></ul>
     </section>
   </main>
+
+  <!-- Vue Palpedia : tous les Pals + toutes les tier-lists -->
+  <section class="panel view-palpedia" id="palpedia" hidden>
+    <div class="controls">
+      <input type="search" id="pedia-search" placeholder="Rechercher un Pal…" autocomplete="off">
+      <span class="pedia-total"><span id="pedia-count">0</span> Pals</span>
+    </div>
+    <div class="pedia-wrap">
+      <table class="pedia-table">
+        <thead>
+          <tr>
+            <th class="sortable" data-sort="name">Pal</th>
+            <th class="sortable" data-sort="skills">Compétences</th>
+            <th class="sortable" data-sort="overall" title="Best Overall">Global</th>
+            <th class="sortable" data-sort="workers" title="Workers (base)">Workers</th>
+            <th class="sortable" data-sort="combat" title="Combat">Combat</th>
+            <th class="sortable" data-sort="flyingMount" title="Flying Mounts">Vol</th>
+            <th class="sortable" data-sort="groundMount" title="Ground Mounts">Sol</th>
+          </tr>
+        </thead>
+        <tbody id="pedia-body"></tbody>
+      </table>
+    </div>
+  </section>
 
   <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>

@@ -8,6 +8,7 @@ let workById = {};
 const STORE_KEY = "palworld-store";
 let store = loadStore();
 let currentTab = "pals";
+let currentView = "camp";
 
 function uid() { return "c" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
 
@@ -71,6 +72,18 @@ function addStruct(id) { setStructQty(id, structQty(id) + 1); }
 function levelClass(lvl) { return "lvl-" + Math.min(Math.max(lvl, 0), 4); }
 const LEVEL_NAMES = { 0: "Manquant", 1: "Faible", 2: "Moyen", 3: "Fort", 4: "Très fort" };
 
+// ===== Rangs de tier-list (palworld.gg) =====
+const TIER_CATS = [
+  { key: "overall",     label: "Global",  speed: null },
+  { key: "workers",     label: "Workers", speed: null },
+  { key: "combat",      label: "Combat",  speed: null },
+  { key: "flyingMount", label: "Vol",     speed: "flying" },
+  { key: "groundMount", label: "Sol",     speed: "ground" },
+];
+function tierClass(t) { return t ? "tier-" + t : "tier-none"; }
+const TIER_RANK = { S: 0, A: 1, B: 2, C: 3, D: 4 };   // pour le tri (S en premier)
+let pediaSort = { key: "name", dir: 1 };              // dir: 1 = croissant, -1 = décroissant
+
 let flashTimer = null;
 function flashLimit() {
   const el = document.getElementById("limit-msg");
@@ -108,6 +121,11 @@ async function init() {
   fc.addEventListener("change", renderStructCatalog);
   document.querySelectorAll(".tab").forEach(t =>
     t.addEventListener("click", () => switchTab(t.dataset.tab)));
+  document.querySelectorAll(".view-btn").forEach(b =>
+    b.addEventListener("click", () => switchView(b.dataset.view)));
+  document.getElementById("pedia-search").addEventListener("input", renderPalpedia);
+  document.querySelectorAll(".pedia-table th[data-sort]").forEach(th =>
+    th.addEventListener("click", () => setPediaSort(th.dataset.sort)));
 
   // Écouteurs camp
   document.getElementById("clear-camp").addEventListener("click", () => {
@@ -150,6 +168,15 @@ function switchTab(tab) {
   document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.tab === tab));
   document.querySelectorAll(".tab-pals").forEach(el => el.hidden = tab !== "pals");
   document.querySelectorAll(".tab-structures").forEach(el => el.hidden = tab !== "structures");
+}
+
+// ===== Vues (Assistant de camp / Palpedia) =====
+function switchView(view) {
+  currentView = view;
+  document.querySelectorAll(".view-btn").forEach(b => b.classList.toggle("active", b.dataset.view === view));
+  document.querySelectorAll(".view-camp").forEach(el => el.hidden = view !== "camp");
+  document.querySelectorAll(".view-palpedia").forEach(el => el.hidden = view !== "palpedia");
+  if (view === "palpedia") renderPalpedia();
 }
 
 // ===== Gestion des camps =====
@@ -200,7 +227,11 @@ function palRow(pal, mode) {
   const info = document.createElement("div");
   info.className = "info";
   const night = pal.nightWorker ? ` <span class="night" title="Travailleur de nuit">🌙</span>` : "";
-  info.innerHTML = `<div class="name">${pal.name}${night}</div>`;
+  const wt = pal.tiers && pal.tiers.workers;
+  const tier = wt
+    ? ` <span class="tier-txt ${tierClass(wt)}" title="Rang Workers (palworld.gg)">Tier ${wt}</span>`
+    : "";
+  info.innerHTML = `<div class="name">${pal.name}${night}${tier}</div>`;
   li.appendChild(info);
 
   const skills = document.createElement("div");
@@ -377,6 +408,83 @@ async function renderSummary() {
       </span>`;
     list.appendChild(li);
   });
+}
+
+// ===== Palpedia (tous les Pals + toutes les tier-lists) =====
+function tierCell(pal, cat) {
+  const t = pal.tiers ? pal.tiers[cat.key] : null;
+  const speed = cat.speed && pal.mountSpeed && pal.mountSpeed[cat.speed]
+    ? `<span class="pedia-speed">${pal.mountSpeed[cat.speed]}</span>` : "";
+  return `<td class="pedia-tier"><span class="tier-badge ${tierClass(t)}">${t || "–"}</span>${speed}</td>`;
+}
+
+function pediaRow(pal) {
+  const tr = document.createElement("tr");
+  const night = pal.nightWorker ? ` <span class="night" title="Travailleur de nuit">🌙</span>` : "";
+  const skills = WORK_TYPES
+    .filter(w => (pal.work[w.id] || 0) > 0)
+    .map(w => `<span class="skill-chip ${levelClass(pal.work[w.id])}" title="${w.label} — ${LEVEL_NAMES[pal.work[w.id]]}">${w.icon} <b>${pal.work[w.id]}</b></span>`)
+    .join("");
+  const tiers = TIER_CATS.map(c => tierCell(pal, c)).join("");
+  tr.innerHTML =
+    `<td class="pedia-name">${pal.name}${night}</td>` +
+    `<td><div class="pedia-skills">${skills || '<span class="muted">—</span>'}</div></td>` +
+    tiers;
+  return tr;
+}
+
+function pediaSortValue(pal, key) {
+  if (key === "name") return pal.name.toLowerCase();
+  if (key === "skills") return WORK_TYPES.reduce((n, w) => n + ((pal.work[w.id] || 0) > 0 ? 1 : 0), 0);
+  const t = pal.tiers ? pal.tiers[key] : null;
+  return t in TIER_RANK ? TIER_RANK[t] : 99;          // non classé : à la fin
+}
+
+function setPediaSort(key) {
+  if (pediaSort.key === key) {
+    pediaSort.dir = -pediaSort.dir;                   // reclic : on inverse
+  } else {
+    pediaSort.key = key;
+    // Défaut sensé : nom A→Z ; compétences = plus nombreuses d'abord ; tiers = meilleur (S) d'abord
+    pediaSort.dir = key === "skills" ? -1 : 1;
+  }
+  renderPalpedia();
+}
+
+function updatePediaHeaders() {
+  document.querySelectorAll(".pedia-table th[data-sort]").forEach(th => {
+    const active = th.dataset.sort === pediaSort.key;
+    th.classList.toggle("sorted", active);
+    th.querySelector(".arrow")?.remove();
+    if (active) {
+      const arrow = document.createElement("span");
+      arrow.className = "arrow";
+      arrow.textContent = pediaSort.dir === 1 ? " ▲" : " ▼";
+      th.appendChild(arrow);
+    }
+  });
+}
+
+function renderPalpedia() {
+  const q = document.getElementById("pedia-search").value.trim().toLowerCase();
+  const body = document.getElementById("pedia-body");
+  body.innerHTML = "";
+  const rows = PALS
+    .filter(p => !q || p.name.toLowerCase().includes(q))
+    .sort((a, b) => {
+      const va = pediaSortValue(a, pediaSort.key);
+      const vb = pediaSortValue(b, pediaSort.key);
+      let c = typeof va === "string" ? va.localeCompare(vb, "fr") : va - vb;
+      if (c === 0) c = a.name.localeCompare(b.name, "fr");   // départage par nom
+      return c * pediaSort.dir;
+    });
+  document.getElementById("pedia-count").textContent = rows.length;
+  updatePediaHeaders();
+  if (!rows.length) {
+    body.innerHTML = `<tr><td class="empty" colspan="${2 + TIER_CATS.length}">Aucun Pal trouvé.</td></tr>`;
+    return;
+  }
+  rows.forEach(p => body.appendChild(pediaRow(p)));
 }
 
 // ===== Rendu global =====

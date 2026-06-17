@@ -48,11 +48,17 @@ Le site statique (`docs/`) est prêt à être publié. Une fois le dépôt pouss
 
 ## Fonctionnalités
 
+L'app a **deux vues**, accessibles via la bascule en haut à droite : **🏕️ Assistant de
+camp** (gestion des camps) et **📖 Palpedia** (référence de tous les Pals).
+
 - **Plusieurs camps** : barre en haut pour créer / renommer / supprimer / changer de camp.
   Chaque camp garde ses Pals, ses constructions et sa limite. Tout est sauvegardé
   automatiquement dans le navigateur (localStorage).
 - **Catalogue à onglets** : « 🐾 Pals » (227, recherche + filtre compétence + filtre
-  🌙 nuit) et « 🏗️ Constructions » (69, recherche + filtre catégorie).
+  🌙 nuit) et « 🏗️ Constructions » (69, recherche + filtre catégorie). Chaque Pal affiche
+  son **rang Workers** (« Tier S/A/B/C/D », coloré) issu de la tier-list palworld.gg.
+- **Palpedia** : tableau de tous les Pals avec leurs compétences et leurs **rangs dans les
+  5 tier-lists** (Global, Workers, Combat, Vol, Sol) ; la vitesse est indiquée pour les montures.
 - **Exemplaires** : `+` pour ajouter, compteur `− [n] +` puis `×` pour retirer, aussi bien
   pour les Pals que pour les constructions.
 - **Limite de Pals modifiable** par camp (défaut 15) ; les `+` se désactivent une fois atteinte.
@@ -73,7 +79,26 @@ par le script `build_data.py`. Après avoir modifié un CSV :
 python build_data.py
 ```
 
+`build_data.py` fait tout en une commande : il lit les CSV **et** récupère les rangs de
+tier-list depuis [palworld.gg](https://palworld.gg/tier-list/base-work), puis les fusionne
+dans chaque Pal de `data/pals.json` (champs `tiers` et `mountSpeed`).
+
 Tu peux aussi éditer directement les fichiers JSON.
+
+### Rangs de tier-list (palworld.gg)
+
+Les 5 onglets de tier-list du site sont extraits et fusionnés dans les Pals :
+`Best Overall`, `Workers`, `Combat`, `Flying Mounts`, `Ground Mounts`.
+
+- [`fetch_tier_lists.py`](fetch_tier_lists.py) télécharge et parse les pages (rendu Nuxt SSR,
+  données dans le HTML), déduplique les Pals listés en double, et écrit un cache technique
+  `data/tier-lists.json`.
+- `build_data.py` appelle ce module : **téléchargement live**, écriture du cache, et **repli
+  automatique sur le cache** si le réseau est indisponible (le build n'échoue jamais).
+- Pour seulement rafraîchir le cache sans tout reconstruire : `python fetch_tier_lists.py`.
+
+> `data/tier-lists.json` n'est qu'un cache intermédiaire : l'application ne lit que
+> `data/pals.json` (et `docs/data.js`).
 
 ### Format d'une construction (`data/structures.json`)
 
@@ -89,10 +114,12 @@ contient les libellés français séparés par des virgules (ex. `Plantation, Ar
 
 ```json
 {
-  "id": 11,
-  "name": "Anubis",
-  "work": { "handiwork": 3, "mining": 4, "transporting": 2 },
-  "nightWorker": false
+  "id": 105,
+  "name": "Jetragon",
+  "work": { "gathering": 3 },
+  "nightWorker": false,
+  "tiers": { "overall": "S", "workers": "C", "combat": "A", "flyingMount": "S", "groundMount": null },
+  "mountSpeed": { "flying": "1700 - 3300" }
 }
 ```
 
@@ -101,6 +128,11 @@ contient les libellés français séparés par des virgules (ex. `Plantation, Ar
 - `work` : niveaux de compétence. Indique **seulement** les compétences possédées
   (les absentes valent 0). Niveaux de 1 à 4.
 - `nightWorker` : `true` si travailleur de nuit, sinon `false`.
+- `tiers` : rang dans chacun des 5 onglets de tier-list (`S`/`A`/`B`/`C`/`D`, ou `null`
+  si le Pal n'y figure pas). Clés : `overall`, `workers`, `combat`, `flyingMount`,
+  `groundMount`. Généré automatiquement (voir ci-dessous), pas depuis le CSV.
+- `mountSpeed` *(optionnel)* : vitesse de monture, présent uniquement pour les montures.
+  Clés possibles : `flying` et/ou `ground` (ex. `"1700 - 3300"`).
 
 ### Identifiants des 12 compétences (`work`) et colonne CSV correspondante
 
