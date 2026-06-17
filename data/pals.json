@@ -16,6 +16,23 @@
       "groundMount": null
     },
     "slug": "anubis",
+    "drops": [
+      {
+        "item": "Bone",
+        "amount": "3 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Large Pal Soul",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Innovative Technical Manual",
+        "amount": "1 - 1",
+        "rate": "5%"
+      }
+    ],
     "level": 47,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -38,6 +55,18 @@
       "groundMount": "B"
     },
     "slug": "arsox",
+    "drops": [
+      {
+        "item": "Horn",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Flame Organ",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1050"
     },
@@ -63,6 +92,18 @@
       "groundMount": null
     },
     "slug": "astegon",
+    "drops": [
+      {
+        "item": "Pal Metal Ingot",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Pure Quartz",
+        "amount": "3 - 5",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "700 - 1100"
     },
@@ -88,6 +129,13 @@
       "groundMount": "S"
     },
     "slug": "azurmane",
+    "drops": [
+      {
+        "item": "Electric Organ",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "900 - 1260"
     },
@@ -112,6 +160,13 @@
       "groundMount": "B"
     },
     "slug": "azurobe",
+    "drops": [
+      {
+        "item": "Cloth",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "600 - 900"
     },
@@ -136,6 +191,23 @@
       "groundMount": null
     },
     "slug": "azurobe-cryst",
+    "drops": [
+      {
+        "item": "Cloth",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Ice Organ",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -159,6 +231,18 @@
       "groundMount": "A"
     },
     "slug": "bastigor",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Ice Organ",
+        "amount": "2 - 5",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "750 - 1100"
     },
@@ -185,6 +269,13 @@
       "groundMount": null
     },
     "slug": "beakon",
+    "drops": [
+      {
+        "item": "Electric Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "750 - 1200"
     },
@@ -215,6 +306,13 @@
       "groundMount": null
     },
     "slug": "beegarde",
+    "drops": [
+      {
+        "item": "Honey",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 25,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -283,6 +381,18 @@
       "groundMount": "B"
     },
     "slug": "blazamut",
+    "drops": [
+      {
+        "item": "Coal",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Flame Organ",
+        "amount": "10 - 10",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "800 - 1200"
     },
@@ -308,6 +418,23 @@
       "groundMount": null
     },
     "slug": "blazamut-ryu",
+    "drops": [
+      {
+        "item": "Coal",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Medium Pal Soul",
+        "amount": "1 - 1",
+        "rate": "5%"
+      },
+      {
+        "item": "Precious Claw",
+        "amount": "1 - 1",
+        "rate": "30%"
+      }
+    ],
     "level": 1,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -330,6 +457,13 @@
       "groundMount": "B"
     },
     "slug": "blazehowl",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "3 - 5",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "800 - 1200"
     },
@@ -355,6 +489,13 @@
       "groundMount": null
     },
     "slug": "blazehowl-noct",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
     "level": 33,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -376,6 +517,13 @@
       "groundMount": null
     },
     "slug": "blue-slime",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -399,6 +547,28 @@
       "groundMount": null
     },
     "slug": "braloha",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Red Berries",
+        "amount": "1 - 2",
+        "rate": "60%"
+      },
+      {
+        "item": "Lettuce Seeds",
+        "amount": "1 - 2",
+        "rate": "50%"
+      },
+      {
+        "item": "Tomato Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 40,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -424,6 +594,23 @@
       "groundMount": null
     },
     "slug": "bristla",
+    "drops": [
+      {
+        "item": "Wheat Seeds",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Lettuce Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      },
+      {
+        "item": "Carrot Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 16,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -445,6 +632,23 @@
       "groundMount": "D"
     },
     "slug": "broncherry",
+    "drops": [
+      {
+        "item": "Broncherry Meat",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Tomato Seeds",
+        "amount": "1 - 2",
+        "rate": "50%"
+      },
+      {
+        "item": "Potato Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "mountSpeed": {
       "ground": "550 - 1020"
     },
@@ -469,6 +673,23 @@
       "groundMount": null
     },
     "slug": "broncherry-aqua",
+    "drops": [
+      {
+        "item": "Broncherry Meat",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Lettuce Seeds",
+        "amount": "1 - 2",
+        "rate": "50%"
+      },
+      {
+        "item": "Potato Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 30,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -494,6 +715,18 @@
       "groundMount": null
     },
     "slug": "bushi",
+    "drops": [
+      {
+        "item": "Bone",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Ingot",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 34,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -519,6 +752,23 @@
       "groundMount": null
     },
     "slug": "bushi-noct",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "4 - 8",
+        "rate": "100%"
+      },
+      {
+        "item": "Ingot",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Medium Pal Soul",
+        "amount": "1 - 2",
+        "rate": "40%"
+      }
+    ],
     "level": 50,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -541,6 +791,23 @@
       "groundMount": null
     },
     "slug": "caprity",
+    "drops": [
+      {
+        "item": "Caprity Meat",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Red Berries",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Horn",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 9,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -563,6 +830,28 @@
       "groundMount": null
     },
     "slug": "caprity-noct",
+    "drops": [
+      {
+        "item": "Caprity Meat",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Red Berries",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Horn",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Venom Gland",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 50,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -587,6 +876,13 @@
       "groundMount": null
     },
     "slug": "cattiva",
+    "drops": [
+      {
+        "item": "Red Berries",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -608,6 +904,13 @@
       "groundMount": null
     },
     "slug": "cave-bat",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 36,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -629,6 +932,23 @@
       "groundMount": null
     },
     "slug": "cawgnito",
+    "drops": [
+      {
+        "item": "Bone",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Venom Gland",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Small Pal Soul",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
     "level": 12,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -651,6 +971,13 @@
       "groundMount": null
     },
     "slug": "celaray",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 2,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -674,6 +1001,13 @@
       "groundMount": null
     },
     "slug": "celaray-lux",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 1,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -696,6 +1030,23 @@
       "groundMount": "B"
     },
     "slug": "celesdir",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Horn",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Hexolite Quartz",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "800 - 1200"
     },
@@ -721,6 +1072,18 @@
       "groundMount": null
     },
     "slug": "chikipi",
+    "drops": [
+      {
+        "item": "Egg",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Chikipi Poultry",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -743,6 +1106,13 @@
       "groundMount": "B"
     },
     "slug": "chillet",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "750 - 1050"
     },
@@ -768,6 +1138,18 @@
       "groundMount": null
     },
     "slug": "chillet-ignis",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Flame Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 42,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -790,6 +1172,28 @@
       "groundMount": null
     },
     "slug": "cinnamoth",
+    "drops": [
+      {
+        "item": "Honey",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Lettuce Seeds",
+        "amount": "1 - 1",
+        "rate": "20%"
+      },
+      {
+        "item": "Wheat Seeds",
+        "amount": "1 - 1",
+        "rate": "20%"
+      },
+      {
+        "item": "Onion Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 18,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -812,6 +1216,13 @@
       "groundMount": null
     },
     "slug": "cremis",
+    "drops": [
+      {
+        "item": "Wool",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 2,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -836,6 +1247,18 @@
       "groundMount": null
     },
     "slug": "croajiro",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Cloth",
+        "amount": "1 - 2",
+        "rate": "25%"
+      }
+    ],
     "level": 4,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -860,6 +1283,23 @@
       "groundMount": null
     },
     "slug": "croajiro-noct",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Cloth",
+        "amount": "1 - 2",
+        "rate": "25%"
+      },
+      {
+        "item": "Venom Gland",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
     "level": 1,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -884,6 +1324,13 @@
       "groundMount": null
     },
     "slug": "cryolinx",
+    "drops": [
+      {
+        "item": "Ice Organ",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 36,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -908,6 +1355,13 @@
       "groundMount": null
     },
     "slug": "cryolinx-terra",
+    "drops": [
+      {
+        "item": "Ore",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 51,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -931,6 +1385,18 @@
       "groundMount": null
     },
     "slug": "daedream",
+    "drops": [
+      {
+        "item": "Venom Gland",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Small Pal Soul",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -952,6 +1418,13 @@
       "groundMount": "S"
     },
     "slug": "dazemu",
+    "drops": [
+      {
+        "item": "Bone",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "900 - 1200"
     },
@@ -978,6 +1451,18 @@
       "groundMount": null
     },
     "slug": "dazzi",
+    "drops": [
+      {
+        "item": "Electric Organ",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Dazzi Cloud",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 24,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -1002,6 +1487,23 @@
       "groundMount": null
     },
     "slug": "dazzi-noct",
+    "drops": [
+      {
+        "item": "Electric Organ",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Dazzi Cloud",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Dark Fragment",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 50,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -1023,6 +1525,13 @@
       "groundMount": null
     },
     "slug": "demon-eye",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1046,6 +1555,13 @@
       "groundMount": null
     },
     "slug": "depresso",
+    "drops": [
+      {
+        "item": "Venom Gland",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 3,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1067,6 +1583,18 @@
       "groundMount": null
     },
     "slug": "digtoise",
+    "drops": [
+      {
+        "item": "Ore",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 18,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1089,6 +1617,18 @@
       "groundMount": "C"
     },
     "slug": "dinossom",
+    "drops": [
+      {
+        "item": "Wheat Seeds",
+        "amount": "1 - 2",
+        "rate": "50%"
+      },
+      {
+        "item": "Carrot Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1030"
     },
@@ -1114,6 +1654,18 @@
       "groundMount": null
     },
     "slug": "dinossom-lux",
+    "drops": [
+      {
+        "item": "Tomato Seeds",
+        "amount": "1 - 2",
+        "rate": "50%"
+      },
+      {
+        "item": "Carrot Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 32,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1135,6 +1687,23 @@
       "groundMount": "A"
     },
     "slug": "direhowl",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Ruby",
+        "amount": "1 - 1",
+        "rate": "3%"
+      },
+      {
+        "item": "Gold Coin",
+        "amount": "10 - 20",
+        "rate": "3%"
+      }
+    ],
     "mountSpeed": {
       "ground": "800 - 1050"
     },
@@ -1163,6 +1732,13 @@
       "groundMount": null
     },
     "slug": "dogen",
+    "drops": [
+      {
+        "item": "Bone",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 50,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1187,6 +1763,18 @@
       "groundMount": null
     },
     "slug": "dumud",
+    "drops": [
+      {
+        "item": "Raw Dumud",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 17,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1211,6 +1799,23 @@
       "groundMount": null
     },
     "slug": "dumud-gild",
+    "drops": [
+      {
+        "item": "Raw Dumud",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Gold Coin",
+        "amount": "100 - 200",
+        "rate": "50%"
+      }
+    ],
     "level": 33,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1232,6 +1837,23 @@
       "groundMount": "B"
     },
     "slug": "eikthyrdeer",
+    "drops": [
+      {
+        "item": "Eikthyrdeer Venison",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Horn",
+        "amount": "2 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 900"
     },
@@ -1256,6 +1878,23 @@
       "groundMount": null
     },
     "slug": "eikthyrdeer-terra",
+    "drops": [
+      {
+        "item": "Eikthyrdeer Venison",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Horn",
+        "amount": "2 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 18,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1281,6 +1920,18 @@
       "groundMount": null
     },
     "slug": "elizabee",
+    "drops": [
+      {
+        "item": "Honey",
+        "amount": "5 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Elizabee&#39;s Staff",
+        "amount": "1 - 1",
+        "rate": "3%"
+      }
+    ],
     "level": 28,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1302,6 +1953,13 @@
       "groundMount": null
     },
     "slug": "elphidran",
+    "drops": [
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "630 - 800"
     },
@@ -1327,6 +1985,13 @@
       "groundMount": null
     },
     "slug": "elphidran-aqua",
+    "drops": [
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "630 - 800"
     },
@@ -1351,6 +2016,13 @@
       "groundMount": null
     },
     "slug": "enchanted-sword",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
     "level": 42,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1372,6 +2044,13 @@
       "groundMount": null
     },
     "slug": "eye-of-cthulhu",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "2 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 45,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1394,6 +2073,13 @@
       "groundMount": null
     },
     "slug": "faleris",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "1 - 4",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "1000 - 1400"
     },
@@ -1419,6 +2105,13 @@
       "groundMount": null
     },
     "slug": "faleris-aqua",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "1000 - 1400"
     },
@@ -1443,6 +2136,18 @@
       "groundMount": null
     },
     "slug": "felbat",
+    "drops": [
+      {
+        "item": "Cloth",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Small Pal Soul",
+        "amount": "1 - 1",
+        "rate": "3%"
+      }
+    ],
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1464,6 +2169,18 @@
       "groundMount": "S"
     },
     "slug": "fenglope",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "3 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Horn",
+        "amount": "2 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "750 - 1050"
     },
@@ -1489,6 +2206,23 @@
       "groundMount": null
     },
     "slug": "fenglope-lux",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "3 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Horn",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Electric Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 57,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1511,6 +2245,23 @@
       "groundMount": null
     },
     "slug": "finsider",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Small Pal Soul",
+        "amount": "1 - 1",
+        "rate": "1%"
+      },
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 30,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1534,6 +2285,23 @@
       "groundMount": null
     },
     "slug": "finsider-ignis",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Small Pal Soul",
+        "amount": "1 - 1",
+        "rate": "1%"
+      },
+      {
+        "item": "Flame Organ",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 1,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1558,6 +2326,18 @@
       "groundMount": null
     },
     "slug": "flambelle",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 24,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1583,6 +2363,23 @@
       "groundMount": null
     },
     "slug": "flopie",
+    "drops": [
+      {
+        "item": "Low Grade Medical Supplies",
+        "amount": "1 - 1",
+        "rate": "20%"
+      },
+      {
+        "item": "Wheat Seeds",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Potato Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 15,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1604,6 +2401,18 @@
       "groundMount": null
     },
     "slug": "foxcicle",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Ice Organ",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 24,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1625,6 +2434,18 @@
       "groundMount": null
     },
     "slug": "foxparks",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Flame Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 15,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1646,6 +2467,18 @@
       "groundMount": null
     },
     "slug": "foxparks-cryst",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Ice Organ",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 50,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1667,6 +2500,18 @@
       "groundMount": null
     },
     "slug": "frostallion",
+    "drops": [
+      {
+        "item": "Ice Organ",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Diamond",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "1200 - 1800"
     },
@@ -1691,6 +2536,18 @@
       "groundMount": null
     },
     "slug": "frostallion-noct",
+    "drops": [
+      {
+        "item": "Pure Quartz",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Large Pal Soul",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "1200 - 1800"
     },
@@ -1716,6 +2573,13 @@
       "groundMount": null
     },
     "slug": "frostplume",
+    "drops": [
+      {
+        "item": "Ice Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 10,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1739,6 +2603,18 @@
       "groundMount": null
     },
     "slug": "fuack",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 3,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1763,6 +2639,23 @@
       "groundMount": null
     },
     "slug": "fuack-ignis",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Flame Organ",
+        "amount": "1 - 2",
+        "rate": "50%"
+      }
+    ],
     "level": 1,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -1786,6 +2679,13 @@
       "groundMount": null
     },
     "slug": "fuddler",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 14,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1807,6 +2707,18 @@
       "groundMount": null
     },
     "slug": "galeclaw",
+    "drops": [
+      {
+        "item": "Galeclaw Poultry",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 9,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -1829,6 +2741,18 @@
       "groundMount": null
     },
     "slug": "ghangler",
+    "drops": [
+      {
+        "item": "Bone",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Venom Gland",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
     "level": 15,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1852,6 +2776,18 @@
       "groundMount": null
     },
     "slug": "ghangler-ignis",
+    "drops": [
+      {
+        "item": "Bone",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Flame Organ",
+        "amount": "1 - 2",
+        "rate": "50%"
+      }
+    ],
     "level": 1,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1873,6 +2809,13 @@
       "groundMount": "S"
     },
     "slug": "gildane",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "840 - 1260"
     },
@@ -1899,6 +2842,18 @@
       "groundMount": null
     },
     "slug": "gloopie",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Gloopie Tentacle",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 12,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1922,6 +2877,13 @@
       "groundMount": null
     },
     "slug": "gobfin",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 20,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -1945,6 +2907,13 @@
       "groundMount": null
     },
     "slug": "gobfin-ignis",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 23,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1968,6 +2937,18 @@
       "groundMount": null
     },
     "slug": "gorirat",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Bone",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 22,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1991,6 +2972,18 @@
       "groundMount": null
     },
     "slug": "gorirat-terra",
+    "drops": [
+      {
+        "item": "Ore",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Bone",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 42,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -2012,6 +3005,13 @@
       "groundMount": null
     },
     "slug": "green-slime",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2033,6 +3033,13 @@
       "groundMount": "B"
     },
     "slug": "grintale",
+    "drops": [
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "650 - 1000"
     },
@@ -2060,6 +3067,18 @@
       "groundMount": null
     },
     "slug": "grizzbolt",
+    "drops": [
+      {
+        "item": "Electric Organ",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 18,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -2081,6 +3100,18 @@
       "groundMount": null
     },
     "slug": "gumoss",
+    "drops": [
+      {
+        "item": "Berry Seeds",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Gumoss Leaf",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 3,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -2104,6 +3135,13 @@
       "groundMount": null
     },
     "slug": "hangyu",
+    "drops": [
+      {
+        "item": "Fiber",
+        "amount": "5 - 10",
+        "rate": "100%"
+      }
+    ],
     "level": 14,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -2128,6 +3166,18 @@
       "groundMount": null
     },
     "slug": "hangyu-cryst",
+    "drops": [
+      {
+        "item": "Fiber",
+        "amount": "5 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Ice Organ",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 33,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -2165,6 +3215,18 @@
       "groundMount": null
     },
     "slug": "helzephyr",
+    "drops": [
+      {
+        "item": "Venom Gland",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Medium Pal Soul",
+        "amount": "1 - 1",
+        "rate": "3%"
+      }
+    ],
     "mountSpeed": {
       "flying": "700 - 1100"
     },
@@ -2190,6 +3252,18 @@
       "groundMount": null
     },
     "slug": "helzephyr-lux",
+    "drops": [
+      {
+        "item": "Electric Organ",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Medium Pal Soul",
+        "amount": "1 - 1",
+        "rate": "3%"
+      }
+    ],
     "mountSpeed": {
       "flying": "700 - 1100"
     },
@@ -2216,6 +3290,18 @@
       "groundMount": null
     },
     "slug": "herbil",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Red Berries",
+        "amount": "1 - 2",
+        "rate": "60%"
+      }
+    ],
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2237,6 +3323,18 @@
       "groundMount": null
     },
     "slug": "hoocrates",
+    "drops": [
+      {
+        "item": "Fiber",
+        "amount": "5 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "High Grade Technical Manual",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -2261,6 +3359,18 @@
       "groundMount": null
     },
     "slug": "icelyn",
+    "drops": [
+      {
+        "item": "Ice Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Precious Plume",
+        "amount": "1 - 2",
+        "rate": "50%"
+      }
+    ],
     "level": 42,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -2282,6 +3392,13 @@
       "groundMount": null
     },
     "slug": "illuminant-bat",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
     "level": 42,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -2303,6 +3420,13 @@
       "groundMount": null
     },
     "slug": "illuminant-slime",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
     "level": 42,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -2327,6 +3451,18 @@
       "groundMount": null
     },
     "slug": "incineram",
+    "drops": [
+      {
+        "item": "Horn",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 27,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -2350,6 +3486,18 @@
       "groundMount": null
     },
     "slug": "incineram-noct",
+    "drops": [
+      {
+        "item": "Horn",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 40,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -2373,6 +3521,18 @@
       "groundMount": null
     },
     "slug": "jelliette",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Jelliette Bell Flesh",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 12,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2397,6 +3557,18 @@
       "groundMount": null
     },
     "slug": "jellroy",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Jellroy Bell Flesh",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 39,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2418,6 +3590,28 @@
       "groundMount": null
     },
     "slug": "jetragon",
+    "drops": [
+      {
+        "item": "Pure Quartz",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Polymer",
+        "amount": "5 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Carbon Fiber",
+        "amount": "5 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Diamond",
+        "amount": "1 - 1",
+        "rate": "30%"
+      }
+    ],
     "mountSpeed": {
       "flying": "1700 - 3300"
     },
@@ -2442,6 +3636,13 @@
       "groundMount": null
     },
     "slug": "jolthog",
+    "drops": [
+      {
+        "item": "Electric Organ",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 3,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -2463,6 +3664,13 @@
       "groundMount": null
     },
     "slug": "jolthog-cryst",
+    "drops": [
+      {
+        "item": "Ice Organ",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 1,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -2484,6 +3692,13 @@
       "groundMount": "C"
     },
     "slug": "jormuntide",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "600 - 1000"
     },
@@ -2508,6 +3723,18 @@
       "groundMount": "C"
     },
     "slug": "jormuntide-ignis",
+    "drops": [
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Flame Organ",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "600 - 1000"
     },
@@ -2534,6 +3761,23 @@
       "groundMount": null
     },
     "slug": "katress",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Katress Hair",
+        "amount": "1 - 1",
+        "rate": "50%"
+      },
+      {
+        "item": "High Grade Technical Manual",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
     "level": 25,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -2558,6 +3802,23 @@
       "groundMount": null
     },
     "slug": "katress-ignis",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Katress Hair",
+        "amount": "1 - 1",
+        "rate": "50%"
+      },
+      {
+        "item": "High Grade Technical Manual",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
     "level": 40,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -2580,6 +3841,18 @@
       "groundMount": null
     },
     "slug": "kelpsea",
+    "drops": [
+      {
+        "item": "Raw Kelpsea",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 9,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -2602,6 +3875,18 @@
       "groundMount": null
     },
     "slug": "kelpsea-ignis",
+    "drops": [
+      {
+        "item": "Raw Kelpsea",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Flame Organ",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 24,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -2623,6 +3908,23 @@
       "groundMount": null
     },
     "slug": "kikit",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Bone",
+        "amount": "1 - 2",
+        "rate": "60%"
+      },
+      {
+        "item": "Crude Oil",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 40,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -2646,6 +3948,18 @@
       "groundMount": null
     },
     "slug": "killamari",
+    "drops": [
+      {
+        "item": "Venom Gland",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Killamari Tentacle",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -2669,6 +3983,18 @@
       "groundMount": null
     },
     "slug": "killamari-primo",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Killamari Tentacle",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 42,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -2690,6 +4016,13 @@
       "groundMount": "C"
     },
     "slug": "kingpaca",
+    "drops": [
+      {
+        "item": "Wool",
+        "amount": "5 - 5",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1040"
     },
@@ -2715,6 +4048,18 @@
       "groundMount": null
     },
     "slug": "kingpaca-cryst",
+    "drops": [
+      {
+        "item": "Wool",
+        "amount": "5 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Ice Organ",
+        "amount": "3 - 6",
+        "rate": "100%"
+      }
+    ],
     "level": 46,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -2736,6 +4081,18 @@
       "groundMount": "B"
     },
     "slug": "kitsun",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1100"
     },
@@ -2760,6 +4117,23 @@
       "groundMount": null
     },
     "slug": "kitsun-noct",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Dark Fragment",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 57,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -2783,6 +4157,13 @@
       "groundMount": null
     },
     "slug": "knocklem",
+    "drops": [
+      {
+        "item": "Ore",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 55,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -2806,6 +4187,18 @@
       "groundMount": null
     },
     "slug": "lamball",
+    "drops": [
+      {
+        "item": "Wool",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Lamball Mutton",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -2829,6 +4222,23 @@
       "groundMount": null
     },
     "slug": "leezpunk",
+    "drops": [
+      {
+        "item": "Copper Key",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Silver Key",
+        "amount": "1 - 1",
+        "rate": "1%"
+      },
+      {
+        "item": "Leezpunk Crest",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 26,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -2853,6 +4263,23 @@
       "groundMount": null
     },
     "slug": "leezpunk-ignis",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Silver Key",
+        "amount": "1 - 1",
+        "rate": "2%"
+      },
+      {
+        "item": "Leezpunk Crest",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 25,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2878,6 +4305,18 @@
       "groundMount": null
     },
     "slug": "lifmunk",
+    "drops": [
+      {
+        "item": "Berry Seeds",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Low Grade Medical Supplies",
+        "amount": "1 - 1",
+        "rate": "20%"
+      }
+    ],
     "level": 3,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -2899,6 +4338,13 @@
       "groundMount": null
     },
     "slug": "loupmoon",
+    "drops": [
+      {
+        "item": "Bone",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 12,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2921,6 +4367,13 @@
       "groundMount": null
     },
     "slug": "loupmoon-cryst",
+    "drops": [
+      {
+        "item": "Bone",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 50,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2945,6 +4398,33 @@
       "groundMount": null
     },
     "slug": "lovander",
+    "drops": [
+      {
+        "item": "Mushroom",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Cake",
+        "amount": "1 - 1",
+        "rate": "1%"
+      },
+      {
+        "item": "Suspicious Juice",
+        "amount": "1 - 1",
+        "rate": "1%"
+      },
+      {
+        "item": "Strange Juice",
+        "amount": "1 - 1",
+        "rate": "1%"
+      },
+      {
+        "item": "Memory Wiping Medicine",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
     "level": 18,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -2969,6 +4449,18 @@
       "groundMount": null
     },
     "slug": "lullu",
+    "drops": [
+      {
+        "item": "Beautiful Flower",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Red Berries",
+        "amount": "1 - 2",
+        "rate": "60%"
+      }
+    ],
     "level": 40,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -2992,6 +4484,13 @@
       "groundMount": null
     },
     "slug": "lunaris",
+    "drops": [
+      {
+        "item": "Paldium Fragment",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 38,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -3016,6 +4515,23 @@
       "groundMount": null
     },
     "slug": "lyleen",
+    "drops": [
+      {
+        "item": "Low Grade Medical Supplies",
+        "amount": "3 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Beautiful Flower",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Innovative Technical Manual",
+        "amount": "1 - 1",
+        "rate": "10%"
+      }
+    ],
     "level": 15,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -3039,6 +4555,23 @@
       "groundMount": null
     },
     "slug": "lyleen-noct",
+    "drops": [
+      {
+        "item": "Low Grade Medical Supplies",
+        "amount": "3 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Beautiful Flower",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Innovative Technical Manual",
+        "amount": "1 - 1",
+        "rate": "10%"
+      }
+    ],
     "level": 49,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -3062,6 +4595,23 @@
       "groundMount": "D"
     },
     "slug": "mammorest",
+    "drops": [
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "5 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "5 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Mammorest Meat",
+        "amount": "2 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "600 - 1030"
     },
@@ -3088,6 +4638,23 @@
       "groundMount": null
     },
     "slug": "mammorest-cryst",
+    "drops": [
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "5 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "5 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Mammorest Meat",
+        "amount": "2 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 41,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -3110,6 +4677,23 @@
       "groundMount": "B"
     },
     "slug": "maraith",
+    "drops": [
+      {
+        "item": "Bone",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Small Pal Soul",
+        "amount": "1 - 1",
+        "rate": "15%"
+      },
+      {
+        "item": "Crude Oil",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1100"
     },
@@ -3134,6 +4718,13 @@
       "groundMount": null
     },
     "slug": "mau",
+    "drops": [
+      {
+        "item": "Gold Coin",
+        "amount": "100 - 200",
+        "rate": "50%"
+      }
+    ],
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -3156,6 +4747,18 @@
       "groundMount": null
     },
     "slug": "mau-cryst",
+    "drops": [
+      {
+        "item": "Ice Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Sapphire",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
     "level": 30,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -3177,6 +4780,18 @@
       "groundMount": "C"
     },
     "slug": "melpaca",
+    "drops": [
+      {
+        "item": "Wool",
+        "amount": "2 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "500 - 900"
     },
@@ -3202,6 +4817,18 @@
       "groundMount": null
     },
     "slug": "menasting",
+    "drops": [
+      {
+        "item": "Coal",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Venom Gland",
+        "amount": "5 - 10",
+        "rate": "100%"
+      }
+    ],
     "level": 40,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -3224,6 +4851,18 @@
       "groundMount": null
     },
     "slug": "menasting-terra",
+    "drops": [
+      {
+        "item": "Crude Oil",
+        "amount": "1 - 1",
+        "rate": "50%"
+      },
+      {
+        "item": "Flame Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 54,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -3246,6 +4885,23 @@
       "groundMount": null
     },
     "slug": "mimog",
+    "drops": [
+      {
+        "item": "Gold Coin",
+        "amount": "1000 - 2000",
+        "rate": "100%"
+      },
+      {
+        "item": "Dog Coin",
+        "amount": "14 - 21",
+        "rate": "100%"
+      },
+      {
+        "item": "Training Manual (XL)",
+        "amount": "1 - 1",
+        "rate": "20%"
+      }
+    ],
     "level": 9,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -3270,6 +4926,28 @@
       "groundMount": null
     },
     "slug": "mossanda",
+    "drops": [
+      {
+        "item": "Mushroom",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Tomato Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      },
+      {
+        "item": "Onion Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 25,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -3294,6 +4972,23 @@
       "groundMount": null
     },
     "slug": "mossanda-lux",
+    "drops": [
+      {
+        "item": "Mushroom",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Electric Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 35,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -3315,6 +5010,18 @@
       "groundMount": null
     },
     "slug": "mozzarina",
+    "drops": [
+      {
+        "item": "Mozzarina Meat",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Milk",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 10,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -3338,6 +5045,18 @@
       "groundMount": null
     },
     "slug": "munchill",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Munchill Meat",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 10,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -3360,6 +5079,18 @@
       "groundMount": "S"
     },
     "slug": "necromus",
+    "drops": [
+      {
+        "item": "Pal Metal Ingot",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Large Pal Soul",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "1300 - 1900"
     },
@@ -3384,6 +5115,33 @@
       "groundMount": null
     },
     "slug": "neptilius",
+    "drops": [
+      {
+        "item": "Pure Quartz",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Polymer",
+        "amount": "5 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Carbon Fiber",
+        "amount": "5 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Diamond",
+        "amount": "1 - 1",
+        "rate": "30%"
+      },
+      {
+        "item": "Large Pal Soul",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
     "level": 60,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -3406,6 +5164,13 @@
       "groundMount": null
     },
     "slug": "nitemary",
+    "drops": [
+      {
+        "item": "Small Pal Soul",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 50,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -3427,6 +5192,13 @@
       "groundMount": null
     },
     "slug": "nitewing",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "600 - 750"
     },
@@ -3451,6 +5223,18 @@
       "groundMount": null
     },
     "slug": "nox",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Small Pal Soul",
+        "amount": "1 - 1",
+        "rate": "40%"
+      }
+    ],
     "level": 5,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -3475,6 +5259,13 @@
       "groundMount": null
     },
     "slug": "nyafia",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 50,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -3496,6 +5287,13 @@
       "groundMount": null
     },
     "slug": "omascul",
+    "drops": [
+      {
+        "item": "Dark Fragment",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 50,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -3519,6 +5317,13 @@
       "groundMount": null
     },
     "slug": "orserk",
+    "drops": [
+      {
+        "item": "Electric Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 40,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -3541,6 +5346,18 @@
       "groundMount": "S"
     },
     "slug": "paladius",
+    "drops": [
+      {
+        "item": "Pal Metal Ingot",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Diamond",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "800 - 1800"
     },
@@ -3567,6 +5384,13 @@
       "groundMount": null
     },
     "slug": "palumba",
+    "drops": [
+      {
+        "item": "Bone",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 40,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -3591,6 +5415,18 @@
       "groundMount": null
     },
     "slug": "pengullet",
+    "drops": [
+      {
+        "item": "Ice Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 10,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -3615,6 +5451,18 @@
       "groundMount": null
     },
     "slug": "pengullet-lux",
+    "drops": [
+      {
+        "item": "Electric Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 1,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -3640,6 +5488,18 @@
       "groundMount": null
     },
     "slug": "penking",
+    "drops": [
+      {
+        "item": "Ice Organ",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Penking Plume",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 18,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -3665,6 +5525,18 @@
       "groundMount": null
     },
     "slug": "penking-lux",
+    "drops": [
+      {
+        "item": "Electric Organ",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Penking Plume",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 1,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -3690,6 +5562,13 @@
       "groundMount": null
     },
     "slug": "petallia",
+    "drops": [
+      {
+        "item": "Beautiful Flower",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 18,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -3712,6 +5591,13 @@
       "groundMount": null
     },
     "slug": "polapup",
+    "drops": [
+      {
+        "item": "Ice Organ",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 5,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -3735,6 +5621,13 @@
       "groundMount": null
     },
     "slug": "prixter",
+    "drops": [
+      {
+        "item": "Venom Gland",
+        "amount": "4 - 5",
+        "rate": "100%"
+      }
+    ],
     "level": 43,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -3760,6 +5653,23 @@
       "groundMount": null
     },
     "slug": "prunelia",
+    "drops": [
+      {
+        "item": "Low Grade Medical Supplies",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Beautiful Flower",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Carrot Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 50,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -3781,6 +5691,13 @@
       "groundMount": null
     },
     "slug": "purple-slime",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 36,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -3803,6 +5720,18 @@
       "groundMount": "S"
     },
     "slug": "pyrin",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "850 - 1300"
     },
@@ -3828,6 +5757,18 @@
       "groundMount": null
     },
     "slug": "pyrin-noct",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 30,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -3852,6 +5793,13 @@
       "groundMount": null
     },
     "slug": "quivern",
+    "drops": [
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "3 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "800 - 950"
     },
@@ -3880,6 +5828,23 @@
       "groundMount": null
     },
     "slug": "quivern-botan",
+    "drops": [
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "3 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Beautiful Flower",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Red Berries",
+        "amount": "1 - 2",
+        "rate": "60%"
+      }
+    ],
     "mountSpeed": {
       "flying": "800 - 950"
     },
@@ -3905,6 +5870,13 @@
       "groundMount": null
     },
     "slug": "ragnahawk",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "5 - 7",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "800 - 1300"
     },
@@ -3929,6 +5901,13 @@
       "groundMount": null
     },
     "slug": "rainbow-slime",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "5 - 10",
+        "rate": "100%"
+      }
+    ],
     "level": 42,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -3950,6 +5929,13 @@
       "groundMount": "A"
     },
     "slug": "rayhound",
+    "drops": [
+      {
+        "item": "Electric Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1150"
     },
@@ -3974,6 +5960,13 @@
       "groundMount": null
     },
     "slug": "red-slime",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 36,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -3996,6 +5989,28 @@
       "groundMount": "C"
     },
     "slug": "reindrix",
+    "drops": [
+      {
+        "item": "Reindrix Venison",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Horn",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Ice Organ",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1070"
     },
@@ -4021,6 +6036,18 @@
       "groundMount": null
     },
     "slug": "relaxaurus",
+    "drops": [
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "1 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Ruby",
+        "amount": "1 - 1",
+        "rate": "5%"
+      }
+    ],
     "level": 18,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -4043,6 +6070,23 @@
       "groundMount": null
     },
     "slug": "relaxaurus-lux",
+    "drops": [
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "1 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Electric Organ",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Sapphire",
+        "amount": "1 - 1",
+        "rate": "5%"
+      }
+    ],
     "level": 31,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -4065,6 +6109,13 @@
       "groundMount": "D"
     },
     "slug": "reptyro",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "5 - 7",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "550 - 1000"
     },
@@ -4090,6 +6141,13 @@
       "groundMount": null
     },
     "slug": "reptyro-cryst",
+    "drops": [
+      {
+        "item": "Ice Organ",
+        "amount": "3 - 4",
+        "rate": "100%"
+      }
+    ],
     "level": 42,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -4113,6 +6171,23 @@
       "groundMount": null
     },
     "slug": "ribbuny",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Beautiful Flower",
+        "amount": "1 - 1",
+        "rate": "5%"
+      },
+      {
+        "item": "Ribbuny Ribbon",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 13,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4137,6 +6212,28 @@
       "groundMount": null
     },
     "slug": "ribbuny-botan",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Beautiful Flower",
+        "amount": "1 - 1",
+        "rate": "5%"
+      },
+      {
+        "item": "Ribbuny Ribbon",
+        "amount": "1 - 1",
+        "rate": "50%"
+      },
+      {
+        "item": "Potato Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 50,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4163,6 +6260,23 @@
       "groundMount": null
     },
     "slug": "robinquill",
+    "drops": [
+      {
+        "item": "Wheat Seeds",
+        "amount": "1 - 2",
+        "rate": "50%"
+      },
+      {
+        "item": "Arrow",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Potato Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 22,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -4188,6 +6302,23 @@
       "groundMount": null
     },
     "slug": "robinquill-terra",
+    "drops": [
+      {
+        "item": "Wheat Seeds",
+        "amount": "1 - 2",
+        "rate": "50%"
+      },
+      {
+        "item": "Arrow",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Potato Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 28,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -4209,6 +6340,18 @@
       "groundMount": null
     },
     "slug": "rooby",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 2,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -4230,6 +6373,23 @@
       "groundMount": "C"
     },
     "slug": "rushoar",
+    "drops": [
+      {
+        "item": "Rushoar Pork",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Bone",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "500 - 800"
     },
@@ -4256,6 +6416,23 @@
       "groundMount": null
     },
     "slug": "selyne",
+    "drops": [
+      {
+        "item": "Cloth",
+        "amount": "1 - 2",
+        "rate": "60%"
+      },
+      {
+        "item": "Sapphire",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Precious Claw",
+        "amount": "1 - 1",
+        "rate": "30%"
+      }
+    ],
     "mountSpeed": {
       "flying": "1000 - 1600"
     },
@@ -4280,6 +6457,23 @@
       "groundMount": null
     },
     "slug": "shadowbeak",
+    "drops": [
+      {
+        "item": "Pal Metal Ingot",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Carbon Fiber",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Innovative Technical Manual",
+        "amount": "1 - 1",
+        "rate": "10%"
+      }
+    ],
     "mountSpeed": {
       "flying": "850 - 1200"
     },
@@ -4307,6 +6501,18 @@
       "groundMount": "B"
     },
     "slug": "shroomer",
+    "drops": [
+      {
+        "item": "Mushroom",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Red Berries",
+        "amount": "1 - 2",
+        "rate": "60%"
+      }
+    ],
     "mountSpeed": {
       "ground": "740 - 1050"
     },
@@ -4334,6 +6540,18 @@
       "groundMount": "C"
     },
     "slug": "shroomer-noct",
+    "drops": [
+      {
+        "item": "Venom Gland",
+        "amount": "4 - 8",
+        "rate": "100%"
+      },
+      {
+        "item": "Mysterious Mushroom",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "740 - 1050"
     },
@@ -4360,6 +6578,18 @@
       "groundMount": null
     },
     "slug": "sibelyx",
+    "drops": [
+      {
+        "item": "High Quality Cloth",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Ice Organ",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 36,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -4381,6 +6611,13 @@
       "groundMount": "A"
     },
     "slug": "silvegis",
+    "drops": [
+      {
+        "item": "Chromite",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1050"
     },
@@ -4405,6 +6642,18 @@
       "groundMount": null
     },
     "slug": "smokie",
+    "drops": [
+      {
+        "item": "Bone",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Crude Oil",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 50,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -4430,6 +6679,23 @@
       "groundMount": null
     },
     "slug": "sootseer",
+    "drops": [
+      {
+        "item": "Medium Pal Soul",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Bone",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Crude Oil",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 46,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -4453,6 +6719,13 @@
       "groundMount": null
     },
     "slug": "sparkit",
+    "drops": [
+      {
+        "item": "Electric Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 3,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4477,6 +6750,13 @@
       "groundMount": null
     },
     "slug": "splatterina",
+    "drops": [
+      {
+        "item": "Dark Fragment",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 55,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -4498,6 +6778,18 @@
       "groundMount": "S"
     },
     "slug": "starryon",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Dark Fragment",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "900 - 1200"
     },
@@ -4522,6 +6814,13 @@
       "groundMount": "C"
     },
     "slug": "surfent",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "500 - 800"
     },
@@ -4546,6 +6845,13 @@
       "groundMount": null
     },
     "slug": "surfent-terra",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "level": 28,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -4567,6 +6873,13 @@
       "groundMount": null
     },
     "slug": "suzaku",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "5 - 10",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "850 - 1100"
     },
@@ -4591,6 +6904,13 @@
       "groundMount": null
     },
     "slug": "suzaku-aqua",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "5 - 5",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "850 - 1100"
     },
@@ -4616,6 +6936,18 @@
       "groundMount": null
     },
     "slug": "swee",
+    "drops": [
+      {
+        "item": "Wool",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Swee Hair",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 7,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4638,6 +6970,13 @@
       "groundMount": "D"
     },
     "slug": "sweepa",
+    "drops": [
+      {
+        "item": "Wool",
+        "amount": "3 - 5",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "650 - 1020"
     },
@@ -4666,6 +7005,13 @@
       "groundMount": null
     },
     "slug": "tanzee",
+    "drops": [
+      {
+        "item": "Mushroom",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 3,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4690,6 +7036,18 @@
       "groundMount": null
     },
     "slug": "tarantriss",
+    "drops": [
+      {
+        "item": "Fiber",
+        "amount": "2 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Venom Gland",
+        "amount": "2 - 5",
+        "rate": "100%"
+      }
+    ],
     "level": 50,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -4711,6 +7069,13 @@
       "groundMount": null
     },
     "slug": "teafant",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4732,6 +7097,18 @@
       "groundMount": null
     },
     "slug": "tocotoco",
+    "drops": [
+      {
+        "item": "Gunpowder",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Tocotoco Feather",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 11,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4755,6 +7132,18 @@
       "groundMount": null
     },
     "slug": "tombat",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Small Pal Soul",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
     "level": 9,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -4778,6 +7167,18 @@
       "groundMount": null
     },
     "slug": "turtacle",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Bone",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "level": 5,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -4801,6 +7202,18 @@
       "groundMount": null
     },
     "slug": "turtacle-terra",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Bone",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 1,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -4823,6 +7236,23 @@
       "groundMount": "A"
     },
     "slug": "univolt",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Electric Organ",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Horn",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "mountSpeed": {
       "ground": "720 - 1100"
     },
@@ -4851,6 +7281,23 @@
       "groundMount": null
     },
     "slug": "vaelet",
+    "drops": [
+      {
+        "item": "Low Grade Medical Supplies",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Tomato Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      },
+      {
+        "item": "Onion Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 18,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -4873,6 +7320,23 @@
       "groundMount": null
     },
     "slug": "vanwyrm",
+    "drops": [
+      {
+        "item": "Bone",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Ruby",
+        "amount": "1 - 2",
+        "rate": "1%"
+      },
+      {
+        "item": "Gold Coin",
+        "amount": "10 - 40",
+        "rate": "10%"
+      }
+    ],
     "mountSpeed": {
       "flying": "700 - 850"
     },
@@ -4898,6 +7362,23 @@
       "groundMount": null
     },
     "slug": "vanwyrm-cryst",
+    "drops": [
+      {
+        "item": "Bone",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Ice Organ",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Sapphire",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
     "mountSpeed": {
       "flying": "700 - 850"
     },
@@ -4926,6 +7407,18 @@
       "groundMount": null
     },
     "slug": "verdash",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Bone",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 40,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -4948,6 +7441,18 @@
       "groundMount": null
     },
     "slug": "vixy",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Bone",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 3,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -4972,6 +7477,13 @@
       "groundMount": null
     },
     "slug": "warsect",
+    "drops": [
+      {
+        "item": "Honey",
+        "amount": "3 - 4",
+        "rate": "100%"
+      }
+    ],
     "level": 40,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -4995,6 +7507,13 @@
       "groundMount": null
     },
     "slug": "warsect-terra",
+    "drops": [
+      {
+        "item": "Honey",
+        "amount": "3 - 4",
+        "rate": "100%"
+      }
+    ],
     "level": 52,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -5017,6 +7536,28 @@
       "groundMount": null
     },
     "slug": "whalaska",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Coralum Ore",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Ice Organ",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Large Pal Soul",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
     "level": 42,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -5039,6 +7580,28 @@
       "groundMount": null
     },
     "slug": "whalaska-ignis",
+    "drops": [
+      {
+        "item": "Pal Fluids",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Coralum Ore",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Flame Organ",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Large Pal Soul",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
     "level": 58,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -5062,6 +7625,18 @@
       "groundMount": null
     },
     "slug": "wixen",
+    "drops": [
+      {
+        "item": "Flame Organ",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "High Grade Technical Manual",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
     "level": 27,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -5085,6 +7660,18 @@
       "groundMount": null
     },
     "slug": "wixen-noct",
+    "drops": [
+      {
+        "item": "Medium Pal Soul",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "High Grade Technical Manual",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
     "level": 46,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -5106,6 +7693,18 @@
       "groundMount": null
     },
     "slug": "woolipop",
+    "drops": [
+      {
+        "item": "Cotton Candy",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "level": 14,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -5130,6 +7729,18 @@
       "groundMount": "D"
     },
     "slug": "wumpo",
+    "drops": [
+      {
+        "item": "Ice Organ",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Beautiful Flower",
+        "amount": "1 - 1",
+        "rate": "20%"
+      }
+    ],
     "mountSpeed": {
       "ground": "600 - 1050"
     },
@@ -5157,6 +7768,28 @@
       "groundMount": null
     },
     "slug": "wumpo-botan",
+    "drops": [
+      {
+        "item": "Lettuce Seeds",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Tomato Seeds",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Beautiful Flower",
+        "amount": "1 - 1",
+        "rate": "20%"
+      },
+      {
+        "item": "Carrot Seeds",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "level": 40,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -5178,6 +7811,18 @@
       "groundMount": null
     },
     "slug": "xenogard",
+    "drops": [
+      {
+        "item": "Meteorite Fragment",
+        "amount": "5 - 12",
+        "rate": "100%"
+      },
+      {
+        "item": "High Quality Pal Oil",
+        "amount": "3 - 5",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "790 - 1200"
     },
@@ -5202,6 +7847,13 @@
       "groundMount": null
     },
     "slug": "xenolord",
+    "drops": [
+      {
+        "item": "Meteorite Fragment",
+        "amount": "7 - 15",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "550 - 660"
     },
@@ -5227,6 +7879,13 @@
       "groundMount": null
     },
     "slug": "xenovader",
+    "drops": [
+      {
+        "item": "Meteorite Fragment",
+        "amount": "3 - 10",
+        "rate": "100%"
+      }
+    ],
     "level": 1,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -5248,6 +7907,13 @@
       "groundMount": "D"
     },
     "slug": "yakumo",
+    "drops": [
+      {
+        "item": "Leather",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "750 - 1080"
     },

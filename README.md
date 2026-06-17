@@ -82,9 +82,9 @@ python build_data.py
 ```
 
 `build_data.py` fait tout en une commande : il lit les CSV **et** récupère depuis
-[palworld.gg](https://palworld.gg) les rangs de tier-list **et** les données de jeu
-(niveau, rareté, taux de capture, stats), puis fusionne le tout dans chaque Pal de
-`data/pals.json`.
+[palworld.gg](https://palworld.gg) les rangs de tier-list, les données de jeu
+(niveau, rareté, taux de capture) **et** les drops, puis fusionne le tout dans chaque Pal
+de `data/pals.json`.
 
 Tu peux aussi éditer directement les fichiers JSON.
 
@@ -116,6 +116,15 @@ Les 5 onglets de tier-list du site sont extraits et fusionnés dans les Pals :
 - Même logique de **fetch live + repli sur cache** que les tier-lists. Rafraîchir seul :
   `python fetch_pal_data.py`.
 
+### Drops (butin)
+
+- [`fetch_pal_drops.py`](fetch_pal_drops.py) scrape la table « Possible Drops » de chaque
+  fiche `palworld.gg/pal/<slug>` (une requête par Pal, en parallèle) et écrit le cache
+  `data/pal-drops.json`. Les drops ne sont pas dans le dataset de jeu, d'où le scraping HTML.
+- `build_data.py` fusionne la liste dans chaque Pal sous la clé `drops` (absente si le Pal
+  n'a pas de table de drops, ex. boss de raid). Repli sur cache si réseau KO.
+- Rafraîchir seul : `python fetch_pal_drops.py`.
+
 ### Format d'une construction (`data/structures.json`)
 
 ```json
@@ -141,7 +150,8 @@ contient les libellés français séparés par des virgules (ex. `Plantation, Ar
   "rarity": 20,
   "rarityCategory": "Legendary",
   "captureRate": 1.0,
-  "zukan": 111
+  "zukan": 111,
+  "drops": [{ "item": "Pure Quartz", "amount": "10 - 10", "rate": "100%" }]
 }
 ```
 
@@ -152,6 +162,8 @@ contient les libellés français séparés par des virgules (ex. `Plantation, Ar
 - `slug`, `level`, `rarity`, `rarityCategory`, `captureRate`, `zukan` :
   données palworld.gg (voir « Données de jeu » ci-dessus). Absents pour les 2 Pals non
   présents sur palworld.gg (`Hartalis`, `Zoe & Grizzbolt`). `slug` sert au lien vers la fiche.
+- `drops` : liste `{ item, amount, rate }` du butin (voir « Drops » ci-dessus). Absent si
+  le Pal n'a pas de table de drops sur palworld.gg.
 - `nightWorker` : `true` si travailleur de nuit, sinon `false`.
 - `tiers` : rang dans chacun des 5 onglets de tier-list (`S`/`A`/`B`/`C`/`D`, ou `null`
   si le Pal n'y figure pas). Clés : `overall`, `workers`, `combat`, `flyingMount`,

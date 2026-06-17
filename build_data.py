@@ -14,6 +14,7 @@ from pathlib import Path
 
 from fetch_tier_lists import load_tier_lists
 from fetch_pal_data import load_pal_data
+from fetch_pal_drops import load_pal_drops
 
 BASE_DIR = Path(__file__).parent
 PALS_CSV = BASE_DIR / "Liste pals.csv"
@@ -99,9 +100,14 @@ def build_pals():
         rows = list(csv.DictReader(f, delimiter=";"))
     names = [n for n in ((r.get("Nom") or "").strip() for r in rows) if n]
 
-    # Données de jeu (level, rareté, taux de capture, stats) — bundle choisi sur nos noms.
+    # Données de jeu (level, rareté, taux de capture) — bundle choisi sur nos noms.
     pal_data = load_pal_data(target_names=names)
     data_index = {_norm(n): v for n, v in pal_data.items()}
+
+    # Drops : scrapés par slug sur les fiches palworld.gg.
+    slugs = [info["slug"] for info in (tier_index.get(_norm(n)) for n in names)
+             if info and info.get("slug")]
+    drops_data = load_pal_drops(slugs)
 
     pals = []
     matched = set()
@@ -135,6 +141,8 @@ def build_pals():
         }
         if info and info.get("slug"):
             pal["slug"] = info["slug"]
+            if drops_data.get(info["slug"]):
+                pal["drops"] = drops_data[info["slug"]]
         if info and info["mountSpeed"]:
             pal["mountSpeed"] = info["mountSpeed"]
 
@@ -154,7 +162,7 @@ def build_pals():
 
     no_data = [p["name"] for p in pals if "level" not in p]
     if no_data:
-        print(f"  ⚠ {len(no_data)} Pal(s) sans données de jeu (level/stats) : {', '.join(no_data)}")
+        print(f"  ⚠ {len(no_data)} Pal(s) sans données de jeu (level/rareté) : {', '.join(no_data)}")
 
     no_tier = [p["name"] for p in pals if all(v is None for v in p["tiers"].values())]
     if no_tier:
