@@ -121,9 +121,11 @@ Les 5 onglets de tier-list du site sont extraits et fusionnés dans les Pals :
 
 ### Drops (butin)
 
-- [`fetch_pal_drops.py`](fetch_pal_drops.py) scrape la table « Possible Drops » de chaque
-  fiche `palworld.gg/pal/<slug>` (une requête par Pal, en parallèle) et écrit le cache
-  `data/pal-drops.json`. Les drops ne sont pas dans le dataset de jeu, d'où le scraping HTML.
+- [`fetch_pal_drops.py`](fetch_pal_drops.py) scrape la table de butin de chaque fiche
+  **`palworld.gg/fr/pal/<slug>`** (version française → noms d'objets en FR ; repli sur la
+  fiche par défaut pour les Pals non traduits, ex. collab Terraria), une requête par Pal en
+  parallèle, et écrit le cache `data/pal-drops.json`. Les drops ne sont pas dans le dataset
+  de jeu, d'où le scraping HTML. Échecs réseau fusionnés sur le cache (pas de perte).
 - `build_data.py` fusionne la liste dans chaque Pal sous la clé `drops` (absente si le Pal
   n'a pas de table de drops, ex. boss de raid). Repli sur cache si réseau KO.
 - Rafraîchir seul : `python fetch_pal_drops.py`.
@@ -154,7 +156,7 @@ contient les libellés français séparés par des virgules (ex. `Plantation, Ar
   "rarityCategory": "Legendary",
   "captureRate": 1.0,
   "zukan": 111,
-  "drops": [{ "item": "Pure Quartz", "amount": "10 - 10", "rate": "100%" }]
+  "drops": [{ "item": "Quartz pur", "amount": "10 - 10", "rate": "100%" }]
 }
 ```
 

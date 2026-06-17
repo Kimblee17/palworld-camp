@@ -1,98 +1,98 @@
 {
   "anubis": [
     {
-      "item": "Bone",
+      "item": "Os",
       "amount": "3 - 5",
       "rate": "100%"
     },
     {
-      "item": "Large Pal Soul",
+      "item": "Âme de grand Pal",
       "amount": "1 - 1",
       "rate": "100%"
     },
     {
-      "item": "Innovative Technical Manual",
+      "item": "Livre de technique innovante",
       "amount": "1 - 1",
       "rate": "5%"
     }
   ],
   "arsox": [
     {
-      "item": "Horn",
+      "item": "Corne",
       "amount": "1 - 1",
       "rate": "100%"
     },
     {
-      "item": "Flame Organ",
+      "item": "Organe d&#39;allumage",
       "amount": "2 - 3",
       "rate": "100%"
     }
   ],
   "astegon": [
     {
-      "item": "Pal Metal Ingot",
+      "item": "Lingot de Paluminium",
       "amount": "1 - 2",
       "rate": "100%"
     },
     {
-      "item": "Pure Quartz",
+      "item": "Quartz pur",
       "amount": "3 - 5",
       "rate": "100%"
     }
   ],
   "azurmane": [
     {
-      "item": "Electric Organ",
+      "item": "Organe d&#39;alimentation",
       "amount": "2 - 3",
       "rate": "100%"
     }
   ],
   "azurobe": [
     {
-      "item": "Cloth",
+      "item": "Tissu",
       "amount": "1 - 3",
       "rate": "100%"
     }
   ],
   "azurobe-cryst": [
     {
-      "item": "Cloth",
+      "item": "Tissu",
       "amount": "1 - 3",
       "rate": "100%"
     },
     {
-      "item": "Pal Fluids",
+      "item": "Fluides de Pal",
       "amount": "1 - 2",
       "rate": "100%"
     },
     {
-      "item": "Ice Organ",
+      "item": "Organe de congélation",
       "amount": "1 - 3",
       "rate": "100%"
     }
   ],
   "bastigor": [
     {
-      "item": "Leather",
+      "item": "Cuir",
       "amount": "2 - 3",
       "rate": "100%"
     },
     {
-      "item": "Ice Organ",
+      "item": "Organe de congélation",
       "amount": "2 - 5",
       "rate": "100%"
     }
   ],
   "beakon": [
     {
-      "item": "Electric Organ",
+      "item": "Organe d&#39;alimentation",
       "amount": "1 - 2",
       "rate": "100%"
     }
   ],
   "beegarde": [
     {
-      "item": "Honey",
+      "item": "Miel",
       "amount": "1 - 2",
       "rate": "100%"
     }
@@ -101,198 +101,2498 @@
   "bellanoir-libero": [],
   "blazamut": [
     {
-      "item": "Coal",
+      "item": "Charbon",
       "amount": "10 - 10",
       "rate": "100%"
     },
     {
-      "item": "Flame Organ",
+      "item": "Organe d&#39;allumage",
       "amount": "10 - 10",
       "rate": "100%"
     }
   ],
   "blazamut-ryu": [
     {
-      "item": "Coal",
+      "item": "Charbon",
       "amount": "10 - 10",
       "rate": "100%"
     },
     {
-      "item": "Medium Pal Soul",
+      "item": "Âme de Pal moyen",
       "amount": "1 - 1",
       "rate": "5%"
     },
     {
-      "item": "Precious Claw",
+      "item": "Griffe Précieuse",
       "amount": "1 - 1",
       "rate": "30%"
     }
   ],
   "blazehowl": [
     {
-      "item": "Flame Organ",
+      "item": "Organe d&#39;allumage",
       "amount": "3 - 5",
       "rate": "100%"
     }
   ],
   "blazehowl-noct": [
     {
-      "item": "Flame Organ",
+      "item": "Organe d&#39;allumage",
       "amount": "2 - 4",
-      "rate": "100%"
-    }
-  ],
-  "blue-slime": [
-    {
-      "item": "Hallowed Bar",
-      "amount": "1 - 1",
       "rate": "100%"
     }
   ],
   "braloha": [
     {
-      "item": "Leather",
+      "item": "Cuir",
       "amount": "1 - 1",
       "rate": "100%"
     },
     {
-      "item": "Red Berries",
+      "item": "Baie rouge",
       "amount": "1 - 2",
       "rate": "60%"
     },
     {
-      "item": "Lettuce Seeds",
+      "item": "Graines de laitue",
       "amount": "1 - 2",
       "rate": "50%"
     },
     {
-      "item": "Tomato Seeds",
+      "item": "Graines de tomates",
       "amount": "1 - 1",
       "rate": "50%"
     }
   ],
   "bristla": [
     {
-      "item": "Wheat Seeds",
+      "item": "Graines de blé",
       "amount": "1 - 2",
       "rate": "100%"
     },
     {
-      "item": "Lettuce Seeds",
+      "item": "Graines de laitue",
       "amount": "1 - 1",
       "rate": "50%"
     },
     {
-      "item": "Carrot Seeds",
+      "item": "Graine de carotte",
       "amount": "1 - 1",
       "rate": "50%"
     }
   ],
   "broncherry": [
     {
-      "item": "Broncherry Meat",
+      "item": "Viande de Broncherry",
       "amount": "2 - 2",
       "rate": "100%"
     },
     {
-      "item": "Tomato Seeds",
+      "item": "Graines de tomates",
       "amount": "1 - 2",
       "rate": "50%"
     },
     {
-      "item": "Potato Seeds",
+      "item": "Semence de patate",
       "amount": "1 - 1",
       "rate": "50%"
     }
   ],
   "broncherry-aqua": [
     {
-      "item": "Broncherry Meat",
+      "item": "Viande de Broncherry",
       "amount": "2 - 2",
       "rate": "100%"
     },
     {
-      "item": "Lettuce Seeds",
+      "item": "Graines de laitue",
       "amount": "1 - 2",
       "rate": "50%"
     },
     {
-      "item": "Potato Seeds",
+      "item": "Semence de patate",
       "amount": "1 - 1",
       "rate": "50%"
     }
   ],
   "bushi": [
     {
-      "item": "Bone",
+      "item": "Os",
       "amount": "1 - 2",
       "rate": "100%"
     },
     {
-      "item": "Ingot",
+      "item": "Lingot de métal",
       "amount": "2 - 3",
       "rate": "100%"
     }
   ],
   "bushi-noct": [
     {
-      "item": "Flame Organ",
+      "item": "Organe d&#39;allumage",
       "amount": "4 - 8",
       "rate": "100%"
     },
     {
-      "item": "Ingot",
+      "item": "Lingot de métal",
       "amount": "2 - 3",
       "rate": "100%"
     },
     {
-      "item": "Medium Pal Soul",
+      "item": "Âme de Pal moyen",
       "amount": "1 - 2",
       "rate": "40%"
     }
   ],
   "caprity": [
     {
-      "item": "Caprity Meat",
+      "item": "Viande de Caprity",
       "amount": "2 - 2",
       "rate": "100%"
     },
     {
-      "item": "Red Berries",
+      "item": "Baie rouge",
       "amount": "2 - 4",
       "rate": "100%"
     },
     {
-      "item": "Horn",
+      "item": "Corne",
       "amount": "1 - 2",
       "rate": "100%"
     }
   ],
   "caprity-noct": [
     {
-      "item": "Caprity Meat",
+      "item": "Viande de Caprity",
       "amount": "2 - 2",
       "rate": "100%"
     },
     {
-      "item": "Red Berries",
+      "item": "Baie rouge",
       "amount": "2 - 4",
       "rate": "100%"
     },
     {
-      "item": "Horn",
+      "item": "Corne",
       "amount": "1 - 2",
       "rate": "100%"
     },
     {
-      "item": "Venom Gland",
+      "item": "Glande à venin",
       "amount": "1 - 1",
       "rate": "100%"
     }
   ],
   "cattiva": [
     {
-      "item": "Red Berries",
+      "item": "Baie rouge",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "cawgnito": [
+    {
+      "item": "Os",
+      "amount": "2 - 4",
+      "rate": "100%"
+    },
+    {
+      "item": "Glande à venin",
+      "amount": "2 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de petit Pal",
+      "amount": "1 - 1",
+      "rate": "1%"
+    }
+  ],
+  "celaray": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "celaray-lux": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "celesdir": [
+    {
+      "item": "Cuir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Corne",
+      "amount": "2 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Hexoquartz",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "chikipi": [
+    {
+      "item": "Œuf",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Viande de Chikipi",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "chillet": [
+    {
+      "item": "Cuir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "chillet-ignis": [
+    {
+      "item": "Cuir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "cinnamoth": [
+    {
+      "item": "Miel",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Graines de laitue",
+      "amount": "1 - 1",
+      "rate": "20%"
+    },
+    {
+      "item": "Graines de blé",
+      "amount": "1 - 1",
+      "rate": "20%"
+    },
+    {
+      "item": "Graine d&#39;oignon",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "cremis": [
+    {
+      "item": "Laine",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "croajiro": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Tissu",
+      "amount": "1 - 2",
+      "rate": "25%"
+    }
+  ],
+  "croajiro-noct": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Tissu",
+      "amount": "1 - 2",
+      "rate": "25%"
+    },
+    {
+      "item": "Glande à venin",
+      "amount": "2 - 4",
+      "rate": "100%"
+    }
+  ],
+  "cryolinx": [
+    {
+      "item": "Organe de congélation",
+      "amount": "1 - 3",
+      "rate": "100%"
+    }
+  ],
+  "cryolinx-terra": [
+    {
+      "item": "Minerai de métal",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "daedream": [
+    {
+      "item": "Glande à venin",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de petit Pal",
+      "amount": "1 - 1",
+      "rate": "1%"
+    }
+  ],
+  "dazemu": [
+    {
+      "item": "Os",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "dazzi": [
+    {
+      "item": "Organe d&#39;alimentation",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Nuage de Dazzi",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "dazzi-noct": [
+    {
+      "item": "Organe d&#39;alimentation",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Nuage de Dazzi",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Fragment obscur",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "depresso": [
+    {
+      "item": "Glande à venin",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "digtoise": [
+    {
+      "item": "Minerai de métal",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "dinossom": [
+    {
+      "item": "Graines de blé",
+      "amount": "1 - 2",
+      "rate": "50%"
+    },
+    {
+      "item": "Graine de carotte",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "dinossom-lux": [
+    {
+      "item": "Graines de tomates",
+      "amount": "1 - 2",
+      "rate": "50%"
+    },
+    {
+      "item": "Graine de carotte",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "direhowl": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Rubis",
+      "amount": "1 - 1",
+      "rate": "3%"
+    },
+    {
+      "item": "Pièce d&#39;or",
+      "amount": "10 - 20",
+      "rate": "3%"
+    }
+  ],
+  "dogen": [
+    {
+      "item": "Os",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "dumud": [
+    {
+      "item": "Viande de Dumud",
+      "amount": "2 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "dumud-gild": [
+    {
+      "item": "Viande de Dumud",
+      "amount": "2 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Pièce d&#39;or",
+      "amount": "100 - 200",
+      "rate": "50%"
+    }
+  ],
+  "eikthyrdeer": [
+    {
+      "item": "Viande de Eikthyrdeer",
+      "amount": "2 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Corne",
+      "amount": "2 - 2",
+      "rate": "100%"
+    }
+  ],
+  "eikthyrdeer-terra": [
+    {
+      "item": "Viande de Eikthyrdeer",
+      "amount": "2 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Corne",
+      "amount": "2 - 2",
+      "rate": "100%"
+    }
+  ],
+  "elizabee": [
+    {
+      "item": "Miel",
+      "amount": "5 - 5",
+      "rate": "100%"
+    },
+    {
+      "item": "Bâton d&#39;Elizabee",
+      "amount": "1 - 1",
+      "rate": "3%"
+    }
+  ],
+  "elphidran": [
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "elphidran-aqua": [
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "faleris": [
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "1 - 4",
+      "rate": "100%"
+    }
+  ],
+  "faleris-aqua": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "2 - 4",
+      "rate": "100%"
+    }
+  ],
+  "felbat": [
+    {
+      "item": "Tissu",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de petit Pal",
+      "amount": "1 - 1",
+      "rate": "3%"
+    }
+  ],
+  "fenglope": [
+    {
+      "item": "Cuir",
+      "amount": "3 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Corne",
+      "amount": "2 - 2",
+      "rate": "100%"
+    }
+  ],
+  "fenglope-lux": [
+    {
+      "item": "Cuir",
+      "amount": "3 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Corne",
+      "amount": "2 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe d&#39;alimentation",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "finsider": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de petit Pal",
+      "amount": "1 - 1",
+      "rate": "1%"
+    },
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "finsider-ignis": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de petit Pal",
+      "amount": "1 - 1",
+      "rate": "1%"
+    },
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "1 - 3",
+      "rate": "100%"
+    }
+  ],
+  "flambelle": [
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "flopie": [
+    {
+      "item": "Médicament de fortune",
+      "amount": "1 - 1",
+      "rate": "20%"
+    },
+    {
+      "item": "Graines de blé",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Semence de patate",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "foxcicle": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe de congélation",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "foxparks": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "foxparks-cryst": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe de congélation",
+      "amount": "1 - 3",
+      "rate": "100%"
+    }
+  ],
+  "frostallion": [
+    {
+      "item": "Organe de congélation",
+      "amount": "10 - 10",
+      "rate": "100%"
+    },
+    {
+      "item": "Diamant",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "frostallion-noct": [
+    {
+      "item": "Quartz pur",
+      "amount": "10 - 10",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de grand Pal",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "frostplume": [
+    {
+      "item": "Organe de congélation",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "fuack": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "fuack-ignis": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "1 - 2",
+      "rate": "50%"
+    }
+  ],
+  "fuddler": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "galeclaw": [
+    {
+      "item": "Viande de Galeclaw",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "ghangler": [
+    {
+      "item": "Os",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Glande à venin",
+      "amount": "2 - 4",
+      "rate": "100%"
+    }
+  ],
+  "ghangler-ignis": [
+    {
+      "item": "Os",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "1 - 2",
+      "rate": "50%"
+    }
+  ],
+  "gildane": [
+    {
+      "item": "Cuir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "gloopie": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Tentacule de Gloopie",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "gobfin": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "gobfin-ignis": [
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "gorirat": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Os",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "gorirat-terra": [
+    {
+      "item": "Minerai de métal",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Os",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "grintale": [
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "1 - 3",
+      "rate": "100%"
+    }
+  ],
+  "grizzbolt": [
+    {
+      "item": "Organe d&#39;alimentation",
+      "amount": "2 - 4",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "gumoss": [
+    {
+      "item": "Graines de baies",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Feuille de Gumoss",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "hangyu": [
+    {
+      "item": "Textile",
+      "amount": "5 - 10",
+      "rate": "100%"
+    }
+  ],
+  "hangyu-cryst": [
+    {
+      "item": "Textile",
+      "amount": "5 - 10",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe de congélation",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "helzephyr": [
+    {
+      "item": "Glande à venin",
+      "amount": "1 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de Pal moyen",
+      "amount": "1 - 1",
+      "rate": "3%"
+    }
+  ],
+  "helzephyr-lux": [
+    {
+      "item": "Organe d&#39;alimentation",
+      "amount": "1 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de Pal moyen",
+      "amount": "1 - 1",
+      "rate": "3%"
+    }
+  ],
+  "herbil": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Baie rouge",
+      "amount": "1 - 2",
+      "rate": "60%"
+    }
+  ],
+  "hoocrates": [
+    {
+      "item": "Textile",
+      "amount": "5 - 10",
+      "rate": "100%"
+    },
+    {
+      "item": "Livre de technique supérieure",
+      "amount": "1 - 1",
+      "rate": "1%"
+    }
+  ],
+  "icelyn": [
+    {
+      "item": "Organe de congélation",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Aile Précieuse",
+      "amount": "1 - 2",
+      "rate": "50%"
+    }
+  ],
+  "incineram": [
+    {
+      "item": "Corne",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "incineram-noct": [
+    {
+      "item": "Corne",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "jelliette": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Chair d’ombrelle de Jelliette",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "jellroy": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Chair d’ombrelle de Jellroy",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "jetragon": [
+    {
+      "item": "Quartz pur",
+      "amount": "10 - 10",
+      "rate": "100%"
+    },
+    {
+      "item": "Polymère",
+      "amount": "5 - 5",
+      "rate": "100%"
+    },
+    {
+      "item": "Fibre de carbone",
+      "amount": "5 - 5",
+      "rate": "100%"
+    },
+    {
+      "item": "Diamant",
+      "amount": "1 - 1",
+      "rate": "30%"
+    }
+  ],
+  "jolthog": [
+    {
+      "item": "Organe d&#39;alimentation",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "jolthog-cryst": [
+    {
+      "item": "Organe de congélation",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "jormuntide": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "2 - 4",
+      "rate": "100%"
+    }
+  ],
+  "jormuntide-ignis": [
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "katress": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Poils de Katress",
+      "amount": "1 - 1",
+      "rate": "50%"
+    },
+    {
+      "item": "Livre de technique supérieure",
+      "amount": "1 - 1",
+      "rate": "1%"
+    }
+  ],
+  "katress-ignis": [
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Poils de Katress",
+      "amount": "1 - 1",
+      "rate": "50%"
+    },
+    {
+      "item": "Livre de technique supérieure",
+      "amount": "1 - 1",
+      "rate": "1%"
+    }
+  ],
+  "kelpsea": [
+    {
+      "item": "Viande de Kelpsea",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "kelpsea-ignis": [
+    {
+      "item": "Viande de Kelpsea",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "kikit": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Os",
+      "amount": "1 - 2",
+      "rate": "60%"
+    },
+    {
+      "item": "Pétrole brut",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "killamari": [
+    {
+      "item": "Glande à venin",
+      "amount": "2 - 4",
+      "rate": "100%"
+    },
+    {
+      "item": "Tentacule de Killamari",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "killamari-primo": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Tentacule de Killamari",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "kingpaca": [
+    {
+      "item": "Laine",
+      "amount": "5 - 5",
+      "rate": "100%"
+    }
+  ],
+  "kingpaca-cryst": [
+    {
+      "item": "Laine",
+      "amount": "5 - 5",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe de congélation",
+      "amount": "3 - 6",
+      "rate": "100%"
+    }
+  ],
+  "kitsun": [
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "kitsun-noct": [
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Fragment obscur",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "knocklem": [
+    {
+      "item": "Minerai de métal",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "lamball": [
+    {
+      "item": "Laine",
+      "amount": "1 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Viande de Lamball",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "leezpunk": [
+    {
+      "item": "Clé en bronze",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Clé en argent",
+      "amount": "1 - 1",
+      "rate": "1%"
+    },
+    {
+      "item": "Crête de Leezpunk",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "leezpunk-ignis": [
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Clé en argent",
+      "amount": "1 - 1",
+      "rate": "2%"
+    },
+    {
+      "item": "Crête de Leezpunk",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "lifmunk": [
+    {
+      "item": "Graines de baies",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Médicament de fortune",
+      "amount": "1 - 1",
+      "rate": "20%"
+    }
+  ],
+  "loupmoon": [
+    {
+      "item": "Os",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "loupmoon-cryst": [
+    {
+      "item": "Os",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "lovander": [
+    {
+      "item": "Champignon",
+      "amount": "2 - 4",
+      "rate": "100%"
+    },
+    {
+      "item": "Gâteau",
+      "amount": "1 - 1",
+      "rate": "1%"
+    },
+    {
+      "item": "Boisson douteuse",
+      "amount": "1 - 1",
+      "rate": "1%"
+    },
+    {
+      "item": "Boisson étrange",
+      "amount": "1 - 1",
+      "rate": "1%"
+    },
+    {
+      "item": "Médicament d&#39;amnésie",
+      "amount": "1 - 1",
+      "rate": "1%"
+    }
+  ],
+  "lullu": [
+    {
+      "item": "Belle fleur",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Baie rouge",
+      "amount": "1 - 2",
+      "rate": "60%"
+    }
+  ],
+  "lunaris": [
+    {
+      "item": "Éclat de paldium",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "lyleen": [
+    {
+      "item": "Médicament de fortune",
+      "amount": "3 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Belle fleur",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Livre de technique innovante",
+      "amount": "1 - 1",
+      "rate": "10%"
+    }
+  ],
+  "lyleen-noct": [
+    {
+      "item": "Médicament de fortune",
+      "amount": "3 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Belle fleur",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Livre de technique innovante",
+      "amount": "1 - 1",
+      "rate": "10%"
+    }
+  ],
+  "mammorest": [
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "5 - 10",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "5 - 10",
+      "rate": "100%"
+    },
+    {
+      "item": "Viande de Mammorest",
+      "amount": "2 - 2",
+      "rate": "100%"
+    }
+  ],
+  "mammorest-cryst": [
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "5 - 10",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "5 - 10",
+      "rate": "100%"
+    },
+    {
+      "item": "Viande de Mammorest",
+      "amount": "2 - 2",
+      "rate": "100%"
+    }
+  ],
+  "maraith": [
+    {
+      "item": "Os",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de petit Pal",
+      "amount": "1 - 1",
+      "rate": "15%"
+    },
+    {
+      "item": "Pétrole brut",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "mau": [
+    {
+      "item": "Pièce d&#39;or",
+      "amount": "100 - 200",
+      "rate": "50%"
+    }
+  ],
+  "mau-cryst": [
+    {
+      "item": "Organe de congélation",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Saphir",
+      "amount": "1 - 1",
+      "rate": "1%"
+    }
+  ],
+  "melpaca": [
+    {
+      "item": "Laine",
+      "amount": "2 - 5",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "menasting": [
+    {
+      "item": "Charbon",
+      "amount": "10 - 10",
+      "rate": "100%"
+    },
+    {
+      "item": "Glande à venin",
+      "amount": "5 - 10",
+      "rate": "100%"
+    }
+  ],
+  "menasting-terra": [
+    {
+      "item": "Pétrole brut",
+      "amount": "1 - 1",
+      "rate": "50%"
+    },
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "mimog": [
+    {
+      "item": "Pièce d&#39;or",
+      "amount": "1000 - 2000",
+      "rate": "100%"
+    },
+    {
+      "item": "Pièce canine",
+      "amount": "14 - 21",
+      "rate": "100%"
+    },
+    {
+      "item": "Manuel de formation (XL)",
+      "amount": "1 - 1",
+      "rate": "20%"
+    }
+  ],
+  "mossanda": [
+    {
+      "item": "Champignon",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Graines de tomates",
+      "amount": "1 - 1",
+      "rate": "50%"
+    },
+    {
+      "item": "Graine d&#39;oignon",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "mossanda-lux": [
+    {
+      "item": "Champignon",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe d&#39;alimentation",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "mozzarina": [
+    {
+      "item": "Viande de Mozzarina",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Lait",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "munchill": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Chair de Munchill",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "necromus": [
+    {
+      "item": "Lingot de Paluminium",
+      "amount": "10 - 10",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de grand Pal",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "neptilius": [
+    {
+      "item": "Quartz pur",
+      "amount": "10 - 10",
+      "rate": "100%"
+    },
+    {
+      "item": "Polymère",
+      "amount": "5 - 5",
+      "rate": "100%"
+    },
+    {
+      "item": "Fibre de carbone",
+      "amount": "5 - 5",
+      "rate": "100%"
+    },
+    {
+      "item": "Diamant",
+      "amount": "1 - 1",
+      "rate": "30%"
+    },
+    {
+      "item": "Âme de grand Pal",
+      "amount": "1 - 1",
+      "rate": "1%"
+    }
+  ],
+  "nitemary": [
+    {
+      "item": "Âme de petit Pal",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "nitewing": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 3",
+      "rate": "100%"
+    }
+  ],
+  "nox": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de petit Pal",
+      "amount": "1 - 1",
+      "rate": "40%"
+    }
+  ],
+  "nyafia": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "omascul": [
+    {
+      "item": "Fragment obscur",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "orserk": [
+    {
+      "item": "Organe d&#39;alimentation",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "paladius": [
+    {
+      "item": "Lingot de Paluminium",
+      "amount": "10 - 10",
+      "rate": "100%"
+    },
+    {
+      "item": "Diamant",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "palumba": [
+    {
+      "item": "Os",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "pengullet": [
+    {
+      "item": "Organe de congélation",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "pengullet-lux": [
+    {
+      "item": "Organe d&#39;alimentation",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "penking": [
+    {
+      "item": "Organe de congélation",
+      "amount": "1 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Plume de Penking",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "penking-lux": [
+    {
+      "item": "Organe d&#39;alimentation",
+      "amount": "1 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Plume de Penking",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "petallia": [
+    {
+      "item": "Belle fleur",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "polapup": [
+    {
+      "item": "Organe de congélation",
+      "amount": "1 - 3",
+      "rate": "100%"
+    }
+  ],
+  "prixter": [
+    {
+      "item": "Glande à venin",
+      "amount": "4 - 5",
+      "rate": "100%"
+    }
+  ],
+  "prunelia": [
+    {
+      "item": "Médicament de fortune",
+      "amount": "1 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Belle fleur",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Graine de carotte",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "pyrin": [
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "4 - 5",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "pyrin-noct": [
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "4 - 5",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "quivern": [
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "3 - 3",
+      "rate": "100%"
+    }
+  ],
+  "quivern-botan": [
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "3 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Belle fleur",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Baie rouge",
+      "amount": "1 - 2",
+      "rate": "60%"
+    }
+  ],
+  "ragnahawk": [
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "5 - 7",
+      "rate": "100%"
+    }
+  ],
+  "rayhound": [
+    {
+      "item": "Organe d&#39;alimentation",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "reindrix": [
+    {
+      "item": "Viande de Reindrix",
+      "amount": "2 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Corne",
+      "amount": "2 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe de congélation",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "relaxaurus": [
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "1 - 4",
+      "rate": "100%"
+    },
+    {
+      "item": "Rubis",
+      "amount": "1 - 1",
+      "rate": "5%"
+    }
+  ],
+  "relaxaurus-lux": [
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "1 - 4",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe d&#39;alimentation",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Saphir",
+      "amount": "1 - 1",
+      "rate": "5%"
+    }
+  ],
+  "reptyro": [
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "5 - 7",
+      "rate": "100%"
+    }
+  ],
+  "reptyro-cryst": [
+    {
+      "item": "Organe de congélation",
+      "amount": "3 - 4",
+      "rate": "100%"
+    }
+  ],
+  "ribbuny": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Belle fleur",
+      "amount": "1 - 1",
+      "rate": "5%"
+    },
+    {
+      "item": "Ruban de Ribbuny",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "ribbuny-botan": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Belle fleur",
+      "amount": "1 - 1",
+      "rate": "5%"
+    },
+    {
+      "item": "Ruban de Ribbuny",
+      "amount": "1 - 1",
+      "rate": "50%"
+    },
+    {
+      "item": "Semence de patate",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "robinquill": [
+    {
+      "item": "Graines de blé",
+      "amount": "1 - 2",
+      "rate": "50%"
+    },
+    {
+      "item": "Flèche",
+      "amount": "2 - 4",
+      "rate": "100%"
+    },
+    {
+      "item": "Semence de patate",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "robinquill-terra": [
+    {
+      "item": "Graines de blé",
+      "amount": "1 - 2",
+      "rate": "50%"
+    },
+    {
+      "item": "Flèche",
+      "amount": "2 - 4",
+      "rate": "100%"
+    },
+    {
+      "item": "Semence de patate",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "rooby": [
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "rushoar": [
+    {
+      "item": "Viande de Rushoar",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Os",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "selyne": [
+    {
+      "item": "Tissu",
+      "amount": "1 - 2",
+      "rate": "60%"
+    },
+    {
+      "item": "Saphir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Griffe Précieuse",
+      "amount": "1 - 1",
+      "rate": "30%"
+    }
+  ],
+  "shadowbeak": [
+    {
+      "item": "Lingot de Paluminium",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Fibre de carbone",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Livre de technique innovante",
+      "amount": "1 - 1",
+      "rate": "10%"
+    }
+  ],
+  "shroomer": [
+    {
+      "item": "Champignon",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Baie rouge",
+      "amount": "1 - 2",
+      "rate": "60%"
+    }
+  ],
+  "shroomer-noct": [
+    {
+      "item": "Glande à venin",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Champignon étrange",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "sibelyx": [
+    {
+      "item": "Tissu de qualité",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe de congélation",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "silvegis": [
+    {
+      "item": "Chromite",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "smokie": [
+    {
+      "item": "Os",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Pétrole brut",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "sootseer": [
+    {
+      "item": "Âme de Pal moyen",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Os",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Pétrole brut",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "sparkit": [
+    {
+      "item": "Organe d&#39;alimentation",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "splatterina": [
+    {
+      "item": "Fragment obscur",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "starryon": [
+    {
+      "item": "Cuir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Fragment obscur",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "surfent": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "surfent-terra": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "suzaku": [
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "5 - 10",
+      "rate": "100%"
+    }
+  ],
+  "suzaku-aqua": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "5 - 5",
+      "rate": "100%"
+    }
+  ],
+  "swee": [
+    {
+      "item": "Laine",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Duvet de Swee",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "sweepa": [
+    {
+      "item": "Laine",
+      "amount": "3 - 5",
+      "rate": "100%"
+    }
+  ],
+  "tanzee": [
+    {
+      "item": "Champignon",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "tarantriss": [
+    {
+      "item": "Textile",
+      "amount": "2 - 5",
+      "rate": "100%"
+    },
+    {
+      "item": "Glande à venin",
+      "amount": "2 - 5",
+      "rate": "100%"
+    }
+  ],
+  "teafant": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "tocotoco": [
+    {
+      "item": "Poudre à canon",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Plume de Tocotoco",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "tombat": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de petit Pal",
+      "amount": "1 - 1",
+      "rate": "1%"
+    }
+  ],
+  "turtacle": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Os",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "turtacle-terra": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Os",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "univolt": [
+    {
+      "item": "Cuir",
+      "amount": "2 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe d&#39;alimentation",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Corne",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "vaelet": [
+    {
+      "item": "Médicament de fortune",
+      "amount": "2 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Graines de tomates",
+      "amount": "1 - 1",
+      "rate": "50%"
+    },
+    {
+      "item": "Graine d&#39;oignon",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "vanwyrm": [
+    {
+      "item": "Os",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Rubis",
+      "amount": "1 - 2",
+      "rate": "1%"
+    },
+    {
+      "item": "Pièce d&#39;or",
+      "amount": "10 - 40",
+      "rate": "10%"
+    }
+  ],
+  "vanwyrm-cryst": [
+    {
+      "item": "Os",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe de congélation",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Saphir",
+      "amount": "1 - 1",
+      "rate": "2%"
+    }
+  ],
+  "verdash": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Os",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "vixy": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Os",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "warsect": [
+    {
+      "item": "Miel",
+      "amount": "3 - 4",
+      "rate": "100%"
+    }
+  ],
+  "warsect-terra": [
+    {
+      "item": "Miel",
+      "amount": "3 - 4",
+      "rate": "100%"
+    }
+  ],
+  "whalaska": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Minerai de Korallium",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe de congélation",
+      "amount": "1 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de grand Pal",
+      "amount": "1 - 1",
+      "rate": "1%"
+    }
+  ],
+  "whalaska-ignis": [
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Minerai de Korallium",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "1 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de grand Pal",
+      "amount": "1 - 1",
+      "rate": "1%"
+    }
+  ],
+  "wixen": [
+    {
+      "item": "Organe d&#39;allumage",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Livre de technique supérieure",
+      "amount": "1 - 1",
+      "rate": "1%"
+    }
+  ],
+  "wixen-noct": [
+    {
+      "item": "Âme de Pal moyen",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Livre de technique supérieure",
+      "amount": "1 - 1",
+      "rate": "1%"
+    }
+  ],
+  "woolipop": [
+    {
+      "item": "Barbe à papa",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "1 - 1",
+      "rate": "100%"
+    }
+  ],
+  "wumpo": [
+    {
+      "item": "Organe de congélation",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Belle fleur",
+      "amount": "1 - 1",
+      "rate": "20%"
+    }
+  ],
+  "wumpo-botan": [
+    {
+      "item": "Graines de laitue",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Graines de tomates",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Belle fleur",
+      "amount": "1 - 1",
+      "rate": "20%"
+    },
+    {
+      "item": "Graine de carotte",
+      "amount": "1 - 1",
+      "rate": "50%"
+    }
+  ],
+  "xenogard": [
+    {
+      "item": "Fragment de météorite",
+      "amount": "5 - 12",
+      "rate": "100%"
+    },
+    {
+      "item": "Huile de Pal de Qualité",
+      "amount": "3 - 5",
+      "rate": "100%"
+    }
+  ],
+  "xenolord": [
+    {
+      "item": "Fragment de météorite",
+      "amount": "7 - 15",
+      "rate": "100%"
+    }
+  ],
+  "xenovader": [
+    {
+      "item": "Fragment de météorite",
+      "amount": "3 - 10",
+      "rate": "100%"
+    }
+  ],
+  "yakumo": [
+    {
+      "item": "Cuir",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
+  "blue-slime": [
+    {
+      "item": "Hallowed Bar",
       "amount": "1 - 1",
       "rate": "100%"
     }
@@ -304,365 +2604,10 @@
       "rate": "100%"
     }
   ],
-  "cawgnito": [
-    {
-      "item": "Bone",
-      "amount": "2 - 4",
-      "rate": "100%"
-    },
-    {
-      "item": "Venom Gland",
-      "amount": "2 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Small Pal Soul",
-      "amount": "1 - 1",
-      "rate": "1%"
-    }
-  ],
-  "celaray": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "celaray-lux": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "celesdir": [
-    {
-      "item": "Leather",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Horn",
-      "amount": "2 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Hexolite Quartz",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "chikipi": [
-    {
-      "item": "Egg",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Chikipi Poultry",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "chillet": [
-    {
-      "item": "Leather",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "chillet-ignis": [
-    {
-      "item": "Leather",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Flame Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "cinnamoth": [
-    {
-      "item": "Honey",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Lettuce Seeds",
-      "amount": "1 - 1",
-      "rate": "20%"
-    },
-    {
-      "item": "Wheat Seeds",
-      "amount": "1 - 1",
-      "rate": "20%"
-    },
-    {
-      "item": "Onion Seeds",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "cremis": [
-    {
-      "item": "Wool",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "croajiro": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Cloth",
-      "amount": "1 - 2",
-      "rate": "25%"
-    }
-  ],
-  "croajiro-noct": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Cloth",
-      "amount": "1 - 2",
-      "rate": "25%"
-    },
-    {
-      "item": "Venom Gland",
-      "amount": "2 - 4",
-      "rate": "100%"
-    }
-  ],
-  "cryolinx": [
-    {
-      "item": "Ice Organ",
-      "amount": "1 - 3",
-      "rate": "100%"
-    }
-  ],
-  "cryolinx-terra": [
-    {
-      "item": "Ore",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "daedream": [
-    {
-      "item": "Venom Gland",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Small Pal Soul",
-      "amount": "1 - 1",
-      "rate": "1%"
-    }
-  ],
-  "dazemu": [
-    {
-      "item": "Bone",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "dazzi": [
-    {
-      "item": "Electric Organ",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Dazzi Cloud",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "dazzi-noct": [
-    {
-      "item": "Electric Organ",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Dazzi Cloud",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Dark Fragment",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
   "demon-eye": [
     {
       "item": "Hallowed Bar",
       "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "depresso": [
-    {
-      "item": "Venom Gland",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "digtoise": [
-    {
-      "item": "Ore",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "dinossom": [
-    {
-      "item": "Wheat Seeds",
-      "amount": "1 - 2",
-      "rate": "50%"
-    },
-    {
-      "item": "Carrot Seeds",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "dinossom-lux": [
-    {
-      "item": "Tomato Seeds",
-      "amount": "1 - 2",
-      "rate": "50%"
-    },
-    {
-      "item": "Carrot Seeds",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "direhowl": [
-    {
-      "item": "Leather",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Ruby",
-      "amount": "1 - 1",
-      "rate": "3%"
-    },
-    {
-      "item": "Gold Coin",
-      "amount": "10 - 20",
-      "rate": "3%"
-    }
-  ],
-  "dogen": [
-    {
-      "item": "Bone",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "dumud": [
-    {
-      "item": "Raw Dumud",
-      "amount": "2 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "dumud-gild": [
-    {
-      "item": "Raw Dumud",
-      "amount": "2 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Gold Coin",
-      "amount": "100 - 200",
-      "rate": "50%"
-    }
-  ],
-  "eikthyrdeer": [
-    {
-      "item": "Eikthyrdeer Venison",
-      "amount": "2 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Horn",
-      "amount": "2 - 2",
-      "rate": "100%"
-    }
-  ],
-  "eikthyrdeer-terra": [
-    {
-      "item": "Eikthyrdeer Venison",
-      "amount": "2 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Horn",
-      "amount": "2 - 2",
-      "rate": "100%"
-    }
-  ],
-  "elizabee": [
-    {
-      "item": "Honey",
-      "amount": "5 - 5",
-      "rate": "100%"
-    },
-    {
-      "item": "Elizabee&#39;s Staff",
-      "amount": "1 - 1",
-      "rate": "3%"
-    }
-  ],
-  "elphidran": [
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "elphidran-aqua": [
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "2 - 3",
       "rate": "100%"
     }
   ],
@@ -680,435 +2625,11 @@
       "rate": "100%"
     }
   ],
-  "faleris": [
-    {
-      "item": "Flame Organ",
-      "amount": "1 - 4",
-      "rate": "100%"
-    }
-  ],
-  "faleris-aqua": [
-    {
-      "item": "Pal Fluids",
-      "amount": "2 - 4",
-      "rate": "100%"
-    }
-  ],
-  "felbat": [
-    {
-      "item": "Cloth",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Small Pal Soul",
-      "amount": "1 - 1",
-      "rate": "3%"
-    }
-  ],
-  "fenglope": [
-    {
-      "item": "Leather",
-      "amount": "3 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Horn",
-      "amount": "2 - 2",
-      "rate": "100%"
-    }
-  ],
-  "fenglope-lux": [
-    {
-      "item": "Leather",
-      "amount": "3 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Horn",
-      "amount": "2 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Electric Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "finsider": [
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Small Pal Soul",
-      "amount": "1 - 1",
-      "rate": "1%"
-    },
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "finsider-ignis": [
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Small Pal Soul",
-      "amount": "1 - 1",
-      "rate": "1%"
-    },
-    {
-      "item": "Flame Organ",
-      "amount": "1 - 3",
-      "rate": "100%"
-    }
-  ],
-  "flambelle": [
-    {
-      "item": "Flame Organ",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "flopie": [
-    {
-      "item": "Low Grade Medical Supplies",
-      "amount": "1 - 1",
-      "rate": "20%"
-    },
-    {
-      "item": "Wheat Seeds",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Potato Seeds",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "foxcicle": [
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Ice Organ",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "foxparks": [
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Flame Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "foxparks-cryst": [
-    {
-      "item": "Leather",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Ice Organ",
-      "amount": "1 - 3",
-      "rate": "100%"
-    }
-  ],
-  "frostallion": [
-    {
-      "item": "Ice Organ",
-      "amount": "10 - 10",
-      "rate": "100%"
-    },
-    {
-      "item": "Diamond",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "frostallion-noct": [
-    {
-      "item": "Pure Quartz",
-      "amount": "10 - 10",
-      "rate": "100%"
-    },
-    {
-      "item": "Large Pal Soul",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "frostplume": [
-    {
-      "item": "Ice Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "fuack": [
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "fuack-ignis": [
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Flame Organ",
-      "amount": "1 - 2",
-      "rate": "50%"
-    }
-  ],
-  "fuddler": [
-    {
-      "item": "Leather",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "galeclaw": [
-    {
-      "item": "Galeclaw Poultry",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "ghangler": [
-    {
-      "item": "Bone",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Venom Gland",
-      "amount": "2 - 4",
-      "rate": "100%"
-    }
-  ],
-  "ghangler-ignis": [
-    {
-      "item": "Bone",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Flame Organ",
-      "amount": "1 - 2",
-      "rate": "50%"
-    }
-  ],
-  "gildane": [
-    {
-      "item": "Leather",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "gloopie": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Gloopie Tentacle",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "gobfin": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "gobfin-ignis": [
-    {
-      "item": "Flame Organ",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "gorirat": [
-    {
-      "item": "Leather",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Bone",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "gorirat-terra": [
-    {
-      "item": "Ore",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Bone",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
   "green-slime": [
     {
       "item": "Hallowed Bar",
       "amount": "1 - 1",
       "rate": "100%"
-    }
-  ],
-  "grintale": [
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "1 - 3",
-      "rate": "100%"
-    }
-  ],
-  "grizzbolt": [
-    {
-      "item": "Electric Organ",
-      "amount": "2 - 4",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "gumoss": [
-    {
-      "item": "Berry Seeds",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Gumoss Leaf",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "hangyu": [
-    {
-      "item": "Fiber",
-      "amount": "5 - 10",
-      "rate": "100%"
-    }
-  ],
-  "hangyu-cryst": [
-    {
-      "item": "Fiber",
-      "amount": "5 - 10",
-      "rate": "100%"
-    },
-    {
-      "item": "Ice Organ",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "helzephyr": [
-    {
-      "item": "Venom Gland",
-      "amount": "1 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Medium Pal Soul",
-      "amount": "1 - 1",
-      "rate": "3%"
-    }
-  ],
-  "helzephyr-lux": [
-    {
-      "item": "Electric Organ",
-      "amount": "1 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Medium Pal Soul",
-      "amount": "1 - 1",
-      "rate": "3%"
-    }
-  ],
-  "herbil": [
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Red Berries",
-      "amount": "1 - 2",
-      "rate": "60%"
-    }
-  ],
-  "hoocrates": [
-    {
-      "item": "Fiber",
-      "amount": "5 - 10",
-      "rate": "100%"
-    },
-    {
-      "item": "High Grade Technical Manual",
-      "amount": "1 - 1",
-      "rate": "1%"
-    }
-  ],
-  "icelyn": [
-    {
-      "item": "Ice Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Precious Plume",
-      "amount": "1 - 2",
-      "rate": "50%"
     }
   ],
   "illuminant-bat": [
@@ -1125,851 +2646,10 @@
       "rate": "100%"
     }
   ],
-  "incineram": [
-    {
-      "item": "Horn",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "incineram-noct": [
-    {
-      "item": "Horn",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "jelliette": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Jelliette Bell Flesh",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "jellroy": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Jellroy Bell Flesh",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "jetragon": [
-    {
-      "item": "Pure Quartz",
-      "amount": "10 - 10",
-      "rate": "100%"
-    },
-    {
-      "item": "Polymer",
-      "amount": "5 - 5",
-      "rate": "100%"
-    },
-    {
-      "item": "Carbon Fiber",
-      "amount": "5 - 5",
-      "rate": "100%"
-    },
-    {
-      "item": "Diamond",
-      "amount": "1 - 1",
-      "rate": "30%"
-    }
-  ],
-  "jolthog": [
-    {
-      "item": "Electric Organ",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "jolthog-cryst": [
-    {
-      "item": "Ice Organ",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "jormuntide": [
-    {
-      "item": "Pal Fluids",
-      "amount": "2 - 4",
-      "rate": "100%"
-    }
-  ],
-  "jormuntide-ignis": [
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Flame Organ",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "katress": [
-    {
-      "item": "Leather",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Katress Hair",
-      "amount": "1 - 1",
-      "rate": "50%"
-    },
-    {
-      "item": "High Grade Technical Manual",
-      "amount": "1 - 1",
-      "rate": "1%"
-    }
-  ],
-  "katress-ignis": [
-    {
-      "item": "Flame Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Katress Hair",
-      "amount": "1 - 1",
-      "rate": "50%"
-    },
-    {
-      "item": "High Grade Technical Manual",
-      "amount": "1 - 1",
-      "rate": "1%"
-    }
-  ],
-  "kelpsea": [
-    {
-      "item": "Raw Kelpsea",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "kelpsea-ignis": [
-    {
-      "item": "Raw Kelpsea",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Flame Organ",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "kikit": [
-    {
-      "item": "Leather",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Bone",
-      "amount": "1 - 2",
-      "rate": "60%"
-    },
-    {
-      "item": "Crude Oil",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "killamari": [
-    {
-      "item": "Venom Gland",
-      "amount": "2 - 4",
-      "rate": "100%"
-    },
-    {
-      "item": "Killamari Tentacle",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "killamari-primo": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Killamari Tentacle",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "kingpaca": [
-    {
-      "item": "Wool",
-      "amount": "5 - 5",
-      "rate": "100%"
-    }
-  ],
-  "kingpaca-cryst": [
-    {
-      "item": "Wool",
-      "amount": "5 - 5",
-      "rate": "100%"
-    },
-    {
-      "item": "Ice Organ",
-      "amount": "3 - 6",
-      "rate": "100%"
-    }
-  ],
-  "kitsun": [
-    {
-      "item": "Flame Organ",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "kitsun-noct": [
-    {
-      "item": "Flame Organ",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Dark Fragment",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "knocklem": [
-    {
-      "item": "Ore",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "lamball": [
-    {
-      "item": "Wool",
-      "amount": "1 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Lamball Mutton",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "leezpunk": [
-    {
-      "item": "Copper Key",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Silver Key",
-      "amount": "1 - 1",
-      "rate": "1%"
-    },
-    {
-      "item": "Leezpunk Crest",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "leezpunk-ignis": [
-    {
-      "item": "Flame Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Silver Key",
-      "amount": "1 - 1",
-      "rate": "2%"
-    },
-    {
-      "item": "Leezpunk Crest",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "lifmunk": [
-    {
-      "item": "Berry Seeds",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Low Grade Medical Supplies",
-      "amount": "1 - 1",
-      "rate": "20%"
-    }
-  ],
-  "loupmoon": [
-    {
-      "item": "Bone",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "loupmoon-cryst": [
-    {
-      "item": "Bone",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "lovander": [
-    {
-      "item": "Mushroom",
-      "amount": "2 - 4",
-      "rate": "100%"
-    },
-    {
-      "item": "Cake",
-      "amount": "1 - 1",
-      "rate": "1%"
-    },
-    {
-      "item": "Suspicious Juice",
-      "amount": "1 - 1",
-      "rate": "1%"
-    },
-    {
-      "item": "Strange Juice",
-      "amount": "1 - 1",
-      "rate": "1%"
-    },
-    {
-      "item": "Memory Wiping Medicine",
-      "amount": "1 - 1",
-      "rate": "1%"
-    }
-  ],
-  "lullu": [
-    {
-      "item": "Beautiful Flower",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Red Berries",
-      "amount": "1 - 2",
-      "rate": "60%"
-    }
-  ],
-  "lunaris": [
-    {
-      "item": "Paldium Fragment",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "lyleen": [
-    {
-      "item": "Low Grade Medical Supplies",
-      "amount": "3 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Beautiful Flower",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Innovative Technical Manual",
-      "amount": "1 - 1",
-      "rate": "10%"
-    }
-  ],
-  "lyleen-noct": [
-    {
-      "item": "Low Grade Medical Supplies",
-      "amount": "3 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Beautiful Flower",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Innovative Technical Manual",
-      "amount": "1 - 1",
-      "rate": "10%"
-    }
-  ],
-  "mammorest": [
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "5 - 10",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "5 - 10",
-      "rate": "100%"
-    },
-    {
-      "item": "Mammorest Meat",
-      "amount": "2 - 2",
-      "rate": "100%"
-    }
-  ],
-  "mammorest-cryst": [
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "5 - 10",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "5 - 10",
-      "rate": "100%"
-    },
-    {
-      "item": "Mammorest Meat",
-      "amount": "2 - 2",
-      "rate": "100%"
-    }
-  ],
-  "maraith": [
-    {
-      "item": "Bone",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Small Pal Soul",
-      "amount": "1 - 1",
-      "rate": "15%"
-    },
-    {
-      "item": "Crude Oil",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "mau": [
-    {
-      "item": "Gold Coin",
-      "amount": "100 - 200",
-      "rate": "50%"
-    }
-  ],
-  "mau-cryst": [
-    {
-      "item": "Ice Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Sapphire",
-      "amount": "1 - 1",
-      "rate": "1%"
-    }
-  ],
-  "melpaca": [
-    {
-      "item": "Wool",
-      "amount": "2 - 5",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "menasting": [
-    {
-      "item": "Coal",
-      "amount": "10 - 10",
-      "rate": "100%"
-    },
-    {
-      "item": "Venom Gland",
-      "amount": "5 - 10",
-      "rate": "100%"
-    }
-  ],
-  "menasting-terra": [
-    {
-      "item": "Crude Oil",
-      "amount": "1 - 1",
-      "rate": "50%"
-    },
-    {
-      "item": "Flame Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "mimog": [
-    {
-      "item": "Gold Coin",
-      "amount": "1000 - 2000",
-      "rate": "100%"
-    },
-    {
-      "item": "Dog Coin",
-      "amount": "14 - 21",
-      "rate": "100%"
-    },
-    {
-      "item": "Training Manual (XL)",
-      "amount": "1 - 1",
-      "rate": "20%"
-    }
-  ],
-  "mossanda": [
-    {
-      "item": "Mushroom",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Tomato Seeds",
-      "amount": "1 - 1",
-      "rate": "50%"
-    },
-    {
-      "item": "Onion Seeds",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "mossanda-lux": [
-    {
-      "item": "Mushroom",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Electric Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "mozzarina": [
-    {
-      "item": "Mozzarina Meat",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Milk",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "munchill": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Munchill Meat",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "necromus": [
-    {
-      "item": "Pal Metal Ingot",
-      "amount": "10 - 10",
-      "rate": "100%"
-    },
-    {
-      "item": "Large Pal Soul",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "neptilius": [
-    {
-      "item": "Pure Quartz",
-      "amount": "10 - 10",
-      "rate": "100%"
-    },
-    {
-      "item": "Polymer",
-      "amount": "5 - 5",
-      "rate": "100%"
-    },
-    {
-      "item": "Carbon Fiber",
-      "amount": "5 - 5",
-      "rate": "100%"
-    },
-    {
-      "item": "Diamond",
-      "amount": "1 - 1",
-      "rate": "30%"
-    },
-    {
-      "item": "Large Pal Soul",
-      "amount": "1 - 1",
-      "rate": "1%"
-    }
-  ],
-  "nitemary": [
-    {
-      "item": "Small Pal Soul",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "nitewing": [
-    {
-      "item": "Leather",
-      "amount": "1 - 3",
-      "rate": "100%"
-    }
-  ],
-  "nox": [
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Small Pal Soul",
-      "amount": "1 - 1",
-      "rate": "40%"
-    }
-  ],
-  "nyafia": [
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "omascul": [
-    {
-      "item": "Dark Fragment",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "orserk": [
-    {
-      "item": "Electric Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "paladius": [
-    {
-      "item": "Pal Metal Ingot",
-      "amount": "10 - 10",
-      "rate": "100%"
-    },
-    {
-      "item": "Diamond",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "palumba": [
-    {
-      "item": "Bone",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "pengullet": [
-    {
-      "item": "Ice Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "pengullet-lux": [
-    {
-      "item": "Electric Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "penking": [
-    {
-      "item": "Ice Organ",
-      "amount": "1 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Penking Plume",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "penking-lux": [
-    {
-      "item": "Electric Organ",
-      "amount": "1 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Penking Plume",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "petallia": [
-    {
-      "item": "Beautiful Flower",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "polapup": [
-    {
-      "item": "Ice Organ",
-      "amount": "1 - 3",
-      "rate": "100%"
-    }
-  ],
-  "prixter": [
-    {
-      "item": "Venom Gland",
-      "amount": "4 - 5",
-      "rate": "100%"
-    }
-  ],
-  "prunelia": [
-    {
-      "item": "Low Grade Medical Supplies",
-      "amount": "1 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Beautiful Flower",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Carrot Seeds",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
   "purple-slime": [
     {
       "item": "Hallowed Bar",
       "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "pyrin": [
-    {
-      "item": "Flame Organ",
-      "amount": "4 - 5",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "pyrin-noct": [
-    {
-      "item": "Flame Organ",
-      "amount": "4 - 5",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "quivern": [
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "3 - 3",
-      "rate": "100%"
-    }
-  ],
-  "quivern-botan": [
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "3 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Beautiful Flower",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Red Berries",
-      "amount": "1 - 2",
-      "rate": "60%"
-    }
-  ],
-  "ragnahawk": [
-    {
-      "item": "Flame Organ",
-      "amount": "5 - 7",
       "rate": "100%"
     }
   ],
@@ -1980,690 +2660,10 @@
       "rate": "100%"
     }
   ],
-  "rayhound": [
-    {
-      "item": "Electric Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
   "red-slime": [
     {
       "item": "Hallowed Bar",
       "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "reindrix": [
-    {
-      "item": "Reindrix Venison",
-      "amount": "2 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Horn",
-      "amount": "2 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Ice Organ",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "relaxaurus": [
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "1 - 4",
-      "rate": "100%"
-    },
-    {
-      "item": "Ruby",
-      "amount": "1 - 1",
-      "rate": "5%"
-    }
-  ],
-  "relaxaurus-lux": [
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "1 - 4",
-      "rate": "100%"
-    },
-    {
-      "item": "Electric Organ",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Sapphire",
-      "amount": "1 - 1",
-      "rate": "5%"
-    }
-  ],
-  "reptyro": [
-    {
-      "item": "Flame Organ",
-      "amount": "5 - 7",
-      "rate": "100%"
-    }
-  ],
-  "reptyro-cryst": [
-    {
-      "item": "Ice Organ",
-      "amount": "3 - 4",
-      "rate": "100%"
-    }
-  ],
-  "ribbuny": [
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Beautiful Flower",
-      "amount": "1 - 1",
-      "rate": "5%"
-    },
-    {
-      "item": "Ribbuny Ribbon",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "ribbuny-botan": [
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Beautiful Flower",
-      "amount": "1 - 1",
-      "rate": "5%"
-    },
-    {
-      "item": "Ribbuny Ribbon",
-      "amount": "1 - 1",
-      "rate": "50%"
-    },
-    {
-      "item": "Potato Seeds",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "robinquill": [
-    {
-      "item": "Wheat Seeds",
-      "amount": "1 - 2",
-      "rate": "50%"
-    },
-    {
-      "item": "Arrow",
-      "amount": "2 - 4",
-      "rate": "100%"
-    },
-    {
-      "item": "Potato Seeds",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "robinquill-terra": [
-    {
-      "item": "Wheat Seeds",
-      "amount": "1 - 2",
-      "rate": "50%"
-    },
-    {
-      "item": "Arrow",
-      "amount": "2 - 4",
-      "rate": "100%"
-    },
-    {
-      "item": "Potato Seeds",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "rooby": [
-    {
-      "item": "Flame Organ",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "rushoar": [
-    {
-      "item": "Rushoar Pork",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Bone",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "selyne": [
-    {
-      "item": "Cloth",
-      "amount": "1 - 2",
-      "rate": "60%"
-    },
-    {
-      "item": "Sapphire",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Precious Claw",
-      "amount": "1 - 1",
-      "rate": "30%"
-    }
-  ],
-  "shadowbeak": [
-    {
-      "item": "Pal Metal Ingot",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Carbon Fiber",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Innovative Technical Manual",
-      "amount": "1 - 1",
-      "rate": "10%"
-    }
-  ],
-  "shroomer": [
-    {
-      "item": "Mushroom",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Red Berries",
-      "amount": "1 - 2",
-      "rate": "60%"
-    }
-  ],
-  "shroomer-noct": [
-    {
-      "item": "Venom Gland",
-      "amount": "4 - 8",
-      "rate": "100%"
-    },
-    {
-      "item": "Mysterious Mushroom",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "sibelyx": [
-    {
-      "item": "High Quality Cloth",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Ice Organ",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "silvegis": [
-    {
-      "item": "Chromite",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "smokie": [
-    {
-      "item": "Bone",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Crude Oil",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "sootseer": [
-    {
-      "item": "Medium Pal Soul",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Bone",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Crude Oil",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "sparkit": [
-    {
-      "item": "Electric Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "splatterina": [
-    {
-      "item": "Dark Fragment",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "starryon": [
-    {
-      "item": "Leather",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Dark Fragment",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "surfent": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "surfent-terra": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    }
-  ],
-  "suzaku": [
-    {
-      "item": "Flame Organ",
-      "amount": "5 - 10",
-      "rate": "100%"
-    }
-  ],
-  "suzaku-aqua": [
-    {
-      "item": "Pal Fluids",
-      "amount": "5 - 5",
-      "rate": "100%"
-    }
-  ],
-  "swee": [
-    {
-      "item": "Wool",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Swee Hair",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "sweepa": [
-    {
-      "item": "Wool",
-      "amount": "3 - 5",
-      "rate": "100%"
-    }
-  ],
-  "tanzee": [
-    {
-      "item": "Mushroom",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "tarantriss": [
-    {
-      "item": "Fiber",
-      "amount": "2 - 5",
-      "rate": "100%"
-    },
-    {
-      "item": "Venom Gland",
-      "amount": "2 - 5",
-      "rate": "100%"
-    }
-  ],
-  "teafant": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "tocotoco": [
-    {
-      "item": "Gunpowder",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Tocotoco Feather",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "tombat": [
-    {
-      "item": "Leather",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Small Pal Soul",
-      "amount": "1 - 1",
-      "rate": "1%"
-    }
-  ],
-  "turtacle": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Bone",
-      "amount": "2 - 3",
-      "rate": "100%"
-    }
-  ],
-  "turtacle-terra": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Bone",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "univolt": [
-    {
-      "item": "Leather",
-      "amount": "2 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Electric Organ",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Horn",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "vaelet": [
-    {
-      "item": "Low Grade Medical Supplies",
-      "amount": "2 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Tomato Seeds",
-      "amount": "1 - 1",
-      "rate": "50%"
-    },
-    {
-      "item": "Onion Seeds",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "vanwyrm": [
-    {
-      "item": "Bone",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Ruby",
-      "amount": "1 - 2",
-      "rate": "1%"
-    },
-    {
-      "item": "Gold Coin",
-      "amount": "10 - 40",
-      "rate": "10%"
-    }
-  ],
-  "vanwyrm-cryst": [
-    {
-      "item": "Bone",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Ice Organ",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Sapphire",
-      "amount": "1 - 1",
-      "rate": "2%"
-    }
-  ],
-  "verdash": [
-    {
-      "item": "Leather",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Bone",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "vixy": [
-    {
-      "item": "Leather",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Bone",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "warsect": [
-    {
-      "item": "Honey",
-      "amount": "3 - 4",
-      "rate": "100%"
-    }
-  ],
-  "warsect-terra": [
-    {
-      "item": "Honey",
-      "amount": "3 - 4",
-      "rate": "100%"
-    }
-  ],
-  "whalaska": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Coralum Ore",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Ice Organ",
-      "amount": "1 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Large Pal Soul",
-      "amount": "1 - 1",
-      "rate": "1%"
-    }
-  ],
-  "whalaska-ignis": [
-    {
-      "item": "Pal Fluids",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "Coralum Ore",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Flame Organ",
-      "amount": "1 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Large Pal Soul",
-      "amount": "1 - 1",
-      "rate": "1%"
-    }
-  ],
-  "wixen": [
-    {
-      "item": "Flame Organ",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "High Grade Technical Manual",
-      "amount": "1 - 1",
-      "rate": "1%"
-    }
-  ],
-  "wixen-noct": [
-    {
-      "item": "Medium Pal Soul",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "High Grade Technical Manual",
-      "amount": "1 - 1",
-      "rate": "1%"
-    }
-  ],
-  "woolipop": [
-    {
-      "item": "Cotton Candy",
-      "amount": "1 - 2",
-      "rate": "100%"
-    },
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "1 - 1",
-      "rate": "100%"
-    }
-  ],
-  "wumpo": [
-    {
-      "item": "Ice Organ",
-      "amount": "2 - 3",
-      "rate": "100%"
-    },
-    {
-      "item": "Beautiful Flower",
-      "amount": "1 - 1",
-      "rate": "20%"
-    }
-  ],
-  "wumpo-botan": [
-    {
-      "item": "Lettuce Seeds",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Tomato Seeds",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Beautiful Flower",
-      "amount": "1 - 1",
-      "rate": "20%"
-    },
-    {
-      "item": "Carrot Seeds",
-      "amount": "1 - 1",
-      "rate": "50%"
-    }
-  ],
-  "xenogard": [
-    {
-      "item": "Meteorite Fragment",
-      "amount": "5 - 12",
-      "rate": "100%"
-    },
-    {
-      "item": "High Quality Pal Oil",
-      "amount": "3 - 5",
-      "rate": "100%"
-    }
-  ],
-  "xenolord": [
-    {
-      "item": "Meteorite Fragment",
-      "amount": "7 - 15",
-      "rate": "100%"
-    }
-  ],
-  "xenovader": [
-    {
-      "item": "Meteorite Fragment",
-      "amount": "3 - 10",
-      "rate": "100%"
-    }
-  ],
-  "yakumo": [
-    {
-      "item": "Leather",
-      "amount": "1 - 2",
       "rate": "100%"
     }
   ]
