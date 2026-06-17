@@ -57,8 +57,10 @@ camp** (gestion des camps) et **📖 Palpedia** (référence de tous les Pals).
 - **Catalogue à onglets** : « 🐾 Pals » (227, recherche + filtre compétence + filtre
   🌙 nuit) et « 🏗️ Constructions » (69, recherche + filtre catégorie). Chaque Pal affiche
   son **rang Workers** (« Tier S/A/B/C/D », coloré) issu de la tier-list palworld.gg.
-- **Palpedia** : tableau de tous les Pals avec leurs compétences et leurs **rangs dans les
-  5 tier-lists** (Global, Workers, Combat, Vol, Sol) ; la vitesse est indiquée pour les montures.
+- **Palpedia** : tableau triable de tous les Pals (clic sur un en-tête) avec, par Pal :
+  **niveau**, **rareté**, **taux de capture**, **compétences** et **rangs dans les 5
+  tier-lists** (Global, Workers, Combat, Vol, Sol — vitesse pour les montures). Le nom
+  renvoie à la fiche palworld.gg, et un lien mène au calculateur de capture.
 - **Exemplaires** : `+` pour ajouter, compteur `− [n] +` puis `×` pour retirer, aussi bien
   pour les Pals que pour les constructions.
 - **Limite de Pals modifiable** par camp (défaut 15) ; les `+` se désactivent une fois atteinte.
@@ -79,9 +81,10 @@ par le script `build_data.py`. Après avoir modifié un CSV :
 python build_data.py
 ```
 
-`build_data.py` fait tout en une commande : il lit les CSV **et** récupère les rangs de
-tier-list depuis [palworld.gg](https://palworld.gg/tier-list/base-work), puis les fusionne
-dans chaque Pal de `data/pals.json` (champs `tiers` et `mountSpeed`).
+`build_data.py` fait tout en une commande : il lit les CSV **et** récupère depuis
+[palworld.gg](https://palworld.gg) les rangs de tier-list **et** les données de jeu
+(niveau, rareté, taux de capture, stats), puis fusionne le tout dans chaque Pal de
+`data/pals.json`.
 
 Tu peux aussi éditer directement les fichiers JSON.
 
@@ -99,6 +102,19 @@ Les 5 onglets de tier-list du site sont extraits et fusionnés dans les Pals :
 
 > `data/tier-lists.json` n'est qu'un cache intermédiaire : l'application ne lit que
 > `data/pals.json` (et `docs/data.js`).
+
+### Données de jeu (niveau, rareté, capture, stats)
+
+- [`fetch_pal_data.py`](fetch_pal_data.py) récupère le dataset complet du jeu depuis les
+  bundles JS du calculateur `palworld.gg/capture-rate` (noms de fichiers hashés découverts
+  dynamiquement, bundle anglais sélectionné par couverture des noms), et écrit le cache
+  technique `data/pal-data.json`.
+- `build_data.py` fusionne ces données dans chaque Pal : `level` (niveau Alpha/suggéré,
+  `1` pour les boss de raid sans spawn sauvage), `rarity` + `rarityCategory`
+  (Common/Rare/Epic/Legendary), `captureRate` (multiplicateur, plus haut = plus facile)
+  et `zukan` (n° de Paldeck).
+- Même logique de **fetch live + repli sur cache** que les tier-lists. Rafraîchir seul :
+  `python fetch_pal_data.py`.
 
 ### Format d'une construction (`data/structures.json`)
 
@@ -119,7 +135,13 @@ contient les libellés français séparés par des virgules (ex. `Plantation, Ar
   "work": { "gathering": 3 },
   "nightWorker": false,
   "tiers": { "overall": "S", "workers": "C", "combat": "A", "flyingMount": "S", "groundMount": null },
-  "mountSpeed": { "flying": "1700 - 3300" }
+  "mountSpeed": { "flying": "1700 - 3300" },
+  "slug": "jetragon",
+  "level": 60,
+  "rarity": 20,
+  "rarityCategory": "Legendary",
+  "captureRate": 1.0,
+  "zukan": 111
 }
 ```
 
@@ -127,6 +149,9 @@ contient les libellés français séparés par des virgules (ex. `Plantation, Ar
 - `name` : nom affiché (sert à la recherche).
 - `work` : niveaux de compétence. Indique **seulement** les compétences possédées
   (les absentes valent 0). Niveaux de 1 à 4.
+- `slug`, `level`, `rarity`, `rarityCategory`, `captureRate`, `zukan` :
+  données palworld.gg (voir « Données de jeu » ci-dessus). Absents pour les 2 Pals non
+  présents sur palworld.gg (`Hartalis`, `Zoe & Grizzbolt`). `slug` sert au lien vers la fiche.
 - `nightWorker` : `true` si travailleur de nuit, sinon `false`.
 - `tiers` : rang dans chacun des 5 onglets de tier-list (`S`/`A`/`B`/`C`/`D`, ou `null`
   si le Pal n'y figure pas). Clés : `overall`, `workers`, `combat`, `flyingMount`,

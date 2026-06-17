@@ -14,7 +14,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "anubis",
+    "level": 47,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 100
   },
   {
     "id": 2,
@@ -31,9 +37,15 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "arsox",
     "mountSpeed": {
       "ground": "700 - 1050"
-    }
+    },
+    "level": 9,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 42
   },
   {
     "id": 3,
@@ -50,9 +62,15 @@
       "flyingMount": "D",
       "groundMount": null
     },
+    "slug": "astegon",
     "mountSpeed": {
       "flying": "700 - 1100"
-    }
+    },
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 98
   },
   {
     "id": 4,
@@ -69,9 +87,15 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "azurmane",
     "mountSpeed": {
       "ground": "900 - 1260"
-    }
+    },
+    "level": 57,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 136
   },
   {
     "id": 5,
@@ -87,9 +111,15 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "azurobe",
     "mountSpeed": {
       "ground": "600 - 900"
-    }
+    },
+    "level": 18,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 82
   },
   {
     "id": 6,
@@ -104,7 +134,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "azurobe-cryst",
+    "level": 1,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 82
   },
   {
     "id": 7,
@@ -122,9 +158,15 @@
       "flyingMount": null,
       "groundMount": "A"
     },
+    "slug": "bastigor",
     "mountSpeed": {
       "ground": "750 - 1100"
-    }
+    },
+    "level": 1,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 137
   },
   {
     "id": 8,
@@ -142,9 +184,15 @@
       "flyingMount": "C",
       "groundMount": null
     },
+    "slug": "beakon",
     "mountSpeed": {
       "flying": "750 - 1200"
-    }
+    },
+    "level": 33,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 73
   },
   {
     "id": 9,
@@ -165,7 +213,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "beegarde",
+    "level": 25,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 50
   },
   {
     "id": 10,
@@ -182,7 +236,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "bellanoir",
+    "level": 1,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 112
   },
   {
     "id": 11,
@@ -199,7 +259,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "bellanoir-libero",
+    "level": 1,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 112
   },
   {
     "id": 12,
@@ -216,9 +282,15 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "blazamut",
     "mountSpeed": {
       "ground": "800 - 1200"
-    }
+    },
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 96
   },
   {
     "id": 13,
@@ -234,7 +306,13 @@
       "combat": "S",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "blazamut-ryu",
+    "level": 1,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 96
   },
   {
     "id": 14,
@@ -251,9 +329,15 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "blazehowl",
     "mountSpeed": {
       "ground": "800 - 1200"
-    }
+    },
+    "level": 34,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 84
   },
   {
     "id": 15,
@@ -269,7 +353,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "blazehowl-noct",
+    "level": 33,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 84
   },
   {
     "id": 16,
@@ -284,7 +374,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "blue-slime",
+    "level": 33,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 17,
@@ -301,7 +397,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "braloha",
+    "level": 40,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 145
   },
   {
     "id": 18,
@@ -320,7 +422,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "bristla",
+    "level": 16,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 30
   },
   {
     "id": 19,
@@ -336,9 +444,15 @@
       "flyingMount": null,
       "groundMount": "D"
     },
+    "slug": "broncherry",
     "mountSpeed": {
       "ground": "550 - 1020"
-    }
+    },
+    "level": 17,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 86
   },
   {
     "id": 20,
@@ -353,7 +467,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "broncherry-aqua",
+    "level": 30,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 86
   },
   {
     "id": 21,
@@ -372,7 +492,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "bushi",
+    "level": 34,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 72
   },
   {
     "id": 22,
@@ -391,7 +517,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "bushi-noct",
+    "level": 50,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 72
   },
   {
     "id": 23,
@@ -407,7 +539,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "caprity",
+    "level": 9,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 35
   },
   {
     "id": 24,
@@ -423,7 +561,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "caprity-noct",
+    "level": 50,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 35
   },
   {
     "id": 25,
@@ -441,7 +585,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "cattiva",
+    "level": 1,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.5,
+    "zukan": 2
   },
   {
     "id": 26,
@@ -456,7 +606,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "cave-bat",
+    "level": 36,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 27,
@@ -471,7 +627,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "cawgnito",
+    "level": 12,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 44
   },
   {
     "id": 28,
@@ -487,7 +649,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "celaray",
+    "level": 2,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 25
   },
   {
     "id": 29,
@@ -504,7 +672,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "celaray-lux",
+    "level": 1,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 25
   },
   {
     "id": 30,
@@ -521,9 +695,15 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "celesdir",
     "mountSpeed": {
       "ground": "800 - 1200"
-    }
+    },
+    "level": 57,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 132
   },
   {
     "id": 31,
@@ -539,7 +719,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "chikipi",
+    "level": 1,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.5,
+    "zukan": 3
   },
   {
     "id": 32,
@@ -556,9 +742,15 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "chillet",
     "mountSpeed": {
       "ground": "750 - 1050"
-    }
+    },
+    "level": 20,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 55
   },
   {
     "id": 33,
@@ -574,7 +766,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "chillet-ignis",
+    "level": 42,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 55
   },
   {
     "id": 34,
@@ -590,7 +788,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "cinnamoth",
+    "level": 18,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 41
   },
   {
     "id": 35,
@@ -606,7 +810,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "cremis",
+    "level": 2,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.3,
+    "zukan": 18
   },
   {
     "id": 36,
@@ -624,7 +834,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "croajiro",
+    "level": 4,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 114
   },
   {
     "id": 37,
@@ -642,7 +858,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "croajiro-noct",
+    "level": 1,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 114
   },
   {
     "id": 38,
@@ -660,7 +882,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "cryolinx",
+    "level": 36,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 83
   },
   {
     "id": 39,
@@ -678,7 +906,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "cryolinx-terra",
+    "level": 51,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 83
   },
   {
     "id": 40,
@@ -695,7 +929,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "daedream",
+    "level": 4,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 19
   },
   {
     "id": 41,
@@ -711,9 +951,15 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "dazemu",
     "mountSpeed": {
       "ground": "900 - 1200"
-    }
+    },
+    "level": 18,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 123
   },
   {
     "id": 42,
@@ -730,7 +976,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "dazzi",
+    "level": 24,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 62
   },
   {
     "id": 43,
@@ -748,7 +1000,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "dazzi-noct",
+    "level": 50,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 62
   },
   {
     "id": 44,
@@ -763,7 +1021,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "demon-eye",
+    "level": 33,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 45,
@@ -780,7 +1044,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "depresso",
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 17
   },
   {
     "id": 46,
@@ -795,7 +1065,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "digtoise",
+    "level": 18,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 67
   },
   {
     "id": 47,
@@ -812,9 +1088,15 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "dinossom",
     "mountSpeed": {
       "ground": "700 - 1030"
-    }
+    },
+    "level": 14,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 64
   },
   {
     "id": 48,
@@ -830,7 +1112,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "dinossom-lux",
+    "level": 32,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 64
   },
   {
     "id": 49,
@@ -846,9 +1134,15 @@
       "flyingMount": null,
       "groundMount": "A"
     },
+    "slug": "direhowl",
     "mountSpeed": {
       "ground": "800 - 1050"
-    }
+    },
+    "level": 5,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 26
   },
   {
     "id": 50,
@@ -867,7 +1161,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "dogen",
+    "level": 50,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 122
   },
   {
     "id": 51,
@@ -885,7 +1185,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "dumud",
+    "level": 17,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 43
   },
   {
     "id": 52,
@@ -903,7 +1209,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "dumud-gild",
+    "level": 33,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 43
   },
   {
     "id": 53,
@@ -919,9 +1231,15 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "eikthyrdeer",
     "mountSpeed": {
       "ground": "700 - 900"
-    }
+    },
+    "level": 1,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 37
   },
   {
     "id": 54,
@@ -936,7 +1254,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "eikthyrdeer-terra",
+    "level": 18,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 37
   },
   {
     "id": 55,
@@ -955,7 +1279,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "elizabee",
+    "level": 28,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 51
   },
   {
     "id": 56,
@@ -971,9 +1301,15 @@
       "flyingMount": "D",
       "groundMount": null
     },
+    "slug": "elphidran",
     "mountSpeed": {
       "flying": "630 - 800"
-    }
+    },
+    "level": 18,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 80
   },
   {
     "id": 57,
@@ -990,9 +1326,15 @@
       "flyingMount": "D",
       "groundMount": null
     },
+    "slug": "elphidran-aqua",
     "mountSpeed": {
       "flying": "630 - 800"
-    }
+    },
+    "level": 1,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 80
   },
   {
     "id": 58,
@@ -1007,7 +1349,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "enchanted-sword",
+    "level": 42,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 59,
@@ -1022,7 +1370,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "eye-of-cthulhu",
+    "level": 45,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 60,
@@ -1039,9 +1393,15 @@
       "flyingMount": "A",
       "groundMount": null
     },
+    "slug": "faleris",
     "mountSpeed": {
       "flying": "1000 - 1400"
-    }
+    },
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 105
   },
   {
     "id": 61,
@@ -1058,9 +1418,15 @@
       "flyingMount": "A",
       "groundMount": null
     },
+    "slug": "faleris-aqua",
     "mountSpeed": {
       "flying": "1000 - 1400"
-    }
+    },
+    "level": 52,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 105
   },
   {
     "id": 62,
@@ -1075,7 +1441,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "felbat",
+    "level": 20,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 94
   },
   {
     "id": 63,
@@ -1091,9 +1463,15 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "fenglope",
     "mountSpeed": {
       "ground": "750 - 1050"
-    }
+    },
+    "level": 34,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 93
   },
   {
     "id": 64,
@@ -1109,7 +1487,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "fenglope-lux",
+    "level": 57,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 93
   },
   {
     "id": 65,
@@ -1125,7 +1509,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "finsider",
+    "level": 30,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 152
   },
   {
     "id": 66,
@@ -1142,7 +1532,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "finsider-ignis",
+    "level": 1,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 152
   },
   {
     "id": 67,
@@ -1160,7 +1556,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "flambelle",
+    "level": 24,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 70
   },
   {
     "id": 68,
@@ -1179,7 +1581,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "flopie",
+    "level": 15,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 28
   },
   {
     "id": 69,
@@ -1194,7 +1602,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "foxcicle",
+    "level": 24,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 57
   },
   {
     "id": 70,
@@ -1209,7 +1623,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "foxparks",
+    "level": 15,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 5
   },
   {
     "id": 71,
@@ -1224,7 +1644,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "foxparks-cryst",
+    "level": 50,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 5
   },
   {
     "id": 72,
@@ -1240,9 +1666,15 @@
       "flyingMount": "A",
       "groundMount": null
     },
+    "slug": "frostallion",
     "mountSpeed": {
       "flying": "1200 - 1800"
-    }
+    },
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 110
   },
   {
     "id": 73,
@@ -1258,9 +1690,15 @@
       "flyingMount": "A",
       "groundMount": null
     },
+    "slug": "frostallion-noct",
     "mountSpeed": {
       "flying": "1200 - 1800"
-    }
+    },
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 110
   },
   {
     "id": 74,
@@ -1276,7 +1714,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "frostplume",
+    "level": 10,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 143
   },
   {
     "id": 75,
@@ -1293,7 +1737,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "fuack",
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 6
   },
   {
     "id": 76,
@@ -1311,7 +1761,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "fuack-ignis",
+    "level": 1,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 6
   },
   {
     "id": 77,
@@ -1328,7 +1784,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "fuddler",
+    "level": 14,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 22
   },
   {
     "id": 78,
@@ -1343,7 +1805,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "galeclaw",
+    "level": 9,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 47
   },
   {
     "id": 79,
@@ -1359,7 +1827,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "ghangler",
+    "level": 15,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 153
   },
   {
     "id": 80,
@@ -1376,7 +1850,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "ghangler-ignis",
+    "level": 1,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 153
   },
   {
     "id": 81,
@@ -1392,9 +1872,15 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "gildane",
     "mountSpeed": {
       "ground": "840 - 1260"
-    }
+    },
+    "level": 52,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 140
   },
   {
     "id": 82,
@@ -1411,7 +1897,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "gloopie",
+    "level": 12,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 151
   },
   {
     "id": 83,
@@ -1428,7 +1920,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "gobfin",
+    "level": 20,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 31
   },
   {
     "id": 84,
@@ -1445,7 +1943,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "gobfin-ignis",
+    "level": 23,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 31
   },
   {
     "id": 85,
@@ -1462,7 +1966,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "gorirat",
+    "level": 22,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 49
   },
   {
     "id": 86,
@@ -1479,7 +1989,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "gorirat-terra",
+    "level": 42,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 49
   },
   {
     "id": 87,
@@ -1494,7 +2010,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "green-slime",
+    "level": 33,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 88,
@@ -1510,9 +2032,15 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "grintale",
     "mountSpeed": {
       "ground": "650 - 1000"
-    }
+    },
+    "level": 25,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 52
   },
   {
     "id": 89,
@@ -1530,7 +2058,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "grizzbolt",
+    "level": 18,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 103
   },
   {
     "id": 90,
@@ -1545,7 +2079,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "gumoss",
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.3,
+    "zukan": 13
   },
   {
     "id": 91,
@@ -1562,7 +2102,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "hangyu",
+    "level": 14,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 32
   },
   {
     "id": 92,
@@ -1580,7 +2126,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "hangyu-cryst",
+    "level": 33,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 32
   },
   {
     "id": 93,
@@ -1612,9 +2164,15 @@
       "flyingMount": "C",
       "groundMount": null
     },
+    "slug": "helzephyr",
     "mountSpeed": {
       "flying": "700 - 1100"
-    }
+    },
+    "level": 25,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 97
   },
   {
     "id": 95,
@@ -1631,9 +2189,15 @@
       "flyingMount": "C",
       "groundMount": null
     },
+    "slug": "helzephyr-lux",
     "mountSpeed": {
       "flying": "700 - 1100"
-    }
+    },
+    "level": 46,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 97
   },
   {
     "id": 96,
@@ -1650,7 +2214,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "herbil",
+    "level": 33,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 141
   },
   {
     "id": 97,
@@ -1665,7 +2235,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "hoocrates",
+    "level": 4,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 15
   },
   {
     "id": 98,
@@ -1683,7 +2259,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "icelyn",
+    "level": 42,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 142
   },
   {
     "id": 99,
@@ -1698,7 +2280,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "illuminant-bat",
+    "level": 42,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 100,
@@ -1713,7 +2301,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "illuminant-slime",
+    "level": 42,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 101,
@@ -1731,7 +2325,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "incineram",
+    "level": 27,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 40
   },
   {
     "id": 102,
@@ -1748,7 +2348,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "incineram-noct",
+    "level": 40,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 40
   },
   {
     "id": 103,
@@ -1765,7 +2371,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "jelliette",
+    "level": 12,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 150
   },
   {
     "id": 104,
@@ -1783,7 +2395,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "jellroy",
+    "level": 39,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 149
   },
   {
     "id": 105,
@@ -1799,9 +2417,15 @@
       "flyingMount": "S",
       "groundMount": null
     },
+    "slug": "jetragon",
     "mountSpeed": {
       "flying": "1700 - 3300"
-    }
+    },
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 111
   },
   {
     "id": 106,
@@ -1816,7 +2440,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "jolthog",
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.2,
+    "zukan": 12
   },
   {
     "id": 107,
@@ -1831,7 +2461,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "jolthog-cryst",
+    "level": 1,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 12
   },
   {
     "id": 108,
@@ -1847,9 +2483,15 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "jormuntide",
     "mountSpeed": {
       "ground": "600 - 1000"
-    }
+    },
+    "level": 45,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 101
   },
   {
     "id": 109,
@@ -1865,9 +2507,15 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "jormuntide-ignis",
     "mountSpeed": {
       "ground": "600 - 1000"
-    }
+    },
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 101
   },
   {
     "id": 110,
@@ -1884,7 +2532,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "katress",
+    "level": 25,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 75
   },
   {
     "id": 111,
@@ -1902,7 +2556,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "katress-ignis",
+    "level": 40,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 75
   },
   {
     "id": 112,
@@ -1918,7 +2578,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "kelpsea",
+    "level": 9,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 81
   },
   {
     "id": 113,
@@ -1934,7 +2600,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "kelpsea-ignis",
+    "level": 24,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 81
   },
   {
     "id": 114,
@@ -1949,7 +2621,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "kikit",
+    "level": 40,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 117
   },
   {
     "id": 115,
@@ -1966,7 +2644,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "killamari",
+    "level": 5,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 23
   },
   {
     "id": 116,
@@ -1983,7 +2667,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "killamari-primo",
+    "level": 42,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 23
   },
   {
     "id": 117,
@@ -1999,9 +2689,15 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "kingpaca",
     "mountSpeed": {
       "ground": "700 - 1040"
-    }
+    },
+    "level": 40,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 89
   },
   {
     "id": 118,
@@ -2017,7 +2713,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "kingpaca-cryst",
+    "level": 46,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 89
   },
   {
     "id": 119,
@@ -2033,9 +2735,15 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "kitsun",
     "mountSpeed": {
       "ground": "700 - 1100"
-    }
+    },
+    "level": 28,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 61
   },
   {
     "id": 120,
@@ -2050,7 +2758,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "kitsun-noct",
+    "level": 57,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 61
   },
   {
     "id": 121,
@@ -2067,7 +2781,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "knocklem",
+    "level": 55,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 120
   },
   {
     "id": 122,
@@ -2084,7 +2804,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "lamball",
+    "level": 1,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.5,
+    "zukan": 1
   },
   {
     "id": 123,
@@ -2101,7 +2827,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "leezpunk",
+    "level": 26,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 45
   },
   {
     "id": 124,
@@ -2119,7 +2851,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "leezpunk-ignis",
+    "level": 25,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 45
   },
   {
     "id": 125,
@@ -2138,7 +2876,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "lifmunk",
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 0.9,
+    "zukan": 4
   },
   {
     "id": 126,
@@ -2153,7 +2897,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "loupmoon",
+    "level": 12,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 46
   },
   {
     "id": 127,
@@ -2169,7 +2919,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "loupmoon-cryst",
+    "level": 50,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 46
   },
   {
     "id": 128,
@@ -2187,7 +2943,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "lovander",
+    "level": 18,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 69
   },
   {
     "id": 129,
@@ -2205,7 +2967,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "lullu",
+    "level": 40,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 115
   },
   {
     "id": 130,
@@ -2222,7 +2990,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "lunaris",
+    "level": 38,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 63
   },
   {
     "id": 131,
@@ -2240,7 +3014,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "lyleen",
+    "level": 15,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 104
   },
   {
     "id": 132,
@@ -2257,7 +3037,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "lyleen-noct",
+    "level": 49,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 104
   },
   {
     "id": 133,
@@ -2275,9 +3061,15 @@
       "flyingMount": null,
       "groundMount": "D"
     },
+    "slug": "mammorest",
     "mountSpeed": {
       "ground": "600 - 1030"
-    }
+    },
+    "level": 33,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 90
   },
   {
     "id": 134,
@@ -2294,7 +3086,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "mammorest-cryst",
+    "level": 41,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 90
   },
   {
     "id": 135,
@@ -2311,9 +3109,15 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "maraith",
     "mountSpeed": {
       "ground": "700 - 1100"
-    }
+    },
+    "level": 36,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 66
   },
   {
     "id": 136,
@@ -2328,7 +3132,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "mau",
+    "level": 5,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 24
   },
   {
     "id": 137,
@@ -2344,7 +3154,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "mau-cryst",
+    "level": 30,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 24
   },
   {
     "id": 138,
@@ -2360,9 +3176,15 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "melpaca",
     "mountSpeed": {
       "ground": "500 - 900"
-    }
+    },
+    "level": 5,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 36
   },
   {
     "id": 139,
@@ -2378,7 +3200,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "menasting",
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 99
   },
   {
     "id": 140,
@@ -2394,7 +3222,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "menasting-terra",
+    "level": 54,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 99
   },
   {
     "id": 141,
@@ -2410,7 +3244,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "mimog",
+    "level": 9,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 0.8,
+    "zukan": 124
   },
   {
     "id": 142,
@@ -2428,7 +3268,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "mossanda",
+    "level": 25,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 33
   },
   {
     "id": 143,
@@ -2446,7 +3292,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "mossanda-lux",
+    "level": 35,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 33
   },
   {
     "id": 144,
@@ -2461,7 +3313,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "mozzarina",
+    "level": 10,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 29
   },
   {
     "id": 145,
@@ -2478,7 +3336,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "munchill",
+    "level": 10,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 146
   },
   {
     "id": 146,
@@ -2495,9 +3359,15 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "necromus",
     "mountSpeed": {
       "ground": "1300 - 1900"
-    }
+    },
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 109
   },
   {
     "id": 147,
@@ -2512,7 +3382,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "neptilius",
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 155
   },
   {
     "id": 148,
@@ -2528,7 +3404,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "nitemary",
+    "level": 50,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 128
   },
   {
     "id": 149,
@@ -2544,9 +3426,15 @@
       "flyingMount": "D",
       "groundMount": null
     },
+    "slug": "nitewing",
     "mountSpeed": {
       "flying": "600 - 750"
-    }
+    },
+    "level": 9,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 38
   },
   {
     "id": 150,
@@ -2561,7 +3449,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "nox",
+    "level": 5,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 21
   },
   {
     "id": 151,
@@ -2579,7 +3473,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "nyafia",
+    "level": 50,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 139
   },
   {
     "id": 152,
@@ -2594,7 +3494,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "omascul",
+    "level": 50,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 133
   },
   {
     "id": 153,
@@ -2611,7 +3517,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "orserk",
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 106
   },
   {
     "id": 154,
@@ -2628,9 +3540,15 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "paladius",
     "mountSpeed": {
       "ground": "800 - 1800"
-    }
+    },
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 108
   },
   {
     "id": 155,
@@ -2647,7 +3565,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "palumba",
+    "level": 40,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 144
   },
   {
     "id": 156,
@@ -2665,7 +3589,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "pengullet",
+    "level": 10,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 0.9,
+    "zukan": 10
   },
   {
     "id": 157,
@@ -2683,7 +3613,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "pengullet-lux",
+    "level": 1,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 0.9,
+    "zukan": 10
   },
   {
     "id": 158,
@@ -2702,7 +3638,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "penking",
+    "level": 18,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 11
   },
   {
     "id": 159,
@@ -2721,7 +3663,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "penking-lux",
+    "level": 1,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 11
   },
   {
     "id": 160,
@@ -2740,7 +3688,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "petallia",
+    "level": 18,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 87
   },
   {
     "id": 161,
@@ -2756,7 +3710,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "polapup",
+    "level": 5,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 147
   },
   {
     "id": 162,
@@ -2773,7 +3733,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "prixter",
+    "level": 43,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 119
   },
   {
     "id": 163,
@@ -2792,7 +3758,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "prunelia",
+    "level": 50,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 138
   },
   {
     "id": 164,
@@ -2807,7 +3779,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "purple-slime",
+    "level": 36,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 165,
@@ -2824,9 +3802,15 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "pyrin",
     "mountSpeed": {
       "ground": "850 - 1300"
-    }
+    },
+    "level": 28,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 58
   },
   {
     "id": 166,
@@ -2842,7 +3826,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "pyrin-noct",
+    "level": 30,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 58
   },
   {
     "id": 167,
@@ -2861,9 +3851,15 @@
       "flyingMount": "C",
       "groundMount": null
     },
+    "slug": "quivern",
     "mountSpeed": {
       "flying": "800 - 950"
-    }
+    },
+    "level": 40,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 95
   },
   {
     "id": 168,
@@ -2883,9 +3879,15 @@
       "flyingMount": "C",
       "groundMount": null
     },
+    "slug": "quivern-botan",
     "mountSpeed": {
       "flying": "800 - 950"
-    }
+    },
+    "level": 52,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 95
   },
   {
     "id": 169,
@@ -2902,9 +3904,15 @@
       "flyingMount": "B",
       "groundMount": null
     },
+    "slug": "ragnahawk",
     "mountSpeed": {
       "flying": "800 - 1300"
-    }
+    },
+    "level": 34,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 74
   },
   {
     "id": 170,
@@ -2919,7 +3927,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "rainbow-slime",
+    "level": 42,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 171,
@@ -2935,9 +3949,15 @@
       "flyingMount": null,
       "groundMount": "A"
     },
+    "slug": "rayhound",
     "mountSpeed": {
       "ground": "700 - 1150"
-    }
+    },
+    "level": 27,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 60
   },
   {
     "id": 172,
@@ -2952,7 +3972,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "red-slime",
+    "level": 36,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 173,
@@ -2969,9 +3995,15 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "reindrix",
     "mountSpeed": {
       "ground": "700 - 1070"
-    }
+    },
+    "level": 25,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 59
   },
   {
     "id": 174,
@@ -2987,7 +4019,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "relaxaurus",
+    "level": 18,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 85
   },
   {
     "id": 175,
@@ -3003,7 +4041,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "relaxaurus-lux",
+    "level": 31,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 85
   },
   {
     "id": 176,
@@ -3020,9 +4064,15 @@
       "flyingMount": null,
       "groundMount": "D"
     },
+    "slug": "reptyro",
     "mountSpeed": {
       "ground": "550 - 1000"
-    }
+    },
+    "level": 34,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 88
   },
   {
     "id": 177,
@@ -3038,7 +4088,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "reptyro-cryst",
+    "level": 42,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 88
   },
   {
     "id": 178,
@@ -3055,7 +4111,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "ribbuny",
+    "level": 13,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 39
   },
   {
     "id": 179,
@@ -3073,7 +4135,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "ribbuny-botan",
+    "level": 50,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 39
   },
   {
     "id": 180,
@@ -3093,7 +4161,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "robinquill",
+    "level": 22,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 48
   },
   {
     "id": 181,
@@ -3112,7 +4186,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "robinquill-terra",
+    "level": 28,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 48
   },
   {
     "id": 182,
@@ -3127,7 +4207,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "rooby",
+    "level": 2,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 9
   },
   {
     "id": 183,
@@ -3143,9 +4229,15 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "rushoar",
     "mountSpeed": {
       "ground": "500 - 800"
-    }
+    },
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 20
   },
   {
     "id": 184,
@@ -3163,9 +4255,15 @@
       "flyingMount": "A",
       "groundMount": null
     },
+    "slug": "selyne",
     "mountSpeed": {
       "flying": "1000 - 1600"
-    }
+    },
+    "level": 1,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 113
   },
   {
     "id": 185,
@@ -3181,9 +4279,15 @@
       "flyingMount": "B",
       "groundMount": null
     },
+    "slug": "shadowbeak",
     "mountSpeed": {
       "flying": "850 - 1200"
-    }
+    },
+    "level": 40,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 107
   },
   {
     "id": 186,
@@ -3202,9 +4306,15 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "shroomer",
     "mountSpeed": {
       "ground": "740 - 1050"
-    }
+    },
+    "level": 42,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 116
   },
   {
     "id": 187,
@@ -3223,9 +4333,15 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "shroomer-noct",
     "mountSpeed": {
       "ground": "740 - 1050"
-    }
+    },
+    "level": 46,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 116
   },
   {
     "id": 188,
@@ -3242,7 +4358,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "sibelyx",
+    "level": 36,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 79
   },
   {
     "id": 189,
@@ -3258,9 +4380,15 @@
       "flyingMount": null,
       "groundMount": "A"
     },
+    "slug": "silvegis",
     "mountSpeed": {
       "ground": "700 - 1050"
-    }
+    },
+    "level": 59,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 130
   },
   {
     "id": 190,
@@ -3275,7 +4403,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "smokie",
+    "level": 50,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 131
   },
   {
     "id": 191,
@@ -3294,7 +4428,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "sootseer",
+    "level": 46,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 118
   },
   {
     "id": 192,
@@ -3311,7 +4451,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "sparkit",
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 7
   },
   {
     "id": 193,
@@ -3329,7 +4475,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "splatterina",
+    "level": 55,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 134
   },
   {
     "id": 194,
@@ -3345,9 +4497,15 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "starryon",
     "mountSpeed": {
       "ground": "900 - 1200"
-    }
+    },
+    "level": 50,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 129
   },
   {
     "id": 195,
@@ -3363,9 +4521,15 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "surfent",
     "mountSpeed": {
       "ground": "500 - 800"
-    }
+    },
+    "level": 15,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 65
   },
   {
     "id": 196,
@@ -3380,7 +4544,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "surfent-terra",
+    "level": 28,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 65
   },
   {
     "id": 197,
@@ -3396,9 +4566,15 @@
       "flyingMount": "B",
       "groundMount": null
     },
+    "slug": "suzaku",
     "mountSpeed": {
       "flying": "850 - 1100"
-    }
+    },
+    "level": 40,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 102
   },
   {
     "id": 198,
@@ -3414,9 +4590,15 @@
       "flyingMount": "B",
       "groundMount": null
     },
+    "slug": "suzaku-aqua",
     "mountSpeed": {
       "flying": "850 - 1100"
-    }
+    },
+    "level": 42,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 102
   },
   {
     "id": 199,
@@ -3432,7 +4614,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "swee",
+    "level": 7,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 53
   },
   {
     "id": 200,
@@ -3449,9 +4637,15 @@
       "flyingMount": null,
       "groundMount": "D"
     },
+    "slug": "sweepa",
     "mountSpeed": {
       "ground": "650 - 1020"
-    }
+    },
+    "level": 15,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 54
   },
   {
     "id": 201,
@@ -3470,7 +4664,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "tanzee",
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 8
   },
   {
     "id": 202,
@@ -3488,7 +4688,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "tarantriss",
+    "level": 50,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 135
   },
   {
     "id": 203,
@@ -3503,7 +4709,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "teafant",
+    "level": 1,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.3,
+    "zukan": 16
   },
   {
     "id": 204,
@@ -3518,7 +4730,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "tocotoco",
+    "level": 11,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 27
   },
   {
     "id": 205,
@@ -3535,7 +4753,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "tombat",
+    "level": 9,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 68
   },
   {
     "id": 206,
@@ -3552,7 +4776,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "turtacle",
+    "level": 5,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 148
   },
   {
     "id": 207,
@@ -3569,7 +4799,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "turtacle-terra",
+    "level": 1,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 148
   },
   {
     "id": 208,
@@ -3586,9 +4822,15 @@
       "flyingMount": null,
       "groundMount": "A"
     },
+    "slug": "univolt",
     "mountSpeed": {
       "ground": "720 - 1100"
-    }
+    },
+    "level": 13,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 0.9,
+    "zukan": 56
   },
   {
     "id": 209,
@@ -3607,7 +4849,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "vaelet",
+    "level": 18,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 78
   },
   {
     "id": 210,
@@ -3624,9 +4872,15 @@
       "flyingMount": "D",
       "groundMount": null
     },
+    "slug": "vanwyrm",
     "mountSpeed": {
       "flying": "700 - 850"
-    }
+    },
+    "level": 10,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 71
   },
   {
     "id": 211,
@@ -3643,9 +4897,15 @@
       "flyingMount": "D",
       "groundMount": null
     },
+    "slug": "vanwyrm-cryst",
     "mountSpeed": {
       "flying": "700 - 850"
-    }
+    },
+    "level": 22,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 71
   },
   {
     "id": 212,
@@ -3664,7 +4924,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "verdash",
+    "level": 40,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 77
   },
   {
     "id": 213,
@@ -3680,7 +4946,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "vixy",
+    "level": 3,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.3,
+    "zukan": 14
   },
   {
     "id": 214,
@@ -3698,7 +4970,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "warsect",
+    "level": 40,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 92
   },
   {
     "id": 215,
@@ -3715,7 +4993,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "warsect-terra",
+    "level": 52,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 92
   },
   {
     "id": 216,
@@ -3731,7 +5015,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "whalaska",
+    "level": 42,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 154
   },
   {
     "id": 217,
@@ -3747,7 +5037,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "whalaska-ignis",
+    "level": 58,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 154
   },
   {
     "id": 218,
@@ -3764,7 +5060,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "wixen",
+    "level": 27,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 76
   },
   {
     "id": 219,
@@ -3781,7 +5083,13 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "wixen-noct",
+    "level": 46,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 76
   },
   {
     "id": 220,
@@ -3796,7 +5104,13 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "woolipop",
+    "level": 14,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 34
   },
   {
     "id": 221,
@@ -3815,9 +5129,15 @@
       "flyingMount": null,
       "groundMount": "D"
     },
+    "slug": "wumpo",
     "mountSpeed": {
       "ground": "600 - 1050"
-    }
+    },
+    "level": 41,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 91
   },
   {
     "id": 222,
@@ -3835,7 +5155,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "wumpo-botan",
+    "level": 40,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 91
   },
   {
     "id": 223,
@@ -3851,9 +5177,15 @@
       "flyingMount": "C",
       "groundMount": null
     },
+    "slug": "xenogard",
     "mountSpeed": {
       "flying": "790 - 1200"
-    }
+    },
+    "level": 1,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 126
   },
   {
     "id": 224,
@@ -3869,9 +5201,15 @@
       "flyingMount": "D",
       "groundMount": null
     },
+    "slug": "xenolord",
     "mountSpeed": {
       "flying": "550 - 660"
-    }
+    },
+    "level": 1,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 127
   },
   {
     "id": 225,
@@ -3887,7 +5225,13 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "xenovader",
+    "level": 1,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 125
   },
   {
     "id": 226,
@@ -3903,9 +5247,15 @@
       "flyingMount": null,
       "groundMount": "D"
     },
+    "slug": "yakumo",
     "mountSpeed": {
       "ground": "750 - 1080"
-    }
+    },
+    "level": 41,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 121
   },
   {
     "id": 227,

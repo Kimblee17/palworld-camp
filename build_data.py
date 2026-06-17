@@ -13,6 +13,7 @@ import json
 from pathlib import Path
 
 from fetch_tier_lists import load_tier_lists
+from fetch_pal_data import load_pal_data
 
 BASE_DIR = Path(__file__).parent
 PALS_CSV = BASE_DIR / "Liste pals.csv"
@@ -81,8 +82,9 @@ def index_tiers(tier_data):
             continue
         for tier, pals in page["tiers"].items():
             for p in pals:
-                entry = index.setdefault(_norm(p["name"]), {"tiers": {}, "mountSpeed": {}})
+                entry = index.setdefault(_norm(p["name"]), {"tiers": {}, "mountSpeed": {}, "slug": None})
                 entry["tiers"][category] = tier
+                entry["slug"] = entry["slug"] or p.get("slug")
                 if "speed" in p:
                     # flyingMount -> flying, groundMount -> ground
                     entry["mountSpeed"][category.replace("Mount", "").lower()] = p["speed"]
@@ -93,44 +95,66 @@ def build_pals():
     tier_index = index_tiers(load_tier_lists())
     all_categories = list(TIER_CATEGORIES.values())
 
+    with PALS_CSV.open(encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f, delimiter=";"))
+    names = [n for n in ((r.get("Nom") or "").strip() for r in rows) if n]
+
+    # Données de jeu (level, rareté, taux de capture, stats) — bundle choisi sur nos noms.
+    pal_data = load_pal_data(target_names=names)
+    data_index = {_norm(n): v for n, v in pal_data.items()}
+
     pals = []
     matched = set()
-    with PALS_CSV.open(encoding="utf-8-sig", newline="") as f:
-        reader = csv.DictReader(f, delimiter=";")
-        for i, row in enumerate(reader, start=1):
-            name = (row.get("Nom") or "").strip()
-            if not name:
-                continue
-            work = {}
-            for col, wid in COLUMN_TO_WORK.items():
-                try:
-                    lvl = int(row.get(col, 0) or 0)
-                except ValueError:
-                    lvl = 0
-                if lvl > 0:
-                    work[wid] = lvl
+    data_matched = set()
+    for i, row in enumerate(rows, start=1):
+        name = (row.get("Nom") or "").strip()
+        if not name:
+            continue
+        work = {}
+        for col, wid in COLUMN_TO_WORK.items():
+            try:
+                lvl = int(row.get(col, 0) or 0)
+            except ValueError:
+                lvl = 0
+            if lvl > 0:
+                work[wid] = lvl
 
-            info = tier_index.get(_norm(name))
-            # Toutes les catégories présentes (None si le Pal n'y figure pas).
-            tiers = {cat: None for cat in all_categories}
-            if info:
-                tiers.update(info["tiers"])
-                matched.add(_norm(name))
+        info = tier_index.get(_norm(name))
+        # Toutes les catégories présentes (None si le Pal n'y figure pas).
+        tiers = {cat: None for cat in all_categories}
+        if info:
+            tiers.update(info["tiers"])
+            matched.add(_norm(name))
 
-            pal = {
-                "id": i,
-                "name": name,
-                "work": work,
-                "nightWorker": (row.get(NIGHT_COLUMN, "").strip().lower() == "oui"),
-                "tiers": tiers,
-            }
-            if info and info["mountSpeed"]:
-                pal["mountSpeed"] = info["mountSpeed"]
-            pals.append(pal)
+        pal = {
+            "id": i,
+            "name": name,
+            "work": work,
+            "nightWorker": (row.get(NIGHT_COLUMN, "").strip().lower() == "oui"),
+            "tiers": tiers,
+        }
+        if info and info.get("slug"):
+            pal["slug"] = info["slug"]
+        if info and info["mountSpeed"]:
+            pal["mountSpeed"] = info["mountSpeed"]
+
+        gd = data_index.get(_norm(name))
+        if gd:
+            pal["level"] = gd["level"]
+            pal["rarity"] = gd["rarity"]
+            pal["rarityCategory"] = gd["rarityCategory"]
+            pal["captureRate"] = gd["captureRate"]
+            pal["zukan"] = gd["zukan"]
+            data_matched.add(_norm(name))
+        pals.append(pal)
 
     PALS_OUT.parent.mkdir(exist_ok=True)
     PALS_OUT.write_text(json.dumps(pals, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"{len(pals)} Pals écrits dans {PALS_OUT}")
+
+    no_data = [p["name"] for p in pals if "level" not in p]
+    if no_data:
+        print(f"  ⚠ {len(no_data)} Pal(s) sans données de jeu (level/stats) : {', '.join(no_data)}")
 
     no_tier = [p["name"] for p in pals if all(v is None for v in p["tiers"].values())]
     if no_tier:

@@ -333,3 +333,26 @@ main {
 .pedia-table th.sortable:hover { color: var(--text); }
 .pedia-table th.sorted { color: var(--accent); }
 .pedia-table th .arrow { font-size: 0.72rem; }
+
+/* Palpedia : colonnes Niveau / Rareté / Capture / Stats */
+.pedia-num { text-align: center; white-space: nowrap; font-weight: 700; }
+.pedia-name a { color: var(--accent-2); text-decoration: none; }
+.pedia-name a:hover { text-decoration: underline; }
+
+.rarity-tag {
+  display: inline-block; white-space: nowrap;
+  font-size: 0.74rem; font-weight: 800;
+  padding: 2px 8px; border-radius: 100px;
+  border: 1px solid currentColor;
+}
+.rarity-common    { color: #9aa9bb; }
+.rarity-rare      { color: #4ea0ff; }
+.rarity-epic      { color: #c07af0; }
+.rarity-legendary { color: #f0a830; }
+
+.pedia-link {
+  align-self: center; margin-left: auto;
+  color: var(--accent-2); text-decoration: none;
+  font-size: 0.88rem; font-weight: 600;
+}
+.pedia-link:hover { text-decoration: underline; }

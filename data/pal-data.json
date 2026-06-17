@@ -1,0 +1,1584 @@
+{
+  "Nyafia ": {
+    "level": 50,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 139
+  },
+  "Prunelia": {
+    "level": 50,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 138
+  },
+  "Gildane": {
+    "level": 52,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 140
+  },
+  "Turtacle": {
+    "level": 5,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 148
+  },
+  "Turtacle Terra": {
+    "level": 1,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 148
+  },
+  "Anubis": {
+    "level": 47,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 100
+  },
+  "Incineram": {
+    "level": 27,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 40
+  },
+  "Incineram Noct": {
+    "level": 40,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 40
+  },
+  "Mau": {
+    "level": 5,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 24
+  },
+  "Mau Cryst": {
+    "level": 30,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 24
+  },
+  "Rushoar": {
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 20
+  },
+  "Lifmunk": {
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 0.9,
+    "zukan": 4
+  },
+  "Tocotoco": {
+    "level": 11,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 27
+  },
+  "Eikthyrdeer": {
+    "level": 1,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 37
+  },
+  "Eikthyrdeer Terra": {
+    "level": 18,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 37
+  },
+  "Digtoise": {
+    "level": 18,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 67
+  },
+  "Galeclaw": {
+    "level": 9,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 47
+  },
+  "Grizzbolt": {
+    "level": 18,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 103
+  },
+  "Teafant": {
+    "level": 1,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.3,
+    "zukan": 16
+  },
+  "Direhowl": {
+    "level": 5,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 26
+  },
+  "Gorirat": {
+    "level": 22,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 49
+  },
+  "Gorirat Terra": {
+    "level": 42,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 49
+  },
+  "Jolthog": {
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.2,
+    "zukan": 12
+  },
+  "Jolthog Cryst": {
+    "level": 1,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 12
+  },
+  "Univolt": {
+    "level": 13,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 0.9,
+    "zukan": 56
+  },
+  "Foxparks": {
+    "level": 15,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 5
+  },
+  "Bristla": {
+    "level": 16,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 30
+  },
+  "Lunaris": {
+    "level": 38,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 63
+  },
+  "Pengullet": {
+    "level": 10,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 0.9,
+    "zukan": 10
+  },
+  "Pengullet Lux": {
+    "level": 1,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 0.9,
+    "zukan": 10
+  },
+  "Dazzi": {
+    "level": 24,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 62
+  },
+  "Gobfin": {
+    "level": 20,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 31
+  },
+  "Gobfin Ignis": {
+    "level": 23,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 31
+  },
+  "Lamball": {
+    "level": 1,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.5,
+    "zukan": 1
+  },
+  "Jormuntide": {
+    "level": 45,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 101
+  },
+  "Jormuntide Ignis": {
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 101
+  },
+  "Loupmoon": {
+    "level": 12,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 46
+  },
+  "Hangyu": {
+    "level": 14,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 32
+  },
+  "Hangyu Cryst": {
+    "level": 33,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 32
+  },
+  "Suzaku": {
+    "level": 40,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 102
+  },
+  "Suzaku Aqua": {
+    "level": 42,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 102
+  },
+  "Pyrin": {
+    "level": 28,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 58
+  },
+  "Pyrin Noct": {
+    "level": 30,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 58
+  },
+  "Elphidran": {
+    "level": 18,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 80
+  },
+  "Elphidran Aqua": {
+    "level": 1,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 80
+  },
+  "Woolipop": {
+    "level": 14,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 34
+  },
+  "Cryolinx": {
+    "level": 36,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 83
+  },
+  "Melpaca": {
+    "level": 5,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 36
+  },
+  "Surfent": {
+    "level": 15,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 65
+  },
+  "Surfent Terra": {
+    "level": 28,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 65
+  },
+  "Cawgnito": {
+    "level": 12,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 44
+  },
+  "Azurobe": {
+    "level": 18,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 82
+  },
+  "Azurobe Cryst": {
+    "level": 1,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 82
+  },
+  "Cattiva": {
+    "level": 1,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.5,
+    "zukan": 2
+  },
+  "Depresso": {
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 17
+  },
+  "Fenglope": {
+    "level": 34,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 93
+  },
+  "Reptyro": {
+    "level": 34,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 88
+  },
+  "Reptyro Cryst": {
+    "level": 42,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 88
+  },
+  "Maraith": {
+    "level": 36,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 66
+  },
+  "Robinquill": {
+    "level": 22,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 48
+  },
+  "Robinquill Terra": {
+    "level": 28,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 48
+  },
+  "Relaxaurus": {
+    "level": 18,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 85
+  },
+  "Relaxaurus Lux": {
+    "level": 31,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 85
+  },
+  "Kitsun": {
+    "level": 28,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 61
+  },
+  "Leezpunk": {
+    "level": 26,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 45
+  },
+  "Leezpunk Ignis": {
+    "level": 25,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 45
+  },
+  "Fuack": {
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 6
+  },
+  "Fuack Ignis": {
+    "level": 1,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 6
+  },
+  "Vanwyrm": {
+    "level": 10,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 71
+  },
+  "Vanwyrm Cryst": {
+    "level": 22,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 71
+  },
+  "Chikipi": {
+    "level": 1,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.5,
+    "zukan": 3
+  },
+  "Dinossom": {
+    "level": 14,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 64
+  },
+  "Dinossom Lux": {
+    "level": 32,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 64
+  },
+  "Sparkit": {
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 7
+  },
+  "Frostallion": {
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 110
+  },
+  "Frostallion Noct": {
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 110
+  },
+  "Mammorest": {
+    "level": 33,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 90
+  },
+  "Mammorest Cryst": {
+    "level": 41,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 90
+  },
+  "Felbat": {
+    "level": 20,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 94
+  },
+  "Broncherry": {
+    "level": 17,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 86
+  },
+  "Broncherry Aqua": {
+    "level": 30,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 86
+  },
+  "Faleris": {
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 105
+  },
+  "Blazamut": {
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 96
+  },
+  "Blazamut Ryu": {
+    "level": 1,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 96
+  },
+  "Caprity": {
+    "level": 9,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 35
+  },
+  "Reindrix": {
+    "level": 25,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 59
+  },
+  "Shadowbeak": {
+    "level": 40,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 107
+  },
+  "Sibelyx": {
+    "level": 36,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 79
+  },
+  "Vixy": {
+    "level": 3,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.3,
+    "zukan": 14
+  },
+  "Wixen": {
+    "level": 27,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 76
+  },
+  "Wixen Noct": {
+    "level": 46,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 76
+  },
+  "Lovander": {
+    "level": 18,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 69
+  },
+  "Hoocrates": {
+    "level": 4,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 15
+  },
+  "Kelpsea": {
+    "level": 9,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 81
+  },
+  "Kelpsea Ignis": {
+    "level": 24,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 81
+  },
+  "Killamari": {
+    "level": 5,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 23
+  },
+  "Killamari Primo": {
+    "level": 42,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 23
+  },
+  "Mozzarina": {
+    "level": 10,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 29
+  },
+  "Wumpo": {
+    "level": 41,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 91
+  },
+  "Wumpo Botan": {
+    "level": 40,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 91
+  },
+  "Vaelet": {
+    "level": 18,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 78
+  },
+  "Nitewing": {
+    "level": 9,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 38
+  },
+  "Flopie": {
+    "level": 15,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 28
+  },
+  "Lyleen": {
+    "level": 15,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 104
+  },
+  "Lyleen Noct": {
+    "level": 49,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 104
+  },
+  "Elizabee": {
+    "level": 28,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 51
+  },
+  "Beegarde": {
+    "level": 25,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 50
+  },
+  "Tombat": {
+    "level": 9,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 68
+  },
+  "Mossanda": {
+    "level": 25,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 33
+  },
+  "Mossanda Lux": {
+    "level": 35,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 33
+  },
+  "Arsox": {
+    "level": 9,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 42
+  },
+  "Rayhound": {
+    "level": 27,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 60
+  },
+  "Fuddler": {
+    "level": 14,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 22
+  },
+  "Astegon": {
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 98
+  },
+  "Verdash": {
+    "level": 40,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 77
+  },
+  "Foxcicle": {
+    "level": 24,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 57
+  },
+  "Jetragon": {
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 111
+  },
+  "Daedream": {
+    "level": 4,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 19
+  },
+  "Tanzee": {
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 8
+  },
+  "Blazehowl": {
+    "level": 34,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 84
+  },
+  "Blazehowl Noct": {
+    "level": 33,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 84
+  },
+  "Kingpaca": {
+    "level": 40,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 89
+  },
+  "Kingpaca Cryst": {
+    "level": 46,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 89
+  },
+  "Gumoss": {
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.3,
+    "zukan": 13
+  },
+  "Swee": {
+    "level": 7,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 53
+  },
+  "Sweepa": {
+    "level": 15,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 54
+  },
+  "Katress": {
+    "level": 25,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 75
+  },
+  "Katress Ignis": {
+    "level": 40,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 75
+  },
+  "Ribbuny": {
+    "level": 13,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 39
+  },
+  "Beakon": {
+    "level": 33,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 73
+  },
+  "Warsect ": {
+    "level": 40,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 92
+  },
+  "Warsect Terra": {
+    "level": 52,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 92
+  },
+  "Paladius": {
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 108
+  },
+  "Nox": {
+    "level": 5,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 21
+  },
+  "Penking": {
+    "level": 18,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 11
+  },
+  "Penking Lux": {
+    "level": 1,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 11
+  },
+  "Chillet": {
+    "level": 20,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 55
+  },
+  "Chillet Ignis": {
+    "level": 42,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 55
+  },
+  "Quivern": {
+    "level": 40,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 95
+  },
+  "Quivern Botan": {
+    "level": 52,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 95
+  },
+  "Helzephyr": {
+    "level": 25,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 97
+  },
+  "Helzephyr Lux": {
+    "level": 46,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 97
+  },
+  "Ragnahawk": {
+    "level": 34,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 74
+  },
+  "Bushi": {
+    "level": 34,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 72
+  },
+  "Bushi Noct": {
+    "level": 50,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 72
+  },
+  "Celaray": {
+    "level": 2,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 25
+  },
+  "Celaray Lux": {
+    "level": 1,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 25
+  },
+  "Necromus": {
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 109
+  },
+  "Petallia": {
+    "level": 18,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 87
+  },
+  "Grintale": {
+    "level": 25,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 52
+  },
+  "Cinnamoth": {
+    "level": 18,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 41
+  },
+  "Menasting": {
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 99
+  },
+  "Menasting Terra": {
+    "level": 54,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 99
+  },
+  "Orserk": {
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 106
+  },
+  "Cremis": {
+    "level": 2,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.3,
+    "zukan": 18
+  },
+  "Dumud": {
+    "level": 17,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 43
+  },
+  "Dumud Gild": {
+    "level": 33,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 43
+  },
+  "Flambelle": {
+    "level": 24,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 70
+  },
+  "Rooby": {
+    "level": 2,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 9
+  },
+  "Bellanoir": {
+    "level": 1,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 112
+  },
+  "Bellanoir Libero": {
+    "level": 1,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 112
+  },
+  "Selyne": {
+    "level": 1,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 113
+  },
+  "Croajiro": {
+    "level": 4,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 114
+  },
+  "Croajiro Noct": {
+    "level": 1,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 114
+  },
+  "Lullu": {
+    "level": 40,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 115
+  },
+  "Shroomer": {
+    "level": 42,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 116
+  },
+  "Shroomer Noct": {
+    "level": 46,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 116
+  },
+  "Kikit": {
+    "level": 40,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 117
+  },
+  "Sootseer": {
+    "level": 46,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 118
+  },
+  "Prixter": {
+    "level": 43,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 119
+  },
+  "Knocklem": {
+    "level": 55,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 120
+  },
+  "Yakumo": {
+    "level": 41,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 121
+  },
+  "Dogen": {
+    "level": 50,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 122
+  },
+  "Dazemu": {
+    "level": 18,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 123
+  },
+  "Mimog": {
+    "level": 9,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 0.8,
+    "zukan": 124
+  },
+  "Xenovader": {
+    "level": 1,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 125
+  },
+  "Xenogard": {
+    "level": 1,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 126
+  },
+  "Xenolord ": {
+    "level": 1,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 127
+  },
+  "Nitemary": {
+    "level": 50,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 128
+  },
+  "Starryon": {
+    "level": 50,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 129
+  },
+  "Silvegis": {
+    "level": 59,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 130
+  },
+  "Smokie": {
+    "level": 50,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 131
+  },
+  "Celesdir": {
+    "level": 57,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 132
+  },
+  "Omascul": {
+    "level": 50,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 133
+  },
+  "Splatterina": {
+    "level": 55,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 134
+  },
+  "Tarantriss": {
+    "level": 50,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 135
+  },
+  "Azurmane": {
+    "level": 57,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 136
+  },
+  "Gloopie": {
+    "level": 12,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 151
+  },
+  "Whalaska": {
+    "level": 42,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 154
+  },
+  "Whalaska Ignis": {
+    "level": 58,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 154
+  },
+  "Jelliette": {
+    "level": 12,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 150
+  },
+  "Foxparks Cryst": {
+    "level": 50,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 5
+  },
+  "Caprity Noct": {
+    "level": 50,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 35
+  },
+  "Ribbuny Botan": {
+    "level": 50,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 39
+  },
+  "Loupmoon Cryst": {
+    "level": 50,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 46
+  },
+  "Kitsun Noct": {
+    "level": 57,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 61
+  },
+  "Dazzi Noct": {
+    "level": 50,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 62
+  },
+  "Cryolinx Terra": {
+    "level": 51,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 83
+  },
+  "Fenglope Lux": {
+    "level": 57,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 93
+  },
+  "Faleris Aqua": {
+    "level": 52,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 105
+  },
+  "Bastigor": {
+    "level": 1,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 137
+  },
+  "Ghangler": {
+    "level": 15,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 153
+  },
+  "Ghangler Ignis": {
+    "level": 1,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 153
+  },
+  "Icelyn": {
+    "level": 42,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 142
+  },
+  "Herbil": {
+    "level": 33,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 141
+  },
+  "Munchill": {
+    "level": 10,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 146
+  },
+  "Finsider": {
+    "level": 30,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 152
+  },
+  "Finsider Ignis": {
+    "level": 1,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 152
+  },
+  "Polapup": {
+    "level": 5,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 147
+  },
+  "Braloha": {
+    "level": 40,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 145
+  },
+  "Palumba": {
+    "level": 40,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 144
+  },
+  "Frostplume": {
+    "level": 10,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 143
+  },
+  "Jellroy": {
+    "level": 39,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 149
+  },
+  "Neptilius": {
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 155
+  },
+  "Green Slime": {
+    "level": 33,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
+  },
+  "Blue Slime": {
+    "level": 33,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
+  },
+  "Red Slime": {
+    "level": 36,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
+  },
+  "Purple Slime": {
+    "level": 36,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
+  },
+  "Illuminant Slime": {
+    "level": 42,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
+  },
+  "Rainbow Slime": {
+    "level": 42,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
+  },
+  "Enchanted Sword": {
+    "level": 42,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
+  },
+  "Cave Bat": {
+    "level": 36,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
+  },
+  "Illuminant Bat": {
+    "level": 42,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
+  },
+  "Eye of Cthulhu": {
+    "level": 45,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": -1
+  },
+  "Demon Eye": {
+    "level": 33,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
+  },
+  "True Eye of Cthulhu": {
+    "level": 1,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": -1
+  }
+}
