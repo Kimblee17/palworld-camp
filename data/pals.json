@@ -14,7 +14,30 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "anubis",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "3 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de grand Pal",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Livre de technique innovante",
+        "amount": "1 - 1",
+        "rate": "5%"
+      }
+    ],
+    "level": 47,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 100
   },
   {
     "id": 2,
@@ -31,9 +54,27 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "arsox",
+    "drops": [
+      {
+        "item": "Corne",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1050"
-    }
+    },
+    "level": 9,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 42
   },
   {
     "id": 3,
@@ -50,9 +91,27 @@
       "flyingMount": "D",
       "groundMount": null
     },
+    "slug": "astegon",
+    "drops": [
+      {
+        "item": "Lingot de Paluminium",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Quartz pur",
+        "amount": "3 - 5",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "700 - 1100"
-    }
+    },
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 98
   },
   {
     "id": 4,
@@ -69,9 +128,22 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "azurmane",
+    "drops": [
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "900 - 1260"
-    }
+    },
+    "level": 57,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 136
   },
   {
     "id": 5,
@@ -87,9 +159,22 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "azurobe",
+    "drops": [
+      {
+        "item": "Tissu",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "600 - 900"
-    }
+    },
+    "level": 18,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 82
   },
   {
     "id": 6,
@@ -104,7 +189,30 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "azurobe-cryst",
+    "drops": [
+      {
+        "item": "Tissu",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de congélation",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 1,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 82
   },
   {
     "id": 7,
@@ -122,9 +230,27 @@
       "flyingMount": null,
       "groundMount": "A"
     },
+    "slug": "bastigor",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de congélation",
+        "amount": "2 - 5",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "750 - 1100"
-    }
+    },
+    "level": 1,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 137
   },
   {
     "id": 8,
@@ -142,9 +268,22 @@
       "flyingMount": "C",
       "groundMount": null
     },
+    "slug": "beakon",
+    "drops": [
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "750 - 1200"
-    }
+    },
+    "level": 33,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 73
   },
   {
     "id": 9,
@@ -165,7 +304,20 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "beegarde",
+    "drops": [
+      {
+        "item": "Miel",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 25,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 50
   },
   {
     "id": 10,
@@ -182,7 +334,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "bellanoir",
+    "level": 1,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 112
   },
   {
     "id": 11,
@@ -199,7 +357,13 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "bellanoir-libero",
+    "level": 1,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 112
   },
   {
     "id": 12,
@@ -216,9 +380,27 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "blazamut",
+    "drops": [
+      {
+        "item": "Charbon",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "10 - 10",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "800 - 1200"
-    }
+    },
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 96
   },
   {
     "id": 13,
@@ -234,7 +416,30 @@
       "combat": "S",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "blazamut-ryu",
+    "drops": [
+      {
+        "item": "Charbon",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal moyen",
+        "amount": "1 - 1",
+        "rate": "5%"
+      },
+      {
+        "item": "Griffe Précieuse",
+        "amount": "1 - 1",
+        "rate": "30%"
+      }
+    ],
+    "level": 1,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 96
   },
   {
     "id": 14,
@@ -251,9 +456,22 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "blazehowl",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "3 - 5",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "800 - 1200"
-    }
+    },
+    "level": 34,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 84
   },
   {
     "id": 15,
@@ -269,7 +487,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "blazehowl-noct",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
+    "level": 33,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 84
   },
   {
     "id": 16,
@@ -284,7 +515,20 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "blue-slime",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 33,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 17,
@@ -301,7 +545,35 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "braloha",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Baie rouge",
+        "amount": "1 - 2",
+        "rate": "60%"
+      },
+      {
+        "item": "Graines de laitue",
+        "amount": "1 - 2",
+        "rate": "50%"
+      },
+      {
+        "item": "Graines de tomates",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 40,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 145
   },
   {
     "id": 18,
@@ -320,7 +592,30 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "bristla",
+    "drops": [
+      {
+        "item": "Graines de blé",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Graines de laitue",
+        "amount": "1 - 1",
+        "rate": "50%"
+      },
+      {
+        "item": "Graine de carotte",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 16,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 30
   },
   {
     "id": 19,
@@ -336,9 +631,32 @@
       "flyingMount": null,
       "groundMount": "D"
     },
+    "slug": "broncherry",
+    "drops": [
+      {
+        "item": "Viande de Broncherry",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Graines de tomates",
+        "amount": "1 - 2",
+        "rate": "50%"
+      },
+      {
+        "item": "Semence de patate",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "mountSpeed": {
       "ground": "550 - 1020"
-    }
+    },
+    "level": 17,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 86
   },
   {
     "id": 20,
@@ -353,7 +671,30 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "broncherry-aqua",
+    "drops": [
+      {
+        "item": "Viande de Broncherry",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Graines de laitue",
+        "amount": "1 - 2",
+        "rate": "50%"
+      },
+      {
+        "item": "Semence de patate",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 30,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 86
   },
   {
     "id": 21,
@@ -372,7 +713,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "bushi",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Lingot de métal",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 34,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 72
   },
   {
     "id": 22,
@@ -391,7 +750,30 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "bushi-noct",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "4 - 8",
+        "rate": "100%"
+      },
+      {
+        "item": "Lingot de métal",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal moyen",
+        "amount": "1 - 2",
+        "rate": "40%"
+      }
+    ],
+    "level": 50,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 72
   },
   {
     "id": 23,
@@ -407,7 +789,30 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "caprity",
+    "drops": [
+      {
+        "item": "Viande de Caprity",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Baie rouge",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Corne",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 9,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 35
   },
   {
     "id": 24,
@@ -423,7 +828,35 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "caprity-noct",
+    "drops": [
+      {
+        "item": "Viande de Caprity",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Baie rouge",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Corne",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Glande à venin",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 50,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 35
   },
   {
     "id": 25,
@@ -441,7 +874,20 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "cattiva",
+    "drops": [
+      {
+        "item": "Baie rouge",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 1,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.5,
+    "zukan": 2
   },
   {
     "id": 26,
@@ -456,7 +902,20 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "cave-bat",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 36,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 27,
@@ -471,7 +930,30 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "cawgnito",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Glande à venin",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de petit Pal",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
+    "level": 12,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 44
   },
   {
     "id": 28,
@@ -487,7 +969,20 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "celaray",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 2,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 25
   },
   {
     "id": 29,
@@ -504,7 +999,20 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "celaray-lux",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 1,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 25
   },
   {
     "id": 30,
@@ -521,9 +1029,32 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "celesdir",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Corne",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Hexoquartz",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "800 - 1200"
-    }
+    },
+    "level": 57,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 132
   },
   {
     "id": 31,
@@ -539,7 +1070,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "chikipi",
+    "drops": [
+      {
+        "item": "Œuf",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Viande de Chikipi",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 1,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.5,
+    "zukan": 3
   },
   {
     "id": 32,
@@ -556,9 +1105,22 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "chillet",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "750 - 1050"
-    }
+    },
+    "level": 20,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 55
   },
   {
     "id": 33,
@@ -574,7 +1136,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "chillet-ignis",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 42,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 55
   },
   {
     "id": 34,
@@ -590,7 +1170,35 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "cinnamoth",
+    "drops": [
+      {
+        "item": "Miel",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Graines de laitue",
+        "amount": "1 - 1",
+        "rate": "20%"
+      },
+      {
+        "item": "Graines de blé",
+        "amount": "1 - 1",
+        "rate": "20%"
+      },
+      {
+        "item": "Graine d&#39;oignon",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 18,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 41
   },
   {
     "id": 35,
@@ -606,7 +1214,20 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "cremis",
+    "drops": [
+      {
+        "item": "Laine",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 2,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.3,
+    "zukan": 18
   },
   {
     "id": 36,
@@ -624,7 +1245,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "croajiro",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Tissu",
+        "amount": "1 - 2",
+        "rate": "25%"
+      }
+    ],
+    "level": 4,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 114
   },
   {
     "id": 37,
@@ -642,7 +1281,30 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "croajiro-noct",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Tissu",
+        "amount": "1 - 2",
+        "rate": "25%"
+      },
+      {
+        "item": "Glande à venin",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
+    "level": 1,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 114
   },
   {
     "id": 38,
@@ -660,7 +1322,20 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "cryolinx",
+    "drops": [
+      {
+        "item": "Organe de congélation",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 36,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 83
   },
   {
     "id": 39,
@@ -678,7 +1353,20 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "cryolinx-terra",
+    "drops": [
+      {
+        "item": "Minerai de métal",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 51,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 83
   },
   {
     "id": 40,
@@ -695,7 +1383,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "daedream",
+    "drops": [
+      {
+        "item": "Glande à venin",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de petit Pal",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
+    "level": 4,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 19
   },
   {
     "id": 41,
@@ -711,9 +1417,22 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "dazemu",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "900 - 1200"
-    }
+    },
+    "level": 18,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 123
   },
   {
     "id": 42,
@@ -730,7 +1449,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "dazzi",
+    "drops": [
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Nuage de Dazzi",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 24,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 62
   },
   {
     "id": 43,
@@ -748,7 +1485,30 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "dazzi-noct",
+    "drops": [
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Nuage de Dazzi",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Fragment obscur",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 50,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 62
   },
   {
     "id": 44,
@@ -763,7 +1523,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "demon-eye",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 33,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 45,
@@ -780,7 +1553,20 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "depresso",
+    "drops": [
+      {
+        "item": "Glande à venin",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 17
   },
   {
     "id": 46,
@@ -795,7 +1581,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "digtoise",
+    "drops": [
+      {
+        "item": "Minerai de métal",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 18,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 67
   },
   {
     "id": 47,
@@ -812,9 +1616,27 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "dinossom",
+    "drops": [
+      {
+        "item": "Graines de blé",
+        "amount": "1 - 2",
+        "rate": "50%"
+      },
+      {
+        "item": "Graine de carotte",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1030"
-    }
+    },
+    "level": 14,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 64
   },
   {
     "id": 48,
@@ -830,7 +1652,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "dinossom-lux",
+    "drops": [
+      {
+        "item": "Graines de tomates",
+        "amount": "1 - 2",
+        "rate": "50%"
+      },
+      {
+        "item": "Graine de carotte",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 32,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 64
   },
   {
     "id": 49,
@@ -846,9 +1686,32 @@
       "flyingMount": null,
       "groundMount": "A"
     },
+    "slug": "direhowl",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Rubis",
+        "amount": "1 - 1",
+        "rate": "3%"
+      },
+      {
+        "item": "Pièce d&#39;or",
+        "amount": "10 - 20",
+        "rate": "3%"
+      }
+    ],
     "mountSpeed": {
       "ground": "800 - 1050"
-    }
+    },
+    "level": 5,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 26
   },
   {
     "id": 50,
@@ -867,7 +1730,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "dogen",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 50,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 122
   },
   {
     "id": 51,
@@ -885,7 +1761,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "dumud",
+    "drops": [
+      {
+        "item": "Viande de Dumud",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 17,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 43
   },
   {
     "id": 52,
@@ -903,7 +1797,30 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "dumud-gild",
+    "drops": [
+      {
+        "item": "Viande de Dumud",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Pièce d&#39;or",
+        "amount": "100 - 200",
+        "rate": "50%"
+      }
+    ],
+    "level": 33,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 43
   },
   {
     "id": 53,
@@ -919,9 +1836,32 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "eikthyrdeer",
+    "drops": [
+      {
+        "item": "Viande de Eikthyrdeer",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Corne",
+        "amount": "2 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 900"
-    }
+    },
+    "level": 1,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 37
   },
   {
     "id": 54,
@@ -936,7 +1876,30 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "eikthyrdeer-terra",
+    "drops": [
+      {
+        "item": "Viande de Eikthyrdeer",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Corne",
+        "amount": "2 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 18,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 37
   },
   {
     "id": 55,
@@ -955,7 +1918,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "elizabee",
+    "drops": [
+      {
+        "item": "Miel",
+        "amount": "5 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Bâton d&#39;Elizabee",
+        "amount": "1 - 1",
+        "rate": "3%"
+      }
+    ],
+    "level": 28,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 51
   },
   {
     "id": 56,
@@ -971,9 +1952,22 @@
       "flyingMount": "D",
       "groundMount": null
     },
+    "slug": "elphidran",
+    "drops": [
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "630 - 800"
-    }
+    },
+    "level": 18,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 80
   },
   {
     "id": 57,
@@ -990,9 +1984,22 @@
       "flyingMount": "D",
       "groundMount": null
     },
+    "slug": "elphidran-aqua",
+    "drops": [
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "630 - 800"
-    }
+    },
+    "level": 1,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 80
   },
   {
     "id": 58,
@@ -1007,7 +2014,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "enchanted-sword",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
+    "level": 42,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 59,
@@ -1022,7 +2042,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "eye-of-cthulhu",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "2 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 45,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 60,
@@ -1039,9 +2072,22 @@
       "flyingMount": "A",
       "groundMount": null
     },
+    "slug": "faleris",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "1 - 4",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "1000 - 1400"
-    }
+    },
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 105
   },
   {
     "id": 61,
@@ -1058,9 +2104,22 @@
       "flyingMount": "A",
       "groundMount": null
     },
+    "slug": "faleris-aqua",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "1000 - 1400"
-    }
+    },
+    "level": 52,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 105
   },
   {
     "id": 62,
@@ -1075,7 +2134,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "felbat",
+    "drops": [
+      {
+        "item": "Tissu",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de petit Pal",
+        "amount": "1 - 1",
+        "rate": "3%"
+      }
+    ],
+    "level": 20,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 94
   },
   {
     "id": 63,
@@ -1091,9 +2168,27 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "fenglope",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "3 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Corne",
+        "amount": "2 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "750 - 1050"
-    }
+    },
+    "level": 34,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 93
   },
   {
     "id": 64,
@@ -1109,7 +2204,30 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "fenglope-lux",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "3 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Corne",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 57,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 93
   },
   {
     "id": 65,
@@ -1125,7 +2243,30 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "finsider",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de petit Pal",
+        "amount": "1 - 1",
+        "rate": "1%"
+      },
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 30,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 152
   },
   {
     "id": 66,
@@ -1142,7 +2283,30 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "finsider-ignis",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de petit Pal",
+        "amount": "1 - 1",
+        "rate": "1%"
+      },
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 1,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 152
   },
   {
     "id": 67,
@@ -1160,7 +2324,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "flambelle",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 24,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 70
   },
   {
     "id": 68,
@@ -1179,7 +2361,30 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "flopie",
+    "drops": [
+      {
+        "item": "Médicament de fortune",
+        "amount": "1 - 1",
+        "rate": "20%"
+      },
+      {
+        "item": "Graines de blé",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Semence de patate",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 15,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 28
   },
   {
     "id": 69,
@@ -1194,7 +2399,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "foxcicle",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de congélation",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 24,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 57
   },
   {
     "id": 70,
@@ -1209,7 +2432,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "foxparks",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 15,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 5
   },
   {
     "id": 71,
@@ -1224,7 +2465,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "foxparks-cryst",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de congélation",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 50,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 5
   },
   {
     "id": 72,
@@ -1240,9 +2499,27 @@
       "flyingMount": "A",
       "groundMount": null
     },
+    "slug": "frostallion",
+    "drops": [
+      {
+        "item": "Organe de congélation",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Diamant",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "1200 - 1800"
-    }
+    },
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 110
   },
   {
     "id": 73,
@@ -1258,9 +2535,27 @@
       "flyingMount": "A",
       "groundMount": null
     },
+    "slug": "frostallion-noct",
+    "drops": [
+      {
+        "item": "Quartz pur",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de grand Pal",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "1200 - 1800"
-    }
+    },
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 110
   },
   {
     "id": 74,
@@ -1276,7 +2571,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "frostplume",
+    "drops": [
+      {
+        "item": "Organe de congélation",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 10,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 143
   },
   {
     "id": 75,
@@ -1293,7 +2601,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "fuack",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 6
   },
   {
     "id": 76,
@@ -1311,7 +2637,30 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "fuack-ignis",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "1 - 2",
+        "rate": "50%"
+      }
+    ],
+    "level": 1,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 6
   },
   {
     "id": 77,
@@ -1328,7 +2677,20 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "fuddler",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 14,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 22
   },
   {
     "id": 78,
@@ -1343,7 +2705,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "galeclaw",
+    "drops": [
+      {
+        "item": "Viande de Galeclaw",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 9,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 47
   },
   {
     "id": 79,
@@ -1359,7 +2739,25 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "ghangler",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Glande à venin",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
+    "level": 15,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 153
   },
   {
     "id": 80,
@@ -1376,7 +2774,25 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "ghangler-ignis",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "1 - 2",
+        "rate": "50%"
+      }
+    ],
+    "level": 1,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 153
   },
   {
     "id": 81,
@@ -1392,9 +2808,22 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "gildane",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "840 - 1260"
-    }
+    },
+    "level": 52,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 140
   },
   {
     "id": 82,
@@ -1411,7 +2840,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "gloopie",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Tentacule de Gloopie",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 12,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 151
   },
   {
     "id": 83,
@@ -1428,7 +2875,20 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "gobfin",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 20,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 31
   },
   {
     "id": 84,
@@ -1445,7 +2905,20 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "gobfin-ignis",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 23,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 31
   },
   {
     "id": 85,
@@ -1462,7 +2935,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "gorirat",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Os",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 22,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 49
   },
   {
     "id": 86,
@@ -1479,7 +2970,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "gorirat-terra",
+    "drops": [
+      {
+        "item": "Minerai de métal",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Os",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 42,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 49
   },
   {
     "id": 87,
@@ -1494,7 +3003,20 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "green-slime",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 33,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 88,
@@ -1510,9 +3032,22 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "grintale",
+    "drops": [
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "650 - 1000"
-    }
+    },
+    "level": 25,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 52
   },
   {
     "id": 89,
@@ -1530,7 +3065,25 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "grizzbolt",
+    "drops": [
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 18,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 103
   },
   {
     "id": 90,
@@ -1545,7 +3098,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "gumoss",
+    "drops": [
+      {
+        "item": "Graines de baies",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Feuille de Gumoss",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.3,
+    "zukan": 13
   },
   {
     "id": 91,
@@ -1562,7 +3133,20 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "hangyu",
+    "drops": [
+      {
+        "item": "Textile",
+        "amount": "5 - 10",
+        "rate": "100%"
+      }
+    ],
+    "level": 14,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 32
   },
   {
     "id": 92,
@@ -1580,7 +3164,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "hangyu-cryst",
+    "drops": [
+      {
+        "item": "Textile",
+        "amount": "5 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de congélation",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 33,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 32
   },
   {
     "id": 93,
@@ -1612,9 +3214,27 @@
       "flyingMount": "C",
       "groundMount": null
     },
+    "slug": "helzephyr",
+    "drops": [
+      {
+        "item": "Glande à venin",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal moyen",
+        "amount": "1 - 1",
+        "rate": "3%"
+      }
+    ],
     "mountSpeed": {
       "flying": "700 - 1100"
-    }
+    },
+    "level": 25,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 97
   },
   {
     "id": 95,
@@ -1631,9 +3251,27 @@
       "flyingMount": "C",
       "groundMount": null
     },
+    "slug": "helzephyr-lux",
+    "drops": [
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal moyen",
+        "amount": "1 - 1",
+        "rate": "3%"
+      }
+    ],
     "mountSpeed": {
       "flying": "700 - 1100"
-    }
+    },
+    "level": 46,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 97
   },
   {
     "id": 96,
@@ -1650,7 +3288,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "herbil",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Baie rouge",
+        "amount": "1 - 2",
+        "rate": "60%"
+      }
+    ],
+    "level": 33,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 141
   },
   {
     "id": 97,
@@ -1665,7 +3321,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "hoocrates",
+    "drops": [
+      {
+        "item": "Textile",
+        "amount": "5 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Livre de technique supérieure",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
+    "level": 4,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 15
   },
   {
     "id": 98,
@@ -1683,7 +3357,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "icelyn",
+    "drops": [
+      {
+        "item": "Organe de congélation",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Aile Précieuse",
+        "amount": "1 - 2",
+        "rate": "50%"
+      }
+    ],
+    "level": 42,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 142
   },
   {
     "id": 99,
@@ -1698,7 +3390,20 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "illuminant-bat",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
+    "level": 42,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 100,
@@ -1713,7 +3418,20 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "illuminant-slime",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
+    "level": 42,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 101,
@@ -1731,7 +3449,25 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "incineram",
+    "drops": [
+      {
+        "item": "Corne",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 27,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 40
   },
   {
     "id": 102,
@@ -1748,7 +3484,25 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "incineram-noct",
+    "drops": [
+      {
+        "item": "Corne",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 40,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 40
   },
   {
     "id": 103,
@@ -1765,7 +3519,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "jelliette",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Chair d’ombrelle de Jelliette",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 12,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 150
   },
   {
     "id": 104,
@@ -1783,7 +3555,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "jellroy",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Chair d’ombrelle de Jellroy",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 39,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 149
   },
   {
     "id": 105,
@@ -1799,9 +3589,37 @@
       "flyingMount": "S",
       "groundMount": null
     },
+    "slug": "jetragon",
+    "drops": [
+      {
+        "item": "Quartz pur",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Polymère",
+        "amount": "5 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Fibre de carbone",
+        "amount": "5 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Diamant",
+        "amount": "1 - 1",
+        "rate": "30%"
+      }
+    ],
     "mountSpeed": {
       "flying": "1700 - 3300"
-    }
+    },
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 111
   },
   {
     "id": 106,
@@ -1816,7 +3634,20 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "jolthog",
+    "drops": [
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.2,
+    "zukan": 12
   },
   {
     "id": 107,
@@ -1831,7 +3662,20 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "jolthog-cryst",
+    "drops": [
+      {
+        "item": "Organe de congélation",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 1,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 12
   },
   {
     "id": 108,
@@ -1847,9 +3691,22 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "jormuntide",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "2 - 4",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "600 - 1000"
-    }
+    },
+    "level": 45,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 101
   },
   {
     "id": 109,
@@ -1865,9 +3722,27 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "jormuntide-ignis",
+    "drops": [
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "600 - 1000"
-    }
+    },
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 101
   },
   {
     "id": 110,
@@ -1884,7 +3759,30 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "katress",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Poils de Katress",
+        "amount": "1 - 1",
+        "rate": "50%"
+      },
+      {
+        "item": "Livre de technique supérieure",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
+    "level": 25,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 75
   },
   {
     "id": 111,
@@ -1902,7 +3800,30 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "katress-ignis",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Poils de Katress",
+        "amount": "1 - 1",
+        "rate": "50%"
+      },
+      {
+        "item": "Livre de technique supérieure",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
+    "level": 40,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 75
   },
   {
     "id": 112,
@@ -1918,7 +3839,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "kelpsea",
+    "drops": [
+      {
+        "item": "Viande de Kelpsea",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 9,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 81
   },
   {
     "id": 113,
@@ -1934,7 +3873,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "kelpsea-ignis",
+    "drops": [
+      {
+        "item": "Viande de Kelpsea",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 24,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 81
   },
   {
     "id": 114,
@@ -1949,7 +3906,30 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "kikit",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Os",
+        "amount": "1 - 2",
+        "rate": "60%"
+      },
+      {
+        "item": "Pétrole brut",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 40,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 117
   },
   {
     "id": 115,
@@ -1966,7 +3946,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "killamari",
+    "drops": [
+      {
+        "item": "Glande à venin",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Tentacule de Killamari",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 5,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 23
   },
   {
     "id": 116,
@@ -1983,7 +3981,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "killamari-primo",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Tentacule de Killamari",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 42,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 23
   },
   {
     "id": 117,
@@ -1999,9 +4015,22 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "kingpaca",
+    "drops": [
+      {
+        "item": "Laine",
+        "amount": "5 - 5",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1040"
-    }
+    },
+    "level": 40,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 89
   },
   {
     "id": 118,
@@ -2017,7 +4046,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "kingpaca-cryst",
+    "drops": [
+      {
+        "item": "Laine",
+        "amount": "5 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de congélation",
+        "amount": "3 - 6",
+        "rate": "100%"
+      }
+    ],
+    "level": 46,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 89
   },
   {
     "id": 119,
@@ -2033,9 +4080,27 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "kitsun",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1100"
-    }
+    },
+    "level": 28,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 61
   },
   {
     "id": 120,
@@ -2050,7 +4115,30 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "kitsun-noct",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Fragment obscur",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 57,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 61
   },
   {
     "id": 121,
@@ -2067,7 +4155,20 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "knocklem",
+    "drops": [
+      {
+        "item": "Minerai de métal",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 55,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 120
   },
   {
     "id": 122,
@@ -2084,7 +4185,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "lamball",
+    "drops": [
+      {
+        "item": "Laine",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Viande de Lamball",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 1,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.5,
+    "zukan": 1
   },
   {
     "id": 123,
@@ -2101,7 +4220,30 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "leezpunk",
+    "drops": [
+      {
+        "item": "Clé en bronze",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Clé en argent",
+        "amount": "1 - 1",
+        "rate": "1%"
+      },
+      {
+        "item": "Crête de Leezpunk",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 26,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 45
   },
   {
     "id": 124,
@@ -2119,7 +4261,30 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "leezpunk-ignis",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Clé en argent",
+        "amount": "1 - 1",
+        "rate": "2%"
+      },
+      {
+        "item": "Crête de Leezpunk",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 25,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 45
   },
   {
     "id": 125,
@@ -2138,7 +4303,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "lifmunk",
+    "drops": [
+      {
+        "item": "Graines de baies",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Médicament de fortune",
+        "amount": "1 - 1",
+        "rate": "20%"
+      }
+    ],
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 0.9,
+    "zukan": 4
   },
   {
     "id": 126,
@@ -2153,7 +4336,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "loupmoon",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 12,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 46
   },
   {
     "id": 127,
@@ -2169,7 +4365,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "loupmoon-cryst",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 50,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 46
   },
   {
     "id": 128,
@@ -2187,7 +4396,40 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "lovander",
+    "drops": [
+      {
+        "item": "Champignon",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Gâteau",
+        "amount": "1 - 1",
+        "rate": "1%"
+      },
+      {
+        "item": "Boisson douteuse",
+        "amount": "1 - 1",
+        "rate": "1%"
+      },
+      {
+        "item": "Boisson étrange",
+        "amount": "1 - 1",
+        "rate": "1%"
+      },
+      {
+        "item": "Médicament d&#39;amnésie",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
+    "level": 18,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 69
   },
   {
     "id": 129,
@@ -2205,7 +4447,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "lullu",
+    "drops": [
+      {
+        "item": "Belle fleur",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Baie rouge",
+        "amount": "1 - 2",
+        "rate": "60%"
+      }
+    ],
+    "level": 40,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 115
   },
   {
     "id": 130,
@@ -2222,7 +4482,20 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "lunaris",
+    "drops": [
+      {
+        "item": "Éclat de paldium",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 38,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 63
   },
   {
     "id": 131,
@@ -2240,7 +4513,30 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "lyleen",
+    "drops": [
+      {
+        "item": "Médicament de fortune",
+        "amount": "3 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Belle fleur",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Livre de technique innovante",
+        "amount": "1 - 1",
+        "rate": "10%"
+      }
+    ],
+    "level": 15,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 104
   },
   {
     "id": 132,
@@ -2257,7 +4553,30 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "lyleen-noct",
+    "drops": [
+      {
+        "item": "Médicament de fortune",
+        "amount": "3 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Belle fleur",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Livre de technique innovante",
+        "amount": "1 - 1",
+        "rate": "10%"
+      }
+    ],
+    "level": 49,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 104
   },
   {
     "id": 133,
@@ -2275,9 +4594,32 @@
       "flyingMount": null,
       "groundMount": "D"
     },
+    "slug": "mammorest",
+    "drops": [
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "5 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "5 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Viande de Mammorest",
+        "amount": "2 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "600 - 1030"
-    }
+    },
+    "level": 33,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 90
   },
   {
     "id": 134,
@@ -2294,7 +4636,30 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "mammorest-cryst",
+    "drops": [
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "5 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "5 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Viande de Mammorest",
+        "amount": "2 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 41,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 90
   },
   {
     "id": 135,
@@ -2311,9 +4676,32 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "maraith",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de petit Pal",
+        "amount": "1 - 1",
+        "rate": "15%"
+      },
+      {
+        "item": "Pétrole brut",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1100"
-    }
+    },
+    "level": 36,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 66
   },
   {
     "id": 136,
@@ -2328,7 +4716,20 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "mau",
+    "drops": [
+      {
+        "item": "Pièce d&#39;or",
+        "amount": "100 - 200",
+        "rate": "50%"
+      }
+    ],
+    "level": 5,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 24
   },
   {
     "id": 137,
@@ -2344,7 +4745,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "mau-cryst",
+    "drops": [
+      {
+        "item": "Organe de congélation",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Saphir",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
+    "level": 30,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 24
   },
   {
     "id": 138,
@@ -2360,9 +4779,27 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "melpaca",
+    "drops": [
+      {
+        "item": "Laine",
+        "amount": "2 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "500 - 900"
-    }
+    },
+    "level": 5,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 36
   },
   {
     "id": 139,
@@ -2378,7 +4815,25 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "menasting",
+    "drops": [
+      {
+        "item": "Charbon",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Glande à venin",
+        "amount": "5 - 10",
+        "rate": "100%"
+      }
+    ],
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 99
   },
   {
     "id": 140,
@@ -2394,7 +4849,25 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "menasting-terra",
+    "drops": [
+      {
+        "item": "Pétrole brut",
+        "amount": "1 - 1",
+        "rate": "50%"
+      },
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 54,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 99
   },
   {
     "id": 141,
@@ -2410,7 +4883,30 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "mimog",
+    "drops": [
+      {
+        "item": "Pièce d&#39;or",
+        "amount": "1000 - 2000",
+        "rate": "100%"
+      },
+      {
+        "item": "Pièce canine",
+        "amount": "14 - 21",
+        "rate": "100%"
+      },
+      {
+        "item": "Manuel de formation (XL)",
+        "amount": "1 - 1",
+        "rate": "20%"
+      }
+    ],
+    "level": 9,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 0.8,
+    "zukan": 124
   },
   {
     "id": 142,
@@ -2428,7 +4924,35 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "mossanda",
+    "drops": [
+      {
+        "item": "Champignon",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Graines de tomates",
+        "amount": "1 - 1",
+        "rate": "50%"
+      },
+      {
+        "item": "Graine d&#39;oignon",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 25,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 33
   },
   {
     "id": 143,
@@ -2446,7 +4970,30 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "mossanda-lux",
+    "drops": [
+      {
+        "item": "Champignon",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 35,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 33
   },
   {
     "id": 144,
@@ -2461,7 +5008,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "mozzarina",
+    "drops": [
+      {
+        "item": "Viande de Mozzarina",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Lait",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 10,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 29
   },
   {
     "id": 145,
@@ -2478,7 +5043,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "munchill",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Chair de Munchill",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 10,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 146
   },
   {
     "id": 146,
@@ -2495,9 +5078,27 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "necromus",
+    "drops": [
+      {
+        "item": "Lingot de Paluminium",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de grand Pal",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "1300 - 1900"
-    }
+    },
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 109
   },
   {
     "id": 147,
@@ -2512,7 +5113,40 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "neptilius",
+    "drops": [
+      {
+        "item": "Quartz pur",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Polymère",
+        "amount": "5 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Fibre de carbone",
+        "amount": "5 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Diamant",
+        "amount": "1 - 1",
+        "rate": "30%"
+      },
+      {
+        "item": "Âme de grand Pal",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 155
   },
   {
     "id": 148,
@@ -2528,7 +5162,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "nitemary",
+    "drops": [
+      {
+        "item": "Âme de petit Pal",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 50,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 128
   },
   {
     "id": 149,
@@ -2544,9 +5191,22 @@
       "flyingMount": "D",
       "groundMount": null
     },
+    "slug": "nitewing",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "600 - 750"
-    }
+    },
+    "level": 9,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 38
   },
   {
     "id": 150,
@@ -2561,7 +5221,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "nox",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de petit Pal",
+        "amount": "1 - 1",
+        "rate": "40%"
+      }
+    ],
+    "level": 5,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 21
   },
   {
     "id": 151,
@@ -2579,7 +5257,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "nyafia",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 50,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 139
   },
   {
     "id": 152,
@@ -2594,7 +5285,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "omascul",
+    "drops": [
+      {
+        "item": "Fragment obscur",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 50,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 133
   },
   {
     "id": 153,
@@ -2611,7 +5315,20 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "orserk",
+    "drops": [
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 40,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 106
   },
   {
     "id": 154,
@@ -2628,9 +5345,27 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "paladius",
+    "drops": [
+      {
+        "item": "Lingot de Paluminium",
+        "amount": "10 - 10",
+        "rate": "100%"
+      },
+      {
+        "item": "Diamant",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "800 - 1800"
-    }
+    },
+    "level": 60,
+    "rarity": 20,
+    "rarityCategory": "Legendary",
+    "captureRate": 1.0,
+    "zukan": 108
   },
   {
     "id": 155,
@@ -2647,7 +5382,20 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "palumba",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 40,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 144
   },
   {
     "id": 156,
@@ -2665,7 +5413,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "pengullet",
+    "drops": [
+      {
+        "item": "Organe de congélation",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 10,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 0.9,
+    "zukan": 10
   },
   {
     "id": 157,
@@ -2683,7 +5449,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "pengullet-lux",
+    "drops": [
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 1,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 0.9,
+    "zukan": 10
   },
   {
     "id": 158,
@@ -2702,7 +5486,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "penking",
+    "drops": [
+      {
+        "item": "Organe de congélation",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Plume de Penking",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 18,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 11
   },
   {
     "id": 159,
@@ -2721,7 +5523,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "penking-lux",
+    "drops": [
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Plume de Penking",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 1,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 11
   },
   {
     "id": 160,
@@ -2740,7 +5560,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "petallia",
+    "drops": [
+      {
+        "item": "Belle fleur",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 18,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 87
   },
   {
     "id": 161,
@@ -2756,7 +5589,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "polapup",
+    "drops": [
+      {
+        "item": "Organe de congélation",
+        "amount": "1 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 5,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 147
   },
   {
     "id": 162,
@@ -2773,7 +5619,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "prixter",
+    "drops": [
+      {
+        "item": "Glande à venin",
+        "amount": "4 - 5",
+        "rate": "100%"
+      }
+    ],
+    "level": 43,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 119
   },
   {
     "id": 163,
@@ -2792,7 +5651,30 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "prunelia",
+    "drops": [
+      {
+        "item": "Médicament de fortune",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Belle fleur",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Graine de carotte",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 50,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 138
   },
   {
     "id": 164,
@@ -2807,7 +5689,20 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "purple-slime",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 36,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 165,
@@ -2824,9 +5719,27 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "pyrin",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "850 - 1300"
-    }
+    },
+    "level": 28,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 58
   },
   {
     "id": 166,
@@ -2842,7 +5755,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "pyrin-noct",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 30,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 58
   },
   {
     "id": 167,
@@ -2861,9 +5792,22 @@
       "flyingMount": "C",
       "groundMount": null
     },
+    "slug": "quivern",
+    "drops": [
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "3 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "800 - 950"
-    }
+    },
+    "level": 40,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 95
   },
   {
     "id": 168,
@@ -2883,9 +5827,32 @@
       "flyingMount": "C",
       "groundMount": null
     },
+    "slug": "quivern-botan",
+    "drops": [
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "3 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Belle fleur",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Baie rouge",
+        "amount": "1 - 2",
+        "rate": "60%"
+      }
+    ],
     "mountSpeed": {
       "flying": "800 - 950"
-    }
+    },
+    "level": 52,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 95
   },
   {
     "id": 169,
@@ -2902,9 +5869,22 @@
       "flyingMount": "B",
       "groundMount": null
     },
+    "slug": "ragnahawk",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "5 - 7",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "800 - 1300"
-    }
+    },
+    "level": 34,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 74
   },
   {
     "id": 170,
@@ -2919,7 +5899,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "rainbow-slime",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "5 - 10",
+        "rate": "100%"
+      }
+    ],
+    "level": 42,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 171,
@@ -2935,9 +5928,22 @@
       "flyingMount": null,
       "groundMount": "A"
     },
+    "slug": "rayhound",
+    "drops": [
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1150"
-    }
+    },
+    "level": 27,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 60
   },
   {
     "id": 172,
@@ -2952,7 +5958,20 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "red-slime",
+    "drops": [
+      {
+        "item": "Hallowed Bar",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 36,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": -1
   },
   {
     "id": 173,
@@ -2969,9 +5988,37 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "reindrix",
+    "drops": [
+      {
+        "item": "Viande de Reindrix",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Corne",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de congélation",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1070"
-    }
+    },
+    "level": 25,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 59
   },
   {
     "id": 174,
@@ -2987,7 +6034,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "relaxaurus",
+    "drops": [
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "1 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Rubis",
+        "amount": "1 - 1",
+        "rate": "5%"
+      }
+    ],
+    "level": 18,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 85
   },
   {
     "id": 175,
@@ -3003,7 +6068,30 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "relaxaurus-lux",
+    "drops": [
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "1 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Saphir",
+        "amount": "1 - 1",
+        "rate": "5%"
+      }
+    ],
+    "level": 31,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 85
   },
   {
     "id": 176,
@@ -3020,9 +6108,22 @@
       "flyingMount": null,
       "groundMount": "D"
     },
+    "slug": "reptyro",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "5 - 7",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "550 - 1000"
-    }
+    },
+    "level": 34,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 88
   },
   {
     "id": 177,
@@ -3038,7 +6139,20 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "reptyro-cryst",
+    "drops": [
+      {
+        "item": "Organe de congélation",
+        "amount": "3 - 4",
+        "rate": "100%"
+      }
+    ],
+    "level": 42,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 88
   },
   {
     "id": 178,
@@ -3055,7 +6169,30 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "ribbuny",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Belle fleur",
+        "amount": "1 - 1",
+        "rate": "5%"
+      },
+      {
+        "item": "Ruban de Ribbuny",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 13,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 39
   },
   {
     "id": 179,
@@ -3073,7 +6210,35 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "ribbuny-botan",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Belle fleur",
+        "amount": "1 - 1",
+        "rate": "5%"
+      },
+      {
+        "item": "Ruban de Ribbuny",
+        "amount": "1 - 1",
+        "rate": "50%"
+      },
+      {
+        "item": "Semence de patate",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 50,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 39
   },
   {
     "id": 180,
@@ -3093,7 +6258,30 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "robinquill",
+    "drops": [
+      {
+        "item": "Graines de blé",
+        "amount": "1 - 2",
+        "rate": "50%"
+      },
+      {
+        "item": "Flèche",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Semence de patate",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 22,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 48
   },
   {
     "id": 181,
@@ -3112,7 +6300,30 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "robinquill-terra",
+    "drops": [
+      {
+        "item": "Graines de blé",
+        "amount": "1 - 2",
+        "rate": "50%"
+      },
+      {
+        "item": "Flèche",
+        "amount": "2 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Semence de patate",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 28,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 48
   },
   {
     "id": 182,
@@ -3127,7 +6338,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "rooby",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 2,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 9
   },
   {
     "id": 183,
@@ -3143,9 +6372,32 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "rushoar",
+    "drops": [
+      {
+        "item": "Viande de Rushoar",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Os",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "500 - 800"
-    }
+    },
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 20
   },
   {
     "id": 184,
@@ -3163,9 +6415,32 @@
       "flyingMount": "A",
       "groundMount": null
     },
+    "slug": "selyne",
+    "drops": [
+      {
+        "item": "Tissu",
+        "amount": "1 - 2",
+        "rate": "60%"
+      },
+      {
+        "item": "Saphir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Griffe Précieuse",
+        "amount": "1 - 1",
+        "rate": "30%"
+      }
+    ],
     "mountSpeed": {
       "flying": "1000 - 1600"
-    }
+    },
+    "level": 1,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 113
   },
   {
     "id": 185,
@@ -3181,9 +6456,32 @@
       "flyingMount": "B",
       "groundMount": null
     },
+    "slug": "shadowbeak",
+    "drops": [
+      {
+        "item": "Lingot de Paluminium",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Fibre de carbone",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Livre de technique innovante",
+        "amount": "1 - 1",
+        "rate": "10%"
+      }
+    ],
     "mountSpeed": {
       "flying": "850 - 1200"
-    }
+    },
+    "level": 40,
+    "rarity": 10,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 107
   },
   {
     "id": 186,
@@ -3202,9 +6500,27 @@
       "flyingMount": null,
       "groundMount": "B"
     },
+    "slug": "shroomer",
+    "drops": [
+      {
+        "item": "Champignon",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Baie rouge",
+        "amount": "1 - 2",
+        "rate": "60%"
+      }
+    ],
     "mountSpeed": {
       "ground": "740 - 1050"
-    }
+    },
+    "level": 42,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 116
   },
   {
     "id": 187,
@@ -3223,9 +6539,27 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "shroomer-noct",
+    "drops": [
+      {
+        "item": "Glande à venin",
+        "amount": "4 - 8",
+        "rate": "100%"
+      },
+      {
+        "item": "Champignon étrange",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "740 - 1050"
-    }
+    },
+    "level": 46,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 116
   },
   {
     "id": 188,
@@ -3242,7 +6576,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "sibelyx",
+    "drops": [
+      {
+        "item": "Tissu de qualité",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de congélation",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 36,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 79
   },
   {
     "id": 189,
@@ -3258,9 +6610,22 @@
       "flyingMount": null,
       "groundMount": "A"
     },
+    "slug": "silvegis",
+    "drops": [
+      {
+        "item": "Chromite",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "700 - 1050"
-    }
+    },
+    "level": 59,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 130
   },
   {
     "id": 190,
@@ -3275,7 +6640,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "smokie",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Pétrole brut",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 50,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 131
   },
   {
     "id": 191,
@@ -3294,7 +6677,30 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "sootseer",
+    "drops": [
+      {
+        "item": "Âme de Pal moyen",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Os",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Pétrole brut",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 46,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 118
   },
   {
     "id": 192,
@@ -3311,7 +6717,20 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "sparkit",
+    "drops": [
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 7
   },
   {
     "id": 193,
@@ -3329,7 +6748,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "splatterina",
+    "drops": [
+      {
+        "item": "Fragment obscur",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 55,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 134
   },
   {
     "id": 194,
@@ -3345,9 +6777,27 @@
       "flyingMount": null,
       "groundMount": "S"
     },
+    "slug": "starryon",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Fragment obscur",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "900 - 1200"
-    }
+    },
+    "level": 50,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 129
   },
   {
     "id": 195,
@@ -3363,9 +6813,22 @@
       "flyingMount": null,
       "groundMount": "C"
     },
+    "slug": "surfent",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "500 - 800"
-    }
+    },
+    "level": 15,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 65
   },
   {
     "id": 196,
@@ -3380,7 +6843,20 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "surfent-terra",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "level": 28,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 65
   },
   {
     "id": 197,
@@ -3396,9 +6872,22 @@
       "flyingMount": "B",
       "groundMount": null
     },
+    "slug": "suzaku",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "5 - 10",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "850 - 1100"
-    }
+    },
+    "level": 40,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 102
   },
   {
     "id": 198,
@@ -3414,9 +6903,22 @@
       "flyingMount": "B",
       "groundMount": null
     },
+    "slug": "suzaku-aqua",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "5 - 5",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "850 - 1100"
-    }
+    },
+    "level": 42,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 102
   },
   {
     "id": 199,
@@ -3432,7 +6934,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "swee",
+    "drops": [
+      {
+        "item": "Laine",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Duvet de Swee",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 7,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 53
   },
   {
     "id": 200,
@@ -3449,9 +6969,22 @@
       "flyingMount": null,
       "groundMount": "D"
     },
+    "slug": "sweepa",
+    "drops": [
+      {
+        "item": "Laine",
+        "amount": "3 - 5",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "650 - 1020"
-    }
+    },
+    "level": 15,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 54
   },
   {
     "id": 201,
@@ -3470,7 +7003,20 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "tanzee",
+    "drops": [
+      {
+        "item": "Champignon",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 3,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.1,
+    "zukan": 8
   },
   {
     "id": 202,
@@ -3488,7 +7034,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "tarantriss",
+    "drops": [
+      {
+        "item": "Textile",
+        "amount": "2 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Glande à venin",
+        "amount": "2 - 5",
+        "rate": "100%"
+      }
+    ],
+    "level": 50,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 135
   },
   {
     "id": 203,
@@ -3503,7 +7067,20 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "teafant",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 1,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.3,
+    "zukan": 16
   },
   {
     "id": 204,
@@ -3518,7 +7095,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "tocotoco",
+    "drops": [
+      {
+        "item": "Poudre à canon",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Plume de Tocotoco",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 11,
+    "rarity": 1,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 27
   },
   {
     "id": 205,
@@ -3535,7 +7130,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "tombat",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de petit Pal",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
+    "level": 9,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 68
   },
   {
     "id": 206,
@@ -3552,7 +7165,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "turtacle",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Os",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "level": 5,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 148
   },
   {
     "id": 207,
@@ -3569,7 +7200,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "turtacle-terra",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Os",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 1,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 148
   },
   {
     "id": 208,
@@ -3586,9 +7235,32 @@
       "flyingMount": null,
       "groundMount": "A"
     },
+    "slug": "univolt",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe d&#39;alimentation",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Corne",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
     "mountSpeed": {
       "ground": "720 - 1100"
-    }
+    },
+    "level": 13,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 0.9,
+    "zukan": 56
   },
   {
     "id": 209,
@@ -3607,7 +7279,30 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "vaelet",
+    "drops": [
+      {
+        "item": "Médicament de fortune",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Graines de tomates",
+        "amount": "1 - 1",
+        "rate": "50%"
+      },
+      {
+        "item": "Graine d&#39;oignon",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 18,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 78
   },
   {
     "id": 210,
@@ -3624,9 +7319,32 @@
       "flyingMount": "D",
       "groundMount": null
     },
+    "slug": "vanwyrm",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Rubis",
+        "amount": "1 - 2",
+        "rate": "1%"
+      },
+      {
+        "item": "Pièce d&#39;or",
+        "amount": "10 - 40",
+        "rate": "10%"
+      }
+    ],
     "mountSpeed": {
       "flying": "700 - 850"
-    }
+    },
+    "level": 10,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 71
   },
   {
     "id": 211,
@@ -3643,9 +7361,32 @@
       "flyingMount": "D",
       "groundMount": null
     },
+    "slug": "vanwyrm-cryst",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de congélation",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Saphir",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
     "mountSpeed": {
       "flying": "700 - 850"
-    }
+    },
+    "level": 22,
+    "rarity": 5,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 71
   },
   {
     "id": 212,
@@ -3664,7 +7405,25 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "verdash",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Os",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 40,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 77
   },
   {
     "id": 213,
@@ -3680,7 +7439,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "vixy",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Os",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 3,
+    "rarity": 2,
+    "rarityCategory": "Common",
+    "captureRate": 1.3,
+    "zukan": 14
   },
   {
     "id": 214,
@@ -3698,7 +7475,20 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "warsect",
+    "drops": [
+      {
+        "item": "Miel",
+        "amount": "3 - 4",
+        "rate": "100%"
+      }
+    ],
+    "level": 40,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 92
   },
   {
     "id": 215,
@@ -3715,7 +7505,20 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "warsect-terra",
+    "drops": [
+      {
+        "item": "Miel",
+        "amount": "3 - 4",
+        "rate": "100%"
+      }
+    ],
+    "level": 52,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 92
   },
   {
     "id": 216,
@@ -3731,7 +7534,35 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "whalaska",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Minerai de Korallium",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de congélation",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de grand Pal",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
+    "level": 42,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 154
   },
   {
     "id": 217,
@@ -3747,7 +7578,35 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "whalaska-ignis",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Minerai de Korallium",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "1 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de grand Pal",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
+    "level": 58,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 154
   },
   {
     "id": 218,
@@ -3764,7 +7623,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "wixen",
+    "drops": [
+      {
+        "item": "Organe d&#39;allumage",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Livre de technique supérieure",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
+    "level": 27,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 76
   },
   {
     "id": 219,
@@ -3781,7 +7658,25 @@
       "combat": "C",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "wixen-noct",
+    "drops": [
+      {
+        "item": "Âme de Pal moyen",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Livre de technique supérieure",
+        "amount": "1 - 1",
+        "rate": "1%"
+      }
+    ],
+    "level": 46,
+    "rarity": 6,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 76
   },
   {
     "id": 220,
@@ -3796,7 +7691,25 @@
       "combat": "D",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "woolipop",
+    "drops": [
+      {
+        "item": "Barbe à papa",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "level": 14,
+    "rarity": 3,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 34
   },
   {
     "id": 221,
@@ -3815,9 +7728,27 @@
       "flyingMount": null,
       "groundMount": "D"
     },
+    "slug": "wumpo",
+    "drops": [
+      {
+        "item": "Organe de congélation",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Belle fleur",
+        "amount": "1 - 1",
+        "rate": "20%"
+      }
+    ],
     "mountSpeed": {
       "ground": "600 - 1050"
-    }
+    },
+    "level": 41,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 91
   },
   {
     "id": 222,
@@ -3835,7 +7766,35 @@
       "combat": "A",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "wumpo-botan",
+    "drops": [
+      {
+        "item": "Graines de laitue",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Graines de tomates",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Belle fleur",
+        "amount": "1 - 1",
+        "rate": "20%"
+      },
+      {
+        "item": "Graine de carotte",
+        "amount": "1 - 1",
+        "rate": "50%"
+      }
+    ],
+    "level": 40,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 91
   },
   {
     "id": 223,
@@ -3851,9 +7810,27 @@
       "flyingMount": "C",
       "groundMount": null
     },
+    "slug": "xenogard",
+    "drops": [
+      {
+        "item": "Fragment de météorite",
+        "amount": "5 - 12",
+        "rate": "100%"
+      },
+      {
+        "item": "Huile de Pal de Qualité",
+        "amount": "3 - 5",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "790 - 1200"
-    }
+    },
+    "level": 1,
+    "rarity": 9,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 126
   },
   {
     "id": 224,
@@ -3869,9 +7846,22 @@
       "flyingMount": "D",
       "groundMount": null
     },
+    "slug": "xenolord",
+    "drops": [
+      {
+        "item": "Fragment de météorite",
+        "amount": "7 - 15",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "flying": "550 - 660"
-    }
+    },
+    "level": 1,
+    "rarity": 8,
+    "rarityCategory": "Epic",
+    "captureRate": 1.0,
+    "zukan": 127
   },
   {
     "id": 225,
@@ -3887,7 +7877,20 @@
       "combat": "B",
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "slug": "xenovader",
+    "drops": [
+      {
+        "item": "Fragment de météorite",
+        "amount": "3 - 10",
+        "rate": "100%"
+      }
+    ],
+    "level": 1,
+    "rarity": 7,
+    "rarityCategory": "Rare",
+    "captureRate": 1.0,
+    "zukan": 125
   },
   {
     "id": 226,
@@ -3903,9 +7906,22 @@
       "flyingMount": null,
       "groundMount": "D"
     },
+    "slug": "yakumo",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
     "mountSpeed": {
       "ground": "750 - 1080"
-    }
+    },
+    "level": 41,
+    "rarity": 4,
+    "rarityCategory": "Common",
+    "captureRate": 1.0,
+    "zukan": 121
   },
   {
     "id": 227,

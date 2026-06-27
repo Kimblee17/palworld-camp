@@ -126,6 +126,7 @@ async function init() {
   document.getElementById("pedia-search").addEventListener("input", renderPalpedia);
   document.querySelectorAll(".pedia-table th[data-sort]").forEach(th =>
     th.addEventListener("click", () => setPediaSort(th.dataset.sort)));
+  document.getElementById("drop-search").addEventListener("input", renderDrops);
 
   // Écouteurs camp
   document.getElementById("clear-camp").addEventListener("click", () => {
@@ -176,7 +177,9 @@ function switchView(view) {
   document.querySelectorAll(".view-btn").forEach(b => b.classList.toggle("active", b.dataset.view === view));
   document.querySelectorAll(".view-camp").forEach(el => el.hidden = view !== "camp");
   document.querySelectorAll(".view-palpedia").forEach(el => el.hidden = view !== "palpedia");
+  document.querySelectorAll(".view-drops").forEach(el => el.hidden = view !== "drops");
   if (view === "palpedia") renderPalpedia();
+  else if (view === "drops") renderDrops();
 }
 
 // ===== Gestion des camps =====
@@ -418,17 +421,30 @@ function tierCell(pal, cat) {
   return `<td class="pedia-tier"><span class="tier-badge ${tierClass(t)}">${t || "–"}</span>${speed}</td>`;
 }
 
+const MUTED = '<span class="muted">—</span>';
+
 function pediaRow(pal) {
   const tr = document.createElement("tr");
   const night = pal.nightWorker ? ` <span class="night" title="Travailleur de nuit">🌙</span>` : "";
+  const name = pal.slug
+    ? `<a href="https://palworld.gg/pal/${pal.slug}" target="_blank" rel="noopener" title="Voir sur palworld.gg">${pal.name}</a>`
+    : pal.name;
+  const lvl = pal.level != null ? `niv. ${pal.level}` : MUTED;
+  const rarity = pal.rarityCategory
+    ? `<span class="rarity-tag rarity-${pal.rarityCategory.toLowerCase()}">${pal.rarityCategory} ${pal.rarity}</span>`
+    : MUTED;
+  const cap = pal.captureRate != null ? `×${pal.captureRate}` : MUTED;
   const skills = WORK_TYPES
     .filter(w => (pal.work[w.id] || 0) > 0)
     .map(w => `<span class="skill-chip ${levelClass(pal.work[w.id])}" title="${w.label} — ${LEVEL_NAMES[pal.work[w.id]]}">${w.icon} <b>${pal.work[w.id]}</b></span>`)
     .join("");
   const tiers = TIER_CATS.map(c => tierCell(pal, c)).join("");
   tr.innerHTML =
-    `<td class="pedia-name">${pal.name}${night}</td>` +
-    `<td><div class="pedia-skills">${skills || '<span class="muted">—</span>'}</div></td>` +
+    `<td class="pedia-name">${name}${night}</td>` +
+    `<td class="pedia-num">${lvl}</td>` +
+    `<td>${rarity}</td>` +
+    `<td class="pedia-num">${cap}</td>` +
+    `<td><div class="pedia-skills">${skills || MUTED}</div></td>` +
     tiers;
   return tr;
 }
@@ -436,6 +452,9 @@ function pediaRow(pal) {
 function pediaSortValue(pal, key) {
   if (key === "name") return pal.name.toLowerCase();
   if (key === "skills") return WORK_TYPES.reduce((n, w) => n + ((pal.work[w.id] || 0) > 0 ? 1 : 0), 0);
+  if (key === "level") return pal.level ?? null;
+  if (key === "rarity") return pal.rarity ?? null;
+  if (key === "capture") return pal.captureRate ?? null;
   const t = pal.tiers ? pal.tiers[key] : null;
   return t in TIER_RANK ? TIER_RANK[t] : 99;          // non classé : à la fin
 }
@@ -445,8 +464,9 @@ function setPediaSort(key) {
     pediaSort.dir = -pediaSort.dir;                   // reclic : on inverse
   } else {
     pediaSort.key = key;
-    // Défaut sensé : nom A→Z ; compétences = plus nombreuses d'abord ; tiers = meilleur (S) d'abord
-    pediaSort.dir = key === "skills" ? -1 : 1;
+    // Défaut sensé : niveau/rareté croissants (plus accessible d'abord) ;
+    // compétences et capture décroissants (plus nombreuses / plus facile d'abord) ; reste A→Z ou S→D.
+    pediaSort.dir = (key === "skills" || key === "capture") ? -1 : 1;
   }
   renderPalpedia();
 }
@@ -474,6 +494,10 @@ function renderPalpedia() {
     .sort((a, b) => {
       const va = pediaSortValue(a, pediaSort.key);
       const vb = pediaSortValue(b, pediaSort.key);
+      // Valeurs absentes toujours en fin, quel que soit le sens.
+      if (va == null && vb == null) return a.name.localeCompare(b.name, "fr");
+      if (va == null) return 1;
+      if (vb == null) return -1;
       let c = typeof va === "string" ? va.localeCompare(vb, "fr") : va - vb;
       if (c === 0) c = a.name.localeCompare(b.name, "fr");   // départage par nom
       return c * pediaSort.dir;
@@ -481,10 +505,58 @@ function renderPalpedia() {
   document.getElementById("pedia-count").textContent = rows.length;
   updatePediaHeaders();
   if (!rows.length) {
-    body.innerHTML = `<tr><td class="empty" colspan="${2 + TIER_CATS.length}">Aucun Pal trouvé.</td></tr>`;
+    body.innerHTML = `<tr><td class="empty" colspan="${5 + TIER_CATS.length}">Aucun Pal trouvé.</td></tr>`;
     return;
   }
   rows.forEach(p => body.appendChild(pediaRow(p)));
+}
+
+// ===== Drops (recherche d'objet -> Pals qui le lâchent) =====
+let DROP_INDEX = null;   // [[item, [{name, slug, amount, rate}]], ...] trié par objet
+
+function rateNum(rate) { const m = /([\d.]+)/.exec(rate || ""); return m ? parseFloat(m[1]) : 0; }
+
+function fmtAmount(amount) {
+  const parts = (amount || "").split("-").map(s => s.trim());
+  return parts.length === 2 && parts[0] === parts[1] ? parts[0] : amount;
+}
+
+function buildDropIndex() {
+  const idx = new Map();
+  PALS.forEach(p => (p.drops || []).forEach(d => {
+    if (!idx.has(d.item)) idx.set(d.item, []);
+    idx.get(d.item).push({ name: p.name, slug: p.slug, amount: d.amount, rate: d.rate });
+  }));
+  for (const arr of idx.values())
+    arr.sort((a, b) => rateNum(b.rate) - rateNum(a.rate) || a.name.localeCompare(b.name, "fr"));
+  DROP_INDEX = [...idx.entries()].sort((a, b) => a[0].localeCompare(b[0], "fr"));
+}
+
+function dropItemRow(item, pals) {
+  const li = document.createElement("li");
+  li.className = "drop-item";
+  const palsHtml = pals.map(p => {
+    const name = p.slug
+      ? `<a href="https://palworld.gg/pal/${p.slug}" target="_blank" rel="noopener">${p.name}</a>`
+      : p.name;
+    return `<li class="drop-pal">${name}<span class="drop-amt">×${fmtAmount(p.amount)}</span>` +
+      `<span class="drop-rate">${p.rate}</span></li>`;
+  }).join("");
+  li.innerHTML =
+    `<div class="drop-item-name">${item} <span class="drop-pal-count">${pals.length} Pal${pals.length > 1 ? "s" : ""}</span></div>` +
+    `<ul class="drop-pals">${palsHtml}</ul>`;
+  return li;
+}
+
+function renderDrops() {
+  if (!DROP_INDEX) buildDropIndex();
+  const q = document.getElementById("drop-search").value.trim().toLowerCase();
+  const list = document.getElementById("drop-list");
+  list.innerHTML = "";
+  const items = DROP_INDEX.filter(([item]) => !q || item.toLowerCase().includes(q));
+  document.getElementById("drop-count").textContent = items.length;
+  if (!items.length) { list.innerHTML = `<li class="empty">Aucun objet trouvé.</li>`; return; }
+  items.forEach(([item, pals]) => list.appendChild(dropItemRow(item, pals)));
 }
 
 // ===== Rendu global =====

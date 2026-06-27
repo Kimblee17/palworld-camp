@@ -333,3 +333,38 @@ main {
 .pedia-table th.sortable:hover { color: var(--text); }
 .pedia-table th.sorted { color: var(--accent); }
 .pedia-table th .arrow { font-size: 0.72rem; }
+
+/* Palpedia : colonnes Niveau / Rareté / Capture / Stats */
+.pedia-num { text-align: center; white-space: nowrap; font-weight: 700; }
+.pedia-name a { color: var(--accent-2); text-decoration: none; }
+.pedia-name a:hover { text-decoration: underline; }
+
+.rarity-tag {
+  display: inline-block; white-space: nowrap;
+  font-size: 0.74rem; font-weight: 800;
+  padding: 2px 8px; border-radius: 100px;
+  border: 1px solid currentColor;
+}
+.rarity-common    { color: #9aa9bb; }
+.rarity-rare      { color: #4ea0ff; }
+.rarity-epic      { color: #c07af0; }
+.rarity-legendary { color: #f0a830; }
+
+.pedia-link {
+  align-self: center; margin-left: auto;
+  color: var(--accent-2); text-decoration: none;
+  font-size: 0.88rem; font-weight: 600;
+}
+.pedia-link:hover { text-decoration: underline; }
+
+/* ===== Vue Drops ===== */
+.drop-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; max-height: 72vh; overflow-y: auto; }
+.drop-item { background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; }
+.drop-item-name { font-weight: 800; margin-bottom: 8px; }
+.drop-pal-count { color: var(--muted); font-weight: 600; font-size: 0.8rem; margin-left: 6px; }
+.drop-pals { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 4px 14px; }
+.drop-pal { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; padding: 2px 0; }
+.drop-pal a { color: var(--accent-2); text-decoration: none; }
+.drop-pal a:hover { text-decoration: underline; }
+.drop-amt { color: var(--muted); font-size: 0.8rem; }
+.drop-rate { margin-left: auto; font-weight: 700; font-size: 0.82rem; }
