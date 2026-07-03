@@ -18,6 +18,14 @@
     </div>
   </header>
 
+  <!-- Barre de synchro / partage cloud -->
+  <div class="sync-bar" id="sync-bar">
+    <span id="sync-status" class="sync-status">☁️ Chargement de la synchro…</span>
+    <button id="sync-enable" class="bar-btn" hidden>☁️ Activer la synchro &amp; le partage</button>
+    <button id="sync-share" class="bar-btn" hidden>🔗 Copier le lien de partage</button>
+    <button id="sync-leave" class="bar-btn" hidden>Quitter la synchro</button>
+  </div>
+
   <!-- Barre de gestion des camps -->
   <div class="camp-bar view-camp">
     <label class="camp-select-label">Camp&nbsp;
@@ -121,5 +129,7 @@
   <!-- Données embarquées (générées par build_data.py) puis logique -->
   <script src="data.js"></script>
   <script src="app.js"></script>
+  <!-- Synchro cloud (module ES, chargé après app.js) -->
+  <script type="module" src="firebase-sync.js"></script>
 </body>
 </html>

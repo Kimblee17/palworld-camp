@@ -37,16 +37,61 @@ function loadStore() {
 
 function normalize(s) {
   s.palBox = s.palBox || {};
+  s.camps = s.camps || {};
   for (const c of Object.values(s.camps)) {
     c.pals = c.pals || {};
     c.structures = c.structures || {};
     if (!Number.isFinite(c.limit) || c.limit < 1) c.limit = 15;
     if (!c.name) c.name = "Camp";
   }
+  // Garantit un camp actif valide (utile quand on applique un store distant).
+  if (!s.camps[s.activeId]) s.activeId = Object.keys(s.camps)[0];
+  if (!s.activeId) {
+    const id = uid();
+    s.camps[id] = { name: "Camp 1", pals: {}, structures: {}, limit: 15 };
+    s.activeId = id;
+  }
   return s;
 }
 
-function saveStore() { localStorage.setItem(STORE_KEY, JSON.stringify(store)); }
+function saveStore() {
+  localStorage.setItem(STORE_KEY, JSON.stringify(store));
+  window.PWCloud?.push?.(store);   // pousse vers le cloud si la synchro est active
+}
+
+// ===== Passerelles avec le module de synchro cloud (firebase-sync.js) =====
+// Applique un store reçu du cloud (sans re-pousser : écriture directe en local).
+window.applyRemoteStore = function (data) {
+  if (JSON.stringify(data) === JSON.stringify(store)) return;
+  store = normalize(data);
+  localStorage.setItem(STORE_KEY, JSON.stringify(store));
+  renderAll();
+};
+
+// Met à jour la barre de synchro selon l'état renvoyé par le module.
+let syncLink = null;
+window.setSyncUI = function (state, info = {}) {
+  const st = document.getElementById("sync-status");
+  const enable = document.getElementById("sync-enable");
+  const share = document.getElementById("sync-share");
+  const leave = document.getElementById("sync-leave");
+  syncLink = info.link || null;
+  const show = (el, on) => { if (el) el.hidden = !on; };
+  if (state === "connecting") {
+    st.textContent = "☁️ Connexion…"; st.className = "sync-status";
+    show(enable, false); show(share, false); show(leave, false);
+  } else if (state === "synced") {
+    st.textContent = "☁️ Synchronisé — partage actif"; st.className = "sync-status ok";
+    show(enable, false); show(share, true); show(leave, true);
+  } else if (state === "error") {
+    st.textContent = "⚠️ Synchro : " + (info.msg || "erreur"); st.className = "sync-status err";
+    const synced = !!window.PWCloud?.isSynced?.();
+    show(enable, !synced); show(share, false); show(leave, synced);
+  } else { // "local"
+    st.textContent = "🖥️ Camps locaux (non synchronisés)"; st.className = "sync-status";
+    show(enable, true); show(share, false); show(leave, false);
+  }
+};
 function active() { return store.camps[store.activeId]; }
 
 // ===== Quantités (Pals / Constructions / Boîte) =====
@@ -189,6 +234,26 @@ function init() {
   document.getElementById("camp-new").addEventListener("click", newCamp);
   document.getElementById("camp-rename").addEventListener("click", renameCamp);
   document.getElementById("camp-delete").addEventListener("click", deleteCamp);
+
+  // Synchro cloud
+  document.getElementById("sync-enable").addEventListener("click", () => window.PWCloud?.enable(store));
+  document.getElementById("sync-leave").addEventListener("click", () => {
+    if (confirm("Quitter la synchro ? Tes camps restent en local sur cet appareil, mais ne seront plus partagés ni synchronisés.")) {
+      window.PWCloud?.leave();
+    }
+  });
+  document.getElementById("sync-share").addEventListener("click", async e => {
+    if (!syncLink) return;
+    const btn = e.currentTarget;
+    try {
+      await navigator.clipboard.writeText(syncLink);
+      const old = btn.textContent;
+      btn.textContent = "✓ Lien copié !";
+      setTimeout(() => { btn.textContent = old; }, 1800);
+    } catch {
+      prompt("Copie ce lien de partage :", syncLink);
+    }
+  });
 
   buildLegend();
   renderAll();
