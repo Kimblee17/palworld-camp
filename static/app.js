@@ -3,8 +3,10 @@ let WORK_TYPES = [];
 let PALS = [];
 let STRUCTURES = [];
 let workById = {};
+let palsById = {};
+let structById = {};
 
-// ===== Stockage : plusieurs camps =====
+// ===== Stockage : plusieurs camps + une boîte à Pals =====
 const STORE_KEY = "palworld-store";
 let store = loadStore();
 let currentTab = "pals";
@@ -30,10 +32,11 @@ function loadStore() {
   if (!Number.isFinite(limit) || limit < 1) limit = 15;
 
   const id = uid();
-  return { activeId: id, camps: { [id]: { name: "Camp 1", pals, structures: {}, limit } } };
+  return { activeId: id, palBox: {}, camps: { [id]: { name: "Camp 1", pals, structures: {}, limit } } };
 }
 
 function normalize(s) {
+  s.palBox = s.palBox || {};
   for (const c of Object.values(s.camps)) {
     c.pals = c.pals || {};
     c.structures = c.structures || {};
@@ -46,10 +49,12 @@ function normalize(s) {
 function saveStore() { localStorage.setItem(STORE_KEY, JSON.stringify(store)); }
 function active() { return store.camps[store.activeId]; }
 
-// ===== Quantités (Pals / Constructions) =====
+// ===== Quantités (Pals / Constructions / Boîte) =====
 function palQty(id) { return active().pals[id] || 0; }
 function structQty(id) { return active().structures[id] || 0; }
+function boxQty(id) { return store.palBox[id] || 0; }
 function totalPals() { return Object.values(active().pals).reduce((a, b) => a + b, 0); }
+function totalBox() { return Object.values(store.palBox).reduce((a, b) => a + b, 0); }
 function isFull() { return totalPals() >= active().limit; }
 
 function setPalQty(id, q) {
@@ -62,11 +67,16 @@ function setStructQty(id, q) {
   if (q > 0) m[id] = q; else delete m[id];
   saveStore(); renderAll();
 }
+function setBoxQty(id, q) {
+  if (q > 0) store.palBox[id] = q; else delete store.palBox[id];
+  saveStore(); renderAll();
+}
 function addPal(id) {
   if (isFull()) { flashLimit(); return; }
   setPalQty(id, palQty(id) + 1);
 }
 function addStruct(id) { setStructQty(id, structQty(id) + 1); }
+function addBox(id) { setBoxQty(id, boxQty(id) + 1); }
 
 // ===== Code couleur des niveaux =====
 function levelClass(lvl) { return "lvl-" + Math.min(Math.max(lvl, 0), 4); }
@@ -101,6 +111,8 @@ async function init() {
   PALS = data.pals;
   STRUCTURES = data.structures || [];
   workById = Object.fromEntries(WORK_TYPES.map(w => [w.id, w]));
+  palsById = Object.fromEntries(PALS.map(p => [p.id, p]));
+  structById = Object.fromEntries(STRUCTURES.map(s => [s.id, s]));
 
   document.getElementById("pals-total").textContent = PALS.length;
   document.getElementById("structs-total").textContent = STRUCTURES.length;
@@ -119,6 +131,9 @@ async function init() {
   document.getElementById("night-only").addEventListener("change", renderPalCatalog);
   document.getElementById("search-struct").addEventListener("input", renderStructCatalog);
   fc.addEventListener("change", renderStructCatalog);
+  document.getElementById("search-box").addEventListener("input", renderBoxCatalog);
+  document.getElementById("owned-only").addEventListener("change", renderBoxCatalog);
+  document.getElementById("suggest-btn").addEventListener("click", renderSuggestion);
   document.querySelectorAll(".tab").forEach(t =>
     t.addEventListener("click", () => switchTab(t.dataset.tab)));
   document.querySelectorAll(".view-btn").forEach(b =>
@@ -167,8 +182,8 @@ function buildLegend() {
 function switchTab(tab) {
   currentTab = tab;
   document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.tab === tab));
-  document.querySelectorAll(".tab-pals").forEach(el => el.hidden = tab !== "pals");
-  document.querySelectorAll(".tab-structures").forEach(el => el.hidden = tab !== "structures");
+  ["pals", "structures", "box"].forEach(name =>
+    document.querySelectorAll(".tab-" + name).forEach(el => el.hidden = name !== tab));
 }
 
 // ===== Vues (Assistant de camp / Palpedia) =====
@@ -223,9 +238,9 @@ function renderCampSelect() {
 
 // ===== Lignes Pal =====
 function palRow(pal, mode) {
-  const q = palQty(pal.id);
+  const q = mode === "box" ? boxQty(pal.id) : palQty(pal.id);
   const li = document.createElement("li");
-  li.className = "pal-row" + (mode === "catalog" && q > 0 ? " in-camp" : "");
+  li.className = "pal-row" + ((mode === "catalog" || mode === "box") && q > 0 ? " in-camp" : "");
 
   const info = document.createElement("div");
   info.className = "info";
@@ -251,7 +266,11 @@ function palRow(pal, mode) {
   });
   li.appendChild(skills);
 
-  li.appendChild(stepperOrAdd(mode, q, () => addPal(pal.id), d => setPalQty(pal.id, q + d), () => setPalQty(pal.id, 0), isFull()));
+  if (mode === "box") {
+    li.appendChild(stepperOrAdd("box", q, () => addBox(pal.id), d => setBoxQty(pal.id, q + d), () => setBoxQty(pal.id, 0), false));
+  } else {
+    li.appendChild(stepperOrAdd(mode, q, () => addPal(pal.id), d => setPalQty(pal.id, q + d), () => setPalQty(pal.id, 0), isFull()));
+  }
   return li;
 }
 
@@ -343,6 +362,141 @@ function renderStructCatalog() {
 
   if (!filtered.length) { list.innerHTML = `<li class="empty">Aucune construction trouvée.</li>`; return; }
   filtered.forEach(s => list.appendChild(structRow(s, "catalog")));
+}
+
+function renderBoxCatalog() {
+  const q = document.getElementById("search-box").value.trim().toLowerCase();
+  const ownedOnly = document.getElementById("owned-only").checked;
+  const list = document.getElementById("box-list");
+  list.innerHTML = "";
+
+  const filtered = PALS.filter(p =>
+    (!q || p.name.toLowerCase().includes(q)) &&
+    (!ownedOnly || boxQty(p.id) > 0)
+  ).sort((a, b) => a.name.localeCompare(b.name, "fr"));
+
+  if (!filtered.length) { list.innerHTML = `<li class="empty">Aucun Pal trouvé.</li>`; return; }
+  filtered.forEach(p => list.appendChild(palRow(p, "box")));
+}
+
+// ===== Suggestion de compo (glouton) depuis la boîte à Pals =====
+// Choisit ≤ limite Pals de la boîte pour couvrir au mieux les compétences requises
+// par les machines du camp (priorité couverture, puis niveaux, puis débit).
+function computeSuggestion() {
+  const camp = active();
+  const structMembers = Object.entries(camp.structures)
+    .map(([id, q]) => [structById[id], q]).filter(([s]) => s);
+
+  const demand = {};
+  WORK_TYPES.forEach(w => demand[w.id] = 0);
+  structMembers.forEach(([s, q]) => s.requires.forEach(wid => demand[wid] += q));
+  const required = WORK_TYPES.map(w => w.id).filter(wid => demand[wid] > 0);
+  if (required.length === 0) return { error: "no-structures" };
+
+  const avail = {};
+  Object.entries(store.palBox).forEach(([id, q]) => { if (palsById[id]) avail[id] = q; });
+  if (Object.keys(avail).length === 0) return { error: "empty-box" };
+
+  const best = {}, cnt = {};
+  required.forEach(c => { best[c] = 0; cnt[c] = 0; });
+  const chosen = {};
+
+  function score(p) {
+    let s = 0;
+    for (const c of required) {
+      const lvl = p.work[c] || 0;
+      if (lvl <= 0) continue;
+      if (best[c] === 0) s += 1000 + demand[c] * 20;      // couvre une compétence nouvelle
+      else if (lvl > best[c]) s += (lvl - best[c]) * 40;  // améliore le niveau max
+      else if (cnt[c] < demand[c]) s += lvl * 4;          // débit supplémentaire
+    }
+    return s;
+  }
+
+  let slots = camp.limit;
+  while (slots > 0) {
+    let bestId = null, bestScore = 0;
+    for (const id of Object.keys(avail)) {
+      if ((chosen[id] || 0) >= avail[id]) continue;
+      const sc = score(palsById[id]);
+      if (sc > bestScore) { bestScore = sc; bestId = id; }
+    }
+    if (!bestId || bestScore <= 0) break;
+    chosen[bestId] = (chosen[bestId] || 0) + 1;
+    slots--;
+    const p = palsById[bestId];
+    for (const c of required) {
+      const lvl = p.work[c] || 0;
+      if (lvl > 0) { best[c] = Math.max(best[c], lvl); cnt[c]++; }
+    }
+  }
+
+  const coverage = required.map(c => ({
+    id: c, label: workById[c].label, icon: workById[c].icon,
+    demand: demand[c], maxLevel: best[c], covered: best[c] > 0,
+  })).sort((a, b) => Number(a.covered) - Number(b.covered) || b.demand - a.demand);
+
+  return {
+    chosen, coverage,
+    uncovered: coverage.filter(c => !c.covered),
+    used: Object.values(chosen).reduce((a, b) => a + b, 0),
+    limit: camp.limit,
+  };
+}
+
+function renderSuggestion() {
+  const box = document.getElementById("suggest-result");
+  box.hidden = false;
+  const r = computeSuggestion();
+
+  if (r.error === "no-structures") {
+    box.innerHTML = `<p class="sg-msg">Ajoute d'abord des <b>constructions</b> au camp (onglet 🏗️) : la suggestion se base sur les machines présentes.</p>`;
+    return;
+  }
+  if (r.error === "empty-box") {
+    box.innerHTML = `<p class="sg-msg">Ta <b>boîte à Pals</b> est vide. Renseigne les Pals que tu possèdes dans l'onglet 🎒, puis relance la suggestion.</p>`;
+    return;
+  }
+
+  const chosenList = Object.entries(r.chosen)
+    .map(([id, q]) => ({ p: palsById[id], q }))
+    .sort((a, b) => a.p.name.localeCompare(b.p.name, "fr"));
+
+  const palsHtml = chosenList.map(({ p, q }) => {
+    const chips = WORK_TYPES.filter(w => (p.work[w.id] || 0) > 0)
+      .map(w => `<span class="skill-chip ${levelClass(p.work[w.id])}" title="${w.label}">${w.icon} <b>${p.work[w.id]}</b></span>`).join("");
+    return `<li class="sg-pal"><span class="sg-name">${p.name}${q > 1 ? ` <b>×${q}</b>` : ""}${p.nightWorker ? " 🌙" : ""}</span><span class="sg-chips">${chips}</span></li>`;
+  }).join("");
+
+  const covHtml = r.coverage.map(c => `
+    <li class="sg-cov ${c.covered ? "ok" : "ko"}">
+      <span>${c.icon} ${c.label}</span>
+      <span class="sg-cov-r">🏗️ ${c.demand} · ${c.covered ? `niv. max ${c.maxLevel}` : "non couvert"}</span>
+    </li>`).join("");
+
+  const warn = r.uncovered.length
+    ? `<p class="sg-warn">⚠ ${r.uncovered.length} compétence(s) requise(s) impossible(s) à couvrir avec ta boîte actuelle.</p>` : "";
+
+  box.innerHTML = `
+    <div class="sg-head">
+      <b>Compo suggérée : ${r.used} / ${r.limit} Pals</b>
+      <button id="suggest-close" class="sg-x" title="Fermer">×</button>
+    </div>
+    <ul class="sg-pals">${palsHtml}</ul>
+    <div class="sg-sub">Couverture des machines :</div>
+    <ul class="sg-covs">${covHtml}</ul>
+    ${warn}
+    <div class="sg-actions">
+      <button id="suggest-apply" class="btn-add">Appliquer au camp</button>
+      <span class="sg-note">remplace les Pals actuels du camp</span>
+    </div>`;
+
+  document.getElementById("suggest-close").onclick = () => { box.hidden = true; box.innerHTML = ""; };
+  document.getElementById("suggest-apply").onclick = () => {
+    active().pals = { ...r.chosen };
+    saveStore(); renderAll();
+    box.hidden = true; box.innerHTML = "";
+  };
 }
 
 // ===== Contenu du camp =====
@@ -563,9 +717,11 @@ function renderDrops() {
 function renderAll() {
   renderCampSelect();
   document.getElementById("limit-input").value = active().limit;
+  document.getElementById("box-total").textContent = totalBox();
   switchTab(currentTab);
   renderPalCatalog();
   renderStructCatalog();
+  renderBoxCatalog();
   renderCampLists();
   renderSummary();
 }

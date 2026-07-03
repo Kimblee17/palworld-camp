@@ -368,3 +368,43 @@ main {
 .drop-pal a:hover { text-decoration: underline; }
 .drop-amt { color: var(--muted); font-size: 0.8rem; }
 .drop-rate { margin-left: auto; font-weight: 700; font-size: 0.82rem; }
+
+/* ===== Boîte à Pals + Suggestion de compo ===== */
+.hint { color: var(--muted); font-size: 0.82rem; margin: 0 0 12px; }
+
+.suggest-block { margin: 4px 0 14px; }
+.btn-suggest {
+  width: 100%;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  color: #04231a; border: none; border-radius: 9px;
+  padding: 11px 14px; font-size: 0.98rem; font-weight: 800; cursor: pointer;
+}
+.btn-suggest:hover { filter: brightness(1.08); }
+
+.suggest-result {
+  margin-top: 12px;
+  background: var(--panel-2);
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.sg-msg { margin: 0; color: var(--muted); font-size: 0.9rem; }
+.sg-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.sg-x { background: none; border: none; color: var(--muted); font-size: 1.3rem; cursor: pointer; line-height: 1; }
+.sg-sub { color: var(--muted); font-size: 0.82rem; margin: 10px 0 4px; font-weight: 700; }
+
+.sg-pals { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 5px; }
+.sg-pal { display: flex; align-items: center; gap: 8px; }
+.sg-name { font-weight: 600; min-width: 120px; }
+.sg-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-left: auto; justify-content: flex-end; }
+
+.sg-covs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.sg-cov { display: flex; justify-content: space-between; font-size: 0.85rem; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border); }
+.sg-cov.ok { border-color: var(--lvl-4); }
+.sg-cov.ko { border-color: var(--lvl-1); background: rgba(217, 83, 79, 0.14); }
+.sg-cov-r { color: var(--muted); }
+.sg-cov.ko .sg-cov-r { color: #ffc9c5; }
+
+.sg-warn { color: #ffc9c5; font-size: 0.84rem; margin: 10px 0 0; }
+.sg-actions { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
+.sg-note { color: var(--muted); font-size: 0.78rem; }
