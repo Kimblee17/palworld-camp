@@ -57,8 +57,19 @@
       <div class="controls tab-box" hidden>
         <input type="search" id="search-box" placeholder="Rechercher un Pal à posséder…" autocomplete="off">
         <label class="night-toggle" title="N'afficher que les Pals de ma boîte"><input type="checkbox" id="owned-only"> possédés</label>
+        <button id="box-import-btn" class="bar-btn">📥 Importer</button>
       </div>
-      <p class="tab-box hint" hidden>Indique les Pals que tu possèdes (et combien). Sert de base aux suggestions de compo. 🎒</p>
+      <div class="tab-box import-panel" id="import-panel" hidden>
+        <textarea id="import-text" placeholder="Colle ici l'export CoWork (palbox.csv) ou une liste type « Cattiva x13 » (un par ligne)…"></textarea>
+        <div class="import-actions">
+          <label><input type="radio" name="import-mode" value="replace" checked> Remplacer la boîte</label>
+          <label><input type="radio" name="import-mode" value="merge"> Fusionner</label>
+          <button id="import-run" class="btn btn-add">Charger</button>
+          <button id="import-cancel" class="bar-btn">Annuler</button>
+        </div>
+        <div id="import-report" class="import-report"></div>
+      </div>
+      <p class="tab-box hint" hidden>Indique les Pals que tu possèdes (et combien), ou utilise 📥 Importer. Sert de base aux suggestions de compo. 🎒</p>
 
       <ul id="pal-list" class="pal-list tab-pals"></ul>
       <ul id="struct-list" class="pal-list tab-structures" hidden></ul>

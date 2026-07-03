@@ -207,6 +207,9 @@ function init() {
   document.getElementById("search-box").addEventListener("input", renderBoxCatalog);
   document.getElementById("owned-only").addEventListener("change", renderBoxCatalog);
   document.getElementById("suggest-btn").addEventListener("click", renderSuggestion);
+  document.getElementById("box-import-btn").addEventListener("click", () => toggleImportPanel());
+  document.getElementById("import-cancel").addEventListener("click", () => toggleImportPanel(false));
+  document.getElementById("import-run").addEventListener("click", runBoxImport);
   document.querySelectorAll(".tab").forEach(t =>
     t.addEventListener("click", () => switchTab(t.dataset.tab)));
   document.querySelectorAll(".view-btn").forEach(b =>
@@ -275,6 +278,7 @@ function switchTab(tab) {
   document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.tab === tab));
   ["pals", "structures", "box"].forEach(name =>
     document.querySelectorAll(".tab-" + name).forEach(el => el.hidden = name !== tab));
+  if (tab !== "box") toggleImportPanel(false);   // referme le panneau d'import
 }
 
 // ===== Vues (Assistant de camp / Palpedia) =====
@@ -466,6 +470,114 @@ function renderBoxCatalog() {
 
   if (!filtered.length) { list.innerHTML = `<li class="empty">Aucun Pal trouvé.</li>`; return; }
   filtered.forEach(p => list.appendChild(palRow(p, "box")));
+}
+
+// ===== Import de la boîte (format CoWork "palbox.csv" ou liste libre) =====
+// Table nom de code interne Palworld -> nom d'affichage de l'app.
+const CODENAME_TO_NAME = {
+  PinkCat: "Cattiva", NegativeKoala: "Depresso", Boar: "Rushoar", TentacleTurtle: "Turtacle",
+  SheepBall: "Lamball", ChickenPal: "Chikipi", Carbunclo: "Lifmunk", Kitsunebi: "Foxparks",
+  BluePlatypus: "Fuack", ElecCat: "Sparkit", Monkey: "Tanzee", FlameBambi: "Rooby",
+  Penguin: "Pengullet", Hedgehog: "Jolthog", PlantSlime: "Gumoss", CuteFox: "Vixy",
+  WizardOwl: "Hoocrates", Ganesha: "Teafant", WoolFox: "Cremis", DreamDemon: "Daedream",
+  NightFox: "Nox", NegativeOctopus: "Killamari", Bastet: "Mau", FlyingManta: "Celaray",
+  Garm: "Direhowl", ColorfulBird: "Tocotoco", FlowerRabbit: "Flopie", CowPal: "Mozzarina",
+  LittleBriarRose: "Bristla", SharkKid: "Gobfin", WindChimes: "Hangyu", BerryGoat: "Caprity",
+  Alpaca: "Melpaca", Deer: "Eikthyrdeer", Deer_Ground: "Eikthyrdeer Terra", HawkBird: "Nitewing",
+  PinkRabbit: "Ribbuny", CuteButterfly: "Cinnamoth", FlameBuffalo: "Arsox", LizardMan: "Leezpunk",
+  Werewolf: "Loupmoon", Eagle: "Galeclaw", Gorilla: "Gorirat", SoldierBee: "Beegarde",
+  QueenBee: "Elizabee", NaughtyCat: "Grintale", WeaselDragon: "Chillet", FireKirin: "Pyrin",
+  IceDeer: "Reindrix", FlowerDinosaur: "Dinossom", Serpent: "Surfent", LavaGirl: "Flambelle",
+  BirdDragon: "Vanwyrm", Kelpie: "Kelpsea", BlueDragon: "Azurobe", LazyDragon: "Relaxaurus",
+  SakuraSaurus: "Broncherry", CatVampire: "Felbat", HadesBird: "Helzephyr", KendoFrog: "Croajiro",
+  DarkAlien: "Xenovader", PurpleSpider: "Tarantriss", JellyfishGhost: "Jellroy",
+  JellyfishFairy: "Jelliette", DarkCrow: "Cawgnito", LizardMan_Fire: "Leezpunk Ignis",
+};
+// Entités non-Pal (humains/PNJ capturés) à ignorer.
+const IMPORT_HUMANS = /^(Hunter|.*Soldier|SalesPerson|.*Merchant|.*NPC)/i;
+
+// Analyse le texte collé et renvoie {counts:{id:qty}, unmatched:[], humans, species, total}.
+function parseBoxImport(text) {
+  const idByName = Object.fromEntries(PALS.map(p => [p.name.toLowerCase(), p.id]));
+  const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+  const byName = {};
+  const unmatched = new Set();
+  let humans = 0;
+
+  const header = (lines[0] || "").toLowerCase();
+  const isCsv = header.includes("species_count") || /(^|,)name(,|$)/.test(header);
+
+  if (isCsv) {
+    const cols = lines[0].split(",").map(s => s.trim().toLowerCase());
+    const iName = cols.indexOf("name");
+    const iCount = cols.indexOf("species_count");
+    const seen = new Set();
+    for (const line of lines.slice(1)) {
+      const c = line.split(",");
+      const internal = (c[iName] || "").trim();
+      if (!internal || seen.has(internal)) continue;   // species_count est constant par nom
+      seen.add(internal);
+      const count = parseInt(c[iCount], 10) || 0;
+      const base = internal.replace(/^BOSS_/, "");      // fusionne l'alpha dans l'espèce
+      const disp = CODENAME_TO_NAME[base];              // Pal connu ? (prioritaire)
+      if (disp) { byName[disp] = (byName[disp] || 0) + count; continue; }
+      if (IMPORT_HUMANS.test(base)) { humans += count; continue; }   // sinon, humain/PNJ ?
+      unmatched.add(internal);
+    }
+  } else {
+    // Liste libre : "Nom xN", "Nom, N", "N Nom" ou "Nom"
+    for (const line of lines) {
+      let m = line.match(/^(.+?)[\s,]*(?:[x×]\s*)?(\d+)\s*$/i) || line.match(/^(\d+)\s+(.+)$/);
+      let name, qty;
+      if (m && /^\d+$/.test(m[1])) { qty = parseInt(m[1], 10); name = m[2]; }
+      else if (m) { name = m[1]; qty = parseInt(m[2], 10) || 1; }
+      else { name = line; qty = 1; }
+      name = name.trim();
+      const disp = CODENAME_TO_NAME[name] || name;     // accepte aussi les noms de code
+      byName[disp] = (byName[disp] || 0) + qty;
+    }
+  }
+
+  const counts = {};
+  for (const [disp, c] of Object.entries(byName)) {
+    const id = idByName[disp.toLowerCase()];
+    if (id && c > 0) counts[id] = (counts[id] || 0) + c;
+    else if (!id) unmatched.add(disp);
+  }
+  return {
+    counts, unmatched: [...unmatched], humans,
+    species: Object.keys(counts).length,
+    total: Object.values(counts).reduce((a, b) => a + b, 0),
+  };
+}
+
+function runBoxImport() {
+  const text = document.getElementById("import-text").value;
+  const mode = document.querySelector('input[name="import-mode"]:checked')?.value || "replace";
+  const report = document.getElementById("import-report");
+  if (!text.trim()) { report.textContent = "Colle d'abord une liste ou l'export CoWork."; return; }
+
+  const r = parseBoxImport(text);
+  if (r.species === 0) {
+    report.innerHTML = `<span class="imp-ko">Aucun Pal reconnu.</span> Vérifie le format collé.`;
+    return;
+  }
+  if (mode === "replace") store.palBox = {};
+  for (const [id, c] of Object.entries(r.counts)) {
+    store.palBox[id] = (mode === "merge" ? (store.palBox[id] || 0) : 0) + c;
+  }
+  saveStore();
+
+  let msg = `<span class="imp-ok">✓ ${r.species} espèces · ${r.total} Pals chargés</span> (${mode === "replace" ? "remplacement" : "fusion"}).`;
+  if (r.humans) msg += ` ${r.humans} humain(s)/PNJ ignoré(s).`;
+  if (r.unmatched.length) msg += `<br><span class="imp-warn">Non reconnus (ignorés) : ${r.unmatched.join(", ")}</span>`;
+  report.innerHTML = msg;
+  renderAll();
+}
+
+function toggleImportPanel(show) {
+  const p = document.getElementById("import-panel");
+  p.hidden = show === undefined ? !p.hidden : !show;
 }
 
 // ===== Suggestion de compo (glouton) depuis la boîte à Pals =====

@@ -409,6 +409,33 @@ main {
 .sg-actions { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
 .sg-note { color: var(--muted); font-size: 0.78rem; }
 
+/* ===== Import de la boîte ===== */
+.import-panel {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.import-panel textarea {
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 9px 11px;
+  font-family: "Consolas", monospace;
+  font-size: 0.85rem;
+}
+.import-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+.import-actions label { color: var(--muted); font-size: 0.85rem; display: flex; align-items: center; gap: 5px; }
+.import-report { margin-top: 10px; font-size: 0.85rem; color: var(--muted); }
+.import-report .imp-ok { color: var(--lvl-4); font-weight: 700; }
+.import-report .imp-ko { color: #ffc9c5; font-weight: 700; }
+.import-report .imp-warn { color: var(--lvl-2); }
+
 /* ===== Barre de synchro / partage cloud ===== */
 .sync-bar {
   display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
