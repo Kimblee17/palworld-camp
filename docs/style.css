@@ -50,7 +50,7 @@ header { padding: 20px 28px 6px; display: flex; flex-direction: column; align-it
 .brand h1 { margin: 0; font-size: 1.7rem; letter-spacing: 1px; font-weight: 900; text-transform: uppercase; }
 .subtitle { display: none; }
 
-.view-switch { display: flex; gap: 10px; flex-wrap: wrap; }   /* onglets à gauche, sous le titre */
+.view-switch { display: flex; gap: 10px; flex-wrap: wrap; margin-right: auto; }   /* onglets à gauche ; pousse la synchro à droite */
 .view-btn {
   cursor: pointer;
   background: var(--panel-2); color: var(--muted);
@@ -84,7 +84,7 @@ header { padding: 20px 28px 6px; display: flex; flex-direction: column; align-it
 
 /* ===== Barre de synchro / espaces ===== */
 .sync-bar {
-  display: flex; align-items: center; justify-content: flex-end; gap: 10px; flex-wrap: wrap;
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
   padding: 10px 28px; background: var(--panel);
   border-top: 2px solid var(--edge); border-bottom: 2px solid var(--edge);
 }
