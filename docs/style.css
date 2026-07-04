@@ -387,3 +387,11 @@ main {
 .drop-pal a:hover { text-decoration: underline; }
 .drop-amt { color: var(--muted); font-size: 0.8rem; }
 .drop-rate { margin-left: auto; font-weight: 800; font-size: 0.82rem; }
+
+/* Badge « possédé » + chips d'élément (Palpedia) */
+.owned-badge { color: var(--lvl-4); font-weight: 900; margin-left: 5px; }
+.pedia-el { display: flex; gap: 4px; margin-top: 4px; flex-wrap: wrap; }
+.el-chip {
+  font-size: 0.66rem; font-weight: 800; color: #0c1016;
+  border: 1.5px solid var(--edge); border-radius: 5px; padding: 1px 6px;
+}

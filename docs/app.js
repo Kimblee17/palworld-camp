@@ -157,6 +157,29 @@ function addBox(id) { setBoxQty(id, boxQty(id) + 1); }
 function levelClass(lvl) { return "lvl-" + Math.min(Math.max(lvl, 0), 4); }
 const LEVEL_NAMES = { 0: "Manquant", 1: "Faible", 2: "Moyen", 3: "Fort", 4: "Très fort" };
 
+// Icône de vignette par catégorie de construction
+const CATEGORY_ICON = {
+  "Production": "🔨", "Nourriture": "🍳", "Infrastructure": "⚡", "Défense": "🛡️",
+  "Stockage": "📦", "Éclairage": "💡", "Pals": "🥚", "Autre": "🔧",
+};
+
+// Éléments (couleur + nom FR) pour la Palpedia
+const ELEMENT_META = {
+  Neutral: { fr: "Neutre", c: "#b9c2d0" }, Fire: { fr: "Feu", c: "#ff6b3d" },
+  Water: { fr: "Eau", c: "#3fa9e0" }, Electric: { fr: "Foudre", c: "#f5c542" },
+  Ice: { fr: "Glace", c: "#7fe3e3" }, Ground: { fr: "Terre", c: "#c58a55" },
+  Dark: { fr: "Ténèbres", c: "#9a6bd6" }, Dragon: { fr: "Dragon", c: "#7b6bff" },
+  Grass: { fr: "Herbe", c: "#7cc44d" },
+};
+const ELEMENT_ORDER = ["Neutral", "Fire", "Water", "Electric", "Ice", "Ground", "Dark", "Dragon", "Grass"];
+function palElements(name) { return (window.PAL_ELEMENTS && window.PAL_ELEMENTS[name]) || []; }
+function elementChipsHtml(pal) {
+  return palElements(pal.name).map(e => {
+    const m = ELEMENT_META[e] || { fr: e, c: "#888" };
+    return `<span class="el-chip" style="background:${m.c}" title="Élément : ${m.fr}">${m.fr}</span>`;
+  }).join("");
+}
+
 // ===== Rangs de tier-list (palworld.gg) =====
 const TIER_CATS = [
   { key: "overall",     label: "Global",  speed: null },
@@ -245,6 +268,13 @@ function init() {
   document.querySelectorAll(".view-btn").forEach(b =>
     b.addEventListener("click", () => switchView(b.dataset.view)));
   document.getElementById("pedia-search").addEventListener("input", renderPalpedia);
+  const pw = document.getElementById("pedia-work");
+  WORK_TYPES.forEach(w => pw.add(new Option(`${w.icon} ${w.label}`, w.id)));
+  const pe = document.getElementById("pedia-element");
+  ELEMENT_ORDER.forEach(e => pe.add(new Option(ELEMENT_META[e].fr, e)));
+  pw.addEventListener("change", renderPalpedia);
+  pe.addEventListener("change", renderPalpedia);
+  document.getElementById("pedia-owned").addEventListener("change", renderPalpedia);
   document.querySelectorAll(".pedia-table th[data-sort]").forEach(th =>
     th.addEventListener("click", () => setPediaSort(th.dataset.sort)));
   document.getElementById("drop-search").addEventListener("input", renderDrops);
@@ -449,7 +479,8 @@ function structRow(st, mode) {
 
   const tile = document.createElement("div");
   tile.className = "pal-ic fallback struct-ic";
-  tile.textContent = "🏗️";
+  tile.textContent = CATEGORY_ICON[st.category] || "🏗️";
+  tile.title = st.category;
   li.appendChild(tile);
 
   const info = document.createElement("div");
@@ -868,7 +899,9 @@ function pediaRow(pal) {
     .join("");
   const tiers = TIER_CATS.map(c => tierCell(pal, c)).join("");
   tr.innerHTML =
-    `<td class="pedia-name">${palIconHtml(pal)}${name}${night}</td>` +
+    `<td class="pedia-name">${palIconHtml(pal)}${name}${night}` +
+      `${boxQty(pal.id) > 0 ? ' <span class="owned-badge" title="Dans ma boîte">✓</span>' : ''}` +
+      `<div class="pedia-el">${elementChipsHtml(pal)}</div></td>` +
     `<td class="pedia-num">${lvl}</td>` +
     `<td>${rarity}</td>` +
     `<td class="pedia-num">${cap}</td>` +
@@ -915,10 +948,17 @@ function updatePediaHeaders() {
 
 function renderPalpedia() {
   const q = document.getElementById("pedia-search").value.trim().toLowerCase();
+  const wf = document.getElementById("pedia-work").value;
+  const ef = document.getElementById("pedia-element").value;
+  const owned = document.getElementById("pedia-owned").checked;
   const body = document.getElementById("pedia-body");
   body.innerHTML = "";
   const rows = PALS
-    .filter(p => !q || p.name.toLowerCase().includes(q))
+    .filter(p =>
+      (!q || p.name.toLowerCase().includes(q)) &&
+      (!wf || (p.work[wf] || 0) > 0) &&
+      (!ef || palElements(p.name).includes(ef)) &&
+      (!owned || boxQty(p.id) > 0))
     .sort((a, b) => {
       const va = pediaSortValue(a, pediaSort.key);
       const vb = pediaSortValue(b, pediaSort.key);

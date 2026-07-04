@@ -107,6 +107,9 @@
     <div class="legend"><span class="legend-label">Niveau :</span></div>
     <div class="controls">
       <input type="search" id="pedia-search" placeholder="Rechercher un Pal…" autocomplete="off">
+      <select id="pedia-work"><option value="">Toutes les compétences</option></select>
+      <select id="pedia-element"><option value="">Tous les éléments</option></select>
+      <label class="night-toggle"><input type="checkbox" id="pedia-owned"> 🎒 possédés</label>
       <span class="pedia-total"><span id="pedia-count">0</span> Pals</span>
       <a class="pedia-link" href="https://palworld.gg/capture-rate" target="_blank" rel="noopener">🎯 Calculateur de capture</a>
     </div>
@@ -143,6 +146,7 @@
   <!-- Données embarquées (générées par build_data.py) puis logique -->
   <script src="data.js"></script>
   <script src="pal-icons.js"></script>
+  <script src="pal-elements.js"></script>
   <script src="app.js"></script>
   <!-- Synchro cloud (module ES, chargé après app.js) -->
   <script type="module" src="firebase-sync.js"></script>
