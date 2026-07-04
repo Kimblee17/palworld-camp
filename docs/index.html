@@ -8,9 +8,7 @@
 </head>
 <body>
   <header>
-    <h1>🏕️ Palworld — Assistant de camp</h1>
-    <p class="subtitle">Gère plusieurs camps : ajoute des Pals et les constructions, et vérifie que les compétences requises sont couvertes.</p>
-    <div id="legend" class="legend"><span class="legend-label">Niveau :</span></div>
+    <div class="brand"><span class="mk">🏕️</span><h1>Palworld</h1></div>
     <div class="view-switch">
       <button class="view-btn active" data-view="camp">🏕️ Assistant de camp</button>
       <button class="view-btn" data-view="palpedia">📖 Palpedia</button>
@@ -36,6 +34,9 @@
     <button id="camp-rename" class="bar-btn">✎ Renommer</button>
     <button id="camp-delete" class="bar-btn danger">🗑 Supprimer</button>
   </div>
+
+  <!-- Légende des niveaux (Assistant de camp) -->
+  <div class="legend view-camp"><span class="legend-label">Niveau :</span></div>
 
   <main class="view-camp">
     <!-- Colonne gauche : catalogue (Pals / Constructions) -->
@@ -103,6 +104,7 @@
 
   <!-- Vue Palpedia : tous les Pals + toutes les tier-lists -->
   <section class="panel view-palpedia" id="palpedia" hidden>
+    <div class="legend"><span class="legend-label">Niveau :</span></div>
     <div class="controls">
       <input type="search" id="pedia-search" placeholder="Rechercher un Pal…" autocomplete="off">
       <span class="pedia-total"><span id="pedia-count">0</span> Pals</span>
@@ -140,6 +142,7 @@
 
   <!-- Données embarquées (générées par build_data.py) puis logique -->
   <script src="data.js"></script>
+  <script src="pal-icons.js"></script>
   <script src="app.js"></script>
   <!-- Synchro cloud (module ES, chargé après app.js) -->
   <script type="module" src="firebase-sync.js"></script>

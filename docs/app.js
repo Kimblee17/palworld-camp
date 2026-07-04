@@ -305,13 +305,42 @@ function init() {
 }
 
 function buildLegend() {
-  const legend = document.getElementById("legend");
-  [1, 2, 3, 4].forEach(l => {
-    const span = document.createElement("span");
-    span.className = "legend-item " + levelClass(l);
-    span.textContent = `${l} · ${LEVEL_NAMES[l]}`;
-    legend.appendChild(span);
+  document.querySelectorAll(".legend").forEach(legend => {
+    legend.querySelectorAll(".legend-item").forEach(e => e.remove());
+    [1, 2, 3, 4].forEach(l => {
+      const span = document.createElement("span");
+      span.className = "legend-item " + levelClass(l);
+      span.textContent = `${l} · ${LEVEL_NAMES[l]}`;
+      legend.appendChild(span);
+    });
   });
+}
+
+// ===== Icône d'un Pal (image palworld.gg, sinon pastille de repli) =====
+function palIconEl(pal) {
+  const url = window.PAL_ICON_URL && window.PAL_ICON_URL(pal.name);
+  if (url) {
+    const img = document.createElement("img");
+    img.className = "pal-ic";
+    img.loading = "lazy";
+    img.alt = pal.name;
+    img.src = url;
+    img.onerror = () => img.replaceWith(palIconFallback(pal));
+    return img;
+  }
+  return palIconFallback(pal);
+}
+function palIconFallback(pal) {
+  const d = document.createElement("div");
+  d.className = "pal-ic fallback";
+  d.textContent = (pal.name[0] || "?").toUpperCase();
+  return d;
+}
+function palIconHtml(pal) {
+  const url = window.PAL_ICON_URL && window.PAL_ICON_URL(pal.name);
+  const init = (pal.name[0] || "?").toUpperCase();
+  if (url) return `<img class="pal-ic" loading="lazy" alt="" src="${url}" onerror="this.outerHTML='<span class=\\'pal-ic fallback\\'>${init}</span>'">`;
+  return `<span class="pal-ic fallback">${init}</span>`;
 }
 
 // ===== Onglets =====
@@ -379,6 +408,8 @@ function palRow(pal, mode) {
   const li = document.createElement("li");
   li.className = "pal-row" + ((mode === "catalog" || mode === "box") && q > 0 ? " in-camp" : "");
 
+  li.appendChild(palIconEl(pal));
+
   const info = document.createElement("div");
   info.className = "info";
   const night = pal.nightWorker ? ` <span class="night" title="Travailleur de nuit">🌙</span>` : "";
@@ -415,6 +446,11 @@ function structRow(st, mode) {
   const q = structQty(st.id);
   const li = document.createElement("li");
   li.className = "pal-row" + (mode === "catalog" && q > 0 ? " in-camp" : "");
+
+  const tile = document.createElement("div");
+  tile.className = "pal-ic fallback struct-ic";
+  tile.textContent = "🏗️";
+  li.appendChild(tile);
 
   const info = document.createElement("div");
   info.className = "info";
@@ -832,7 +868,7 @@ function pediaRow(pal) {
     .join("");
   const tiers = TIER_CATS.map(c => tierCell(pal, c)).join("");
   tr.innerHTML =
-    `<td class="pedia-name">${name}${night}</td>` +
+    `<td class="pedia-name">${palIconHtml(pal)}${name}${night}</td>` +
     `<td class="pedia-num">${lvl}</td>` +
     `<td>${rarity}</td>` +
     `<td class="pedia-num">${cap}</td>` +
