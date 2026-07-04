@@ -38,8 +38,9 @@ body {
 }
 
 /* ===== En-tête : marque « Palworld » + bascule de vue ===== */
-header { padding: 20px 28px 6px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+header { padding: 20px 28px 6px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
 .brand {
+  align-self: center;                /* titre centré sur la page */
   display: flex; align-items: center; gap: 12px;
   background: var(--accent); color: var(--accent-ink);
   border: 3px solid var(--edge); border-radius: 10px;
@@ -49,7 +50,7 @@ header { padding: 20px 28px 6px; display: flex; align-items: center; gap: 16px; 
 .brand h1 { margin: 0; font-size: 1.7rem; letter-spacing: 1px; font-weight: 900; text-transform: uppercase; }
 .subtitle { display: none; }
 
-.view-switch { display: flex; gap: 10px; margin-left: auto; flex-wrap: wrap; }
+.view-switch { display: flex; gap: 10px; flex-wrap: wrap; }   /* onglets à gauche, sous le titre */
 .view-btn {
   cursor: pointer;
   background: var(--panel-2); color: var(--muted);
@@ -83,11 +84,11 @@ header { padding: 20px 28px 6px; display: flex; align-items: center; gap: 16px; 
 
 /* ===== Barre de synchro / espaces ===== */
 .sync-bar {
-  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  display: flex; align-items: center; justify-content: flex-end; gap: 10px; flex-wrap: wrap;
   padding: 10px 28px; background: var(--panel);
   border-top: 2px solid var(--edge); border-bottom: 2px solid var(--edge);
 }
-.sync-status { font-size: 0.9rem; font-weight: 800; color: var(--muted); margin-right: auto; }
+.sync-status { font-size: 0.9rem; font-weight: 800; color: var(--muted); }
 .sync-status.ok { color: var(--accent); }
 .sync-status.err { color: var(--lvl-1); }
 
