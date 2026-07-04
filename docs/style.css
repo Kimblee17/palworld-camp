@@ -443,8 +443,6 @@ main {
   background: var(--panel);
   border-bottom: 1px solid var(--border);
 }
-.sync-status { font-size: 0.9rem; font-weight: 600; color: var(--muted); }
+.sync-status { font-size: 0.9rem; font-weight: 600; color: var(--muted); margin-right: auto; }
 .sync-status.ok { color: var(--lvl-4); }
 .sync-status.err { color: #ffc9c5; }
-.sync-bar .bar-btn { margin-left: 0; }
-#sync-enable { margin-left: auto; }

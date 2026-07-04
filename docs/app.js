@@ -7,15 +7,32 @@ const workById = Object.fromEntries(WORK_TYPES.map(w => [w.id, w]));
 const palsById = Object.fromEntries(PALS.map(p => [p.id, p]));
 const structById = Object.fromEntries(STRUCTURES.map(s => [s.id, s]));
 
-// ===== Stockage : plusieurs camps + une boîte à Pals =====
+// ===== Stockage =====
+// STORE_KEY      : espace PRIVÉ (local à cet appareil, jamais partagé).
+// SPACE_ID_KEY   : id de l'espace partagé actif (absent = mode privé).
+// SPACE_CACHE_KEY: dernière copie connue de l'espace partagé (affichage instantané).
 const STORE_KEY = "palworld-store";
+const SPACE_ID_KEY = "palworld-space";
+const SPACE_CACHE_KEY = "palworld-space-cache";
 let store = loadStore();
 let currentTab = "pals";
 let currentView = "camp";
 
+// Sommes-nous dans un espace partagé (cloud) ou en privé (local) ?
+function isShared() { return window.PWCloud ? window.PWCloud.mode() === "shared"
+  : !!(localStorage.getItem(SPACE_ID_KEY) || localStorage.getItem("palworld-ws")); }
+
 function uid() { return "c" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
 
 function loadStore() {
+  // En mode partagé : on hydrate depuis le cache de l'espace (le cloud rafraîchira ensuite).
+  if (isShared()) {
+    try {
+      const c = JSON.parse(localStorage.getItem(SPACE_CACHE_KEY));
+      if (c && c.camps) return normalize(c);
+    } catch { /* ignore */ }
+  }
+  // Mode privé : espace local de cet appareil.
   try {
     const raw = JSON.parse(localStorage.getItem(STORE_KEY));
     if (raw && raw.camps && raw.activeId && raw.camps[raw.activeId]) return normalize(raw);
@@ -55,41 +72,54 @@ function normalize(s) {
 }
 
 function saveStore() {
-  localStorage.setItem(STORE_KEY, JSON.stringify(store));
-  window.PWCloud?.push?.(store);   // pousse vers le cloud si la synchro est active
+  if (isShared()) {
+    // Espace partagé : cache local (chargement instantané) + poussée cloud. On NE
+    // touche PAS à l'espace privé, restauré tel quel quand on quitte le partage.
+    localStorage.setItem(SPACE_CACHE_KEY, JSON.stringify(store));
+    window.PWCloud?.push?.(store);
+  } else {
+    localStorage.setItem(STORE_KEY, JSON.stringify(store));
+  }
 }
 
 // ===== Passerelles avec le module de synchro cloud (firebase-sync.js) =====
-// Applique un store reçu du cloud (sans re-pousser : écriture directe en local).
+// Applique un store reçu du cloud (sans re-pousser : écriture dans le cache d'espace).
 window.applyRemoteStore = function (data) {
   if (JSON.stringify(data) === JSON.stringify(store)) return;
   store = normalize(data);
-  localStorage.setItem(STORE_KEY, JSON.stringify(store));
+  localStorage.setItem(SPACE_CACHE_KEY, JSON.stringify(store));
   renderAll();
 };
 
-// Met à jour la barre de synchro selon l'état renvoyé par le module.
+// Rechargé après avoir quitté un espace partagé : on revient à l'espace privé.
+window.reloadLocalStore = function () {
+  store = loadStore();   // les clés d'espace sont effacées -> charge l'espace privé
+  renderAll();
+};
+
+// Met à jour la barre selon l'état renvoyé par le module de synchro.
 let syncLink = null;
 window.setSyncUI = function (state, info = {}) {
   const st = document.getElementById("sync-status");
-  const enable = document.getElementById("sync-enable");
-  const share = document.getElementById("sync-share");
-  const leave = document.getElementById("sync-leave");
+  const create = document.getElementById("space-create");
+  const share = document.getElementById("space-share");
+  const join = document.getElementById("space-join");
+  const leave = document.getElementById("space-leave");
   syncLink = info.link || null;
   const show = (el, on) => { if (el) el.hidden = !on; };
+  const shared = window.PWCloud ? window.PWCloud.mode() === "shared" : false;
   if (state === "connecting") {
     st.textContent = "☁️ Connexion…"; st.className = "sync-status";
-    show(enable, false); show(share, false); show(leave, false);
-  } else if (state === "synced") {
-    st.textContent = "☁️ Synchronisé — partage actif"; st.className = "sync-status ok";
-    show(enable, false); show(share, true); show(leave, true);
+    show(create, false); show(share, false); show(join, false); show(leave, false);
+  } else if (state === "shared") {
+    st.textContent = "👥 Espace partagé (synchronisé)"; st.className = "sync-status ok";
+    show(create, false); show(share, true); show(join, false); show(leave, true);
   } else if (state === "error") {
-    st.textContent = "⚠️ Synchro : " + (info.msg || "erreur"); st.className = "sync-status err";
-    const synced = !!window.PWCloud?.isSynced?.();
-    show(enable, !synced); show(share, false); show(leave, synced);
+    st.textContent = "⚠️ " + (info.msg || "erreur de synchro"); st.className = "sync-status err";
+    show(create, !shared); show(share, shared); show(join, !shared); show(leave, shared);
   } else { // "local"
-    st.textContent = "🖥️ Camps locaux (non synchronisés)"; st.className = "sync-status";
-    show(enable, true); show(share, false); show(leave, false);
+    st.textContent = "🖥️ Espace privé (local à cet appareil)"; st.className = "sync-status";
+    show(create, true); show(share, false); show(join, true); show(leave, false);
   }
 };
 function active() { return store.camps[store.activeId]; }
@@ -238,14 +268,26 @@ function init() {
   document.getElementById("camp-rename").addEventListener("click", renameCamp);
   document.getElementById("camp-delete").addEventListener("click", deleteCamp);
 
-  // Synchro cloud
-  document.getElementById("sync-enable").addEventListener("click", () => window.PWCloud?.enable(store));
-  document.getElementById("sync-leave").addEventListener("click", () => {
-    if (confirm("Quitter la synchro ? Tes camps restent en local sur cet appareil, mais ne seront plus partagés ni synchronisés.")) {
+  // Espaces partagés (cloud)
+  document.getElementById("space-create").addEventListener("click", () => {
+    if (confirm("Créer un espace partagé à partir de tes camps actuels ?\n\nTu obtiendras un lien à envoyer UNIQUEMENT aux amis avec qui tu joues : eux seuls verront et modifieront ces camps.")) {
+      window.PWCloud?.createSharedSpace(store);
+    }
+  });
+  document.getElementById("space-join").addEventListener("click", () => {
+    const input = (prompt("Colle le lien de partage (ou le code) reçu d'un ami :") || "").trim();
+    if (!input) return;
+    let id = input;
+    const m = input.match(/[?&]ws=([^&\s]+)/);
+    if (m) id = decodeURIComponent(m[1]);
+    if (id) window.PWCloud?.join(id);
+  });
+  document.getElementById("space-leave").addEventListener("click", () => {
+    if (confirm("Quitter cet espace partagé et revenir à tes camps privés (sur cet appareil) ?")) {
       window.PWCloud?.leave();
     }
   });
-  document.getElementById("sync-share").addEventListener("click", async e => {
+  document.getElementById("space-share").addEventListener("click", async e => {
     if (!syncLink) return;
     const btn = e.currentTarget;
     try {
@@ -254,7 +296,7 @@ function init() {
       btn.textContent = "✓ Lien copié !";
       setTimeout(() => { btn.textContent = old; }, 1800);
     } catch {
-      prompt("Copie ce lien de partage :", syncLink);
+      prompt("Copie ce lien et envoie-le à ton groupe :", syncLink);
     }
   });
 
