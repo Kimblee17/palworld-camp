@@ -843,38 +843,53 @@ function computeSuggestion() {
   Object.entries(store.palBox).forEach(([id, q]) => { if (palsById[id]) avail[id] = q; });
   if (Object.keys(avail).length === 0) return { error: "empty-box" };
 
+  const limit = camp.limit;
   const best = {}, cnt = {};
   required.forEach(c => { best[c] = 0; cnt[c] = 0; });
   const chosen = {};
-
-  function score(p) {
-    let s = 0;
-    for (const c of required) {
-      const lvl = p.work[c] || 0;
-      if (lvl <= 0) continue;
-      if (best[c] === 0) s += 1000 + demand[c] * 20;      // couvre une compétence nouvelle
-      else if (lvl > best[c]) s += (lvl - best[c]) * 40;  // améliore le niveau max
-      else if (cnt[c] < demand[c]) s += lvl * 4;          // débit supplémentaire
-    }
-    return s;
+  const teamSize = () => Object.values(chosen).reduce((a, b) => a + b, 0);
+  const reqCount = (p) => required.reduce((n, c) => n + ((p.work[c] || 0) > 0 ? 1 : 0), 0);
+  function addToTeam(id) {
+    chosen[id] = (chosen[id] || 0) + 1;
+    const p = palsById[id];
+    for (const c of required) { const l = p.work[c] || 0; if (l > 0) { best[c] = Math.max(best[c], l); cnt[c]++; } }
   }
 
-  let slots = camp.limit;
-  while (slots > 0) {
-    let bestId = null, bestScore = 0;
+  // Les Pals sont libres dans le camp (pas d'affectation à une machine précise) et il n'y a
+  // que 12 compétences pour ≤15 places : on peut donc se payer, pour CHAQUE compétence requise,
+  // le Pal possédé du plus haut niveau. On privilégie ainsi les niveaux, pas la polyvalence.
+
+  // Phase A — un spécialiste de plus haut niveau par compétence requise.
+  for (const c of [...required].sort((a, b) => demand[b] - demand[a])) {
+    const maxAvail = Math.max(0, ...Object.keys(avail).map(id => palsById[id].work[c] || 0));
+    if (best[c] >= maxAvail) continue;   // déjà au meilleur niveau possible (via un Pal déjà pris)
+    let bid = null, bl = -1, bcov = -1;
     for (const id of Object.keys(avail)) {
       if ((chosen[id] || 0) >= avail[id]) continue;
-      const sc = score(palsById[id]);
-      if (sc > bestScore) { bestScore = sc; bestId = id; }
+      const l = palsById[id].work[c] || 0;
+      if (l <= 0) continue;
+      const cov = reqCount(palsById[id]);              // à niveau égal, on garde le plus utile
+      if (l > bl || (l === bl && cov > bcov)) { bl = l; bcov = cov; bid = id; }
     }
-    if (!bestId || bestScore <= 0) break;
-    chosen[bestId] = (chosen[bestId] || 0) + 1;
-    slots--;
-    const p = palsById[bestId];
-    for (const c of required) {
-      const lvl = p.work[c] || 0;
-      if (lvl > 0) { best[c] = Math.max(best[c], lvl); cnt[c]++; }
+    if (bid && teamSize() < limit) addToTeam(bid);
+  }
+
+  // Phase B — places restantes : du débit, mais uniquement avec des Pals encore FORTS
+  // (renfort sur les compétences à forte demande), jamais du remplissage bas niveau.
+  while (teamSize() < limit) {
+    let bid = null, bv = 0;
+    for (const id of Object.keys(avail)) {
+      if ((chosen[id] || 0) >= avail[id]) continue;
+      const p = palsById[id];
+      let v = 0;
+      for (const c of required) {
+        const l = p.work[c] || 0;
+        if (l > 0) v += (cnt[c] < demand[c] ? l : l * 0.15);   // renfort là où il manque des bras
+      }
+      if (v > bv) { bv = v; bid = id; }
     }
+    if (!bid || bv < 2) break;           // on n'ajoute pas de Pals faibles juste pour remplir
+    addToTeam(bid);
   }
 
   const coverage = required.map(c => ({
