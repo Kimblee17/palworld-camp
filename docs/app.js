@@ -98,30 +98,113 @@ window.reloadLocalStore = function () {
 };
 
 // Met à jour la barre selon l'état renvoyé par le module de synchro.
-let syncLink = null;
+let syncLink = null, syncRoLink = null;
 window.setSyncUI = function (state, info = {}) {
   const st = document.getElementById("sync-status");
   const create = document.getElementById("space-create");
   const share = document.getElementById("space-share");
+  const shareRo = document.getElementById("space-share-ro");
   const join = document.getElementById("space-join");
   const leave = document.getElementById("space-leave");
   syncLink = info.link || null;
+  syncRoLink = info.roLink || null;
   const show = (el, on) => { if (el) el.hidden = !on; };
   const shared = window.PWCloud ? window.PWCloud.mode() === "shared" : false;
+  const all = (a, b, c, d, e) => { show(create, a); show(share, b); show(shareRo, c); show(join, d); show(leave, e); };
   if (state === "connecting") {
-    st.textContent = "☁️ Connexion…"; st.className = "sync-status";
-    show(create, false); show(share, false); show(join, false); show(leave, false);
+    st.textContent = "☁️ Connexion…"; st.className = "sync-status"; all(false, false, false, false, false);
+  } else if (state === "shared" && info.ro) {
+    st.textContent = "👁 Espace partagé — lecture seule"; st.className = "sync-status ok"; all(false, false, false, false, true);
   } else if (state === "shared") {
-    st.textContent = "👥 Espace partagé (synchronisé)"; st.className = "sync-status ok";
-    show(create, false); show(share, true); show(join, false); show(leave, true);
+    st.textContent = "👥 Espace partagé (synchronisé)"; st.className = "sync-status ok"; all(false, true, true, false, true);
   } else if (state === "error") {
     st.textContent = "⚠️ " + (info.msg || "erreur de synchro"); st.className = "sync-status err";
-    show(create, !shared); show(share, shared); show(join, !shared); show(leave, shared);
+    all(!shared, shared, shared, !shared, shared);
   } else { // "local"
-    st.textContent = "🖥️ Espace privé (local à cet appareil)"; st.className = "sync-status";
-    show(create, true); show(share, false); show(join, true); show(leave, false);
+    st.textContent = "🖥️ Espace privé (local à cet appareil)"; st.className = "sync-status"; all(true, false, false, true, false);
   }
 };
+
+// ===== Lecture seule (lien ?ro=1) =====
+let readOnly = new URLSearchParams(location.search).get("ro") === "1"
+  || localStorage.getItem("palworld-ro") === "1";
+window.setReadOnly = function (ro) {
+  readOnly = !!ro;
+  document.body.classList.toggle("read-only", readOnly);
+  const b = document.getElementById("ro-banner");
+  if (b) b.hidden = !readOnly;
+};
+
+// ===== Présence (qui est en ligne) =====
+window.PW_NAME = () => localStorage.getItem("palworld-name") || "";
+window.setPresence = function (list) {
+  const el = document.getElementById("presence");
+  if (!el) return;
+  if (!list || !list.length) { el.hidden = true; return; }
+  el.hidden = false;
+  el.textContent = "👥 " + list.length;
+  el.title = "En ligne : " + list.map(p => p.name + (p.ro ? " 👁" : "") + (p.me ? " (toi)" : "")).join(", ");
+};
+function promptName() {
+  const n = (prompt("Ton nom (visible par ton groupe dans un espace partagé) :", window.PW_NAME()) || "").trim();
+  if (n) localStorage.setItem("palworld-name", n);
+}
+
+// ===== Historique / annuler =====
+let undoStack = [];
+function pushUndo(label) {
+  undoStack.push({ json: JSON.stringify(store), label });
+  if (undoStack.length > 20) undoStack.shift();
+  updateUndoUI();
+}
+function updateUndoUI() {
+  const btn = document.getElementById("undo-btn");
+  if (!btn) return;
+  const last = undoStack[undoStack.length - 1];
+  btn.hidden = !last || readOnly;
+  if (last) btn.title = "Annuler : " + last.label;
+}
+function doUndo() {
+  if (readOnly) return;
+  const u = undoStack.pop();
+  if (!u) return;
+  store = normalize(JSON.parse(u.json));
+  saveStore(); renderAll();
+}
+
+// ===== Modale : détail d'un Pal =====
+function openPalDetail(pal) {
+  const modal = document.getElementById("pal-modal");
+  const body = document.getElementById("pal-modal-body");
+  if (!modal || !body) return;
+  const url = window.PAL_ICON_URL && window.PAL_ICON_URL(pal.name);
+  const iconHtml = url
+    ? `<img class="pm-ic" src="${url}" alt="${pal.name}">`
+    : `<div class="pm-ic pal-ic fallback">${(pal.name[0] || "?").toUpperCase()}</div>`;
+  const skills = WORK_TYPES.filter(w => (pal.work[w.id] || 0) > 0)
+    .map(w => `<span class="skill-chip ${levelClass(pal.work[w.id])}">${w.icon} ${w.label} <b>${pal.work[w.id]}</b></span>`)
+    .join("") || `<span class="muted">aucune</span>`;
+  const tiers = TIER_CATS.map(c => { const t = pal.tiers && pal.tiers[c.key]; return t ? `<span class="pm-tag">${c.label} <b class="${tierClass(t)}">${t}</b></span>` : ""; }).filter(Boolean).join("");
+  const stats = [];
+  if (pal.level != null) stats.push(`Niv. ${pal.level}`);
+  if (pal.rarityCategory) stats.push(`${pal.rarityCategory} · rareté ${pal.rarity}`);
+  if (pal.captureRate != null) stats.push(`Capture ×${pal.captureRate}`);
+  if (pal.zukan != null) stats.push(`Paldeck #${pal.zukan}`);
+  if (pal.nightWorker) stats.push("🌙 Nuit");
+  const drops = (pal.drops || []).map(d => `<li>${d.item} <span class="muted">×${d.amount} · ${d.rate}</span></li>`).join("");
+  const link = pal.slug ? `<a href="https://palworld.gg/pal/${pal.slug}" target="_blank" rel="noopener">Fiche palworld.gg ↗</a>` : "";
+  body.innerHTML = `
+    <div class="pm-head">${iconHtml}<div><div class="pm-name">${pal.name}</div><div class="pm-el">${elementChipsHtml(pal)}</div></div></div>
+    ${stats.length ? `<div class="pm-stats">${stats.map(s => `<span>${s}</span>`).join("")}</div>` : ""}
+    <div class="pm-sub">Compétences de travail</div><div class="pm-skills">${skills}</div>
+    ${tiers ? `<div class="pm-sub">Rangs (palworld.gg)</div><div class="pm-tags">${tiers}</div>` : ""}
+    ${drops ? `<div class="pm-sub">Butin</div><ul class="pm-drops">${drops}</ul>` : ""}
+    ${link ? `<div class="pm-linkrow">${link}</div>` : ""}`;
+  modal.hidden = false;
+  modal.querySelector(".pm-close")?.focus();
+}
+function closePalModal() { const m = document.getElementById("pal-modal"); if (m) m.hidden = true; }
+
 function active() { return store.camps[store.activeId]; }
 
 // ===== Quantités (Pals / Constructions / Boîte) =====
@@ -133,16 +216,19 @@ function totalBox() { return Object.values(store.palBox).reduce((a, b) => a + b,
 function isFull() { return totalPals() >= active().limit; }
 
 function setPalQty(id, q) {
+  if (readOnly) return;
   const m = active().pals;
   if (q > 0) m[id] = q; else delete m[id];
   saveStore(); renderAll();
 }
 function setStructQty(id, q) {
+  if (readOnly) return;
   const m = active().structures;
   if (q > 0) m[id] = q; else delete m[id];
   saveStore(); renderAll();
 }
 function setBoxQty(id, q) {
+  if (readOnly) return;
   if (q > 0) store.palBox[id] = q; else delete store.palBox[id];
   saveStore(); renderAll();
 }
@@ -280,12 +366,15 @@ function init() {
   document.getElementById("drop-search").addEventListener("input", renderDrops);
 
   document.getElementById("clear-camp").addEventListener("click", () => {
+    if (readOnly) return;
     if (confirm("Vider ce camp (Pals et constructions) ?")) {
+      pushUndo("camp vidé");
       active().pals = {}; active().structures = {}; saveStore(); renderAll();
     }
   });
   const limitInput = document.getElementById("limit-input");
   limitInput.addEventListener("change", () => {
+    if (readOnly) return;
     let v = parseInt(limitInput.value, 10);
     if (!Number.isFinite(v) || v < 1) v = 1;
     active().limit = v; limitInput.value = v; saveStore(); renderAll();
@@ -329,6 +418,40 @@ function init() {
       prompt("Copie ce lien et envoie-le à ton groupe :", syncLink);
     }
   });
+  document.getElementById("space-share-ro").addEventListener("click", async e => {
+    if (!syncRoLink) return;
+    const btn = e.currentTarget;
+    try {
+      await navigator.clipboard.writeText(syncRoLink);
+      const old = btn.textContent; btn.textContent = "✓ Copié !";
+      setTimeout(() => { btn.textContent = old; }, 1800);
+    } catch { prompt("Lien en lecture seule (le destinataire ne pourra pas modifier) :", syncRoLink); }
+  });
+
+  // Présence : cliquer pour définir son nom
+  document.getElementById("presence").addEventListener("click", promptName);
+
+  // Annuler
+  document.getElementById("undo-btn").addEventListener("click", doUndo);
+
+  // Modale détail Pal + raccourcis clavier
+  document.querySelectorAll("#pal-modal .pm-close, #pal-modal .pm-backdrop")
+    .forEach(el => el.addEventListener("click", closePalModal));
+  document.getElementById("pedia-body").addEventListener("click", e => {
+    if (e.target.closest("a")) return;
+    const tr = e.target.closest("tr[data-pal]");
+    if (tr && palsById[tr.dataset.pal]) openPalDetail(palsById[tr.dataset.pal]);
+  });
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") closePalModal();
+    const tag = (document.activeElement?.tagName || "").toLowerCase();
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z" && !["input", "textarea", "select"].includes(tag)) {
+      e.preventDefault(); doUndo();
+    }
+  });
+
+  // PWA / hors-ligne
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 
   buildLegend();
   renderAll();
@@ -395,6 +518,7 @@ function switchView(view) {
 
 // ===== Gestion des camps =====
 function newCamp() {
+  if (readOnly) return;
   const n = Object.keys(store.camps).length + 1;
   const name = (prompt("Nom du nouveau camp :", "Camp " + n) || "").trim();
   if (!name) return;
@@ -403,12 +527,15 @@ function newCamp() {
   store.activeId = id; saveStore(); renderAll();
 }
 function renameCamp() {
+  if (readOnly) return;
   const name = (prompt("Renommer le camp :", active().name) || "").trim();
   if (!name) return;
   active().name = name; saveStore(); renderAll();
 }
 function deleteCamp() {
+  if (readOnly) return;
   if (!confirm(`Supprimer le camp « ${active().name} » ?`)) return;
+  pushUndo("suppression du camp");
   delete store.camps[store.activeId];
   const ids = Object.keys(store.camps);
   if (ids.length === 0) {
@@ -438,7 +565,8 @@ function palRow(pal, mode) {
   const li = document.createElement("li");
   li.className = "pal-row" + ((mode === "catalog" || mode === "box") && q > 0 ? " in-camp" : "");
 
-  li.appendChild(palIconEl(pal));
+  const icon = palIconEl(pal);
+  li.appendChild(icon);
 
   const info = document.createElement("div");
   info.className = "info";
@@ -448,6 +576,11 @@ function palRow(pal, mode) {
     ? ` <span class="tier-txt ${tierClass(wt)}" title="Rang Workers (palworld.gg)">Tier ${wt}</span>`
     : "";
   info.innerHTML = `<div class="name">${pal.name}${night}${tier}</div>`;
+  const openDetail = () => openPalDetail(pal);
+  info.tabIndex = 0; info.setAttribute("role", "button"); info.setAttribute("aria-label", "Détails de " + pal.name);
+  info.onclick = openDetail;
+  info.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openDetail(); } };
+  icon.style.cursor = "pointer"; icon.onclick = openDetail;
   li.appendChild(info);
 
   const skills = document.createElement("div");
@@ -515,16 +648,17 @@ function stepperOrAdd(mode, q, onAdd, onStep, onDel, disabledAdd) {
     btn.textContent = q > 0 ? `+ (${q})` : "+";
     btn.disabled = disabledAdd;
     btn.title = disabledAdd ? "Limite du camp atteinte" : "Ajouter";
+    btn.setAttribute("aria-label", disabledAdd ? "Limite atteinte" : "Ajouter");
     btn.onclick = onAdd;
     actions.appendChild(btn);
   } else {
     const stepper = document.createElement("div");
     stepper.className = "stepper";
     stepper.innerHTML = `
-      <button class="btn-step" data-act="dec">−</button>
+      <button class="btn-step" data-act="dec" aria-label="Retirer un exemplaire">−</button>
       <span class="qty">${q}</span>
-      <button class="btn-step" data-act="inc" ${disabledAdd ? "disabled" : ""}>+</button>
-      <button class="btn-step btn-x" data-act="del" title="Retirer">×</button>`;
+      <button class="btn-step" data-act="inc" aria-label="Ajouter un exemplaire" ${disabledAdd ? "disabled" : ""}>+</button>
+      <button class="btn-step btn-x" data-act="del" title="Retirer" aria-label="Tout retirer">×</button>`;
     stepper.querySelector('[data-act="dec"]').onclick = () => onStep(-1);
     stepper.querySelector('[data-act="inc"]').onclick = onAdd;
     stepper.querySelector('[data-act="del"]').onclick = onDel;
@@ -661,6 +795,7 @@ function parseBoxImport(text) {
 }
 
 function runBoxImport() {
+  if (readOnly) return;
   const text = document.getElementById("import-text").value;
   const mode = document.querySelector('input[name="import-mode"]:checked')?.value || "replace";
   const report = document.getElementById("import-report");
@@ -671,6 +806,7 @@ function runBoxImport() {
     report.innerHTML = `<span class="imp-ko">Aucun Pal reconnu.</span> Vérifie le format collé.`;
     return;
   }
+  pushUndo(mode === "replace" ? "import (remplacement)" : "import (fusion)");
   if (mode === "replace") store.palBox = {};
   for (const [id, c] of Object.entries(r.counts)) {
     store.palBox[id] = (mode === "merge" ? (store.palBox[id] || 0) : 0) + c;
@@ -803,6 +939,8 @@ function renderSuggestion() {
 
   document.getElementById("suggest-close").onclick = () => { box.hidden = true; box.innerHTML = ""; };
   document.getElementById("suggest-apply").onclick = () => {
+    if (readOnly) return;
+    pushUndo("suggestion appliquée");
     active().pals = { ...r.chosen };
     saveStore(); renderAll();
     box.hidden = true; box.innerHTML = "";
@@ -907,6 +1045,7 @@ function pediaRow(pal) {
     `<td class="pedia-num">${cap}</td>` +
     `<td><div class="pedia-skills">${skills || MUTED}</div></td>` +
     tiers;
+  tr.dataset.pal = pal.id;
   return tr;
 }
 
@@ -1038,6 +1177,7 @@ function renderAll() {
   renderBoxCatalog();
   renderCampLists();
   renderSummary();
+  updateUndoUI();
 }
 
 init();

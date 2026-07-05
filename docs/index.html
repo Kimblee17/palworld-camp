@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Palworld — Assistant de camp</title>
+  <meta name="theme-color" content="#14171f">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,11 +22,15 @@
       <button class="view-btn" data-view="drops">💎 Drops</button>
     </div>
     <span id="sync-status" class="sync-status">Chargement…</span>
+    <button id="presence" class="bar-btn presence" hidden title="En ligne — clique pour ton nom">👥</button>
     <button id="space-create" class="bar-btn" hidden>👥 Créer un espace partagé</button>
     <button id="space-join" class="bar-btn" hidden>＋ Rejoindre un espace…</button>
     <button id="space-share" class="bar-btn" hidden>🔗 Copier le lien du groupe</button>
+    <button id="space-share-ro" class="bar-btn" hidden>👁 Lien lecture seule</button>
     <button id="space-leave" class="bar-btn" hidden>🚪 Quitter (revenir en privé)</button>
   </div>
+
+  <div id="ro-banner" class="ro-banner" hidden>👁 Lecture seule — tu vois cet espace en direct, mais tu ne peux pas le modifier.</div>
 
   <!-- Barre de gestion des camps -->
   <div class="camp-bar view-camp">
@@ -33,6 +40,7 @@
     <button id="camp-new" class="bar-btn">＋ Nouveau</button>
     <button id="camp-rename" class="bar-btn">✎ Renommer</button>
     <button id="camp-delete" class="bar-btn danger">🗑 Supprimer</button>
+    <button id="undo-btn" class="bar-btn" hidden>↩ Annuler</button>
   </div>
 
   <!-- Légende des niveaux (Assistant de camp) -->
@@ -142,6 +150,15 @@
     </div>
     <ul id="drop-list" class="drop-list"></ul>
   </section>
+
+  <!-- Modale : détail d'un Pal -->
+  <div id="pal-modal" class="pal-modal" hidden role="dialog" aria-modal="true" aria-label="Détail du Pal">
+    <div class="pm-backdrop"></div>
+    <div class="pm-card">
+      <button class="pm-close" aria-label="Fermer">✕</button>
+      <div id="pal-modal-body"></div>
+    </div>
+  </div>
 
   <!-- Données embarquées (générées par build_data.py) puis logique -->
   <script src="data.js"></script>

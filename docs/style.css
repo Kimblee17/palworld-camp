@@ -388,6 +388,50 @@ main {
 .drop-amt { color: var(--muted); font-size: 0.8rem; }
 .drop-rate { margin-left: auto; font-weight: 800; font-size: 0.82rem; }
 
+/* ===== Collaboration : présence, lecture seule, undo ===== */
+.presence { background: var(--accent-2); color: var(--accent-2-ink); cursor: pointer; }
+.ro-banner {
+  background: #2a2416; border-bottom: 2px solid var(--amber);
+  color: var(--amber); font-weight: 800; padding: 9px 28px; font-size: 0.9rem;
+}
+body.read-only .btn-add, body.read-only .stepper, body.read-only .btn-suggest,
+body.read-only #camp-new, body.read-only #camp-rename, body.read-only #camp-delete,
+body.read-only #clear-camp, body.read-only #box-import-btn, body.read-only #undo-btn,
+body.read-only .limit-ctrl input, body.read-only .import-panel {
+  opacity: 0.4; pointer-events: none;
+}
+
+/* Accessibilité : focus clavier visible */
+:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 2px; border-radius: 4px; }
+.pedia-table tbody tr { cursor: pointer; }
+
+/* ===== Modale : détail d'un Pal ===== */
+.pal-modal { position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center; }
+.pm-backdrop { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.62); }
+.pm-card {
+  position: relative; z-index: 1; width: min(460px, 92vw); max-height: 88vh; overflow-y: auto;
+  background: var(--panel); border: 3px solid var(--edge); border-radius: 14px; box-shadow: var(--sh-lg); padding: 18px 18px 22px;
+}
+.pm-close {
+  position: absolute; top: 12px; right: 12px; width: 34px; height: 34px;
+  border: 2px solid var(--edge); background: var(--panel-2); color: var(--text);
+  border-radius: 8px; font-weight: 900; cursor: pointer; box-shadow: 3px 3px 0 var(--edge);
+}
+.pm-head { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; padding-right: 40px; }
+.pm-ic { width: 72px; height: 72px; border: 2px solid var(--edge); border-radius: 12px; background: #11141c; object-fit: cover; font-size: 1.6rem; }
+.pm-name { font-size: 1.3rem; font-weight: 900; }
+.pm-el { display: flex; gap: 5px; margin-top: 5px; flex-wrap: wrap; }
+.pm-stats { display: flex; flex-wrap: wrap; gap: 8px; }
+.pm-stats span { background: var(--panel-2); border: 1.5px solid var(--border); border-radius: 7px; padding: 3px 9px; font-size: 0.82rem; font-weight: 700; }
+.pm-sub { font-size: 0.76rem; font-weight: 900; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin: 14px 0 6px; }
+.pm-skills, .pm-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.pm-tag { background: var(--panel-2); border: 1.5px solid var(--border); border-radius: 7px; padding: 3px 9px; font-size: 0.82rem; font-weight: 700; }
+.pm-drops { margin: 0; padding-left: 18px; font-size: 0.88rem; }
+.pm-drops li { margin: 3px 0; }
+.pm-linkrow { margin-top: 14px; }
+.pm-linkrow a { color: var(--accent-2); font-weight: 800; text-decoration: none; }
+.pm-linkrow a:hover { text-decoration: underline; }
+
 /* Badge « possédé » + chips d'élément (Palpedia) */
 .owned-badge { color: var(--lvl-4); font-weight: 900; margin-left: 5px; }
 .pedia-el { display: flex; gap: 4px; margin-top: 4px; flex-wrap: wrap; }

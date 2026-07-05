@@ -1,0 +1,14 @@
+{
+  "name": "Palworld — Assistant de camp",
+  "short_name": "Palworld",
+  "description": "Compose tes camps, gère ta boîte à Pals et optimise le travail au camp.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#14171f",
+  "theme_color": "#14171f",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
