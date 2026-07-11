@@ -6,14 +6,44 @@
       "rate": "100%"
     },
     {
-      "item": "Âme de grand Pal",
+      "item": "Âme de Pal majeur",
       "amount": "1 - 1",
       "rate": "100%"
     },
     {
-      "item": "Livre de technique innovante",
+      "item": "Manuel technique innovant",
       "amount": "1 - 1",
       "rate": "5%"
+    },
+    {
+      "item": "Éclat terra",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "arsox": [
@@ -23,28 +53,88 @@
       "rate": "100%"
     },
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "2 - 3",
       "rate": "100%"
     }
   ],
   "astegon": [
     {
-      "item": "Lingot de Paluminium",
-      "amount": "1 - 2",
+      "item": "Plastacier",
+      "amount": "2 - 3",
       "rate": "100%"
     },
     {
-      "item": "Quartz pur",
-      "amount": "3 - 5",
+      "item": "Âme de Pal majeur",
+      "amount": "1 - 1",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat draco",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "azurmane": [
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "2 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat fulgura",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "azurobe": [
@@ -52,6 +142,41 @@
       "item": "Tissu",
       "amount": "1 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Fluides de Pal",
+      "amount": "2 - 4",
+      "rate": "100%"
+    },
+    {
+      "item": "Éclat aqua",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "azurobe-cryst": [
@@ -66,9 +191,39 @@
       "rate": "100%"
     },
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "1 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat glacia",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "bastigor": [
@@ -78,16 +233,81 @@
       "rate": "100%"
     },
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "2 - 5",
       "rate": "100%"
+    },
+    {
+      "item": "Eau sacrée de l’Arbre-Monde",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Éclat glacia",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "1 - 10",
+      "rate": "10%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "1 - 5",
+      "rate": "5%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "1 - 3",
+      "rate": "3.33%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "1 - 2",
+      "rate": "2.5%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "2%"
     }
   ],
   "beakon": [
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "1 - 2",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat fulgura",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "beegarde": [
@@ -97,8 +317,25 @@
       "rate": "100%"
     }
   ],
-  "bellanoir": [],
-  "bellanoir-libero": [],
+  "bellanoir": [
+    {
+      "item": "Fragment obscur",
+      "amount": "2 - 3",
+      "rate": "100%"
+    }
+  ],
+  "bellanoir-libero": [
+    {
+      "item": "Fragment obscur",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Potion de haute qualité",
+      "amount": "1 - 2",
+      "rate": "100%"
+    }
+  ],
   "blazamut": [
     {
       "item": "Charbon",
@@ -106,9 +343,39 @@
       "rate": "100%"
     },
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "10 - 10",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat ignis",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "blazamut-ryu": [
@@ -118,28 +385,113 @@
       "rate": "100%"
     },
     {
-      "item": "Âme de Pal moyen",
+      "item": "Âme de Pal intermédiaire",
       "amount": "1 - 1",
       "rate": "5%"
     },
     {
-      "item": "Griffe Précieuse",
+      "item": "Éclat draco",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
       "amount": "1 - 1",
-      "rate": "30%"
+      "rate": "25%"
     }
   ],
   "blazehowl": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "3 - 5",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat ignis",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "blazehowl-noct": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "2 - 4",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat ignis",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "braloha": [
@@ -162,21 +514,46 @@
       "item": "Graines de tomates",
       "amount": "1 - 1",
       "rate": "50%"
+    },
+    {
+      "item": "Éclat herba",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "bristla": [
     {
-      "item": "Graines de blé",
+      "item": "Graines de tomates",
       "amount": "1 - 2",
       "rate": "100%"
     },
     {
-      "item": "Graines de laitue",
-      "amount": "1 - 1",
-      "rate": "50%"
-    },
-    {
-      "item": "Graine de carotte",
+      "item": "Belle fleur",
       "amount": "1 - 1",
       "rate": "50%"
     }
@@ -188,14 +565,39 @@
       "rate": "100%"
     },
     {
-      "item": "Graines de tomates",
+      "item": "Graine d&#39;oignon",
       "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Éclat herba",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
       "rate": "50%"
     },
     {
-      "item": "Semence de patate",
+      "item": "Relique antique rayonnante",
       "amount": "1 - 1",
-      "rate": "50%"
+      "rate": "25%"
     }
   ],
   "broncherry-aqua": [
@@ -205,14 +607,39 @@
       "rate": "100%"
     },
     {
-      "item": "Graines de laitue",
+      "item": "Graine d&#39;oignon",
       "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Éclat herba",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
       "rate": "50%"
     },
     {
-      "item": "Semence de patate",
+      "item": "Relique antique rayonnante",
       "amount": "1 - 1",
-      "rate": "50%"
+      "rate": "25%"
     }
   ],
   "bushi": [
@@ -229,7 +656,7 @@
   ],
   "bushi-noct": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "4 - 8",
       "rate": "100%"
     },
@@ -239,7 +666,7 @@
       "rate": "100%"
     },
     {
-      "item": "Âme de Pal moyen",
+      "item": "Âme de Pal intermédiaire",
       "amount": "1 - 2",
       "rate": "40%"
     }
@@ -302,7 +729,7 @@
       "rate": "100%"
     },
     {
-      "item": "Âme de petit Pal",
+      "item": "Âme de Pal mineur",
       "amount": "1 - 1",
       "rate": "1%"
     }
@@ -336,6 +763,36 @@
       "item": "Hexoquartz",
       "amount": "2 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat neutra",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "chikipi": [
@@ -355,6 +812,41 @@
       "item": "Cuir",
       "amount": "2 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Organe de glace",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Éclat glacia",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "chillet-ignis": [
@@ -364,9 +856,39 @@
       "rate": "100%"
     },
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "1 - 2",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat ignis",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "cinnamoth": [
@@ -378,17 +900,12 @@
     {
       "item": "Graines de laitue",
       "amount": "1 - 1",
-      "rate": "20%"
+      "rate": "75%"
     },
     {
-      "item": "Graines de blé",
+      "item": "Graines de tomates",
       "amount": "1 - 1",
-      "rate": "20%"
-    },
-    {
-      "item": "Graine d&#39;oignon",
-      "amount": "1 - 1",
-      "rate": "50%"
+      "rate": "75%"
     }
   ],
   "cremis": [
@@ -429,7 +946,7 @@
   ],
   "cryolinx": [
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "1 - 3",
       "rate": "100%"
     }
@@ -448,7 +965,7 @@
       "rate": "100%"
     },
     {
-      "item": "Âme de petit Pal",
+      "item": "Âme de Pal mineur",
       "amount": "1 - 1",
       "rate": "1%"
     }
@@ -462,7 +979,7 @@
   ],
   "dazzi": [
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "1 - 1",
       "rate": "100%"
     },
@@ -474,7 +991,7 @@
   ],
   "dazzi-noct": [
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "1 - 1",
       "rate": "100%"
     },
@@ -503,33 +1020,33 @@
       "rate": "100%"
     },
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "2 - 3",
       "rate": "100%"
     }
   ],
   "dinossom": [
     {
-      "item": "Graines de blé",
+      "item": "Graines de tomates",
       "amount": "1 - 2",
-      "rate": "50%"
+      "rate": "100%"
     },
     {
-      "item": "Graine de carotte",
-      "amount": "1 - 1",
-      "rate": "50%"
+      "item": "Graines de laitue",
+      "amount": "1 - 2",
+      "rate": "100%"
     }
   ],
   "dinossom-lux": [
     {
       "item": "Graines de tomates",
       "amount": "1 - 2",
-      "rate": "50%"
+      "rate": "100%"
     },
     {
       "item": "Graine de carotte",
-      "amount": "1 - 1",
-      "rate": "50%"
+      "amount": "1 - 2",
+      "rate": "100%"
     }
   ],
   "direhowl": [
@@ -563,7 +1080,7 @@
       "rate": "100%"
     },
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "1 - 1",
       "rate": "100%"
     }
@@ -575,7 +1092,7 @@
       "rate": "100%"
     },
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "1 - 1",
       "rate": "100%"
     },
@@ -600,6 +1117,36 @@
       "item": "Corne",
       "amount": "2 - 2",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat neutra",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "eikthyrdeer-terra": [
@@ -617,6 +1164,36 @@
       "item": "Corne",
       "amount": "2 - 2",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat terra",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "elizabee": [
@@ -633,22 +1210,122 @@
   ],
   "elphidran": [
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "2 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat draco",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "elphidran-aqua": [
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "2 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat draco",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "faleris": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "1 - 4",
+      "rate": "100%"
+    },
+    {
+      "item": "Eau sacrée de l’Arbre-Monde",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Éclat fulgura",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "1 - 10",
+      "rate": "10%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "1 - 5",
+      "rate": "5%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "1 - 3",
+      "rate": "3.33%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "1 - 2",
+      "rate": "2.5%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "2%"
+    },
+    {
+      "item": "Éclat ignis",
+      "amount": "10 - 20",
       "rate": "100%"
     }
   ],
@@ -656,6 +1333,46 @@
     {
       "item": "Fluides de Pal",
       "amount": "2 - 4",
+      "rate": "100%"
+    },
+    {
+      "item": "Eau sacrée de l’Arbre-Monde",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Éclat fulgura",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "1 - 10",
+      "rate": "10%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "1 - 5",
+      "rate": "5%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "1 - 3",
+      "rate": "3.33%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "1 - 2",
+      "rate": "2.5%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "2%"
+    },
+    {
+      "item": "Éclat aqua",
+      "amount": "10 - 20",
       "rate": "100%"
     }
   ],
@@ -666,7 +1383,7 @@
       "rate": "100%"
     },
     {
-      "item": "Âme de petit Pal",
+      "item": "Âme de Pal mineur",
       "amount": "1 - 1",
       "rate": "3%"
     }
@@ -681,6 +1398,36 @@
       "item": "Corne",
       "amount": "2 - 2",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat neutra",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "fenglope-lux": [
@@ -695,9 +1442,39 @@
       "rate": "100%"
     },
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "1 - 2",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat fulgura",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "finsider": [
@@ -707,7 +1484,7 @@
       "rate": "100%"
     },
     {
-      "item": "Âme de petit Pal",
+      "item": "Âme de Pal mineur",
       "amount": "1 - 1",
       "rate": "1%"
     },
@@ -724,24 +1501,24 @@
       "rate": "100%"
     },
     {
-      "item": "Âme de petit Pal",
+      "item": "Âme de Pal mineur",
       "amount": "1 - 1",
       "rate": "1%"
     },
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "1 - 3",
       "rate": "100%"
     }
   ],
   "flambelle": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "2 - 3",
       "rate": "100%"
     },
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "1 - 1",
       "rate": "100%"
     }
@@ -753,14 +1530,9 @@
       "rate": "20%"
     },
     {
-      "item": "Graines de blé",
-      "amount": "1 - 1",
+      "item": "Graines de laitue",
+      "amount": "1 - 2",
       "rate": "100%"
-    },
-    {
-      "item": "Semence de patate",
-      "amount": "1 - 1",
-      "rate": "50%"
     }
   ],
   "foxcicle": [
@@ -770,7 +1542,7 @@
       "rate": "100%"
     },
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "2 - 3",
       "rate": "100%"
     }
@@ -782,7 +1554,7 @@
       "rate": "100%"
     },
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "1 - 2",
       "rate": "100%"
     }
@@ -794,14 +1566,14 @@
       "rate": "100%"
     },
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "1 - 3",
       "rate": "100%"
     }
   ],
   "frostallion": [
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "10 - 10",
       "rate": "100%"
     },
@@ -813,19 +1585,19 @@
   ],
   "frostallion-noct": [
     {
-      "item": "Quartz pur",
-      "amount": "10 - 10",
+      "item": "Diamant",
+      "amount": "1 - 1",
       "rate": "100%"
     },
     {
-      "item": "Âme de grand Pal",
-      "amount": "1 - 1",
+      "item": "Âme de Pal majeur",
+      "amount": "1 - 2",
       "rate": "100%"
     }
   ],
   "frostplume": [
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "1 - 2",
       "rate": "100%"
     }
@@ -854,7 +1626,7 @@
       "rate": "100%"
     },
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "1 - 2",
       "rate": "50%"
     }
@@ -897,7 +1669,7 @@
       "rate": "100%"
     },
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "1 - 2",
       "rate": "50%"
     }
@@ -930,7 +1702,7 @@
   ],
   "gobfin-ignis": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "1 - 1",
       "rate": "100%"
     }
@@ -945,6 +1717,36 @@
       "item": "Os",
       "amount": "1 - 1",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat neutra",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "gorirat-terra": [
@@ -957,18 +1759,48 @@
       "item": "Os",
       "amount": "1 - 1",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat terra",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "grintale": [
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "1 - 3",
       "rate": "100%"
     }
   ],
   "grizzbolt": [
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "2 - 4",
       "rate": "100%"
     },
@@ -976,6 +1808,41 @@
       "item": "Cuir",
       "amount": "2 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Eau sacrée de l’Arbre-Monde",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Éclat fulgura",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "1 - 10",
+      "rate": "10%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "1 - 5",
+      "rate": "5%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "1 - 3",
+      "rate": "3.33%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "1 - 2",
+      "rate": "2.5%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "2%"
     }
   ],
   "gumoss": [
@@ -992,19 +1859,24 @@
   ],
   "hangyu": [
     {
-      "item": "Textile",
+      "item": "Fibre",
       "amount": "5 - 10",
+      "rate": "100%"
+    },
+    {
+      "item": "Graines de blé",
+      "amount": "1 - 1",
       "rate": "100%"
     }
   ],
   "hangyu-cryst": [
     {
-      "item": "Textile",
+      "item": "Fibre",
       "amount": "5 - 10",
       "rate": "100%"
     },
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "1 - 1",
       "rate": "100%"
     }
@@ -1016,21 +1888,81 @@
       "rate": "100%"
     },
     {
-      "item": "Âme de Pal moyen",
+      "item": "Âme de Pal intermédiaire",
       "amount": "1 - 1",
       "rate": "3%"
+    },
+    {
+      "item": "Éclat tenebra",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "helzephyr-lux": [
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "1 - 3",
       "rate": "100%"
     },
     {
-      "item": "Âme de Pal moyen",
+      "item": "Âme de Pal intermédiaire",
       "amount": "1 - 1",
       "rate": "3%"
+    },
+    {
+      "item": "Éclat tenebra",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "herbil": [
@@ -1040,33 +1972,28 @@
       "rate": "100%"
     },
     {
-      "item": "Baie rouge",
-      "amount": "1 - 2",
-      "rate": "60%"
+      "item": "Graines de blé",
+      "amount": "1 - 1",
+      "rate": "100%"
     }
   ],
   "hoocrates": [
     {
-      "item": "Textile",
+      "item": "Fibre",
       "amount": "5 - 10",
       "rate": "100%"
     },
     {
-      "item": "Livre de technique supérieure",
+      "item": "Manuel technique supérieur",
       "amount": "1 - 1",
       "rate": "1%"
     }
   ],
   "icelyn": [
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "1 - 2",
       "rate": "100%"
-    },
-    {
-      "item": "Aile Précieuse",
-      "amount": "1 - 2",
-      "rate": "50%"
     }
   ],
   "incineram": [
@@ -1119,36 +2046,36 @@
   ],
   "jetragon": [
     {
-      "item": "Quartz pur",
+      "item": "Soralite",
       "amount": "10 - 10",
       "rate": "100%"
     },
     {
-      "item": "Polymère",
-      "amount": "5 - 5",
-      "rate": "100%"
-    },
-    {
-      "item": "Fibre de carbone",
-      "amount": "5 - 5",
+      "item": "Cœur brûlant",
+      "amount": "1 - 2",
       "rate": "100%"
     },
     {
       "item": "Diamant",
       "amount": "1 - 1",
       "rate": "30%"
+    },
+    {
+      "item": "Âme de Pal majeur",
+      "amount": "1 - 1",
+      "rate": "1%"
     }
   ],
   "jolthog": [
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "1 - 1",
       "rate": "100%"
     }
   ],
   "jolthog-cryst": [
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "1 - 1",
       "rate": "100%"
     }
@@ -1158,18 +2085,78 @@
       "item": "Fluides de Pal",
       "amount": "2 - 4",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat draco",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "jormuntide-ignis": [
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "2 - 3",
       "rate": "100%"
     },
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "2 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat draco",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "katress": [
@@ -1184,14 +2171,14 @@
       "rate": "50%"
     },
     {
-      "item": "Livre de technique supérieure",
+      "item": "Manuel technique supérieur",
       "amount": "1 - 1",
       "rate": "1%"
     }
   ],
   "katress-ignis": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "1 - 2",
       "rate": "100%"
     },
@@ -1201,7 +2188,7 @@
       "rate": "50%"
     },
     {
-      "item": "Livre de technique supérieure",
+      "item": "Manuel technique supérieur",
       "amount": "1 - 1",
       "rate": "1%"
     }
@@ -1225,7 +2212,7 @@
       "rate": "100%"
     },
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "1 - 1",
       "rate": "100%"
     }
@@ -1257,6 +2244,11 @@
       "item": "Tentacule de Killamari",
       "amount": "1 - 1",
       "rate": "50%"
+    },
+    {
+      "item": "Fluides de Pal",
+      "amount": "1 - 1",
+      "rate": "100%"
     }
   ],
   "killamari-primo": [
@@ -1276,6 +2268,36 @@
       "item": "Laine",
       "amount": "5 - 5",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat neutra",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "kingpaca-cryst": [
@@ -1285,14 +2307,14 @@
       "rate": "100%"
     },
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "3 - 6",
       "rate": "100%"
     }
   ],
   "kitsun": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "2 - 3",
       "rate": "100%"
     },
@@ -1304,7 +2326,7 @@
   ],
   "kitsun-noct": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "2 - 3",
       "rate": "100%"
     },
@@ -1323,6 +2345,46 @@
     {
       "item": "Minerai de métal",
       "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Eau sacrée de l’Arbre-Monde",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Éclat fulgura",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "1 - 10",
+      "rate": "10%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "1 - 5",
+      "rate": "5%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "1 - 3",
+      "rate": "3.33%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "1 - 2",
+      "rate": "2.5%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "2%"
+    },
+    {
+      "item": "Éclat terra",
+      "amount": "10 - 20",
       "rate": "100%"
     }
   ],
@@ -1357,7 +2419,7 @@
   ],
   "leezpunk-ignis": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "1 - 2",
       "rate": "100%"
     },
@@ -1374,7 +2436,7 @@
   ],
   "lifmunk": [
     {
-      "item": "Graines de baies",
+      "item": "Graines de blé",
       "amount": "1 - 1",
       "rate": "100%"
     },
@@ -1439,15 +2501,15 @@
   ],
   "lunaris": [
     {
-      "item": "Éclat de paldium",
+      "item": "Fragment de paldium",
       "amount": "2 - 3",
       "rate": "100%"
     }
   ],
   "lyleen": [
     {
-      "item": "Médicament de fortune",
-      "amount": "3 - 3",
+      "item": "Potion de haute qualité",
+      "amount": "1 - 3",
       "rate": "100%"
     },
     {
@@ -1456,15 +2518,55 @@
       "rate": "100%"
     },
     {
-      "item": "Livre de technique innovante",
+      "item": "Manuel technique innovant",
       "amount": "1 - 1",
       "rate": "10%"
+    },
+    {
+      "item": "Eau sacrée de l’Arbre-Monde",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Éclat fulgura",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "1 - 10",
+      "rate": "10%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "1 - 5",
+      "rate": "5%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "1 - 3",
+      "rate": "3.33%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "1 - 2",
+      "rate": "2.5%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "2%"
+    },
+    {
+      "item": "Éclat herba",
+      "amount": "10 - 20",
+      "rate": "100%"
     }
   ],
   "lyleen-noct": [
     {
-      "item": "Médicament de fortune",
-      "amount": "3 - 3",
+      "item": "Potion de haute qualité",
+      "amount": "1 - 3",
       "rate": "100%"
     },
     {
@@ -1473,14 +2575,54 @@
       "rate": "100%"
     },
     {
-      "item": "Livre de technique innovante",
+      "item": "Manuel technique innovant",
       "amount": "1 - 1",
       "rate": "10%"
+    },
+    {
+      "item": "Eau sacrée de l’Arbre-Monde",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Éclat fulgura",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "1 - 10",
+      "rate": "10%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "1 - 5",
+      "rate": "5%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "1 - 3",
+      "rate": "3.33%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "1 - 2",
+      "rate": "2.5%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "2%"
+    },
+    {
+      "item": "Éclat tenebra",
+      "amount": "10 - 20",
+      "rate": "100%"
     }
   ],
   "mammorest": [
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "5 - 10",
       "rate": "100%"
     },
@@ -1493,11 +2635,41 @@
       "item": "Viande de Mammorest",
       "amount": "2 - 2",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat herba",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "mammorest-cryst": [
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "5 - 10",
       "rate": "100%"
     },
@@ -1510,6 +2682,36 @@
       "item": "Viande de Mammorest",
       "amount": "2 - 2",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat glacia",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "maraith": [
@@ -1519,7 +2721,7 @@
       "rate": "100%"
     },
     {
-      "item": "Âme de petit Pal",
+      "item": "Âme de Pal mineur",
       "amount": "1 - 1",
       "rate": "15%"
     },
@@ -1534,11 +2736,16 @@
       "item": "Pièce d&#39;or",
       "amount": "100 - 200",
       "rate": "50%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "1 - 1",
+      "rate": "100%"
     }
   ],
   "mau-cryst": [
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "1 - 2",
       "rate": "100%"
     },
@@ -1562,8 +2769,8 @@
   ],
   "menasting": [
     {
-      "item": "Charbon",
-      "amount": "10 - 10",
+      "item": "Âme de Pal intermédiaire",
+      "amount": "1 - 2",
       "rate": "100%"
     },
     {
@@ -1574,13 +2781,13 @@
   ],
   "menasting-terra": [
     {
-      "item": "Pétrole brut",
-      "amount": "1 - 1",
-      "rate": "50%"
+      "item": "Âme de Pal intermédiaire",
+      "amount": "2 - 3",
+      "rate": "100%"
     },
     {
-      "item": "Organe d&#39;allumage",
-      "amount": "1 - 2",
+      "item": "Saphir",
+      "amount": "1 - 1",
       "rate": "100%"
     }
   ],
@@ -1603,8 +2810,8 @@
   ],
   "mossanda": [
     {
-      "item": "Champignon",
-      "amount": "2 - 3",
+      "item": "Bois robuste",
+      "amount": "1 - 3",
       "rate": "100%"
     },
     {
@@ -1613,24 +2820,49 @@
       "rate": "100%"
     },
     {
-      "item": "Graines de tomates",
-      "amount": "1 - 1",
+      "item": "Graine de carotte",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Éclat herba",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
       "rate": "50%"
     },
     {
-      "item": "Graine d&#39;oignon",
+      "item": "Relique antique rayonnante",
       "amount": "1 - 1",
-      "rate": "50%"
+      "rate": "25%"
     }
   ],
   "mossanda-lux": [
     {
-      "item": "Champignon",
-      "amount": "2 - 3",
+      "item": "Bois robuste",
+      "amount": "1 - 3",
       "rate": "100%"
     },
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "1 - 2",
       "rate": "100%"
     },
@@ -1638,6 +2870,41 @@
       "item": "Cuir",
       "amount": "2 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Eau sacrée de l’Arbre-Monde",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Éclat fulgura",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "1 - 10",
+      "rate": "10%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "1 - 5",
+      "rate": "5%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "1 - 3",
+      "rate": "3.33%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "1 - 2",
+      "rate": "2.5%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "2%"
     }
   ],
   "mozzarina": [
@@ -1654,42 +2921,47 @@
   ],
   "munchill": [
     {
+      "item": "Chair de Munchill",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
       "item": "Fluides de Pal",
       "amount": "1 - 2",
       "rate": "100%"
     },
     {
-      "item": "Chair de Munchill",
-      "amount": "1 - 1",
+      "item": "Organe de glace",
+      "amount": "1 - 2",
       "rate": "100%"
     }
   ],
   "necromus": [
     {
-      "item": "Lingot de Paluminium",
+      "item": "Hexolite",
       "amount": "10 - 10",
       "rate": "100%"
     },
     {
-      "item": "Âme de grand Pal",
+      "item": "Diamant",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de Pal majeur",
       "amount": "1 - 1",
       "rate": "100%"
     }
   ],
   "neptilius": [
     {
-      "item": "Quartz pur",
+      "item": "Minerai de korallium",
       "amount": "10 - 10",
       "rate": "100%"
     },
     {
-      "item": "Polymère",
-      "amount": "5 - 5",
-      "rate": "100%"
-    },
-    {
-      "item": "Fibre de carbone",
-      "amount": "5 - 5",
+      "item": "Hexolite",
+      "amount": "10 - 10",
       "rate": "100%"
     },
     {
@@ -1698,14 +2970,14 @@
       "rate": "30%"
     },
     {
-      "item": "Âme de grand Pal",
+      "item": "Âme de Pal majeur",
       "amount": "1 - 1",
       "rate": "1%"
     }
   ],
   "nitemary": [
     {
-      "item": "Âme de petit Pal",
+      "item": "Âme de Pal mineur",
       "amount": "1 - 1",
       "rate": "100%"
     }
@@ -1724,7 +2996,7 @@
       "rate": "100%"
     },
     {
-      "item": "Âme de petit Pal",
+      "item": "Âme de Pal mineur",
       "amount": "1 - 1",
       "rate": "40%"
     }
@@ -1745,14 +3017,54 @@
   ],
   "orserk": [
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Eau sacrée de l’Arbre-Monde",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Éclat fulgura",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "1 - 10",
+      "rate": "10%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "1 - 5",
+      "rate": "5%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "1 - 3",
+      "rate": "3.33%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "1 - 2",
+      "rate": "2.5%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "2%"
+    },
+    {
+      "item": "Éclat draco",
+      "amount": "10 - 20",
       "rate": "100%"
     }
   ],
   "paladius": [
     {
-      "item": "Lingot de Paluminium",
+      "item": "Hexolite",
       "amount": "10 - 10",
       "rate": "100%"
     },
@@ -1760,18 +3072,33 @@
       "item": "Diamant",
       "amount": "1 - 1",
       "rate": "100%"
+    },
+    {
+      "item": "Âme de Pal majeur",
+      "amount": "1 - 1",
+      "rate": "100%"
     }
   ],
   "palumba": [
     {
-      "item": "Os",
-      "amount": "1 - 1",
+      "item": "Bois robuste",
+      "amount": "2 - 4",
+      "rate": "100%"
+    },
+    {
+      "item": "Graine d&#39;oignon",
+      "amount": "1 - 2",
+      "rate": "100%"
+    },
+    {
+      "item": "Graine de carotte",
+      "amount": "1 - 2",
       "rate": "100%"
     }
   ],
   "pengullet": [
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "1 - 2",
       "rate": "100%"
     },
@@ -1783,7 +3110,7 @@
   ],
   "pengullet-lux": [
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "1 - 2",
       "rate": "100%"
     },
@@ -1795,7 +3122,7 @@
   ],
   "penking": [
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "1 - 3",
       "rate": "100%"
     },
@@ -1807,7 +3134,7 @@
   ],
   "penking-lux": [
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "1 - 3",
       "rate": "100%"
     },
@@ -1822,11 +3149,16 @@
       "item": "Belle fleur",
       "amount": "2 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Semence de pomme de terre",
+      "amount": "1 - 1",
+      "rate": "100%"
     }
   ],
   "polapup": [
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "1 - 3",
       "rate": "100%"
     }
@@ -1857,7 +3189,7 @@
   ],
   "pyrin": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "4 - 5",
       "rate": "100%"
     },
@@ -1865,11 +3197,41 @@
       "item": "Cuir",
       "amount": "2 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat ignis",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "pyrin-noct": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "4 - 5",
       "rate": "100%"
     },
@@ -1877,18 +3239,78 @@
       "item": "Cuir",
       "amount": "2 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat ignis",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "quivern": [
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "3 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat draco",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "quivern-botan": [
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "3 - 3",
       "rate": "100%"
     },
@@ -1901,18 +3323,78 @@
       "item": "Baie rouge",
       "amount": "1 - 2",
       "rate": "60%"
+    },
+    {
+      "item": "Éclat draco",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "ragnahawk": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "5 - 7",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat ignis",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "rayhound": [
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "1 - 2",
       "rate": "100%"
     }
@@ -1934,14 +3416,44 @@
       "rate": "100%"
     },
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "2 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat glacia",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "relaxaurus": [
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "1 - 4",
       "rate": "100%"
     },
@@ -1949,16 +3461,46 @@
       "item": "Rubis",
       "amount": "1 - 1",
       "rate": "5%"
+    },
+    {
+      "item": "Éclat draco",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "relaxaurus-lux": [
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "1 - 4",
       "rate": "100%"
     },
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "2 - 3",
       "rate": "100%"
     },
@@ -1966,18 +3508,48 @@
       "item": "Saphir",
       "amount": "1 - 1",
       "rate": "5%"
+    },
+    {
+      "item": "Éclat draco",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "reptyro": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "5 - 7",
       "rate": "100%"
     }
   ],
   "reptyro-cryst": [
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "3 - 4",
       "rate": "100%"
     }
@@ -1996,7 +3568,12 @@
     {
       "item": "Ruban de Ribbuny",
       "amount": "1 - 1",
-      "rate": "50%"
+      "rate": "100%"
+    },
+    {
+      "item": "Graines de baies",
+      "amount": "1 - 1",
+      "rate": "100%"
     }
   ],
   "ribbuny-botan": [
@@ -2006,58 +3583,48 @@
       "rate": "100%"
     },
     {
-      "item": "Belle fleur",
-      "amount": "1 - 1",
-      "rate": "5%"
-    },
-    {
       "item": "Ruban de Ribbuny",
       "amount": "1 - 1",
       "rate": "50%"
     },
     {
-      "item": "Semence de patate",
+      "item": "Graine de carotte",
       "amount": "1 - 1",
-      "rate": "50%"
+      "rate": "100%"
+    },
+    {
+      "item": "Carotte",
+      "amount": "1 - 1",
+      "rate": "100%"
     }
   ],
   "robinquill": [
     {
-      "item": "Graines de blé",
+      "item": "Semence de pomme de terre",
       "amount": "1 - 2",
-      "rate": "50%"
+      "rate": "100%"
     },
     {
       "item": "Flèche",
       "amount": "2 - 4",
       "rate": "100%"
-    },
-    {
-      "item": "Semence de patate",
-      "amount": "1 - 1",
-      "rate": "50%"
     }
   ],
   "robinquill-terra": [
     {
-      "item": "Graines de blé",
+      "item": "Semence de pomme de terre",
       "amount": "1 - 2",
-      "rate": "50%"
+      "rate": "100%"
     },
     {
       "item": "Flèche",
       "amount": "2 - 4",
       "rate": "100%"
-    },
-    {
-      "item": "Semence de patate",
-      "amount": "1 - 1",
-      "rate": "50%"
     }
   ],
   "rooby": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "2 - 3",
       "rate": "100%"
     },
@@ -2086,9 +3653,9 @@
   ],
   "selyne": [
     {
-      "item": "Tissu",
+      "item": "Tissu de qualité",
       "amount": "1 - 2",
-      "rate": "60%"
+      "rate": "100%"
     },
     {
       "item": "Saphir",
@@ -2096,15 +3663,50 @@
       "rate": "100%"
     },
     {
-      "item": "Griffe Précieuse",
+      "item": "Eau sacrée de l’Arbre-Monde",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Éclat fulgura",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "1 - 10",
+      "rate": "10%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "1 - 5",
+      "rate": "5%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "1 - 3",
+      "rate": "3.33%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "1 - 2",
+      "rate": "2.5%"
+    },
+    {
+      "item": "Relique antique rayonnante",
       "amount": "1 - 1",
-      "rate": "30%"
+      "rate": "2%"
+    },
+    {
+      "item": "Éclat tenebra",
+      "amount": "10 - 20",
+      "rate": "100%"
     }
   ],
   "shadowbeak": [
     {
-      "item": "Lingot de Paluminium",
-      "amount": "1 - 2",
+      "item": "Plastacier",
+      "amount": "2 - 3",
       "rate": "100%"
     },
     {
@@ -2113,9 +3715,44 @@
       "rate": "100%"
     },
     {
-      "item": "Livre de technique innovante",
+      "item": "Manuel technique innovant",
       "amount": "1 - 1",
       "rate": "10%"
+    },
+    {
+      "item": "Âme de Pal majeur",
+      "amount": "1 - 1",
+      "rate": "100%"
+    },
+    {
+      "item": "Éclat tenebra",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "shroomer": [
@@ -2128,6 +3765,41 @@
       "item": "Baie rouge",
       "amount": "1 - 2",
       "rate": "60%"
+    },
+    {
+      "item": "Eau sacrée de l’Arbre-Monde",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Éclat herba",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "1 - 10",
+      "rate": "10%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "1 - 5",
+      "rate": "5%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "1 - 3",
+      "rate": "3.33%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "1 - 2",
+      "rate": "2.5%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "2%"
     }
   ],
   "shroomer-noct": [
@@ -2149,7 +3821,7 @@
       "rate": "100%"
     },
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "2 - 3",
       "rate": "100%"
     }
@@ -2159,23 +3831,48 @@
       "item": "Chromite",
       "amount": "2 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat draco",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "smokie": [
     {
-      "item": "Os",
-      "amount": "2 - 3",
+      "item": "Chromite",
+      "amount": "1 - 2",
       "rate": "100%"
-    },
-    {
-      "item": "Pétrole brut",
-      "amount": "1 - 1",
-      "rate": "50%"
     }
   ],
   "sootseer": [
     {
-      "item": "Âme de Pal moyen",
+      "item": "Âme de Pal intermédiaire",
       "amount": "1 - 2",
       "rate": "100%"
     },
@@ -2192,7 +3889,7 @@
   ],
   "sparkit": [
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "1 - 2",
       "rate": "100%"
     }
@@ -2202,6 +3899,36 @@
       "item": "Fragment obscur",
       "amount": "2 - 3",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat tenebra",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "starryon": [
@@ -2214,6 +3941,36 @@
       "item": "Fragment obscur",
       "amount": "1 - 2",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat tenebra",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "surfent": [
@@ -2228,13 +3985,48 @@
       "item": "Fluides de Pal",
       "amount": "1 - 2",
       "rate": "100%"
+    },
+    {
+      "item": "Minerai de métal",
+      "amount": "2 - 3",
+      "rate": "100%"
     }
   ],
   "suzaku": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "5 - 10",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat ignis",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "suzaku-aqua": [
@@ -2242,6 +4034,36 @@
       "item": "Fluides de Pal",
       "amount": "5 - 5",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat aqua",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "swee": [
@@ -2272,7 +4094,7 @@
   ],
   "tarantriss": [
     {
-      "item": "Textile",
+      "item": "Fibre",
       "amount": "2 - 5",
       "rate": "100%"
     },
@@ -2308,7 +4130,7 @@
       "rate": "100%"
     },
     {
-      "item": "Âme de petit Pal",
+      "item": "Âme de Pal mineur",
       "amount": "1 - 1",
       "rate": "1%"
     }
@@ -2344,7 +4166,7 @@
       "rate": "100%"
     },
     {
-      "item": "Organe d&#39;alimentation",
+      "item": "Organe électrique",
       "amount": "1 - 1",
       "rate": "100%"
     },
@@ -2352,6 +4174,36 @@
       "item": "Corne",
       "amount": "1 - 1",
       "rate": "50%"
+    },
+    {
+      "item": "Éclat fulgura",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "vaelet": [
@@ -2395,7 +4247,7 @@
       "rate": "100%"
     },
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "2 - 3",
       "rate": "100%"
     },
@@ -2434,6 +4286,36 @@
       "item": "Miel",
       "amount": "3 - 4",
       "rate": "100%"
+    },
+    {
+      "item": "Éclat terra",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "warsect-terra": [
@@ -2450,19 +4332,49 @@
       "rate": "100%"
     },
     {
-      "item": "Minerai de Korallium",
+      "item": "Minerai de korallium",
       "amount": "2 - 3",
       "rate": "100%"
     },
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "1 - 3",
       "rate": "100%"
     },
     {
-      "item": "Âme de grand Pal",
+      "item": "Âme de Pal majeur",
       "amount": "1 - 1",
       "rate": "1%"
+    },
+    {
+      "item": "Éclat glacia",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "whalaska-ignis": [
@@ -2472,41 +4384,81 @@
       "rate": "100%"
     },
     {
-      "item": "Minerai de Korallium",
+      "item": "Minerai de korallium",
       "amount": "2 - 3",
       "rate": "100%"
     },
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "1 - 3",
       "rate": "100%"
     },
     {
-      "item": "Âme de grand Pal",
+      "item": "Âme de Pal majeur",
       "amount": "1 - 1",
       "rate": "1%"
+    },
+    {
+      "item": "Eau sacrée de l’Arbre-Monde",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Éclat ignis",
+      "amount": "1 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "1 - 10",
+      "rate": "10%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "1 - 5",
+      "rate": "5%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "1 - 3",
+      "rate": "3.33%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "1 - 2",
+      "rate": "2.5%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "2%"
+    },
+    {
+      "item": "Éclat glacia",
+      "amount": "10 - 20",
+      "rate": "100%"
     }
   ],
   "wixen": [
     {
-      "item": "Organe d&#39;allumage",
+      "item": "Organe de feu",
       "amount": "1 - 2",
       "rate": "100%"
     },
     {
-      "item": "Livre de technique supérieure",
+      "item": "Manuel technique supérieur",
       "amount": "1 - 1",
       "rate": "1%"
     }
   ],
   "wixen-noct": [
     {
-      "item": "Âme de Pal moyen",
+      "item": "Âme de Pal intermédiaire",
       "amount": "1 - 2",
       "rate": "100%"
     },
     {
-      "item": "Livre de technique supérieure",
+      "item": "Manuel technique supérieur",
       "amount": "1 - 1",
       "rate": "1%"
     }
@@ -2518,14 +4470,14 @@
       "rate": "100%"
     },
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "1 - 1",
       "rate": "100%"
     }
   ],
   "wumpo": [
     {
-      "item": "Organe de congélation",
+      "item": "Organe de glace",
       "amount": "2 - 3",
       "rate": "100%"
     },
@@ -2533,17 +4485,42 @@
       "item": "Belle fleur",
       "amount": "1 - 1",
       "rate": "20%"
+    },
+    {
+      "item": "Éclat glacia",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "wumpo-botan": [
     {
-      "item": "Graines de laitue",
-      "amount": "1 - 1",
-      "rate": "100%"
-    },
-    {
-      "item": "Graines de tomates",
-      "amount": "1 - 1",
+      "item": "Bois robuste",
+      "amount": "2 - 5",
       "rate": "100%"
     },
     {
@@ -2555,6 +4532,36 @@
       "item": "Graine de carotte",
       "amount": "1 - 1",
       "rate": "50%"
+    },
+    {
+      "item": "Éclat herba",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique détériorée",
+      "amount": "30 - 50",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique dormante",
+      "amount": "10 - 20",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique intacte",
+      "amount": "4 - 8",
+      "rate": "100%"
+    },
+    {
+      "item": "Relique antique lumineuse",
+      "amount": "2 - 3",
+      "rate": "50%"
+    },
+    {
+      "item": "Relique antique rayonnante",
+      "amount": "1 - 1",
+      "rate": "25%"
     }
   ],
   "xenogard": [
@@ -2564,7 +4571,7 @@
       "rate": "100%"
     },
     {
-      "item": "Huile de Pal de Qualité",
+      "item": "Huile de Pal de qualité",
       "amount": "3 - 5",
       "rate": "100%"
     }
@@ -2665,6 +4672,23 @@
       "item": "Hallowed Bar",
       "amount": "1 - 1",
       "rate": "100%"
+    }
+  ],
+  "hartalis": [
+    {
+      "item": "Corne",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Cuir",
+      "amount": "2 - 3",
+      "rate": "100%"
+    },
+    {
+      "item": "Âme de Pal majeur",
+      "amount": "1 - 1",
+      "rate": "30%"
     }
   ]
 }
