@@ -17,10 +17,13 @@
 
   /* Code couleur des niveaux (nouvelles couleurs) */
   --lvl-0: #3a4356;
-  --lvl-1: #ff6b5e;   /* faible    */
-  --lvl-2: #ffb638;   /* moyen     */
-  --lvl-3: #9ee04e;   /* fort      */
-  --lvl-4: #35e0ab;   /* très fort */
+  /* 5 paliers de couleur pour l'échelle 1–10 (2 niveaux par palier) */
+  --lvl-1: #ff6b5e;   /* 1–2  Faible */
+  --lvl-2: #ff9f43;   /* 3–4  Moyen  */
+  --lvl-3: #ffd93b;   /* 5–6  Bon    */
+  --lvl-4: #9ee04e;   /* 7–8  Fort   */
+  --lvl-5: #35e0ab;   /* 9–10 Élite  */
+  --ok: #35e0ab;      /* couleur "succès/couvert" (= palier max) */
 
   --sh: 4px 4px 0 var(--edge);
   --sh-lg: 6px 6px 0 var(--edge);
@@ -78,9 +81,10 @@ header { padding: 20px 28px 6px; display: flex; flex-direction: column; align-it
 /* Couleurs partagées des niveaux */
 .lvl-0 { background: var(--lvl-0); color: var(--muted); }
 .lvl-1 { background: var(--lvl-1); color: #3a0d08; }
-.lvl-2 { background: var(--lvl-2); color: #3a2606; }
-.lvl-3 { background: var(--lvl-3); color: #16340a; }
-.lvl-4 { background: var(--lvl-4); color: #04231a; }
+.lvl-2 { background: var(--lvl-2); color: #3a2306; }
+.lvl-3 { background: var(--lvl-3); color: #3a3206; }
+.lvl-4 { background: var(--lvl-4); color: #16340a; }
+.lvl-5 { background: var(--lvl-5); color: #04231a; }
 
 /* ===== Barre de synchro / espaces ===== */
 .sync-bar {
@@ -256,7 +260,7 @@ main {
   background: var(--panel-2); border: 2px solid var(--border);
 }
 .summary-row.absent { opacity: 0.5; }
-.summary-row.covered { border-color: var(--lvl-4); }
+.summary-row.covered { border-color: var(--ok); }
 .summary-row.uncovered { border-color: var(--lvl-1); background: #251617; }
 .summary-row .ico { font-size: 1.1rem; width: 24px; text-align: center; }
 .summary-row .label { font-weight: 800; }
@@ -265,7 +269,7 @@ main {
 .summary-row .demand {
   font-size: 0.74rem; font-weight: 900; padding: 3px 8px; border-radius: 6px; white-space: nowrap; border: 1.5px solid var(--edge);
 }
-.summary-row .demand.ok { background: var(--lvl-4); color: #04231a; }
+.summary-row .demand.ok { background: var(--ok); color: #04231a; }
 .summary-row .demand.ko { background: var(--lvl-1); color: #3a0d08; }
 .summary-row .maxlvl {
   font-weight: 900; border-radius: 6px; padding: 3px 9px; min-width: 52px; text-align: center; border: 1.5px solid var(--edge);
@@ -295,7 +299,7 @@ main {
 .sg-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-left: auto; justify-content: flex-end; }
 .sg-covs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
 .sg-cov { display: flex; justify-content: space-between; font-size: 0.85rem; padding: 5px 9px; border-radius: 7px; border: 2px solid var(--border); font-weight: 700; }
-.sg-cov.ok { border-color: var(--lvl-4); }
+.sg-cov.ok { border-color: var(--ok); }
 .sg-cov.ko { border-color: var(--lvl-1); background: #251617; }
 .sg-cov-r { color: var(--muted); }
 .sg-cov.ko .sg-cov-r { color: #ffc9c5; }
@@ -318,7 +322,7 @@ main {
 .import-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
 .import-actions label { color: var(--muted); font-size: 0.85rem; display: flex; align-items: center; gap: 5px; }
 .import-report { margin-top: 10px; font-size: 0.85rem; color: var(--muted); }
-.import-report .imp-ok { color: var(--lvl-4); font-weight: 800; }
+.import-report .imp-ok { color: var(--ok); font-weight: 800; }
 .import-report .imp-ko { color: #ffc9c5; font-weight: 800; }
 .import-report .imp-warn { color: var(--lvl-2); }
 
@@ -433,7 +437,7 @@ body.read-only .limit-ctrl input, body.read-only .import-panel {
 .pm-linkrow a:hover { text-decoration: underline; }
 
 /* Badge « possédé » + chips d'élément (Palpedia) */
-.owned-badge { color: var(--lvl-4); font-weight: 900; margin-left: 5px; }
+.owned-badge { color: var(--ok); font-weight: 900; margin-left: 5px; }
 .pedia-el { display: flex; gap: 4px; margin-top: 4px; flex-wrap: wrap; }
 .el-chip {
   font-size: 0.66rem; font-weight: 800; color: #0c1016;

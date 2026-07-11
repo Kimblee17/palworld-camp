@@ -240,8 +240,11 @@ function addStruct(id) { setStructQty(id, structQty(id) + 1); }
 function addBox(id) { setBoxQty(id, boxQty(id) + 1); }
 
 // ===== Code couleur des niveaux =====
-function levelClass(lvl) { return "lvl-" + Math.min(Math.max(lvl, 0), 4); }
-const LEVEL_NAMES = { 0: "Manquant", 1: "Faible", 2: "Moyen", 3: "Fort", 4: "Très fort" };
+// Échelle des compétences de travail 1–10 (Palworld 1.0), regroupée en 5 paliers de couleur.
+function levelTier(lvl) { return lvl <= 0 ? 0 : Math.min(5, Math.ceil(lvl / 2)); }
+function levelClass(lvl) { return "lvl-" + levelTier(lvl); }
+const TIER_NAMES = { 0: "Manquant", 1: "Faible", 2: "Moyen", 3: "Bon", 4: "Fort", 5: "Élite" };
+function levelName(lvl) { return TIER_NAMES[levelTier(lvl)]; }
 
 // Icône de vignette par catégorie de construction
 const CATEGORY_ICON = {
@@ -458,12 +461,16 @@ function init() {
 }
 
 function buildLegend() {
+  const tiers = [
+    { t: 1, r: "1–2", n: "Faible" }, { t: 2, r: "3–4", n: "Moyen" }, { t: 3, r: "5–6", n: "Bon" },
+    { t: 4, r: "7–8", n: "Fort" }, { t: 5, r: "9–10", n: "Élite" },
+  ];
   document.querySelectorAll(".legend").forEach(legend => {
     legend.querySelectorAll(".legend-item").forEach(e => e.remove());
-    [1, 2, 3, 4].forEach(l => {
+    tiers.forEach(({ t, r, n }) => {
       const span = document.createElement("span");
-      span.className = "legend-item " + levelClass(l);
-      span.textContent = `${l} · ${LEVEL_NAMES[l]}`;
+      span.className = "legend-item lvl-" + t;
+      span.textContent = `${r} · ${n}`;
       legend.appendChild(span);
     });
   });
@@ -590,7 +597,7 @@ function palRow(pal, mode) {
     if (lvl > 0) {
       const chip = document.createElement("span");
       chip.className = "skill-chip " + levelClass(lvl);
-      chip.title = `${w.label} — ${LEVEL_NAMES[lvl]}`;
+      chip.title = `${w.label} — niv. ${lvl} (${levelName(lvl)})`;
       chip.innerHTML = `${w.icon} <b>${lvl}</b>`;
       skills.appendChild(chip);
     }
@@ -1048,7 +1055,7 @@ function pediaRow(pal) {
   const cap = pal.captureRate != null ? `×${pal.captureRate}` : MUTED;
   const skills = WORK_TYPES
     .filter(w => (pal.work[w.id] || 0) > 0)
-    .map(w => `<span class="skill-chip ${levelClass(pal.work[w.id])}" title="${w.label} — ${LEVEL_NAMES[pal.work[w.id]]}">${w.icon} <b>${pal.work[w.id]}</b></span>`)
+    .map(w => `<span class="skill-chip ${levelClass(pal.work[w.id])}" title="${w.label} — niv. ${pal.work[w.id]} (${levelName(pal.work[w.id])})">${w.icon} <b>${pal.work[w.id]}</b></span>`)
     .join("");
   const tiers = TIER_CATS.map(c => tierCell(pal, c)).join("");
   tr.innerHTML =
