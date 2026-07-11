@@ -177,7 +177,7 @@ function openPalDetail(pal) {
   const modal = document.getElementById("pal-modal");
   const body = document.getElementById("pal-modal-body");
   if (!modal || !body) return;
-  const url = window.PAL_ICON_URL && window.PAL_ICON_URL(pal.name);
+  const url = palIconUrl(pal);
   const iconHtml = url
     ? `<img class="pm-ic" src="${url}" alt="${pal.name}">`
     : `<div class="pm-ic pal-ic fallback">${(pal.name[0] || "?").toUpperCase()}</div>`;
@@ -477,8 +477,13 @@ function buildLegend() {
 }
 
 // ===== Icône d'un Pal (image palworld.gg, sinon pastille de repli) =====
+// URL dérivée du code interne (BPClass) : T_{code}_icon_normal.png. Couvre tous les
+// Pals ayant un `code` (299/300) ; repli sur une pastille sinon.
+function palIconUrl(pal) {
+  return pal.code ? "https://palworld.gg/images/full_palicon/T_" + pal.code + "_icon_normal.png" : null;
+}
 function palIconEl(pal) {
-  const url = window.PAL_ICON_URL && window.PAL_ICON_URL(pal.name);
+  const url = palIconUrl(pal);
   if (url) {
     const img = document.createElement("img");
     img.className = "pal-ic";
@@ -497,7 +502,7 @@ function palIconFallback(pal) {
   return d;
 }
 function palIconHtml(pal) {
-  const url = window.PAL_ICON_URL && window.PAL_ICON_URL(pal.name);
+  const url = palIconUrl(pal);
   const init = (pal.name[0] || "?").toUpperCase();
   if (url) return `<img class="pal-ic" loading="lazy" alt="" src="${url}" onerror="this.outerHTML='<span class=\\'pal-ic fallback\\'>${init}</span>'">`;
   return `<span class="pal-ic fallback">${init}</span>`;

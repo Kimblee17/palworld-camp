@@ -3,8 +3,9 @@ Ajoute les nouveaux Pals de Palworld 1.0 (présents dans les tier-lists mais abs
 de "Liste pals.csv") en scrapant leur fiche palworld.gg (/pal/<slug>) :
   - compétences de travail (échelle 1–10)  -> nouvelles lignes de Liste pals.csv
   - élément(s)                             -> docs/pal-elements.js
-  - nom de code interne (icône)            -> docs/pal-icons.js
 
+Les icônes ne sont plus gérées ici : elles dérivent du champ `code` (BPClass) ajouté à
+chaque Pal par build_data.py (URL = T_{code}_icon_normal.png).
 Le statut « Travailleur de nuit » n'est pas exposé par palworld.gg -> "Non" par défaut.
 
 Relançable :  python fetch_new_pals.py
@@ -25,7 +26,6 @@ except Exception:
 BASE = Path(__file__).parent
 CSV_PATH = BASE / "Liste pals.csv"
 TIERS_JSON = BASE / "data" / "tier-lists.json"
-ICONS_JS = BASE / "docs" / "pal-icons.js"
 ELEMENTS_JS = BASE / "docs" / "pal-elements.js"
 
 # Nom de compétence palworld.gg -> identifiant interne.
@@ -64,7 +64,7 @@ def fetch(url):
 
 
 def scrape(slug, name):
-    """Renvoie (work{}, elements[], codename|None) ou None si la fiche est absente."""
+    """Renvoie (work{}, elements[]) ou None si la fiche est absente."""
     try:
         html = fetch("https://palworld.gg/pal/" + slug)
     except Exception:
@@ -82,12 +82,7 @@ def scrape(slug, name):
         e = ELEMENT_MAP.get(raw, raw)
         if e not in seen:
             seen.add(e); elements.append(e)
-    # code interne : l'img dont l'attribut alt == nom du Pal
-    cm = re.search(r'alt="' + re.escape(name) + r'"\s+src="[^"]*full_palicon/T_([A-Za-z0-9_]+)_icon_normal', html)
-    if not cm:  # repli : premier full_palicon de la page
-        cm = re.search(r'full_palicon/T_([A-Za-z0-9_]+)_icon_normal', html)
-    codename = cm.group(1) if cm else None
-    return work, elements, codename
+    return work, elements
 
 
 def load_js_object(path, var):
@@ -114,16 +109,15 @@ def main():
     missing = sorted(n for n in name2slug if n not in existing)
     print(f"{len(missing)} Pals à ajouter.")
 
-    icons = load_js_object(ICONS_JS, "PAL_ICONS")
     elements_map = load_js_object(ELEMENTS_JS, "PAL_ELEMENTS")
 
-    added, no_work, no_el, no_icon, not_found = 0, [], [], [], []
+    added, no_work, no_el, not_found = 0, [], [], []
     for i, name in enumerate(missing, 1):
         slug = name2slug[name]
         res = scrape(slug, name)
         if res is None:
             not_found.append(f"{name} ({slug})"); continue
-        work, els, code = res
+        work, els = res
         row = {c: "" for c in fields}
         row["Nom"] = name
         for wid, col in ID_TO_COL.items():
@@ -133,8 +127,6 @@ def main():
         if not work: no_work.append(name)
         if els: elements_map[name] = els
         else: no_el.append(name)
-        if code: icons[name] = code
-        else: no_icon.append(name)
         added += 1
         if i % 20 == 0:
             print(f"  … {i}/{len(missing)}")
@@ -148,18 +140,6 @@ def main():
         w.writeheader()
         w.writerows(rows)
 
-    # Réécriture pal-icons.js
-    icons_sorted = {k: icons[k] for k in sorted(icons)}
-    ICONS_JS.write_text(
-        "// Nom d'affichage -> nom de code interne Palworld (pour l'icone palworld.gg).\n"
-        f"// Genere depuis palworld.wiki.gg + palworld.gg (variantes 1.0). {len(icons_sorted)}/{len(rows)} Pals.\n"
-        "window.PAL_ICONS = " + json.dumps(icons_sorted, ensure_ascii=False) + ";\n"
-        "window.PAL_ICON_URL = function (name) {\n"
-        "  var c = window.PAL_ICONS[name];\n"
-        '  return c ? "https://palworld.gg/images/full_palicon/T_" + c + "_icon_normal.png" : null;\n'
-        "};\n",
-        encoding="utf-8",
-    )
     # Réécriture pal-elements.js
     el_sorted = {k: elements_map[k] for k in sorted(elements_map)}
     ELEMENTS_JS.write_text(
@@ -169,10 +149,9 @@ def main():
     )
 
     print(f"\n{added} Pals ajoutés au CSV ({len(rows)} au total).")
-    print(f"  icônes : {len(icons_sorted)} | éléments : {len(el_sorted)}")
+    print(f"  éléments : {len(el_sorted)}")
     if no_work:   print(f"  ⚠ {len(no_work)} sans compétence trouvée : {', '.join(no_work)}")
     if no_el:     print(f"  ⚠ {len(no_el)} sans élément : {', '.join(no_el)}")
-    if no_icon:   print(f"  ⚠ {len(no_icon)} sans icône : {', '.join(no_icon)}")
     if not_found: print(f"  ⚠ {len(not_found)} fiches introuvables : {', '.join(not_found)}")
 
 
