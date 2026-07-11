@@ -249,7 +249,7 @@ function levelName(lvl) { return TIER_NAMES[levelTier(lvl)]; }
 // Icône de vignette par catégorie de construction
 const CATEGORY_ICON = {
   "Production": "🔨", "Nourriture": "🍳", "Infrastructure": "⚡", "Défense": "🛡️",
-  "Stockage": "📦", "Éclairage": "💡", "Pals": "🥚", "Autre": "🔧",
+  "Stockage": "📦", "Éclairage": "💡", "Pals": "🥚", "Médical": "💊", "Autre": "🔧",
 };
 
 // Éléments (couleur + nom FR) pour la Palpedia

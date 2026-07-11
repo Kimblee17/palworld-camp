@@ -564,5 +564,37 @@
     "requires": [
       "kindling"
     ]
+  },
+  {
+    "id": 70,
+    "name": "Clinique",
+    "category": "Médical",
+    "requires": [
+      "medicine"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Clinique antique",
+    "category": "Médical",
+    "requires": [
+      "medicine"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Synthétiseur de matière antique",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Pompe à pétrole brut haute pression",
+    "category": "Production",
+    "requires": [
+      "handiwork"
+    ]
   }
 ]
