@@ -1,17 +1,12 @@
 ﻿Nom;Élevage;Électricité;Allumage;Récolte;Transport;Plantation;Arrosage;Médicaments;Travail manuel;Minage;Bûcheronnage;Refroidissement;Travailleur de nuit
-Aegidron;0;0;0;0;0;0;0;0;0;8;0;0;Non
-Amione;0;0;0;0;1;0;1;0;2;0;0;0;Non
 Anubis;0;0;0;0;4;0;0;0;6;6;0;0;Non
 Arsox;0;0;3;0;0;0;0;0;0;0;2;0;Non
 Astegon;0;0;0;0;0;0;0;0;3;7;0;0;Oui
-Astralym;0;0;0;0;0;0;0;0;0;0;0;0;Non
 Azurmane;0;5;0;0;0;0;0;0;0;0;0;0;Non
 Azurobe;0;0;0;0;0;0;4;0;0;0;0;0;Non
 Azurobe Cryst;0;0;0;0;0;0;0;0;0;0;0;4;Non
-Bakemi;0;0;0;0;2;0;0;4;3;0;0;0;Non
 Bastigor;0;0;0;0;0;0;0;0;0;5;6;8;Non
 Beakon;0;4;0;2;5;0;0;0;0;0;0;0;Non
-Beakon Cryst;0;0;0;2;5;0;0;0;0;0;0;5;Non
 Beegarde;3;0;0;3;2;2;0;2;2;0;2;0;Non
 Bellanoir;0;0;0;0;4;0;0;5;5;0;0;0;Oui
 Bellanoir Libero;0;0;0;0;4;0;0;7;6;0;0;0;Oui
@@ -24,31 +19,26 @@ Braloha;0;0;0;5;0;5;0;0;0;3;0;0;Non
 Bristla;0;0;0;2;1;2;0;2;2;0;0;0;Non
 Broncherry;0;0;0;0;0;5;0;0;0;0;0;0;Non
 Broncherry Aqua;0;0;0;0;0;0;5;0;0;0;0;0;Non
-Bulldosu;0;0;0;0;3;0;0;0;0;4;0;0;Non
 Bushi;0;0;2;1;2;0;0;0;2;0;3;0;Non
 Bushi Noct;0;0;2;1;2;0;0;0;2;0;5;0;Oui
 Caprity;1;0;0;0;0;2;0;0;0;0;0;0;Non
 Caprity Noct;1;0;0;0;0;2;0;0;0;0;0;0;Oui
-Carnibora;0;0;0;4;2;6;0;0;4;0;0;0;Non
 Cattiva;0;0;0;1;1;0;0;0;1;1;0;0;Non
 Cave Bat;0;0;0;1;0;0;0;0;0;0;0;0;Non
 Cawgnito;1;0;0;0;0;0;0;0;0;0;2;0;Oui
 Celaray;0;0;0;0;1;0;1;0;0;0;0;0;Non
 Celaray Lux;0;2;0;0;1;0;1;0;0;0;0;0;Non
 Celesdir;0;0;0;4;0;0;0;0;0;0;7;0;Non
-Celesdir Noct;0;0;0;4;0;0;0;0;0;0;8;0;Non
 Chikipi;1;0;0;1;0;0;0;0;0;0;0;0;Non
 Chillet;0;0;0;1;0;0;0;0;0;0;0;2;Non
 Chillet Ignis;0;0;4;3;0;0;0;0;0;0;0;0;Non
 Cinnamoth;0;0;0;2;0;2;0;2;0;0;0;0;Non
-Clovee;0;0;0;1;0;1;0;0;0;0;0;0;Non
 Cremis;2;0;0;1;0;0;0;0;0;0;0;0;Non
 Croajiro;0;0;0;1;1;0;1;0;1;0;0;0;Non
 Croajiro Noct;0;0;0;1;1;0;1;0;2;0;0;0;Oui
 Cryolinx;0;0;0;0;4;0;0;0;3;0;4;4;Non
 Cryolinx Terra;0;0;0;0;4;0;0;0;2;5;6;0;Non
 Daedream;0;0;0;1;1;0;0;0;1;0;0;0;Oui
-Dandilord;0;0;0;5;3;8;0;6;6;0;0;0;Non
 Dazemu;0;0;0;2;0;0;0;0;0;0;0;0;Non
 Dazzi;0;3;0;0;2;0;0;0;2;0;0;0;Non
 Dazzi Noct;0;1;0;0;2;0;0;1;1;0;0;0;Oui
@@ -59,18 +49,10 @@ Dinossom;0;0;0;0;0;3;0;0;0;0;3;0;Non
 Dinossom Lux;0;3;0;0;0;0;0;0;0;0;4;0;Non
 Direhowl;0;0;0;1;0;0;0;0;0;0;0;0;Non
 Dogen;0;0;0;3;3;0;0;2;4;0;3;0;Non
-Dualith;0;0;0;3;6;3;0;0;0;6;5;0;Non
-Dualith Noct;0;0;0;3;6;3;0;0;0;6;5;0;Non
 Dumud;1;0;0;0;1;0;2;0;0;2;0;0;Non
 Dumud Gild;4;0;0;0;1;0;2;0;0;2;0;0;Non
-Dupin;0;0;7;0;2;0;0;4;5;0;0;0;Non
-Dynamoff;0;6;0;3;3;0;0;0;0;0;0;0;Non
-Eidrolon;0;0;0;0;6;0;0;0;0;0;0;0;Non
-Eidrolon Ignis;0;0;6;0;6;0;0;0;0;0;0;0;Non
 Eikthyrdeer;0;0;0;0;0;0;0;0;0;0;2;0;Non
 Eikthyrdeer Terra;0;0;0;0;0;0;0;0;0;0;2;0;Non
-Elgrove;0;0;0;2;3;3;0;0;0;2;3;0;Non
-Elgrove Cryst;0;0;0;0;3;0;0;0;0;3;3;5;Non
 Elizabee;0;0;0;4;0;4;0;4;4;0;3;0;Non
 Elphidran;0;0;0;0;0;0;0;0;0;0;3;0;Non
 Elphidran Aqua;0;0;0;0;0;0;4;0;0;0;3;0;Non
@@ -84,7 +66,6 @@ Fenglope Lux;0;5;0;0;0;0;0;0;0;0;4;0;Non
 Finsider;0;0;0;0;1;0;2;0;0;0;0;0;Non
 Finsider Ignis;0;0;2;0;1;0;2;0;0;0;0;0;Non
 Flambelle;1;0;1;0;1;0;0;0;1;0;0;0;Non
-Flaracle;0;0;7;0;2;0;0;0;6;0;0;0;Non
 Flopie;0;0;0;2;1;2;0;1;2;0;0;0;Non
 Foxcicle;3;0;0;0;0;0;0;0;0;0;0;4;Non
 Foxparks;0;0;1;0;0;0;0;0;0;0;0;0;Non
@@ -99,9 +80,7 @@ Galeclaw;0;0;0;2;0;0;0;0;0;0;0;0;Non
 Ghangler;0;0;0;0;2;0;5;0;0;0;0;0;Oui
 Ghangler Ignis;0;0;5;0;2;0;5;0;0;0;0;0;Non
 Gildane;0;0;0;5;0;0;0;0;0;0;0;0;Non
-Gildra;0;0;0;0;2;0;0;4;5;0;0;0;Non
 Gloopie;0;0;0;0;2;0;2;0;2;0;0;0;Oui
-Gloopie Primo;0;0;0;0;2;0;2;0;2;0;0;0;Non
 Gobfin;0;0;0;0;1;0;2;0;2;0;0;0;Non
 Gobfin Ignis;0;0;2;0;1;0;0;0;2;0;0;0;Non
 Gorirat;0;0;0;0;3;0;0;0;2;0;3;0;Non
@@ -117,7 +96,6 @@ Helzephyr;0;0;0;0;4;0;0;0;0;0;0;0;Oui
 Helzephyr Lux;0;4;0;0;5;0;0;0;0;0;0;0;Oui
 Herbil;0;0;0;1;1;1;0;0;0;0;0;0;Non
 Hoocrates;0;0;0;1;0;0;0;0;0;0;0;0;Oui
-Hoodle;0;0;0;0;1;0;0;0;1;0;0;0;Non
 Icelyn;0;0;0;0;2;0;0;4;5;0;0;5;Non
 Illuminant Bat;0;0;0;1;0;0;0;0;0;0;0;0;Non
 Illuminant Slime;0;0;0;0;1;0;0;0;0;0;0;0;Non
@@ -142,15 +120,10 @@ Kingpaca Cryst;0;0;0;2;0;0;0;0;0;0;0;4;Non
 Kitsun;0;0;3;0;0;0;0;0;0;0;0;0;Non
 Kitsun Noct;0;0;4;0;0;0;0;0;0;0;0;0;Oui
 Knocklem;0;0;0;4;7;0;0;0;0;7;0;0;Non
-Knocklem Ignis;0;0;5;0;7;0;0;0;0;7;0;0;Non
 Lamball;1;0;0;0;1;0;0;0;1;0;0;0;Non
-Lapiron;0;0;0;4;1;0;0;0;3;2;0;0;Non
-Lapure;0;0;0;5;0;0;0;0;6;0;0;0;Non
-Leafan;0;0;0;3;2;3;0;0;3;0;0;0;Non
 Leezpunk;0;0;0;1;1;0;0;0;2;0;0;0;Oui
 Leezpunk Ignis;0;0;2;1;1;0;0;0;2;0;0;0;Non
 Lifmunk;0;0;0;1;0;1;0;1;1;0;1;0;Non
-Loomen;0;0;4;0;0;0;0;4;4;0;0;0;Non
 Loupmoon;0;0;0;0;0;0;0;0;2;0;0;0;Oui
 Loupmoon Cryst;0;0;0;0;0;0;0;0;4;0;0;4;Non
 Lovander;0;0;0;0;2;0;0;3;3;2;0;0;Oui
@@ -158,7 +131,6 @@ Lullu;0;0;0;2;0;3;0;3;3;0;0;0;Non
 Lunaris;0;0;0;2;2;0;0;0;4;0;0;0;Non
 Lyleen;0;0;0;6;0;7;0;5;5;0;0;0;Non
 Lyleen Noct;0;0;0;6;0;0;0;7;5;0;0;0;Oui
-Majex;0;0;4;0;2;0;0;3;5;0;0;0;Non
 Mammorest;0;0;0;0;0;4;0;0;0;4;4;0;Non
 Mammorest Cryst;0;0;0;0;0;0;0;0;0;4;5;5;Non
 Maraith;0;0;0;4;0;0;0;0;0;4;0;0;Oui
@@ -168,44 +140,28 @@ Melpaca;2;0;0;0;0;0;0;0;0;0;0;0;Non
 Menasting;0;0;0;0;0;0;0;0;0;5;3;0;Oui
 Menasting Terra;0;0;0;0;0;0;0;0;0;6;3;0;Non
 Mimog;0;0;0;1;2;0;0;0;0;0;0;0;Non
-Moldron;0;0;5;0;0;0;0;0;0;5;0;0;Non
-Moldron Cryst;0;0;0;0;0;0;0;0;0;5;0;5;Non
 Mossanda;0;0;0;0;4;3;0;0;2;0;4;0;Non
 Mossanda Lux;0;4;0;0;4;0;0;0;3;0;4;0;Non
 Mozzarina;2;0;0;0;0;0;0;0;0;0;0;0;Non
-Muffly;0;0;0;0;1;0;0;0;0;0;0;2;Non
 Munchill;0;0;0;0;1;0;2;0;0;0;0;3;Non
-Mycora;0;0;0;4;0;6;0;6;4;0;0;0;Non
 Necromus;0;0;0;0;0;0;0;0;0;6;6;0;Oui
-Needoll;0;0;0;3;1;3;0;0;0;0;0;0;Non
-Needoll Noct;0;0;0;3;1;3;0;0;0;0;0;0;Non
 Neptilius;0;0;0;0;0;0;7;0;0;0;0;0;Non
 Nitemary;0;0;0;0;2;0;0;0;4;0;0;0;Oui
-Nitemary Botan;0;0;0;0;2;3;0;0;4;0;0;0;Non
 Nitewing;0;0;0;2;0;0;0;0;0;0;0;0;Non
 Nox;0;0;0;1;0;0;0;0;0;0;0;0;Oui
 Nyafia;0;0;0;4;3;0;0;0;4;0;2;0;Oui
 Omascul;0;0;0;5;0;0;0;0;0;0;0;0;Oui
-Ophydia;0;0;0;0;0;7;5;0;0;0;0;0;Non
 Orserk;0;8;0;0;4;0;0;0;3;0;0;0;Non
 Paladius;0;0;0;0;0;0;0;0;0;6;6;0;Non
 Palumba;0;0;0;4;0;4;0;0;0;5;0;0;Non
-Panthalus;0;0;0;0;0;0;0;0;0;0;0;0;Non
 Pengullet;0;0;0;0;1;0;1;0;1;0;0;1;Non
 Pengullet Lux;0;2;0;0;1;0;1;0;1;0;0;0;Non
 Penking;0;0;0;0;3;0;2;0;2;3;0;2;Non
 Penking Lux;0;3;0;0;3;0;2;0;2;3;0;0;Non
 Petallia;0;0;0;3;2;4;0;4;3;0;0;0;Non
-Petallia Ignis;0;0;4;3;2;0;0;4;3;0;0;0;Non
-Pierdon;0;0;0;0;0;0;0;0;0;5;0;0;Non
-Pierdon Cryst;0;0;0;0;0;0;0;0;0;5;0;6;Non
 Polapup;0;0;0;0;0;0;3;0;0;0;0;4;Non
-Polapup Terra;0;0;0;0;0;0;0;0;0;4;0;4;Non
 Prixter;0;0;0;2;0;0;0;2;0;0;4;0;Oui
-Prixter Lux;0;3;0;2;0;0;0;2;0;0;4;0;Non
 Prunelia;0;0;0;2;1;3;0;3;1;0;0;0;Oui
-Puffolt;0;2;0;0;1;0;0;0;0;0;0;0;Non
-Pupperai;0;0;0;1;1;0;0;0;0;0;1;0;Non
 Purple Slime;0;0;0;0;1;0;0;0;0;0;0;0;Oui
 Pyrin;0;0;4;0;0;0;0;0;0;0;2;0;Non
 Pyrin Noct;0;0;4;0;0;0;0;0;0;0;3;0;Oui
@@ -214,12 +170,10 @@ Quivern Botan;0;0;0;4;4;5;0;0;2;3;0;0;Non
 Ragnahawk;0;0;4;0;5;0;0;0;0;0;0;0;Non
 Rainbow Slime;0;0;0;0;1;0;0;0;0;0;0;0;Non
 Rayhound;0;4;0;0;0;0;0;0;0;0;0;0;Non
-Rayhound Cryst;0;0;0;0;0;0;0;0;0;0;0;3;Non
 Red Slime;0;0;0;0;1;0;0;0;0;0;0;0;Non
 Reindrix;0;0;0;0;0;0;0;0;0;0;3;3;Non
 Relaxaurus;0;0;0;0;3;0;3;0;0;0;0;0;Non
 Relaxaurus Lux;0;4;0;0;3;0;0;0;0;0;0;0;Non
-Renjishi;0;0;8;5;5;0;0;0;6;0;0;0;Non
 Reptyro;0;0;5;0;0;0;0;0;0;5;0;0;Non
 Reptyro Cryst;0;0;0;0;0;0;0;0;0;5;0;5;Non
 Ribbuny;0;0;0;1;1;0;0;0;1;0;0;0;Non
@@ -227,35 +181,18 @@ Ribbuny Botan;0;0;0;2;1;2;0;0;2;0;0;0;Non
 Robinquill;0;0;0;3;2;2;0;1;3;0;2;0;Non
 Robinquill Terra;0;0;0;3;2;0;0;2;3;0;2;0;Non
 Rooby;1;0;1;0;0;0;0;0;0;0;0;0;Non
-Roujay;0;0;0;5;5;0;0;0;0;0;0;0;Non
 Rushoar;0;0;0;0;0;0;0;0;0;1;0;0;Non
-Sekhmet;0;0;0;0;2;0;0;0;6;3;0;0;Non
 Selyne;0;0;0;0;3;0;0;6;7;0;0;0;Oui
 Shadowbeak;0;0;0;2;0;0;0;0;0;0;0;0;Oui
-Shaolong;0;0;0;5;0;0;8;0;0;0;0;0;Non
 Shroomer;3;0;0;3;0;3;0;0;2;0;2;0;Non
 Shroomer Noct;0;0;0;3;0;3;0;0;3;0;2;0;Oui
 Sibelyx;3;0;0;0;0;0;0;3;0;0;0;3;Non
-Sibelyx Primo;4;0;0;0;0;0;0;3;0;0;0;0;Non
-Silvance;0;0;0;4;2;6;0;8;6;0;0;0;Non
 Silvegis;0;0;0;0;0;0;0;0;0;0;6;0;Non
-Skutlass;0;0;0;1;0;0;4;0;0;0;4;0;Non
-Skutlass Ignis;0;0;3;2;0;0;2;0;0;0;3;0;Non
-Slowatt;0;3;0;0;0;0;0;0;0;0;0;0;Non
 Smokie;0;0;0;2;0;0;0;0;0;0;0;0;Oui
-Smokie Cryst;0;0;0;2;0;0;0;0;0;0;0;2;Non
-Snock;0;4;0;0;0;0;0;0;0;0;0;0;Non
-Snock Lux;0;4;0;0;0;0;0;0;0;0;0;0;Non
-Snugloo;0;0;0;0;2;0;0;0;2;3;0;3;Non
-Solenne;0;0;0;4;2;0;0;0;8;0;0;0;Non
-Solmora;0;0;0;0;0;0;4;0;0;0;0;0;Non
-Solmora Lux;0;6;0;0;0;0;4;0;0;0;0;0;Non
 Sootseer;2;0;3;2;0;0;0;0;3;3;0;0;Oui
-Souffline;0;0;0;0;2;2;0;0;0;0;0;0;Non
 Sparkit;1;1;0;0;1;0;0;0;1;0;0;0;Non
 Splatterina;0;0;0;0;2;0;0;5;6;0;3;0;Oui
 Starryon;0;0;0;5;0;0;0;0;0;0;0;0;Oui
-Starryon Primo;0;0;0;7;0;0;0;0;0;0;0;0;Non
 Surfent;2;0;0;0;0;0;3;0;0;0;0;0;Non
 Surfent Terra;0;0;0;3;0;0;0;0;0;0;0;0;Non
 Suzaku;0;0;5;0;0;0;0;0;0;0;0;0;Non
@@ -263,35 +200,25 @@ Suzaku Aqua;0;0;0;0;0;0;6;0;0;0;0;0;Non
 Swee;0;0;0;1;0;0;0;0;0;0;0;1;Non
 Sweepa;0;0;0;2;0;0;0;0;0;0;0;3;Non
 Tanzee;0;0;0;1;1;1;0;0;1;0;1;0;Non
-Tanzee Ignis;0;0;1;0;1;0;0;0;1;0;1;0;Non
 Tarantriss;0;0;0;3;2;0;0;2;3;0;0;0;Oui
 Teafant;0;0;0;0;0;0;1;0;0;0;0;0;Non
-Tetroise;0;0;0;0;0;0;0;0;0;4;0;0;Non
-Tetroise Primo;0;0;0;0;0;0;0;0;0;6;0;0;Non
 Tocotoco;0;0;0;1;0;0;0;0;0;0;0;0;Non
 Tombat;0;0;0;2;2;0;0;0;0;3;0;0;Oui
-Tropicaw;0;0;0;5;0;5;0;0;0;0;0;0;Non
 Turtacle;0;0;0;0;1;0;2;0;0;1;0;0;Non
 Turtacle Terra;0;0;0;0;1;0;2;0;0;3;0;0;Non
 Univolt;0;3;0;0;0;0;0;0;0;0;1;0;Non
-Univolt Cryst;0;0;0;0;0;0;0;0;0;0;3;6;Non
 Vaelet;2;0;0;3;2;3;0;3;3;0;0;0;Non
-Valentail;0;0;0;2;0;0;0;0;0;0;0;0;Non
 Vanwyrm;0;0;2;0;3;0;0;0;0;0;0;0;Oui
 Vanwyrm Cryst;0;0;0;0;3;0;0;0;0;0;0;2;Oui
-Venusa;0;0;0;6;2;0;0;5;6;0;0;0;Non
 Verdash;0;0;0;5;3;4;0;0;5;0;3;0;Non
 Vixy;1;0;0;1;0;0;0;0;0;0;0;0;Non
 Warsect;0;0;0;0;5;3;0;0;3;0;4;0;Non
 Warsect Terra;0;0;0;0;5;0;0;0;2;5;0;0;Non
 Whalaska;0;0;0;0;0;0;5;0;0;0;0;6;Non
 Whalaska Ignis;0;0;5;0;0;0;0;0;0;0;0;6;Non
-Wispaw;0;0;0;0;1;0;0;1;2;0;1;0;Non
-Wistella;0;0;0;0;1;0;0;6;6;0;0;0;Non
 Wixen;0;0;3;0;2;0;0;0;3;0;0;0;Non
 Wixen Noct;0;0;4;0;2;0;0;0;4;0;0;0;Oui
 Woolipop;1;0;0;0;0;0;0;0;0;0;0;0;Non
-Woolipop Terra;1;0;0;0;0;0;0;0;0;0;0;0;Non
 Wumpo;0;0;0;0;6;0;0;0;3;0;5;5;Non
 Wumpo Botan;0;0;0;0;6;3;0;0;3;0;5;0;Non
 Xenogard;0;0;0;0;0;0;0;0;0;4;0;0;Non
@@ -299,3 +226,76 @@ Xenolord;0;0;0;2;0;0;0;0;0;0;0;0;Oui
 Xenovader;0;0;0;0;2;0;0;0;0;0;3;0;Oui
 Yakumo;0;0;0;2;0;0;0;0;0;0;0;0;Non
 Zoe & Grizzbolt;0;3;0;0;3;0;0;0;2;0;2;0;Non
+Aegidron;0;0;0;0;0;0;0;0;0;8;0;0;Non
+Amione;0;0;0;0;1;0;1;0;2;0;0;0;Non
+Astralym;0;0;0;0;0;0;0;0;0;0;0;0;Non
+Bakemi;0;0;0;0;2;0;0;4;3;0;0;0;Non
+Beakon Cryst;0;0;0;2;5;0;0;0;0;0;0;5;Non
+Bulldosu;0;0;0;0;3;0;0;0;0;4;0;0;Non
+Carnibora;0;0;0;4;2;6;0;0;4;0;0;0;Non
+Celesdir Noct;0;0;0;4;0;0;0;0;0;0;8;0;Non
+Clovee;0;0;0;1;0;1;0;0;0;0;0;0;Non
+Dandilord;0;0;0;5;3;8;0;6;6;0;0;0;Non
+Dualith;0;0;0;3;6;3;0;0;0;6;5;0;Non
+Dualith Noct;0;0;0;3;6;3;0;0;0;6;5;0;Non
+Dupin;0;0;7;0;2;0;0;4;5;0;0;0;Non
+Dynamoff;0;6;0;3;3;0;0;0;0;0;0;0;Non
+Eidrolon;0;0;0;0;6;0;0;0;0;0;0;0;Non
+Eidrolon Ignis;0;0;6;0;6;0;0;0;0;0;0;0;Non
+Elgrove;0;0;0;2;3;3;0;0;0;2;3;0;Non
+Elgrove Cryst;0;0;0;0;3;0;0;0;0;3;3;5;Non
+Flaracle;0;0;7;0;2;0;0;0;6;0;0;0;Non
+Gildra;0;0;0;0;2;0;0;4;5;0;0;0;Non
+Gloopie Primo;0;0;0;0;2;0;2;0;2;0;0;0;Non
+Hoodle;0;0;0;0;1;0;0;0;1;0;0;0;Non
+Knocklem Ignis;0;0;5;0;7;0;0;0;0;7;0;0;Non
+Lapiron;0;0;0;4;1;0;0;0;3;2;0;0;Non
+Lapure;0;0;0;5;0;0;0;0;6;0;0;0;Non
+Leafan;0;0;0;3;2;3;0;0;3;0;0;0;Non
+Loomen;0;0;4;0;0;0;0;4;4;0;0;0;Non
+Majex;0;0;4;0;2;0;0;3;5;0;0;0;Non
+Moldron;0;0;5;0;0;0;0;0;0;5;0;0;Non
+Moldron Cryst;0;0;0;0;0;0;0;0;0;5;0;5;Non
+Muffly;0;0;0;0;1;0;0;0;0;0;0;2;Non
+Mycora;0;0;0;4;0;6;0;6;4;0;0;0;Non
+Needoll;0;0;0;3;1;3;0;0;0;0;0;0;Non
+Needoll Noct;0;0;0;3;1;3;0;0;0;0;0;0;Non
+Nitemary Botan;0;0;0;0;2;3;0;0;4;0;0;0;Non
+Ophydia;0;0;0;0;0;7;5;0;0;0;0;0;Non
+Panthalus;0;0;0;0;0;0;0;0;0;0;0;0;Non
+Petallia Ignis;0;0;4;3;2;0;0;4;3;0;0;0;Non
+Pierdon;0;0;0;0;0;0;0;0;0;5;0;0;Non
+Pierdon Cryst;0;0;0;0;0;0;0;0;0;5;0;6;Non
+Polapup Terra;0;0;0;0;0;0;0;0;0;4;0;4;Non
+Prixter Lux;0;3;0;2;0;0;0;2;0;0;4;0;Non
+Puffolt;0;2;0;0;1;0;0;0;0;0;0;0;Non
+Pupperai;0;0;0;1;1;0;0;0;0;0;1;0;Non
+Rayhound Cryst;0;0;0;0;0;0;0;0;0;0;0;3;Non
+Renjishi;0;0;8;5;5;0;0;0;6;0;0;0;Non
+Roujay;0;0;0;5;5;0;0;0;0;0;0;0;Non
+Sekhmet;0;0;0;0;2;0;0;0;6;3;0;0;Non
+Shaolong;0;0;0;5;0;0;8;0;0;0;0;0;Non
+Sibelyx Primo;4;0;0;0;0;0;0;3;0;0;0;0;Non
+Silvance;0;0;0;4;2;6;0;8;6;0;0;0;Non
+Skutlass;0;0;0;1;0;0;4;0;0;0;4;0;Non
+Skutlass Ignis;0;0;3;2;0;0;2;0;0;0;3;0;Non
+Slowatt;0;3;0;0;0;0;0;0;0;0;0;0;Non
+Smokie Cryst;0;0;0;2;0;0;0;0;0;0;0;2;Non
+Snock;0;4;0;0;0;0;0;0;0;0;0;0;Non
+Snock Lux;0;4;0;0;0;0;0;0;0;0;0;0;Non
+Snugloo;0;0;0;0;2;0;0;0;2;3;0;3;Non
+Solenne;0;0;0;4;2;0;0;0;8;0;0;0;Non
+Solmora;0;0;0;0;0;0;4;0;0;0;0;0;Non
+Solmora Lux;0;6;0;0;0;0;4;0;0;0;0;0;Non
+Souffline;0;0;0;0;2;2;0;0;0;0;0;0;Non
+Starryon Primo;0;0;0;7;0;0;0;0;0;0;0;0;Non
+Tanzee Ignis;0;0;1;0;1;0;0;0;1;0;1;0;Non
+Tetroise;0;0;0;0;0;0;0;0;0;4;0;0;Non
+Tetroise Primo;0;0;0;0;0;0;0;0;0;6;0;0;Non
+Tropicaw;0;0;0;5;0;5;0;0;0;0;0;0;Non
+Univolt Cryst;0;0;0;0;0;0;0;0;0;0;3;6;Non
+Valentail;0;0;0;2;0;0;0;0;0;0;0;0;Non
+Venusa;0;0;0;6;2;0;0;5;6;0;0;0;Non
+Wispaw;0;0;0;0;1;0;0;1;2;0;1;0;Non
+Wistella;0;0;0;0;1;0;0;6;6;0;0;0;Non
+Woolipop Terra;1;0;0;0;0;0;0;0;0;0;0;0;Non

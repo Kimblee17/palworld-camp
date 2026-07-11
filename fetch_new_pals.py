@@ -140,8 +140,9 @@ def main():
             print(f"  … {i}/{len(missing)}")
         time.sleep(0.2)
 
-    # Écriture CSV (rows triées : on garde l'ordre original + nouveaux à la fin, puis tri alpha)
-    rows.sort(key=lambda r: (r.get("Nom") or "").lower())
+    # Écriture CSV : IMPORTANT — ne pas trier. Les Pals sont référencés par `id` = ordre
+    # des lignes (camps/boîtes sauvegardés). On préserve l'ordre existant et on ajoute les
+    # nouveaux à la fin pour ne pas décaler les id des Pals déjà présents.
     with CSV_PATH.open("w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields, delimiter=";")
         w.writeheader()
