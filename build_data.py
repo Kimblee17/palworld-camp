@@ -148,6 +148,8 @@ def build_pals():
 
         gd = data_index.get(_norm(name))
         if gd:
+            if gd.get("code"):
+                pal["code"] = gd["code"]   # nom de code interne (BPClass) pour l'import CoWork
             pal["level"] = gd["level"]
             pal["rarity"] = gd["rarity"]
             pal["rarityCategory"] = gd["rarityCategory"]

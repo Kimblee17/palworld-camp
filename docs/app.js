@@ -723,8 +723,11 @@ function renderBoxCatalog() {
 }
 
 // ===== Import de la boîte (format CoWork "palbox.csv" ou liste libre) =====
-// Table nom de code interne Palworld -> nom d'affichage de l'app.
-const CODENAME_TO_NAME = {
+// Table nom de code interne Palworld (BPClass) -> nom d'affichage.
+// Base automatique : le champ `code` de chaque Pal (data.js, issu de palworld.gg) — couvre
+// tous les Pals 1.0 et leurs variantes. Complétée/surchargée par les entrées manuelles
+// ci-dessous (au cas où un export CoWork utiliserait un code différent).
+const CODENAME_OVERRIDES = {
   PinkCat: "Cattiva", NegativeKoala: "Depresso", Boar: "Rushoar", TentacleTurtle: "Turtacle",
   SheepBall: "Lamball", ChickenPal: "Chikipi", Carbunclo: "Lifmunk", Kitsunebi: "Foxparks",
   BluePlatypus: "Fuack", ElecCat: "Sparkit", Monkey: "Tanzee", FlameBambi: "Rooby",
@@ -743,6 +746,11 @@ const CODENAME_TO_NAME = {
   DarkAlien: "Xenovader", PurpleSpider: "Tarantriss", JellyfishGhost: "Jellroy",
   JellyfishFairy: "Jelliette", DarkCrow: "Cawgnito", LizardMan_Fire: "Leezpunk Ignis",
 };
+// code (BPClass) -> nom, pour tous les Pals ayant un `code`, surchargé par les entrées manuelles.
+const CODENAME_TO_NAME = Object.assign(
+  Object.fromEntries(PALS.filter(p => p.code).map(p => [p.code, p.name])),
+  CODENAME_OVERRIDES
+);
 // Entités non-Pal (humains/PNJ capturés) à ignorer.
 const IMPORT_HUMANS = /^(Hunter|.*Soldier|SalesPerson|.*Merchant|.*NPC)/i;
 

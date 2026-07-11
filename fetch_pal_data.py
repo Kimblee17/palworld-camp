@@ -99,6 +99,7 @@ def parse_dataset(js):
             continue
         rarity = _grp(s, r",rarity:(\d+),combiRank:", int)
         out[name] = {
+            "code": _grp(s, r'^\{id:"[a-z0-9_]+",key:"([A-Za-z0-9_]+)"', str),
             "level": _grp(s, r",level:(\d+),captureRate:", int),
             "rarity": rarity,
             "rarityCategory": rarity_category(rarity),

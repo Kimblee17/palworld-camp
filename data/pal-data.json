@@ -1,5 +1,6 @@
 {
   "Lamball": {
+    "code": "SheepBall",
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -7,6 +8,7 @@
     "zukan": 1
   },
   "Cattiva": {
+    "code": "PinkCat",
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -14,6 +16,7 @@
     "zukan": 2
   },
   "Chikipi": {
+    "code": "ChickenPal",
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -21,6 +24,7 @@
     "zukan": 3
   },
   "Lifmunk": {
+    "code": "Carbunclo",
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -28,6 +32,7 @@
     "zukan": 4
   },
   "Fuack": {
+    "code": "BluePlatypus",
     "level": 6,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -35,6 +40,7 @@
     "zukan": 5
   },
   "Fuack Ignis": {
+    "code": "BluePlatypus_Fire",
     "level": 32,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -42,6 +48,7 @@
     "zukan": 5
   },
   "Vixy": {
+    "code": "CuteFox",
     "level": 1,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -49,6 +56,7 @@
     "zukan": 6
   },
   "Celaray": {
+    "code": "FlyingManta",
     "level": 2,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -56,6 +64,7 @@
     "zukan": 7
   },
   "Celaray Lux": {
+    "code": "FlyingManta_Thunder",
     "level": 26,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -63,6 +72,7 @@
     "zukan": 7
   },
   "Cremis": {
+    "code": "WoolFox",
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -70,6 +80,7 @@
     "zukan": 8
   },
   "Croajiro": {
+    "code": "KendoFrog",
     "level": 4,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -77,6 +88,7 @@
     "zukan": 9
   },
   "Croajiro Noct": {
+    "code": "KendoFrog_Dark",
     "level": 61,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -84,6 +96,7 @@
     "zukan": 9
   },
   "Herbil": {
+    "code": "LeafMomonga",
     "level": 1,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -91,6 +104,7 @@
     "zukan": 10
   },
   "Teafant": {
+    "code": "Ganesha",
     "level": 2,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -98,6 +112,7 @@
     "zukan": 11
   },
   "Gumoss": {
+    "code": "PlantSlime",
     "level": 2,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -105,6 +120,7 @@
     "zukan": 12
   },
   "Pupperai": {
+    "code": "SamuraiDog",
     "level": 2,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -112,6 +128,7 @@
     "zukan": 13
   },
   "Clovee": {
+    "code": "CloverFairy",
     "level": 3,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -119,6 +136,7 @@
     "zukan": 14
   },
   "Jolthog": {
+    "code": "Hedgehog",
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -126,6 +144,7 @@
     "zukan": 15
   },
   "Jolthog Cryst": {
+    "code": "Hedgehog_Ice",
     "level": 10,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -133,6 +152,7 @@
     "zukan": 15
   },
   "Depresso": {
+    "code": "NegativeKoala",
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -140,6 +160,7 @@
     "zukan": 16
   },
   "Pengullet": {
+    "code": "Penguin",
     "level": 2,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -147,6 +168,7 @@
     "zukan": 17
   },
   "Pengullet Lux": {
+    "code": "Penguin_Electric",
     "level": 1,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -154,6 +176,7 @@
     "zukan": 17
   },
   "Penking": {
+    "code": "CaptainPenguin",
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -161,6 +184,7 @@
     "zukan": 18
   },
   "Penking Lux": {
+    "code": "CaptainPenguin_Black",
     "level": 1,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -168,6 +192,7 @@
     "zukan": 18
   },
   "Hoocrates": {
+    "code": "WizardOwl",
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -175,6 +200,7 @@
     "zukan": 19
   },
   "Melpaca": {
+    "code": "Alpaca",
     "level": 5,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -182,6 +208,7 @@
     "zukan": 20
   },
   "Kingpaca": {
+    "code": "KingAlpaca",
     "level": 80,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -189,6 +216,7 @@
     "zukan": 21
   },
   "Kingpaca Cryst": {
+    "code": "KingAlpaca_Ice",
     "level": 1,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -196,6 +224,7 @@
     "zukan": 21
   },
   "Daedream": {
+    "code": "DreamDemon",
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -203,6 +232,7 @@
     "zukan": 22
   },
   "Tanzee": {
+    "code": "Monkey",
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -210,6 +240,7 @@
     "zukan": 23
   },
   "Tanzee Ignis": {
+    "code": "Monkey_Fire",
     "level": 10,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -217,6 +248,7 @@
     "zukan": 23
   },
   "Nox": {
+    "code": "NightFox",
     "level": 4,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -224,6 +256,7 @@
     "zukan": 24
   },
   "Flambelle": {
+    "code": "LavaGirl",
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -231,6 +264,7 @@
     "zukan": 25
   },
   "Rooby": {
+    "code": "FlameBambi",
     "level": 4,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -238,6 +272,7 @@
     "zukan": 26
   },
   "Mau": {
+    "code": "Bastet",
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -245,6 +280,7 @@
     "zukan": 27
   },
   "Mau Cryst": {
+    "code": "Bastet_Ice",
     "level": 30,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -252,6 +288,7 @@
     "zukan": 27
   },
   "Rushoar": {
+    "code": "Boar",
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -259,6 +296,7 @@
     "zukan": 28
   },
   "Foxparks": {
+    "code": "Kitsunebi",
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -266,6 +304,7 @@
     "zukan": 29
   },
   "Foxparks Cryst": {
+    "code": "Kitsunebi_Ice",
     "level": 30,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -273,6 +312,7 @@
     "zukan": 29
   },
   "Killamari": {
+    "code": "NegativeOctopus",
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -280,6 +320,7 @@
     "zukan": 30
   },
   "Killamari Primo": {
+    "code": "NegativeOctopus_Neutral",
     "level": 24,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -287,6 +328,7 @@
     "zukan": 30
   },
   "Fuddler": {
+    "code": "CuteMole",
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -294,6 +336,7 @@
     "zukan": 31
   },
   "Eikthyrdeer": {
+    "code": "Deer",
     "level": 6,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -301,6 +344,7 @@
     "zukan": 32
   },
   "Eikthyrdeer Terra": {
+    "code": "Deer_Ground",
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -308,6 +352,7 @@
     "zukan": 32
   },
   "Direhowl": {
+    "code": "Garm",
     "level": 6,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -315,6 +360,7 @@
     "zukan": 33
   },
   "Caprity": {
+    "code": "BerryGoat",
     "level": 6,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -322,6 +368,7 @@
     "zukan": 34
   },
   "Caprity Noct": {
+    "code": "BerryGoat_Dark",
     "level": 50,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -329,6 +376,7 @@
     "zukan": 34
   },
   "Swee": {
+    "code": "MopBaby",
     "level": 7,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -336,6 +384,7 @@
     "zukan": 35
   },
   "Sweepa": {
+    "code": "MopKing",
     "level": 25,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -343,6 +392,7 @@
     "zukan": 36
   },
   "Turtacle": {
+    "code": "TentacleTurtle",
     "level": 5,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -350,6 +400,7 @@
     "zukan": 37
   },
   "Turtacle Terra": {
+    "code": "TentacleTurtle_Ground",
     "level": 40,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -357,6 +408,7 @@
     "zukan": 37
   },
   "Hangyu": {
+    "code": "WindChimes",
     "level": 9,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -364,6 +416,7 @@
     "zukan": 38
   },
   "Hangyu Cryst": {
+    "code": "WindChimes_Ice",
     "level": 32,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -371,6 +424,7 @@
     "zukan": 38
   },
   "Woolipop": {
+    "code": "SweetsSheep",
     "level": 9,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -378,6 +432,7 @@
     "zukan": 39
   },
   "Woolipop Terra": {
+    "code": "SweetsSheep_Ground",
     "level": 55,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -385,6 +440,7 @@
     "zukan": 39
   },
   "Mozzarina": {
+    "code": "CowPal",
     "level": 9,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -392,6 +448,7 @@
     "zukan": 40
   },
   "Azurobe": {
+    "code": "BlueDragon",
     "level": 35,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -399,6 +456,7 @@
     "zukan": 41
   },
   "Azurobe Cryst": {
+    "code": "BlueDragon_Ice",
     "level": 50,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -406,6 +464,7 @@
     "zukan": 41
   },
   "Sparkit": {
+    "code": "ElecCat",
     "level": 10,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -413,6 +472,7 @@
     "zukan": 42
   },
   "Kelpsea": {
+    "code": "Kelpie",
     "level": 9,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -420,6 +480,7 @@
     "zukan": 43
   },
   "Kelpsea Ignis": {
+    "code": "Kelpie_Fire",
     "level": 20,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -427,6 +488,7 @@
     "zukan": 43
   },
   "Ribbuny": {
+    "code": "PinkRabbit",
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -434,6 +496,7 @@
     "zukan": 44
   },
   "Ribbuny Botan": {
+    "code": "PinkRabbit_Grass",
     "level": 18,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -441,6 +504,7 @@
     "zukan": 44
   },
   "Jelliette": {
+    "code": "JellyfishFairy",
     "level": 6,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -448,6 +512,7 @@
     "zukan": 45
   },
   "Jellroy": {
+    "code": "JellyfishGhost",
     "level": 14,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -455,6 +520,7 @@
     "zukan": 46
   },
   "Amione": {
+    "code": "ClioneTwins",
     "level": 9,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -462,6 +528,7 @@
     "zukan": 47
   },
   "Gloopie": {
+    "code": "OctopusGirl",
     "level": 10,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -469,6 +536,7 @@
     "zukan": 48
   },
   "Gloopie Primo": {
+    "code": "OctopusGirl_Neutral",
     "level": 65,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -476,6 +544,7 @@
     "zukan": 48
   },
   "Galeclaw": {
+    "code": "Eagle",
     "level": 11,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -483,6 +552,7 @@
     "zukan": 49
   },
   "Wispaw": {
+    "code": "GhostBlackCat",
     "level": 11,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -490,6 +560,7 @@
     "zukan": 50
   },
   "Nitewing": {
+    "code": "HawkBird",
     "level": 12,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -497,6 +568,7 @@
     "zukan": 51
   },
   "Tombat": {
+    "code": "CatBat",
     "level": 12,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -504,6 +576,7 @@
     "zukan": 52
   },
   "Tocotoco": {
+    "code": "ColorfulBird",
     "level": 14,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -511,6 +584,7 @@
     "zukan": 53
   },
   "Univolt": {
+    "code": "Kirin",
     "level": 14,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -518,6 +592,7 @@
     "zukan": 54
   },
   "Univolt Cryst": {
+    "code": "Kirin_Ice",
     "level": 75,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -525,6 +600,7 @@
     "zukan": 54
   },
   "Gobfin": {
+    "code": "SharkKid",
     "level": 14,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -532,6 +608,7 @@
     "zukan": 55
   },
   "Gobfin Ignis": {
+    "code": "SharkKid_Fire",
     "level": 32,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -539,6 +616,7 @@
     "zukan": 55
   },
   "Loupmoon": {
+    "code": "Werewolf",
     "level": 14,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -546,6 +624,7 @@
     "zukan": 56
   },
   "Loupmoon Cryst": {
+    "code": "Werewolf_Ice",
     "level": 40,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -553,6 +632,7 @@
     "zukan": 56
   },
   "Cawgnito": {
+    "code": "DarkCrow",
     "level": 14,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -560,6 +640,7 @@
     "zukan": 57
   },
   "Arsox": {
+    "code": "FlameBuffalo",
     "level": 14,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -567,6 +648,7 @@
     "zukan": 58
   },
   "Muffly": {
+    "code": "FluffyBird",
     "level": 15,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -574,6 +656,7 @@
     "zukan": 59
   },
   "Bristla": {
+    "code": "LittleBriarRose",
     "level": 16,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -581,6 +664,7 @@
     "zukan": 60
   },
   "Cinnamoth": {
+    "code": "CuteButterfly",
     "level": 16,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -588,6 +672,7 @@
     "zukan": 61
   },
   "Puffolt": {
+    "code": "ElecPomeranian",
     "level": 18,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -595,6 +680,7 @@
     "zukan": 62
   },
   "Elphidran": {
+    "code": "FairyDragon",
     "level": 20,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -602,6 +688,7 @@
     "zukan": 63
   },
   "Elphidran Aqua": {
+    "code": "FairyDragon_Water",
     "level": 33,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -609,6 +696,7 @@
     "zukan": 63
   },
   "Vanwyrm": {
+    "code": "BirdDragon",
     "level": 20,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -616,6 +704,7 @@
     "zukan": 64
   },
   "Vanwyrm Cryst": {
+    "code": "BirdDragon_Ice",
     "level": 23,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -623,6 +712,7 @@
     "zukan": 64
   },
   "Felbat": {
+    "code": "CatVampire",
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -630,6 +720,7 @@
     "zukan": 65
   },
   "Vaelet": {
+    "code": "VioletFairy",
     "level": 20,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -637,6 +728,7 @@
     "zukan": 66
   },
   "Beegarde": {
+    "code": "SoldierBee",
     "level": 20,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -644,6 +736,7 @@
     "zukan": 67
   },
   "Elizabee": {
+    "code": "QueenBee",
     "level": 34,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -651,6 +744,7 @@
     "zukan": 68
   },
   "Lovander": {
+    "code": "PinkLizard",
     "level": 30,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -658,6 +752,7 @@
     "zukan": 69
   },
   "Grintale": {
+    "code": "NaughtyCat",
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -665,6 +760,7 @@
     "zukan": 70
   },
   "Tarantriss": {
+    "code": "PurpleSpider",
     "level": 20,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -672,6 +768,7 @@
     "zukan": 71
   },
   "Polapup": {
+    "code": "IceSeal",
     "level": 33,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -679,6 +776,7 @@
     "zukan": 72
   },
   "Polapup Terra": {
+    "code": "IceSeal_Ground",
     "level": 55,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -686,6 +784,7 @@
     "zukan": 72
   },
   "Leezpunk": {
+    "code": "LizardMan",
     "level": 21,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -693,6 +792,7 @@
     "zukan": 73
   },
   "Leezpunk Ignis": {
+    "code": "LizardMan_Fire",
     "level": 28,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -700,6 +800,7 @@
     "zukan": 73
   },
   "Gorirat": {
+    "code": "Gorilla",
     "level": 22,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -707,6 +808,7 @@
     "zukan": 74
   },
   "Gorirat Terra": {
+    "code": "Gorilla_Ground",
     "level": 35,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -714,6 +816,7 @@
     "zukan": 74
   },
   "Surfent": {
+    "code": "Serpent",
     "level": 12,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -721,6 +824,7 @@
     "zukan": 75
   },
   "Surfent Terra": {
+    "code": "Serpent_Ground",
     "level": 31,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -728,6 +832,7 @@
     "zukan": 75
   },
   "Robinquill": {
+    "code": "RobinHood",
     "level": 22,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -735,6 +840,7 @@
     "zukan": 76
   },
   "Robinquill Terra": {
+    "code": "RobinHood_Ground",
     "level": 32,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -742,6 +848,7 @@
     "zukan": 76
   },
   "Flopie": {
+    "code": "FlowerRabbit",
     "level": 22,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -749,6 +856,7 @@
     "zukan": 77
   },
   "Wixen": {
+    "code": "FoxMage",
     "level": 23,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -756,6 +864,7 @@
     "zukan": 78
   },
   "Wixen Noct": {
+    "code": "FoxMage_Dark",
     "level": 46,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -763,6 +872,7 @@
     "zukan": 78
   },
   "Katress": {
+    "code": "CatMage",
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -770,6 +880,7 @@
     "zukan": 79
   },
   "Katress Ignis": {
+    "code": "CatMage_Fire",
     "level": 40,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -777,6 +888,7 @@
     "zukan": 79
   },
   "Helzephyr": {
+    "code": "HadesBird",
     "level": 24,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -784,6 +896,7 @@
     "zukan": 80
   },
   "Helzephyr Lux": {
+    "code": "HadesBird_Electric",
     "level": 47,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -791,6 +904,7 @@
     "zukan": 80
   },
   "Elgrove": {
+    "code": "GrassMinotaur",
     "level": 24,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -798,6 +912,7 @@
     "zukan": 81
   },
   "Elgrove Cryst": {
+    "code": "GrassMinotaur_Ice",
     "level": 75,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -805,6 +920,7 @@
     "zukan": 81
   },
   "Lunaris": {
+    "code": "Mutant",
     "level": 25,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -812,6 +928,7 @@
     "zukan": 82
   },
   "Fenglope": {
+    "code": "FengyunDeeper",
     "level": 45,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -819,6 +936,7 @@
     "zukan": 83
   },
   "Fenglope Lux": {
+    "code": "FengyunDeeper_Electric",
     "level": 57,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -826,6 +944,7 @@
     "zukan": 83
   },
   "Dinossom": {
+    "code": "FlowerDinosaur",
     "level": 25,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -833,6 +952,7 @@
     "zukan": 84
   },
   "Dinossom Lux": {
+    "code": "FlowerDinosaur_Electric",
     "level": 34,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -840,6 +960,7 @@
     "zukan": 84
   },
   "Bushi": {
+    "code": "Ronin",
     "level": 25,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -847,6 +968,7 @@
     "zukan": 85
   },
   "Bushi Noct": {
+    "code": "Ronin_Dark",
     "level": 46,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -854,6 +976,7 @@
     "zukan": 85
   },
   "Munchill": {
+    "code": "IceCrocodile",
     "level": 10,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -861,6 +984,7 @@
     "zukan": 86
   },
   "Mammorest": {
+    "code": "GrassMammoth",
     "level": 26,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -868,6 +992,7 @@
     "zukan": 87
   },
   "Mammorest Cryst": {
+    "code": "GrassMammoth_Ice",
     "level": 36,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -875,6 +1000,7 @@
     "zukan": 87
   },
   "Finsider": {
+    "code": "StuffedShark",
     "level": 1,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -882,6 +1008,7 @@
     "zukan": 88
   },
   "Finsider Ignis": {
+    "code": "StuffedShark_Fire",
     "level": 1,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -889,6 +1016,7 @@
     "zukan": 88
   },
   "Petallia": {
+    "code": "FlowerDoll",
     "level": 28,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -896,6 +1024,7 @@
     "zukan": 89
   },
   "Petallia Ignis": {
+    "code": "FlowerDoll_Fire",
     "level": 71,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -903,6 +1032,7 @@
     "zukan": 89
   },
   "Leafan": {
+    "code": "PandaGirl",
     "level": 28,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -910,6 +1040,7 @@
     "zukan": 90
   },
   "Incineram": {
+    "code": "Baphomet",
     "level": 30,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -917,6 +1048,7 @@
     "zukan": 91
   },
   "Incineram Noct": {
+    "code": "Baphomet_Dark",
     "level": 37,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -924,6 +1056,7 @@
     "zukan": 91
   },
   "Dazzi": {
+    "code": "RaijinDaughter",
     "level": 30,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -931,6 +1064,7 @@
     "zukan": 92
   },
   "Dazzi Noct": {
+    "code": "RaijinDaughter_Water",
     "level": 50,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -938,6 +1072,7 @@
     "zukan": 92
   },
   "Pyrin": {
+    "code": "FireKirin",
     "level": 30,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -945,6 +1080,7 @@
     "zukan": 93
   },
   "Pyrin Noct": {
+    "code": "FireKirin_Dark",
     "level": 32,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -952,6 +1088,7 @@
     "zukan": 93
   },
   "Relaxaurus": {
+    "code": "LazyDragon",
     "level": 30,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -959,6 +1096,7 @@
     "zukan": 94
   },
   "Relaxaurus Lux": {
+    "code": "LazyDragon_Electric",
     "level": 48,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -966,6 +1104,7 @@
     "zukan": 94
   },
   "Foxcicle": {
+    "code": "IceFox",
     "level": 30,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -973,6 +1112,7 @@
     "zukan": 95
   },
   "Beakon": {
+    "code": "ThunderBird",
     "level": 30,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -980,6 +1120,7 @@
     "zukan": 96
   },
   "Beakon Cryst": {
+    "code": "ThunderBird_Ice",
     "level": 75,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -987,6 +1128,7 @@
     "zukan": 96
   },
   "Ghangler": {
+    "code": "GhostAnglerfish",
     "level": 30,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -994,6 +1136,7 @@
     "zukan": 97
   },
   "Ghangler Ignis": {
+    "code": "GhostAnglerfish_Fire",
     "level": 1,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1001,6 +1144,7 @@
     "zukan": 97
   },
   "Rayhound": {
+    "code": "ThunderDog",
     "level": 31,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1008,6 +1152,7 @@
     "zukan": 98
   },
   "Rayhound Cryst": {
+    "code": "ThunderDog_Ice",
     "level": 35,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1015,6 +1160,7 @@
     "zukan": 98
   },
   "Menasting": {
+    "code": "DarkScorpion",
     "level": 31,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -1022,6 +1168,7 @@
     "zukan": 99
   },
   "Menasting Terra": {
+    "code": "DarkScorpion_Ground",
     "level": 48,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -1029,6 +1176,7 @@
     "zukan": 99
   },
   "Needoll": {
+    "code": "CactusDoll",
     "level": 31,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -1036,6 +1184,7 @@
     "zukan": 100
   },
   "Needoll Noct": {
+    "code": "CactusDoll_Dark",
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1043,6 +1192,7 @@
     "zukan": 100
   },
   "Reindrix": {
+    "code": "IceDeer",
     "level": 32,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1050,6 +1200,7 @@
     "zukan": 101
   },
   "Mossanda": {
+    "code": "GrassPanda",
     "level": 32,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1057,6 +1208,7 @@
     "zukan": 102
   },
   "Mossanda Lux": {
+    "code": "GrassPanda_Electric",
     "level": 35,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1064,6 +1216,7 @@
     "zukan": 102
   },
   "Chillet": {
+    "code": "WeaselDragon",
     "level": 32,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1071,6 +1224,7 @@
     "zukan": 103
   },
   "Chillet Ignis": {
+    "code": "WeaselDragon_Fire",
     "level": 40,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1078,6 +1232,7 @@
     "zukan": 103
   },
   "Ragnahawk": {
+    "code": "RedArmorBird",
     "level": 32,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1085,6 +1240,7 @@
     "zukan": 104
   },
   "Moldron": {
+    "code": "VolcanoDragon",
     "level": 32,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1092,6 +1248,7 @@
     "zukan": 105
   },
   "Moldron Cryst": {
+    "code": "VolcanoDragon_Ice",
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1099,6 +1256,7 @@
     "zukan": 105
   },
   "Palumba": {
+    "code": "TropicalOstrich",
     "level": 32,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1106,6 +1264,7 @@
     "zukan": 106
   },
   "Digtoise": {
+    "code": "DrillGame",
     "level": 33,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1113,6 +1272,7 @@
     "zukan": 107
   },
   "Broncherry": {
+    "code": "SakuraSaurus",
     "level": 33,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1120,6 +1280,7 @@
     "zukan": 108
   },
   "Broncherry Aqua": {
+    "code": "SakuraSaurus_Water",
     "level": 51,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1127,6 +1288,7 @@
     "zukan": 108
   },
   "Dumud": {
+    "code": "LazyCatfish",
     "level": 14,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1134,6 +1296,7 @@
     "zukan": 109
   },
   "Dumud Gild": {
+    "code": "LazyCatfish_Gold",
     "level": 25,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1141,6 +1304,7 @@
     "zukan": 109
   },
   "Braloha": {
+    "code": "Plesiosaur",
     "level": 33,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1148,6 +1312,7 @@
     "zukan": 110
   },
   "Kitsun": {
+    "code": "AmaterasuWolf",
     "level": 34,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1155,6 +1320,7 @@
     "zukan": 111
   },
   "Kitsun Noct": {
+    "code": "AmaterasuWolf_Dark",
     "level": 61,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1162,6 +1328,7 @@
     "zukan": 111
   },
   "Blazehowl": {
+    "code": "Manticore",
     "level": 35,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1169,6 +1336,7 @@
     "zukan": 112
   },
   "Blazehowl Noct": {
+    "code": "Manticore_Dark",
     "level": 34,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1176,6 +1344,7 @@
     "zukan": 112
   },
   "Warsect": {
+    "code": "HerculesBeetle",
     "level": 34,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1183,6 +1352,7 @@
     "zukan": 113
   },
   "Warsect Terra": {
+    "code": "HerculesBeetle_Ground",
     "level": 53,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -1190,6 +1360,7 @@
     "zukan": 113
   },
   "Frostplume": {
+    "code": "SnowPeafowl",
     "level": 39,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1197,6 +1368,7 @@
     "zukan": 114
   },
   "Majex": {
+    "code": "DarkFlameFox",
     "level": 35,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1204,6 +1376,7 @@
     "zukan": 115
   },
   "Sibelyx": {
+    "code": "WhiteMoth",
     "level": 36,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1211,6 +1384,7 @@
     "zukan": 116
   },
   "Sibelyx Primo": {
+    "code": "WhiteMoth_Neutral",
     "level": 75,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1218,6 +1392,7 @@
     "zukan": 116
   },
   "Maraith": {
+    "code": "GhostBeast",
     "level": 38,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1225,6 +1400,7 @@
     "zukan": 117
   },
   "Shroomer": {
+    "code": "MushroomDragon",
     "level": 39,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1232,6 +1408,7 @@
     "zukan": 118
   },
   "Shroomer Noct": {
+    "code": "MushroomDragon_Dark",
     "level": 39,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1239,6 +1416,7 @@
     "zukan": 118
   },
   "Icelyn": {
+    "code": "IceWitch",
     "level": 39,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1246,6 +1424,7 @@
     "zukan": 119
   },
   "Gildra": {
+    "code": "MummyPal",
     "level": 39,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1253,6 +1432,7 @@
     "zukan": 120
   },
   "Jormuntide": {
+    "code": "Umihebi",
     "level": 80,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1260,6 +1440,7 @@
     "zukan": 121
   },
   "Jormuntide Ignis": {
+    "code": "Umihebi_Fire",
     "level": 66,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -1267,6 +1448,7 @@
     "zukan": 121
   },
   "Suzaku": {
+    "code": "Suzaku",
     "level": 40,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1274,6 +1456,7 @@
     "zukan": 122
   },
   "Suzaku Aqua": {
+    "code": "Suzaku_Water",
     "level": 68,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -1281,6 +1464,7 @@
     "zukan": 122
   },
   "Dazemu": {
+    "code": "FeatherOstrich",
     "level": 31,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1288,6 +1472,7 @@
     "zukan": 123
   },
   "Quivern": {
+    "code": "SkyDragon",
     "level": 40,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1295,6 +1480,7 @@
     "zukan": 124
   },
   "Quivern Botan": {
+    "code": "SkyDragon_Grass",
     "level": 45,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1302,6 +1488,7 @@
     "zukan": 124
   },
   "Lullu": {
+    "code": "LeafPrincess",
     "level": 40,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1309,6 +1496,7 @@
     "zukan": 125
   },
   "Kikit": {
+    "code": "SmallArmadillo",
     "level": 40,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1316,6 +1504,7 @@
     "zukan": 126
   },
   "Yakumo": {
+    "code": "GuardianDog",
     "level": 40,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1323,6 +1512,7 @@
     "zukan": 127
   },
   "Skutlass": {
+    "code": "SwordCutlassfish",
     "level": 30,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1330,6 +1520,7 @@
     "zukan": 128
   },
   "Skutlass Ignis": {
+    "code": "SwordCutlassfish_Fire",
     "level": 40,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1337,6 +1528,7 @@
     "zukan": 128
   },
   "Reptyro": {
+    "code": "VolcanicMonster",
     "level": 42,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1344,6 +1536,7 @@
     "zukan": 129
   },
   "Reptyro Cryst": {
+    "code": "VolcanicMonster_Ice",
     "level": 42,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1351,6 +1544,7 @@
     "zukan": 129
   },
   "Starryon": {
+    "code": "NightBlueHorse",
     "level": 42,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1358,6 +1552,7 @@
     "zukan": 130
   },
   "Starryon Primo": {
+    "code": "NightBlueHorse_Neutral",
     "level": 74,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1365,6 +1560,7 @@
     "zukan": 130
   },
   "Pierdon": {
+    "code": "RockBeast",
     "level": 42,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1372,6 +1568,7 @@
     "zukan": 131
   },
   "Pierdon Cryst": {
+    "code": "RockBeast_Ice",
     "level": 68,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1379,6 +1576,7 @@
     "zukan": 131
   },
   "Cryolinx": {
+    "code": "WhiteTiger",
     "level": 44,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1386,6 +1584,7 @@
     "zukan": 132
   },
   "Cryolinx Terra": {
+    "code": "WhiteTiger_Ground",
     "level": 62,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1393,6 +1592,7 @@
     "zukan": 132
   },
   "Snugloo": {
+    "code": "SmallYeti",
     "level": 32,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1400,6 +1600,7 @@
     "zukan": 133
   },
   "Wumpo": {
+    "code": "Yeti",
     "level": 45,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1407,6 +1608,7 @@
     "zukan": 134
   },
   "Wumpo Botan": {
+    "code": "Yeti_Grass",
     "level": 53,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1414,6 +1616,7 @@
     "zukan": 134
   },
   "Sootseer": {
+    "code": "CandleGhost",
     "level": 45,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1421,6 +1624,7 @@
     "zukan": 135
   },
   "Carnibora": {
+    "code": "VenusFlytrap",
     "level": 45,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1428,6 +1632,7 @@
     "zukan": 136
   },
   "Blazamut": {
+    "code": "KingBahamut",
     "level": 46,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -1435,6 +1640,7 @@
     "zukan": 137
   },
   "Blazamut Ryu": {
+    "code": "KingBahamut_Dragon",
     "level": 1,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -1442,6 +1648,7 @@
     "zukan": 137
   },
   "Dualith": {
+    "code": "GrassGolem",
     "level": 46,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1449,6 +1656,7 @@
     "zukan": 138
   },
   "Dualith Noct": {
+    "code": "GrassGolem_Dark",
     "level": 75,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1456,6 +1664,7 @@
     "zukan": 138
   },
   "Anubis": {
+    "code": "Anubis",
     "level": 68,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -1463,6 +1672,7 @@
     "zukan": 139
   },
   "Sekhmet": {
+    "code": "Sekhmet",
     "level": 37,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1470,6 +1680,7 @@
     "zukan": 140
   },
   "Prixter": {
+    "code": "ScorpionMan",
     "level": 48,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1477,6 +1688,7 @@
     "zukan": 141
   },
   "Prixter Lux": {
+    "code": "ScorpionMan_Electric",
     "level": 65,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1484,6 +1696,7 @@
     "zukan": 141
   },
   "Tetroise ": {
+    "code": "CubeTurtle",
     "level": 48,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1491,6 +1704,7 @@
     "zukan": 142
   },
   "Tetroise Primo": {
+    "code": "CubeTurtle_Neutral",
     "level": 76,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1498,6 +1712,7 @@
     "zukan": 142
   },
   "Nyafia": {
+    "code": "BadCatgirl",
     "level": 50,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1505,6 +1720,7 @@
     "zukan": 143
   },
   "Mimog": {
+    "code": "MimicDog",
     "level": 5,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1512,6 +1728,7 @@
     "zukan": 144
   },
   "Xenovader": {
+    "code": "DarkAlien",
     "level": 1,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1519,6 +1736,7 @@
     "zukan": 145
   },
   "Xenogard": {
+    "code": "WhiteAlienDragon",
     "level": 1,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -1526,6 +1744,7 @@
     "zukan": 146
   },
   "Prunelia": {
+    "code": "BlueberryFairy",
     "level": 50,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1533,6 +1752,7 @@
     "zukan": 147
   },
   "Nitemary": {
+    "code": "GhostRabbit",
     "level": 50,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1540,6 +1760,7 @@
     "zukan": 148
   },
   "Nitemary Botan": {
+    "code": "GhostRabbit_Grass",
     "level": 50,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1547,6 +1768,7 @@
     "zukan": 148
   },
   "Smokie": {
+    "code": "BlackPuppy",
     "level": 50,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -1554,6 +1776,7 @@
     "zukan": 149
   },
   "Smokie Cryst": {
+    "code": "BlackPuppy_Ice",
     "level": 62,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1561,6 +1784,7 @@
     "zukan": 149
   },
   "Omascul": {
+    "code": "MysteryMask",
     "level": 50,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1568,6 +1792,7 @@
     "zukan": 150
   },
   "Whalaska": {
+    "code": "IceNarwhal",
     "level": 42,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1575,6 +1800,7 @@
     "zukan": 151
   },
   "Whalaska Ignis": {
+    "code": "IceNarwhal_Fire",
     "level": 71,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1582,6 +1808,7 @@
     "zukan": 151
   },
   "Verdash": {
+    "code": "GrassRabbitMan",
     "level": 52,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1589,6 +1816,7 @@
     "zukan": 152
   },
   "Splatterina": {
+    "code": "GrimGirl",
     "level": 52,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1596,6 +1824,7 @@
     "zukan": 153
   },
   "Gildane": {
+    "code": "GoldenHorse",
     "level": 53,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1603,6 +1832,7 @@
     "zukan": 154
   },
   "Dogen": {
+    "code": "SifuDog",
     "level": 53,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1610,6 +1840,7 @@
     "zukan": 155
   },
   "Bulldosu": {
+    "code": "SumoDog",
     "level": 53,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1617,6 +1848,7 @@
     "zukan": 156
   },
   "Celesdir": {
+    "code": "WhiteDeer",
     "level": 54,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1624,6 +1856,7 @@
     "zukan": 157
   },
   "Celesdir Noct": {
+    "code": "WhiteDeer_Dark",
     "level": 1,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1631,6 +1864,7 @@
     "zukan": 157
   },
   "Astegon": {
+    "code": "BlackMetalDragon",
     "level": 80,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -1638,6 +1872,7 @@
     "zukan": 158
   },
   "Knocklem": {
+    "code": "WingGolem",
     "level": 55,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -1645,6 +1880,7 @@
     "zukan": 159
   },
   "Knocklem Ignis": {
+    "code": "WingGolem_Fire",
     "level": 65,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -1652,6 +1888,7 @@
     "zukan": 159
   },
   "Silvegis": {
+    "code": "WhiteShieldDragon",
     "level": 80,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1659,6 +1896,7 @@
     "zukan": 160
   },
   "Azurmane": {
+    "code": "BlueThunderHorse",
     "level": 63,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1666,6 +1904,7 @@
     "zukan": 161
   },
   "Valentail": {
+    "code": "LongCat",
     "level": 63,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -1673,6 +1912,7 @@
     "zukan": 162
   },
   "Snock": {
+    "code": "ElecSnail",
     "level": 63,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -1680,6 +1920,7 @@
     "zukan": 163
   },
   "Snock Lux": {
+    "code": "ElecSnail_Ground",
     "level": 74,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1687,6 +1928,7 @@
     "zukan": 163
   },
   "Souffline": {
+    "code": "DandelionGirl",
     "level": 63,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1694,6 +1936,7 @@
     "zukan": 164
   },
   "Lapiron": {
+    "code": "BrownRabbit",
     "level": 63,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1701,6 +1944,7 @@
     "zukan": 165
   },
   "Hoodle": {
+    "code": "HoodGhost",
     "level": 65,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1708,6 +1952,7 @@
     "zukan": 166
   },
   "Slowatt": {
+    "code": "ElecLizard",
     "level": 65,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1715,6 +1960,7 @@
     "zukan": 167
   },
   "Bakemi": {
+    "code": "OniGhostGirl",
     "level": 65,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1722,6 +1968,7 @@
     "zukan": 168
   },
   "Solmora": {
+    "code": "KingSunfish",
     "level": 66,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1729,6 +1976,7 @@
     "zukan": 169
   },
   "Solmora Lux": {
+    "code": "KingSunfish_Thunder",
     "level": 76,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1736,6 +1984,7 @@
     "zukan": 169
   },
   "Lapure": {
+    "code": "SleeveRabbit",
     "level": 65,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1743,6 +1992,7 @@
     "zukan": 170
   },
   "Eidrolon": {
+    "code": "GhostDragon",
     "level": 65,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1750,6 +2000,7 @@
     "zukan": 171
   },
   "Eidrolon Ignis": {
+    "code": "GhostDragon_Fire",
     "level": 75,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1757,6 +2008,7 @@
     "zukan": 171
   },
   "Dynamoff": {
+    "code": "ThunderFluffyBird",
     "level": 63,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1764,6 +2016,7 @@
     "zukan": 172
   },
   "Tropicaw": {
+    "code": "RedFlowerBird",
     "level": 63,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1771,6 +2024,7 @@
     "zukan": 173
   },
   "Flaracle": {
+    "code": "FoxExorcist",
     "level": 75,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1778,6 +2032,7 @@
     "zukan": 174
   },
   "Ophydia": {
+    "code": "LotusDragon",
     "level": 80,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -1785,6 +2040,7 @@
     "zukan": 175
   },
   "Dupin": {
+    "code": "ClownRabbit",
     "level": 55,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1792,6 +2048,7 @@
     "zukan": 176
   },
   "Roujay": {
+    "code": "ThiefBird",
     "level": 74,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1799,6 +2056,7 @@
     "zukan": 177
   },
   "Venusa": {
+    "code": "SnakeGirl",
     "level": 75,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1806,6 +2064,7 @@
     "zukan": 178
   },
   "Mycora": {
+    "code": "MushroomLady",
     "level": 75,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1813,6 +2072,7 @@
     "zukan": 179
   },
   "Loomen": {
+    "code": "LanternButler",
     "level": 75,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1820,6 +2080,7 @@
     "zukan": 180
   },
   "Wistella": {
+    "code": "MoonChild",
     "level": 76,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -1827,6 +2088,7 @@
     "zukan": 181
   },
   "Solenne": {
+    "code": "MonochromeQueen",
     "level": 76,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1834,6 +2096,7 @@
     "zukan": 182
   },
   "Renjishi": {
+    "code": "KabukiMan",
     "level": 80,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1841,6 +2104,7 @@
     "zukan": 183
   },
   "Aegidron": {
+    "code": "DomeArmorDragon",
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1848,6 +2112,7 @@
     "zukan": 184
   },
   "Grizzbolt": {
+    "code": "ElecPanda",
     "level": 70,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1855,6 +2120,7 @@
     "zukan": 185
   },
   "Lyleen": {
+    "code": "LilyQueen",
     "level": 75,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -1862,6 +2128,7 @@
     "zukan": 186
   },
   "Lyleen Noct": {
+    "code": "LilyQueen_Dark",
     "level": 75,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -1869,6 +2136,7 @@
     "zukan": 186
   },
   "Orserk": {
+    "code": "ThunderDragonMan",
     "level": 74,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -1876,6 +2144,7 @@
     "zukan": 187
   },
   "Faleris": {
+    "code": "Horus",
     "level": 76,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -1883,6 +2152,7 @@
     "zukan": 188
   },
   "Faleris Aqua": {
+    "code": "Horus_Water",
     "level": 65,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -1890,6 +2160,7 @@
     "zukan": 188
   },
   "Shadowbeak": {
+    "code": "BlackGriffon",
     "level": 50,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -1897,6 +2168,7 @@
     "zukan": 189
   },
   "Selyne": {
+    "code": "MoonQueen",
     "level": 76,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -1904,6 +2176,7 @@
     "zukan": 190
   },
   "Bastigor": {
+    "code": "SnowTigerBeastman",
     "level": 75,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1911,6 +2184,7 @@
     "zukan": 191
   },
   "Shaolong": {
+    "code": "BlueSkyDragon",
     "level": 76,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -1918,6 +2192,7 @@
     "zukan": 192
   },
   "Silvance": {
+    "code": "Mothman",
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1925,6 +2200,7 @@
     "zukan": 193
   },
   "Dandilord": {
+    "code": "FlowerPrince",
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1932,6 +2208,7 @@
     "zukan": 194
   },
   "Bellanoir": {
+    "code": "NightLady",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -1939,6 +2216,7 @@
     "zukan": 195
   },
   "Bellanoir Libero": {
+    "code": "NightLady_Dark",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -1946,6 +2224,7 @@
     "zukan": 195
   },
   "Xenolord": {
+    "code": "DarkMechaDragon",
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1953,6 +2232,7 @@
     "zukan": 196
   },
   "Hartalis": {
+    "code": "LegendDeer",
     "level": 1,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -1960,6 +2240,7 @@
     "zukan": 197
   },
   "Paladius": {
+    "code": "SaintCentaur",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -1967,6 +2248,7 @@
     "zukan": 198
   },
   "Necromus": {
+    "code": "BlackCentaur",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -1974,6 +2256,7 @@
     "zukan": 199
   },
   "Frostallion": {
+    "code": "IceHorse",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -1981,6 +2264,7 @@
     "zukan": 200
   },
   "Frostallion Noct": {
+    "code": "IceHorse_Dark",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -1988,6 +2272,7 @@
     "zukan": 200
   },
   "Neptilius": {
+    "code": "PoseidonOrca",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -1995,6 +2280,7 @@
     "zukan": 201
   },
   "Jetragon": {
+    "code": "JetDragon",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -2002,6 +2288,7 @@
     "zukan": 202
   },
   "Panthalus": {
+    "code": "KingWhale",
     "level": 1,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -2009,6 +2296,7 @@
     "zukan": 203
   },
   "Astralym": {
+    "code": "WorldTreeDragon",
     "level": 1,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -2016,6 +2304,7 @@
     "zukan": 204
   },
   "Eye of Cthulhu": {
+    "code": "YakushimaBoss001",
     "level": 1,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -2023,6 +2312,7 @@
     "zukan": null
   },
   "Demon Eye": {
+    "code": "YakushimaBoss001_Small",
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2030,6 +2320,7 @@
     "zukan": null
   },
   "Green Slime": {
+    "code": "YakushimaMonster001",
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2037,6 +2328,7 @@
     "zukan": null
   },
   "Blue Slime": {
+    "code": "YakushimaMonster001_Blue",
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2044,6 +2336,7 @@
     "zukan": null
   },
   "Illuminant Slime": {
+    "code": "YakushimaMonster001_Pink",
     "level": 42,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -2051,6 +2344,7 @@
     "zukan": null
   },
   "Purple Slime": {
+    "code": "YakushimaMonster001_Purple",
     "level": 36,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2058,6 +2352,7 @@
     "zukan": null
   },
   "Rainbow Slime": {
+    "code": "YakushimaMonster001_Rainbow",
     "level": 42,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -2065,6 +2360,7 @@
     "zukan": null
   },
   "Red Slime": {
+    "code": "YakushimaMonster001_Red",
     "level": 36,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2072,6 +2368,7 @@
     "zukan": null
   },
   "Enchanted Sword": {
+    "code": "YakushimaMonster002",
     "level": 42,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2079,6 +2376,7 @@
     "zukan": null
   },
   "Cave Bat": {
+    "code": "YakushimaMonster003",
     "level": 36,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2086,6 +2384,7 @@
     "zukan": null
   },
   "Illuminant Bat": {
+    "code": "YakushimaMonster003_Purple",
     "level": 42,
     "rarity": 4,
     "rarityCategory": "Common",

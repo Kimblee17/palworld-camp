@@ -63,6 +63,7 @@
         "rate": "25%"
       }
     ],
+    "code": "Anubis",
     "level": 68,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -100,6 +101,7 @@
     "mountSpeed": {
       "ground": "700 - 1050"
     },
+    "code": "FlameBuffalo",
     "level": 14,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -167,6 +169,7 @@
     "mountSpeed": {
       "flying": "700 - 1100"
     },
+    "code": "BlackMetalDragon",
     "level": 80,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -228,6 +231,7 @@
     "mountSpeed": {
       "ground": "900 - 1260"
     },
+    "code": "BlueThunderHorse",
     "level": 63,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -294,6 +298,7 @@
     "mountSpeed": {
       "ground": "600 - 900"
     },
+    "code": "BlueDragon",
     "level": 35,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -362,6 +367,7 @@
         "rate": "25%"
       }
     ],
+    "code": "BlueDragon_Ice",
     "level": 50,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -435,6 +441,7 @@
     "mountSpeed": {
       "ground": "750 - 1100"
     },
+    "code": "SnowTigerBeastman",
     "level": 75,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -498,6 +505,7 @@
     "mountSpeed": {
       "flying": "750 - 1200"
     },
+    "code": "ThunderBird",
     "level": 30,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -532,6 +540,7 @@
         "rate": "100%"
       }
     ],
+    "code": "SoldierBee",
     "level": 20,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -562,6 +571,7 @@
         "rate": "100%"
       }
     ],
+    "code": "NightLady",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -597,6 +607,7 @@
         "rate": "100%"
       }
     ],
+    "code": "NightLady_Dark",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -664,6 +675,7 @@
     "mountSpeed": {
       "ground": "800 - 1200"
     },
+    "code": "KingBahamut",
     "level": 46,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -728,6 +740,7 @@
         "rate": "25%"
       }
     ],
+    "code": "KingBahamut_Dragon",
     "level": 1,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -790,6 +803,7 @@
     "mountSpeed": {
       "ground": "800 - 1200"
     },
+    "code": "Manticore",
     "level": 35,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -849,6 +863,7 @@
         "rate": "25%"
       }
     ],
+    "code": "Manticore_Dark",
     "level": 34,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -877,6 +892,7 @@
         "rate": "100%"
       }
     ],
+    "code": "YakushimaMonster001_Blue",
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -952,6 +968,7 @@
         "rate": "25%"
       }
     ],
+    "code": "Plesiosaur",
     "level": 33,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -989,6 +1006,7 @@
         "rate": "50%"
       }
     ],
+    "code": "LittleBriarRose",
     "level": 16,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1055,6 +1073,7 @@
     "mountSpeed": {
       "ground": "550 - 1020"
     },
+    "code": "SakuraSaurus",
     "level": 33,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1118,6 +1137,7 @@
         "rate": "25%"
       }
     ],
+    "code": "SakuraSaurus_Water",
     "level": 51,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1155,6 +1175,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Ronin",
     "level": 25,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1197,6 +1218,7 @@
         "rate": "40%"
       }
     ],
+    "code": "Ronin_Dark",
     "level": 46,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1236,6 +1258,7 @@
         "rate": "100%"
       }
     ],
+    "code": "BerryGoat",
     "level": 6,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1280,6 +1303,7 @@
         "rate": "100%"
       }
     ],
+    "code": "BerryGoat_Dark",
     "level": 50,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1311,6 +1335,7 @@
         "rate": "100%"
       }
     ],
+    "code": "PinkCat",
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1339,6 +1364,7 @@
         "rate": "100%"
       }
     ],
+    "code": "YakushimaMonster003",
     "level": 36,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1378,6 +1404,7 @@
         "rate": "1%"
       }
     ],
+    "code": "DarkCrow",
     "level": 14,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1407,6 +1434,7 @@
         "rate": "100%"
       }
     ],
+    "code": "FlyingManta",
     "level": 2,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1437,6 +1465,7 @@
         "rate": "100%"
       }
     ],
+    "code": "FlyingManta_Thunder",
     "level": 26,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1509,6 +1538,7 @@
     "mountSpeed": {
       "ground": "800 - 1200"
     },
+    "code": "WhiteDeer",
     "level": 54,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1543,6 +1573,7 @@
         "rate": "100%"
       }
     ],
+    "code": "ChickenPal",
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1610,6 +1641,7 @@
     "mountSpeed": {
       "ground": "750 - 1050"
     },
+    "code": "WeaselDragon",
     "level": 32,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1674,6 +1706,7 @@
         "rate": "25%"
       }
     ],
+    "code": "WeaselDragon_Fire",
     "level": 40,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1714,6 +1747,7 @@
         "rate": "75%"
       }
     ],
+    "code": "CuteButterfly",
     "level": 16,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1743,6 +1777,7 @@
         "rate": "100%"
       }
     ],
+    "code": "WoolFox",
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1779,6 +1814,7 @@
         "rate": "25%"
       }
     ],
+    "code": "KendoFrog",
     "level": 4,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1820,6 +1856,7 @@
         "rate": "100%"
       }
     ],
+    "code": "KendoFrog_Dark",
     "level": 61,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1851,6 +1888,7 @@
         "rate": "100%"
       }
     ],
+    "code": "WhiteTiger",
     "level": 44,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1882,6 +1920,7 @@
         "rate": "100%"
       }
     ],
+    "code": "WhiteTiger_Ground",
     "level": 62,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1917,6 +1956,7 @@
         "rate": "1%"
       }
     ],
+    "code": "DreamDemon",
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1948,6 +1988,7 @@
     "mountSpeed": {
       "ground": "900 - 1200"
     },
+    "code": "FeatherOstrich",
     "level": 31,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1983,6 +2024,7 @@
         "rate": "100%"
       }
     ],
+    "code": "RaijinDaughter",
     "level": 30,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -2024,6 +2066,7 @@
         "rate": "100%"
       }
     ],
+    "code": "RaijinDaughter_Water",
     "level": 50,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -2052,6 +2095,7 @@
         "rate": "100%"
       }
     ],
+    "code": "YakushimaBoss001_Small",
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2083,6 +2127,7 @@
         "rate": "100%"
       }
     ],
+    "code": "NegativeKoala",
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -2116,6 +2161,7 @@
         "rate": "100%"
       }
     ],
+    "code": "DrillGame",
     "level": 33,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -2153,6 +2199,7 @@
     "mountSpeed": {
       "ground": "700 - 1030"
     },
+    "code": "FlowerDinosaur",
     "level": 25,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -2187,6 +2234,7 @@
         "rate": "100%"
       }
     ],
+    "code": "FlowerDinosaur_Electric",
     "level": 34,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -2228,6 +2276,7 @@
     "mountSpeed": {
       "ground": "800 - 1050"
     },
+    "code": "Garm",
     "level": 6,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -2260,6 +2309,7 @@
         "rate": "100%"
       }
     ],
+    "code": "SifuDog",
     "level": 53,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -2296,6 +2346,7 @@
         "rate": "100%"
       }
     ],
+    "code": "LazyCatfish",
     "level": 14,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -2337,6 +2388,7 @@
         "rate": "50%"
       }
     ],
+    "code": "LazyCatfish_Gold",
     "level": 25,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -2408,6 +2460,7 @@
     "mountSpeed": {
       "ground": "700 - 900"
     },
+    "code": "Deer",
     "level": 6,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -2476,6 +2529,7 @@
         "rate": "25%"
       }
     ],
+    "code": "Deer_Ground",
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -2513,6 +2567,7 @@
         "rate": "3%"
       }
     ],
+    "code": "QueenBee",
     "level": 34,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -2574,6 +2629,7 @@
     "mountSpeed": {
       "flying": "630 - 800"
     },
+    "code": "FairyDragon",
     "level": 20,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -2636,6 +2692,7 @@
     "mountSpeed": {
       "flying": "630 - 800"
     },
+    "code": "FairyDragon_Water",
     "level": 33,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -2664,6 +2721,7 @@
         "rate": "100%"
       }
     ],
+    "code": "YakushimaMonster002",
     "level": 42,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2692,6 +2750,7 @@
         "rate": "100%"
       }
     ],
+    "code": "YakushimaBoss001",
     "level": 1,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -2764,6 +2823,7 @@
     "mountSpeed": {
       "flying": "1000 - 1400"
     },
+    "code": "Horus",
     "level": 76,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -2836,6 +2896,7 @@
     "mountSpeed": {
       "flying": "1000 - 1400"
     },
+    "code": "Horus_Water",
     "level": 65,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -2869,6 +2930,7 @@
         "rate": "3%"
       }
     ],
+    "code": "CatVampire",
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -2935,6 +2997,7 @@
     "mountSpeed": {
       "ground": "750 - 1050"
     },
+    "code": "FengyunDeeper",
     "level": 45,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -3004,6 +3067,7 @@
         "rate": "25%"
       }
     ],
+    "code": "FengyunDeeper_Electric",
     "level": 57,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -3043,6 +3107,7 @@
         "rate": "100%"
       }
     ],
+    "code": "StuffedShark",
     "level": 1,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -3083,6 +3148,7 @@
         "rate": "100%"
       }
     ],
+    "code": "StuffedShark_Fire",
     "level": 1,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -3119,6 +3185,7 @@
         "rate": "100%"
       }
     ],
+    "code": "LavaGirl",
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -3156,6 +3223,7 @@
         "rate": "100%"
       }
     ],
+    "code": "FlowerRabbit",
     "level": 22,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -3190,6 +3258,7 @@
         "rate": "100%"
       }
     ],
+    "code": "IceFox",
     "level": 30,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -3223,6 +3292,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Kitsunebi",
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -3256,6 +3326,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Kitsunebi_Ice",
     "level": 30,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -3292,6 +3363,7 @@
     "mountSpeed": {
       "flying": "1200 - 1800"
     },
+    "code": "IceHorse",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -3328,6 +3400,7 @@
     "mountSpeed": {
       "flying": "1200 - 1800"
     },
+    "code": "IceHorse_Dark",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -3357,6 +3430,7 @@
         "rate": "100%"
       }
     ],
+    "code": "SnowPeafowl",
     "level": 39,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -3392,6 +3466,7 @@
         "rate": "100%"
       }
     ],
+    "code": "BluePlatypus",
     "level": 6,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -3433,6 +3508,7 @@
         "rate": "50%"
       }
     ],
+    "code": "BluePlatypus_Fire",
     "level": 32,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -3463,6 +3539,7 @@
         "rate": "100%"
       }
     ],
+    "code": "CuteMole",
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -3496,6 +3573,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Eagle",
     "level": 11,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -3530,6 +3608,7 @@
         "rate": "100%"
       }
     ],
+    "code": "GhostAnglerfish",
     "level": 30,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -3565,6 +3644,7 @@
         "rate": "50%"
       }
     ],
+    "code": "GhostAnglerfish_Fire",
     "level": 1,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -3596,6 +3676,7 @@
     "mountSpeed": {
       "ground": "840 - 1260"
     },
+    "code": "GoldenHorse",
     "level": 53,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -3631,6 +3712,7 @@
         "rate": "100%"
       }
     ],
+    "code": "OctopusGirl",
     "level": 10,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -3661,6 +3743,7 @@
         "rate": "100%"
       }
     ],
+    "code": "SharkKid",
     "level": 14,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -3691,6 +3774,7 @@
         "rate": "100%"
       }
     ],
+    "code": "SharkKid_Fire",
     "level": 32,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -3756,6 +3840,7 @@
         "rate": "25%"
       }
     ],
+    "code": "Gorilla",
     "level": 22,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -3821,6 +3906,7 @@
         "rate": "25%"
       }
     ],
+    "code": "Gorilla_Ground",
     "level": 35,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -3849,6 +3935,7 @@
         "rate": "100%"
       }
     ],
+    "code": "YakushimaMonster001",
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -3880,6 +3967,7 @@
     "mountSpeed": {
       "ground": "650 - 1000"
     },
+    "code": "NaughtyCat",
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -3951,6 +4039,7 @@
         "rate": "2%"
       }
     ],
+    "code": "ElecPanda",
     "level": 70,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -3984,6 +4073,7 @@
         "rate": "50%"
       }
     ],
+    "code": "PlantSlime",
     "level": 2,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4019,6 +4109,7 @@
         "rate": "100%"
       }
     ],
+    "code": "WindChimes",
     "level": 9,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4055,6 +4146,7 @@
         "rate": "100%"
       }
     ],
+    "code": "WindChimes_Ice",
     "level": 32,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -4094,6 +4186,7 @@
         "rate": "30%"
       }
     ],
+    "code": "LegendDeer",
     "level": 1,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -4160,6 +4253,7 @@
     "mountSpeed": {
       "flying": "700 - 1100"
     },
+    "code": "HadesBird",
     "level": 24,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -4227,6 +4321,7 @@
     "mountSpeed": {
       "flying": "700 - 1100"
     },
+    "code": "HadesBird_Electric",
     "level": 47,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -4262,6 +4357,7 @@
         "rate": "100%"
       }
     ],
+    "code": "LeafMomonga",
     "level": 1,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -4295,6 +4391,7 @@
         "rate": "1%"
       }
     ],
+    "code": "WizardOwl",
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4326,6 +4423,7 @@
         "rate": "100%"
       }
     ],
+    "code": "IceWitch",
     "level": 39,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -4354,6 +4452,7 @@
         "rate": "100%"
       }
     ],
+    "code": "YakushimaMonster003_Purple",
     "level": 42,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -4382,6 +4481,7 @@
         "rate": "100%"
       }
     ],
+    "code": "YakushimaMonster001_Pink",
     "level": 42,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -4418,6 +4518,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Baphomet",
     "level": 30,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -4453,6 +4554,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Baphomet_Dark",
     "level": 37,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -4488,6 +4590,7 @@
         "rate": "100%"
       }
     ],
+    "code": "JellyfishFairy",
     "level": 6,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -4524,6 +4627,7 @@
         "rate": "100%"
       }
     ],
+    "code": "JellyfishGhost",
     "level": 14,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -4570,6 +4674,7 @@
     "mountSpeed": {
       "flying": "1700 - 3300"
     },
+    "code": "JetDragon",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -4598,6 +4703,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Hedgehog",
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4626,6 +4732,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Hedgehog_Ice",
     "level": 10,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -4687,6 +4794,7 @@
     "mountSpeed": {
       "ground": "600 - 1000"
     },
+    "code": "Umihebi",
     "level": 80,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -4753,6 +4861,7 @@
     "mountSpeed": {
       "ground": "600 - 1000"
     },
+    "code": "Umihebi_Fire",
     "level": 66,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -4793,6 +4902,7 @@
         "rate": "1%"
       }
     ],
+    "code": "CatMage",
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -4834,6 +4944,7 @@
         "rate": "1%"
       }
     ],
+    "code": "CatMage_Fire",
     "level": 40,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -4868,6 +4979,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Kelpie",
     "level": 9,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4902,6 +5014,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Kelpie_Fire",
     "level": 20,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -4940,6 +5053,7 @@
         "rate": "50%"
       }
     ],
+    "code": "SmallArmadillo",
     "level": 40,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -4980,6 +5094,7 @@
         "rate": "100%"
       }
     ],
+    "code": "NegativeOctopus",
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -5015,6 +5130,7 @@
         "rate": "50%"
       }
     ],
+    "code": "NegativeOctopus_Neutral",
     "level": 24,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -5076,6 +5192,7 @@
     "mountSpeed": {
       "ground": "700 - 1040"
     },
+    "code": "KingAlpaca",
     "level": 80,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -5110,6 +5227,7 @@
         "rate": "100%"
       }
     ],
+    "code": "KingAlpaca_Ice",
     "level": 1,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -5146,6 +5264,7 @@
     "mountSpeed": {
       "ground": "700 - 1100"
     },
+    "code": "AmaterasuWolf",
     "level": 34,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -5184,6 +5303,7 @@
         "rate": "100%"
       }
     ],
+    "code": "AmaterasuWolf_Dark",
     "level": 61,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -5254,6 +5374,7 @@
         "rate": "100%"
       }
     ],
+    "code": "WingGolem",
     "level": 55,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -5289,6 +5410,7 @@
         "rate": "100%"
       }
     ],
+    "code": "SheepBall",
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -5329,6 +5451,7 @@
         "rate": "50%"
       }
     ],
+    "code": "LizardMan",
     "level": 21,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -5370,6 +5493,7 @@
         "rate": "50%"
       }
     ],
+    "code": "LizardMan_Fire",
     "level": 28,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -5407,6 +5531,7 @@
         "rate": "20%"
       }
     ],
+    "code": "Carbunclo",
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -5435,6 +5560,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Werewolf",
     "level": 14,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -5464,6 +5590,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Werewolf_Ice",
     "level": 40,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -5515,6 +5642,7 @@
         "rate": "1%"
       }
     ],
+    "code": "PinkLizard",
     "level": 30,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -5551,6 +5679,7 @@
         "rate": "60%"
       }
     ],
+    "code": "LeafPrincess",
     "level": 40,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -5581,6 +5710,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Mutant",
     "level": 25,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -5662,6 +5792,7 @@
         "rate": "100%"
       }
     ],
+    "code": "LilyQueen",
     "level": 75,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -5742,6 +5873,7 @@
         "rate": "100%"
       }
     ],
+    "code": "LilyQueen_Dark",
     "level": 75,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -5815,6 +5947,7 @@
     "mountSpeed": {
       "ground": "600 - 1030"
     },
+    "code": "GrassMammoth",
     "level": 26,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -5885,6 +6018,7 @@
         "rate": "25%"
       }
     ],
+    "code": "GrassMammoth_Ice",
     "level": 36,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -5927,6 +6061,7 @@
     "mountSpeed": {
       "ground": "700 - 1100"
     },
+    "code": "GhostBeast",
     "level": 38,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -5961,6 +6096,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Bastet",
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -5995,6 +6131,7 @@
         "rate": "1%"
       }
     ],
+    "code": "Bastet_Ice",
     "level": 30,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -6031,6 +6168,7 @@
     "mountSpeed": {
       "ground": "500 - 900"
     },
+    "code": "Alpaca",
     "level": 5,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -6065,6 +6203,7 @@
         "rate": "100%"
       }
     ],
+    "code": "DarkScorpion",
     "level": 31,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -6099,6 +6238,7 @@
         "rate": "100%"
       }
     ],
+    "code": "DarkScorpion_Ground",
     "level": 48,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -6138,6 +6278,7 @@
         "rate": "20%"
       }
     ],
+    "code": "MimicDog",
     "level": 5,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -6209,6 +6350,7 @@
         "rate": "25%"
       }
     ],
+    "code": "GrassPanda",
     "level": 32,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -6285,6 +6427,7 @@
         "rate": "2%"
       }
     ],
+    "code": "GrassPanda_Electric",
     "level": 35,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -6318,6 +6461,7 @@
         "rate": "100%"
       }
     ],
+    "code": "CowPal",
     "level": 9,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -6358,6 +6502,7 @@
         "rate": "100%"
       }
     ],
+    "code": "IceCrocodile",
     "level": 10,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -6400,6 +6545,7 @@
     "mountSpeed": {
       "ground": "1300 - 1900"
     },
+    "code": "BlackCentaur",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -6443,6 +6589,7 @@
         "rate": "1%"
       }
     ],
+    "code": "PoseidonOrca",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -6472,6 +6619,7 @@
         "rate": "100%"
       }
     ],
+    "code": "GhostRabbit",
     "level": 50,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -6503,6 +6651,7 @@
     "mountSpeed": {
       "flying": "600 - 750"
     },
+    "code": "HawkBird",
     "level": 12,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -6536,6 +6685,7 @@
         "rate": "40%"
       }
     ],
+    "code": "NightFox",
     "level": 4,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -6567,6 +6717,7 @@
         "rate": "100%"
       }
     ],
+    "code": "BadCatgirl",
     "level": 50,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -6595,6 +6746,7 @@
         "rate": "100%"
       }
     ],
+    "code": "MysteryMask",
     "level": 50,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -6665,6 +6817,7 @@
         "rate": "100%"
       }
     ],
+    "code": "ThunderDragonMan",
     "level": 74,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -6707,6 +6860,7 @@
     "mountSpeed": {
       "ground": "800 - 1800"
     },
+    "code": "SaintCentaur",
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -6747,6 +6901,7 @@
         "rate": "100%"
       }
     ],
+    "code": "TropicalOstrich",
     "level": 32,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -6783,6 +6938,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Penguin",
     "level": 2,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -6819,6 +6975,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Penguin_Electric",
     "level": 1,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -6856,6 +7013,7 @@
         "rate": "50%"
       }
     ],
+    "code": "CaptainPenguin",
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -6893,6 +7051,7 @@
         "rate": "50%"
       }
     ],
+    "code": "CaptainPenguin_Black",
     "level": 1,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -6930,6 +7089,7 @@
         "rate": "100%"
       }
     ],
+    "code": "FlowerDoll",
     "level": 28,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -6959,6 +7119,7 @@
         "rate": "100%"
       }
     ],
+    "code": "IceSeal",
     "level": 33,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -6989,6 +7150,7 @@
         "rate": "100%"
       }
     ],
+    "code": "ScorpionMan",
     "level": 48,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -7031,6 +7193,7 @@
         "rate": "50%"
       }
     ],
+    "code": "BlueberryFairy",
     "level": 50,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -7059,6 +7222,7 @@
         "rate": "100%"
       }
     ],
+    "code": "YakushimaMonster001_Purple",
     "level": 36,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -7126,6 +7290,7 @@
     "mountSpeed": {
       "ground": "850 - 1300"
     },
+    "code": "FireKirin",
     "level": 30,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -7190,6 +7355,7 @@
         "rate": "25%"
       }
     ],
+    "code": "FireKirin_Dark",
     "level": 32,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -7254,6 +7420,7 @@
     "mountSpeed": {
       "flying": "800 - 950"
     },
+    "code": "SkyDragon",
     "level": 40,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -7329,6 +7496,7 @@
     "mountSpeed": {
       "flying": "800 - 950"
     },
+    "code": "SkyDragon_Grass",
     "level": 45,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -7391,6 +7559,7 @@
     "mountSpeed": {
       "flying": "800 - 1300"
     },
+    "code": "RedArmorBird",
     "level": 32,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -7419,6 +7588,7 @@
         "rate": "100%"
       }
     ],
+    "code": "YakushimaMonster001_Rainbow",
     "level": 42,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -7450,6 +7620,7 @@
     "mountSpeed": {
       "ground": "700 - 1150"
     },
+    "code": "ThunderDog",
     "level": 31,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -7478,6 +7649,7 @@
         "rate": "100%"
       }
     ],
+    "code": "YakushimaMonster001_Red",
     "level": 36,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -7555,6 +7727,7 @@
     "mountSpeed": {
       "ground": "700 - 1070"
     },
+    "code": "IceDeer",
     "level": 32,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -7619,6 +7792,7 @@
         "rate": "25%"
       }
     ],
+    "code": "LazyDragon",
     "level": 30,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -7688,6 +7862,7 @@
         "rate": "25%"
       }
     ],
+    "code": "LazyDragon_Electric",
     "level": 48,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -7720,6 +7895,7 @@
     "mountSpeed": {
       "ground": "550 - 1000"
     },
+    "code": "VolcanicMonster",
     "level": 42,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -7749,6 +7925,7 @@
         "rate": "100%"
       }
     ],
+    "code": "VolcanicMonster_Ice",
     "level": 42,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -7794,6 +7971,7 @@
         "rate": "100%"
       }
     ],
+    "code": "PinkRabbit",
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -7840,6 +8018,7 @@
         "rate": "100%"
       }
     ],
+    "code": "PinkRabbit_Grass",
     "level": 18,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -7878,6 +8057,7 @@
         "rate": "100%"
       }
     ],
+    "code": "RobinHood",
     "level": 22,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -7915,6 +8095,7 @@
         "rate": "100%"
       }
     ],
+    "code": "RobinHood_Ground",
     "level": 32,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -7949,6 +8130,7 @@
         "rate": "100%"
       }
     ],
+    "code": "FlameBambi",
     "level": 4,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -7990,6 +8172,7 @@
     "mountSpeed": {
       "ground": "500 - 800"
     },
+    "code": "Boar",
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -8068,6 +8251,7 @@
     "mountSpeed": {
       "flying": "1000 - 1600"
     },
+    "code": "MoonQueen",
     "level": 76,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -8144,6 +8328,7 @@
     "mountSpeed": {
       "flying": "850 - 1200"
     },
+    "code": "BlackGriffon",
     "level": 50,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -8219,6 +8404,7 @@
     "mountSpeed": {
       "ground": "740 - 1050"
     },
+    "code": "MushroomDragon",
     "level": 39,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -8258,6 +8444,7 @@
     "mountSpeed": {
       "ground": "740 - 1050"
     },
+    "code": "MushroomDragon_Dark",
     "level": 39,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -8293,6 +8480,7 @@
         "rate": "100%"
       }
     ],
+    "code": "WhiteMoth",
     "level": 36,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -8354,6 +8542,7 @@
     "mountSpeed": {
       "ground": "700 - 1050"
     },
+    "code": "WhiteShieldDragon",
     "level": 80,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -8382,6 +8571,7 @@
         "rate": "100%"
       }
     ],
+    "code": "BlackPuppy",
     "level": 50,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -8424,6 +8614,7 @@
         "rate": "50%"
       }
     ],
+    "code": "CandleGhost",
     "level": 45,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -8455,6 +8646,7 @@
         "rate": "100%"
       }
     ],
+    "code": "ElecCat",
     "level": 10,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -8516,6 +8708,7 @@
         "rate": "25%"
       }
     ],
+    "code": "GrimGirl",
     "level": 52,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -8582,6 +8775,7 @@
     "mountSpeed": {
       "ground": "900 - 1250"
     },
+    "code": "NightBlueHorse",
     "level": 42,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -8614,6 +8808,7 @@
     "mountSpeed": {
       "ground": "500 - 800"
     },
+    "code": "Serpent",
     "level": 12,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -8647,6 +8842,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Serpent_Ground",
     "level": 31,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -8708,6 +8904,7 @@
     "mountSpeed": {
       "flying": "850 - 1100"
     },
+    "code": "Suzaku",
     "level": 40,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -8769,6 +8966,7 @@
     "mountSpeed": {
       "flying": "850 - 1100"
     },
+    "code": "Suzaku_Water",
     "level": 68,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -8803,6 +9001,7 @@
         "rate": "50%"
       }
     ],
+    "code": "MopBaby",
     "level": 7,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -8835,6 +9034,7 @@
     "mountSpeed": {
       "ground": "650 - 1020"
     },
+    "code": "MopKing",
     "level": 25,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -8867,6 +9067,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Monkey",
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -8903,6 +9104,7 @@
         "rate": "100%"
       }
     ],
+    "code": "PurpleSpider",
     "level": 20,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -8931,6 +9133,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Ganesha",
     "level": 2,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -8964,6 +9167,7 @@
         "rate": "50%"
       }
     ],
+    "code": "ColorfulBird",
     "level": 14,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -8999,6 +9203,7 @@
         "rate": "1%"
       }
     ],
+    "code": "CatBat",
     "level": 12,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -9034,6 +9239,7 @@
         "rate": "100%"
       }
     ],
+    "code": "TentacleTurtle",
     "level": 5,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -9069,6 +9275,7 @@
         "rate": "100%"
       }
     ],
+    "code": "TentacleTurtle_Ground",
     "level": 40,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -9141,6 +9348,7 @@
     "mountSpeed": {
       "ground": "720 - 1100"
     },
+    "code": "Kirin",
     "level": 14,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -9184,6 +9392,7 @@
         "rate": "50%"
       }
     ],
+    "code": "VioletFairy",
     "level": 20,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -9226,6 +9435,7 @@
     "mountSpeed": {
       "flying": "700 - 850"
     },
+    "code": "BirdDragon",
     "level": 20,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -9268,6 +9478,7 @@
     "mountSpeed": {
       "flying": "700 - 850"
     },
+    "code": "BirdDragon_Ice",
     "level": 23,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -9305,6 +9516,7 @@
         "rate": "100%"
       }
     ],
+    "code": "GrassRabbitMan",
     "level": 52,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -9339,6 +9551,7 @@
         "rate": "100%"
       }
     ],
+    "code": "CuteFox",
     "level": 1,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -9400,6 +9613,7 @@
         "rate": "25%"
       }
     ],
+    "code": "HerculesBeetle",
     "level": 34,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -9430,6 +9644,7 @@
         "rate": "100%"
       }
     ],
+    "code": "HerculesBeetle_Ground",
     "level": 53,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -9504,6 +9719,7 @@
         "rate": "25%"
       }
     ],
+    "code": "IceNarwhal",
     "level": 42,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -9588,6 +9804,7 @@
         "rate": "100%"
       }
     ],
+    "code": "IceNarwhal_Fire",
     "level": 71,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -9623,6 +9840,7 @@
         "rate": "1%"
       }
     ],
+    "code": "FoxMage",
     "level": 23,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -9658,6 +9876,7 @@
         "rate": "1%"
       }
     ],
+    "code": "FoxMage_Dark",
     "level": 46,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -9691,6 +9910,7 @@
         "rate": "100%"
       }
     ],
+    "code": "SweetsSheep",
     "level": 9,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -9760,6 +9980,7 @@
     "mountSpeed": {
       "ground": "600 - 1050"
     },
+    "code": "Yeti",
     "level": 45,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -9831,6 +10052,7 @@
         "rate": "25%"
       }
     ],
+    "code": "Yeti_Grass",
     "level": 53,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -9867,6 +10089,7 @@
     "mountSpeed": {
       "ground": "790 - 1200"
     },
+    "code": "WhiteAlienDragon",
     "level": 1,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -9898,6 +10121,7 @@
     "mountSpeed": {
       "flying": "550 - 660"
     },
+    "code": "DarkMechaDragon",
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -9927,6 +10151,7 @@
         "rate": "100%"
       }
     ],
+    "code": "DarkAlien",
     "level": 1,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -9958,6 +10183,7 @@
     "mountSpeed": {
       "ground": "750 - 1080"
     },
+    "code": "GuardianDog",
     "level": 40,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -10047,6 +10273,7 @@
     "mountSpeed": {
       "ground": "850 - 1100"
     },
+    "code": "DomeArmorDragon",
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -10077,6 +10304,7 @@
         "rate": "100%"
       }
     ],
+    "code": "ClioneTwins",
     "level": 9,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -10108,6 +10336,7 @@
         "rate": "100%"
       }
     ],
+    "code": "WorldTreeDragon",
     "level": 1,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -10148,6 +10377,7 @@
         "rate": "100%"
       }
     ],
+    "code": "OniGhostGirl",
     "level": 65,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -10216,6 +10446,7 @@
     "mountSpeed": {
       "flying": "750 - 1200"
     },
+    "code": "ThunderBird_Ice",
     "level": 75,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -10253,6 +10484,7 @@
     "mountSpeed": {
       "ground": "600 - 810"
     },
+    "code": "SumoDog",
     "level": 53,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -10324,6 +10556,7 @@
         "rate": "2%"
       }
     ],
+    "code": "VenusFlytrap",
     "level": 45,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -10401,6 +10634,7 @@
     "mountSpeed": {
       "ground": "800 - 1200"
     },
+    "code": "WhiteDeer_Dark",
     "level": 1,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -10430,6 +10664,7 @@
         "rate": "100%"
       }
     ],
+    "code": "CloverFairy",
     "level": 3,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -10507,6 +10742,7 @@
         "rate": "2%"
       }
     ],
+    "code": "FlowerPrince",
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -10582,6 +10818,7 @@
     "mountSpeed": {
       "ground": "600 - 800"
     },
+    "code": "GrassGolem",
     "level": 46,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -10657,6 +10894,7 @@
     "mountSpeed": {
       "ground": "600 - 800"
     },
+    "code": "GrassGolem_Dark",
     "level": 75,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -10728,6 +10966,7 @@
         "rate": "2%"
       }
     ],
+    "code": "ClownRabbit",
     "level": 55,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -10761,6 +11000,7 @@
     "mountSpeed": {
       "flying": "700 - 1000"
     },
+    "code": "ThunderFluffyBird",
     "level": 63,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -10827,6 +11067,7 @@
     "mountSpeed": {
       "flying": "1400 - 2750"
     },
+    "code": "GhostDragon",
     "level": 65,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -10904,6 +11145,7 @@
     "mountSpeed": {
       "flying": "1400 - 2750"
     },
+    "code": "GhostDragon_Fire",
     "level": 75,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -10976,6 +11218,7 @@
         "rate": "2%"
       }
     ],
+    "code": "GrassMinotaur",
     "level": 24,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -11052,6 +11295,7 @@
         "rate": "2%"
       }
     ],
+    "code": "GrassMinotaur_Ice",
     "level": 75,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -11122,6 +11366,7 @@
         "rate": "2%"
       }
     ],
+    "code": "FoxExorcist",
     "level": 75,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -11157,6 +11402,7 @@
         "rate": "100%"
       }
     ],
+    "code": "MummyPal",
     "level": 39,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -11192,6 +11438,7 @@
         "rate": "100%"
       }
     ],
+    "code": "OctopusGirl_Neutral",
     "level": 65,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -11226,6 +11473,7 @@
         "rate": "100%"
       }
     ],
+    "code": "HoodGhost",
     "level": 65,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -11296,6 +11544,7 @@
         "rate": "2%"
       }
     ],
+    "code": "WingGolem_Fire",
     "level": 65,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -11327,6 +11576,7 @@
         "rate": "100%"
       }
     ],
+    "code": "BrownRabbit",
     "level": 63,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -11356,6 +11606,7 @@
         "rate": "100%"
       }
     ],
+    "code": "SleeveRabbit",
     "level": 65,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -11387,6 +11638,7 @@
         "rate": "100%"
       }
     ],
+    "code": "PandaGirl",
     "level": 28,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -11462,6 +11714,7 @@
         "rate": "2%"
       }
     ],
+    "code": "LanternButler",
     "level": 75,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -11533,6 +11786,7 @@
         "rate": "2%"
       }
     ],
+    "code": "DarkFlameFox",
     "level": 35,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -11600,6 +11854,7 @@
     "mountSpeed": {
       "ground": "650 - 850"
     },
+    "code": "VolcanoDragon",
     "level": 32,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -11637,6 +11892,7 @@
     "mountSpeed": {
       "ground": "650 - 850"
     },
+    "code": "VolcanoDragon_Ice",
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -11666,6 +11922,7 @@
         "rate": "100%"
       }
     ],
+    "code": "FluffyBird",
     "level": 15,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -11737,6 +11994,7 @@
         "rate": "2%"
       }
     ],
+    "code": "MushroomLady",
     "level": 75,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -11767,6 +12025,7 @@
         "rate": "100%"
       }
     ],
+    "code": "CactusDoll",
     "level": 31,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -11802,6 +12061,7 @@
         "rate": "100%"
       }
     ],
+    "code": "CactusDoll_Dark",
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -11867,6 +12127,7 @@
         "rate": "2%"
       }
     ],
+    "code": "GhostRabbit_Grass",
     "level": 50,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -11934,6 +12195,7 @@
     "mountSpeed": {
       "ground": "700 - 1500"
     },
+    "code": "LotusDragon",
     "level": 80,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -11968,6 +12230,7 @@
     "mountSpeed": {
       "flying": "3000 - 3000"
     },
+    "code": "KingWhale",
     "level": 1,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -12035,6 +12298,7 @@
         "rate": "2%"
       }
     ],
+    "code": "FlowerDoll_Fire",
     "level": 71,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -12073,6 +12337,7 @@
         "rate": "100%"
       }
     ],
+    "code": "RockBeast",
     "level": 42,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -12147,6 +12412,7 @@
         "rate": "2%"
       }
     ],
+    "code": "RockBeast_Ice",
     "level": 68,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -12219,6 +12485,7 @@
     "mountSpeed": {
       "ground": "250 - 375"
     },
+    "code": "IceSeal_Ground",
     "level": 55,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -12250,6 +12517,7 @@
         "rate": "100%"
       }
     ],
+    "code": "ScorpionMan_Electric",
     "level": 65,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -12279,6 +12547,7 @@
         "rate": "100%"
       }
     ],
+    "code": "ElecPomeranian",
     "level": 18,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -12309,6 +12578,7 @@
         "rate": "100%"
       }
     ],
+    "code": "SamuraiDog",
     "level": 2,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -12375,6 +12645,7 @@
     "mountSpeed": {
       "ground": "700 - 1150"
     },
+    "code": "ThunderDog_Ice",
     "level": 35,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -12446,6 +12717,7 @@
         "rate": "2%"
       }
     ],
+    "code": "KabukiMan",
     "level": 80,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -12518,6 +12790,7 @@
     "mountSpeed": {
       "flying": "950 - 1350"
     },
+    "code": "ThiefBird",
     "level": 74,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -12583,6 +12856,7 @@
         "rate": "25%"
       }
     ],
+    "code": "Sekhmet",
     "level": 37,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -12660,6 +12934,7 @@
     "mountSpeed": {
       "flying": "1400 - 2800"
     },
+    "code": "BlueSkyDragon",
     "level": 76,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -12729,6 +13004,7 @@
         "rate": "2%"
       }
     ],
+    "code": "WhiteMoth_Neutral",
     "level": 75,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -12801,6 +13077,7 @@
         "rate": "2%"
       }
     ],
+    "code": "Mothman",
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -12836,6 +13113,7 @@
         "rate": "100%"
       }
     ],
+    "code": "SwordCutlassfish",
     "level": 30,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -12907,6 +13185,7 @@
         "rate": "2%"
       }
     ],
+    "code": "SwordCutlassfish_Fire",
     "level": 40,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -12940,6 +13219,7 @@
         "rate": "100%"
       }
     ],
+    "code": "ElecLizard",
     "level": 65,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -13009,6 +13289,7 @@
         "rate": "2%"
       }
     ],
+    "code": "BlackPuppy_Ice",
     "level": 62,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -13042,6 +13323,7 @@
         "rate": "100%"
       }
     ],
+    "code": "ElecSnail",
     "level": 63,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -13110,6 +13392,7 @@
         "rate": "2%"
       }
     ],
+    "code": "ElecSnail_Ground",
     "level": 74,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -13181,6 +13464,7 @@
         "rate": "2%"
       }
     ],
+    "code": "SmallYeti",
     "level": 32,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -13251,6 +13535,7 @@
         "rate": "2%"
       }
     ],
+    "code": "MonochromeQueen",
     "level": 76,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -13287,6 +13572,7 @@
     "mountSpeed": {
       "ground": "500 - 900"
     },
+    "code": "KingSunfish",
     "level": 66,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -13359,6 +13645,7 @@
     "mountSpeed": {
       "ground": "500 - 900"
     },
+    "code": "KingSunfish_Thunder",
     "level": 76,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -13388,6 +13675,7 @@
         "rate": "100%"
       }
     ],
+    "code": "DandelionGirl",
     "level": 63,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -13459,6 +13747,7 @@
     "mountSpeed": {
       "ground": "900 - 1250"
     },
+    "code": "NightBlueHorse_Neutral",
     "level": 74,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -13495,6 +13784,7 @@
         "rate": "100%"
       }
     ],
+    "code": "Monkey_Fire",
     "level": 10,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -13561,6 +13851,7 @@
     "mountSpeed": {
       "ground": "360 - 540"
     },
+    "code": "CubeTurtle",
     "level": 48,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -13632,6 +13923,7 @@
     "mountSpeed": {
       "ground": "360 - 540"
     },
+    "code": "CubeTurtle_Neutral",
     "level": 76,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -13666,6 +13958,7 @@
         "rate": "100%"
       }
     ],
+    "code": "RedFlowerBird",
     "level": 63,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -13743,6 +14036,7 @@
     "mountSpeed": {
       "ground": "720 - 1100"
     },
+    "code": "Kirin_Ice",
     "level": 75,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -13771,6 +14065,7 @@
         "rate": "100%"
       }
     ],
+    "code": "LongCat",
     "level": 63,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -13842,6 +14137,7 @@
         "rate": "2%"
       }
     ],
+    "code": "SnakeGirl",
     "level": 75,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -13913,6 +14209,7 @@
         "rate": "2%"
       }
     ],
+    "code": "GhostBlackCat",
     "level": 11,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -13983,6 +14280,7 @@
         "rate": "2%"
       }
     ],
+    "code": "MoonChild",
     "level": 76,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -14016,6 +14314,7 @@
         "rate": "100%"
       }
     ],
+    "code": "SweetsSheep_Ground",
     "level": 55,
     "rarity": 4,
     "rarityCategory": "Common",
