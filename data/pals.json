@@ -1,6 +1,97 @@
 [
   {
     "id": 1,
+    "name": "Aegidron",
+    "work": {
+      "mining": 8
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "A",
+      "workers": "A",
+      "combat": "A",
+      "flyingMount": null,
+      "groundMount": "A"
+    },
+    "slug": "aegidron",
+    "drops": [
+      {
+        "item": "Cœur brûlant",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal ultime",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat draco",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "850 - 1100"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Amione",
+    "work": {
+      "transporting": 1,
+      "watering": 1,
+      "handiwork": 2
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "D",
+      "workers": "C",
+      "combat": "D",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "amione",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "2 - 2",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 3,
     "name": "Anubis",
     "work": {
       "transporting": 4,
@@ -70,7 +161,7 @@
     "zukan": 100
   },
   {
-    "id": 2,
+    "id": 4,
     "name": "Arsox",
     "work": {
       "kindling": 3,
@@ -107,7 +198,7 @@
     "zukan": 42
   },
   {
-    "id": 3,
+    "id": 5,
     "name": "Astegon",
     "work": {
       "handiwork": 3,
@@ -174,7 +265,33 @@
     "zukan": 98
   },
   {
-    "id": 4,
+    "id": 6,
+    "name": "Astralym",
+    "work": {},
+    "nightWorker": false,
+    "tiers": {
+      "overall": "S",
+      "workers": null,
+      "combat": "S",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "astralym",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Huile de Pal de qualité",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 7,
     "name": "Azurmane",
     "work": {
       "electricity": 5
@@ -235,7 +352,7 @@
     "zukan": 136
   },
   {
-    "id": 5,
+    "id": 8,
     "name": "Azurobe",
     "work": {
       "watering": 4
@@ -301,7 +418,7 @@
     "zukan": 82
   },
   {
-    "id": 6,
+    "id": 9,
     "name": "Azurobe Cryst",
     "work": {
       "cooling": 4
@@ -369,7 +486,42 @@
     "zukan": 82
   },
   {
-    "id": 7,
+    "id": 10,
+    "name": "Bakemi",
+    "work": {
+      "transporting": 2,
+      "medicine": 4,
+      "handiwork": 3
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "B",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "bakemi",
+    "drops": [
+      {
+        "item": "Tissu",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Corne",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal mineur",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 11,
     "name": "Bastigor",
     "work": {
       "mining": 5,
@@ -442,7 +594,7 @@
     "zukan": 137
   },
   {
-    "id": 8,
+    "id": 12,
     "name": "Beakon",
     "work": {
       "electricity": 4,
@@ -505,7 +657,70 @@
     "zukan": 73
   },
   {
-    "id": 9,
+    "id": 13,
+    "name": "Beakon Cryst",
+    "work": {
+      "gathering": 2,
+      "transporting": 5,
+      "cooling": 5
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "A",
+      "workers": "A",
+      "combat": "B",
+      "flyingMount": "C",
+      "groundMount": null
+    },
+    "slug": "beakon-cryst",
+    "drops": [
+      {
+        "item": "Organe de glace",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat aqua",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
+    "mountSpeed": {
+      "flying": "750 - 1200"
+    }
+  },
+  {
+    "id": 14,
     "name": "Beegarde",
     "work": {
       "farming": 3,
@@ -539,7 +754,7 @@
     "zukan": 50
   },
   {
-    "id": 10,
+    "id": 15,
     "name": "Bellanoir",
     "work": {
       "transporting": 4,
@@ -569,7 +784,7 @@
     "zukan": 112
   },
   {
-    "id": 11,
+    "id": 16,
     "name": "Bellanoir Libero",
     "work": {
       "transporting": 4,
@@ -604,7 +819,7 @@
     "zukan": 112
   },
   {
-    "id": 12,
+    "id": 17,
     "name": "Blazamut",
     "work": {
       "kindling": 6,
@@ -671,7 +886,7 @@
     "zukan": 96
   },
   {
-    "id": 13,
+    "id": 18,
     "name": "Blazamut Ryu",
     "work": {
       "kindling": 6,
@@ -735,7 +950,7 @@
     "zukan": 96
   },
   {
-    "id": 14,
+    "id": 19,
     "name": "Blazehowl",
     "work": {
       "kindling": 5,
@@ -797,7 +1012,7 @@
     "zukan": 84
   },
   {
-    "id": 15,
+    "id": 20,
     "name": "Blazehowl Noct",
     "work": {
       "kindling": 5,
@@ -856,7 +1071,7 @@
     "zukan": 84
   },
   {
-    "id": 16,
+    "id": 21,
     "name": "Blue Slime",
     "work": {
       "transporting": 1
@@ -884,7 +1099,7 @@
     "zukan": -1
   },
   {
-    "id": 17,
+    "id": 22,
     "name": "Braloha",
     "work": {
       "gathering": 5,
@@ -959,7 +1174,7 @@
     "zukan": 145
   },
   {
-    "id": 18,
+    "id": 23,
     "name": "Bristla",
     "work": {
       "gathering": 2,
@@ -996,7 +1211,7 @@
     "zukan": 30
   },
   {
-    "id": 19,
+    "id": 24,
     "name": "Broncherry",
     "work": {
       "planting": 5
@@ -1062,7 +1277,7 @@
     "zukan": 86
   },
   {
-    "id": 20,
+    "id": 25,
     "name": "Broncherry Aqua",
     "work": {
       "watering": 5
@@ -1125,7 +1340,39 @@
     "zukan": 86
   },
   {
-    "id": 21,
+    "id": 26,
+    "name": "Bulldosu",
+    "work": {
+      "transporting": 3,
+      "mining": 4
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "B",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": "C"
+    },
+    "slug": "bulldosu",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Fibre",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "600 - 810"
+    }
+  },
+  {
+    "id": 27,
     "name": "Bushi",
     "work": {
       "kindling": 2,
@@ -1162,7 +1409,7 @@
     "zukan": 72
   },
   {
-    "id": 22,
+    "id": 28,
     "name": "Bushi Noct",
     "work": {
       "kindling": 2,
@@ -1204,7 +1451,7 @@
     "zukan": 72
   },
   {
-    "id": 23,
+    "id": 29,
     "name": "Caprity",
     "work": {
       "farming": 1,
@@ -1243,7 +1490,7 @@
     "zukan": 35
   },
   {
-    "id": 24,
+    "id": 30,
     "name": "Caprity Noct",
     "work": {
       "farming": 1,
@@ -1287,7 +1534,73 @@
     "zukan": 35
   },
   {
-    "id": 25,
+    "id": 31,
+    "name": "Carnibora",
+    "work": {
+      "gathering": 4,
+      "transporting": 2,
+      "planting": 6,
+      "handiwork": 4
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "A",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "carnibora",
+    "drops": [
+      {
+        "item": "Glande à venin",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Fibre",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat herba",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 32,
     "name": "Cattiva",
     "work": {
       "gathering": 1,
@@ -1318,7 +1631,7 @@
     "zukan": 2
   },
   {
-    "id": 26,
+    "id": 33,
     "name": "Cave Bat",
     "work": {
       "gathering": 1
@@ -1346,7 +1659,7 @@
     "zukan": -1
   },
   {
-    "id": 27,
+    "id": 34,
     "name": "Cawgnito",
     "work": {
       "farming": 1,
@@ -1385,7 +1698,7 @@
     "zukan": 44
   },
   {
-    "id": 28,
+    "id": 35,
     "name": "Celaray",
     "work": {
       "transporting": 1,
@@ -1414,7 +1727,7 @@
     "zukan": 25
   },
   {
-    "id": 29,
+    "id": 36,
     "name": "Celaray Lux",
     "work": {
       "electricity": 2,
@@ -1444,7 +1757,7 @@
     "zukan": 25
   },
   {
-    "id": 30,
+    "id": 37,
     "name": "Celesdir",
     "work": {
       "gathering": 4,
@@ -1516,7 +1829,79 @@
     "zukan": 132
   },
   {
-    "id": 31,
+    "id": 38,
+    "name": "Celesdir Noct",
+    "work": {
+      "gathering": 4,
+      "lumbering": 8
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "A",
+      "workers": "S",
+      "combat": "A",
+      "flyingMount": null,
+      "groundMount": "B"
+    },
+    "slug": "celesdir-noct",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Corne",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Fragment obscur",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat tenebra",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "800 - 1200"
+    }
+  },
+  {
+    "id": 39,
     "name": "Chikipi",
     "work": {
       "farming": 1,
@@ -1550,7 +1935,7 @@
     "zukan": 3
   },
   {
-    "id": 32,
+    "id": 40,
     "name": "Chillet",
     "work": {
       "gathering": 1,
@@ -1617,7 +2002,7 @@
     "zukan": 55
   },
   {
-    "id": 33,
+    "id": 41,
     "name": "Chillet Ignis",
     "work": {
       "kindling": 4,
@@ -1681,7 +2066,7 @@
     "zukan": 55
   },
   {
-    "id": 34,
+    "id": 42,
     "name": "Cinnamoth",
     "work": {
       "gathering": 2,
@@ -1721,7 +2106,31 @@
     "zukan": 41
   },
   {
-    "id": 35,
+    "id": 43,
+    "name": "Clovee",
+    "work": {
+      "gathering": 1,
+      "planting": 1
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "D",
+      "workers": "D",
+      "combat": "D",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "clovee",
+    "drops": [
+      {
+        "item": "Graines de baies",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 44,
     "name": "Cremis",
     "work": {
       "farming": 2,
@@ -1750,7 +2159,7 @@
     "zukan": 18
   },
   {
-    "id": 36,
+    "id": 45,
     "name": "Croajiro",
     "work": {
       "gathering": 1,
@@ -1786,7 +2195,7 @@
     "zukan": 114
   },
   {
-    "id": 37,
+    "id": 46,
     "name": "Croajiro Noct",
     "work": {
       "gathering": 1,
@@ -1827,7 +2236,7 @@
     "zukan": 114
   },
   {
-    "id": 38,
+    "id": 47,
     "name": "Cryolinx",
     "work": {
       "transporting": 4,
@@ -1858,7 +2267,7 @@
     "zukan": 83
   },
   {
-    "id": 39,
+    "id": 48,
     "name": "Cryolinx Terra",
     "work": {
       "transporting": 4,
@@ -1889,7 +2298,7 @@
     "zukan": 83
   },
   {
-    "id": 40,
+    "id": 49,
     "name": "Daedream",
     "work": {
       "gathering": 1,
@@ -1924,7 +2333,79 @@
     "zukan": 19
   },
   {
-    "id": 41,
+    "id": 50,
+    "name": "Dandilord",
+    "work": {
+      "gathering": 5,
+      "transporting": 3,
+      "planting": 8,
+      "medicine": 6,
+      "handiwork": 6
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "S",
+      "workers": "S",
+      "combat": "S",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "dandilord",
+    "drops": [
+      {
+        "item": "Âme de Pal ultime",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Noyau d&#39;une civilisation antique",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Glande à venin",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat herba",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 51,
     "name": "Dazemu",
     "work": {
       "gathering": 2
@@ -1955,7 +2436,7 @@
     "zukan": 123
   },
   {
-    "id": 42,
+    "id": 52,
     "name": "Dazzi",
     "work": {
       "electricity": 3,
@@ -1990,7 +2471,7 @@
     "zukan": 62
   },
   {
-    "id": 43,
+    "id": 53,
     "name": "Dazzi Noct",
     "work": {
       "electricity": 1,
@@ -2031,7 +2512,7 @@
     "zukan": 62
   },
   {
-    "id": 44,
+    "id": 54,
     "name": "Demon Eye",
     "work": {
       "transporting": 1
@@ -2059,7 +2540,7 @@
     "zukan": -1
   },
   {
-    "id": 45,
+    "id": 55,
     "name": "Depresso",
     "work": {
       "farming": 1,
@@ -2090,7 +2571,7 @@
     "zukan": 17
   },
   {
-    "id": 46,
+    "id": 56,
     "name": "Digtoise",
     "work": {
       "mining": 4
@@ -2123,7 +2604,7 @@
     "zukan": 67
   },
   {
-    "id": 47,
+    "id": 57,
     "name": "Dinossom",
     "work": {
       "planting": 3,
@@ -2160,7 +2641,7 @@
     "zukan": 64
   },
   {
-    "id": 48,
+    "id": 58,
     "name": "Dinossom Lux",
     "work": {
       "electricity": 3,
@@ -2194,7 +2675,7 @@
     "zukan": 64
   },
   {
-    "id": 49,
+    "id": 59,
     "name": "Direhowl",
     "work": {
       "gathering": 1
@@ -2235,7 +2716,7 @@
     "zukan": 26
   },
   {
-    "id": 50,
+    "id": 60,
     "name": "Dogen",
     "work": {
       "gathering": 3,
@@ -2267,7 +2748,147 @@
     "zukan": 122
   },
   {
-    "id": 51,
+    "id": 61,
+    "name": "Dualith",
+    "work": {
+      "gathering": 3,
+      "transporting": 6,
+      "planting": 3,
+      "mining": 6,
+      "lumbering": 5
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "A",
+      "workers": "S",
+      "combat": "A",
+      "flyingMount": null,
+      "groundMount": "C"
+    },
+    "slug": "dualith",
+    "drops": [
+      {
+        "item": "Belle fleur",
+        "amount": "3 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal majeur",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat terra",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "600 - 800"
+    }
+  },
+  {
+    "id": 62,
+    "name": "Dualith Noct",
+    "work": {
+      "gathering": 3,
+      "transporting": 6,
+      "planting": 3,
+      "mining": 6,
+      "lumbering": 5
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "A",
+      "workers": "S",
+      "combat": "A",
+      "flyingMount": null,
+      "groundMount": "C"
+    },
+    "slug": "dualith-noct",
+    "drops": [
+      {
+        "item": "Champignon étrange",
+        "amount": "3 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal majeur",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat tenebra",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "600 - 800"
+    }
+  },
+  {
+    "id": 63,
     "name": "Dumud",
     "work": {
       "farming": 1,
@@ -2303,7 +2924,7 @@
     "zukan": 43
   },
   {
-    "id": 52,
+    "id": 64,
     "name": "Dumud Gild",
     "work": {
       "farming": 4,
@@ -2344,7 +2965,234 @@
     "zukan": 43
   },
   {
-    "id": 53,
+    "id": 65,
+    "name": "Dupin",
+    "work": {
+      "kindling": 7,
+      "transporting": 2,
+      "medicine": 4,
+      "handiwork": 5
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "A",
+      "workers": "S",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "dupin",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de feu",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat ignis",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Dynamoff",
+    "work": {
+      "electricity": 6,
+      "gathering": 3,
+      "transporting": 3
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "A",
+      "combat": "C",
+      "flyingMount": "C",
+      "groundMount": null
+    },
+    "slug": "dynamoff",
+    "drops": [
+      {
+        "item": "Organe électrique",
+        "amount": "2 - 2",
+        "rate": "100%"
+      }
+    ],
+    "mountSpeed": {
+      "flying": "700 - 1000"
+    }
+  },
+  {
+    "id": 67,
+    "name": "Eidrolon",
+    "work": {
+      "transporting": 6
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "A",
+      "workers": "B",
+      "combat": "A",
+      "flyingMount": "S",
+      "groundMount": null
+    },
+    "slug": "eidrolon",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Huile de Pal de qualité",
+        "amount": "5 - 6",
+        "rate": "100%"
+      },
+      {
+        "item": "Éclat draco",
+        "amount": "10 - 20",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "30 - 50",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "10 - 20",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "4 - 8",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "2 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "25%"
+      }
+    ],
+    "mountSpeed": {
+      "flying": "1400 - 2750"
+    }
+  },
+  {
+    "id": 68,
+    "name": "Eidrolon Ignis",
+    "work": {
+      "kindling": 6,
+      "transporting": 6
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "S",
+      "workers": "A",
+      "combat": "A",
+      "flyingMount": "S",
+      "groundMount": null
+    },
+    "slug": "eidrolon-ignis",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Huile de Pal de qualité",
+        "amount": "5 - 6",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de feu",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat draco",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
+    "mountSpeed": {
+      "flying": "1400 - 2750"
+    }
+  },
+  {
+    "id": 69,
     "name": "Eikthyrdeer",
     "work": {
       "lumbering": 2
@@ -2415,7 +3263,7 @@
     "zukan": 37
   },
   {
-    "id": 54,
+    "id": 70,
     "name": "Eikthyrdeer Terra",
     "work": {
       "lumbering": 2
@@ -2483,7 +3331,145 @@
     "zukan": 37
   },
   {
-    "id": 55,
+    "id": 71,
+    "name": "Elgrove",
+    "work": {
+      "gathering": 2,
+      "transporting": 3,
+      "planting": 3,
+      "mining": 2,
+      "lumbering": 3
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "B",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "elgrove",
+    "drops": [
+      {
+        "item": "Corne",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat herba",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Elgrove Cryst",
+    "work": {
+      "transporting": 3,
+      "mining": 3,
+      "lumbering": 3,
+      "cooling": 5
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "A",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "elgrove-cryst",
+    "drops": [
+      {
+        "item": "Corne",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de glace",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat glacia",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 73,
     "name": "Elizabee",
     "work": {
       "gathering": 4,
@@ -2520,7 +3506,7 @@
     "zukan": 51
   },
   {
-    "id": 56,
+    "id": 74,
     "name": "Elphidran",
     "work": {
       "lumbering": 3
@@ -2581,7 +3567,7 @@
     "zukan": 80
   },
   {
-    "id": 57,
+    "id": 75,
     "name": "Elphidran Aqua",
     "work": {
       "watering": 4,
@@ -2643,7 +3629,7 @@
     "zukan": 80
   },
   {
-    "id": 58,
+    "id": 76,
     "name": "Enchanted Sword",
     "work": {
       "lumbering": 1
@@ -2671,7 +3657,7 @@
     "zukan": -1
   },
   {
-    "id": 59,
+    "id": 77,
     "name": "Eye of Cthulhu",
     "work": {
       "transporting": 4
@@ -2699,7 +3685,7 @@
     "zukan": -1
   },
   {
-    "id": 60,
+    "id": 78,
     "name": "Faleris",
     "work": {
       "kindling": 6,
@@ -2771,7 +3757,7 @@
     "zukan": 105
   },
   {
-    "id": 61,
+    "id": 79,
     "name": "Faleris Aqua",
     "work": {
       "transporting": 5,
@@ -2843,7 +3829,7 @@
     "zukan": 105
   },
   {
-    "id": 62,
+    "id": 80,
     "name": "Felbat",
     "work": {
       "medicine": 3
@@ -2876,7 +3862,7 @@
     "zukan": 94
   },
   {
-    "id": 63,
+    "id": 81,
     "name": "Fenglope",
     "work": {
       "lumbering": 3
@@ -2942,7 +3928,7 @@
     "zukan": 93
   },
   {
-    "id": 64,
+    "id": 82,
     "name": "Fenglope Lux",
     "work": {
       "electricity": 5,
@@ -3011,7 +3997,7 @@
     "zukan": 93
   },
   {
-    "id": 65,
+    "id": 83,
     "name": "Finsider",
     "work": {
       "transporting": 1,
@@ -3050,7 +4036,7 @@
     "zukan": 152
   },
   {
-    "id": 66,
+    "id": 84,
     "name": "Finsider Ignis",
     "work": {
       "kindling": 2,
@@ -3090,7 +4076,7 @@
     "zukan": 152
   },
   {
-    "id": 67,
+    "id": 85,
     "name": "Flambelle",
     "work": {
       "farming": 1,
@@ -3126,7 +4112,72 @@
     "zukan": 70
   },
   {
-    "id": 68,
+    "id": 86,
+    "name": "Flaracle",
+    "work": {
+      "kindling": 7,
+      "transporting": 2,
+      "handiwork": 6
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "A",
+      "workers": "S",
+      "combat": "A",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "flaracle",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "3 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de feu",
+        "amount": "3 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat ignis",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 87,
     "name": "Flopie",
     "work": {
       "gathering": 2,
@@ -3163,7 +4214,7 @@
     "zukan": 28
   },
   {
-    "id": 69,
+    "id": 88,
     "name": "Foxcicle",
     "work": {
       "farming": 3,
@@ -3197,7 +4248,7 @@
     "zukan": 57
   },
   {
-    "id": 70,
+    "id": 89,
     "name": "Foxparks",
     "work": {
       "kindling": 1
@@ -3230,7 +4281,7 @@
     "zukan": 5
   },
   {
-    "id": 71,
+    "id": 90,
     "name": "Foxparks Cryst",
     "work": {
       "cooling": 2
@@ -3263,7 +4314,7 @@
     "zukan": 5
   },
   {
-    "id": 72,
+    "id": 91,
     "name": "Frostallion",
     "work": {
       "cooling": 7
@@ -3299,7 +4350,7 @@
     "zukan": 110
   },
   {
-    "id": 73,
+    "id": 92,
     "name": "Frostallion Noct",
     "work": {
       "gathering": 7
@@ -3335,7 +4386,7 @@
     "zukan": 110
   },
   {
-    "id": 74,
+    "id": 93,
     "name": "Frostplume",
     "work": {
       "gathering": 2,
@@ -3364,7 +4415,7 @@
     "zukan": 143
   },
   {
-    "id": 75,
+    "id": 94,
     "name": "Fuack",
     "work": {
       "transporting": 1,
@@ -3399,7 +4450,7 @@
     "zukan": 6
   },
   {
-    "id": 76,
+    "id": 95,
     "name": "Fuack Ignis",
     "work": {
       "kindling": 2,
@@ -3440,7 +4491,7 @@
     "zukan": 6
   },
   {
-    "id": 77,
+    "id": 96,
     "name": "Fuddler",
     "work": {
       "transporting": 1,
@@ -3470,7 +4521,7 @@
     "zukan": 22
   },
   {
-    "id": 78,
+    "id": 97,
     "name": "Galeclaw",
     "work": {
       "gathering": 2
@@ -3503,7 +4554,7 @@
     "zukan": 47
   },
   {
-    "id": 79,
+    "id": 98,
     "name": "Ghangler",
     "work": {
       "transporting": 2,
@@ -3537,7 +4588,7 @@
     "zukan": 153
   },
   {
-    "id": 80,
+    "id": 99,
     "name": "Ghangler Ignis",
     "work": {
       "kindling": 5,
@@ -3572,7 +4623,7 @@
     "zukan": 153
   },
   {
-    "id": 81,
+    "id": 100,
     "name": "Gildane",
     "work": {
       "gathering": 5
@@ -3603,7 +4654,37 @@
     "zukan": 140
   },
   {
-    "id": 82,
+    "id": 101,
+    "name": "Gildra",
+    "work": {
+      "transporting": 2,
+      "medicine": 4,
+      "handiwork": 5
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "B",
+      "combat": "A",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "gildra",
+    "drops": [
+      {
+        "item": "Tissu",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 102,
     "name": "Gloopie",
     "work": {
       "transporting": 2,
@@ -3638,7 +4719,37 @@
     "zukan": 151
   },
   {
-    "id": 83,
+    "id": 103,
+    "name": "Gloopie Primo",
+    "work": {
+      "transporting": 2,
+      "watering": 2,
+      "handiwork": 2
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "C",
+      "combat": "D",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "gloopie-primo",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Tentacule de Gloopie",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 104,
     "name": "Gobfin",
     "work": {
       "transporting": 1,
@@ -3668,7 +4779,7 @@
     "zukan": 31
   },
   {
-    "id": 84,
+    "id": 105,
     "name": "Gobfin Ignis",
     "work": {
       "kindling": 2,
@@ -3698,7 +4809,7 @@
     "zukan": 31
   },
   {
-    "id": 85,
+    "id": 106,
     "name": "Gorirat",
     "work": {
       "transporting": 3,
@@ -3763,7 +4874,7 @@
     "zukan": 49
   },
   {
-    "id": 86,
+    "id": 107,
     "name": "Gorirat Terra",
     "work": {
       "transporting": 3,
@@ -3828,7 +4939,7 @@
     "zukan": 49
   },
   {
-    "id": 87,
+    "id": 108,
     "name": "Green Slime",
     "work": {
       "transporting": 1
@@ -3856,7 +4967,7 @@
     "zukan": -1
   },
   {
-    "id": 88,
+    "id": 109,
     "name": "Grintale",
     "work": {
       "gathering": 3
@@ -3887,7 +4998,7 @@
     "zukan": 52
   },
   {
-    "id": 89,
+    "id": 110,
     "name": "Grizzbolt",
     "work": {
       "electricity": 5,
@@ -3958,7 +5069,7 @@
     "zukan": 103
   },
   {
-    "id": 90,
+    "id": 111,
     "name": "Gumoss",
     "work": {
       "planting": 1
@@ -3991,7 +5102,7 @@
     "zukan": 13
   },
   {
-    "id": 91,
+    "id": 112,
     "name": "Hangyu",
     "work": {
       "gathering": 1,
@@ -4026,7 +5137,7 @@
     "zukan": 32
   },
   {
-    "id": 92,
+    "id": 113,
     "name": "Hangyu Cryst",
     "work": {
       "gathering": 2,
@@ -4062,11 +5173,11 @@
     "zukan": 32
   },
   {
-    "id": 93,
+    "id": 114,
     "name": "Hartalis",
     "work": {
-      "gathering": 3,
-      "lumbering": 4
+      "gathering": 7,
+      "lumbering": 7
     },
     "nightWorker": false,
     "tiers": {
@@ -4096,7 +5207,7 @@
     ]
   },
   {
-    "id": 94,
+    "id": 115,
     "name": "Helzephyr",
     "work": {
       "transporting": 4
@@ -4162,7 +5273,7 @@
     "zukan": 97
   },
   {
-    "id": 95,
+    "id": 116,
     "name": "Helzephyr Lux",
     "work": {
       "electricity": 4,
@@ -4229,7 +5340,7 @@
     "zukan": 97
   },
   {
-    "id": 96,
+    "id": 117,
     "name": "Herbil",
     "work": {
       "gathering": 1,
@@ -4264,7 +5375,7 @@
     "zukan": 141
   },
   {
-    "id": 97,
+    "id": 118,
     "name": "Hoocrates",
     "work": {
       "gathering": 1
@@ -4297,7 +5408,36 @@
     "zukan": 15
   },
   {
-    "id": 98,
+    "id": 119,
+    "name": "Hoodle",
+    "work": {
+      "transporting": 1,
+      "handiwork": 1
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "D",
+      "workers": "D",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "hoodle",
+    "drops": [
+      {
+        "item": "Âme de Pal mineur",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Corne",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 120,
     "name": "Icelyn",
     "work": {
       "transporting": 2,
@@ -4328,7 +5468,7 @@
     "zukan": 142
   },
   {
-    "id": 99,
+    "id": 121,
     "name": "Illuminant Bat",
     "work": {
       "gathering": 1
@@ -4356,7 +5496,7 @@
     "zukan": -1
   },
   {
-    "id": 100,
+    "id": 122,
     "name": "Illuminant Slime",
     "work": {
       "transporting": 1
@@ -4384,7 +5524,7 @@
     "zukan": -1
   },
   {
-    "id": 101,
+    "id": 123,
     "name": "Incineram",
     "work": {
       "kindling": 3,
@@ -4420,7 +5560,7 @@
     "zukan": 40
   },
   {
-    "id": 102,
+    "id": 124,
     "name": "Incineram Noct",
     "work": {
       "transporting": 3,
@@ -4455,7 +5595,7 @@
     "zukan": 40
   },
   {
-    "id": 103,
+    "id": 125,
     "name": "Jelliette",
     "work": {
       "transporting": 1,
@@ -4490,7 +5630,7 @@
     "zukan": 150
   },
   {
-    "id": 104,
+    "id": 126,
     "name": "Jellroy",
     "work": {
       "transporting": 1,
@@ -4526,7 +5666,7 @@
     "zukan": 149
   },
   {
-    "id": 105,
+    "id": 127,
     "name": "Jetragon",
     "work": {
       "gathering": 8
@@ -4572,7 +5712,7 @@
     "zukan": 111
   },
   {
-    "id": 106,
+    "id": 128,
     "name": "Jolthog",
     "work": {
       "electricity": 1
@@ -4600,7 +5740,7 @@
     "zukan": 12
   },
   {
-    "id": 107,
+    "id": 129,
     "name": "Jolthog Cryst",
     "work": {
       "cooling": 1
@@ -4628,7 +5768,7 @@
     "zukan": 12
   },
   {
-    "id": 108,
+    "id": 130,
     "name": "Jormuntide",
     "work": {
       "watering": 7
@@ -4689,7 +5829,7 @@
     "zukan": 101
   },
   {
-    "id": 109,
+    "id": 131,
     "name": "Jormuntide Ignis",
     "work": {
       "kindling": 7
@@ -4755,7 +5895,7 @@
     "zukan": 101
   },
   {
-    "id": 110,
+    "id": 132,
     "name": "Katress",
     "work": {
       "transporting": 2,
@@ -4795,7 +5935,7 @@
     "zukan": 75
   },
   {
-    "id": 111,
+    "id": 133,
     "name": "Katress Ignis",
     "work": {
       "kindling": 3,
@@ -4836,7 +5976,7 @@
     "zukan": 75
   },
   {
-    "id": 112,
+    "id": 134,
     "name": "Kelpsea",
     "work": {
       "farming": 1,
@@ -4870,7 +6010,7 @@
     "zukan": 81
   },
   {
-    "id": 113,
+    "id": 135,
     "name": "Kelpsea Ignis",
     "work": {
       "farming": 1,
@@ -4904,7 +6044,7 @@
     "zukan": 81
   },
   {
-    "id": 114,
+    "id": 136,
     "name": "Kikit",
     "work": {
       "mining": 1
@@ -4942,7 +6082,7 @@
     "zukan": 117
   },
   {
-    "id": 115,
+    "id": 137,
     "name": "Killamari",
     "work": {
       "gathering": 1,
@@ -4982,7 +6122,7 @@
     "zukan": 23
   },
   {
-    "id": 116,
+    "id": 138,
     "name": "Killamari Primo",
     "work": {
       "gathering": 1,
@@ -5017,7 +6157,7 @@
     "zukan": 23
   },
   {
-    "id": 117,
+    "id": 139,
     "name": "Kingpaca",
     "work": {
       "gathering": 2
@@ -5078,7 +6218,7 @@
     "zukan": 89
   },
   {
-    "id": 118,
+    "id": 140,
     "name": "Kingpaca Cryst",
     "work": {
       "gathering": 2,
@@ -5112,7 +6252,7 @@
     "zukan": 89
   },
   {
-    "id": 119,
+    "id": 141,
     "name": "Kitsun",
     "work": {
       "kindling": 3
@@ -5148,7 +6288,7 @@
     "zukan": 61
   },
   {
-    "id": 120,
+    "id": 142,
     "name": "Kitsun Noct",
     "work": {
       "kindling": 4
@@ -5186,7 +6326,7 @@
     "zukan": 61
   },
   {
-    "id": 121,
+    "id": 143,
     "name": "Knocklem",
     "work": {
       "gathering": 4,
@@ -5256,7 +6396,72 @@
     "zukan": 120
   },
   {
-    "id": 122,
+    "id": 144,
+    "name": "Knocklem Ignis",
+    "work": {
+      "kindling": 5,
+      "transporting": 7,
+      "mining": 7
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "A",
+      "workers": "S",
+      "combat": "A",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "knocklem-ignis",
+    "drops": [
+      {
+        "item": "Minerai de métal",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de feu",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat ignis",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 145,
     "name": "Lamball",
     "work": {
       "farming": 1,
@@ -5291,7 +6496,83 @@
     "zukan": 1
   },
   {
-    "id": 123,
+    "id": 146,
+    "name": "Lapiron",
+    "work": {
+      "gathering": 4,
+      "transporting": 1,
+      "handiwork": 3,
+      "mining": 2
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "B",
+      "combat": "D",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "lapiron",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "name": "Lapure",
+    "work": {
+      "gathering": 5,
+      "handiwork": 6
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "A",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "lapure",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "name": "Leafan",
+    "work": {
+      "gathering": 3,
+      "transporting": 2,
+      "planting": 3,
+      "handiwork": 3
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "B",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "leafan",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 149,
     "name": "Leezpunk",
     "work": {
       "gathering": 1,
@@ -5331,7 +6612,7 @@
     "zukan": 45
   },
   {
-    "id": 124,
+    "id": 150,
     "name": "Leezpunk Ignis",
     "work": {
       "kindling": 2,
@@ -5372,7 +6653,7 @@
     "zukan": 45
   },
   {
-    "id": 125,
+    "id": 151,
     "name": "Lifmunk",
     "work": {
       "gathering": 1,
@@ -5409,7 +6690,77 @@
     "zukan": 4
   },
   {
-    "id": 126,
+    "id": 152,
+    "name": "Loomen",
+    "work": {
+      "kindling": 4,
+      "medicine": 4,
+      "handiwork": 4
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "B",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "loomen",
+    "drops": [
+      {
+        "item": "Huile de Pal de qualité",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Glande à venin",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat tenebra",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 153,
     "name": "Loupmoon",
     "work": {
       "handiwork": 2
@@ -5437,7 +6788,7 @@
     "zukan": 46
   },
   {
-    "id": 127,
+    "id": 154,
     "name": "Loupmoon Cryst",
     "work": {
       "handiwork": 4,
@@ -5466,7 +6817,7 @@
     "zukan": 46
   },
   {
-    "id": 128,
+    "id": 155,
     "name": "Lovander",
     "work": {
       "transporting": 2,
@@ -5517,7 +6868,7 @@
     "zukan": 69
   },
   {
-    "id": 129,
+    "id": 156,
     "name": "Lullu",
     "work": {
       "gathering": 2,
@@ -5553,7 +6904,7 @@
     "zukan": 115
   },
   {
-    "id": 130,
+    "id": 157,
     "name": "Lunaris",
     "work": {
       "gathering": 2,
@@ -5583,7 +6934,7 @@
     "zukan": 63
   },
   {
-    "id": 131,
+    "id": 158,
     "name": "Lyleen",
     "work": {
       "gathering": 6,
@@ -5664,7 +7015,7 @@
     "zukan": 104
   },
   {
-    "id": 132,
+    "id": 159,
     "name": "Lyleen Noct",
     "work": {
       "gathering": 6,
@@ -5744,7 +7095,73 @@
     "zukan": 104
   },
   {
-    "id": 133,
+    "id": 160,
+    "name": "Majex",
+    "work": {
+      "kindling": 4,
+      "transporting": 2,
+      "medicine": 3,
+      "handiwork": 5
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "A",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "majex",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de feu",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat tenebra",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 161,
     "name": "Mammorest",
     "work": {
       "planting": 4,
@@ -5817,7 +7234,7 @@
     "zukan": 90
   },
   {
-    "id": 134,
+    "id": 162,
     "name": "Mammorest Cryst",
     "work": {
       "mining": 4,
@@ -5887,7 +7304,7 @@
     "zukan": 90
   },
   {
-    "id": 135,
+    "id": 163,
     "name": "Maraith",
     "work": {
       "gathering": 4,
@@ -5929,7 +7346,7 @@
     "zukan": 66
   },
   {
-    "id": 136,
+    "id": 164,
     "name": "Mau",
     "work": {
       "farming": 1,
@@ -5963,7 +7380,7 @@
     "zukan": 24
   },
   {
-    "id": 137,
+    "id": 165,
     "name": "Mau Cryst",
     "work": {
       "farming": 1,
@@ -5997,7 +7414,7 @@
     "zukan": 24
   },
   {
-    "id": 138,
+    "id": 166,
     "name": "Melpaca",
     "work": {
       "farming": 2
@@ -6033,7 +7450,7 @@
     "zukan": 36
   },
   {
-    "id": 139,
+    "id": 167,
     "name": "Menasting",
     "work": {
       "mining": 5,
@@ -6067,7 +7484,7 @@
     "zukan": 99
   },
   {
-    "id": 140,
+    "id": 168,
     "name": "Menasting Terra",
     "work": {
       "mining": 6,
@@ -6101,7 +7518,7 @@
     "zukan": 99
   },
   {
-    "id": 141,
+    "id": 169,
     "name": "Mimog",
     "work": {
       "gathering": 1,
@@ -6140,7 +7557,101 @@
     "zukan": 124
   },
   {
-    "id": 142,
+    "id": 170,
+    "name": "Moldron",
+    "work": {
+      "kindling": 5,
+      "mining": 5
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "A",
+      "workers": "A",
+      "combat": "A",
+      "flyingMount": null,
+      "groundMount": "C"
+    },
+    "slug": "moldron",
+    "drops": [
+      {
+        "item": "Organe de feu",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Éclat ignis",
+        "amount": "10 - 20",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "30 - 50",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "10 - 20",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "4 - 8",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "2 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "25%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "650 - 850"
+    }
+  },
+  {
+    "id": 171,
+    "name": "Moldron Cryst",
+    "work": {
+      "mining": 5,
+      "cooling": 5
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "A",
+      "workers": "A",
+      "combat": "A",
+      "flyingMount": null,
+      "groundMount": "C"
+    },
+    "slug": "moldron-cryst",
+    "drops": [
+      {
+        "item": "Organe de glace",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "650 - 850"
+    }
+  },
+  {
+    "id": 172,
     "name": "Mossanda",
     "work": {
       "transporting": 4,
@@ -6211,7 +7722,7 @@
     "zukan": 33
   },
   {
-    "id": 143,
+    "id": 173,
     "name": "Mossanda Lux",
     "work": {
       "electricity": 4,
@@ -6287,7 +7798,7 @@
     "zukan": 33
   },
   {
-    "id": 144,
+    "id": 174,
     "name": "Mozzarina",
     "work": {
       "farming": 2
@@ -6320,7 +7831,31 @@
     "zukan": 29
   },
   {
-    "id": 145,
+    "id": 175,
+    "name": "Muffly",
+    "work": {
+      "transporting": 1,
+      "cooling": 2
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "D",
+      "workers": "C",
+      "combat": "D",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "muffly",
+    "drops": [
+      {
+        "item": "Organe de glace",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 176,
     "name": "Munchill",
     "work": {
       "transporting": 1,
@@ -6360,7 +7895,73 @@
     "zukan": 146
   },
   {
-    "id": 146,
+    "id": 177,
+    "name": "Mycora",
+    "work": {
+      "gathering": 4,
+      "planting": 6,
+      "medicine": 6,
+      "handiwork": 4
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "S",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "mycora",
+    "drops": [
+      {
+        "item": "Champignon",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Champignon étrange",
+        "amount": "2 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat terra",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 178,
     "name": "Necromus",
     "work": {
       "mining": 6,
@@ -6402,7 +8003,62 @@
     "zukan": 109
   },
   {
-    "id": 147,
+    "id": 179,
+    "name": "Needoll",
+    "work": {
+      "gathering": 3,
+      "transporting": 1,
+      "planting": 3
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "C",
+      "combat": "D",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "needoll",
+    "drops": [
+      {
+        "item": "Fibre",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 180,
+    "name": "Needoll Noct",
+    "work": {
+      "gathering": 3,
+      "transporting": 1,
+      "planting": 3
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "C",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "needoll-noct",
+    "drops": [
+      {
+        "item": "Fibre",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Glande à venin",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 181,
     "name": "Neptilius",
     "work": {
       "watering": 7
@@ -6445,7 +8101,7 @@
     "zukan": 155
   },
   {
-    "id": 148,
+    "id": 182,
     "name": "Nitemary",
     "work": {
       "transporting": 2,
@@ -6474,7 +8130,67 @@
     "zukan": 128
   },
   {
-    "id": 149,
+    "id": 183,
+    "name": "Nitemary Botan",
+    "work": {
+      "transporting": 2,
+      "planting": 3,
+      "handiwork": 4
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "B",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "nitemary-botan",
+    "drops": [
+      {
+        "item": "Âme de Pal intermédiaire",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat herba",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 184,
     "name": "Nitewing",
     "work": {
       "gathering": 2
@@ -6505,7 +8221,7 @@
     "zukan": 38
   },
   {
-    "id": 150,
+    "id": 185,
     "name": "Nox",
     "work": {
       "gathering": 1
@@ -6538,7 +8254,7 @@
     "zukan": 21
   },
   {
-    "id": 151,
+    "id": 186,
     "name": "Nyafia",
     "work": {
       "gathering": 4,
@@ -6569,7 +8285,7 @@
     "zukan": 139
   },
   {
-    "id": 152,
+    "id": 187,
     "name": "Omascul",
     "work": {
       "gathering": 5
@@ -6597,7 +8313,69 @@
     "zukan": 133
   },
   {
-    "id": 153,
+    "id": 188,
+    "name": "Ophydia",
+    "work": {
+      "planting": 7,
+      "watering": 5
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "A",
+      "workers": "S",
+      "combat": "A",
+      "flyingMount": null,
+      "groundMount": "S"
+    },
+    "slug": "ophydia",
+    "drops": [
+      {
+        "item": "Huile de Pal de qualité",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal majeur",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Éclat herba",
+        "amount": "10 - 20",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "30 - 50",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "10 - 20",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "4 - 8",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "2 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "25%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "700 - 1500"
+    }
+  },
+  {
+    "id": 189,
     "name": "Orserk",
     "work": {
       "electricity": 8,
@@ -6667,7 +8445,7 @@
     "zukan": 106
   },
   {
-    "id": 154,
+    "id": 190,
     "name": "Paladius",
     "work": {
       "mining": 6,
@@ -6709,7 +8487,7 @@
     "zukan": 108
   },
   {
-    "id": 155,
+    "id": 191,
     "name": "Palumba",
     "work": {
       "gathering": 4,
@@ -6749,7 +8527,36 @@
     "zukan": 144
   },
   {
-    "id": 156,
+    "id": 192,
+    "name": "Panthalus",
+    "work": {},
+    "nightWorker": false,
+    "tiers": {
+      "overall": "S",
+      "workers": null,
+      "combat": "S",
+      "flyingMount": "S",
+      "groundMount": null
+    },
+    "slug": "panthalus",
+    "drops": [
+      {
+        "item": "Diamant",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal ultime",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ],
+    "mountSpeed": {
+      "flying": "3000 - 3000"
+    }
+  },
+  {
+    "id": 193,
     "name": "Pengullet",
     "work": {
       "transporting": 1,
@@ -6785,7 +8592,7 @@
     "zukan": 10
   },
   {
-    "id": 157,
+    "id": 194,
     "name": "Pengullet Lux",
     "work": {
       "electricity": 2,
@@ -6821,7 +8628,7 @@
     "zukan": 10
   },
   {
-    "id": 158,
+    "id": 195,
     "name": "Penking",
     "work": {
       "transporting": 3,
@@ -6858,7 +8665,7 @@
     "zukan": 11
   },
   {
-    "id": 159,
+    "id": 196,
     "name": "Penking Lux",
     "work": {
       "electricity": 3,
@@ -6895,7 +8702,7 @@
     "zukan": 11
   },
   {
-    "id": 160,
+    "id": 197,
     "name": "Petallia",
     "work": {
       "gathering": 3,
@@ -6932,7 +8739,171 @@
     "zukan": 87
   },
   {
-    "id": 161,
+    "id": 198,
+    "name": "Petallia Ignis",
+    "work": {
+      "kindling": 4,
+      "gathering": 3,
+      "transporting": 2,
+      "medicine": 4,
+      "handiwork": 3
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "A",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "petallia-ignis",
+    "drops": [
+      {
+        "item": "Organe de feu",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat ignis",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 199,
+    "name": "Pierdon",
+    "work": {
+      "mining": 5
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "B",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "pierdon",
+    "drops": [
+      {
+        "item": "Minerai de métal",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Charbon",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Soufre",
+        "amount": "4 - 5",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "name": "Pierdon Cryst",
+    "work": {
+      "mining": 5,
+      "cooling": 6
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "A",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "pierdon-cryst",
+    "drops": [
+      {
+        "item": "Soralite",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de glace",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Quartz pur",
+        "amount": "4 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat glacia",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 201,
     "name": "Polapup",
     "work": {
       "watering": 3,
@@ -6961,7 +8932,74 @@
     "zukan": 147
   },
   {
-    "id": 162,
+    "id": 202,
+    "name": "Polapup Terra",
+    "work": {
+      "mining": 4,
+      "cooling": 4
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "B",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": "D"
+    },
+    "slug": "polapup-terra",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat terra",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "250 - 375"
+    }
+  },
+  {
+    "id": 203,
     "name": "Prixter",
     "work": {
       "gathering": 2,
@@ -6991,7 +9029,33 @@
     "zukan": 119
   },
   {
-    "id": 163,
+    "id": 204,
+    "name": "Prixter Lux",
+    "work": {
+      "electricity": 3,
+      "gathering": 2,
+      "medicine": 2,
+      "lumbering": 4
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "B",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "prixter-lux",
+    "drops": [
+      {
+        "item": "Organe électrique",
+        "amount": "4 - 5",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 205,
     "name": "Prunelia",
     "work": {
       "gathering": 2,
@@ -7033,7 +9097,56 @@
     "zukan": 138
   },
   {
-    "id": 164,
+    "id": 206,
+    "name": "Puffolt",
+    "work": {
+      "electricity": 2,
+      "transporting": 1
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "D",
+      "workers": "C",
+      "combat": "D",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "puffolt",
+    "drops": [
+      {
+        "item": "Organe électrique",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 207,
+    "name": "Pupperai",
+    "work": {
+      "gathering": 1,
+      "transporting": 1,
+      "lumbering": 1
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "D",
+      "workers": "D",
+      "combat": "D",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "pupperai",
+    "drops": [
+      {
+        "item": "Os",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 208,
     "name": "Purple Slime",
     "work": {
       "transporting": 1
@@ -7061,7 +9174,7 @@
     "zukan": -1
   },
   {
-    "id": 165,
+    "id": 209,
     "name": "Pyrin",
     "work": {
       "kindling": 4,
@@ -7128,7 +9241,7 @@
     "zukan": 58
   },
   {
-    "id": 166,
+    "id": 210,
     "name": "Pyrin Noct",
     "work": {
       "kindling": 4,
@@ -7192,7 +9305,7 @@
     "zukan": 58
   },
   {
-    "id": 167,
+    "id": 211,
     "name": "Quivern",
     "work": {
       "gathering": 3,
@@ -7256,7 +9369,7 @@
     "zukan": 95
   },
   {
-    "id": 168,
+    "id": 212,
     "name": "Quivern Botan",
     "work": {
       "gathering": 4,
@@ -7331,7 +9444,7 @@
     "zukan": 95
   },
   {
-    "id": 169,
+    "id": 213,
     "name": "Ragnahawk",
     "work": {
       "kindling": 4,
@@ -7393,7 +9506,7 @@
     "zukan": 74
   },
   {
-    "id": 170,
+    "id": 214,
     "name": "Rainbow Slime",
     "work": {
       "transporting": 1
@@ -7421,7 +9534,7 @@
     "zukan": -1
   },
   {
-    "id": 171,
+    "id": 215,
     "name": "Rayhound",
     "work": {
       "electricity": 4
@@ -7452,7 +9565,68 @@
     "zukan": 60
   },
   {
-    "id": 172,
+    "id": 216,
+    "name": "Rayhound Cryst",
+    "work": {
+      "cooling": 3
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "C",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": "A"
+    },
+    "slug": "rayhound-cryst",
+    "drops": [
+      {
+        "item": "Organe de glace",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat aqua",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "700 - 1150"
+    }
+  },
+  {
+    "id": 217,
     "name": "Red Slime",
     "work": {
       "transporting": 1
@@ -7480,7 +9654,7 @@
     "zukan": -1
   },
   {
-    "id": 173,
+    "id": 218,
     "name": "Reindrix",
     "work": {
       "lumbering": 3,
@@ -7557,7 +9731,7 @@
     "zukan": 59
   },
   {
-    "id": 174,
+    "id": 219,
     "name": "Relaxaurus",
     "work": {
       "transporting": 3,
@@ -7621,7 +9795,7 @@
     "zukan": 85
   },
   {
-    "id": 175,
+    "id": 220,
     "name": "Relaxaurus Lux",
     "work": {
       "electricity": 4,
@@ -7690,7 +9864,73 @@
     "zukan": 85
   },
   {
-    "id": 176,
+    "id": 221,
+    "name": "Renjishi",
+    "work": {
+      "kindling": 8,
+      "gathering": 5,
+      "transporting": 5,
+      "handiwork": 6
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "S",
+      "workers": "S",
+      "combat": "A",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "renjishi",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de feu",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat ignis",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 222,
     "name": "Reptyro",
     "work": {
       "kindling": 5,
@@ -7722,7 +9962,7 @@
     "zukan": 88
   },
   {
-    "id": 177,
+    "id": 223,
     "name": "Reptyro Cryst",
     "work": {
       "mining": 5,
@@ -7751,7 +9991,7 @@
     "zukan": 88
   },
   {
-    "id": 178,
+    "id": 224,
     "name": "Ribbuny",
     "work": {
       "gathering": 1,
@@ -7796,7 +10036,7 @@
     "zukan": 39
   },
   {
-    "id": 179,
+    "id": 225,
     "name": "Ribbuny Botan",
     "work": {
       "gathering": 2,
@@ -7842,7 +10082,7 @@
     "zukan": 39
   },
   {
-    "id": 180,
+    "id": 226,
     "name": "Robinquill",
     "work": {
       "gathering": 3,
@@ -7880,7 +10120,7 @@
     "zukan": 48
   },
   {
-    "id": 181,
+    "id": 227,
     "name": "Robinquill Terra",
     "work": {
       "gathering": 3,
@@ -7917,7 +10157,7 @@
     "zukan": 48
   },
   {
-    "id": 182,
+    "id": 228,
     "name": "Rooby",
     "work": {
       "farming": 1,
@@ -7951,7 +10191,74 @@
     "zukan": 9
   },
   {
-    "id": 183,
+    "id": 229,
+    "name": "Roujay",
+    "work": {
+      "gathering": 5,
+      "transporting": 5
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "A",
+      "workers": "A",
+      "combat": "B",
+      "flyingMount": "B",
+      "groundMount": null
+    },
+    "slug": "roujay",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "3 - 4",
+        "rate": "100%"
+      },
+      {
+        "item": "Rubis",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat fulgura",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
+    "mountSpeed": {
+      "flying": "950 - 1350"
+    }
+  },
+  {
+    "id": 230,
     "name": "Rushoar",
     "work": {
       "mining": 1
@@ -7992,7 +10299,67 @@
     "zukan": 20
   },
   {
-    "id": 184,
+    "id": 231,
+    "name": "Sekhmet",
+    "work": {
+      "transporting": 2,
+      "handiwork": 6,
+      "mining": 3
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "A",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "sekhmet",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal majeur",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Éclat terra",
+        "amount": "10 - 20",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "30 - 50",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "10 - 20",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "4 - 8",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "2 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "25%"
+      }
+    ]
+  },
+  {
+    "id": 232,
     "name": "Selyne",
     "work": {
       "transporting": 3,
@@ -8070,7 +10437,7 @@
     "zukan": 113
   },
   {
-    "id": 185,
+    "id": 233,
     "name": "Shadowbeak",
     "work": {
       "gathering": 2
@@ -8146,7 +10513,79 @@
     "zukan": 107
   },
   {
-    "id": 186,
+    "id": 234,
+    "name": "Shaolong",
+    "work": {
+      "gathering": 5,
+      "watering": 8
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "S",
+      "workers": "S",
+      "combat": "S",
+      "flyingMount": "S",
+      "groundMount": null
+    },
+    "slug": "shaolong",
+    "drops": [
+      {
+        "item": "Corne",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal majeur",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat fulgura",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
+    "mountSpeed": {
+      "flying": "1400 - 2800"
+    }
+  },
+  {
+    "id": 235,
     "name": "Shroomer",
     "work": {
       "farming": 3,
@@ -8221,7 +10660,7 @@
     "zukan": 116
   },
   {
-    "id": 187,
+    "id": 236,
     "name": "Shroomer Noct",
     "work": {
       "gathering": 3,
@@ -8260,7 +10699,7 @@
     "zukan": 116
   },
   {
-    "id": 188,
+    "id": 237,
     "name": "Sibelyx",
     "work": {
       "farming": 3,
@@ -8295,7 +10734,138 @@
     "zukan": 79
   },
   {
-    "id": 189,
+    "id": 238,
+    "name": "Sibelyx Primo",
+    "work": {
+      "farming": 4,
+      "medicine": 3
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "B",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "sibelyx-primo",
+    "drops": [
+      {
+        "item": "Tissu de qualité",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Huile de Pal de qualité",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat neutra",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 239,
+    "name": "Silvance",
+    "work": {
+      "gathering": 4,
+      "transporting": 2,
+      "planting": 6,
+      "medicine": 8,
+      "handiwork": 6
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "S",
+      "workers": "S",
+      "combat": "A",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "silvance",
+    "drops": [
+      {
+        "item": "Âme de Pal ultime",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Noyau d&#39;une civilisation antique",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat herba",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 240,
     "name": "Silvegis",
     "work": {
       "lumbering": 6
@@ -8356,7 +10926,131 @@
     "zukan": 130
   },
   {
-    "id": 190,
+    "id": 241,
+    "name": "Skutlass",
+    "work": {
+      "gathering": 1,
+      "watering": 4,
+      "lumbering": 4
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "B",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "skutlass",
+    "drops": [
+      {
+        "item": "Filet de Skutlass",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 242,
+    "name": "Skutlass Ignis",
+    "work": {
+      "kindling": 3,
+      "gathering": 2,
+      "watering": 2,
+      "lumbering": 3
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "B",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "skutlass-ignis",
+    "drops": [
+      {
+        "item": "Filet de Skutlass",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de feu",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat aqua",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 243,
+    "name": "Slowatt",
+    "work": {
+      "electricity": 3
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "D",
+      "workers": "C",
+      "combat": "D",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "slowatt",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe électrique",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 244,
     "name": "Smokie",
     "work": {
       "gathering": 2
@@ -8384,7 +11078,391 @@
     "zukan": 131
   },
   {
-    "id": 191,
+    "id": 245,
+    "name": "Smokie Cryst",
+    "work": {
+      "gathering": 2,
+      "cooling": 2
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "C",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "smokie-cryst",
+    "drops": [
+      {
+        "item": "Organe de glace",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal intermédiaire",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat tenebra",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 246,
+    "name": "Snock",
+    "work": {
+      "electricity": 4
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "D",
+      "workers": "C",
+      "combat": "D",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "snock",
+    "drops": [
+      {
+        "item": "Organe électrique",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Fluides de Pal",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 247,
+    "name": "Snock Lux",
+    "work": {
+      "electricity": 4
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "D",
+      "workers": "C",
+      "combat": "D",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "snock-lux",
+    "drops": [
+      {
+        "item": "Organe électrique",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Huile de Pal de qualité",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat fulgura",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 248,
+    "name": "Snugloo",
+    "work": {
+      "transporting": 2,
+      "handiwork": 2,
+      "mining": 3,
+      "cooling": 3
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "B",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "snugloo",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Laine",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat glacia",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 249,
+    "name": "Solenne",
+    "work": {
+      "gathering": 4,
+      "transporting": 2,
+      "handiwork": 8
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "A",
+      "workers": "S",
+      "combat": "A",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "solenne",
+    "drops": [
+      {
+        "item": "Fragment obscur",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Potion de haute qualité",
+        "amount": "2 - 2",
+        "rate": "50%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat neutra",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 250,
+    "name": "Solmora",
+    "work": {
+      "watering": 4
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "C",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": "B"
+    },
+    "slug": "solmora",
+    "drops": [
+      {
+        "item": "Huile de Pal de qualité",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Fluides de Pal",
+        "amount": "2 - 2",
+        "rate": "100%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "500 - 900"
+    }
+  },
+  {
+    "id": 251,
+    "name": "Solmora Lux",
+    "work": {
+      "electricity": 6,
+      "watering": 4
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "A",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": "B"
+    },
+    "slug": "solmora-lux",
+    "drops": [
+      {
+        "item": "Huile de Pal de qualité",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe électrique",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat fulgura",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "500 - 900"
+    }
+  },
+  {
+    "id": 252,
     "name": "Sootseer",
     "work": {
       "farming": 2,
@@ -8426,7 +11504,31 @@
     "zukan": 118
   },
   {
-    "id": 192,
+    "id": 253,
+    "name": "Souffline",
+    "work": {
+      "transporting": 2,
+      "planting": 2
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "D",
+      "workers": "C",
+      "combat": "D",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "souffline",
+    "drops": [
+      {
+        "item": "Graines de blé",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 254,
     "name": "Sparkit",
     "work": {
       "farming": 1,
@@ -8457,7 +11559,7 @@
     "zukan": 7
   },
   {
-    "id": 193,
+    "id": 255,
     "name": "Splatterina",
     "work": {
       "transporting": 2,
@@ -8518,7 +11620,7 @@
     "zukan": 134
   },
   {
-    "id": 194,
+    "id": 256,
     "name": "Starryon",
     "work": {
       "gathering": 5
@@ -8584,7 +11686,73 @@
     "zukan": 129
   },
   {
-    "id": 195,
+    "id": 257,
+    "name": "Starryon Primo",
+    "work": {
+      "gathering": 7
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "A",
+      "workers": "A",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": "S"
+    },
+    "slug": "starryon-primo",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Sable de nuit étoilée",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat neutra",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "900 - 1250"
+    }
+  },
+  {
+    "id": 258,
     "name": "Surfent",
     "work": {
       "farming": 2,
@@ -8616,7 +11784,7 @@
     "zukan": 65
   },
   {
-    "id": 196,
+    "id": 259,
     "name": "Surfent Terra",
     "work": {
       "gathering": 3
@@ -8649,7 +11817,7 @@
     "zukan": 65
   },
   {
-    "id": 197,
+    "id": 260,
     "name": "Suzaku",
     "work": {
       "kindling": 5
@@ -8710,7 +11878,7 @@
     "zukan": 102
   },
   {
-    "id": 198,
+    "id": 261,
     "name": "Suzaku Aqua",
     "work": {
       "watering": 6
@@ -8771,7 +11939,7 @@
     "zukan": 102
   },
   {
-    "id": 199,
+    "id": 262,
     "name": "Swee",
     "work": {
       "gathering": 1,
@@ -8805,7 +11973,7 @@
     "zukan": 53
   },
   {
-    "id": 200,
+    "id": 263,
     "name": "Sweepa",
     "work": {
       "gathering": 2,
@@ -8837,7 +12005,7 @@
     "zukan": 54
   },
   {
-    "id": 201,
+    "id": 264,
     "name": "Tanzee",
     "work": {
       "gathering": 1,
@@ -8869,7 +12037,38 @@
     "zukan": 8
   },
   {
-    "id": 202,
+    "id": 265,
+    "name": "Tanzee Ignis",
+    "work": {
+      "kindling": 1,
+      "transporting": 1,
+      "handiwork": 1,
+      "lumbering": 1
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "D",
+      "workers": "C",
+      "combat": "D",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "tanzee-ignis",
+    "drops": [
+      {
+        "item": "Champignon",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Organe de feu",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 266,
     "name": "Tarantriss",
     "work": {
       "gathering": 3,
@@ -8905,7 +12104,7 @@
     "zukan": 135
   },
   {
-    "id": 203,
+    "id": 267,
     "name": "Teafant",
     "work": {
       "watering": 1
@@ -8933,7 +12132,134 @@
     "zukan": 16
   },
   {
-    "id": 204,
+    "id": 268,
+    "name": "Tetroise",
+    "work": {
+      "mining": 4
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "C",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": "D"
+    },
+    "slug": "tetroise",
+    "drops": [
+      {
+        "item": "Rubis",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal majeur",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Éclat terra",
+        "amount": "10 - 20",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "30 - 50",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "10 - 20",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "4 - 8",
+        "rate": "100%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "2 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "25%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "360 - 540"
+    }
+  },
+  {
+    "id": 269,
+    "name": "Tetroise Primo",
+    "work": {
+      "mining": 6
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "B",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": "D"
+    },
+    "slug": "tetroise-primo",
+    "drops": [
+      {
+        "item": "Émeraude",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal majeur",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat neutra",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "360 - 540"
+    }
+  },
+  {
+    "id": 270,
     "name": "Tocotoco",
     "work": {
       "gathering": 1
@@ -8966,7 +12292,7 @@
     "zukan": 27
   },
   {
-    "id": 205,
+    "id": 271,
     "name": "Tombat",
     "work": {
       "gathering": 2,
@@ -9001,7 +12327,36 @@
     "zukan": 68
   },
   {
-    "id": 206,
+    "id": 272,
+    "name": "Tropicaw",
+    "work": {
+      "gathering": 5,
+      "planting": 5
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "A",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "tropicaw",
+    "drops": [
+      {
+        "item": "Belle fleur",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Fibre",
+        "amount": "2 - 3",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 273,
     "name": "Turtacle",
     "work": {
       "transporting": 1,
@@ -9036,7 +12391,7 @@
     "zukan": 148
   },
   {
-    "id": 207,
+    "id": 274,
     "name": "Turtacle Terra",
     "work": {
       "transporting": 1,
@@ -9071,7 +12426,7 @@
     "zukan": 148
   },
   {
-    "id": 208,
+    "id": 275,
     "name": "Univolt",
     "work": {
       "electricity": 3,
@@ -9143,7 +12498,79 @@
     "zukan": 56
   },
   {
-    "id": 209,
+    "id": 276,
+    "name": "Univolt Cryst",
+    "work": {
+      "lumbering": 3,
+      "cooling": 6
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "B",
+      "combat": "B",
+      "flyingMount": null,
+      "groundMount": "A"
+    },
+    "slug": "univolt-cryst",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Corne",
+        "amount": "1 - 1",
+        "rate": "50%"
+      },
+      {
+        "item": "Organe de glace",
+        "amount": "1 - 1",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat glacia",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ],
+    "mountSpeed": {
+      "ground": "720 - 1100"
+    }
+  },
+  {
+    "id": 277,
     "name": "Vaelet",
     "work": {
       "farming": 2,
@@ -9186,7 +12613,30 @@
     "zukan": 78
   },
   {
-    "id": 210,
+    "id": 278,
+    "name": "Valentail",
+    "work": {
+      "gathering": 2
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "D",
+      "workers": "C",
+      "combat": "D",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "valentail",
+    "drops": [
+      {
+        "item": "Cuir",
+        "amount": "1 - 2",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 279,
     "name": "Vanwyrm",
     "work": {
       "kindling": 2,
@@ -9228,7 +12678,7 @@
     "zukan": 71
   },
   {
-    "id": 211,
+    "id": 280,
     "name": "Vanwyrm Cryst",
     "work": {
       "transporting": 3,
@@ -9270,7 +12720,73 @@
     "zukan": 71
   },
   {
-    "id": 212,
+    "id": 281,
+    "name": "Venusa",
+    "work": {
+      "gathering": 6,
+      "transporting": 2,
+      "medicine": 5,
+      "handiwork": 6
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "S",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "venusa",
+    "drops": [
+      {
+        "item": "Fluides de Pal",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Glande à venin",
+        "amount": "2 - 3",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat fulgura",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 282,
     "name": "Verdash",
     "work": {
       "gathering": 5,
@@ -9307,7 +12823,7 @@
     "zukan": 77
   },
   {
-    "id": 213,
+    "id": 283,
     "name": "Vixy",
     "work": {
       "farming": 1,
@@ -9341,7 +12857,7 @@
     "zukan": 14
   },
   {
-    "id": 214,
+    "id": 284,
     "name": "Warsect",
     "work": {
       "transporting": 5,
@@ -9402,7 +12918,7 @@
     "zukan": 92
   },
   {
-    "id": 215,
+    "id": 285,
     "name": "Warsect Terra",
     "work": {
       "transporting": 5,
@@ -9432,7 +12948,7 @@
     "zukan": 92
   },
   {
-    "id": 216,
+    "id": 286,
     "name": "Whalaska",
     "work": {
       "watering": 5,
@@ -9506,7 +13022,7 @@
     "zukan": 154
   },
   {
-    "id": 217,
+    "id": 287,
     "name": "Whalaska Ignis",
     "work": {
       "kindling": 5,
@@ -9590,7 +13106,138 @@
     "zukan": 154
   },
   {
-    "id": 218,
+    "id": 288,
+    "name": "Wispaw",
+    "work": {
+      "transporting": 1,
+      "medicine": 1,
+      "handiwork": 2,
+      "lumbering": 1
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "C",
+      "workers": "C",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "wispaw",
+    "drops": [
+      {
+        "item": "Âme de Pal mineur",
+        "amount": "2 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Cuir",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat terra",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 289,
+    "name": "Wistella",
+    "work": {
+      "transporting": 1,
+      "medicine": 6,
+      "handiwork": 6
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "B",
+      "workers": "A",
+      "combat": "C",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "wistella",
+    "drops": [
+      {
+        "item": "Sable de nuit étoilée",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Âme de Pal mineur",
+        "amount": "3 - 5",
+        "rate": "100%"
+      },
+      {
+        "item": "Eau sacrée de l’Arbre-Monde",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Éclat fulgura",
+        "amount": "1 - 3",
+        "rate": "50%"
+      },
+      {
+        "item": "Relique antique détériorée",
+        "amount": "1 - 10",
+        "rate": "10%"
+      },
+      {
+        "item": "Relique antique dormante",
+        "amount": "1 - 5",
+        "rate": "5%"
+      },
+      {
+        "item": "Relique antique intacte",
+        "amount": "1 - 3",
+        "rate": "3.33%"
+      },
+      {
+        "item": "Relique antique lumineuse",
+        "amount": "1 - 2",
+        "rate": "2.5%"
+      },
+      {
+        "item": "Relique antique rayonnante",
+        "amount": "1 - 1",
+        "rate": "2%"
+      }
+    ]
+  },
+  {
+    "id": 290,
     "name": "Wixen",
     "work": {
       "kindling": 3,
@@ -9625,7 +13272,7 @@
     "zukan": 76
   },
   {
-    "id": 219,
+    "id": 291,
     "name": "Wixen Noct",
     "work": {
       "kindling": 4,
@@ -9660,7 +13307,7 @@
     "zukan": 76
   },
   {
-    "id": 220,
+    "id": 292,
     "name": "Woolipop",
     "work": {
       "farming": 1
@@ -9693,7 +13340,35 @@
     "zukan": 34
   },
   {
-    "id": 221,
+    "id": 293,
+    "name": "Woolipop Terra",
+    "work": {
+      "farming": 1
+    },
+    "nightWorker": false,
+    "tiers": {
+      "overall": "D",
+      "workers": "D",
+      "combat": "D",
+      "flyingMount": null,
+      "groundMount": null
+    },
+    "slug": "woolipop-terra",
+    "drops": [
+      {
+        "item": "Barbe à papa caramel",
+        "amount": "1 - 2",
+        "rate": "100%"
+      },
+      {
+        "item": "Laine",
+        "amount": "1 - 1",
+        "rate": "100%"
+      }
+    ]
+  },
+  {
+    "id": 294,
     "name": "Wumpo",
     "work": {
       "transporting": 6,
@@ -9762,7 +13437,7 @@
     "zukan": 91
   },
   {
-    "id": 222,
+    "id": 295,
     "name": "Wumpo Botan",
     "work": {
       "transporting": 6,
@@ -9833,7 +13508,7 @@
     "zukan": 91
   },
   {
-    "id": 223,
+    "id": 296,
     "name": "Xenogard",
     "work": {
       "mining": 4
@@ -9869,7 +13544,7 @@
     "zukan": 126
   },
   {
-    "id": 224,
+    "id": 297,
     "name": "Xenolord",
     "work": {
       "gathering": 2
@@ -9900,7 +13575,7 @@
     "zukan": 127
   },
   {
-    "id": 225,
+    "id": 298,
     "name": "Xenovader",
     "work": {
       "transporting": 2,
@@ -9929,7 +13604,7 @@
     "zukan": 125
   },
   {
-    "id": 226,
+    "id": 299,
     "name": "Yakumo",
     "work": {
       "gathering": 2
@@ -9960,7 +13635,7 @@
     "zukan": 121
   },
   {
-    "id": 227,
+    "id": 300,
     "name": "Zoe & Grizzbolt",
     "work": {
       "electricity": 3,
