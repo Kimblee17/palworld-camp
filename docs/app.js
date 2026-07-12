@@ -261,9 +261,9 @@ const ELEMENT_META = {
   Grass: { fr: "Herbe", c: "#7cc44d" },
 };
 const ELEMENT_ORDER = ["Neutral", "Fire", "Water", "Electric", "Ice", "Ground", "Dark", "Dragon", "Grass"];
-function palElements(name) { return (window.PAL_ELEMENTS && window.PAL_ELEMENTS[name]) || []; }
+function palElements(pal) { return (pal && pal.elements) || []; }
 function elementChipsHtml(pal) {
-  return palElements(pal.name).map(e => {
+  return palElements(pal).map(e => {
     const m = ELEMENT_META[e] || { fr: e, c: "#888" };
     return `<span class="el-chip" style="background:${m.c}" title="Élément : ${m.fr}">${m.fr}</span>`;
   }).join("");
@@ -1131,7 +1131,7 @@ function renderPalpedia() {
     .filter(p =>
       (!q || p.name.toLowerCase().includes(q)) &&
       (!wf || (p.work[wf] || 0) > 0) &&
-      (!ef || palElements(p.name).includes(ef)) &&
+      (!ef || palElements(p).includes(ef)) &&
       (!owned || boxQty(p.id) > 0))
     .sort((a, b) => {
       const va = pediaSortValue(a, pediaSort.key);

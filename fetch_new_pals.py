@@ -1,11 +1,10 @@
 """
 Ajoute les nouveaux Pals de Palworld 1.0 (présents dans les tier-lists mais absents
-de "Liste pals.csv") en scrapant leur fiche palworld.gg (/pal/<slug>) :
-  - compétences de travail (échelle 1–10)  -> nouvelles lignes de Liste pals.csv
-  - élément(s)                             -> docs/pal-elements.js
+de "Liste pals.csv") en scrapant leurs compétences de travail (échelle 1–10) sur la
+fiche palworld.gg (/pal/<slug>) -> nouvelles lignes de "Liste pals.csv".
 
-Les icônes ne sont plus gérées ici : elles dérivent du champ `code` (BPClass) ajouté à
-chaque Pal par build_data.py (URL = T_{code}_icon_normal.png).
+Icônes ET éléments ne sont plus gérés ici : ils dérivent des champs `code` / `elements`
+ajoutés à chaque Pal par build_data.py (depuis le dataset palworld.gg).
 Le statut « Travailleur de nuit » n'est pas exposé par palworld.gg -> "Non" par défaut.
 
 Relançable :  python fetch_new_pals.py
@@ -26,7 +25,6 @@ except Exception:
 BASE = Path(__file__).parent
 CSV_PATH = BASE / "Liste pals.csv"
 TIERS_JSON = BASE / "data" / "tier-lists.json"
-ELEMENTS_JS = BASE / "docs" / "pal-elements.js"
 
 # Nom de compétence palworld.gg -> identifiant interne.
 WORKNAME_TO_ID = {
@@ -45,12 +43,6 @@ ID_TO_COL = {
 }
 NIGHT_COL = "Travailleur de nuit"
 
-# Nom d'élément palworld.gg -> nom d'élément de l'app (ELEMENT_META).
-ELEMENT_MAP = {
-    "Normal": "Neutral", "Fire": "Fire", "Water": "Water", "Electricity": "Electric",
-    "Ice": "Ice", "Earth": "Ground", "Dark": "Dark", "Dragon": "Dragon", "Leaf": "Grass",
-}
-
 WORK_BLOCK = re.compile(
     r'<div class="name">([^<]+)</div></div><div class="level">'
     r'<span class="text">Lv</span><span[^>]*>(\d+)</span>'
@@ -63,8 +55,8 @@ def fetch(url):
         return r.read().decode("utf-8", "replace")
 
 
-def scrape(slug, name):
-    """Renvoie (work{}, elements[]) ou None si la fiche est absente."""
+def scrape(slug):
+    """Renvoie {id_compétence: niveau} ou None si la fiche est absente."""
     try:
         html = fetch("https://palworld.gg/pal/" + slug)
     except Exception:
@@ -74,22 +66,7 @@ def scrape(slug, name):
         wid = WORKNAME_TO_ID.get(wname.strip())
         if wid:
             work[wid] = int(lvl)
-    # éléments : bloc hero uniquement (jusqu'à la section "about")
-    m = re.search(r'<div class="elements">(.*?)<div class="about">', html, re.S)
-    seg = m.group(1) if m else ""
-    elements, seen = [], set()
-    for raw in re.findall(r'alt="([A-Za-z]+) element"', seg):
-        e = ELEMENT_MAP.get(raw, raw)
-        if e not in seen:
-            seen.add(e); elements.append(e)
-    return work, elements
-
-
-def load_js_object(path, var):
-    """Extrait l'objet JSON de `window.<var> = {...};`."""
-    txt = path.read_text(encoding="utf-8")
-    m = re.search(r"window\." + var + r"\s*=\s*(\{[^{}]*\});", txt, re.S)
-    return json.loads(m.group(1)) if m else {}
+    return work
 
 
 def main():
@@ -109,15 +86,12 @@ def main():
     missing = sorted(n for n in name2slug if n not in existing)
     print(f"{len(missing)} Pals à ajouter.")
 
-    elements_map = load_js_object(ELEMENTS_JS, "PAL_ELEMENTS")
-
-    added, no_work, no_el, not_found = 0, [], [], []
+    added, no_work, not_found = 0, [], []
     for i, name in enumerate(missing, 1):
         slug = name2slug[name]
-        res = scrape(slug, name)
-        if res is None:
+        work = scrape(slug)
+        if work is None:
             not_found.append(f"{name} ({slug})"); continue
-        work, els = res
         row = {c: "" for c in fields}
         row["Nom"] = name
         for wid, col in ID_TO_COL.items():
@@ -125,8 +99,6 @@ def main():
         row[NIGHT_COL] = "Non"
         rows.append(row)
         if not work: no_work.append(name)
-        if els: elements_map[name] = els
-        else: no_el.append(name)
         added += 1
         if i % 20 == 0:
             print(f"  … {i}/{len(missing)}")
@@ -140,18 +112,8 @@ def main():
         w.writeheader()
         w.writerows(rows)
 
-    # Réécriture pal-elements.js
-    el_sorted = {k: elements_map[k] for k in sorted(elements_map)}
-    ELEMENTS_JS.write_text(
-        f"// Nom -> element(s) (palworld.wiki.gg + palworld.gg pour les Pals 1.0). {len(el_sorted)}/{len(rows)} Pals.\n"
-        "window.PAL_ELEMENTS = " + json.dumps(el_sorted, ensure_ascii=False) + ";\n",
-        encoding="utf-8",
-    )
-
     print(f"\n{added} Pals ajoutés au CSV ({len(rows)} au total).")
-    print(f"  éléments : {len(el_sorted)}")
     if no_work:   print(f"  ⚠ {len(no_work)} sans compétence trouvée : {', '.join(no_work)}")
-    if no_el:     print(f"  ⚠ {len(no_el)} sans élément : {', '.join(no_el)}")
     if not_found: print(f"  ⚠ {len(not_found)} fiches introuvables : {', '.join(not_found)}")
 
 

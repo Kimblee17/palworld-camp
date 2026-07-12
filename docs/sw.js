@@ -1,10 +1,10 @@
 // Service worker — app installable + hors-ligne.
 // Bump CACHE à chaque déploiement pour forcer le rafraîchissement du shell.
-const CACHE = "pw-v9";
+const CACHE = "pw-v10";
 const IMG_CACHE = "pw-img-v1";
 const SHELL = [
   "./", "index.html", "app.js", "style.css", "data.js",
-  "pal-elements.js", "firebase-sync.js", "icon.svg", "manifest.webmanifest",
+  "firebase-sync.js", "icon.svg", "manifest.webmanifest",
 ];
 
 self.addEventListener("install", (e) => {

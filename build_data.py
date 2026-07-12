@@ -150,6 +150,8 @@ def build_pals():
         if gd:
             if gd.get("code"):
                 pal["code"] = gd["code"]   # nom de code interne (BPClass) pour l'import CoWork
+            if gd.get("elements"):
+                pal["elements"] = gd["elements"]   # élément(s) canoniques pour la Palpedia
             pal["level"] = gd["level"]
             pal["rarity"] = gd["rarity"]
             pal["rarityCategory"] = gd["rarityCategory"]

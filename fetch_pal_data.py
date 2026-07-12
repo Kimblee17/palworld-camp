@@ -32,6 +32,18 @@ SEED_PAGES = ["/capture-rate", "/pals", "/"]
 # Langue du dataset à récupérer (noms anglais = ceux du CSV).
 LANG = "en"
 
+# Nom d'élément du bundle palworld.gg -> nom canonique de l'app (ELEMENT_META).
+ELEMENT_MAP = {
+    "Normal": "Neutral", "Leaf": "Grass", "Electricity": "Electric", "Earth": "Ground",
+    "Fire": "Fire", "Water": "Water", "Ice": "Ice", "Dark": "Dark", "Dragon": "Dragon",
+}
+
+
+def map_elements(raw):
+    """['Dragon','Water'] du bundle -> noms canoniques, ordre conservé."""
+    return [ELEMENT_MAP.get(e, e) for e in raw]
+
+
 # rarityTier de palworld.gg : e>10 legendary, e>=8 epic, e>=5 rare, sinon common.
 def rarity_category(r):
     if r is None:
@@ -98,8 +110,11 @@ def parse_dataset(js):
         if not name:
             continue
         rarity = _grp(s, r",rarity:(\d+),combiRank:", int)
+        el_match = re.search(r"elements:\[([^\]]*)\]", s)
+        raw_el = re.findall(r'"([A-Za-z]+)"', el_match.group(1)) if el_match else []
         out[name] = {
             "code": _grp(s, r'^\{id:"[a-z0-9_]+",key:"([A-Za-z0-9_]+)"', str),
+            "elements": map_elements(raw_el),
             "level": _grp(s, r",level:(\d+),captureRate:", int),
             "rarity": rarity,
             "rarityCategory": rarity_category(rarity),

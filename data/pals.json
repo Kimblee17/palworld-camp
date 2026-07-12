@@ -64,6 +64,9 @@
       }
     ],
     "code": "Anubis",
+    "elements": [
+      "Ground"
+    ],
     "level": 68,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -102,6 +105,9 @@
       "ground": "700 - 1050"
     },
     "code": "FlameBuffalo",
+    "elements": [
+      "Fire"
+    ],
     "level": 14,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -170,6 +176,10 @@
       "flying": "700 - 1100"
     },
     "code": "BlackMetalDragon",
+    "elements": [
+      "Dragon",
+      "Dark"
+    ],
     "level": 80,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -232,6 +242,9 @@
       "ground": "900 - 1260"
     },
     "code": "BlueThunderHorse",
+    "elements": [
+      "Electric"
+    ],
     "level": 63,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -299,6 +312,10 @@
       "ground": "600 - 900"
     },
     "code": "BlueDragon",
+    "elements": [
+      "Water",
+      "Dragon"
+    ],
     "level": 35,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -368,6 +385,10 @@
       }
     ],
     "code": "BlueDragon_Ice",
+    "elements": [
+      "Ice",
+      "Dragon"
+    ],
     "level": 50,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -442,6 +463,9 @@
       "ground": "750 - 1100"
     },
     "code": "SnowTigerBeastman",
+    "elements": [
+      "Ice"
+    ],
     "level": 75,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -506,6 +530,9 @@
       "flying": "750 - 1200"
     },
     "code": "ThunderBird",
+    "elements": [
+      "Electric"
+    ],
     "level": 30,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -541,6 +568,9 @@
       }
     ],
     "code": "SoldierBee",
+    "elements": [
+      "Grass"
+    ],
     "level": 20,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -572,6 +602,9 @@
       }
     ],
     "code": "NightLady",
+    "elements": [
+      "Dark"
+    ],
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -608,6 +641,9 @@
       }
     ],
     "code": "NightLady_Dark",
+    "elements": [
+      "Dark"
+    ],
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -676,6 +712,9 @@
       "ground": "800 - 1200"
     },
     "code": "KingBahamut",
+    "elements": [
+      "Fire"
+    ],
     "level": 46,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -741,6 +780,10 @@
       }
     ],
     "code": "KingBahamut_Dragon",
+    "elements": [
+      "Dragon",
+      "Fire"
+    ],
     "level": 1,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -804,6 +847,9 @@
       "ground": "800 - 1200"
     },
     "code": "Manticore",
+    "elements": [
+      "Fire"
+    ],
     "level": 35,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -864,6 +910,10 @@
       }
     ],
     "code": "Manticore_Dark",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
     "level": 34,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -893,6 +943,9 @@
       }
     ],
     "code": "YakushimaMonster001_Blue",
+    "elements": [
+      "Water"
+    ],
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -969,6 +1022,10 @@
       }
     ],
     "code": "Plesiosaur",
+    "elements": [
+      "Grass",
+      "Ground"
+    ],
     "level": 33,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1007,6 +1064,9 @@
       }
     ],
     "code": "LittleBriarRose",
+    "elements": [
+      "Grass"
+    ],
     "level": 16,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1074,6 +1134,9 @@
       "ground": "550 - 1020"
     },
     "code": "SakuraSaurus",
+    "elements": [
+      "Grass"
+    ],
     "level": 33,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1138,6 +1201,10 @@
       }
     ],
     "code": "SakuraSaurus_Water",
+    "elements": [
+      "Grass",
+      "Water"
+    ],
     "level": 51,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -1176,6 +1243,9 @@
       }
     ],
     "code": "Ronin",
+    "elements": [
+      "Fire"
+    ],
     "level": 25,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1219,6 +1289,10 @@
       }
     ],
     "code": "Ronin_Dark",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
     "level": 46,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1259,6 +1333,9 @@
       }
     ],
     "code": "BerryGoat",
+    "elements": [
+      "Grass"
+    ],
     "level": 6,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1304,6 +1381,9 @@
       }
     ],
     "code": "BerryGoat_Dark",
+    "elements": [
+      "Dark"
+    ],
     "level": 50,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1336,6 +1416,9 @@
       }
     ],
     "code": "PinkCat",
+    "elements": [
+      "Neutral"
+    ],
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1365,6 +1448,9 @@
       }
     ],
     "code": "YakushimaMonster003",
+    "elements": [
+      "Neutral"
+    ],
     "level": 36,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1405,6 +1491,9 @@
       }
     ],
     "code": "DarkCrow",
+    "elements": [
+      "Dark"
+    ],
     "level": 14,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1435,6 +1524,9 @@
       }
     ],
     "code": "FlyingManta",
+    "elements": [
+      "Water"
+    ],
     "level": 2,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -1466,6 +1558,10 @@
       }
     ],
     "code": "FlyingManta_Thunder",
+    "elements": [
+      "Water",
+      "Electric"
+    ],
     "level": 26,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1539,6 +1635,9 @@
       "ground": "800 - 1200"
     },
     "code": "WhiteDeer",
+    "elements": [
+      "Neutral"
+    ],
     "level": 54,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -1574,6 +1673,9 @@
       }
     ],
     "code": "ChickenPal",
+    "elements": [
+      "Neutral"
+    ],
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1642,6 +1744,10 @@
       "ground": "750 - 1050"
     },
     "code": "WeaselDragon",
+    "elements": [
+      "Ice",
+      "Dragon"
+    ],
     "level": 32,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1707,6 +1813,10 @@
       }
     ],
     "code": "WeaselDragon_Fire",
+    "elements": [
+      "Fire",
+      "Dragon"
+    ],
     "level": 40,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1748,6 +1858,9 @@
       }
     ],
     "code": "CuteButterfly",
+    "elements": [
+      "Grass"
+    ],
     "level": 16,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1778,6 +1891,9 @@
       }
     ],
     "code": "WoolFox",
+    "elements": [
+      "Neutral"
+    ],
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1815,6 +1931,9 @@
       }
     ],
     "code": "KendoFrog",
+    "elements": [
+      "Water"
+    ],
     "level": 4,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -1857,6 +1976,10 @@
       }
     ],
     "code": "KendoFrog_Dark",
+    "elements": [
+      "Water",
+      "Dark"
+    ],
     "level": 61,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -1889,6 +2012,9 @@
       }
     ],
     "code": "WhiteTiger",
+    "elements": [
+      "Ice"
+    ],
     "level": 44,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1921,6 +2047,9 @@
       }
     ],
     "code": "WhiteTiger_Ground",
+    "elements": [
+      "Ground"
+    ],
     "level": 62,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -1957,6 +2086,9 @@
       }
     ],
     "code": "DreamDemon",
+    "elements": [
+      "Dark"
+    ],
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -1989,6 +2121,9 @@
       "ground": "900 - 1200"
     },
     "code": "FeatherOstrich",
+    "elements": [
+      "Ground"
+    ],
     "level": 31,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -2025,6 +2160,9 @@
       }
     ],
     "code": "RaijinDaughter",
+    "elements": [
+      "Electric"
+    ],
     "level": 30,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -2067,6 +2205,10 @@
       }
     ],
     "code": "RaijinDaughter_Water",
+    "elements": [
+      "Dark",
+      "Electric"
+    ],
     "level": 50,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -2096,6 +2238,9 @@
       }
     ],
     "code": "YakushimaBoss001_Small",
+    "elements": [
+      "Dark"
+    ],
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2128,6 +2273,9 @@
       }
     ],
     "code": "NegativeKoala",
+    "elements": [
+      "Dark"
+    ],
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -2162,6 +2310,9 @@
       }
     ],
     "code": "DrillGame",
+    "elements": [
+      "Ground"
+    ],
     "level": 33,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -2200,6 +2351,10 @@
       "ground": "700 - 1030"
     },
     "code": "FlowerDinosaur",
+    "elements": [
+      "Grass",
+      "Dragon"
+    ],
     "level": 25,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -2235,6 +2390,10 @@
       }
     ],
     "code": "FlowerDinosaur_Electric",
+    "elements": [
+      "Electric",
+      "Dragon"
+    ],
     "level": 34,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -2277,6 +2436,9 @@
       "ground": "800 - 1050"
     },
     "code": "Garm",
+    "elements": [
+      "Neutral"
+    ],
     "level": 6,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -2310,6 +2472,9 @@
       }
     ],
     "code": "SifuDog",
+    "elements": [
+      "Neutral"
+    ],
     "level": 53,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -2347,6 +2512,10 @@
       }
     ],
     "code": "LazyCatfish",
+    "elements": [
+      "Ground",
+      "Water"
+    ],
     "level": 14,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -2389,6 +2558,10 @@
       }
     ],
     "code": "LazyCatfish_Gold",
+    "elements": [
+      "Ground",
+      "Water"
+    ],
     "level": 25,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -2461,6 +2634,9 @@
       "ground": "700 - 900"
     },
     "code": "Deer",
+    "elements": [
+      "Neutral"
+    ],
     "level": 6,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -2530,6 +2706,9 @@
       }
     ],
     "code": "Deer_Ground",
+    "elements": [
+      "Ground"
+    ],
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -2568,6 +2747,9 @@
       }
     ],
     "code": "QueenBee",
+    "elements": [
+      "Grass"
+    ],
     "level": 34,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -2630,6 +2812,9 @@
       "flying": "630 - 800"
     },
     "code": "FairyDragon",
+    "elements": [
+      "Dragon"
+    ],
     "level": 20,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -2693,6 +2878,10 @@
       "flying": "630 - 800"
     },
     "code": "FairyDragon_Water",
+    "elements": [
+      "Dragon",
+      "Water"
+    ],
     "level": 33,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -2722,6 +2911,9 @@
       }
     ],
     "code": "YakushimaMonster002",
+    "elements": [
+      "Neutral"
+    ],
     "level": 42,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -2751,6 +2943,9 @@
       }
     ],
     "code": "YakushimaBoss001",
+    "elements": [
+      "Dark"
+    ],
     "level": 1,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -2824,6 +3019,9 @@
       "flying": "1000 - 1400"
     },
     "code": "Horus",
+    "elements": [
+      "Fire"
+    ],
     "level": 76,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -2897,6 +3095,9 @@
       "flying": "1000 - 1400"
     },
     "code": "Horus_Water",
+    "elements": [
+      "Water"
+    ],
     "level": 65,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -2931,6 +3132,9 @@
       }
     ],
     "code": "CatVampire",
+    "elements": [
+      "Dark"
+    ],
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -2998,6 +3202,9 @@
       "ground": "750 - 1050"
     },
     "code": "FengyunDeeper",
+    "elements": [
+      "Neutral"
+    ],
     "level": 45,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -3068,6 +3275,9 @@
       }
     ],
     "code": "FengyunDeeper_Electric",
+    "elements": [
+      "Electric"
+    ],
     "level": 57,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -3108,6 +3318,9 @@
       }
     ],
     "code": "StuffedShark",
+    "elements": [
+      "Water"
+    ],
     "level": 1,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -3149,6 +3362,10 @@
       }
     ],
     "code": "StuffedShark_Fire",
+    "elements": [
+      "Water",
+      "Fire"
+    ],
     "level": 1,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -3186,6 +3403,9 @@
       }
     ],
     "code": "LavaGirl",
+    "elements": [
+      "Fire"
+    ],
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -3224,6 +3444,9 @@
       }
     ],
     "code": "FlowerRabbit",
+    "elements": [
+      "Grass"
+    ],
     "level": 22,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -3259,6 +3482,9 @@
       }
     ],
     "code": "IceFox",
+    "elements": [
+      "Ice"
+    ],
     "level": 30,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -3293,6 +3519,9 @@
       }
     ],
     "code": "Kitsunebi",
+    "elements": [
+      "Fire"
+    ],
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -3327,6 +3556,9 @@
       }
     ],
     "code": "Kitsunebi_Ice",
+    "elements": [
+      "Ice"
+    ],
     "level": 30,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -3364,6 +3596,9 @@
       "flying": "1200 - 1800"
     },
     "code": "IceHorse",
+    "elements": [
+      "Ice"
+    ],
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -3401,6 +3636,9 @@
       "flying": "1200 - 1800"
     },
     "code": "IceHorse_Dark",
+    "elements": [
+      "Dark"
+    ],
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -3431,6 +3669,9 @@
       }
     ],
     "code": "SnowPeafowl",
+    "elements": [
+      "Ice"
+    ],
     "level": 39,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -3467,6 +3708,9 @@
       }
     ],
     "code": "BluePlatypus",
+    "elements": [
+      "Water"
+    ],
     "level": 6,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -3509,6 +3753,10 @@
       }
     ],
     "code": "BluePlatypus_Fire",
+    "elements": [
+      "Water",
+      "Fire"
+    ],
     "level": 32,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -3540,6 +3788,9 @@
       }
     ],
     "code": "CuteMole",
+    "elements": [
+      "Ground"
+    ],
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -3574,6 +3825,9 @@
       }
     ],
     "code": "Eagle",
+    "elements": [
+      "Neutral"
+    ],
     "level": 11,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -3609,6 +3863,10 @@
       }
     ],
     "code": "GhostAnglerfish",
+    "elements": [
+      "Dark",
+      "Water"
+    ],
     "level": 30,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -3645,6 +3903,10 @@
       }
     ],
     "code": "GhostAnglerfish_Fire",
+    "elements": [
+      "Fire",
+      "Water"
+    ],
     "level": 1,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -3677,6 +3939,9 @@
       "ground": "840 - 1260"
     },
     "code": "GoldenHorse",
+    "elements": [
+      "Ground"
+    ],
     "level": 53,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -3713,6 +3978,10 @@
       }
     ],
     "code": "OctopusGirl",
+    "elements": [
+      "Water",
+      "Dark"
+    ],
     "level": 10,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -3744,6 +4013,9 @@
       }
     ],
     "code": "SharkKid",
+    "elements": [
+      "Water"
+    ],
     "level": 14,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -3775,6 +4047,9 @@
       }
     ],
     "code": "SharkKid_Fire",
+    "elements": [
+      "Fire"
+    ],
     "level": 32,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -3841,6 +4116,9 @@
       }
     ],
     "code": "Gorilla",
+    "elements": [
+      "Neutral"
+    ],
     "level": 22,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -3907,6 +4185,9 @@
       }
     ],
     "code": "Gorilla_Ground",
+    "elements": [
+      "Ground"
+    ],
     "level": 35,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -3936,6 +4217,9 @@
       }
     ],
     "code": "YakushimaMonster001",
+    "elements": [
+      "Grass"
+    ],
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -3968,6 +4252,9 @@
       "ground": "650 - 1000"
     },
     "code": "NaughtyCat",
+    "elements": [
+      "Neutral"
+    ],
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -4040,6 +4327,9 @@
       }
     ],
     "code": "ElecPanda",
+    "elements": [
+      "Electric"
+    ],
     "level": 70,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -4074,6 +4364,10 @@
       }
     ],
     "code": "PlantSlime",
+    "elements": [
+      "Grass",
+      "Ground"
+    ],
     "level": 2,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4110,6 +4404,9 @@
       }
     ],
     "code": "WindChimes",
+    "elements": [
+      "Ground"
+    ],
     "level": 9,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4147,6 +4444,9 @@
       }
     ],
     "code": "WindChimes_Ice",
+    "elements": [
+      "Ice"
+    ],
     "level": 32,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -4187,6 +4487,9 @@
       }
     ],
     "code": "LegendDeer",
+    "elements": [
+      "Neutral"
+    ],
     "level": 1,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -4254,6 +4557,9 @@
       "flying": "700 - 1100"
     },
     "code": "HadesBird",
+    "elements": [
+      "Dark"
+    ],
     "level": 24,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -4322,6 +4628,10 @@
       "flying": "700 - 1100"
     },
     "code": "HadesBird_Electric",
+    "elements": [
+      "Dark",
+      "Electric"
+    ],
     "level": 47,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -4358,6 +4668,10 @@
       }
     ],
     "code": "LeafMomonga",
+    "elements": [
+      "Grass",
+      "Neutral"
+    ],
     "level": 1,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -4392,6 +4706,9 @@
       }
     ],
     "code": "WizardOwl",
+    "elements": [
+      "Dark"
+    ],
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4424,6 +4741,9 @@
       }
     ],
     "code": "IceWitch",
+    "elements": [
+      "Ice"
+    ],
     "level": 39,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -4453,6 +4773,9 @@
       }
     ],
     "code": "YakushimaMonster003_Purple",
+    "elements": [
+      "Neutral"
+    ],
     "level": 42,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -4482,6 +4805,9 @@
       }
     ],
     "code": "YakushimaMonster001_Pink",
+    "elements": [
+      "Neutral"
+    ],
     "level": 42,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -4519,6 +4845,10 @@
       }
     ],
     "code": "Baphomet",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
     "level": 30,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -4555,6 +4885,9 @@
       }
     ],
     "code": "Baphomet_Dark",
+    "elements": [
+      "Dark"
+    ],
     "level": 37,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -4591,6 +4924,9 @@
       }
     ],
     "code": "JellyfishFairy",
+    "elements": [
+      "Water"
+    ],
     "level": 6,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -4628,6 +4964,10 @@
       }
     ],
     "code": "JellyfishGhost",
+    "elements": [
+      "Water",
+      "Dark"
+    ],
     "level": 14,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -4675,6 +5015,9 @@
       "flying": "1700 - 3300"
     },
     "code": "JetDragon",
+    "elements": [
+      "Dragon"
+    ],
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -4704,6 +5047,9 @@
       }
     ],
     "code": "Hedgehog",
+    "elements": [
+      "Electric"
+    ],
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -4733,6 +5079,9 @@
       }
     ],
     "code": "Hedgehog_Ice",
+    "elements": [
+      "Ice"
+    ],
     "level": 10,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -4795,6 +5144,10 @@
       "ground": "600 - 1000"
     },
     "code": "Umihebi",
+    "elements": [
+      "Dragon",
+      "Water"
+    ],
     "level": 80,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -4862,6 +5215,10 @@
       "ground": "600 - 1000"
     },
     "code": "Umihebi_Fire",
+    "elements": [
+      "Dragon",
+      "Fire"
+    ],
     "level": 66,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -4903,6 +5260,9 @@
       }
     ],
     "code": "CatMage",
+    "elements": [
+      "Dark"
+    ],
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -4945,6 +5305,10 @@
       }
     ],
     "code": "CatMage_Fire",
+    "elements": [
+      "Dark",
+      "Fire"
+    ],
     "level": 40,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -4980,6 +5344,9 @@
       }
     ],
     "code": "Kelpie",
+    "elements": [
+      "Water"
+    ],
     "level": 9,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -5015,6 +5382,9 @@
       }
     ],
     "code": "Kelpie_Fire",
+    "elements": [
+      "Fire"
+    ],
     "level": 20,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -5054,6 +5424,9 @@
       }
     ],
     "code": "SmallArmadillo",
+    "elements": [
+      "Ground"
+    ],
     "level": 40,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -5095,6 +5468,10 @@
       }
     ],
     "code": "NegativeOctopus",
+    "elements": [
+      "Dark",
+      "Water"
+    ],
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -5131,6 +5508,10 @@
       }
     ],
     "code": "NegativeOctopus_Neutral",
+    "elements": [
+      "Neutral",
+      "Water"
+    ],
     "level": 24,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -5193,6 +5574,9 @@
       "ground": "700 - 1040"
     },
     "code": "KingAlpaca",
+    "elements": [
+      "Neutral"
+    ],
     "level": 80,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -5228,6 +5612,9 @@
       }
     ],
     "code": "KingAlpaca_Ice",
+    "elements": [
+      "Ice"
+    ],
     "level": 1,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -5265,6 +5652,9 @@
       "ground": "700 - 1100"
     },
     "code": "AmaterasuWolf",
+    "elements": [
+      "Fire"
+    ],
     "level": 34,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -5304,6 +5694,9 @@
       }
     ],
     "code": "AmaterasuWolf_Dark",
+    "elements": [
+      "Dark"
+    ],
     "level": 61,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -5375,6 +5768,9 @@
       }
     ],
     "code": "WingGolem",
+    "elements": [
+      "Ground"
+    ],
     "level": 55,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -5411,6 +5807,9 @@
       }
     ],
     "code": "SheepBall",
+    "elements": [
+      "Neutral"
+    ],
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -5452,6 +5851,9 @@
       }
     ],
     "code": "LizardMan",
+    "elements": [
+      "Dark"
+    ],
     "level": 21,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -5494,6 +5896,9 @@
       }
     ],
     "code": "LizardMan_Fire",
+    "elements": [
+      "Fire"
+    ],
     "level": 28,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -5532,6 +5937,9 @@
       }
     ],
     "code": "Carbunclo",
+    "elements": [
+      "Grass"
+    ],
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -5561,6 +5969,9 @@
       }
     ],
     "code": "Werewolf",
+    "elements": [
+      "Dark"
+    ],
     "level": 14,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -5591,6 +6002,9 @@
       }
     ],
     "code": "Werewolf_Ice",
+    "elements": [
+      "Ice"
+    ],
     "level": 40,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -5643,6 +6057,9 @@
       }
     ],
     "code": "PinkLizard",
+    "elements": [
+      "Dark"
+    ],
     "level": 30,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -5680,6 +6097,9 @@
       }
     ],
     "code": "LeafPrincess",
+    "elements": [
+      "Grass"
+    ],
     "level": 40,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -5711,6 +6131,9 @@
       }
     ],
     "code": "Mutant",
+    "elements": [
+      "Neutral"
+    ],
     "level": 25,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -5793,6 +6216,9 @@
       }
     ],
     "code": "LilyQueen",
+    "elements": [
+      "Grass"
+    ],
     "level": 75,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -5874,6 +6300,9 @@
       }
     ],
     "code": "LilyQueen_Dark",
+    "elements": [
+      "Dark"
+    ],
     "level": 75,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -5948,6 +6377,10 @@
       "ground": "600 - 1030"
     },
     "code": "GrassMammoth",
+    "elements": [
+      "Grass",
+      "Ground"
+    ],
     "level": 26,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -6019,6 +6452,10 @@
       }
     ],
     "code": "GrassMammoth_Ice",
+    "elements": [
+      "Ice",
+      "Ground"
+    ],
     "level": 36,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -6062,6 +6499,9 @@
       "ground": "700 - 1100"
     },
     "code": "GhostBeast",
+    "elements": [
+      "Dark"
+    ],
     "level": 38,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -6097,6 +6537,9 @@
       }
     ],
     "code": "Bastet",
+    "elements": [
+      "Dark"
+    ],
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -6132,6 +6575,9 @@
       }
     ],
     "code": "Bastet_Ice",
+    "elements": [
+      "Ice"
+    ],
     "level": 30,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -6169,6 +6615,9 @@
       "ground": "500 - 900"
     },
     "code": "Alpaca",
+    "elements": [
+      "Neutral"
+    ],
     "level": 5,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -6204,6 +6653,10 @@
       }
     ],
     "code": "DarkScorpion",
+    "elements": [
+      "Dark",
+      "Ground"
+    ],
     "level": 31,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -6239,6 +6692,9 @@
       }
     ],
     "code": "DarkScorpion_Ground",
+    "elements": [
+      "Ground"
+    ],
     "level": 48,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -6279,6 +6735,9 @@
       }
     ],
     "code": "MimicDog",
+    "elements": [
+      "Neutral"
+    ],
     "level": 5,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -6351,6 +6810,9 @@
       }
     ],
     "code": "GrassPanda",
+    "elements": [
+      "Grass"
+    ],
     "level": 32,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -6428,6 +6890,9 @@
       }
     ],
     "code": "GrassPanda_Electric",
+    "elements": [
+      "Electric"
+    ],
     "level": 35,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -6462,6 +6927,9 @@
       }
     ],
     "code": "CowPal",
+    "elements": [
+      "Neutral"
+    ],
     "level": 9,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -6503,6 +6971,10 @@
       }
     ],
     "code": "IceCrocodile",
+    "elements": [
+      "Ice",
+      "Water"
+    ],
     "level": 10,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -6546,6 +7018,9 @@
       "ground": "1300 - 1900"
     },
     "code": "BlackCentaur",
+    "elements": [
+      "Dark"
+    ],
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -6590,6 +7065,9 @@
       }
     ],
     "code": "PoseidonOrca",
+    "elements": [
+      "Water"
+    ],
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -6620,6 +7098,9 @@
       }
     ],
     "code": "GhostRabbit",
+    "elements": [
+      "Dark"
+    ],
     "level": 50,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -6652,6 +7133,9 @@
       "flying": "600 - 750"
     },
     "code": "HawkBird",
+    "elements": [
+      "Neutral"
+    ],
     "level": 12,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -6686,6 +7170,9 @@
       }
     ],
     "code": "NightFox",
+    "elements": [
+      "Dark"
+    ],
     "level": 4,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -6718,6 +7205,9 @@
       }
     ],
     "code": "BadCatgirl",
+    "elements": [
+      "Dark"
+    ],
     "level": 50,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -6747,6 +7237,9 @@
       }
     ],
     "code": "MysteryMask",
+    "elements": [
+      "Dark"
+    ],
     "level": 50,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -6818,6 +7311,10 @@
       }
     ],
     "code": "ThunderDragonMan",
+    "elements": [
+      "Dragon",
+      "Electric"
+    ],
     "level": 74,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -6861,6 +7358,9 @@
       "ground": "800 - 1800"
     },
     "code": "SaintCentaur",
+    "elements": [
+      "Neutral"
+    ],
     "level": 1,
     "rarity": 20,
     "rarityCategory": "Legendary",
@@ -6902,6 +7402,9 @@
       }
     ],
     "code": "TropicalOstrich",
+    "elements": [
+      "Grass"
+    ],
     "level": 32,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -6939,6 +7442,10 @@
       }
     ],
     "code": "Penguin",
+    "elements": [
+      "Water",
+      "Ice"
+    ],
     "level": 2,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -6976,6 +7483,10 @@
       }
     ],
     "code": "Penguin_Electric",
+    "elements": [
+      "Water",
+      "Electric"
+    ],
     "level": 1,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -7014,6 +7525,10 @@
       }
     ],
     "code": "CaptainPenguin",
+    "elements": [
+      "Water",
+      "Ice"
+    ],
     "level": 20,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -7052,6 +7567,10 @@
       }
     ],
     "code": "CaptainPenguin_Black",
+    "elements": [
+      "Water",
+      "Electric"
+    ],
     "level": 1,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -7090,6 +7609,9 @@
       }
     ],
     "code": "FlowerDoll",
+    "elements": [
+      "Grass"
+    ],
     "level": 28,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -7120,6 +7642,10 @@
       }
     ],
     "code": "IceSeal",
+    "elements": [
+      "Ice",
+      "Water"
+    ],
     "level": 33,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -7151,6 +7677,10 @@
       }
     ],
     "code": "ScorpionMan",
+    "elements": [
+      "Dark",
+      "Ground"
+    ],
     "level": 48,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -7194,6 +7724,10 @@
       }
     ],
     "code": "BlueberryFairy",
+    "elements": [
+      "Grass",
+      "Dark"
+    ],
     "level": 50,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -7223,6 +7757,9 @@
       }
     ],
     "code": "YakushimaMonster001_Purple",
+    "elements": [
+      "Dark"
+    ],
     "level": 36,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -7291,6 +7828,9 @@
       "ground": "850 - 1300"
     },
     "code": "FireKirin",
+    "elements": [
+      "Fire"
+    ],
     "level": 30,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -7356,6 +7896,10 @@
       }
     ],
     "code": "FireKirin_Dark",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
     "level": 32,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -7421,6 +7965,9 @@
       "flying": "800 - 950"
     },
     "code": "SkyDragon",
+    "elements": [
+      "Dragon"
+    ],
     "level": 40,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -7497,6 +8044,10 @@
       "flying": "800 - 950"
     },
     "code": "SkyDragon_Grass",
+    "elements": [
+      "Dragon",
+      "Grass"
+    ],
     "level": 45,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -7560,6 +8111,9 @@
       "flying": "800 - 1300"
     },
     "code": "RedArmorBird",
+    "elements": [
+      "Fire"
+    ],
     "level": 32,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -7589,6 +8143,9 @@
       }
     ],
     "code": "YakushimaMonster001_Rainbow",
+    "elements": [
+      "Neutral"
+    ],
     "level": 42,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -7621,6 +8178,9 @@
       "ground": "700 - 1150"
     },
     "code": "ThunderDog",
+    "elements": [
+      "Electric"
+    ],
     "level": 31,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -7650,6 +8210,9 @@
       }
     ],
     "code": "YakushimaMonster001_Red",
+    "elements": [
+      "Fire"
+    ],
     "level": 36,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -7728,6 +8291,9 @@
       "ground": "700 - 1070"
     },
     "code": "IceDeer",
+    "elements": [
+      "Ice"
+    ],
     "level": 32,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -7793,6 +8359,10 @@
       }
     ],
     "code": "LazyDragon",
+    "elements": [
+      "Dragon",
+      "Water"
+    ],
     "level": 30,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -7863,6 +8433,10 @@
       }
     ],
     "code": "LazyDragon_Electric",
+    "elements": [
+      "Dragon",
+      "Electric"
+    ],
     "level": 48,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -7896,6 +8470,10 @@
       "ground": "550 - 1000"
     },
     "code": "VolcanicMonster",
+    "elements": [
+      "Fire",
+      "Ground"
+    ],
     "level": 42,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -7926,6 +8504,10 @@
       }
     ],
     "code": "VolcanicMonster_Ice",
+    "elements": [
+      "Ice",
+      "Ground"
+    ],
     "level": 42,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -7972,6 +8554,9 @@
       }
     ],
     "code": "PinkRabbit",
+    "elements": [
+      "Neutral"
+    ],
     "level": 1,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -8019,6 +8604,9 @@
       }
     ],
     "code": "PinkRabbit_Grass",
+    "elements": [
+      "Grass"
+    ],
     "level": 18,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -8058,6 +8646,9 @@
       }
     ],
     "code": "RobinHood",
+    "elements": [
+      "Grass"
+    ],
     "level": 22,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -8096,6 +8687,10 @@
       }
     ],
     "code": "RobinHood_Ground",
+    "elements": [
+      "Grass",
+      "Ground"
+    ],
     "level": 32,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -8131,6 +8726,9 @@
       }
     ],
     "code": "FlameBambi",
+    "elements": [
+      "Fire"
+    ],
     "level": 4,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -8173,6 +8771,9 @@
       "ground": "500 - 800"
     },
     "code": "Boar",
+    "elements": [
+      "Ground"
+    ],
     "level": 5,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -8252,6 +8853,10 @@
       "flying": "1000 - 1600"
     },
     "code": "MoonQueen",
+    "elements": [
+      "Dark",
+      "Neutral"
+    ],
     "level": 76,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -8329,6 +8934,9 @@
       "flying": "850 - 1200"
     },
     "code": "BlackGriffon",
+    "elements": [
+      "Dark"
+    ],
     "level": 50,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -8405,6 +9013,9 @@
       "ground": "740 - 1050"
     },
     "code": "MushroomDragon",
+    "elements": [
+      "Grass"
+    ],
     "level": 39,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -8445,6 +9056,10 @@
       "ground": "740 - 1050"
     },
     "code": "MushroomDragon_Dark",
+    "elements": [
+      "Grass",
+      "Dark"
+    ],
     "level": 39,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -8481,6 +9096,9 @@
       }
     ],
     "code": "WhiteMoth",
+    "elements": [
+      "Ice"
+    ],
     "level": 36,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -8543,6 +9161,9 @@
       "ground": "700 - 1050"
     },
     "code": "WhiteShieldDragon",
+    "elements": [
+      "Dragon"
+    ],
     "level": 80,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -8572,6 +9193,9 @@
       }
     ],
     "code": "BlackPuppy",
+    "elements": [
+      "Dark"
+    ],
     "level": 50,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -8615,6 +9239,10 @@
       }
     ],
     "code": "CandleGhost",
+    "elements": [
+      "Dark",
+      "Fire"
+    ],
     "level": 45,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -8647,6 +9275,9 @@
       }
     ],
     "code": "ElecCat",
+    "elements": [
+      "Electric"
+    ],
     "level": 10,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -8709,6 +9340,9 @@
       }
     ],
     "code": "GrimGirl",
+    "elements": [
+      "Dark"
+    ],
     "level": 52,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -8776,6 +9410,9 @@
       "ground": "900 - 1250"
     },
     "code": "NightBlueHorse",
+    "elements": [
+      "Dark"
+    ],
     "level": 42,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -8809,6 +9446,9 @@
       "ground": "500 - 800"
     },
     "code": "Serpent",
+    "elements": [
+      "Water"
+    ],
     "level": 12,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -8843,6 +9483,9 @@
       }
     ],
     "code": "Serpent_Ground",
+    "elements": [
+      "Ground"
+    ],
     "level": 31,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -8905,6 +9548,9 @@
       "flying": "850 - 1100"
     },
     "code": "Suzaku",
+    "elements": [
+      "Fire"
+    ],
     "level": 40,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -8967,6 +9613,9 @@
       "flying": "850 - 1100"
     },
     "code": "Suzaku_Water",
+    "elements": [
+      "Water"
+    ],
     "level": 68,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -9002,6 +9651,9 @@
       }
     ],
     "code": "MopBaby",
+    "elements": [
+      "Ice"
+    ],
     "level": 7,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -9035,6 +9687,9 @@
       "ground": "650 - 1020"
     },
     "code": "MopKing",
+    "elements": [
+      "Ice"
+    ],
     "level": 25,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -9068,6 +9723,9 @@
       }
     ],
     "code": "Monkey",
+    "elements": [
+      "Grass"
+    ],
     "level": 4,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -9105,6 +9763,9 @@
       }
     ],
     "code": "PurpleSpider",
+    "elements": [
+      "Dark"
+    ],
     "level": 20,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -9134,6 +9795,9 @@
       }
     ],
     "code": "Ganesha",
+    "elements": [
+      "Water"
+    ],
     "level": 2,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -9168,6 +9832,9 @@
       }
     ],
     "code": "ColorfulBird",
+    "elements": [
+      "Neutral"
+    ],
     "level": 14,
     "rarity": 1,
     "rarityCategory": "Common",
@@ -9204,6 +9871,9 @@
       }
     ],
     "code": "CatBat",
+    "elements": [
+      "Dark"
+    ],
     "level": 12,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -9240,6 +9910,9 @@
       }
     ],
     "code": "TentacleTurtle",
+    "elements": [
+      "Water"
+    ],
     "level": 5,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -9276,6 +9949,10 @@
       }
     ],
     "code": "TentacleTurtle_Ground",
+    "elements": [
+      "Water",
+      "Ground"
+    ],
     "level": 40,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -9349,6 +10026,9 @@
       "ground": "720 - 1100"
     },
     "code": "Kirin",
+    "elements": [
+      "Electric"
+    ],
     "level": 14,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -9393,6 +10073,9 @@
       }
     ],
     "code": "VioletFairy",
+    "elements": [
+      "Grass"
+    ],
     "level": 20,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -9436,6 +10119,10 @@
       "flying": "700 - 850"
     },
     "code": "BirdDragon",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
     "level": 20,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -9479,6 +10166,10 @@
       "flying": "700 - 850"
     },
     "code": "BirdDragon_Ice",
+    "elements": [
+      "Ice",
+      "Dark"
+    ],
     "level": 23,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -9517,6 +10208,9 @@
       }
     ],
     "code": "GrassRabbitMan",
+    "elements": [
+      "Grass"
+    ],
     "level": 52,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -9552,6 +10246,9 @@
       }
     ],
     "code": "CuteFox",
+    "elements": [
+      "Neutral"
+    ],
     "level": 1,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -9614,6 +10311,10 @@
       }
     ],
     "code": "HerculesBeetle",
+    "elements": [
+      "Ground",
+      "Grass"
+    ],
     "level": 34,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -9645,6 +10346,9 @@
       }
     ],
     "code": "HerculesBeetle_Ground",
+    "elements": [
+      "Ground"
+    ],
     "level": 53,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -9720,6 +10424,10 @@
       }
     ],
     "code": "IceNarwhal",
+    "elements": [
+      "Ice",
+      "Water"
+    ],
     "level": 42,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -9805,6 +10513,10 @@
       }
     ],
     "code": "IceNarwhal_Fire",
+    "elements": [
+      "Ice",
+      "Fire"
+    ],
     "level": 71,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -9841,6 +10553,9 @@
       }
     ],
     "code": "FoxMage",
+    "elements": [
+      "Fire"
+    ],
     "level": 23,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -9877,6 +10592,10 @@
       }
     ],
     "code": "FoxMage_Dark",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
     "level": 46,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -9911,6 +10630,9 @@
       }
     ],
     "code": "SweetsSheep",
+    "elements": [
+      "Neutral"
+    ],
     "level": 9,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -9981,6 +10703,9 @@
       "ground": "600 - 1050"
     },
     "code": "Yeti",
+    "elements": [
+      "Ice"
+    ],
     "level": 45,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -10053,6 +10778,9 @@
       }
     ],
     "code": "Yeti_Grass",
+    "elements": [
+      "Grass"
+    ],
     "level": 53,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -10090,6 +10818,9 @@
       "ground": "790 - 1200"
     },
     "code": "WhiteAlienDragon",
+    "elements": [
+      "Dragon"
+    ],
     "level": 1,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -10122,6 +10853,10 @@
       "flying": "550 - 660"
     },
     "code": "DarkMechaDragon",
+    "elements": [
+      "Dark",
+      "Dragon"
+    ],
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -10152,6 +10887,9 @@
       }
     ],
     "code": "DarkAlien",
+    "elements": [
+      "Dark"
+    ],
     "level": 1,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -10184,6 +10922,9 @@
       "ground": "750 - 1080"
     },
     "code": "GuardianDog",
+    "elements": [
+      "Neutral"
+    ],
     "level": 40,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -10274,6 +11015,10 @@
       "ground": "850 - 1100"
     },
     "code": "DomeArmorDragon",
+    "elements": [
+      "Dragon",
+      "Ground"
+    ],
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -10305,6 +11050,9 @@
       }
     ],
     "code": "ClioneTwins",
+    "elements": [
+      "Water"
+    ],
     "level": 9,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -10378,6 +11126,9 @@
       }
     ],
     "code": "OniGhostGirl",
+    "elements": [
+      "Dark"
+    ],
     "level": 65,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -10447,6 +11198,9 @@
       "flying": "750 - 1200"
     },
     "code": "ThunderBird_Ice",
+    "elements": [
+      "Ice"
+    ],
     "level": 75,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -10485,6 +11239,9 @@
       "ground": "600 - 810"
     },
     "code": "SumoDog",
+    "elements": [
+      "Ground"
+    ],
     "level": 53,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -10557,6 +11314,9 @@
       }
     ],
     "code": "VenusFlytrap",
+    "elements": [
+      "Grass"
+    ],
     "level": 45,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -10635,6 +11395,9 @@
       "ground": "800 - 1200"
     },
     "code": "WhiteDeer_Dark",
+    "elements": [
+      "Dark"
+    ],
     "level": 1,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -10665,6 +11428,10 @@
       }
     ],
     "code": "CloverFairy",
+    "elements": [
+      "Grass",
+      "Neutral"
+    ],
     "level": 3,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -10743,6 +11510,10 @@
       }
     ],
     "code": "FlowerPrince",
+    "elements": [
+      "Grass",
+      "Dark"
+    ],
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -10819,6 +11590,10 @@
       "ground": "600 - 800"
     },
     "code": "GrassGolem",
+    "elements": [
+      "Ground",
+      "Grass"
+    ],
     "level": 46,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -10895,6 +11670,10 @@
       "ground": "600 - 800"
     },
     "code": "GrassGolem_Dark",
+    "elements": [
+      "Ground",
+      "Dark"
+    ],
     "level": 75,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -10967,6 +11746,9 @@
       }
     ],
     "code": "ClownRabbit",
+    "elements": [
+      "Fire"
+    ],
     "level": 55,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -11001,6 +11783,9 @@
       "flying": "700 - 1000"
     },
     "code": "ThunderFluffyBird",
+    "elements": [
+      "Electric"
+    ],
     "level": 63,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -11068,6 +11853,10 @@
       "flying": "1400 - 2750"
     },
     "code": "GhostDragon",
+    "elements": [
+      "Dragon",
+      "Dark"
+    ],
     "level": 65,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -11146,6 +11935,10 @@
       "flying": "1400 - 2750"
     },
     "code": "GhostDragon_Fire",
+    "elements": [
+      "Dragon",
+      "Fire"
+    ],
     "level": 75,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -11219,6 +12012,9 @@
       }
     ],
     "code": "GrassMinotaur",
+    "elements": [
+      "Grass"
+    ],
     "level": 24,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -11296,6 +12092,9 @@
       }
     ],
     "code": "GrassMinotaur_Ice",
+    "elements": [
+      "Ice"
+    ],
     "level": 75,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -11367,6 +12166,9 @@
       }
     ],
     "code": "FoxExorcist",
+    "elements": [
+      "Fire"
+    ],
     "level": 75,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -11403,6 +12205,10 @@
       }
     ],
     "code": "MummyPal",
+    "elements": [
+      "Dark",
+      "Ground"
+    ],
     "level": 39,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -11439,6 +12245,10 @@
       }
     ],
     "code": "OctopusGirl_Neutral",
+    "elements": [
+      "Water",
+      "Neutral"
+    ],
     "level": 65,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -11474,6 +12284,9 @@
       }
     ],
     "code": "HoodGhost",
+    "elements": [
+      "Dark"
+    ],
     "level": 65,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -11545,6 +12358,9 @@
       }
     ],
     "code": "WingGolem_Fire",
+    "elements": [
+      "Fire"
+    ],
     "level": 65,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -11577,6 +12393,9 @@
       }
     ],
     "code": "BrownRabbit",
+    "elements": [
+      "Ground"
+    ],
     "level": 63,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -11607,6 +12426,9 @@
       }
     ],
     "code": "SleeveRabbit",
+    "elements": [
+      "Neutral"
+    ],
     "level": 65,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -11639,6 +12461,9 @@
       }
     ],
     "code": "PandaGirl",
+    "elements": [
+      "Grass"
+    ],
     "level": 28,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -11715,6 +12540,10 @@
       }
     ],
     "code": "LanternButler",
+    "elements": [
+      "Dark",
+      "Fire"
+    ],
     "level": 75,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -11787,6 +12616,10 @@
       }
     ],
     "code": "DarkFlameFox",
+    "elements": [
+      "Dark",
+      "Fire"
+    ],
     "level": 35,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -11855,6 +12688,10 @@
       "ground": "650 - 850"
     },
     "code": "VolcanoDragon",
+    "elements": [
+      "Fire",
+      "Ground"
+    ],
     "level": 32,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -11893,6 +12730,10 @@
       "ground": "650 - 850"
     },
     "code": "VolcanoDragon_Ice",
+    "elements": [
+      "Ice",
+      "Ground"
+    ],
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -11923,6 +12764,9 @@
       }
     ],
     "code": "FluffyBird",
+    "elements": [
+      "Ice"
+    ],
     "level": 15,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -11995,6 +12839,9 @@
       }
     ],
     "code": "MushroomLady",
+    "elements": [
+      "Grass"
+    ],
     "level": 75,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -12026,6 +12873,9 @@
       }
     ],
     "code": "CactusDoll",
+    "elements": [
+      "Grass"
+    ],
     "level": 31,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -12062,6 +12912,10 @@
       }
     ],
     "code": "CactusDoll_Dark",
+    "elements": [
+      "Dark",
+      "Grass"
+    ],
     "level": 33,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -12128,6 +12982,9 @@
       }
     ],
     "code": "GhostRabbit_Grass",
+    "elements": [
+      "Grass"
+    ],
     "level": 50,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -12196,6 +13053,10 @@
       "ground": "700 - 1500"
     },
     "code": "LotusDragon",
+    "elements": [
+      "Grass",
+      "Water"
+    ],
     "level": 80,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -12231,6 +13092,9 @@
       "flying": "3000 - 3000"
     },
     "code": "KingWhale",
+    "elements": [
+      "Water"
+    ],
     "level": 1,
     "rarity": 10,
     "rarityCategory": "Epic",
@@ -12299,6 +13163,10 @@
       }
     ],
     "code": "FlowerDoll_Fire",
+    "elements": [
+      "Grass",
+      "Fire"
+    ],
     "level": 71,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -12338,6 +13206,9 @@
       }
     ],
     "code": "RockBeast",
+    "elements": [
+      "Ground"
+    ],
     "level": 42,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -12413,6 +13284,9 @@
       }
     ],
     "code": "RockBeast_Ice",
+    "elements": [
+      "Ice"
+    ],
     "level": 68,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -12486,6 +13360,10 @@
       "ground": "250 - 375"
     },
     "code": "IceSeal_Ground",
+    "elements": [
+      "Ice",
+      "Ground"
+    ],
     "level": 55,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -12518,6 +13396,10 @@
       }
     ],
     "code": "ScorpionMan_Electric",
+    "elements": [
+      "Electric",
+      "Ground"
+    ],
     "level": 65,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -12548,6 +13430,9 @@
       }
     ],
     "code": "ElecPomeranian",
+    "elements": [
+      "Electric"
+    ],
     "level": 18,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -12579,6 +13464,9 @@
       }
     ],
     "code": "SamuraiDog",
+    "elements": [
+      "Ground"
+    ],
     "level": 2,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -12646,6 +13534,9 @@
       "ground": "700 - 1150"
     },
     "code": "ThunderDog_Ice",
+    "elements": [
+      "Ice"
+    ],
     "level": 35,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -12718,6 +13609,9 @@
       }
     ],
     "code": "KabukiMan",
+    "elements": [
+      "Fire"
+    ],
     "level": 80,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -12791,6 +13685,9 @@
       "flying": "950 - 1350"
     },
     "code": "ThiefBird",
+    "elements": [
+      "Dark"
+    ],
     "level": 74,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -12857,6 +13754,9 @@
       }
     ],
     "code": "Sekhmet",
+    "elements": [
+      "Ground"
+    ],
     "level": 37,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -12935,6 +13835,10 @@
       "flying": "1400 - 2800"
     },
     "code": "BlueSkyDragon",
+    "elements": [
+      "Dragon",
+      "Water"
+    ],
     "level": 76,
     "rarity": 9,
     "rarityCategory": "Epic",
@@ -13005,6 +13909,9 @@
       }
     ],
     "code": "WhiteMoth_Neutral",
+    "elements": [
+      "Neutral"
+    ],
     "level": 75,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -13078,6 +13985,9 @@
       }
     ],
     "code": "Mothman",
+    "elements": [
+      "Grass"
+    ],
     "level": 1,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -13114,6 +14024,9 @@
       }
     ],
     "code": "SwordCutlassfish",
+    "elements": [
+      "Water"
+    ],
     "level": 30,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -13186,6 +14099,10 @@
       }
     ],
     "code": "SwordCutlassfish_Fire",
+    "elements": [
+      "Water",
+      "Fire"
+    ],
     "level": 40,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -13220,6 +14137,9 @@
       }
     ],
     "code": "ElecLizard",
+    "elements": [
+      "Electric"
+    ],
     "level": 65,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -13290,6 +14210,10 @@
       }
     ],
     "code": "BlackPuppy_Ice",
+    "elements": [
+      "Dark",
+      "Ice"
+    ],
     "level": 62,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -13324,6 +14248,9 @@
       }
     ],
     "code": "ElecSnail",
+    "elements": [
+      "Electric"
+    ],
     "level": 63,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -13393,6 +14320,10 @@
       }
     ],
     "code": "ElecSnail_Ground",
+    "elements": [
+      "Electric",
+      "Ground"
+    ],
     "level": 74,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -13465,6 +14396,9 @@
       }
     ],
     "code": "SmallYeti",
+    "elements": [
+      "Ice"
+    ],
     "level": 32,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -13536,6 +14470,10 @@
       }
     ],
     "code": "MonochromeQueen",
+    "elements": [
+      "Dark",
+      "Neutral"
+    ],
     "level": 76,
     "rarity": 7,
     "rarityCategory": "Rare",
@@ -13573,6 +14511,9 @@
       "ground": "500 - 900"
     },
     "code": "KingSunfish",
+    "elements": [
+      "Water"
+    ],
     "level": 66,
     "rarity": 4,
     "rarityCategory": "Common",
@@ -13646,6 +14587,10 @@
       "ground": "500 - 900"
     },
     "code": "KingSunfish_Thunder",
+    "elements": [
+      "Water",
+      "Electric"
+    ],
     "level": 76,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -13676,6 +14621,9 @@
       }
     ],
     "code": "DandelionGirl",
+    "elements": [
+      "Grass"
+    ],
     "level": 63,
     "rarity": 3,
     "rarityCategory": "Common",
@@ -13748,6 +14696,9 @@
       "ground": "900 - 1250"
     },
     "code": "NightBlueHorse_Neutral",
+    "elements": [
+      "Neutral"
+    ],
     "level": 74,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -13785,6 +14736,9 @@
       }
     ],
     "code": "Monkey_Fire",
+    "elements": [
+      "Fire"
+    ],
     "level": 10,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -13852,6 +14806,9 @@
       "ground": "360 - 540"
     },
     "code": "CubeTurtle",
+    "elements": [
+      "Ground"
+    ],
     "level": 48,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -13924,6 +14881,9 @@
       "ground": "360 - 540"
     },
     "code": "CubeTurtle_Neutral",
+    "elements": [
+      "Neutral"
+    ],
     "level": 76,
     "rarity": 8,
     "rarityCategory": "Epic",
@@ -13959,6 +14919,9 @@
       }
     ],
     "code": "RedFlowerBird",
+    "elements": [
+      "Grass"
+    ],
     "level": 63,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -14037,6 +15000,9 @@
       "ground": "720 - 1100"
     },
     "code": "Kirin_Ice",
+    "elements": [
+      "Ice"
+    ],
     "level": 75,
     "rarity": 6,
     "rarityCategory": "Rare",
@@ -14066,6 +15032,9 @@
       }
     ],
     "code": "LongCat",
+    "elements": [
+      "Neutral"
+    ],
     "level": 63,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -14138,6 +15107,9 @@
       }
     ],
     "code": "SnakeGirl",
+    "elements": [
+      "Dark"
+    ],
     "level": 75,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -14210,6 +15182,9 @@
       }
     ],
     "code": "GhostBlackCat",
+    "elements": [
+      "Dark"
+    ],
     "level": 11,
     "rarity": 5,
     "rarityCategory": "Rare",
@@ -14281,6 +15256,9 @@
       }
     ],
     "code": "MoonChild",
+    "elements": [
+      "Dark"
+    ],
     "level": 76,
     "rarity": 2,
     "rarityCategory": "Common",
@@ -14315,6 +15293,9 @@
       }
     ],
     "code": "SweetsSheep_Ground",
+    "elements": [
+      "Ground"
+    ],
     "level": 55,
     "rarity": 4,
     "rarityCategory": "Common",
