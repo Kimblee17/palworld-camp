@@ -9,3 +9,17 @@ venv/
 
 # Capture réseau utilisée ponctuellement pour extraire les tier-lists (artefact local)
 *.har
+
+# Build du parseur de sauvegarde (save-parser/) : temporaires NON publies.
+# Les artefacts de build (docs/vendor/save-parser/*) sont, eux, versionnes.
+save-parser/.work/
+save-parser/.emsdk/
+save-parser/**/__pycache__/
+
+# Dumps de save exportes via l'outil debug (donnees perso : ne pas publier)
+base.json
+sample.json
+*.sav
+
+# Prototype initial du parseur (remplace par save-parser/) : non publie
+palsav-pyodide-test/

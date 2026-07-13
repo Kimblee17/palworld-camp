@@ -147,7 +147,7 @@ main {
   padding: 18px;
   box-shadow: var(--sh-lg);
 }
-.view-palpedia, .view-drops { margin: 6px 28px 44px; }
+.view-palpedia, .view-drops, .view-import { margin: 6px 28px 44px; }
 .panel h2 {
   font-size: 1.05rem; font-weight: 900; margin: 0 0 12px;
   padding-bottom: 8px; border-bottom: 2px solid var(--border);
@@ -325,6 +325,137 @@ main {
 .import-report .imp-ok { color: var(--ok); font-weight: 800; }
 .import-report .imp-ko { color: #ffc9c5; font-weight: 800; }
 .import-report .imp-warn { color: var(--lvl-2); }
+
+/* Import depuis une sauvegarde .sav */
+.sav-import { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
+.sav-pick { cursor: pointer; }
+.sav-status { font-size: 0.85rem; color: var(--muted); }
+.sav-note { font-size: 0.78rem; color: var(--muted); margin: 0; }
+.sav-table { width: 100%; border-collapse: collapse; margin: 8px 0 0; font-size: 0.8rem;
+  display: block; max-height: 300px; overflow: auto; }
+.sav-table th { position: sticky; top: 0; background: var(--panel-2); color: var(--muted);
+  text-align: left; font-weight: 700; padding: 4px 8px; z-index: 1; }
+.sav-table td { padding: 3px 8px; border-top: 1px solid var(--border); color: var(--text); white-space: nowrap; }
+.sav-table .sav-star { color: var(--lvl-2); }
+.sav-table .sav-iv { font-family: ui-monospace, monospace; color: var(--muted); }
+.sav-table .sav-g { color: var(--muted); }
+.sav-table .sav-owner { color: var(--muted); }
+.sav-table .sav-pass-c { text-align: center; }
+.sav-legend { margin-top: 8px; font-size: 0.76rem; color: var(--muted); line-height: 1.5; }
+.sav-legend b { color: var(--text); }
+.sav-camps { margin-top: 14px; }
+.sav-camps-h { font-weight: 800; font-size: 0.9rem; color: var(--text); margin-bottom: 8px; }
+.sav-camps-grid {
+  display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+.sav-camp { border: 2px solid var(--border); border-radius: 10px; padding: 0;
+  background: var(--panel-2); overflow: hidden; }
+.sav-camp-head {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  padding: 8px 11px; border-bottom: 2px solid var(--border);
+}
+.sav-camp-name { font-weight: 800; font-size: 0.9rem; color: var(--text); }
+.sav-camp-badges { display: flex; gap: 6px; }
+.sav-badge {
+  font-size: 0.78rem; font-weight: 700; color: var(--muted);
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 999px; padding: 1px 9px; white-space: nowrap;
+}
+.sav-station-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+.sav-station-table th {
+  text-align: left; font-weight: 700; color: var(--muted);
+  padding: 5px 11px; border-bottom: 1px solid var(--border);
+}
+.sav-station-table td { padding: 5px 11px; border-top: 1px solid var(--border); vertical-align: top; }
+.sav-station-table tr:first-child td { border-top: none; }
+.sav-st-name { color: var(--text); font-weight: 600; white-space: nowrap; }
+.sav-st-n { color: var(--muted); text-align: center; white-space: nowrap; }
+.sav-st-pals { width: 99%; }
+.sav-chip {
+  display: inline-block; font-size: 0.74rem; color: var(--text);
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 6px; padding: 1px 7px; margin: 1px 3px 1px 0;
+}
+.sav-empty { color: var(--muted); padding: 7px 11px; font-size: 0.78rem; }
+.sav-pass { color: var(--lvl-4); font-weight: 700; cursor: help; }
+
+/* Diff d'import (aperçu avant validation) : récap + badges de ligne + bloc « retirés » */
+.sav-diff { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 2px; }
+.dbadge {
+  font-size: 0.78rem; font-weight: 800; border-radius: 7px; padding: 2px 9px;
+  border: 1px solid var(--border); background: var(--bg); color: var(--text);
+}
+.dbadge.new { color: var(--ok); border-color: var(--ok); }
+.dbadge.up { color: var(--accent-2); border-color: var(--accent-2); }
+.dbadge.same { color: var(--muted); }
+.dbadge.rem { color: var(--lvl-1); border-color: var(--lvl-1); }
+.rbadge { font-size: 0.72rem; font-weight: 800; cursor: help; }
+.rbadge.same { color: var(--muted); }
+.sav-row-same td { opacity: 0.72; }
+.sav-removed {
+  margin-top: 12px; border: 1px solid var(--lvl-1); border-radius: 10px;
+  padding: 8px 11px; background: #2a1614;
+}
+.sav-removed-h { font-weight: 800; font-size: 0.85rem; color: #ffc9c5; margin-bottom: 6px; }
+.sav-removed-list { display: flex; flex-wrap: wrap; }
+.sav-chip.rem { border-color: var(--lvl-1); color: #ffc9c5; }
+.import-sep { border: none; border-top: 1px dashed var(--border); margin: 12px 0; }
+.sav-options {
+  border: 2px solid var(--border); border-radius: 10px; padding: 8px 12px 10px;
+  margin: 2px 0; display: flex; flex-direction: column; gap: 6px;
+}
+.sav-options legend { color: var(--muted); font-size: 0.8rem; font-weight: 700; padding: 0 6px; }
+.sav-options label { color: var(--text); font-size: 0.85rem; display: flex; align-items: center; gap: 6px; }
+.sav-options .sav-opt-soon { color: var(--muted); }
+.sav-soon {
+  font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
+  color: var(--accent-ink); background: var(--accent);
+  border-radius: 6px; padding: 1px 6px; letter-spacing: 0.03em;
+}
+
+/* ===== Agencement d'une base importée (vue camp) : repliable + éditable ===== */
+.camp-machines {
+  margin: 6px 0 4px;
+  border: 2px solid var(--border); border-radius: 10px;
+  background: var(--panel-2, rgba(127,127,127,0.05));
+  overflow: hidden;
+}
+.cm-head {
+  width: 100%; display: flex; align-items: center; gap: 8px;
+  padding: 10px 12px; background: none; border: none; cursor: pointer;
+  font: inherit; color: var(--text); text-align: left;
+}
+.cm-head:hover { background: rgba(127,127,127,0.06); }
+.cm-caret { color: var(--muted); width: 1em; }
+.cm-title { font-weight: 900; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.cm-sub { margin-left: auto; color: var(--muted); font-size: 0.8rem; font-weight: 700; }
+.cm-body { padding: 0 12px 12px; }
+.camp-machines-note { font-size: 0.75rem; color: var(--muted); margin: 0 0 10px; }
+
+.cm-group { border-top: 1px solid var(--border); padding: 8px 0; }
+.cm-group:first-of-type { border-top: none; }
+.cm-group-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.cm-station { font-weight: 800; font-size: 0.85rem; color: var(--text); }
+.cm-struct { font-size: 0.72rem; color: var(--muted); }
+.cm-count { color: var(--muted); font-size: 0.8rem; font-weight: 700; }
+.cm-group-head .actions { margin-left: auto; }
+
+.cm-machines { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 5px; }
+.cm-machine {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  padding: 5px 8px; border-radius: 8px; background: rgba(127,127,127,0.06);
+}
+.cm-slots { font-size: 0.72rem; color: var(--muted); min-width: 60px; }
+.cm-chips { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; flex: 1; }
+.cm-chip { display: inline-flex; align-items: center; gap: 4px; }
+.cm-x {
+  background: none; border: none; cursor: pointer; padding: 0 0 0 2px;
+  color: var(--muted); font-size: 0.85rem; line-height: 1;
+}
+.cm-x:hover { color: var(--danger, #d9534f); }
+.cm-assign { font-size: 0.78rem; max-width: 190px; }
+.cm-hint { font-size: 0.72rem; color: var(--muted); font-style: italic; }
 
 /* ===== Rangs de tier-list ===== */
 .tier-S { color: var(--amber); }

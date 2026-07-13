@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>save-parser — démo</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    #log { background:#111; color:#b6f7b6; font-family:ui-monospace,monospace; font-size:12px;
+           padding:1rem; border-radius:8px; height:200px; overflow:auto; white-space:pre-wrap; }
+    #result { background:#0b0b0b; color:#d0d0d0; font-family:ui-monospace,monospace; font-size:12px;
+              padding:1rem; border-radius:8px; max-height:420px; overflow:auto; white-space:pre-wrap; margin-top:1rem; }
+  </style>
+</head>
+<body>
+  <h1>save-parser — démo locale</h1>
+  <p>Charge <code>docs/vendor/save-parser/parser.mjs</code> et parse une save (zlib ou Oodle).</p>
+  <input type="file" id="file" accept=".sav" disabled />
+  <div id="log"></div>
+  <pre id="result"></pre>
+
+  <script type="module">
+    import { createPalworldSaveParser } from "../docs/vendor/save-parser/parser.mjs";
+    const logEl = document.getElementById("log");
+    const log = (m) => { logEl.textContent += m + "\n"; logEl.scrollTop = logEl.scrollHeight; };
+    let parser;
+    (async () => {
+      try {
+        parser = await createPalworldSaveParser({ onProgress: log });
+        document.getElementById("file").disabled = false;
+        log("\n✅ Prêt. Sélectionne un .sav.");
+      } catch (e) { log("❌ " + (e.message || e)); console.error(e); }
+    })();
+    document.getElementById("file").addEventListener("change", async (ev) => {
+      const f = ev.target.files[0]; if (!f) return;
+      log(`\nParsing ${f.name} (${f.size.toLocaleString()} o)…`);
+      try {
+        const t0 = performance.now();
+        const r = await parser.parse(f);
+        log(`✅ ${(performance.now()-t0).toFixed(0)} ms — save_type=${r.save_type}, counts=${JSON.stringify(r.counts)}`);
+        document.getElementById("result").textContent = JSON.stringify(r, null, 2);
+        window.lastResult = r;
+      } catch (e) { log("❌ " + (e.message || e)); console.error(e); }
+    });
+  </script>
+</body>
+</html>

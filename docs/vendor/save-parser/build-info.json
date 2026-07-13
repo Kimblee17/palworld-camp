@@ -1,0 +1,25 @@
+{
+  "source_repo": "deafdudecomputers/PalworldSaveTools",
+  "source_commit": "c974e2664955700d14f8607bee818c950acfc47a",
+  "pyodide": "0.28.3",
+  "built_at": "2026-07-13T08:55:44Z",
+  "license": "GPL-3.0-or-later",
+  "files": {
+    "ooz.mjs": {
+      "bytes": 11114,
+      "sha256": "00ee242c7eba9a852b83fd1326720143430edd47574a951c02ac72fa0830d4d5"
+    },
+    "ooz.wasm": {
+      "bytes": 108012,
+      "sha256": "098ead41f4a6beb4de2a4b7e5e2adf70d0d4ffb103ce23449209f27577aa86bb"
+    },
+    "palsav.zip": {
+      "bytes": 68280,
+      "sha256": "2b3af72bb74f41fbf8bbfb248d836bbe6070985b84e81d40e5bc5a3ab7810ab4"
+    },
+    "parser.mjs": {
+      "bytes": 5860,
+      "sha256": "498060ea08b7e23b2a425878a128f93bdad36235c6a898e913a7bd472737694a"
+    }
+  }
+}

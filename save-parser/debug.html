@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>save-parser — dump brut (debug)</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, sans-serif; max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+    .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    #log { font-size: 12px; color: gray; margin: 10px 0; }
+    #out { background:#0b0b0b; color:#d0d0d0; font-family:ui-monospace,monospace; font-size:12px;
+           padding:1rem; border-radius:8px; max-height:60vh; overflow:auto; white-space:pre; }
+    button, input[type=number] { padding: 6px 10px; }
+  </style>
+</head>
+<body>
+  <h1>Dump brut du SaveParameter (debug)</h1>
+  <p>Charge un <code>Level.sav</code> : affiche le <b>SaveParameter brut</b> des N premiers Pals,
+     pour repérer les champs exacts (Rank, Talent_*, PassiveSkillList, SlotId…). 100% local.</p>
+  <div class="row">
+    <label>Mode :
+      <select id="mode">
+        <option value="pals">Pals (SaveParameter brut)</option>
+        <option value="world">Bases &amp; travail</option>
+      </select>
+    </label>
+    <input type="file" id="file" accept=".sav" disabled />
+    <label>N = <input type="number" id="n" value="3" min="1" max="50" style="width:64px"></label>
+    <button id="copy" hidden>📋 Copier le JSON</button>
+  </div>
+  <div id="log">Initialisation…</div>
+  <pre id="out"></pre>
+
+  <script type="module">
+    import { createPalworldSaveParser } from "../docs/vendor/save-parser/parser.mjs";
+    const log = (m) => document.getElementById("log").textContent = m;
+    const out = document.getElementById("out");
+    let parser;
+    (async () => {
+      try { parser = await createPalworldSaveParser({ onProgress: log });
+        document.getElementById("file").disabled = false; log("Prêt. Choisis un .sav."); }
+      catch (e) { log("❌ " + (e.message || e)); }
+    })();
+    document.getElementById("file").addEventListener("change", async (ev) => {
+      const f = ev.target.files[0]; if (!f) return;
+      const n = parseInt(document.getElementById("n").value, 10) || 3;
+      const mode = document.getElementById("mode").value;
+      log(`Lecture de ${f.name}… (mode ${mode})`);
+      try {
+        let data, summary;
+        if (mode === "world") {
+          data = await parser.debugWorld(f, { workSample: n, mapObjectSample: 3 });
+          summary = `${data.bases.length} base(s), ${data.work_total} travaux (${data.work_sample.length} échantillonnés), ${data.map_object_total} objets de map.`;
+        } else {
+          data = await parser.debug(f, n);
+          summary = `${data.length} Pal(s) dumpé(s).`;
+        }
+        out.textContent = JSON.stringify(data, null, 2);
+        document.getElementById("copy").hidden = false;
+        log(`${summary} Copie et renvoie-moi ce JSON.`);
+      } catch (e) { log("❌ " + (e.message || e)); console.error(e); }
+    });
+    document.getElementById("copy").addEventListener("click", () =>
+      navigator.clipboard.writeText(out.textContent).then(() => log("✓ Copié dans le presse-papier.")));
+  </script>
+</body>
+</html>
