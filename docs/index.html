@@ -20,6 +20,7 @@
       <button class="view-btn active" data-view="camp">🏕️ Assistant de camp</button>
       <button class="view-btn" data-view="palpedia">📖 Palpedia</button>
       <button class="view-btn" data-view="drops">💎 Drops</button>
+      <button class="view-btn" data-view="import">📥 Importer une save</button>
     </div>
     <span id="sync-status" class="sync-status">Chargement…</span>
     <button id="presence" class="bar-btn presence" hidden title="En ligne — clique pour ton nom">👥</button>
@@ -70,10 +71,10 @@
         <button id="box-import-btn" class="bar-btn">📥 Importer</button>
       </div>
       <div class="tab-box import-panel" id="import-panel" hidden>
-        <textarea id="import-text" placeholder="Colle ici l'export CoWork (palbox.csv) ou une liste type « Cattiva x13 » (un par ligne)…"></textarea>
+        <textarea id="import-text" placeholder="Colle un export CoWork (palbox.csv) / une liste type « Cattiva x13 » (un par ligne)"></textarea>
         <div class="import-actions">
           <label><input type="radio" name="import-mode" value="replace" checked> Remplacer la boîte</label>
-          <label><input type="radio" name="import-mode" value="merge"> Fusionner</label>
+          <label><input type="radio" name="import-mode" value="merge"> Ajouter à la boîte</label>
           <button id="import-run" class="btn btn-add">Charger</button>
           <button id="import-cancel" class="bar-btn">Annuler</button>
         </div>
@@ -104,6 +105,9 @@
       <h3 class="sub">🏗️ Constructions</h3>
       <ul id="camp-structs" class="pal-list compact"></ul>
       <button id="clear-camp" class="btn-clear" hidden>Vider ce camp</button>
+
+      <!-- Agencement d'une base importée depuis une save (masqué pour les camps utilisateur) -->
+      <section id="camp-machines" class="camp-machines" hidden></section>
 
       <h2>Compétences <span id="cover-warn" class="cover-warn" hidden></span></h2>
       <ul id="summary" class="summary"></ul>
@@ -149,6 +153,32 @@
       <span class="pedia-total"><span id="drop-count">0</span> objets</span>
     </div>
     <ul id="drop-list" class="drop-list"></ul>
+  </section>
+
+  <!-- Vue Importer une save : import .sav configurable (100% navigateur) -->
+  <section class="panel view-import" id="import-sav" hidden>
+    <h2>📥 Importer une sauvegarde Palworld</h2>
+    <div class="sav-import">
+      <label class="btn btn-add sav-pick">📁 Choisir une sauvegarde Palworld (.sav)
+        <input type="file" id="sav-file" accept=".sav" hidden>
+      </label>
+      <span id="sav-status" class="sav-status"></span>
+      <p class="sav-note">Level.sav = tes Pals de camps &amp; boîte. Le fichier est lu dans ton navigateur, rien n'est envoyé.</p>
+
+      <fieldset class="sav-options">
+        <legend>Que veux-tu importer ?</legend>
+        <label><input type="checkbox" id="opt-import-pals" checked> 🐾 Pals (vers ma boîte)</label>
+        <label><input type="checkbox" id="opt-import-camps" checked> 🏕️ Camps &amp; affectations</label>
+      </fieldset>
+
+      <div class="import-actions">
+        <label><input type="radio" name="sav-import-mode" value="replace" checked> Remplacer la boîte</label>
+        <label title="Met à jour les Pals déjà importés (même instance) et ajoute les nouveaux, sans doublon"><input type="radio" name="sav-import-mode" value="merge"> Mettre à jour / ajouter</label>
+      </div>
+
+      <div id="sav-preview" class="import-report" hidden></div>
+      <button id="sav-apply" class="btn btn-add" hidden>Valider l'import ↓</button>
+    </div>
   </section>
 
   <!-- Modale : détail d'un Pal -->

@@ -1,0 +1,14 @@
+{
+  "source": {
+    "name": "PalworldSaveTools",
+    "repo": "https://github.com/deafdudecomputers/PalworldSaveTools",
+    "ref": "main",
+    "commit": "c974e2664955700d14f8607bee818c950acfc47a",
+    "license": "GPL-3.0-or-later",
+    "paths": {
+      "palsav_python": "src/palsav/palsav",
+      "ooz_sources": "src/palsav/palooz/ooz/dep/ooz"
+    }
+  },
+  "pyodide": "0.28.3"
+}
