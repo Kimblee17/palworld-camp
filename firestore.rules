@@ -15,6 +15,11 @@ rules_version = '2';
 //   Le miroir ne contient JAMAIS wsId : le lien de lecture ne doit pas
 //   divulguer la capacité d'écriture. Le schéma « hasOnly » l'interdit.
 //
+//   `owner` ne confère aucun privilège supplémentaire (tous les écrivains ont les
+//   mêmes droits, suppression comprise) : il sert de trace du créateur, il est
+//   immuable, il ne peut être évincé de writers, et son absence marque un espace
+//   antérieur à cette refonte (cf. note legacy ci-dessous).
+//
 // Liens : écriture = ?ws=<wsId>   /   lecture seule = ?r=<readKey>
 //
 // Note sur les espaces « legacy » (créés avant cette refonte, sans champ owner) :
@@ -135,7 +140,11 @@ service cloud.firestore {
         || isLegacyMigration()
       );
 
-      allow delete: if signedIn() && resource.data.owner == uid();
+      // Suppression ouverte à tout écrivain (pas seulement owner) : sinon un espace
+      // devient indestructible dès que le créateur perd son uid anonyme (données de
+      // navigateur effacées). Ce n'est pas une escalade : quiconque détient le lien
+      // d'écriture peut déjà vider le store, donc détruire le contenu.
+      allow delete: if signedIn() && isWriter();
     }
 
     // ======================================================= reads/{readKey}
