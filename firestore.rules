@@ -106,12 +106,16 @@ service cloud.firestore {
       }
 
       // -- exception « migration » : espace legacy (sans owner) ; on pose
-      //    owner / writers / readKey sans toucher au store.
+      //    owner / writers / readKey sans toucher au store. writers peut déjà
+      //    contenir d'autres uid (plusieurs porteurs de l'ancien lien ayant fait
+      //    leur auto-ajout) : on l'autorise, mais aucun retrait n'est possible.
       function isLegacyMigration() {
         return isLegacy()
           && touched().hasOnly(['owner', 'writers', 'readKey', 'updatedAt'])
           && request.resource.data.owner == uid()
-          && request.resource.data.writers == [uid()]
+          && uid() in request.resource.data.writers
+          && request.resource.data.writers.hasAll(writersOf(resource.data))
+          && request.resource.data.writers.hasOnly(writersOf(resource.data).concat([uid()]))
           && validWs(request.resource.data);
       }
 

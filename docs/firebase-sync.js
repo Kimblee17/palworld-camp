@@ -48,6 +48,7 @@ let pushTimer = null;
 let hbTimer = null;
 let lastJson = null;
 let mirrorWarned = false;
+let mirrorSynced = false;   // le miroir a-t-il été rafraîchi durant cette session ?
 
 function myUid() { return auth.currentUser ? auth.currentUser.uid : null; }
 // Nom tronqué à 40 caractères : c'est la limite imposée par firestore.rules sur
@@ -60,6 +61,21 @@ function myName() {
 }
 
 function status(state, info) { window.setSyncUI?.(state, info || {}); }
+function notFound() {
+  return Object.assign(new Error("espace introuvable"), { code: "not-found" });
+}
+// Codes Firestore -> message lisible (le brut « permission-denied » n'aide personne).
+const ERR_FR = {
+  "not-found": "espace introuvable (lien invalide ou espace supprimé)",
+  "permission-denied": "accès refusé — vérifie le lien, ou demandes-en un nouveau",
+  "unavailable": "hors ligne — synchro en attente",
+  "failed-precondition": "synchro indisponible dans ce navigateur",
+  "resource-exhausted": "quota Firebase atteint",
+};
+function errMsg(e) {
+  return ERR_FR[e && e.code] || (e && (e.code || e.message)) || "erreur inconnue";
+}
+function fail(e) { status("error", { msg: errMsg(e) }); }
 function wsRef(id) { return doc(db, "workspaces", id); }
 function readRef(key) { return doc(db, "reads", key); }
 async function ensureAuth() { if (!auth.currentUser) await signInAnonymously(auth); }
@@ -147,9 +163,13 @@ function applySnapshot(snap) {
     if (d.readKey) readKey = d.readKey;
     if (writersChanged || keyChanged) {
       status("shared", { spaceId: wsId, ro: false, ...currentLinks() });
-      // Le miroir autorise l'écriture aux uid de SON writers : on le rafraîchit
-      // pour qu'un écrivain fraîchement ajouté puisse pousser à son tour.
-      if (writersChanged && d.store) syncMirror(d.store);
+    }
+    // Le miroir n'autorise l'écriture qu'aux uid de SON writers. On le rafraîchit
+    // (store + writers) une fois par session et à chaque changement de writers :
+    // ainsi n'importe quel écrivain déjà établi « débloque » les nouveaux venus.
+    if (d.store && (writersChanged || !mirrorSynced)) {
+      mirrorSynced = true;
+      syncMirror(d.store);
     }
   }
 
@@ -164,7 +184,7 @@ function applySnapshot(snap) {
 function subscribe() {
   if (unsub) unsub();
   const ref = reader ? readRef(readKey) : wsRef(wsId);
-  unsub = onSnapshot(ref, applySnapshot, err => status("error", { msg: err.code || err.message }));
+  unsub = onSnapshot(ref, applySnapshot, err => fail(err));
 }
 
 // Rafraîchit le miroir (store + writers) — best-effort : échoue tant que cet
@@ -177,7 +197,7 @@ async function syncMirror(store) {
 }
 
 function enterWriter(id) {
-  wsId = id; reader = false;
+  wsId = id; reader = false; mirrorSynced = false;
   localStorage.setItem(SPACE_KEY, id);
   localStorage.removeItem(READ_KEY); localStorage.removeItem(LEGACY_RO);
   window.setReadOnly?.(false);
@@ -196,31 +216,50 @@ function enterReader(key) {
   status("shared", { spaceId: null, ro: true, link: null, roLink: null });
 }
 
-// Adhésion en écriture : migre un espace legacy, sinon s'auto-ajoute à writers.
+// Adhésion en écriture : s'auto-ajoute à writers si besoin, puis migre l'espace
+// s'il date d'avant la refonte.
+// ⚠ Ordre important : les règles interdisent la LECTURE d'un espace à qui n'est pas
+// déjà dans writers. On ne peut donc pas lire d'abord pour décider : si la lecture
+// est refusée, on s'auto-ajoute (seule update permise à un non-membre) puis on relit.
 async function ensureWriterMembership(id) {
   const u = myUid();
-  const snap = await getDoc(wsRef(id));
-  if (!snap.exists()) throw Object.assign(new Error("espace introuvable"), { code: "not-found" });
-  const d = snap.data();
+  const selfAdd = () => updateDoc(wsRef(id), { writers: arrayUnion(u) });
+  let d = null;
 
-  // Espace créé avant la refonte : on pose owner/writers/readKey et on crée le miroir.
+  try {
+    const snap = await getDoc(wsRef(id));
+    if (!snap.exists()) throw notFound();
+    d = snap.data();
+  } catch (e) {
+    if (e.code === "not-found") throw e;
+    if (e.code !== "permission-denied") throw e;
+    // Pas encore membre (ou espace inexistant : l'update tranchera).
+    try { await selfAdd(); } catch (e2) {
+      throw (e2.code === "not-found" || e2.code === "permission-denied") ? notFound() : e2;
+    }
+    const snap2 = await getDoc(wsRef(id));
+    if (!snap2.exists()) throw notFound();
+    d = snap2.data();
+  }
+
+  // Espace legacy lisible par tous : l'auto-ajout n'a pas encore eu lieu.
+  writers = Array.isArray(d.writers) ? d.writers.slice() : [];
+  if (!writers.includes(u)) {
+    await selfAdd();
+    writers.push(u);
+  }
+
+  // Espace créé avant la refonte : on pose owner/readKey et on crée le miroir.
   if (d.owner === undefined) {
     const key = randomKey();
     const batch = writeBatch(db);
-    batch.update(wsRef(id), { owner: u, writers: [u], readKey: key, updatedAt: serverTimestamp() });
-    batch.set(readRef(key), { store: d.store || {}, updatedAt: serverTimestamp(), writers: [u] });
+    batch.update(wsRef(id), { owner: u, writers, readKey: key, updatedAt: serverTimestamp() });
+    batch.set(readRef(key), { store: d.store || {}, updatedAt: serverTimestamp(), writers });
     await batch.commit();
-    readKey = key; writers = [u];
+    readKey = key;
     return;
   }
-
   readKey = d.readKey || null;
-  writers = Array.isArray(d.writers) ? d.writers : [];
-  if (!writers.includes(u)) {
-    // Update d'auto-ajout : le SEUL changement est l'ajout de mon uid à writers.
-    await updateDoc(wsRef(id), { writers: arrayUnion(u) });
-    writers = writers.concat([u]);
-  }
 }
 
 const Cloud = {
@@ -248,7 +287,7 @@ const Cloud = {
       enterWriter(id);
     } catch (e) {
       wsId = null; readKey = null; reader = false;
-      status("error", { msg: e.code || e.message });
+      fail(e);
     }
   },
 
@@ -265,7 +304,7 @@ const Cloud = {
       lastJson = null; mirrorWarned = false;
       await ensureWriterMembership(p.ws);
       enterWriter(p.ws);
-    } catch (e) { status("error", { msg: e.code || e.message }); }
+    } catch (e) { fail(e); }
   },
 
   // Rejoindre en lecture seule (lien ?r=<readKey>) : abonnement au miroir seul.
@@ -275,7 +314,7 @@ const Cloud = {
       await ensureAuth();
       lastJson = null;
       enterReader(key);
-    } catch (e) { status("error", { msg: e.code || e.message }); }
+    } catch (e) { fail(e); }
   },
 
   showLegacyRoNotice() {
@@ -316,9 +355,9 @@ const Cloud = {
               });
             }
             return;
-          } catch (e2) { status("error", { msg: e2.code || e2.message }); return; }
+          } catch (e2) { fail(e2); return; }
         }
-        status("error", { msg: e.code || e.message });
+        fail(e);
       }
     }, 500);
   },
