@@ -164,10 +164,20 @@ window.setSyncUI = function (state, info = {}) {
   const all = (a, b, c, d, e) => { show(create, a); show(share, b); show(shareRo, c); show(join, d); show(leave, e); };
   if (state === "connecting") {
     st.textContent = "☁️ Connexion…"; st.className = "sync-status"; all(false, false, false, false, false);
+  } else if (state === "legacy-ro") {
+    // Ancien lien ?ws=…&ro=1 : son identifiant donne l'écriture, il n'est pas
+    // rattrapable. On reste en privé et on explique quoi demander.
+    st.textContent = "⚠️ Lien de lecture obsolète"; st.className = "sync-status err";
+    all(true, false, false, true, false);
+    showRoBanner("⚠️ Ce lien « lecture seule » est obsolète et n'est plus accepté : "
+      + "sa sécurité ne pouvait pas être garantie. Demande à ton groupe un nouveau "
+      + "lien de lecture (bouton 👁 Lien lecture seule), puis ouvre-le.");
   } else if (state === "shared" && info.ro) {
     st.textContent = "👁 Espace partagé — lecture seule"; st.className = "sync-status ok"; all(false, false, false, false, true);
   } else if (state === "shared") {
-    st.textContent = "👥 Espace partagé (synchronisé)"; st.className = "sync-status ok"; all(false, true, true, false, true);
+    st.textContent = "👥 Espace partagé (synchronisé)" + (info.warn ? " — ⚠️ " + info.warn : "");
+    st.className = "sync-status ok";
+    all(false, true, !!syncRoLink, false, true);
   } else if (state === "error") {
     st.textContent = "⚠️ " + (info.msg || "erreur de synchro"); st.className = "sync-status err";
     all(!shared, shared, shared, !shared, shared);
@@ -176,14 +186,22 @@ window.setSyncUI = function (state, info = {}) {
   }
 };
 
-// ===== Lecture seule (lien ?ro=1) =====
-let readOnly = new URLSearchParams(location.search).get("ro") === "1"
-  || localStorage.getItem("palworld-ro") === "1";
+// ===== Lecture seule (lien ?r=<readKey>) =====
+// Pré-affichage avant que firebase-sync.js ait tranché (il appelle setReadOnly).
+let readOnly = new URLSearchParams(location.search).has("r")
+  || !!localStorage.getItem("palworld-readkey");
+const RO_BANNER_DEFAULT = "👁 Lecture seule — tu vois cet espace en direct, mais tu ne peux pas le modifier.";
+function showRoBanner(msg) {
+  const b = document.getElementById("ro-banner");
+  if (!b) return;
+  b.textContent = msg;
+  b.hidden = false;
+}
 window.setReadOnly = function (ro) {
   readOnly = !!ro;
   document.body.classList.toggle("read-only", readOnly);
   const b = document.getElementById("ro-banner");
-  if (b) b.hidden = !readOnly;
+  if (b) { b.textContent = RO_BANNER_DEFAULT; b.hidden = !readOnly; }
 };
 
 // ===== Présence (qui est en ligne) =====
@@ -467,12 +485,10 @@ function init() {
     }
   });
   document.getElementById("space-join").addEventListener("click", () => {
+    // Accepte un lien d'écriture (?ws=), un lien lecture seule (?r=) ou un code brut :
+    // le module de synchro se charge de reconnaître le format.
     const input = (prompt("Colle le lien de partage (ou le code) reçu d'un ami :") || "").trim();
-    if (!input) return;
-    let id = input;
-    const m = input.match(/[?&]ws=([^&\s]+)/);
-    if (m) id = decodeURIComponent(m[1]);
-    if (id) window.PWCloud?.join(id);
+    if (input) window.PWCloud?.join(input);
   });
   document.getElementById("space-leave").addEventListener("click", () => {
     if (confirm("Quitter cet espace partagé et revenir à tes camps privés (sur cet appareil) ?")) {

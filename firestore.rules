@@ -1,0 +1,185 @@
+rules_version = '2';
+
+// ============================================================================
+// Palworld — Assistant de camp : règles Firestore
+//
+// Modèle de capacités (deux documents par espace) :
+//
+//   workspaces/{wsId}   PRIVÉ — écrivains uniquement
+//     { owner: string, writers: [uid...], readKey: string,
+//       store: map, updatedAt: timestamp, presence?: map }
+//
+//   reads/{readKey}     MIROIR — accessible en connaissant readKey (capacité)
+//     { store: map, updatedAt: timestamp, writers: [uid...], presence?: map }
+//
+//   Le miroir ne contient JAMAIS wsId : le lien de lecture ne doit pas
+//   divulguer la capacité d'écriture. Le schéma « hasOnly » l'interdit.
+//
+// Liens : écriture = ?ws=<wsId>   /   lecture seule = ?r=<readKey>
+//
+// Note sur les espaces « legacy » (créés avant cette refonte, sans champ owner) :
+// leur wsId a déjà été distribué avec un accès en écriture complet. On autorise
+// donc `get` et une update de migration à tout compte authentifié — ce n'est pas
+// une régression, et le premier écrivain qui migre verrouille l'espace.
+// ============================================================================
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ---------------------------------------------------------------- outils
+    function signedIn() {
+      return request.auth != null;
+    }
+    function uid() {
+      return request.auth.uid;
+    }
+    // Lecture tolérante d'une liste éventuellement absente (docs legacy).
+    function writersOf(data) {
+      return data.get('writers', []);
+    }
+    // Clés modifiées par cette update (niveau racine du document).
+    function touched() {
+      return request.resource.data.diff(resource.data).affectedKeys();
+    }
+    // Entrée de présence propre au demandeur : forme et taille bornées.
+    // (l'absence de la clé est autorisée : c'est le retrait de présence)
+    function presenceEntryOk(data) {
+      return !(uid() in data.presence) || (
+        data.presence[uid()] is map
+        && data.presence[uid()].keys().hasOnly(['name', 'ts', 'ro'])
+        && data.presence[uid()].name is string
+        && data.presence[uid()].name.size() <= 40
+        && data.presence[uid()].ts is number
+        && data.presence[uid()].ro is bool
+      );
+    }
+
+    // ====================================================== workspaces/{wsId}
+    match /workspaces/{wsId} {
+
+      // -- schéma : types + refus de tout champ inconnu
+      function validWs(data) {
+        return data.keys().hasOnly(['owner', 'writers', 'readKey', 'store', 'updatedAt', 'presence'])
+          && data.keys().hasAll(['owner', 'writers', 'readKey', 'store', 'updatedAt'])
+          && data.owner is string
+          && data.writers is list
+          && data.writers.size() >= 1
+          && data.writers.size() <= 50
+          && data.readKey is string
+          && data.readKey.size() >= 16
+          && data.readKey.size() <= 64
+          && data.store is map
+          && data.updatedAt is timestamp
+          && (!data.keys().hasAny(['presence']) || data.presence is map);
+      }
+
+      function isWriter() {
+        return uid() in writersOf(resource.data);
+      }
+      // Espace créé avant la refonte : pas encore de champ owner.
+      function isLegacy() {
+        return !('owner' in resource.data);
+      }
+
+      // -- update « normale » d'un écrivain : owner et readKey immuables,
+      //    et l'owner ne peut pas être évincé de writers.
+      function validWriterUpdate() {
+        return validWs(request.resource.data)
+          && request.resource.data.owner == resource.data.owner
+          && request.resource.data.readKey == resource.data.readKey
+          && resource.data.owner in request.resource.data.writers;
+      }
+
+      // -- exception « auto-ajout » : un porteur du lien d'écriture s'ajoute
+      //    lui-même à writers. Seule modification autorisée : writers, et le
+      //    seul ajout possible est son propre uid (aucun retrait).
+      function isSelfAddToWriters() {
+        return touched().hasOnly(['writers'])
+          && !(uid() in writersOf(resource.data))
+          && uid() in request.resource.data.writers
+          && request.resource.data.writers.hasAll(writersOf(resource.data))
+          && request.resource.data.writers.hasOnly(writersOf(resource.data).concat([uid()]))
+          && request.resource.data.writers.size() == writersOf(resource.data).size() + 1
+          // Même plafond que validWs : sinon writers pourrait dépasser la limite
+          // et bloquer toutes les updates normales de l'espace.
+          && request.resource.data.writers.size() <= 50;
+      }
+
+      // -- exception « migration » : espace legacy (sans owner) ; on pose
+      //    owner / writers / readKey sans toucher au store.
+      function isLegacyMigration() {
+        return isLegacy()
+          && touched().hasOnly(['owner', 'writers', 'readKey', 'updatedAt'])
+          && request.resource.data.owner == uid()
+          && request.resource.data.writers == [uid()]
+          && validWs(request.resource.data);
+      }
+
+      allow create: if signedIn()
+        && request.resource.data.owner == uid()
+        && uid() in request.resource.data.writers
+        && validWs(request.resource.data);
+
+      // Lecture réservée aux écrivains (legacy toléré, cf. en-tête).
+      allow get: if signedIn() && (isWriter() || isLegacy());
+      // Aucune énumération d'espaces.
+      allow list: if false;
+
+      allow update: if signedIn() && (
+           (isWriter() && validWriterUpdate())
+        || isSelfAddToWriters()
+        || isLegacyMigration()
+      );
+
+      allow delete: if signedIn() && resource.data.owner == uid();
+    }
+
+    // ======================================================= reads/{readKey}
+    match /reads/{readKey} {
+
+      // -- schéma : pas de wsId possible (hasOnly), types vérifiés
+      function validRead(data) {
+        return data.keys().hasOnly(['store', 'updatedAt', 'writers', 'presence'])
+          && data.keys().hasAll(['store', 'updatedAt', 'writers'])
+          && data.store is map
+          && data.updatedAt is timestamp
+          && data.writers is list
+          && data.writers.size() >= 1
+          && data.writers.size() <= 50
+          && (!data.keys().hasAny(['presence']) || data.presence is map);
+      }
+
+      function isMirrorWriter() {
+        return uid() in writersOf(resource.data);
+      }
+
+      // -- exception « présence lecteur » : un lecteur ne peut toucher que sa
+      //    propre entrée de présence (et updatedAt). affectedKeys() ne descend
+      //    pas dans les maps imbriquées : on diffe donc aussi presence.
+      function isReaderPresenceUpdate() {
+        return touched().hasOnly(['presence', 'updatedAt'])
+          && request.resource.data.presence is map
+          && request.resource.data.presence
+               .diff(resource.data.get('presence', {}))
+               .affectedKeys().hasOnly([uid()])
+          && presenceEntryOk(request.resource.data);
+      }
+
+      // La capacité, c'est de connaître le readKey (aléatoire, non énumérable).
+      allow get: if signedIn();
+      // Interdiction absolue d'énumérer le miroir (sinon la capacité fuiterait).
+      allow list: if false;
+
+      allow create: if signedIn()
+        && uid() in request.resource.data.writers
+        && validRead(request.resource.data);
+
+      allow update: if signedIn() && (
+           (isMirrorWriter() && validRead(request.resource.data))
+        || isReaderPresenceUpdate()
+      );
+
+      allow delete: if signedIn() && isMirrorWriter();
+    }
+  }
+}

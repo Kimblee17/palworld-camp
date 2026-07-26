@@ -1,6 +1,6 @@
 // Service worker — app installable + hors-ligne.
 // Bump CACHE à chaque déploiement pour forcer le rafraîchissement du shell.
-const CACHE = "pw-v23";
+const CACHE = "pw-v24";
 const IMG_CACHE = "pw-img-v1";
 const SHELL = [
   "./", "index.html", "app.js", "style.css", "data.js",
