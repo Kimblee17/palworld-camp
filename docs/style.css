@@ -307,18 +307,8 @@ main {
 .sg-actions { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
 .sg-note { color: var(--muted); font-size: 0.78rem; }
 
-/* ===== Import de la boîte ===== */
+/* ===== Import (rapport & options, partagés avec l'import de sauvegarde) ===== */
 .hint { color: var(--muted); font-size: 0.82rem; margin: 0 0 12px; }
-.import-panel {
-  background: var(--panel-2); border: 2px solid var(--border);
-  border-radius: 10px; padding: 12px; margin-bottom: 12px;
-}
-.import-panel textarea {
-  width: 100%; min-height: 120px; resize: vertical;
-  background: var(--bg); color: var(--text);
-  border: 2px solid var(--border); border-radius: 8px;
-  padding: 9px 11px; font-family: "Consolas", monospace; font-size: 0.85rem;
-}
 .import-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
 .import-actions label { color: var(--muted); font-size: 0.85rem; display: flex; align-items: center; gap: 5px; }
 .import-report { margin-top: 10px; font-size: 0.85rem; color: var(--muted); }
@@ -531,8 +521,8 @@ main {
 }
 body.read-only .btn-add, body.read-only .stepper, body.read-only .btn-suggest,
 body.read-only #camp-new, body.read-only #camp-rename, body.read-only #camp-delete,
-body.read-only #clear-camp, body.read-only #box-import-btn, body.read-only #undo-btn,
-body.read-only .limit-ctrl input, body.read-only .import-panel {
+body.read-only #clear-camp, body.read-only #undo-btn,
+body.read-only .limit-ctrl input, body.read-only .sav-import {
   opacity: 0.4; pointer-events: none;
 }
 
