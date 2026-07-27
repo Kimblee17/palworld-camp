@@ -95,6 +95,13 @@ par le script `build_data.py`. Après avoir modifié un CSV :
 python build_data.py
 ```
 
+`build_data.py` met aussi à jour la **version du cache du service worker**
+(`docs/sw.js`) avec le hash git court du commit courant : plus besoin d'y penser à la
+main, et les visiteurs ne restent jamais bloqués sur une version périmée du site.
+Comme le hash est celui du commit **déjà** en place, l'enchaînement naturel est
+`python build_data.py` puis `git commit` — le sw.js commité porte alors le hash du
+commit précédent, ce qui suffit : la valeur change dès qu'un nouveau commit existe.
+
 `build_data.py` fait tout en une commande : il lit les CSV **et** récupère depuis
 [palworld.gg](https://palworld.gg) les rangs de tier-list, les données de jeu
 (niveau, rareté, taux de capture) **et** les drops, puis fusionne le tout dans chaque Pal

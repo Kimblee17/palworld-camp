@@ -1,7 +1,8 @@
 """
 Génère les données de l'application depuis les fichiers CSV :
-  - data/pals.json + data/structures.json   (utilisés par la version Flask, app.py)
-  - docs/data.js                            (données embarquées pour la version statique)
+  - data/pals.json + data/structures.json   (caches lisibles, utilisés par les scripts)
+  - docs/data.js                            (données embarquées par le site statique)
+  - docs/sw.js                              (version du cache = hash git court)
 
 Les rangs de tier-list (palworld.gg) sont fusionnés dans chaque Pal de pals.json
 via fetch_tier_lists.load_tier_lists (téléchargement live + cache de repli).
@@ -10,6 +11,8 @@ Relance ce script après avoir modifié un CSV :  python build_data.py
 """
 import csv
 import json
+import re
+import subprocess
 from pathlib import Path
 
 from fetch_tier_lists import load_tier_lists
@@ -22,9 +25,10 @@ STRUCT_CSV = BASE_DIR / "palworld-structures.csv"
 PALS_OUT = BASE_DIR / "data" / "pals.json"
 STRUCT_OUT = BASE_DIR / "data" / "structures.json"
 STATIC_OUT = BASE_DIR / "docs" / "data.js"
+SW_OUT = BASE_DIR / "docs" / "sw.js"
 
-# Définition centralisée des 12 compétences de travail (source unique de vérité).
-# Utilisée par app.py (import) et par la version statique (docs/data.js).
+# Définition centralisée des 12 compétences de travail (source unique de vérité),
+# recopiée dans docs/data.js pour le site statique.
 WORK_TYPES = [
     {"id": "farming",      "label": "Élevage",         "order": 1,  "icon": "🥚"},
     {"id": "electricity",  "label": "Électricité",     "order": 2,  "icon": "⚡"},
@@ -220,7 +224,38 @@ def build_static(pals, structures):
     print(f"Données embarquées écrites dans {STATIC_OUT}")
 
 
+def stamp_service_worker():
+    """Aligne la version du cache du service worker sur le commit courant.
+
+    Oublier de changer CACHE laissait les visiteurs sur un shell périmé ; le hash git
+    change à chaque commit, donc la bonne valeur est toujours posée automatiquement.
+    En cas d'échec (hors dépôt git, git absent), on laisse le fichier tel quel plutôt
+    que d'écrire une version bidon.
+    """
+    try:
+        rev = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=BASE_DIR,
+                             capture_output=True, text=True, timeout=10)
+        if rev.returncode != 0:
+            raise RuntimeError((rev.stderr or "").strip() or "git a échoué")
+        sha = rev.stdout.strip()
+        if not re.fullmatch(r"[0-9a-f]{6,40}", sha):
+            raise RuntimeError(f"hash inattendu : {sha!r}")
+    except Exception as exc:
+        print(f"  ⚠ Version du service worker inchangée ({exc}).")
+        return
+
+    src = SW_OUT.read_text(encoding="utf-8")
+    new, n = re.subn(r'const CACHE = "[^"]*";', f'const CACHE = "pw-{sha}";', src, count=1)
+    if not n:
+        print("  ⚠ Déclaration CACHE introuvable dans docs/sw.js — version inchangée.")
+        return
+    if new != src:
+        SW_OUT.write_text(new, encoding="utf-8")
+    print(f"Service worker : CACHE = pw-{sha}")
+
+
 if __name__ == "__main__":
     pals = build_pals()
     structures = build_structures()
     build_static(pals, structures)
+    stamp_service_worker()
