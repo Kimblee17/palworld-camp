@@ -519,6 +519,12 @@ main {
   background: #2a2416; border-bottom: 2px solid var(--amber);
   color: var(--amber); font-weight: 800; padding: 9px 28px; font-size: 0.9rem;
 }
+/* Sans JavaScript, la page resterait bloquée sur « Chargement… » : on l'explique. */
+.noscript-warn {
+  background: #2a2416; border-bottom: 2px solid var(--amber);
+  color: var(--amber); font-weight: 800; padding: 12px 28px; font-size: 0.9rem;
+  line-height: 1.5;
+}
 body.read-only .btn-add, body.read-only .stepper, body.read-only .btn-suggest,
 body.read-only #camp-new, body.read-only #camp-rename, body.read-only #camp-delete,
 body.read-only #clear-camp, body.read-only #undo-btn,

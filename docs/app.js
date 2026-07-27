@@ -649,11 +649,19 @@ function init() {
     }
   });
 
+  // Navigation par hash : bouton retour/suivant du navigateur et liens profonds.
+  window.addEventListener("hashchange", () => {
+    const v = viewFromHash();
+    if (v !== currentView) switchView(v, false);
+  });
+
   // PWA / hors-ligne
   if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 
   buildLegend();
   renderAll();
+  // Applique la vue demandée par l'URL (sans hash : #camp, URL laissée intacte).
+  switchView(viewFromHash(), false);
 }
 
 function buildLegend() {
@@ -713,7 +721,18 @@ function switchTab(tab) {
 }
 
 // ===== Vues (Assistant de camp / Palpedia) =====
-function switchView(view) {
+// Routage par hash : #camp (défaut) · #palpedia · #drops · #import.
+// Le hash est indépendant des paramètres ?ws= / ?r= de la synchro (firebase-sync.js
+// nettoie la query en conservant le hash), les deux cohabitent donc sans interférence.
+const VIEWS = ["camp", "palpedia", "drops", "import"];
+function viewFromHash() {
+  const v = decodeURIComponent(location.hash.replace(/^#/, ""));
+  return VIEWS.includes(v) ? v : "camp";
+}
+
+// updateHash=false quand l'URL porte déjà la vue (chargement initial, hashchange) :
+// on évite ainsi d'écrire « #camp » sur une URL nue, dont le comportement est inchangé.
+function switchView(view, updateHash = true) {
   currentView = view;
   document.querySelectorAll(".view-btn").forEach(b => b.classList.toggle("active", b.dataset.view === view));
   document.querySelectorAll(".view-camp").forEach(el => el.hidden = view !== "camp");
@@ -722,6 +741,8 @@ function switchView(view) {
   document.querySelectorAll(".view-import").forEach(el => el.hidden = view !== "import");
   if (view === "palpedia") renderPalpedia();
   else if (view === "drops") renderDrops();
+  // Nouvelle entrée d'historique -> le bouton retour revient à la vue précédente.
+  if (updateHash && location.hash !== "#" + view) location.hash = view;
 }
 
 // ===== Gestion des camps =====

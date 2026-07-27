@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Générateur d'image de partage — Palworld Assistant de camp</title>
+<style>
+  body { background:#0f1218; color:#e8edf5; font-family:"Segoe UI",Arial,sans-serif;
+         margin:0; padding:28px; }
+  h1 { font-size:1.1rem; margin:0 0 6px; }
+  p  { color:#98a2b3; font-size:.88rem; margin:0 0 18px; line-height:1.5; }
+  canvas { max-width:100%; height:auto; border:2px solid #2a3040; border-radius:10px; display:block; }
+  button { margin-top:16px; background:#c9f24e; color:#1b2400; border:0; border-radius:8px;
+           padding:11px 18px; font-weight:800; font-size:.95rem; cursor:pointer; }
+  code { background:#1a1f2b; padding:2px 6px; border-radius:4px; }
+</style>
+</head>
+<body>
+  <h1>Image de partage (Open Graph) — 1200 × 630</h1>
+  <p>
+    Régénère l'aperçu affiché quand on partage un lien du site.<br>
+    Clique sur le bouton, puis enregistre le fichier sous <code>docs/og-image.png</code>.
+  </p>
+  <canvas id="c" width="1200" height="630"></canvas>
+  <button id="dl">⬇ Télécharger og-image.png</button>
+
+<script>
+// Icône de l'application (copie de docs/icon.svg) : inlinée pour que cette page
+// fonctionne aussi en double-clic (file://) et sans salir le canvas.
+const ICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#14171f"/>
+  <rect x="92" y="92" width="328" height="328" rx="44" fill="#c9f24e" stroke="#0a0c12" stroke-width="18"/>
+  <text x="256" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="250" font-weight="900" text-anchor="middle" fill="#1b2400">P</text>
+</svg>`;
+
+const W = 1200, H = 630;
+const BG = "#14171f", LIME = "#c9f24e", TEXT = "#e8edf5";
+
+function roundRect(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.arcTo(x + w, y,     x + w, y + h, r);
+  ctx.arcTo(x + w, y + h, x,     y + h, r);
+  ctx.arcTo(x,     y + h, x,     y,     r);
+  ctx.arcTo(x,     y,     x + w, y,     r);
+  ctx.closePath();
+}
+
+function draw() {
+  const ctx = document.getElementById("c").getContext("2d");
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => {
+      // Fond
+      ctx.fillStyle = BG;
+      ctx.fillRect(0, 0, W, H);
+
+      // Liseré d'accent en bas (rappel du thème néo-brutaliste)
+      ctx.fillStyle = LIME;
+      ctx.fillRect(0, H - 12, W, 12);
+
+      // Icône agrandie
+      const S = 300, IX = 96, IY = (H - S) / 2 - 6;
+      ctx.drawImage(img, IX, IY, S, S);
+
+      // Titre « Palworld — Assistant de camp », posé sur deux lignes
+      const TX = IX + S + 68;
+      ctx.textBaseline = "alphabetic";
+      ctx.fillStyle = LIME;
+      ctx.font = '900 96px "Segoe UI", Arial, sans-serif';
+      ctx.fillText("Palworld", TX, 300);
+      ctx.fillStyle = TEXT;
+      ctx.font = '700 58px "Segoe UI", Arial, sans-serif';
+      ctx.fillText("Assistant de camp", TX, 380);
+
+      resolve();
+    };
+    img.onerror = reject;
+    img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(ICON_SVG);
+  });
+}
+
+// Utilisé par la génération automatisée (et inoffensif à la main).
+window.__ogReady = draw().then(() => true);
+window.__ogDataURL = () => document.getElementById("c").toDataURL("image/png");
+
+document.getElementById("dl").addEventListener("click", () => {
+  const a = document.createElement("a");
+  a.href = window.__ogDataURL();
+  a.download = "og-image.png";
+  a.click();
+});
+</script>
+</body>
+</html>
