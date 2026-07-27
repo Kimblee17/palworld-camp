@@ -1,13 +1,14 @@
 # Palworld — Assistant de camp
 
-Application web (Flask) pour gérer **plusieurs camps** Palworld : on y ajoute des
-Pals (qui fournissent des compétences de travail) et des constructions (qui en
-requièrent), puis on vérifie que chaque compétence requise est bien couverte.
+Application web pour gérer **plusieurs camps** Palworld : on y ajoute des Pals (qui
+fournissent des compétences de travail) et des constructions (qui en requièrent),
+puis on vérifie que chaque compétence requise est bien couverte.
 
-L'application existe en **deux versions** qui partagent les mêmes données :
-
-- **Statique** (`docs/`) — c'est elle qui est mise en ligne sur GitHub Pages.
-- **Flask** (`app.py`) — version serveur, pratique en développement local.
+Le site est **entièrement statique** (`docs/`) : c'est ce dossier qui est publié sur
+GitHub Pages, et il n'y a aucun serveur applicatif à faire tourner. Les scripts Python
+du dépôt servent uniquement à **construire les données** (`build_data.py` et les
+`fetch_*.py`) ; ils n'ont besoin d'aucune dépendance en dehors de la bibliothèque
+standard.
 
 ## Lancer en local
 
@@ -35,17 +36,6 @@ Le code du front est organisé ainsi (aucun bundler, modules ES natifs) :
 | `docs/js/drops.js` | recherche d'objet → Pals qui le lâchent |
 | `docs/js/sav-import.js` | import d'une sauvegarde `.sav` et comparaison |
 | `docs/js/suggest.js` | suggestion de composition depuis la boîte à Pals |
-
-**Version Flask** :
-
-```powershell
-python -m venv venv
-venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python app.py
-```
-
-Puis ouvre **http://localhost:5000**.
 
 ## Mettre en ligne sur GitHub Pages
 
@@ -216,5 +206,5 @@ contient les libellés français séparés par des virgules (ex. `Plantation, Ar
 
 > La colonne CSV « Travailleur de nuit » (`Oui`/`Non`) alimente le champ `nightWorker`.
 
-> Les libellés et l'ordre d'affichage sont définis dans `app.py` (`WORK_TYPES`)
+> Les libellés et l'ordre d'affichage sont définis dans `build_data.py` (`WORK_TYPES`)
 > si tu veux les ajuster.
