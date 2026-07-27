@@ -680,11 +680,12 @@ function buildLegend() {
   });
 }
 
-// ===== Icône d'un Pal (image palworld.gg, sinon pastille de repli) =====
-// URL dérivée du code interne (BPClass) : T_{code}_icon_normal.png. Couvre tous les
-// Pals ayant un `code` (299/300) ; repli sur une pastille sinon.
+// ===== Icône d'un Pal (image auto-hébergée, sinon pastille de repli) =====
+// Chemin relatif dérivé du code interne (BPClass) : icons/pals/{code}.png, récupéré
+// par tools/fetch_icons.py. Couvre tous les Pals ayant un `code` (299/300) ; si le
+// fichier manque (ou pas de code), on retombe sur une pastille à l'initiale.
 function palIconUrl(pal) {
-  return pal.code ? "https://palworld.gg/images/full_palicon/T_" + pal.code + "_icon_normal.png" : null;
+  return pal.code ? "icons/pals/" + pal.code + ".png" : null;
 }
 function palIconEl(pal) {
   const url = palIconUrl(pal);

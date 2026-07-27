@@ -1,7 +1,9 @@
 // Service worker — app installable + hors-ligne.
 // Bump CACHE à chaque déploiement pour forcer le rafraîchissement du shell.
-const CACHE = "pw-v26";
-const IMG_CACHE = "pw-img-v1";
+const CACHE = "pw-v27";
+// Les icônes de Pals (icons/pals/*.png) sont désormais auto-hébergées : elles passent
+// par le cache same-origin ci-dessous, au fil de la navigation. Elles ne sont PAS
+// précachées ici — ~300 fichiers rendraient l'installation du service worker trop lourde.
 const SHELL = [
   "./", "index.html", "app.js", "style.css", "data.js",
   "firebase-sync.js", "icon.svg", "manifest.webmanifest",
@@ -14,7 +16,7 @@ self.addEventListener("install", (e) => {
 self.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys()
-      .then((ks) => Promise.all(ks.filter((k) => k !== CACHE && k !== IMG_CACHE).map((k) => caches.delete(k))))
+      .then((ks) => Promise.all(ks.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
       .then(() => self.clients.claim())
   );
 });
@@ -23,17 +25,6 @@ self.addEventListener("fetch", (e) => {
   const req = e.request;
   if (req.method !== "GET") return;
   const url = new URL(req.url);
-
-  // Icônes de Pals (palworld.gg) : cache d'abord, mise en cache au vol (offline OK).
-  if (url.hostname === "palworld.gg") {
-    e.respondWith(caches.open(IMG_CACHE).then(async (c) => {
-      const hit = await c.match(req);
-      if (hit) return hit;
-      try { const res = await fetch(req); if (res.ok) c.put(req, res.clone()); return res; }
-      catch { return hit || Response.error(); }
-    }));
-    return;
-  }
 
   // Firebase / gstatic / autres origines : réseau direct (données dynamiques).
   if (url.origin !== location.origin) return;
