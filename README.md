@@ -6,14 +6,35 @@ requièrent), puis on vérifie que chaque compétence requise est bien couverte.
 
 L'application existe en **deux versions** qui partagent les mêmes données :
 
-- **Statique** (`docs/`) — c'est elle qui est mise en ligne sur GitHub Pages. Aucune
-  installation : il suffit d'ouvrir `docs/index.html` (double-clic) ou de servir le dossier.
+- **Statique** (`docs/`) — c'est elle qui est mise en ligne sur GitHub Pages.
 - **Flask** (`app.py`) — version serveur, pratique en développement local.
 
 ## Lancer en local
 
-**Version statique (la plus simple)** — ouvre directement `docs/index.html` dans ton
-navigateur. Les données sont embarquées dans `docs/data.js`, rien d'autre n'est requis.
+**Version statique (la plus simple)** — sers le dossier `docs/` :
+
+```powershell
+python -m http.server 5500 --directory docs
+```
+
+Puis ouvre **http://localhost:5500**.
+
+> ⚠️ Le double-clic sur `docs/index.html` **ne fonctionne plus**. Le front est découpé en
+> modules ES (`docs/js/*.js`), et les navigateurs refusent de charger des modules depuis
+> `file://` (politique d'origine). Un simple serveur HTTP local suffit, comme ci-dessus.
+
+Le code du front est organisé ainsi (aucun bundler, modules ES natifs) :
+
+| Fichier | Rôle |
+| --- | --- |
+| `docs/js/main.js` | point d'entrée : initialisation, navigation, câblage des boutons |
+| `docs/js/dataset.js` | données de référence (Pals, constructions, compétences) |
+| `docs/js/state.js` | store, chargement/sauvegarde, quantités, annulation, export/import JSON |
+| `docs/js/render.js` | listes, légende, récapitulatif, modale, agencement des bases |
+| `docs/js/palpedia.js` | tableau Palpedia (tri et filtres) |
+| `docs/js/drops.js` | recherche d'objet → Pals qui le lâchent |
+| `docs/js/sav-import.js` | import d'une sauvegarde `.sav` et comparaison |
+| `docs/js/suggest.js` | suggestion de composition depuis la boîte à Pals |
 
 **Version Flask** :
 

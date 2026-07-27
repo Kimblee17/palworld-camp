@@ -5,7 +5,9 @@ const CACHE = "pw-v28";
 // par le cache same-origin ci-dessous, au fil de la navigation. Elles ne sont PAS
 // précachées ici — ~300 fichiers rendraient l'installation du service worker trop lourde.
 const SHELL = [
-  "./", "index.html", "app.js", "style.css", "data.js",
+  "./", "index.html", "style.css", "data.js",
+  "js/main.js", "js/dataset.js", "js/state.js", "js/render.js", "js/palpedia.js",
+  "js/drops.js", "js/sav-import.js", "js/suggest.js",
   "firebase-sync.js", "icon.svg", "manifest.webmanifest",
 ];
 
