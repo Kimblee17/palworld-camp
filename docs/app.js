@@ -211,7 +211,9 @@ window.setPresence = function (list) {
   if (!el) return;
   if (!list || !list.length) { el.hidden = true; return; }
   el.hidden = false;
-  el.textContent = "👥 " + list.length;
+  // Le pictogramme est décoratif : le nombre et l'aria-label portent l'information.
+  el.innerHTML = `<span aria-hidden="true">👥</span> ${list.length}`;
+  el.setAttribute("aria-label", `${list.length} personne(s) en ligne — définir mon nom`);
   el.title = "En ligne : " + list.map(p => p.name + (p.ro ? " 👁" : "") + (p.me ? " (toi)" : "")).join(", ");
 };
 function promptName() {
@@ -363,10 +365,36 @@ function openPalDetail(pal) {
     ${tiers ? `<div class="pm-sub">Rangs (palworld.gg)</div><div class="pm-tags">${tiers}</div>` : ""}
     ${drops ? `<div class="pm-sub">Butin</div><ul class="pm-drops">${drops}</ul>` : ""}
     ${link ? `<div class="pm-linkrow">${link}</div>` : ""}`;
+  modalReturnFocus = document.activeElement;   // pour rendre le focus à la fermeture
   modal.hidden = false;
+  setBackgroundInert(true);
   modal.querySelector(".pm-close")?.focus();
 }
-function closePalModal() { const m = document.getElementById("pal-modal"); if (m) m.hidden = true; }
+
+// Élément qui avait ouvert la modale (ligne de Pal, entrée de Palpedia…).
+let modalReturnFocus = null;
+
+// Neutralise l'arrière-plan pendant que la modale est ouverte : `inert` le retire du
+// parcours de tabulation ET de l'arbre d'accessibilité. On cible tous les enfants
+// directs de <body> sauf la modale, pour ne rien oublier quand la page évolue.
+function setBackgroundInert(on) {
+  const modal = document.getElementById("pal-modal");
+  for (const el of document.body.children) {
+    if (el === modal) continue;
+    if (on) el.inert = true; else el.inert = false;
+  }
+}
+
+function closePalModal() {
+  const m = document.getElementById("pal-modal");
+  if (!m || m.hidden) return;          // Échap hors modale : ne touche à rien
+  m.hidden = true;
+  setBackgroundInert(false);
+  const back = modalReturnFocus;
+  modalReturnFocus = null;
+  // On ne rend le focus que si l'élément est toujours dans le document.
+  if (back && document.contains(back) && typeof back.focus === "function") back.focus();
+}
 
 function active() { return store.camps[store.activeId]; }
 
@@ -545,8 +573,9 @@ function init() {
   pw.addEventListener("change", renderPalpedia);
   pe.addEventListener("change", renderPalpedia);
   document.getElementById("pedia-owned").addEventListener("change", renderPalpedia);
-  document.querySelectorAll(".pedia-table th[data-sort]").forEach(th =>
-    th.addEventListener("click", () => setPediaSort(th.dataset.sort)));
+  // Le tri est porté par un <button> dans le th : focalisable, Entrée et Espace natifs.
+  document.querySelectorAll(".pedia-table th[data-sort] > button").forEach(btn =>
+    btn.addEventListener("click", () => setPediaSort(btn.parentElement.dataset.sort)));
   document.getElementById("drop-search").addEventListener("input", renderDrops);
 
   document.getElementById("clear-camp").addEventListener("click", () => {
@@ -1057,6 +1086,7 @@ function structRow(st, mode) {
   tile.className = "pal-ic fallback struct-ic";
   tile.textContent = CATEGORY_ICON[st.category] || "🏗️";
   tile.title = st.category;
+  tile.setAttribute("aria-hidden", "true");   // décoratif : la catégorie est écrite juste à côté
   li.appendChild(tile);
 
   const info = document.createElement("div");
@@ -1989,12 +2019,14 @@ function updatePediaHeaders() {
     const active = th.dataset.sort === pediaSort.key;
     th.classList.toggle("sorted", active);
     th.querySelector(".arrow")?.remove();
-    if (active) {
-      const arrow = document.createElement("span");
-      arrow.className = "arrow";
-      arrow.textContent = pediaSort.dir === 1 ? " ▲" : " ▼";
-      th.appendChild(arrow);
-    }
+    if (!active) { th.removeAttribute("aria-sort"); return; }
+    // L'état de tri est porté par aria-sort sur le th ; la flèche n'est que visuelle.
+    th.setAttribute("aria-sort", pediaSort.dir === 1 ? "ascending" : "descending");
+    const arrow = document.createElement("span");
+    arrow.className = "arrow";
+    arrow.setAttribute("aria-hidden", "true");
+    arrow.textContent = pediaSort.dir === 1 ? " ▲" : " ▼";
+    (th.querySelector("button") || th).appendChild(arrow);
   });
 }
 

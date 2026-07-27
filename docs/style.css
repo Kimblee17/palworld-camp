@@ -482,6 +482,16 @@ main {
 .muted { color: var(--muted); }
 .pedia-table th.sortable { cursor: pointer; user-select: none; }
 .pedia-table th.sortable:hover { color: var(--text); }
+/* Le tri est un vrai <button> (focalisable, Entrée/Espace natifs) : on lui retire
+   tout le chrome par défaut pour qu'il reste visuellement l'en-tête de colonne.
+   Le padding passe du th au bouton : rendu identique, mais toute la cellule reste
+   cliquable à la souris (sinon la bordure de 8 px ne déclencherait plus le tri). */
+.pedia-table th.sortable { padding: 0; }
+.pedia-table th.sortable > button {
+  font: inherit; color: inherit; letter-spacing: inherit; text-transform: inherit;
+  background: none; border: 0; margin: 0; padding: 8px 10px;
+  display: block; width: 100%; text-align: inherit; cursor: pointer;
+}
 .pedia-table th.sorted { color: var(--accent); }
 .pedia-table th .arrow { font-size: 0.72rem; }
 .pedia-num { text-align: center; white-space: nowrap; font-weight: 800; }

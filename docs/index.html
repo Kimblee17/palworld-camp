@@ -28,24 +28,24 @@
     </div>
   </noscript>
   <header>
-    <div class="brand"><span class="mk">🏕️</span><h1>Palworld</h1></div>
+    <div class="brand"><span class="mk" aria-hidden="true">🏕️</span><h1>Palworld</h1></div>
   </header>
 
   <!-- Barre : onglets (gauche) + espaces/synchro (droite) -->
   <div class="sync-bar" id="sync-bar">
     <div class="view-switch">
-      <button class="view-btn active" data-view="camp">🏕️ Assistant de camp</button>
-      <button class="view-btn" data-view="palpedia">📖 Palpedia</button>
-      <button class="view-btn" data-view="drops">💎 Drops</button>
-      <button class="view-btn" data-view="import">📥 Importer une save</button>
+      <button class="view-btn active" data-view="camp"><span aria-hidden="true">🏕️</span> Assistant de camp</button>
+      <button class="view-btn" data-view="palpedia"><span aria-hidden="true">📖</span> Palpedia</button>
+      <button class="view-btn" data-view="drops"><span aria-hidden="true">💎</span> Drops</button>
+      <button class="view-btn" data-view="import"><span aria-hidden="true">📥</span> Importer une save</button>
     </div>
     <span id="sync-status" class="sync-status">Chargement…</span>
-    <button id="presence" class="bar-btn presence" hidden title="En ligne — clique pour ton nom">👥</button>
-    <button id="space-create" class="bar-btn" hidden>👥 Créer un espace partagé</button>
-    <button id="space-join" class="bar-btn" hidden>＋ Rejoindre un espace…</button>
-    <button id="space-share" class="bar-btn" hidden>🔗 Copier le lien du groupe</button>
-    <button id="space-share-ro" class="bar-btn" hidden>👁 Lien lecture seule</button>
-    <button id="space-leave" class="bar-btn" hidden>🚪 Quitter (revenir en privé)</button>
+    <button id="presence" class="bar-btn presence" hidden title="En ligne — clique pour ton nom"><span aria-hidden="true">👥</span></button>
+    <button id="space-create" class="bar-btn" hidden><span aria-hidden="true">👥</span> Créer un espace partagé</button>
+    <button id="space-join" class="bar-btn" hidden><span aria-hidden="true">＋</span> Rejoindre un espace…</button>
+    <button id="space-share" class="bar-btn" hidden><span aria-hidden="true">🔗</span> Copier le lien du groupe</button>
+    <button id="space-share-ro" class="bar-btn" hidden><span aria-hidden="true">👁</span> Lien lecture seule</button>
+    <button id="space-leave" class="bar-btn" hidden><span aria-hidden="true">🚪</span> Quitter (revenir en privé)</button>
   </div>
 
   <div id="ro-banner" class="ro-banner" hidden>👁 Lecture seule — tu vois cet espace en direct, mais tu ne peux pas le modifier.</div>
@@ -55,12 +55,12 @@
     <label class="camp-select-label">Camp&nbsp;
       <select id="camp-select"></select>
     </label>
-    <button id="camp-new" class="bar-btn">＋ Nouveau</button>
-    <button id="camp-rename" class="bar-btn">✎ Renommer</button>
-    <button id="camp-delete" class="bar-btn danger">🗑 Supprimer</button>
-    <button id="undo-btn" class="bar-btn" hidden>↩ Annuler</button>
-    <button id="export-btn" class="bar-btn" title="Télécharger tes camps et ta boîte dans un fichier">⬇ Exporter</button>
-    <button id="import-btn" class="bar-btn" title="Remplacer tes camps et ta boîte depuis un fichier exporté">⬆ Importer</button>
+    <button id="camp-new" class="bar-btn"><span aria-hidden="true">＋</span> Nouveau</button>
+    <button id="camp-rename" class="bar-btn"><span aria-hidden="true">✎</span> Renommer</button>
+    <button id="camp-delete" class="bar-btn danger"><span aria-hidden="true">🗑</span> Supprimer</button>
+    <button id="undo-btn" class="bar-btn" hidden><span aria-hidden="true">↩</span> Annuler</button>
+    <button id="export-btn" class="bar-btn" title="Télécharger tes camps et ta boîte dans un fichier"><span aria-hidden="true">⬇</span> Exporter</button>
+    <button id="import-btn" class="bar-btn" title="Remplacer tes camps et ta boîte depuis un fichier exporté"><span aria-hidden="true">⬆</span> Importer</button>
     <input type="file" id="import-file" accept="application/json,.json" hidden>
   </div>
 
@@ -71,9 +71,9 @@
     <!-- Colonne gauche : catalogue (Pals / Constructions) -->
     <section class="panel" id="catalog">
       <div class="tabs">
-        <button class="tab active" data-tab="pals">🐾 Pals (<span id="pals-total">0</span>)</button>
-        <button class="tab" data-tab="structures">🏗️ Constructions (<span id="structs-total">0</span>)</button>
-        <button class="tab" data-tab="box">🎒 Ma boîte (<span id="box-total">0</span>)</button>
+        <button class="tab active" data-tab="pals"><span aria-hidden="true">🐾</span> Pals (<span id="pals-total">0</span>)</button>
+        <button class="tab" data-tab="structures"><span aria-hidden="true">🏗️</span> Constructions (<span id="structs-total">0</span>)</button>
+        <button class="tab" data-tab="box"><span aria-hidden="true">🎒</span> Ma boîte (<span id="box-total">0</span>)</button>
       </div>
 
       <div class="controls tab-pals">
@@ -105,7 +105,7 @@
       <div id="limit-msg" class="limit-msg"></div>
 
       <div class="suggest-block">
-        <button id="suggest-btn" class="btn-suggest">💡 Suggérer une compo depuis ma boîte</button>
+        <button id="suggest-btn" class="btn-suggest"><span aria-hidden="true">💡</span> Suggérer une compo depuis ma boîte</button>
         <div id="suggest-result" class="suggest-result" hidden></div>
       </div>
 
@@ -138,16 +138,16 @@
       <table class="pedia-table">
         <thead>
           <tr>
-            <th class="sortable" data-sort="name">Pal</th>
-            <th class="sortable" data-sort="level" title="Niveau suggéré (calculateur de capture palworld.gg)">Niv.</th>
-            <th class="sortable" data-sort="rarity">Rareté</th>
-            <th class="sortable" data-sort="capture" title="Taux de capture (plus haut = plus facile à capturer)">Capture</th>
-            <th class="sortable" data-sort="skills">Compétences</th>
-            <th class="sortable" data-sort="overall" title="Best Overall">Global</th>
-            <th class="sortable" data-sort="workers" title="Workers (base)">Workers</th>
-            <th class="sortable" data-sort="combat" title="Combat">Combat</th>
-            <th class="sortable" data-sort="flyingMount" title="Flying Mounts">Vol</th>
-            <th class="sortable" data-sort="groundMount" title="Ground Mounts">Sol</th>
+            <th class="sortable" data-sort="name"><button type="button">Pal</button></th>
+            <th class="sortable" data-sort="level" title="Niveau suggéré (calculateur de capture palworld.gg)"><button type="button">Niv.</button></th>
+            <th class="sortable" data-sort="rarity"><button type="button">Rareté</button></th>
+            <th class="sortable" data-sort="capture" title="Taux de capture (plus haut = plus facile à capturer)"><button type="button">Capture</button></th>
+            <th class="sortable" data-sort="skills"><button type="button">Compétences</button></th>
+            <th class="sortable" data-sort="overall" title="Best Overall"><button type="button">Global</button></th>
+            <th class="sortable" data-sort="workers" title="Workers (base)"><button type="button">Workers</button></th>
+            <th class="sortable" data-sort="combat" title="Combat"><button type="button">Combat</button></th>
+            <th class="sortable" data-sort="flyingMount" title="Flying Mounts"><button type="button">Vol</button></th>
+            <th class="sortable" data-sort="groundMount" title="Ground Mounts"><button type="button">Sol</button></th>
           </tr>
         </thead>
         <tbody id="pedia-body"></tbody>
@@ -168,7 +168,7 @@
   <section class="panel view-import" id="import-sav" hidden>
     <h2>📥 Importer une sauvegarde Palworld</h2>
     <div class="sav-import">
-      <label class="btn btn-add sav-pick">📁 Choisir une sauvegarde Palworld (.sav)
+      <label class="btn btn-add sav-pick"><span aria-hidden="true">📁</span> Choisir une sauvegarde Palworld (.sav)
         <input type="file" id="sav-file" accept=".sav" hidden>
       </label>
       <span id="sav-status" class="sav-status"></span>
@@ -186,7 +186,7 @@
       </div>
 
       <div id="sav-preview" class="import-report" hidden></div>
-      <button id="sav-apply" class="btn btn-add" hidden>Valider l'import ↓</button>
+      <button id="sav-apply" class="btn btn-add" hidden>Valider l'import <span aria-hidden="true">↓</span></button>
     </div>
   </section>
 
@@ -194,7 +194,7 @@
   <div id="pal-modal" class="pal-modal" hidden role="dialog" aria-modal="true" aria-label="Détail du Pal">
     <div class="pm-backdrop"></div>
     <div class="pm-card">
-      <button class="pm-close" aria-label="Fermer">✕</button>
+      <button class="pm-close" aria-label="Fermer"><span aria-hidden="true">✕</span></button>
       <div id="pal-modal-body"></div>
     </div>
   </div>
