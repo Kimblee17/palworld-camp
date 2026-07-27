@@ -525,6 +525,9 @@ body.read-only #clear-camp, body.read-only #undo-btn,
 body.read-only .limit-ctrl input, body.read-only .sav-import {
   opacity: 0.4; pointer-events: none;
 }
+/* Lecture seule : l'import écraserait l'espace, on le masque. L'export reste
+   disponible (il ne fait que lire l'état). */
+body.read-only #import-btn { display: none; }
 
 /* Accessibilité : focus clavier visible */
 :focus-visible { outline: 3px solid var(--accent-2); outline-offset: 2px; border-radius: 4px; }

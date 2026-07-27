@@ -242,6 +242,99 @@ function doUndo() {
   saveStore(); renderAll();
 }
 
+// ===== Export / import de la sauvegarde (JSON) =====
+// Tout l'état vit dans localStorage : ces deux boutons permettent d'en garder une
+// copie hors du navigateur et de la restaurer (autre appareil, après un nettoyage…).
+const EXPORT_APP = "palworld-camp";
+const EXPORT_VERSION = 1;          // incrémenter si le schéma du fichier change
+
+function exportStore() {
+  const now = new Date();
+  const payload = {
+    app: EXPORT_APP,
+    version: EXPORT_VERSION,
+    exportedAt: now.toISOString(),
+    store,
+  };
+  const stamp = [
+    now.getFullYear(),
+    String(now.getMonth() + 1).padStart(2, "0"),
+    String(now.getDate()).padStart(2, "0"),
+  ].join("-");
+  const url = URL.createObjectURL(
+    new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" }));
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `palworld-camp-export-${stamp}.json`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
+// Valide le contenu d'un fichier d'export et renvoie le store brut qu'il contient.
+// Lève une Error dont le message est directement affichable à l'utilisateur.
+function parseExportFile(text) {
+  let data;
+  try { data = JSON.parse(text); }
+  catch { throw new Error("Ce fichier n'est pas un JSON valide."); }
+  const isPlainObject = v => !!v && typeof v === "object" && !Array.isArray(v);
+
+  if (!isPlainObject(data))
+    throw new Error("Contenu inattendu : le fichier ne contient pas un objet JSON.");
+  if (data.app !== EXPORT_APP)
+    throw new Error("Ce fichier ne vient pas de l'assistant de camp Palworld.");
+  if (!Number.isInteger(data.version) || data.version < 1)
+    throw new Error("Version de sauvegarde illisible.");
+  if (data.version > EXPORT_VERSION)
+    throw new Error(`Sauvegarde en version ${data.version}, or cette page ne gère que la version ${EXPORT_VERSION}. Recharge l'application (Ctrl+F5).`);
+
+  const s = data.store;
+  if (!isPlainObject(s))
+    throw new Error("Sauvegarde illisible : la section « store » est absente.");
+  if (!isPlainObject(s.camps))
+    throw new Error("Sauvegarde illisible : aucun camp trouvé.");
+  const campIds = Object.keys(s.camps);
+  if (!campIds.length)
+    throw new Error("Cette sauvegarde ne contient aucun camp.");
+  for (const id of campIds) {
+    if (!isPlainObject(s.camps[id]))
+      throw new Error(`Sauvegarde illisible : le camp « ${id} » est corrompu.`);
+  }
+  if (s.palBox != null && !isPlainObject(s.palBox))
+    throw new Error("Sauvegarde illisible : la boîte à Pals est corrompue.");
+  return s;
+}
+
+function runStoreImport(text, btn) {
+  if (readOnly) return;
+  let incoming;
+  try { incoming = parseExportFile(text); }
+  catch (e) { alert("Import impossible.\n\n" + e.message); return; }
+
+  const nbCamps = Object.keys(incoming.camps).length;
+  const cible = isShared()
+    ? "de l'espace partagé — le changement sera visible par tout ton groupe"
+    : "de cet appareil";
+  if (!confirm(
+    `Importer cette sauvegarde ? (${nbCamps} camp(s))\n\n`
+    + `⚠️ Cela REMPLACE tes camps et ta boîte à Pals ${cible}.\n\n`
+    + `Tu pourras revenir en arrière avec ↩ Annuler.`)) return;
+
+  pushUndo("import de sauvegarde");
+  // normalize() applique migrateBox() à la boîte et garantit un camp actif valide.
+  store = normalize(incoming);
+  touchBox();
+  saveStore();
+  renderAll();
+
+  if (btn) {   // même retour visuel discret que les boutons de partage
+    const old = btn.textContent;
+    btn.textContent = "✓ Importé !";
+    setTimeout(() => { btn.textContent = old; }, 1800);
+  }
+}
+
 // ===== Modale : détail d'un Pal =====
 function openPalDetail(pal) {
   const modal = document.getElementById("pal-modal");
@@ -477,6 +570,23 @@ function init() {
   document.getElementById("camp-new").addEventListener("click", newCamp);
   document.getElementById("camp-rename").addEventListener("click", renameCamp);
   document.getElementById("camp-delete").addEventListener("click", deleteCamp);
+
+  // Export / import de la sauvegarde locale
+  document.getElementById("export-btn").addEventListener("click", exportStore);
+  document.getElementById("import-btn").addEventListener("click", () => {
+    if (readOnly) return;
+    document.getElementById("import-file").click();
+  });
+  document.getElementById("import-file").addEventListener("change", async e => {
+    const input = e.target;
+    const file = input.files && input.files[0];
+    input.value = "";                     // permet de réimporter deux fois le même fichier
+    if (!file) return;
+    let text;
+    try { text = await file.text(); }
+    catch { alert("Import impossible.\n\nLa lecture du fichier a échoué."); return; }
+    runStoreImport(text, document.getElementById("import-btn"));
+  });
 
   // Espaces partagés (cloud)
   document.getElementById("space-create").addEventListener("click", () => {
