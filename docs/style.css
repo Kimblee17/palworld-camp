@@ -583,3 +583,41 @@ body.read-only #import-btn { display: none; }
   font-size: 0.66rem; font-weight: 800; color: #0c1016;
   border: 1.5px solid var(--edge); border-radius: 5px; padding: 1px 6px;
 }
+
+/* ===== Contraintes du suggesteur ===== */
+/* Badge épingler/exclure sur chaque entrée de la boîte */
+.pref-btn {
+  background: none; border: 2px solid var(--border); border-radius: 8px;
+  color: var(--muted); font-size: 0.95rem; line-height: 1;
+  padding: 5px 8px; cursor: pointer; flex: 0 0 auto;
+}
+.pref-btn:hover:not(:disabled) { border-color: var(--edge); color: var(--text); }
+.pref-btn:disabled { opacity: 0.4; cursor: default; }
+.pref-btn.is-pin  { border-color: var(--accent); background: #24310f; }
+.pref-btn.is-excl { border-color: #ff6b5e; background: #2f1a18; }
+
+/* Rangée de chips : priorité par compétence */
+.sg-prefs-row { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.sg-prefs-lbl { color: var(--muted); font-size: 0.8rem; font-weight: 800; }
+.sg-prefs { display: flex; flex-wrap: wrap; gap: 5px; }
+.wpref {
+  background: var(--panel-2); border: 2px solid var(--border); border-radius: 999px;
+  color: var(--muted); font-size: 0.74rem; font-weight: 800;
+  padding: 3px 9px; cursor: pointer;
+}
+.wpref:hover:not(:disabled) { color: var(--text); border-color: var(--edge); }
+.wpref:disabled { opacity: 0.4; cursor: default; }
+.wpref.is-prio   { border-color: var(--accent); color: var(--accent); }
+.wpref.is-ignore { opacity: 0.45; text-decoration: line-through; }
+
+/* Résultat : détail de l'individu retenu */
+.sg-stars { color: var(--accent); font-size: 0.8rem; margin-left: 4px; letter-spacing: -1px; }
+.sg-meta { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.sg-lvl, .sg-pass { color: var(--muted); font-size: 0.72rem; }
+.sg-pass { color: var(--accent-2); }
+.sg-tag {
+  font-size: 0.66rem; font-weight: 800; text-transform: uppercase;
+  border: 1px solid var(--border); border-radius: 999px; padding: 1px 6px; color: var(--muted);
+}
+.sg-tag.is-prio { color: var(--accent); border-color: var(--accent); }
+.sg-cov.muted { opacity: 0.5; }

@@ -1,6 +1,7 @@
 import { currentTab, switchTab } from "./main.js";
 import { deriveFromMachines, escHtml, prettyStation } from "./sav-import.js";
-import { active, addBox, addPal, addStruct, boxQty, isFull, palQty, readOnly, saveStore, setBoxQty, setPalQty, setStructQty, store, structQty, totalBox, updateUndoUI } from "./state.js";
+import { renderSuggestPrefs } from "./suggest.js";
+import { active, addBox, addPal, addStruct, boxQty, cyclePalPref, palPref, isFull, palQty, readOnly, saveStore, setBoxQty, setPalQty, setStructQty, store, structQty, totalBox, updateUndoUI } from "./state.js";
 import { PALS, STRUCTURES, WORK_TYPES, palsById, structById, workById } from "./dataset.js";
 
 // ===== Modale : détail d'un Pal =====
@@ -463,11 +464,33 @@ function palRow(pal, mode) {
   li.appendChild(skills);
 
   if (mode === "box") {
+    li.appendChild(suggestPrefBtn(pal));
     li.appendChild(stepperOrAdd("box", q, () => addBox(pal.id), d => setBoxQty(pal.id, q + d), () => setBoxQty(pal.id, 0), false));
   } else {
     li.appendChild(stepperOrAdd(mode, q, () => addPal(pal.id), d => setPalQty(pal.id, q + d), () => setPalQty(pal.id, 0), isFull()));
   }
   return li;
+}
+
+// Badge cliquable de l'onglet boîte : neutre -> épinglé -> exclu -> neutre.
+// Contraint le suggesteur de compo (cf. docs/js/suggest.js).
+const PREF_LOOK = {
+  null:      { txt: "○", cls: "",        etat: "neutre",   suite: "épingler (toujours dans la compo)" },
+  pin:       { txt: "📌", cls: "is-pin",  etat: "épinglé",  suite: "exclure de la compo" },
+  exclude:   { txt: "🚫", cls: "is-excl", etat: "exclu",    suite: "revenir au neutre" },
+};
+function suggestPrefBtn(pal) {
+  const pref = palPref(pal.id);
+  const look = PREF_LOOK[pref] || PREF_LOOK.null;
+  const b = document.createElement("button");
+  b.type = "button";
+  b.className = "pref-btn " + look.cls;
+  b.innerHTML = `<span aria-hidden="true">${look.txt}</span>`;
+  b.title = `Suggestion : ${look.etat} — clic pour ${look.suite}`;
+  b.setAttribute("aria-label", `${pal.name} — suggestion : ${look.etat}. Activer pour ${look.suite}.`);
+  b.disabled = readOnly;
+  b.onclick = () => cyclePalPref(pal.id);
+  return b;
 }
 
 function structRow(st, mode) {
@@ -656,5 +679,6 @@ export function renderAll() {
   renderCampLists();
   renderCampMachines();
   renderSummary();
+  renderSuggestPrefs();
   updateUndoUI();
 }

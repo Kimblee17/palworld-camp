@@ -8,6 +8,10 @@ import { DB, PALS, STRUCTURES, WORK_TYPES, palsById, structById, workById } from
 const STORE_KEY = "palworld-store";
 const SPACE_ID_KEY = "palworld-space";
 export const SPACE_CACHE_KEY = "palworld-space-cache";
+// Déclarés avant `store` : loadStore() -> normalize() les lit dès le chargement du
+// module, et un const reste inaccessible tant que sa ligne n'a pas été exécutée.
+const PAL_PREFS = ["pin", "exclude"];
+const WORK_PREFS = ["priority", "ignore"];
 export let store = loadStore();
 // Les imports ES sont en lecture seule : les modules qui remplacent entièrement le
 // store (synchro cloud, retour en privé) passent par ce setter.
@@ -43,11 +47,14 @@ export function loadStore() {
   if (!Number.isFinite(limit) || limit < 1) limit = 15;
 
   const id = uid();
-  return { activeId: id, palBox: {}, camps: { [id]: { name: "Camp 1", pals, structures: {}, limit } } };
+  // normalize() aussi sur ce chemin : sinon un store tout neuf n'aurait pas les champs
+  // garantis (suggest…) que le reste du code suppose présents.
+  return normalize({ activeId: id, palBox: {}, camps: { [id]: { name: "Camp 1", pals, structures: {}, limit } } });
 }
 
 export function normalize(s) {
   s.palBox = migrateBox(s.palBox);
+  s.suggest = normalizeSuggestPrefs(s.suggest);
   s.camps = s.camps || {};
   for (const c of Object.values(s.camps)) {
     c.pals = c.pals || {};
@@ -285,6 +292,48 @@ export function setStructQty(id, q) {
 // entrées individuelles : on ajoute des entrées synthétiques si q monte ; si q baisse,
 // on retire d'abord les entrées manuelles/synthétiques (sans données de save), puis, en
 // dernier recours, les entrées importées (préserve level/étoiles/passifs autant que possible).
+// ===== Contraintes du suggesteur de compo =====
+// Persistées dans le store (donc partagées avec le groupe en espace partagé) :
+//   store.suggest = { pals: { [palId]: "pin" | "exclude" },
+//                     works: { [workId]: "priority" | "ignore" } }
+// L'absence de clé = état neutre ; on ne stocke jamais "neutral" pour garder le
+// store compact et éviter du bruit de synchro.
+function normalizeSuggestPrefs(s) {
+  const keep = (obj, allowed) => Object.fromEntries(
+    Object.entries((obj && typeof obj === "object") ? obj : {})
+      .filter(([, v]) => allowed.includes(v)));
+  s = s && typeof s === "object" ? s : {};
+  return { pals: keep(s.pals, PAL_PREFS), works: keep(s.works, WORK_PREFS) };
+}
+
+export function palPref(palId) { return store.suggest.pals[palId] || null; }
+export function workPref(workId) { return store.suggest.works[workId] || null; }
+
+// Cycle neutre -> épinglé -> exclu -> neutre (et neutre -> prioritaire -> ignorée).
+function cyclePref(map, key, states) {
+  const i = states.indexOf(map[key]);
+  const next = states[i + 1];       // undefined en fin de cycle -> retour au neutre
+  if (next) map[key] = next; else delete map[key];
+}
+
+export function cyclePalPref(palId) {
+  if (readOnly) return;
+  cyclePref(store.suggest.pals, palId, PAL_PREFS);
+  saveStore(); renderAll();
+}
+
+export function cycleWorkPref(workId) {
+  if (readOnly) return;
+  cyclePref(store.suggest.works, workId, WORK_PREFS);
+  saveStore(); renderAll();
+}
+
+export function clearSuggestPrefs() {
+  if (readOnly) return;
+  store.suggest = { pals: {}, works: {} };
+  saveStore(); renderAll();
+}
+
 export function setBoxQty(id, q) {
   if (readOnly) return;
   q = Math.max(0, Math.floor(q));
