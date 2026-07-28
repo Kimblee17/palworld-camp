@@ -5,6 +5,7 @@ Génère les données de l'application depuis les fichiers CSV :
   - docs/sw.js                              (version du cache = hash git court)
   - data/changelog.json                     (Pals ajoutés/retirés depuis le build précédent)
   - data/breeding.json                      (breed power + combinaisons uniques)
+  - data/recipes.json                       (recettes de fabrication)
 
 Les rangs de tier-list (palworld.gg) sont fusionnés dans chaque Pal de pals.json
 via fetch_tier_lists.load_tier_lists (téléchargement live + cache de repli).
@@ -22,6 +23,7 @@ from fetch_tier_lists import load_tier_lists
 from fetch_pal_data import load_pal_data
 from fetch_pal_drops import load_pal_drops
 from fetch_breeding import load_breeding
+from fetch_recipes import load_recipes
 
 BASE_DIR = Path(__file__).parent
 PALS_CSV = BASE_DIR / "Liste pals.csv"
@@ -231,6 +233,43 @@ def merge_breeding(pals):
     return combos
 
 
+def merge_recipes(structures):
+    """Recettes + correspondance station -> id de construction de l'app.
+
+    Les noms de stations viennent de palworld.gg (français) ; on les relie à nos
+    constructions par nom exact, la table d'alias de fetch_recipes.py ayant déjà réglé
+    les libellés divergents (Scierie -> Camp de bûcheronnage…).
+    """
+    data = load_recipes()
+    id_by_name = {s["name"]: s["id"] for s in structures}
+
+    inconnues = set()
+    def station_id(nom):
+        if not nom:
+            return None
+        sid = id_by_name.get(nom)
+        if sid is None:
+            inconnues.add(nom)
+        return sid
+
+    recipes = {}
+    for nom, r in data["recipes"].items():
+        recipes[nom] = {
+            "count": r.get("count", 1),
+            "ingredients": r["ingredients"],
+            **({"station": r["station"], "stationId": station_id(r["station"]),
+                "stationGuessed": r.get("stationGuessed", False)} if r.get("station") else {}),
+        }
+    produced_by = {}
+    for res, nom in data["producedBy"].items():
+        produced_by[res] = {"station": nom, "stationId": station_id(nom)}
+
+    print(f"Recettes : {len(recipes)} objet(s), {len(produced_by)} ressource(s) d'extraction")
+    if inconnues:
+        print(f"  ⚠ {len(inconnues)} station(s) sans construction correspondante : {', '.join(sorted(inconnues))}")
+    return {"recipes": recipes, "producedBy": produced_by}
+
+
 def build_structures():
     structures = []
     unknown = set()
@@ -314,10 +353,11 @@ def build_changelog(pals):
     return data
 
 
-def build_static(pals, structures, unique_combos):
+def build_static(pals, structures, unique_combos, recipes):
     """Écrit docs/data.js : données embarquées pour la version statique (GitHub Pages)."""
     data = {"workTypes": WORK_TYPES, "pals": pals, "structures": structures,
-            "uniqueCombos": unique_combos}
+            "uniqueCombos": unique_combos, "recipes": recipes["recipes"],
+            "producedBy": recipes["producedBy"]}
     js = "// Généré par build_data.py — ne pas éditer à la main.\n"
     js += "window.PAL_DATA = " + json.dumps(data, ensure_ascii=False) + ";\n"
     STATIC_OUT.parent.mkdir(exist_ok=True)
@@ -359,6 +399,7 @@ if __name__ == "__main__":
     pals = build_pals()
     structures = build_structures()
     unique_combos = merge_breeding(pals)
+    recipes = merge_recipes(structures)
     build_changelog(pals)        # avant build_static : compare au docs/data.js encore en place
-    build_static(pals, structures, unique_combos)
+    build_static(pals, structures, unique_combos, recipes)
     stamp_service_worker()
