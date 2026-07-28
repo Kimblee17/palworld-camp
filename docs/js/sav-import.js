@@ -260,6 +260,8 @@ function mapSavePals(pals) {
       species: sp, level: p.level, stars: p.stars || 0,
       ivs: p.ivs || null, gender: p.gender || null,
       passives: p.passives || [], owner_uid: p.owner_uid || "",
+      // aptitudes décochées dans la fiche du Pal en jeu : le suggesteur doit les respecter
+      workOff: p.work_off || [],
     });
   }
   const counts = {};
@@ -543,6 +545,7 @@ export function applySavImport() {
         level: Number.isFinite(it.level) ? it.level : null,
         stars: it.stars || 0,
         passives: it.passives || [],
+        workOff: it.workOff || [],
       };
     }
     touchBox();

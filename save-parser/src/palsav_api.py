@@ -120,6 +120,37 @@ def _instance_id(entry):
     return str(v) if v else None
 
 
+# Aptitudes au travail : enum du jeu -> identifiant interne de l'application.
+# Vocabulaire relevé dans un Level.sav réel (EPalWorkSuitability::…).
+_WORK_SUITABILITY = {
+    "EmitFlame": "kindling",            "Watering": "watering",
+    "Seeding": "planting",              "GenerateElectricity": "electricity",
+    "Handcraft": "handiwork",           "Collection": "gathering",
+    "Deforest": "lumbering",            "Mining": "mining",
+    "ProductMedicine": "medicine",      "Cool": "cooling",
+    "Transport": "transporting",        "MonsterFarm": "farming",
+}
+
+
+def _work_off(sv):
+    """Aptitudes DÉSACTIVÉES en jeu pour ce Pal (case décochée dans sa fiche).
+
+    Stockées dans WorkSuitabilityOptionInfo.OffWorkSuitabilityList ; la clé est absente
+    tant que le joueur n'a rien décoché. Renvoie des identifiants de l'app ("mining"…).
+    """
+    info = sv.get("WorkSuitabilityOptionInfo")
+    if not info:
+        return []
+    lst = (((info.get("value", {}) or {}).get("OffWorkSuitabilityList", {}) or {})
+           .get("value", {}) or {}).get("values", []) or []
+    out = []
+    for v in lst:
+        wid = _WORK_SUITABILITY.get(str(v).replace("EPalWorkSuitability::", ""))
+        if wid and wid not in out:
+            out.append(wid)
+    return out
+
+
 def _extract_pals(charmap):
     out = []
     for e in charmap:
@@ -154,6 +185,7 @@ def _extract_pals(charmap):
                 "defense": _val(sv.get("Talent_Defense"), 0) or 0,
             },
             "passives": _arr_values(sv.get("PassiveSkillList")),   # codes internes des passifs
+            "work_off": _work_off(sv),                             # aptitudes décochées en jeu
             "container_id": str(container) if container else None, # conteneur (équipe / boîte / base)
             "slot_index": (slot.get("SlotIndex", {}) or {}).get("value"),
         })

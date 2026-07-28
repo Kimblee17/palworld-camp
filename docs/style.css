@@ -621,3 +621,4 @@ body.read-only #import-btn { display: none; }
 }
 .sg-tag.is-prio { color: var(--accent); border-color: var(--accent); }
 .sg-cov.muted { opacity: 0.5; }
+.sg-off { color: var(--lvl-2); font-size: 0.72rem; font-weight: 700; }

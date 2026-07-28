@@ -91,13 +91,14 @@ export function migrateBox(box) {
     if (typeof val === "number") {                    // ancien format { palId: qty }
       const n = Math.max(0, Math.floor(val));
       for (let i = 0; i < n; i++)
-        out[`syn_${key}_${i}`] = { palId: key, level: null, stars: 0, passives: [], manual: true };
+        out[`syn_${key}_${i}`] = { palId: key, level: null, stars: 0, passives: [], workOff: [], manual: true };
     } else if (val && typeof val === "object" && val.palId) {   // déjà au nouveau format
       out[key] = {
         palId: val.palId,
         level: Number.isFinite(val.level) ? val.level : null,
         stars: val.stars || 0,
         passives: Array.isArray(val.passives) ? val.passives : [],
+        workOff: Array.isArray(val.workOff) ? val.workOff : [],
         ...(val.manual ? { manual: true } : {}),
       };
     }
@@ -341,7 +342,7 @@ export function setBoxQty(id, q) {
   const cur = entries.length;
   if (q > cur) {
     for (let i = 0; i < q - cur; i++)
-      store.palBox[synKey()] = { palId: id, level: null, stars: 0, passives: [], manual: true };
+      store.palBox[synKey()] = { palId: id, level: null, stars: 0, passives: [], workOff: [], manual: true };
   } else if (q < cur) {
     // manuelles d'abord (manual/synthétique), importées ensuite
     entries.sort(([, a], [, b]) => (a.manual ? 0 : 1) - (b.manual ? 0 : 1));
