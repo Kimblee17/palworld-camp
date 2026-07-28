@@ -183,14 +183,28 @@ def scrape(verbose=True):
         if not station:
             sans_station.append(it["name"])
 
+    # Ressources brutes : ingrédient qui EXISTE dans le catalogue d'objets mais n'a pas
+    # de recette (Blé, Paloxite, Tomate…). Sans cette liste, l'interface ne peut pas
+    # distinguer « ressource à récolter » d'un nom qu'elle ne reconnaît pas — et
+    # afficherait à tort « ingrédient inconnu » sur 124 ressources parfaitement banales.
+    connus = {it["name"] for it in items}
+    ingredients = {i["name"] for it in items for i in (it.get("recipe") or [])}
+    raw_items = sorted(n for n in ingredients if n in connus and n not in recipes)
+
     data = {
         "recipes": recipes,
         "producedBy": produced_by,
+        "rawItems": raw_items,
         "stationAliases": {k: v for k, v in STATION_ALIASES.items() if v},
         "stationByType": STATION_BY_TYPE,
     }
     if verbose:
-        print(f"  {len(recipes)} recettes, {len(produced_by)} ressource(s) d'extraction")
+        print(f"  {len(recipes)} recettes, {len(produced_by)} ressource(s) d'extraction, "
+              f"{len(raw_items)} ressource(s) brute(s)")
+        inconnus = sorted(ingredients - connus)
+        if inconnus:
+            print(f"  ⚠ {len(inconnus)} ingrédient(s) absent(s) du catalogue : "
+                  f"{', '.join(inconnus[:5])}{'…' if len(inconnus) > 5 else ''}")
         if sans_station:
             print(f"  ⚠ {len(sans_station)} objet(s) sans station (type sans établi associé)")
     return data

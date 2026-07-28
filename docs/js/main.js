@@ -1,5 +1,6 @@
 import { renderDrops } from "./drops.js";
 import { initBreeding, renderBreeding } from "./breeding.js";
+import { initProduction, renderProduction, DEBUG as prodDebug } from "./production.js";
 import { renderPalpedia, setPediaSort } from "./palpedia.js";
 import { ELEMENT_META, ELEMENT_ORDER, buildLegend, closePalModal, openPalDetail, renderAll, renderBoxCatalog, renderPalCatalog, renderStructCatalog } from "./render.js";
 import { _savPending, applySavImport, onSavFile, renderSavPreview } from "./sav-import.js";
@@ -66,6 +67,9 @@ window.setSyncUI = function (state, info = {}) {
 };
 
 // ===== Présence (qui est en ligne) =====
+// Audit des recettes depuis la console du navigateur.
+window.PW_PROD_DEBUG = prodDebug;
+
 window.PW_NAME = () => localStorage.getItem("palworld-name") || "";
 window.setPresence = function (list) {
   const el = document.getElementById("presence");
@@ -235,6 +239,7 @@ export function init() {
 
   buildLegend();
   initBreeding();
+  initProduction();
   renderAll();
   // Applique la vue demandée par l'URL (sans hash : #camp, URL laissée intacte).
   switchView(viewFromHash(), false);
@@ -252,7 +257,7 @@ export function switchTab(tab) {
 // Routage par hash : #camp (défaut) · #palpedia · #drops · #import.
 // Le hash est indépendant des paramètres ?ws= / ?r= de la synchro (firebase-sync.js
 // nettoie la query en conservant le hash), les deux cohabitent donc sans interférence.
-const VIEWS = ["camp", "palpedia", "drops", "breeding", "import"];
+const VIEWS = ["camp", "palpedia", "drops", "breeding", "production", "import"];
 function viewFromHash() {
   const v = decodeURIComponent(location.hash.replace(/^#/, ""));
   return VIEWS.includes(v) ? v : "camp";
@@ -267,10 +272,12 @@ function switchView(view, updateHash = true) {
   document.querySelectorAll(".view-palpedia").forEach(el => el.hidden = view !== "palpedia");
   document.querySelectorAll(".view-drops").forEach(el => el.hidden = view !== "drops");
   document.querySelectorAll(".view-breeding").forEach(el => el.hidden = view !== "breeding");
+  document.querySelectorAll(".view-production").forEach(el => el.hidden = view !== "production");
   document.querySelectorAll(".view-import").forEach(el => el.hidden = view !== "import");
   if (view === "palpedia") renderPalpedia();
   else if (view === "drops") renderDrops();
   else if (view === "breeding") renderBreeding();
+  else if (view === "production") renderProduction();
   // Nouvelle entrée d'historique -> le bouton retour revient à la vue précédente.
   if (updateHash && location.hash !== "#" + view) location.hash = view;
 }

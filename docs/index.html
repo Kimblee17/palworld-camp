@@ -38,6 +38,7 @@
       <button class="view-btn" data-view="palpedia"><span aria-hidden="true">📖</span> Palpedia</button>
       <button class="view-btn" data-view="drops"><span aria-hidden="true">💎</span> Drops</button>
       <button class="view-btn" data-view="breeding"><span aria-hidden="true">🥚</span> Reproduction</button>
+      <button class="view-btn" data-view="production"><span aria-hidden="true">🏭</span> Production</button>
       <button class="view-btn" data-view="import"><span aria-hidden="true">📥</span> Importer une save</button>
     </div>
     <span id="sync-status" class="sync-status">Chargement…</span>
@@ -203,6 +204,24 @@
     </div>
 
     <div id="bd-result" class="bd-result"></div>
+  </section>
+
+  <!-- Vue Production : d'un objectif de fabrication vers les ressources de base -->
+  <section class="panel view-production" id="production" hidden>
+    <h2>🏭 Chaîne de production</h2>
+    <div class="pr-ctrl">
+      <div class="pr-pick">
+        <label for="pr-item">Objet à fabriquer</label>
+        <input type="search" id="pr-search" placeholder="Rechercher un objet…" autocomplete="off">
+        <select id="pr-item" size="1"></select>
+      </div>
+      <div class="pr-pick pr-qty-box">
+        <label for="pr-qty">Quantité</label>
+        <input type="number" id="pr-qty" min="1" value="1">
+      </div>
+      <button id="pr-expand" class="bar-btn" type="button" title="Tout déplier">⤢ Tout déplier</button>
+    </div>
+    <div id="pr-result" class="pr-result"></div>
   </section>
 
   <!-- Vue Importer une save : import .sav configurable (100% navigateur) -->

@@ -267,7 +267,8 @@ def merge_recipes(structures):
     print(f"Recettes : {len(recipes)} objet(s), {len(produced_by)} ressource(s) d'extraction")
     if inconnues:
         print(f"  ⚠ {len(inconnues)} station(s) sans construction correspondante : {', '.join(sorted(inconnues))}")
-    return {"recipes": recipes, "producedBy": produced_by}
+    return {"recipes": recipes, "producedBy": produced_by,
+            "rawItems": data.get("rawItems", [])}
 
 
 def build_structures():
@@ -357,7 +358,7 @@ def build_static(pals, structures, unique_combos, recipes):
     """Écrit docs/data.js : données embarquées pour la version statique (GitHub Pages)."""
     data = {"workTypes": WORK_TYPES, "pals": pals, "structures": structures,
             "uniqueCombos": unique_combos, "recipes": recipes["recipes"],
-            "producedBy": recipes["producedBy"]}
+            "producedBy": recipes["producedBy"], "rawItems": recipes["rawItems"]}
     js = "// Généré par build_data.py — ne pas éditer à la main.\n"
     js += "window.PAL_DATA = " + json.dumps(data, ensure_ascii=False) + ";\n"
     STATIC_OUT.parent.mkdir(exist_ok=True)

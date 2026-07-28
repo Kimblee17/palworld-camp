@@ -147,7 +147,7 @@ main {
   padding: 18px;
   box-shadow: var(--sh-lg);
 }
-.view-palpedia, .view-drops, .view-import { margin: 6px 28px 44px; }
+.view-palpedia, .view-drops, .view-breeding, .view-production, .view-import { margin: 6px 28px 44px; }
 .panel h2 {
   font-size: 1.05rem; font-weight: 900; margin: 0 0 12px;
   padding-bottom: 8px; border-bottom: 2px solid var(--border);
@@ -672,3 +672,46 @@ body.read-only #import-btn { display: none; }
   margin-left: auto; font-size: 0.66rem; font-weight: 900; text-transform: uppercase;
   color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 1px 7px;
 }
+
+/* ===== Vue Production ===== */
+.pr-ctrl { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; margin-bottom: 16px; }
+.pr-pick { display: flex; flex-direction: column; gap: 6px; min-width: 240px; flex: 1; }
+.pr-qty-box { flex: 0 0 120px; min-width: 120px; }
+.pr-pick label { color: var(--muted); font-size: 0.78rem; font-weight: 900; text-transform: uppercase; }
+.pr-pick input, .pr-pick select {
+  background: var(--bg); color: var(--text);
+  border: 2px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 0.92rem;
+}
+.pr-msg { color: var(--muted); }
+.pr-tree, .pr-children, .pr-pals { list-style: none; margin: 0; padding: 0; }
+.pr-children { margin-left: 18px; padding-left: 12px; border-left: 2px solid var(--border); }
+.pr-node { margin: 3px 0; }
+.pr-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+           background: var(--panel-2); border: 2px solid var(--border);
+           border-radius: 8px; padding: 6px 10px; }
+.pr-node.is-leaf > .pr-head { background: var(--panel); border-style: dashed; }
+.pr-toggle { background: none; border: 0; color: var(--accent); cursor: pointer;
+             font-size: 0.9rem; font-weight: 900; padding: 2px 4px; }
+.pr-spacer { visibility: hidden; }
+.pr-name { font-size: 0.9rem; }
+.pr-meta { color: var(--muted); font-size: 0.74rem; }
+.pr-warn { color: var(--lvl-2); font-size: 0.74rem; font-weight: 800; }
+.pr-station { margin-left: auto; background: var(--panel); color: var(--text);
+              border: 2px solid var(--accent); border-radius: 999px;
+              padding: 2px 10px; font-size: 0.74rem; font-weight: 800; cursor: pointer; }
+.pr-station i { color: var(--muted); font-style: normal; }
+.pr-pals { margin: 4px 0 6px 30px; display: flex; gap: 10px; flex-wrap: wrap; }
+.pr-pals li { display: flex; align-items: center; gap: 6px;
+              background: var(--panel-2); border: 1px solid var(--border);
+              border-radius: 999px; padding: 2px 10px 2px 4px; font-size: 0.76rem; }
+.pr-pals .pal-ic { width: 22px; height: 22px; }
+.pr-pal-n { font-weight: 700; }
+.pr-pal-r { color: var(--muted); }
+.pr-summary { margin-top: 20px; border-top: 2px solid var(--border); padding-top: 14px; }
+.pr-summary h3 { font-size: 0.85rem; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+.pr-summary ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px;
+                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.pr-summary li { background: var(--panel-2); border: 1px solid var(--border);
+                 border-radius: 6px; padding: 5px 10px; font-size: 0.85rem; }
+.pr-stations { display: flex; gap: 8px; flex-wrap: wrap; }
+.pr-stations .pr-station { margin-left: 0; }
