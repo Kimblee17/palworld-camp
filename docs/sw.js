@@ -1,6 +1,6 @@
 // Service worker — app installable + hors-ligne.
 // Bump CACHE à chaque déploiement pour forcer le rafraîchissement du shell.
-const CACHE = "pw-bf83958";
+const CACHE = "pw-82f2914";
 // Les icônes de Pals (icons/pals/*.png) sont désormais auto-hébergées : elles passent
 // par le cache same-origin ci-dessous, au fil de la navigation. Elles ne sont PAS
 // précachées ici — ~300 fichiers rendraient l'installation du service worker trop lourde.

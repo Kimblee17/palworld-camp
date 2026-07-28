@@ -14,10 +14,17 @@ import { WORK_TYPES, palsById, structById, workById } from "./dataset.js";
 // Ajuste cette constante si le jeu change de barème : elle est le seul point à toucher.
 export const CONDENSE_WORK_BONUS = 1;
 export const WORK_LEVEL_CAP = 10;
-// À noter : la sauvegarde ne stocke PAS les niveaux d'aptitude effectifs d'un Pal
-// (livres d'aptitude compris) — seulement son rang de condensation. Ce bonus reste donc
-// un calcul, pas une lecture. En revanche les aptitudes DÉSACTIVÉES en jeu, elles, sont
-// dans la save et sont respectées (cf. workOff plus bas).
+
+// Ce que contient (et ne contient pas) la sauvegarde, vérifié dans un Level.sav réel —
+// noté ici pour éviter d'y revenir :
+//   • les NIVEAUX d'aptitude effectifs (livres d'aptitude compris) n'y sont PAS ;
+//     seul le rang de condensation est stocké, d'où le calcul ci-dessus ;
+//   • `CurrentWorkSuitability` est le travail qu'un Pal exécute à l'instant T, pas un niveau ;
+//   • `WorkSuitabilityOptionInfo.OffWorkSuitabilityList` liste les aptitudes DÉCOCHÉES
+//     dans la fiche du Pal. On l'ignore VOLONTAIREMENT : c'est un réglage d'affectation
+//     temporaire (« concentre-toi sur autre chose dans cette base »), pas une aptitude
+//     perdue — elle se réactive d'un clic. La compter comme absente ferait écarter de
+//     bons Pals de la suggestion.
 
 // ===== Passifs affectant la vitesse de travail =====
 // Clés = identifiants internes tels que stockés par l'import de save (PassiveSkillList) ;
@@ -75,20 +82,15 @@ function boxInstances() {
       stars: Number.isFinite(e.stars) ? e.stars : 0,
       level: Number.isFinite(e.level) ? e.level : null,
       passives: e.passives || [],
-      // aptitudes décochées dans la fiche du Pal en jeu (import de save)
-      workOff: Array.isArray(e.workOff) ? e.workOff : [],
       speed: speedMultiplier(e.passives),
     };
   }).filter(Boolean);
 }
 
 // Niveau d'aptitude effectif = aptitude de l'espèce + bonus de condensation.
-// Une aptitude désactivée en jeu vaut 0 : le Pal refuserait ce travail dans la base,
-// le suggesteur ne doit donc pas compter dessus pour couvrir une machine.
 export function effWork(inst, wid) {
   const base = inst.pal.work[wid] || 0;
   if (base <= 0) return 0;                       // la condensation n'ouvre pas une aptitude absente
-  if (inst.workOff.includes(wid)) return 0;
   return Math.min(WORK_LEVEL_CAP, base + inst.stars * CONDENSE_WORK_BONUS);
 }
 
@@ -264,12 +266,9 @@ export function renderSuggestion() {
         ? `<span class="sg-pass" title="Vitesse de travail ×${i.speed.toFixed(2)}">${pass.map(p => `${p.label} ×${p.factor}`).join(" · ")}</span>`
         : "";
       const lvl = i.level != null ? `<span class="sg-lvl">niv. ${i.level}</span>` : "";
-      const off = i.workOff.filter(w => (i.pal.work[w] || 0) > 0).map(w => workById[w]?.label).filter(Boolean);
-      const offHtml = off.length
-        ? `<span class="sg-off" title="Aptitudes décochées dans la fiche de ce Pal en jeu">⊘ ${off.join(", ")}</span>` : "";
       return `<li class="sg-pal">
         <span class="sg-name">${i.pal.name}${starsHtml(i.stars)}${i.pal.nightWorker ? " 🌙" : ""}</span>
-        <span class="sg-meta">${lvl}${passHtml}${offHtml}</span>
+        <span class="sg-meta">${lvl}${passHtml}</span>
         <span class="sg-chips">${chips}</span></li>`;
     }).join("");
 

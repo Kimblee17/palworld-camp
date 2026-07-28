@@ -6,21 +6,20 @@
   "license": "GPL-3.0-or-later",
   "files": {
     "ooz.mjs": {
-      "bytes": 11116,
-      "sha256": "28bb5bc6e4d4be2e5a9e67db5d45a43a3864d129f08d7087784ce59789b9e46f"
+      "bytes": 11114,
+      "sha256": "00ee242c7eba9a852b83fd1326720143430edd47574a951c02ac72fa0830d4d5"
     },
     "ooz.wasm": {
       "bytes": 108012,
       "sha256": "098ead41f4a6beb4de2a4b7e5e2adf70d0d4ffb103ce23449209f27577aa86bb"
     },
     "palsav.zip": {
-      "bytes": 68830,
-      "sha256": "1c03a5b32fdaf87f58970f64fa99e7b17344de3a9b27ffb8d5372568e44e2256"
+      "bytes": 68280,
+      "sha256": "2b3af72bb74f41fbf8bbfb248d836bbe6070985b84e81d40e5bc5a3ab7810ab4"
     },
     "parser.mjs": {
-      "bytes": 6002,
-      "sha256": "50ef962485a5bf28bf24400664fcca8845a8ab9cb14111193424cd329f2f80c5"
+      "bytes": 5860,
+      "sha256": "498060ea08b7e23b2a425878a128f93bdad36235c6a898e913a7bd472737694a"
     }
-  },
-  "note_local_patch": "palsav_api.py modifie localement (extraction de work_off : aptitudes desactivees en jeu) ; cf. save-parser/src/palsav_api.py"
+  }
 }
