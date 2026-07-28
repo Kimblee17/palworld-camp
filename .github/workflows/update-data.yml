@@ -1,0 +1,119 @@
+name: Mise à jour des données
+
+# Les données viennent du scraping de palworld.gg : elles bougent quand le jeu est mis
+# à jour, et le scraping peut casser à tout moment si le site change. On rafraîchit donc
+# une fois par semaine, et on préfère un job rouge à des données silencieusement périmées.
+on:
+  schedule:
+    - cron: "0 6 * * 1"      # tous les lundis à 06:00 UTC
+  workflow_dispatch:          # déclenchement manuel depuis l'onglet Actions
+
+permissions:
+  contents: write             # nécessaire pour committer les données rafraîchies
+
+concurrency:
+  group: update-data          # deux exécutions simultanées se marcheraient dessus
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      # PALWORLD_STRICT_FETCH=1 désactive le repli silencieux sur les caches
+      # data/*.json : si palworld.gg change ou tombe, l'étape échoue au lieu de
+      # republier les mêmes données en affichant un simple avertissement.
+      # Chaque script a son étape pour que l'échec désigne directement le coupable.
+      - name: Tier-lists
+        env: { PALWORLD_STRICT_FETCH: "1" }
+        run: python fetch_tier_lists.py
+
+      # Lit data/tier-lists.json (étape précédente) et ajoute au CSV les Pals
+      # qui y apparaissent sans être encore connus de l'application.
+      - name: Nouveaux Pals
+        env: { PALWORLD_STRICT_FETCH: "1" }
+        run: python fetch_new_pals.py
+
+      # Rafraîchit les compétences de travail des Pals déjà connus (slugs lus dans
+      # data/pals.json). Les Pals ajoutés à l'étape précédente ont déjà leurs niveaux
+      # et seront couverts ici à l'exécution suivante, une fois leur slug publié.
+      - name: Compétences de travail
+        env: { PALWORLD_STRICT_FETCH: "1" }
+        run: python fetch_work_suitability.py
+
+      # build_data.py appelle lui-même load_tier_lists / load_pal_data / load_pal_drops :
+      # les données de jeu et les drops sont donc récupérés ici, en direct. On ne lance
+      # pas fetch_pal_data.py ni fetch_pal_drops.py séparément, ce serait exactement le
+      # même travail en double (~300 requêtes de plus pour les drops).
+      - name: Construire les données
+        env: { PALWORLD_STRICT_FETCH: "1" }
+        run: python build_data.py
+
+      # data/changelog.json change à chaque exécution (horodatage) : l'exclure évite
+      # un commit hebdomadaire vide quand rien n'a réellement bougé.
+      - name: Détecter les changements
+        id: diff
+        run: |
+          if git diff --quiet -- data docs/data.js ':(exclude)data/changelog.json'; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Aucun changement de données."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --stat -- data docs/data.js ':(exclude)data/changelog.json'
+          fi
+
+      - name: Committer et pousser
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # « Liste pals.csv » est la source éditée par fetch_new_pals / work_suitability,
+          # docs/sw.js porte la version de cache régénérée par build_data.py.
+          git add data docs/data.js docs/sw.js "Liste pals.csv"
+          git commit -m "data: mise à jour automatique $(date -u +%Y-%m-%d)"
+          git push
+
+      # Affiché dans le résumé du job, qu'il y ait eu commit ou non.
+      - name: Résumé
+        if: always()
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, pathlib
+          p = pathlib.Path("data/changelog.json")
+          committed = "${{ steps.diff.outputs.changed }}" == "true"
+          echec = "${{ job.status }}" == "failure"
+          print("## Mise à jour des données\n")
+          if echec:
+              # Sans ce garde-fou, un changelog issu d'un commit précédent donnerait
+              # un résumé rassurant alors que le rafraîchissement a échoué.
+              print("❌ **Le job a échoué** — les données n'ont pas été mises à jour.")
+              print("Regarde l'étape en rouge : le scraping de palworld.gg a probablement changé.\n")
+          if not p.exists():
+              print("Aucun changelog produit.")
+              raise SystemExit
+          c = json.loads(p.read_text(encoding="utf-8"))
+          print(f"- Pals : **{c['totalAfter']}**"
+                + (f" (avant : {c['totalBefore']})" if c["comparedToPrevious"] else ""))
+          print(f"- Commit : {'**oui**' if committed else 'non (aucun changement)'}")
+          if not c["comparedToPrevious"]:
+              print("\n_Première génération : rien à comparer._")
+          elif not c["added"] and not c["removed"]:
+              print("\nAucun Pal ajouté ni retiré.")
+          else:
+              if c["added"]:
+                  print(f"\n### ➕ {len(c['added'])} Pal(s) ajouté(s)\n")
+                  for n in c["added"]:
+                      print(f"- {n}")
+              if c["removed"]:
+                  print(f"\n### ➖ {len(c['removed'])} Pal(s) retiré(s)\n")
+                  for n in c["removed"]:
+                      print(f"- {n}")
+          PY

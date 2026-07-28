@@ -10,6 +10,7 @@ Slugs pris dans data/pals.json (récupérés via les tier-lists). Relançable :
 """
 import csv
 import json
+import os
 import re
 import sys
 import time
@@ -22,6 +23,9 @@ except Exception:
     pass
 
 BASE = Path(__file__).parent
+# En intégration continue, une fiche inaccessible doit faire échouer le job : sinon
+# le workflow committerait des données partielles en affichant un simple avertissement.
+STRICT = os.getenv("PALWORLD_STRICT_FETCH") == "1"
 CSV = BASE / "Liste pals.csv"
 PALS_JSON = BASE / "data" / "pals.json"
 
@@ -110,6 +114,12 @@ def main():
     if empty:    print(f"  ⚠ {len(empty)} Pals sans compétence trouvée : {', '.join(empty)}")
     if scrape_work.unknown:
         print(f"  ⚠ noms de compétence NON MAPPÉS : {', '.join(sorted(scrape_work.unknown))}")
+    # `empty` et `no_slug` sont normaux ; une fiche inaccessible ou un libellé de
+    # compétence inconnu signalent en revanche un scraping cassé.
+    if STRICT and (not_found or scrape_work.unknown):
+        raise SystemExit("Échec strict : "
+                         + (f"{len(not_found)} fiche(s) inaccessible(s). " if not_found else "")
+                         + (f"compétences non mappées : {', '.join(sorted(scrape_work.unknown))}." if scrape_work.unknown else ""))
 
 
 if __name__ == "__main__":

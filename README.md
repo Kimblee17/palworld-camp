@@ -95,6 +95,22 @@ par le script `build_data.py`. Après avoir modifié un CSV :
 python build_data.py
 ```
 
+### Rafraîchissement automatique (GitHub Actions)
+
+[`.github/workflows/update-data.yml`](.github/workflows/update-data.yml) relance toute la
+chaîne **chaque lundi à 06:00 UTC** (et à la demande via l'onglet *Actions*). Le workflow
+ne committe que si `data/` ou `docs/data.js` a réellement changé, avec le message
+`data: mise à jour automatique AAAA-MM-JJ`.
+
+En CI, la variable `PALWORLD_STRICT_FETCH=1` **désactive le repli sur les caches** : si
+palworld.gg change et casse un scraper, le job passe au rouge au lieu de republier
+silencieusement des données périmées. En local, le repli reste actif (build hors ligne
+possible), il n'y a donc rien à changer dans tes habitudes.
+
+`build_data.py` écrit aussi [`data/changelog.json`](data/changelog.json) — les Pals
+ajoutés ou retirés par rapport au `docs/data.js` précédent — que l'Action affiche dans
+le résumé du job.
+
 `build_data.py` met aussi à jour la **version du cache du service worker**
 (`docs/sw.js`) avec le hash git court du commit courant : plus besoin d'y penser à la
 main, et les visiteurs ne restent jamais bloqués sur une version périmée du site.

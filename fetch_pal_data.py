@@ -19,11 +19,16 @@ Utilisé par build_data.py (load_pal_data) ; le cache data/pal-data.json sert de
 hors-ligne. Lançable seul pour rafraîchir le cache :  python fetch_pal_data.py
 """
 import json
+import os
 import re
 import urllib.request
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
+# En intégration continue on veut un échec franc : le repli silencieux sur le cache
+# masquerait un scraping cassé et publierait indéfiniment des données périmées.
+# En local, le repli reste actif (build hors ligne possible).
+STRICT = os.getenv("PALWORLD_STRICT_FETCH") == "1"
 CACHE = BASE_DIR / "data" / "pal-data.json"
 BASE_URL = "https://palworld.gg"
 
@@ -144,6 +149,8 @@ def load_pal_data(cache=CACHE, target_names=None, verbose=True):
         cache.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
         return data
     except Exception as exc:
+        if STRICT:
+            raise
         if cache.exists():
             print(f"  ⚠ Téléchargement impossible ({exc}). Utilisation du cache {cache}.")
             return json.loads(cache.read_text(encoding="utf-8"))

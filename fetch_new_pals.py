@@ -11,6 +11,7 @@ Relançable :  python fetch_new_pals.py
 """
 import csv
 import json
+import os
 import re
 import sys
 import time
@@ -23,6 +24,9 @@ except Exception:
     pass
 
 BASE = Path(__file__).parent
+# En intégration continue, une fiche inaccessible doit faire échouer le job : sinon
+# le workflow committerait des données partielles en affichant un simple avertissement.
+STRICT = os.getenv("PALWORLD_STRICT_FETCH") == "1"
 CSV_PATH = BASE / "Liste pals.csv"
 TIERS_JSON = BASE / "data" / "tier-lists.json"
 
@@ -115,6 +119,9 @@ def main():
     print(f"\n{added} Pals ajoutés au CSV ({len(rows)} au total).")
     if no_work:   print(f"  ⚠ {len(no_work)} sans compétence trouvée : {', '.join(no_work)}")
     if not_found: print(f"  ⚠ {len(not_found)} fiches introuvables : {', '.join(not_found)}")
+    # `no_work` n'est pas une erreur : certains Pals n'ont réellement aucune compétence.
+    if STRICT and not_found:
+        raise SystemExit(f"Échec strict : {len(not_found)} fiche(s) palworld.gg inaccessible(s).")
 
 
 if __name__ == "__main__":

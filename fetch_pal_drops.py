@@ -12,6 +12,7 @@ Utilisé par build_data.py (load_pal_drops) ; le cache data/pal-drops.json sert 
 hors-ligne. Lançable seul pour rafraîchir le cache :  python fetch_pal_drops.py
 """
 import json
+import os
 import re
 import time
 import urllib.request
@@ -19,6 +20,10 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
+# En intégration continue on veut un échec franc : le repli silencieux sur le cache
+# masquerait un scraping cassé et publierait indéfiniment des données périmées.
+# En local, le repli reste actif (build hors ligne possible).
+STRICT = os.getenv("PALWORLD_STRICT_FETCH") == "1"
 CACHE = BASE_DIR / "data" / "pal-drops.json"
 PALS = BASE_DIR / "data" / "pals.json"
 BASE_URL = "https://palworld.gg"
@@ -117,6 +122,8 @@ def load_pal_drops(slugs=None, cache=CACHE, verbose=True):
         cache.write_text(json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8")
         return merged
     except Exception as exc:
+        if STRICT:
+            raise
         if cache.exists():
             print(f"  ⚠ Scraping impossible ({exc}). Utilisation du cache {cache}.")
             return json.loads(cache.read_text(encoding="utf-8"))

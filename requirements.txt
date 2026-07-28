@@ -1,0 +1,9 @@
+# Dépendances Python du pipeline de données (build_data.py, fetch_*.py).
+#
+# Il n'y en a aucune : tous les scripts n'utilisent que la bibliothèque standard
+# (urllib, json, csv, re, subprocess…). Ce fichier est conservé pour que
+# `pip install -r requirements.txt` reste une étape valide du workflow CI, et pour
+# avoir un endroit évident où déclarer une dépendance si le besoin apparaît.
+#
+# (Flask figurait ici du temps où le dépôt hébergeait un second front ; ce front a
+# été supprimé, le site est entièrement statique.)

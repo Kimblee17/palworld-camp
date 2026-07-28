@@ -22,12 +22,17 @@ de repli quand le réseau est indisponible.
 Usage en ligne de commande (rafraîchit le cache) :  python fetch_tier_lists.py
 """
 import json
+import os
 import re
 import urllib.request
 from html import unescape
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
+# En intégration continue on veut un échec franc : le repli silencieux sur le cache
+# masquerait un scraping cassé et publierait indéfiniment des données périmées.
+# En local, le repli reste actif (build hors ligne possible).
+STRICT = os.getenv("PALWORLD_STRICT_FETCH") == "1"
 CACHE = BASE_DIR / "data" / "tier-lists.json"
 BASE_URL = "https://palworld.gg"
 
@@ -143,6 +148,8 @@ def load_tier_lists(cache=CACHE, verbose=True):
         cache.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
         return result
     except Exception as exc:  # réseau indisponible, page modifiée, etc.
+        if STRICT:
+            raise
         if cache.exists():
             print(f"  ⚠ Téléchargement impossible ({exc}). Utilisation du cache {cache}.")
             return json.loads(cache.read_text(encoding="utf-8"))

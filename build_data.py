@@ -3,6 +3,7 @@ Génère les données de l'application depuis les fichiers CSV :
   - data/pals.json + data/structures.json   (caches lisibles, utilisés par les scripts)
   - docs/data.js                            (données embarquées par le site statique)
   - docs/sw.js                              (version du cache = hash git court)
+  - data/changelog.json                     (Pals ajoutés/retirés depuis le build précédent)
 
 Les rangs de tier-list (palworld.gg) sont fusionnés dans chaque Pal de pals.json
 via fetch_tier_lists.load_tier_lists (téléchargement live + cache de repli).
@@ -10,6 +11,7 @@ via fetch_tier_lists.load_tier_lists (téléchargement live + cache de repli).
 Relance ce script après avoir modifié un CSV :  python build_data.py
 """
 import csv
+import datetime
 import json
 import re
 import subprocess
@@ -26,6 +28,7 @@ PALS_OUT = BASE_DIR / "data" / "pals.json"
 STRUCT_OUT = BASE_DIR / "data" / "structures.json"
 STATIC_OUT = BASE_DIR / "docs" / "data.js"
 SW_OUT = BASE_DIR / "docs" / "sw.js"
+CHANGELOG_OUT = BASE_DIR / "data" / "changelog.json"
 
 # Définition centralisée des 12 compétences de travail (source unique de vérité),
 # recopiée dans docs/data.js pour le site statique.
@@ -214,6 +217,56 @@ def build_structures():
     return structures
 
 
+def previous_pal_names():
+    """Noms des Pals du docs/data.js **actuel** (avant réécriture), ou None si absent.
+
+    Sert à dater le diff : on compare la génération qui va être écrite à celle qui est
+    encore sur le disque. Un data.js illisible n'est pas une erreur — on renonce
+    simplement au diff plutôt que de faire échouer le build.
+    """
+    if not STATIC_OUT.exists():
+        return None
+    try:
+        txt = STATIC_OUT.read_text(encoding="utf-8")
+        m = re.search(r"window\.PAL_DATA = (\{.*\});", txt, re.S)
+        if not m:
+            return None
+        return [p["name"] for p in json.loads(m.group(1)).get("pals", [])]
+    except Exception as exc:
+        print(f"  ⚠ docs/data.js précédent illisible ({exc}) — pas de changelog.")
+        return None
+
+
+def build_changelog(pals):
+    """Écrit data/changelog.json : Pals ajoutés / retirés depuis le build précédent."""
+    before = previous_pal_names()
+    now = [p["name"] for p in pals]
+    if before is None:
+        added, removed, known = [], [], False
+    else:
+        known = True
+        added = sorted(set(now) - set(before))
+        removed = sorted(set(before) - set(now))
+    data = {
+        "generatedAt": datetime.datetime.now(datetime.timezone.utc)
+                               .replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+        "comparedToPrevious": known,   # false au tout premier build
+        "totalBefore": len(before) if known else None,
+        "totalAfter": len(now),
+        "added": added,
+        "removed": removed,
+    }
+    CHANGELOG_OUT.parent.mkdir(exist_ok=True)
+    CHANGELOG_OUT.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    if not known:
+        print("Changelog : aucune génération précédente à comparer.")
+    elif added or removed:
+        print(f"Changelog : +{len(added)} / -{len(removed)} Pal(s)")
+    else:
+        print("Changelog : aucun Pal ajouté ni retiré.")
+    return data
+
+
 def build_static(pals, structures):
     """Écrit docs/data.js : données embarquées pour la version statique (GitHub Pages)."""
     data = {"workTypes": WORK_TYPES, "pals": pals, "structures": structures}
@@ -257,5 +310,6 @@ def stamp_service_worker():
 if __name__ == "__main__":
     pals = build_pals()
     structures = build_structures()
+    build_changelog(pals)        # avant build_static : compare au docs/data.js encore en place
     build_static(pals, structures)
     stamp_service_worker()
