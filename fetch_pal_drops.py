@@ -11,6 +11,7 @@ Chaque drop = {"item": "Os", "amount": "3 - 5", "rate": "100%"}.
 Utilisé par build_data.py (load_pal_drops) ; le cache data/pal-drops.json sert de repli
 hors-ligne. Lançable seul pour rafraîchir le cache :  python fetch_pal_drops.py
 """
+import html
 import json
 import os
 import re
@@ -51,8 +52,10 @@ def fetch(path, retries=3):
             time.sleep(0.5 * (attempt + 1))   # petit backoff contre le throttling
 
 
-def _text(html):
-    return _WS.sub(" ", _TAGS.sub("", html)).strip()
+def _text(frag):
+    # html.unescape : les fiches contiennent des entités (« Bâton d&#39;Elizabee »).
+    # Sans décodage, ces noms ne correspondent plus à ceux des recettes (fetch_recipes).
+    return html.unescape(_WS.sub(" ", _TAGS.sub("", frag)).strip())
 
 
 def _parse_table(table):
@@ -63,7 +66,8 @@ def _parse_table(table):
         tds = [_text(x) for x in TD_RE.findall(block)]
         # item = div.name ; quantité et taux = les deux dernières colonnes (contiennent un chiffre)
         if name and len(tds) >= 3 and RATE_RE.search(tds[-1]):
-            drops.append({"item": name.group(1).strip(), "amount": tds[-2], "rate": tds[-1]})
+            drops.append({"item": html.unescape(name.group(1).strip()),
+                          "amount": tds[-2], "rate": tds[-1]})
     return drops
 
 
