@@ -1,13 +1,13 @@
 // Service worker — app installable + hors-ligne.
 // Bump CACHE à chaque déploiement pour forcer le rafraîchissement du shell.
-const CACHE = "pw-82f2914";
+const CACHE = "pw-113def2";
 // Les icônes de Pals (icons/pals/*.png) sont désormais auto-hébergées : elles passent
 // par le cache same-origin ci-dessous, au fil de la navigation. Elles ne sont PAS
 // précachées ici — ~300 fichiers rendraient l'installation du service worker trop lourde.
 const SHELL = [
   "./", "index.html", "style.css", "data.js",
   "js/main.js", "js/dataset.js", "js/state.js", "js/render.js", "js/palpedia.js",
-  "js/drops.js", "js/sav-import.js", "js/suggest.js",
+  "js/drops.js", "js/sav-import.js", "js/suggest.js", "js/breeding.js",
   "firebase-sync.js", "icon.svg", "manifest.webmanifest",
 ];
 

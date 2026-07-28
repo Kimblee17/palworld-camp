@@ -1,0 +1,3353 @@
+{
+  "species": {
+    "Lamball": {
+      "id": "sheepball",
+      "breedPower": 3050,
+      "combiPriority": 305000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Cattiva": {
+      "id": "pinkcat",
+      "breedPower": 2760,
+      "combiPriority": 276000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Chikipi": {
+      "id": "chickenpal",
+      "breedPower": 3080,
+      "combiPriority": 308000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Lifmunk": {
+      "id": "carbunclo",
+      "breedPower": 3020,
+      "combiPriority": 302000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Fuack": {
+      "id": "blueplatypus",
+      "breedPower": 2980,
+      "combiPriority": 298000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Fuack Ignis": {
+      "id": "blueplatypus_fire",
+      "breedPower": 2300,
+      "combiPriority": 575.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Vixy": {
+      "id": "cutefox",
+      "breedPower": 3060,
+      "combiPriority": 306000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Celaray": {
+      "id": "flyingmanta",
+      "breedPower": 2740,
+      "combiPriority": 274000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Celaray Lux": {
+      "id": "flyingmanta_thunder",
+      "breedPower": 2380,
+      "combiPriority": 574.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Cremis": {
+      "id": "woolfox",
+      "breedPower": 2890,
+      "combiPriority": 289000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Croajiro": {
+      "id": "kendofrog",
+      "breedPower": 2600,
+      "combiPriority": 260000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Croajiro Noct": {
+      "id": "kendofrog_dark",
+      "breedPower": 1860,
+      "combiPriority": 186000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Herbil": {
+      "id": "leafmomonga",
+      "breedPower": 2630,
+      "combiPriority": 263000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Teafant": {
+      "id": "ganesha",
+      "breedPower": 3070,
+      "combiPriority": 307000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Gumoss": {
+      "id": "plantslime",
+      "breedPower": 2950,
+      "combiPriority": 295000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Pupperai": {
+      "id": "samuraidog",
+      "breedPower": 2930,
+      "combiPriority": 293000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Clovee": {
+      "id": "cloverfairy",
+      "breedPower": 2970,
+      "combiPriority": 297000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Jolthog": {
+      "id": "hedgehog",
+      "breedPower": 3030,
+      "combiPriority": 303000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Jolthog Cryst": {
+      "id": "hedgehog_ice",
+      "breedPower": 2850,
+      "combiPriority": 285000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Depresso": {
+      "id": "negativekoala",
+      "breedPower": 3,
+      "combiPriority": 300000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Pengullet": {
+      "id": "penguin",
+      "breedPower": 2960,
+      "combiPriority": 296000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Pengullet Lux": {
+      "id": "penguin_electric",
+      "breedPower": 2490,
+      "combiPriority": 572.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Penking": {
+      "id": "captainpenguin",
+      "breedPower": 2070,
+      "combiPriority": 207000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Penking Lux": {
+      "id": "captainpenguin_black",
+      "breedPower": 1850,
+      "combiPriority": 573.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Hoocrates": {
+      "id": "wizardowl",
+      "breedPower": 2940,
+      "combiPriority": 294000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Melpaca": {
+      "id": "alpaca",
+      "breedPower": 2720,
+      "combiPriority": 272000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Kingpaca": {
+      "id": "kingalpaca",
+      "breedPower": 2220,
+      "combiPriority": 222000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Kingpaca Cryst": {
+      "id": "kingalpaca_ice",
+      "breedPower": 1530,
+      "combiPriority": 153000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Daedream": {
+      "id": "dreamdemon",
+      "breedPower": 2910,
+      "combiPriority": 291000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Tanzee": {
+      "id": "monkey",
+      "breedPower": 2900,
+      "combiPriority": 290000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Tanzee Ignis": {
+      "id": "monkey_fire",
+      "breedPower": 2830,
+      "combiPriority": 283000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Nox": {
+      "id": "nightfox",
+      "breedPower": 2920,
+      "combiPriority": 292000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Flambelle": {
+      "id": "lavagirl",
+      "breedPower": 2700,
+      "combiPriority": 270000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Rooby": {
+      "id": "flamebambi",
+      "breedPower": 2870,
+      "combiPriority": 287000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Mau": {
+      "id": "bastet",
+      "breedPower": 3040,
+      "combiPriority": 304000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Mau Cryst": {
+      "id": "bastet_ice",
+      "breedPower": 2750,
+      "combiPriority": 275000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Rushoar": {
+      "id": "boar",
+      "breedPower": 2880,
+      "combiPriority": 288000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Foxparks": {
+      "id": "kitsunebi",
+      "breedPower": 2990,
+      "combiPriority": 299000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Foxparks Cryst": {
+      "id": "kitsunebi_ice",
+      "breedPower": 2500,
+      "combiPriority": 250000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Killamari": {
+      "id": "negativeoctopus",
+      "breedPower": 2770,
+      "combiPriority": 277000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Killamari Primo": {
+      "id": "negativeoctopus_neutral",
+      "breedPower": 2540,
+      "combiPriority": 571.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Fuddler": {
+      "id": "cutemole",
+      "breedPower": 2790,
+      "combiPriority": 279000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Eikthyrdeer": {
+      "id": "deer",
+      "breedPower": 2710,
+      "combiPriority": 271000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Eikthyrdeer Terra": {
+      "id": "deer_ground",
+      "breedPower": 2580,
+      "combiPriority": 258000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Direhowl": {
+      "id": "garm",
+      "breedPower": 2680,
+      "combiPriority": 268000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Caprity": {
+      "id": "berrygoat",
+      "breedPower": 2610,
+      "combiPriority": 261000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Caprity Noct": {
+      "id": "berrygoat_dark",
+      "breedPower": 1940,
+      "combiPriority": 194000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Swee": {
+      "id": "mopbaby",
+      "breedPower": 2840,
+      "combiPriority": 284000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Sweepa": {
+      "id": "mopking",
+      "breedPower": 2150,
+      "combiPriority": 215000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Turtacle": {
+      "id": "tentacleturtle",
+      "breedPower": 2410,
+      "combiPriority": 241000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Turtacle Terra": {
+      "id": "tentacleturtle_ground",
+      "breedPower": 1330,
+      "combiPriority": 577.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Hangyu": {
+      "id": "windchimes",
+      "breedPower": 2780,
+      "combiPriority": 278000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Hangyu Cryst": {
+      "id": "windchimes_ice",
+      "breedPower": 2510,
+      "combiPriority": 251000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Woolipop": {
+      "id": "sweetssheep",
+      "breedPower": 2820,
+      "combiPriority": 282000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Woolipop Terra": {
+      "id": "sweetssheep_ground",
+      "breedPower": 2030,
+      "combiPriority": 203000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Mozzarina": {
+      "id": "cowpal",
+      "breedPower": 2800,
+      "combiPriority": 280000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Azurobe": {
+      "id": "bluedragon",
+      "breedPower": 1830,
+      "combiPriority": 183000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Azurobe Cryst": {
+      "id": "bluedragon_ice",
+      "breedPower": 1220,
+      "combiPriority": 578.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Sparkit": {
+      "id": "eleccat",
+      "breedPower": 3010,
+      "combiPriority": 301000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Kelpsea": {
+      "id": "kelpie",
+      "breedPower": 2810,
+      "combiPriority": 281000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Kelpsea Ignis": {
+      "id": "kelpie_fire",
+      "breedPower": 2470,
+      "combiPriority": 247000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Ribbuny": {
+      "id": "pinkrabbit",
+      "breedPower": 2860,
+      "combiPriority": 286000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Ribbuny Botan": {
+      "id": "pinkrabbit_grass",
+      "breedPower": 2460,
+      "combiPriority": 246000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Jelliette": {
+      "id": "jellyfishfairy",
+      "breedPower": 2650,
+      "combiPriority": 265000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Jellroy": {
+      "id": "jellyfishghost",
+      "breedPower": 2590,
+      "combiPriority": 259000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Amione": {
+      "id": "clionetwins",
+      "breedPower": 2520,
+      "combiPriority": 252000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Gloopie": {
+      "id": "octopusgirl",
+      "breedPower": 2530,
+      "combiPriority": 253000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Gloopie Primo": {
+      "id": "octopusgirl_neutral",
+      "breedPower": 1630,
+      "combiPriority": 163000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Galeclaw": {
+      "id": "eagle",
+      "breedPower": 2570,
+      "combiPriority": 257000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Wispaw": {
+      "id": "ghostblackcat",
+      "breedPower": 2250,
+      "combiPriority": 225000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Nitewing": {
+      "id": "hawkbird",
+      "breedPower": 2560,
+      "combiPriority": 256000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Tombat": {
+      "id": "catbat",
+      "breedPower": 2340,
+      "combiPriority": 234000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Tocotoco": {
+      "id": "colorfulbird",
+      "breedPower": 2730,
+      "combiPriority": 273000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Univolt": {
+      "id": "kirin",
+      "breedPower": 2270,
+      "combiPriority": 227000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Univolt Cryst": {
+      "id": "kirin_ice",
+      "breedPower": 540,
+      "combiPriority": 54000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Gobfin": {
+      "id": "sharkkid",
+      "breedPower": 2550,
+      "combiPriority": 255000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Gobfin Ignis": {
+      "id": "sharkkid_fire",
+      "breedPower": 2430,
+      "combiPriority": 243000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Loupmoon": {
+      "id": "werewolf",
+      "breedPower": 2110,
+      "combiPriority": 211000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Loupmoon Cryst": {
+      "id": "werewolf_ice",
+      "breedPower": 1290,
+      "combiPriority": 129000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Cawgnito": {
+      "id": "darkcrow",
+      "breedPower": 2370,
+      "combiPriority": 237000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Arsox": {
+      "id": "flamebuffalo",
+      "breedPower": 2320,
+      "combiPriority": 232000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Muffly": {
+      "id": "fluffybird",
+      "breedPower": 2480,
+      "combiPriority": 248000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Bristla": {
+      "id": "littlebriarrose",
+      "breedPower": 2690,
+      "combiPriority": 269000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Cinnamoth": {
+      "id": "cutebutterfly",
+      "breedPower": 2620,
+      "combiPriority": 262000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Puffolt": {
+      "id": "elecpomeranian",
+      "breedPower": 2360,
+      "combiPriority": 236000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Elphidran": {
+      "id": "fairydragon",
+      "breedPower": 2280,
+      "combiPriority": 228000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Elphidran Aqua": {
+      "id": "fairydragon_water",
+      "breedPower": 1640,
+      "combiPriority": 164000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Vanwyrm": {
+      "id": "birddragon",
+      "breedPower": 1650,
+      "combiPriority": 165000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Vanwyrm Cryst": {
+      "id": "birddragon_ice",
+      "breedPower": 1430,
+      "combiPriority": 143000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Felbat": {
+      "id": "catvampire",
+      "breedPower": 1570,
+      "combiPriority": 157000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Vaelet": {
+      "id": "violetfairy",
+      "breedPower": 1480,
+      "combiPriority": 148000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Beegarde": {
+      "id": "soldierbee",
+      "breedPower": 2350,
+      "combiPriority": 235000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Elizabee": {
+      "id": "queenbee",
+      "breedPower": 1790,
+      "combiPriority": 179000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Lovander": {
+      "id": "pinklizard",
+      "breedPower": 2090,
+      "combiPriority": 209000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Grintale": {
+      "id": "naughtycat",
+      "breedPower": 2120,
+      "combiPriority": 212000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Tarantriss": {
+      "id": "purplespider",
+      "breedPower": 1730,
+      "combiPriority": 173000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Polapup": {
+      "id": "iceseal",
+      "breedPower": 1660,
+      "combiPriority": 166000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Polapup Terra": {
+      "id": "iceseal_ground",
+      "breedPower": 1100,
+      "combiPriority": 110000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Leezpunk": {
+      "id": "lizardman",
+      "breedPower": 2670,
+      "combiPriority": 267000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Leezpunk Ignis": {
+      "id": "lizardman_fire",
+      "breedPower": 2640,
+      "combiPriority": 264000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Gorirat": {
+      "id": "gorilla",
+      "breedPower": 2140,
+      "combiPriority": 214000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Gorirat Terra": {
+      "id": "gorilla_ground",
+      "breedPower": 1880,
+      "combiPriority": 188000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Surfent": {
+      "id": "serpent",
+      "breedPower": 2440,
+      "combiPriority": 244000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Surfent Terra": {
+      "id": "serpent_ground",
+      "breedPower": 1840,
+      "combiPriority": 184000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Robinquill": {
+      "id": "robinhood",
+      "breedPower": 2260,
+      "combiPriority": 226000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Robinquill Terra": {
+      "id": "robinhood_ground",
+      "breedPower": 2050,
+      "combiPriority": 205000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Flopie": {
+      "id": "flowerrabbit",
+      "breedPower": 2660,
+      "combiPriority": 266000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Wixen": {
+      "id": "foxmage",
+      "breedPower": 2080,
+      "combiPriority": 208000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Wixen Noct": {
+      "id": "foxmage_dark",
+      "breedPower": 1490,
+      "combiPriority": 149000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Katress": {
+      "id": "catmage",
+      "breedPower": 2040,
+      "combiPriority": 204000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Katress Ignis": {
+      "id": "catmage_fire",
+      "breedPower": 1800,
+      "combiPriority": 180000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Helzephyr": {
+      "id": "hadesbird",
+      "breedPower": 1130,
+      "combiPriority": 113000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Helzephyr Lux": {
+      "id": "hadesbird_electric",
+      "breedPower": 960,
+      "combiPriority": 96000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Elgrove": {
+      "id": "grassminotaur",
+      "breedPower": 2020,
+      "combiPriority": 202000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Elgrove Cryst": {
+      "id": "grassminotaur_ice",
+      "breedPower": 440,
+      "combiPriority": 44000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Lunaris": {
+      "id": "mutant",
+      "breedPower": 2010,
+      "combiPriority": 201000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Fenglope": {
+      "id": "fengyundeeper",
+      "breedPower": 1960,
+      "combiPriority": 196000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Fenglope Lux": {
+      "id": "fengyundeeper_electric",
+      "breedPower": 900,
+      "combiPriority": 90000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Dinossom": {
+      "id": "flowerdinosaur",
+      "breedPower": 2100,
+      "combiPriority": 210000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Dinossom Lux": {
+      "id": "flowerdinosaur_electric",
+      "breedPower": 1890,
+      "combiPriority": 189000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Bushi": {
+      "id": "ronin",
+      "breedPower": 1560,
+      "combiPriority": 156000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Bushi Noct": {
+      "id": "ronin_dark",
+      "breedPower": 840,
+      "combiPriority": 84000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Munchill": {
+      "id": "icecrocodile",
+      "breedPower": 2130,
+      "combiPriority": 213000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Mammorest": {
+      "id": "grassmammoth",
+      "breedPower": 1340,
+      "combiPriority": 134000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Mammorest Cryst": {
+      "id": "grassmammoth_ice",
+      "breedPower": 1070,
+      "combiPriority": 107000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Finsider": {
+      "id": "stuffedshark",
+      "breedPower": 2450,
+      "combiPriority": 245000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Finsider Ignis": {
+      "id": "stuffedshark_fire",
+      "breedPower": 2240,
+      "combiPriority": 581.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Petallia": {
+      "id": "flowerdoll",
+      "breedPower": 1720,
+      "combiPriority": 172000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Petallia Ignis": {
+      "id": "flowerdoll_fire",
+      "breedPower": 820,
+      "combiPriority": 82000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Leafan": {
+      "id": "pandagirl",
+      "breedPower": 1410,
+      "combiPriority": 141000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Incineram": {
+      "id": "baphomet",
+      "breedPower": 1470,
+      "combiPriority": 147000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Incineram Noct": {
+      "id": "baphomet_dark",
+      "breedPower": 1310,
+      "combiPriority": 131000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Dazzi": {
+      "id": "raijindaughter",
+      "breedPower": 2400,
+      "combiPriority": 240000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Dazzi Noct": {
+      "id": "raijindaughter_water",
+      "breedPower": 1910,
+      "combiPriority": 191000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Pyrin": {
+      "id": "firekirin",
+      "breedPower": 1980,
+      "combiPriority": 198000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Pyrin Noct": {
+      "id": "firekirin_dark",
+      "breedPower": 1870,
+      "combiPriority": 187000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Relaxaurus": {
+      "id": "lazydragon",
+      "breedPower": 1090,
+      "combiPriority": 109000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Relaxaurus Lux": {
+      "id": "lazydragon_electric",
+      "breedPower": 770,
+      "combiPriority": 77000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Foxcicle": {
+      "id": "icefox",
+      "breedPower": 1970,
+      "combiPriority": 197000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Beakon": {
+      "id": "thunderbird",
+      "breedPower": 1690,
+      "combiPriority": 169000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Beakon Cryst": {
+      "id": "thunderbird_ice",
+      "breedPower": 580,
+      "combiPriority": 58000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Ghangler": {
+      "id": "ghostanglerfish",
+      "breedPower": 880,
+      "combiPriority": 88000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Ghangler Ignis": {
+      "id": "ghostanglerfish_fire",
+      "breedPower": 720,
+      "combiPriority": 72000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Rayhound": {
+      "id": "thunderdog",
+      "breedPower": 1920,
+      "combiPriority": 192000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Rayhound Cryst": {
+      "id": "thunderdog_ice",
+      "breedPower": 1600,
+      "combiPriority": 160000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Menasting": {
+      "id": "darkscorpion",
+      "breedPower": 1120,
+      "combiPriority": 112000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Menasting Terra": {
+      "id": "darkscorpion_ground",
+      "breedPower": 640,
+      "combiPriority": 64000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Needoll": {
+      "id": "cactusdoll",
+      "breedPower": 2420,
+      "combiPriority": 242000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Needoll Noct": {
+      "id": "cactusdoll_dark",
+      "breedPower": 1580,
+      "combiPriority": 158000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Reindrix": {
+      "id": "icedeer",
+      "breedPower": 1930,
+      "combiPriority": 193000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Mossanda": {
+      "id": "grasspanda",
+      "breedPower": 2060,
+      "combiPriority": 206000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Mossanda Lux": {
+      "id": "grasspanda_electric",
+      "breedPower": 1440,
+      "combiPriority": 144000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Chillet": {
+      "id": "weaseldragon",
+      "breedPower": 2330,
+      "combiPriority": 233000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Chillet Ignis": {
+      "id": "weaseldragon_fire",
+      "breedPower": 1950,
+      "combiPriority": 195000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Ragnahawk": {
+      "id": "redarmorbird",
+      "breedPower": 1050,
+      "combiPriority": 105000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Moldron": {
+      "id": "volcanodragon",
+      "breedPower": 750,
+      "combiPriority": 75000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Moldron Cryst": {
+      "id": "volcanodragon_ice",
+      "breedPower": 380,
+      "combiPriority": 38000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Palumba": {
+      "id": "tropicalostrich",
+      "breedPower": 1240,
+      "combiPriority": 124000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Digtoise": {
+      "id": "drillgame",
+      "breedPower": 1550,
+      "combiPriority": 155000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Broncherry": {
+      "id": "sakurasaurus",
+      "breedPower": 1380,
+      "combiPriority": 138000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Broncherry Aqua": {
+      "id": "sakurasaurus_water",
+      "breedPower": 1080,
+      "combiPriority": 108000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Dumud": {
+      "id": "lazycatfish",
+      "breedPower": 2290,
+      "combiPriority": 229000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Dumud Gild": {
+      "id": "lazycatfish_gold",
+      "breedPower": 1620,
+      "combiPriority": 576.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Braloha": {
+      "id": "plesiosaur",
+      "breedPower": 1030,
+      "combiPriority": 103000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Kitsun": {
+      "id": "amaterasuwolf",
+      "breedPower": 1670,
+      "combiPriority": 167000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Kitsun Noct": {
+      "id": "amaterasuwolf_dark",
+      "breedPower": 800,
+      "combiPriority": 80000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Blazehowl": {
+      "id": "manticore",
+      "breedPower": 1360,
+      "combiPriority": 136000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Blazehowl Noct": {
+      "id": "manticore_dark",
+      "breedPower": 1270,
+      "combiPriority": 127000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Warsect": {
+      "id": "herculesbeetle",
+      "breedPower": 1280,
+      "combiPriority": 128000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Warsect Terra": {
+      "id": "herculesbeetle_ground",
+      "breedPower": 630,
+      "combiPriority": 63000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Frostplume": {
+      "id": "snowpeafowl",
+      "breedPower": 860,
+      "combiPriority": 86000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Majex": {
+      "id": "darkflamefox",
+      "breedPower": 1010,
+      "combiPriority": 101000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Sibelyx": {
+      "id": "whitemoth",
+      "breedPower": 1810,
+      "combiPriority": 181000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Sibelyx Primo": {
+      "id": "whitemoth_neutral",
+      "breedPower": 650,
+      "combiPriority": 65000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Maraith": {
+      "id": "ghostbeast",
+      "breedPower": 1710,
+      "combiPriority": 171000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Shroomer": {
+      "id": "mushroomdragon",
+      "breedPower": 1520,
+      "combiPriority": 152000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Shroomer Noct": {
+      "id": "mushroomdragon_dark",
+      "breedPower": 1450,
+      "combiPriority": 145000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Icelyn": {
+      "id": "icewitch",
+      "breedPower": 1260,
+      "combiPriority": 126000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Gildra": {
+      "id": "mummypal",
+      "breedPower": 1170,
+      "combiPriority": 117000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Jormuntide": {
+      "id": "umihebi",
+      "breedPower": 590,
+      "combiPriority": 59000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Jormuntide Ignis": {
+      "id": "umihebi_fire",
+      "breedPower": 170,
+      "combiPriority": 17000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Suzaku": {
+      "id": "suzaku",
+      "breedPower": 1200,
+      "combiPriority": 120000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Suzaku Aqua": {
+      "id": "suzaku_water",
+      "breedPower": 740,
+      "combiPriority": 74000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Dazemu": {
+      "id": "featherostrich",
+      "breedPower": 2210,
+      "combiPriority": 221000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Quivern": {
+      "id": "skydragon",
+      "breedPower": 1210,
+      "combiPriority": 121000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Quivern Botan": {
+      "id": "skydragon_grass",
+      "breedPower": 1300,
+      "combiPriority": 130000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Lullu": {
+      "id": "leafprincess",
+      "breedPower": 1990,
+      "combiPriority": 199000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Kikit": {
+      "id": "smallarmadillo",
+      "breedPower": 2310,
+      "combiPriority": 231000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Yakumo": {
+      "id": "guardiandog",
+      "breedPower": 2230,
+      "combiPriority": 223000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Skutlass": {
+      "id": "swordcutlassfish",
+      "breedPower": 1420,
+      "combiPriority": 142000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Skutlass Ignis": {
+      "id": "swordcutlassfish_fire",
+      "breedPower": 1590,
+      "combiPriority": 159000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Reptyro": {
+      "id": "volcanicmonster",
+      "breedPower": 1060,
+      "combiPriority": 106000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Reptyro Cryst": {
+      "id": "volcanicmonster_ice",
+      "breedPower": 600,
+      "combiPriority": 60000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Starryon": {
+      "id": "nightbluehorse",
+      "breedPower": 1150,
+      "combiPriority": 115000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Starryon Primo": {
+      "id": "nightbluehorse_neutral",
+      "breedPower": 430,
+      "combiPriority": 43000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Pierdon": {
+      "id": "rockbeast",
+      "breedPower": 1110,
+      "combiPriority": 111000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Pierdon Cryst": {
+      "id": "rockbeast_ice",
+      "breedPower": 460,
+      "combiPriority": 46000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Cryolinx": {
+      "id": "whitetiger",
+      "breedPower": 1040,
+      "combiPriority": 104000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Cryolinx Terra": {
+      "id": "whitetiger_ground",
+      "breedPower": 470,
+      "combiPriority": 47000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Snugloo": {
+      "id": "smallyeti",
+      "breedPower": 2390,
+      "combiPriority": 239000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Wumpo": {
+      "id": "yeti",
+      "breedPower": 830,
+      "combiPriority": 83000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Wumpo Botan": {
+      "id": "yeti_grass",
+      "breedPower": 610,
+      "combiPriority": 61000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Sootseer": {
+      "id": "candleghost",
+      "breedPower": 980,
+      "combiPriority": 98000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Carnibora": {
+      "id": "venusflytrap",
+      "breedPower": 1700,
+      "combiPriority": 170000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Blazamut": {
+      "id": "kingbahamut",
+      "breedPower": 410,
+      "combiPriority": 41000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Blazamut Ryu": {
+      "id": "kingbahamut_dragon",
+      "breedPower": 100,
+      "combiPriority": 10000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Dualith": {
+      "id": "grassgolem",
+      "breedPower": 510,
+      "combiPriority": 51000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Dualith Noct": {
+      "id": "grassgolem_dark",
+      "breedPower": 250,
+      "combiPriority": 25000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Anubis": {
+      "id": "anubis",
+      "breedPower": 480,
+      "combiPriority": 48000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Sekhmet": {
+      "id": "sekhmet",
+      "breedPower": 870,
+      "combiPriority": 87000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Prixter": {
+      "id": "scorpionman",
+      "breedPower": 1510,
+      "combiPriority": 151000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Prixter Lux": {
+      "id": "scorpionman_electric",
+      "breedPower": 850,
+      "combiPriority": 85000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Tetroise ": {
+      "id": "cubeturtle",
+      "breedPower": 790,
+      "combiPriority": 79000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Tetroise Primo": {
+      "id": "cubeturtle_neutral",
+      "breedPower": 200,
+      "combiPriority": 20000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Nyafia": {
+      "id": "badcatgirl",
+      "breedPower": 1250,
+      "combiPriority": 125000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Mimog": {
+      "id": "mimicdog",
+      "breedPower": 1740,
+      "combiPriority": 174000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Xenovader": {
+      "id": "darkalien",
+      "breedPower": 1820,
+      "combiPriority": 182000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Xenogard": {
+      "id": "whitealiendragon",
+      "breedPower": 990,
+      "combiPriority": 99000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Prunelia": {
+      "id": "blueberryfairy",
+      "breedPower": 1390,
+      "combiPriority": 139000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Nitemary": {
+      "id": "ghostrabbit",
+      "breedPower": 1230,
+      "combiPriority": 123000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Nitemary Botan": {
+      "id": "ghostrabbit_grass",
+      "breedPower": 1320,
+      "combiPriority": 132000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Smokie": {
+      "id": "blackpuppy",
+      "breedPower": 1760,
+      "combiPriority": 176000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Smokie Cryst": {
+      "id": "blackpuppy_ice",
+      "breedPower": 1610,
+      "combiPriority": 161000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Omascul": {
+      "id": "mysterymask",
+      "breedPower": 1140,
+      "combiPriority": 114000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Whalaska": {
+      "id": "icenarwhal",
+      "breedPower": 710,
+      "combiPriority": 71000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Whalaska Ignis": {
+      "id": "icenarwhal_fire",
+      "breedPower": 370,
+      "combiPriority": 37000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Verdash": {
+      "id": "grassrabbitman",
+      "breedPower": 1160,
+      "combiPriority": 116000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Splatterina": {
+      "id": "grimgirl",
+      "breedPower": 780,
+      "combiPriority": 78000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Gildane": {
+      "id": "goldenhorse",
+      "breedPower": 730,
+      "combiPriority": 73000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Dogen": {
+      "id": "sifudog",
+      "breedPower": 1460,
+      "combiPriority": 146000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Bulldosu": {
+      "id": "sumodog",
+      "breedPower": 1190,
+      "combiPriority": 119000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Celesdir": {
+      "id": "whitedeer",
+      "breedPower": 570,
+      "combiPriority": 57000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Celesdir Noct": {
+      "id": "whitedeer_dark",
+      "breedPower": 270,
+      "combiPriority": 27000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Astegon": {
+      "id": "blackmetaldragon",
+      "breedPower": 490,
+      "combiPriority": 49000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Knocklem": {
+      "id": "winggolem",
+      "breedPower": 260,
+      "combiPriority": 26000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Knocklem Ignis": {
+      "id": "winggolem_fire",
+      "breedPower": 210,
+      "combiPriority": 21000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Silvegis": {
+      "id": "whiteshielddragon",
+      "breedPower": 560,
+      "combiPriority": 56000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Azurmane": {
+      "id": "bluethunderhorse",
+      "breedPower": 420,
+      "combiPriority": 42000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Valentail": {
+      "id": "longcat",
+      "breedPower": 1900,
+      "combiPriority": 190000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Snock": {
+      "id": "elecsnail",
+      "breedPower": 1780,
+      "combiPriority": 178000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Snock Lux": {
+      "id": "elecsnail_ground",
+      "breedPower": 1500,
+      "combiPriority": 150000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Souffline": {
+      "id": "dandeliongirl",
+      "breedPower": 2,
+      "combiPriority": 200000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Lapiron": {
+      "id": "brownrabbit",
+      "breedPower": 1680,
+      "combiPriority": 168000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Hoodle": {
+      "id": "hoodghost",
+      "breedPower": 1770,
+      "combiPriority": 177000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Slowatt": {
+      "id": "eleclizard",
+      "breedPower": 1750,
+      "combiPriority": 175000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Bakemi": {
+      "id": "onighostgirl",
+      "breedPower": 1540,
+      "combiPriority": 154000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Solmora": {
+      "id": "kingsunfish",
+      "breedPower": 1370,
+      "combiPriority": 137000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Solmora Lux": {
+      "id": "kingsunfish_thunder",
+      "breedPower": 1,
+      "combiPriority": 100000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Lapure": {
+      "id": "sleeverabbit",
+      "breedPower": 810,
+      "combiPriority": 81000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Eidrolon": {
+      "id": "ghostdragon",
+      "breedPower": 300,
+      "combiPriority": 30000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Eidrolon Ignis": {
+      "id": "ghostdragon_fire",
+      "breedPower": 140,
+      "combiPriority": 14000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Dynamoff": {
+      "id": "thunderfluffybird",
+      "breedPower": 1400,
+      "combiPriority": 140000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Tropicaw": {
+      "id": "redflowerbird",
+      "breedPower": 1350,
+      "combiPriority": 135000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Flaracle": {
+      "id": "foxexorcist",
+      "breedPower": 390,
+      "combiPriority": 39000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Ophydia": {
+      "id": "lotusdragon",
+      "breedPower": 230,
+      "combiPriority": 23000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Dupin": {
+      "id": "clownrabbit",
+      "breedPower": 520,
+      "combiPriority": 52000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Roujay": {
+      "id": "thiefbird",
+      "breedPower": 530,
+      "combiPriority": 53000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Venusa": {
+      "id": "snakegirl",
+      "breedPower": 970,
+      "combiPriority": 97000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Mycora": {
+      "id": "mushroomlady",
+      "breedPower": 760,
+      "combiPriority": 76000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Loomen": {
+      "id": "lanternbutler",
+      "breedPower": 890,
+      "combiPriority": 89000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Wistella": {
+      "id": "moonchild",
+      "breedPower": 1180,
+      "combiPriority": 118000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Solenne": {
+      "id": "monochromequeen",
+      "breedPower": 280,
+      "combiPriority": 28000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Renjishi": {
+      "id": "kabukiman",
+      "breedPower": 290,
+      "combiPriority": 29000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Aegidron": {
+      "id": "domearmordragon",
+      "breedPower": 30,
+      "combiPriority": 3000.0,
+      "ignoreCombi": false,
+      "isBoss": false
+    },
+    "Grizzbolt": {
+      "id": "elecpanda",
+      "breedPower": 1020,
+      "combiPriority": 102000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Lyleen": {
+      "id": "lilyqueen",
+      "breedPower": 240,
+      "combiPriority": 24000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Lyleen Noct": {
+      "id": "lilyqueen_dark",
+      "breedPower": 220,
+      "combiPriority": 22000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Orserk": {
+      "id": "thunderdragonman",
+      "breedPower": 120,
+      "combiPriority": 12000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Faleris": {
+      "id": "horus",
+      "breedPower": 500,
+      "combiPriority": 50000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Faleris Aqua": {
+      "id": "horus_water",
+      "breedPower": 450,
+      "combiPriority": 45000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Shadowbeak": {
+      "id": "blackgriffon",
+      "breedPower": 550,
+      "combiPriority": 55000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Selyne": {
+      "id": "moonqueen",
+      "breedPower": 360,
+      "combiPriority": 36000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Bastigor": {
+      "id": "snowtigerbeastman",
+      "breedPower": 50,
+      "combiPriority": 5000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Shaolong": {
+      "id": "blueskydragon",
+      "breedPower": 40,
+      "combiPriority": 4000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Silvance": {
+      "id": "mothman",
+      "breedPower": 80,
+      "combiPriority": 8000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Dandilord": {
+      "id": "flowerprince",
+      "breedPower": 60,
+      "combiPriority": 6000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Bellanoir": {
+      "id": "nightlady",
+      "breedPower": 620,
+      "combiPriority": 62000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Bellanoir Libero": {
+      "id": "nightlady_dark",
+      "breedPower": 130,
+      "combiPriority": 13000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Xenolord": {
+      "id": "darkmechadragon",
+      "breedPower": 400,
+      "combiPriority": 40000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Hartalis": {
+      "id": "legenddeer",
+      "breedPower": 90,
+      "combiPriority": 9000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Paladius": {
+      "id": "saintcentaur",
+      "breedPower": 180,
+      "combiPriority": 18000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Necromus": {
+      "id": "blackcentaur",
+      "breedPower": 190,
+      "combiPriority": 19000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Frostallion": {
+      "id": "icehorse",
+      "breedPower": 150,
+      "combiPriority": 15000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Frostallion Noct": {
+      "id": "icehorse_dark",
+      "breedPower": 110,
+      "combiPriority": 11000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Neptilius": {
+      "id": "poseidonorca",
+      "breedPower": 160,
+      "combiPriority": 16000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Jetragon": {
+      "id": "jetdragon",
+      "breedPower": 70,
+      "combiPriority": 7000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Panthalus": {
+      "id": "kingwhale",
+      "breedPower": 20,
+      "combiPriority": 2000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Astralym": {
+      "id": "worldtreedragon",
+      "breedPower": 10,
+      "combiPriority": 1000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Eye of Cthulhu": {
+      "id": "yakushimaboss001",
+      "breedPower": 3100,
+      "combiPriority": 310000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Demon Eye": {
+      "id": "yakushimaboss001_small",
+      "breedPower": 3100,
+      "combiPriority": 310000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Green Slime": {
+      "id": "yakushimamonster001",
+      "breedPower": 3100,
+      "combiPriority": 310000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Blue Slime": {
+      "id": "yakushimamonster001_blue",
+      "breedPower": 3100,
+      "combiPriority": 310000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Illuminant Slime": {
+      "id": "yakushimamonster001_pink",
+      "breedPower": 3100,
+      "combiPriority": 310000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Purple Slime": {
+      "id": "yakushimamonster001_purple",
+      "breedPower": 3100,
+      "combiPriority": 310000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Rainbow Slime": {
+      "id": "yakushimamonster001_rainbow",
+      "breedPower": 3100,
+      "combiPriority": 310000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Red Slime": {
+      "id": "yakushimamonster001_red",
+      "breedPower": 3100,
+      "combiPriority": 310000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Enchanted Sword": {
+      "id": "yakushimamonster002",
+      "breedPower": 3100,
+      "combiPriority": 310000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Cave Bat": {
+      "id": "yakushimamonster003",
+      "breedPower": 3100,
+      "combiPriority": 310000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    },
+    "Illuminant Bat": {
+      "id": "yakushimamonster003_purple",
+      "breedPower": 3100,
+      "combiPriority": 310000.0,
+      "ignoreCombi": true,
+      "isBoss": false
+    }
+  },
+  "uniqueCombos": [
+    {
+      "a": "Azurobe",
+      "b": "Frostplume",
+      "child": "Azurobe Cryst"
+    },
+    {
+      "a": "Azurobe Cryst",
+      "b": "Azurobe Cryst",
+      "child": "Azurobe Cryst"
+    },
+    {
+      "a": "Bastigor",
+      "b": "Bastigor",
+      "child": "Bastigor"
+    },
+    {
+      "a": "Beakon",
+      "b": "Frostplume",
+      "child": "Beakon Cryst"
+    },
+    {
+      "a": "Beakon Cryst",
+      "b": "Beakon Cryst",
+      "child": "Beakon Cryst"
+    },
+    {
+      "a": "Bellanoir",
+      "b": "Bellanoir",
+      "child": "Bellanoir"
+    },
+    {
+      "a": "Bellanoir",
+      "b": "Bellanoir Libero",
+      "child": "Bellanoir"
+    },
+    {
+      "a": "Bellanoir Libero",
+      "b": "Bellanoir Libero",
+      "child": "Bellanoir Libero"
+    },
+    {
+      "a": "Blazamut Ryu",
+      "b": "Blazamut Ryu",
+      "child": "Blazamut Ryu"
+    },
+    {
+      "a": "Blazehowl",
+      "b": "Felbat",
+      "child": "Blazehowl Noct"
+    },
+    {
+      "a": "Blazehowl Noct",
+      "b": "Blazehowl Noct",
+      "child": "Blazehowl Noct"
+    },
+    {
+      "a": "Blue Slime",
+      "b": "Blue Slime",
+      "child": "Blue Slime"
+    },
+    {
+      "a": "Green Slime",
+      "b": "Blue Slime",
+      "child": "Blue Slime"
+    },
+    {
+      "a": "Broncherry",
+      "b": "Fuack",
+      "child": "Broncherry Aqua"
+    },
+    {
+      "a": "Broncherry Aqua",
+      "b": "Broncherry Aqua",
+      "child": "Broncherry Aqua"
+    },
+    {
+      "a": "Bushi",
+      "b": "Sootseer",
+      "child": "Bushi Noct"
+    },
+    {
+      "a": "Bushi Noct",
+      "b": "Bushi Noct",
+      "child": "Bushi Noct"
+    },
+    {
+      "a": "Caprity",
+      "b": "Tarantriss",
+      "child": "Caprity Noct"
+    },
+    {
+      "a": "Caprity Noct",
+      "b": "Caprity Noct",
+      "child": "Caprity Noct"
+    },
+    {
+      "a": "Cave Bat",
+      "b": "Cave Bat",
+      "child": "Cave Bat"
+    },
+    {
+      "a": "Celaray",
+      "b": "Univolt",
+      "child": "Celaray Lux"
+    },
+    {
+      "a": "Celaray Lux",
+      "b": "Celaray Lux",
+      "child": "Celaray Lux"
+    },
+    {
+      "a": "Celesdir",
+      "b": "Celesdir",
+      "child": "Celesdir"
+    },
+    {
+      "a": "Gildane",
+      "b": "Eikthyrdeer Terra",
+      "child": "Celesdir"
+    },
+    {
+      "a": "Celesdir",
+      "b": "Kitsun Noct",
+      "child": "Celesdir Noct"
+    },
+    {
+      "a": "Celesdir Noct",
+      "b": "Celesdir Noct",
+      "child": "Celesdir Noct"
+    },
+    {
+      "a": "Chillet",
+      "b": "Arsox",
+      "child": "Chillet Ignis"
+    },
+    {
+      "a": "Chillet Ignis",
+      "b": "Chillet Ignis",
+      "child": "Chillet Ignis"
+    },
+    {
+      "a": "Croajiro",
+      "b": "Bushi Noct",
+      "child": "Croajiro Noct"
+    },
+    {
+      "a": "Croajiro Noct",
+      "b": "Croajiro Noct",
+      "child": "Croajiro Noct"
+    },
+    {
+      "a": "Cryolinx",
+      "b": "Dazemu",
+      "child": "Cryolinx Terra"
+    },
+    {
+      "a": "Cryolinx Terra",
+      "b": "Cryolinx Terra",
+      "child": "Cryolinx Terra"
+    },
+    {
+      "a": "Dandilord",
+      "b": "Dandilord",
+      "child": "Dandilord"
+    },
+    {
+      "a": "Dazzi",
+      "b": "Omascul",
+      "child": "Dazzi Noct"
+    },
+    {
+      "a": "Dazzi Noct",
+      "b": "Dazzi Noct",
+      "child": "Dazzi Noct"
+    },
+    {
+      "a": "Blue Slime",
+      "b": "Demon Eye",
+      "child": "Demon Eye"
+    },
+    {
+      "a": "Cave Bat",
+      "b": "Demon Eye",
+      "child": "Demon Eye"
+    },
+    {
+      "a": "Demon Eye",
+      "b": "Demon Eye",
+      "child": "Demon Eye"
+    },
+    {
+      "a": "Enchanted Sword",
+      "b": "Demon Eye",
+      "child": "Demon Eye"
+    },
+    {
+      "a": "Green Slime",
+      "b": "Demon Eye",
+      "child": "Demon Eye"
+    },
+    {
+      "a": "Illuminant Bat",
+      "b": "Demon Eye",
+      "child": "Demon Eye"
+    },
+    {
+      "a": "Illuminant Slime",
+      "b": "Demon Eye",
+      "child": "Demon Eye"
+    },
+    {
+      "a": "Purple Slime",
+      "b": "Demon Eye",
+      "child": "Demon Eye"
+    },
+    {
+      "a": "Rainbow Slime",
+      "b": "Demon Eye",
+      "child": "Demon Eye"
+    },
+    {
+      "a": "Red Slime",
+      "b": "Demon Eye",
+      "child": "Demon Eye"
+    },
+    {
+      "a": "Dinossom",
+      "b": "Rayhound",
+      "child": "Dinossom Lux"
+    },
+    {
+      "a": "Dinossom Lux",
+      "b": "Dinossom Lux",
+      "child": "Dinossom Lux"
+    },
+    {
+      "a": "Dualith",
+      "b": "Sootseer",
+      "child": "Dualith Noct"
+    },
+    {
+      "a": "Dualith Noct",
+      "b": "Dualith Noct",
+      "child": "Dualith Noct"
+    },
+    {
+      "a": "Dumud",
+      "b": "Eikthyrdeer Terra",
+      "child": "Dumud Gild"
+    },
+    {
+      "a": "Dumud Gild",
+      "b": "Dumud Gild",
+      "child": "Dumud Gild"
+    },
+    {
+      "a": "Eidrolon",
+      "b": "Suzaku",
+      "child": "Eidrolon Ignis"
+    },
+    {
+      "a": "Eidrolon Ignis",
+      "b": "Eidrolon Ignis",
+      "child": "Eidrolon Ignis"
+    },
+    {
+      "a": "Eikthyrdeer",
+      "b": "Hangyu",
+      "child": "Eikthyrdeer Terra"
+    },
+    {
+      "a": "Eikthyrdeer Terra",
+      "b": "Eikthyrdeer Terra",
+      "child": "Eikthyrdeer Terra"
+    },
+    {
+      "a": "Elgrove",
+      "b": "Pierdon Cryst",
+      "child": "Elgrove Cryst"
+    },
+    {
+      "a": "Elgrove Cryst",
+      "b": "Elgrove Cryst",
+      "child": "Elgrove Cryst"
+    },
+    {
+      "a": "Elphidran",
+      "b": "Surfent",
+      "child": "Elphidran Aqua"
+    },
+    {
+      "a": "Elphidran Aqua",
+      "b": "Elphidran Aqua",
+      "child": "Elphidran Aqua"
+    },
+    {
+      "a": "Blue Slime",
+      "b": "Enchanted Sword",
+      "child": "Enchanted Sword"
+    },
+    {
+      "a": "Enchanted Sword",
+      "b": "Cave Bat",
+      "child": "Enchanted Sword"
+    },
+    {
+      "a": "Enchanted Sword",
+      "b": "Enchanted Sword",
+      "child": "Enchanted Sword"
+    },
+    {
+      "a": "Enchanted Sword",
+      "b": "Illuminant Bat",
+      "child": "Enchanted Sword"
+    },
+    {
+      "a": "Green Slime",
+      "b": "Enchanted Sword",
+      "child": "Enchanted Sword"
+    },
+    {
+      "a": "Illuminant Slime",
+      "b": "Enchanted Sword",
+      "child": "Enchanted Sword"
+    },
+    {
+      "a": "Purple Slime",
+      "b": "Enchanted Sword",
+      "child": "Enchanted Sword"
+    },
+    {
+      "a": "Red Slime",
+      "b": "Enchanted Sword",
+      "child": "Enchanted Sword"
+    },
+    {
+      "a": "Blue Slime",
+      "b": "Eye of Cthulhu",
+      "child": "Eye of Cthulhu"
+    },
+    {
+      "a": "Cave Bat",
+      "b": "Eye of Cthulhu",
+      "child": "Eye of Cthulhu"
+    },
+    {
+      "a": "Enchanted Sword",
+      "b": "Eye of Cthulhu",
+      "child": "Eye of Cthulhu"
+    },
+    {
+      "a": "Eye of Cthulhu",
+      "b": "Demon Eye",
+      "child": "Eye of Cthulhu"
+    },
+    {
+      "a": "Eye of Cthulhu",
+      "b": "Eye of Cthulhu",
+      "child": "Eye of Cthulhu"
+    },
+    {
+      "a": "Green Slime",
+      "b": "Eye of Cthulhu",
+      "child": "Eye of Cthulhu"
+    },
+    {
+      "a": "Illuminant Bat",
+      "b": "Eye of Cthulhu",
+      "child": "Eye of Cthulhu"
+    },
+    {
+      "a": "Illuminant Slime",
+      "b": "Eye of Cthulhu",
+      "child": "Eye of Cthulhu"
+    },
+    {
+      "a": "Purple Slime",
+      "b": "Eye of Cthulhu",
+      "child": "Eye of Cthulhu"
+    },
+    {
+      "a": "Rainbow Slime",
+      "b": "Eye of Cthulhu",
+      "child": "Eye of Cthulhu"
+    },
+    {
+      "a": "Red Slime",
+      "b": "Eye of Cthulhu",
+      "child": "Eye of Cthulhu"
+    },
+    {
+      "a": "Faleris",
+      "b": "Faleris",
+      "child": "Faleris"
+    },
+    {
+      "a": "Faleris",
+      "b": "Jormuntide",
+      "child": "Faleris Aqua"
+    },
+    {
+      "a": "Faleris Aqua",
+      "b": "Faleris Aqua",
+      "child": "Faleris Aqua"
+    },
+    {
+      "a": "Fenglope",
+      "b": "Azurmane",
+      "child": "Fenglope Lux"
+    },
+    {
+      "a": "Fenglope Lux",
+      "b": "Fenglope Lux",
+      "child": "Fenglope Lux"
+    },
+    {
+      "a": "Finsider",
+      "b": "Gobfin Ignis",
+      "child": "Finsider Ignis"
+    },
+    {
+      "a": "Finsider Ignis",
+      "b": "Finsider Ignis",
+      "child": "Finsider Ignis"
+    },
+    {
+      "a": "Foxparks",
+      "b": "Foxcicle",
+      "child": "Foxparks Cryst"
+    },
+    {
+      "a": "Foxparks Cryst",
+      "b": "Foxparks Cryst",
+      "child": "Foxparks Cryst"
+    },
+    {
+      "a": "Frostallion",
+      "b": "Frostallion",
+      "child": "Frostallion"
+    },
+    {
+      "a": "Frostallion",
+      "b": "Helzephyr",
+      "child": "Frostallion Noct"
+    },
+    {
+      "a": "Frostallion Noct",
+      "b": "Frostallion Noct",
+      "child": "Frostallion Noct"
+    },
+    {
+      "a": "Fuack",
+      "b": "Flambelle",
+      "child": "Fuack Ignis"
+    },
+    {
+      "a": "Fuack Ignis",
+      "b": "Fuack Ignis",
+      "child": "Fuack Ignis"
+    },
+    {
+      "a": "Ghangler",
+      "b": "Sootseer",
+      "child": "Ghangler Ignis"
+    },
+    {
+      "a": "Ghangler Ignis",
+      "b": "Ghangler Ignis",
+      "child": "Ghangler Ignis"
+    },
+    {
+      "a": "Gloopie",
+      "b": "Valentail",
+      "child": "Gloopie Primo"
+    },
+    {
+      "a": "Gloopie Primo",
+      "b": "Gloopie Primo",
+      "child": "Gloopie Primo"
+    },
+    {
+      "a": "Gobfin",
+      "b": "Rooby",
+      "child": "Gobfin Ignis"
+    },
+    {
+      "a": "Gobfin Ignis",
+      "b": "Gobfin Ignis",
+      "child": "Gobfin Ignis"
+    },
+    {
+      "a": "Gorirat",
+      "b": "Kikit",
+      "child": "Gorirat Terra"
+    },
+    {
+      "a": "Gorirat Terra",
+      "b": "Gorirat Terra",
+      "child": "Gorirat Terra"
+    },
+    {
+      "a": "Green Slime",
+      "b": "Green Slime",
+      "child": "Green Slime"
+    },
+    {
+      "a": "Grizzbolt",
+      "b": "Grizzbolt",
+      "child": "Grizzbolt"
+    },
+    {
+      "a": "Hangyu",
+      "b": "Swee",
+      "child": "Hangyu Cryst"
+    },
+    {
+      "a": "Hangyu Cryst",
+      "b": "Hangyu Cryst",
+      "child": "Hangyu Cryst"
+    },
+    {
+      "a": "Hartalis",
+      "b": "Hartalis",
+      "child": "Hartalis"
+    },
+    {
+      "a": "Helzephyr",
+      "b": "Beakon",
+      "child": "Helzephyr Lux"
+    },
+    {
+      "a": "Helzephyr Lux",
+      "b": "Helzephyr Lux",
+      "child": "Helzephyr Lux"
+    },
+    {
+      "a": "Cave Bat",
+      "b": "Illuminant Bat",
+      "child": "Illuminant Bat"
+    },
+    {
+      "a": "Illuminant Bat",
+      "b": "Illuminant Bat",
+      "child": "Illuminant Bat"
+    },
+    {
+      "a": "Purple Slime",
+      "b": "Cave Bat",
+      "child": "Illuminant Bat"
+    },
+    {
+      "a": "Purple Slime",
+      "b": "Illuminant Bat",
+      "child": "Illuminant Bat"
+    },
+    {
+      "a": "Blue Slime",
+      "b": "Illuminant Slime",
+      "child": "Illuminant Slime"
+    },
+    {
+      "a": "Green Slime",
+      "b": "Illuminant Slime",
+      "child": "Illuminant Slime"
+    },
+    {
+      "a": "Illuminant Slime",
+      "b": "Illuminant Slime",
+      "child": "Illuminant Slime"
+    },
+    {
+      "a": "Purple Slime",
+      "b": "Illuminant Slime",
+      "child": "Illuminant Slime"
+    },
+    {
+      "a": "Red Slime",
+      "b": "Illuminant Slime",
+      "child": "Illuminant Slime"
+    },
+    {
+      "a": "Incineram",
+      "b": "Maraith",
+      "child": "Incineram Noct"
+    },
+    {
+      "a": "Incineram Noct",
+      "b": "Incineram Noct",
+      "child": "Incineram Noct"
+    },
+    {
+      "a": "Jetragon",
+      "b": "Jetragon",
+      "child": "Jetragon"
+    },
+    {
+      "a": "Jolthog",
+      "b": "Pengullet",
+      "child": "Jolthog Cryst"
+    },
+    {
+      "a": "Jolthog Cryst",
+      "b": "Jolthog Cryst",
+      "child": "Jolthog Cryst"
+    },
+    {
+      "a": "Jormuntide",
+      "b": "Blazehowl",
+      "child": "Jormuntide Ignis"
+    },
+    {
+      "a": "Jormuntide Ignis",
+      "b": "Jormuntide Ignis",
+      "child": "Jormuntide Ignis"
+    },
+    {
+      "a": "Katress",
+      "b": "Wixen",
+      "child": "Katress Ignis",
+      "ga": "F",
+      "gb": "M"
+    },
+    {
+      "a": "Katress Ignis",
+      "b": "Katress Ignis",
+      "child": "Katress Ignis"
+    },
+    {
+      "a": "Killamari",
+      "b": "Ribbuny",
+      "child": "Killamari Primo"
+    },
+    {
+      "a": "Killamari Primo",
+      "b": "Killamari Primo",
+      "child": "Killamari Primo"
+    },
+    {
+      "a": "Kingpaca",
+      "b": "Reindrix",
+      "child": "Kingpaca Cryst"
+    },
+    {
+      "a": "Kingpaca Cryst",
+      "b": "Kingpaca Cryst",
+      "child": "Kingpaca Cryst"
+    },
+    {
+      "a": "Kitsun",
+      "b": "Nyafia",
+      "child": "Kitsun Noct"
+    },
+    {
+      "a": "Kitsun Noct",
+      "b": "Kitsun Noct",
+      "child": "Kitsun Noct"
+    },
+    {
+      "a": "Knocklem",
+      "b": "Ragnahawk",
+      "child": "Knocklem Ignis"
+    },
+    {
+      "a": "Knocklem Ignis",
+      "b": "Knocklem Ignis",
+      "child": "Knocklem Ignis"
+    },
+    {
+      "a": "Leezpunk",
+      "b": "Flambelle",
+      "child": "Leezpunk Ignis"
+    },
+    {
+      "a": "Leezpunk Ignis",
+      "b": "Leezpunk Ignis",
+      "child": "Leezpunk Ignis"
+    },
+    {
+      "a": "Loupmoon",
+      "b": "Sweepa",
+      "child": "Loupmoon Cryst"
+    },
+    {
+      "a": "Loupmoon Cryst",
+      "b": "Loupmoon Cryst",
+      "child": "Loupmoon Cryst"
+    },
+    {
+      "a": "Lyleen",
+      "b": "Lyleen",
+      "child": "Lyleen"
+    },
+    {
+      "a": "Lyleen",
+      "b": "Menasting",
+      "child": "Lyleen Noct"
+    },
+    {
+      "a": "Lyleen Noct",
+      "b": "Lyleen Noct",
+      "child": "Lyleen Noct"
+    },
+    {
+      "a": "Mammorest",
+      "b": "Wumpo",
+      "child": "Mammorest Cryst"
+    },
+    {
+      "a": "Mammorest Cryst",
+      "b": "Mammorest Cryst",
+      "child": "Mammorest Cryst"
+    },
+    {
+      "a": "Mau",
+      "b": "Pengullet",
+      "child": "Mau Cryst"
+    },
+    {
+      "a": "Mau Cryst",
+      "b": "Mau Cryst",
+      "child": "Mau Cryst"
+    },
+    {
+      "a": "Menasting",
+      "b": "Knocklem",
+      "child": "Menasting Terra"
+    },
+    {
+      "a": "Menasting Terra",
+      "b": "Menasting Terra",
+      "child": "Menasting Terra"
+    },
+    {
+      "a": "Mimog",
+      "b": "Mimog",
+      "child": "Mimog"
+    },
+    {
+      "a": "Moldron",
+      "b": "Reptyro Cryst",
+      "child": "Moldron Cryst"
+    },
+    {
+      "a": "Moldron Cryst",
+      "b": "Moldron Cryst",
+      "child": "Moldron Cryst"
+    },
+    {
+      "a": "Mossanda",
+      "b": "Grizzbolt",
+      "child": "Mossanda Lux"
+    },
+    {
+      "a": "Mossanda Lux",
+      "b": "Mossanda Lux",
+      "child": "Mossanda Lux"
+    },
+    {
+      "a": "Necromus",
+      "b": "Necromus",
+      "child": "Necromus"
+    },
+    {
+      "a": "Needoll",
+      "b": "Prunelia",
+      "child": "Needoll Noct"
+    },
+    {
+      "a": "Needoll Noct",
+      "b": "Needoll Noct",
+      "child": "Needoll Noct"
+    },
+    {
+      "a": "Neptilius",
+      "b": "Neptilius",
+      "child": "Neptilius"
+    },
+    {
+      "a": "Nitemary",
+      "b": "Petallia",
+      "child": "Nitemary Botan"
+    },
+    {
+      "a": "Nitemary Botan",
+      "b": "Nitemary Botan",
+      "child": "Nitemary Botan"
+    },
+    {
+      "a": "Orserk",
+      "b": "Orserk",
+      "child": "Orserk"
+    },
+    {
+      "a": "Paladius",
+      "b": "Paladius",
+      "child": "Paladius"
+    },
+    {
+      "a": "Pengullet",
+      "b": "Sparkit",
+      "child": "Pengullet Lux"
+    },
+    {
+      "a": "Pengullet Lux",
+      "b": "Pengullet Lux",
+      "child": "Pengullet Lux"
+    },
+    {
+      "a": "Penking",
+      "b": "Rayhound",
+      "child": "Penking Lux"
+    },
+    {
+      "a": "Penking Lux",
+      "b": "Penking Lux",
+      "child": "Penking Lux"
+    },
+    {
+      "a": "Petallia",
+      "b": "Bushi",
+      "child": "Petallia Ignis"
+    },
+    {
+      "a": "Petallia Ignis",
+      "b": "Petallia Ignis",
+      "child": "Petallia Ignis"
+    },
+    {
+      "a": "Pierdon",
+      "b": "Wumpo",
+      "child": "Pierdon Cryst"
+    },
+    {
+      "a": "Pierdon Cryst",
+      "b": "Pierdon Cryst",
+      "child": "Pierdon Cryst"
+    },
+    {
+      "a": "Polapup",
+      "b": "Surfent Terra",
+      "child": "Polapup Terra"
+    },
+    {
+      "a": "Polapup Terra",
+      "b": "Polapup Terra",
+      "child": "Polapup Terra"
+    },
+    {
+      "a": "Prixter",
+      "b": "Helzephyr Lux",
+      "child": "Prixter Lux"
+    },
+    {
+      "a": "Prixter Lux",
+      "b": "Prixter Lux",
+      "child": "Prixter Lux"
+    },
+    {
+      "a": "Blue Slime",
+      "b": "Purple Slime",
+      "child": "Purple Slime"
+    },
+    {
+      "a": "Blue Slime",
+      "b": "Red Slime",
+      "child": "Purple Slime"
+    },
+    {
+      "a": "Green Slime",
+      "b": "Purple Slime",
+      "child": "Purple Slime"
+    },
+    {
+      "a": "Purple Slime",
+      "b": "Purple Slime",
+      "child": "Purple Slime"
+    },
+    {
+      "a": "Red Slime",
+      "b": "Purple Slime",
+      "child": "Purple Slime"
+    },
+    {
+      "a": "Pyrin",
+      "b": "Katress",
+      "child": "Pyrin Noct"
+    },
+    {
+      "a": "Pyrin Noct",
+      "b": "Pyrin Noct",
+      "child": "Pyrin Noct"
+    },
+    {
+      "a": "Quivern",
+      "b": "Lullu",
+      "child": "Quivern Botan"
+    },
+    {
+      "a": "Quivern Botan",
+      "b": "Quivern Botan",
+      "child": "Quivern Botan"
+    },
+    {
+      "a": "Blue Slime",
+      "b": "Cave Bat",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Blue Slime",
+      "b": "Illuminant Bat",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Blue Slime",
+      "b": "Rainbow Slime",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Green Slime",
+      "b": "Cave Bat",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Green Slime",
+      "b": "Illuminant Bat",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Green Slime",
+      "b": "Rainbow Slime",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Illuminant Slime",
+      "b": "Cave Bat",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Illuminant Slime",
+      "b": "Illuminant Bat",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Illuminant Slime",
+      "b": "Rainbow Slime",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Purple Slime",
+      "b": "Rainbow Slime",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Rainbow Slime",
+      "b": "Cave Bat",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Rainbow Slime",
+      "b": "Enchanted Sword",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Rainbow Slime",
+      "b": "Illuminant Bat",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Rainbow Slime",
+      "b": "Rainbow Slime",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Red Slime",
+      "b": "Cave Bat",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Red Slime",
+      "b": "Illuminant Bat",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Red Slime",
+      "b": "Rainbow Slime",
+      "child": "Rainbow Slime"
+    },
+    {
+      "a": "Rayhound",
+      "b": "Foxcicle",
+      "child": "Rayhound Cryst"
+    },
+    {
+      "a": "Rayhound Cryst",
+      "b": "Rayhound Cryst",
+      "child": "Rayhound Cryst"
+    },
+    {
+      "a": "Green Slime",
+      "b": "Red Slime",
+      "child": "Red Slime"
+    },
+    {
+      "a": "Red Slime",
+      "b": "Red Slime",
+      "child": "Red Slime"
+    },
+    {
+      "a": "Relaxaurus",
+      "b": "Sparkit",
+      "child": "Relaxaurus Lux"
+    },
+    {
+      "a": "Relaxaurus Lux",
+      "b": "Relaxaurus Lux",
+      "child": "Relaxaurus Lux"
+    },
+    {
+      "a": "Reptyro",
+      "b": "Foxcicle",
+      "child": "Reptyro Cryst"
+    },
+    {
+      "a": "Reptyro Cryst",
+      "b": "Reptyro Cryst",
+      "child": "Reptyro Cryst"
+    },
+    {
+      "a": "Ribbuny",
+      "b": "Bristla",
+      "child": "Ribbuny Botan"
+    },
+    {
+      "a": "Ribbuny Botan",
+      "b": "Ribbuny Botan",
+      "child": "Ribbuny Botan"
+    },
+    {
+      "a": "Robinquill",
+      "b": "Fuddler",
+      "child": "Robinquill Terra"
+    },
+    {
+      "a": "Robinquill Terra",
+      "b": "Robinquill Terra",
+      "child": "Robinquill Terra"
+    },
+    {
+      "a": "Selyne",
+      "b": "Selyne",
+      "child": "Selyne"
+    },
+    {
+      "a": "Shadowbeak",
+      "b": "Shadowbeak",
+      "child": "Shadowbeak"
+    },
+    {
+      "a": "Shaolong",
+      "b": "Shaolong",
+      "child": "Shaolong"
+    },
+    {
+      "a": "Sibelyx",
+      "b": "Lapure",
+      "child": "Sibelyx Primo"
+    },
+    {
+      "a": "Sibelyx Primo",
+      "b": "Sibelyx Primo",
+      "child": "Sibelyx Primo"
+    },
+    {
+      "a": "Silvance",
+      "b": "Silvance",
+      "child": "Silvance"
+    },
+    {
+      "a": "Skutlass",
+      "b": "Gobfin Ignis",
+      "child": "Skutlass Ignis"
+    },
+    {
+      "a": "Skutlass Ignis",
+      "b": "Skutlass Ignis",
+      "child": "Skutlass Ignis"
+    },
+    {
+      "a": "Smokie",
+      "b": "Munchill",
+      "child": "Smokie Cryst"
+    },
+    {
+      "a": "Smokie Cryst",
+      "b": "Smokie Cryst",
+      "child": "Smokie Cryst"
+    },
+    {
+      "a": "Snock",
+      "b": "Turtacle Terra",
+      "child": "Snock Lux"
+    },
+    {
+      "a": "Snock Lux",
+      "b": "Snock Lux",
+      "child": "Snock Lux"
+    },
+    {
+      "a": "Solmora",
+      "b": "Slowatt",
+      "child": "Solmora Lux"
+    },
+    {
+      "a": "Solmora Lux",
+      "b": "Solmora Lux",
+      "child": "Solmora Lux"
+    },
+    {
+      "a": "Starryon",
+      "b": "Celesdir",
+      "child": "Starryon Primo"
+    },
+    {
+      "a": "Starryon Primo",
+      "b": "Starryon Primo",
+      "child": "Starryon Primo"
+    },
+    {
+      "a": "Surfent",
+      "b": "Dumud",
+      "child": "Surfent Terra"
+    },
+    {
+      "a": "Surfent Terra",
+      "b": "Surfent Terra",
+      "child": "Surfent Terra"
+    },
+    {
+      "a": "Suzaku",
+      "b": "Jormuntide",
+      "child": "Suzaku Aqua"
+    },
+    {
+      "a": "Suzaku Aqua",
+      "b": "Suzaku Aqua",
+      "child": "Suzaku Aqua"
+    },
+    {
+      "a": "Tanzee",
+      "b": "Flambelle",
+      "child": "Tanzee Ignis"
+    },
+    {
+      "a": "Tanzee Ignis",
+      "b": "Tanzee Ignis",
+      "child": "Tanzee Ignis"
+    },
+    {
+      "a": "Tetroise ",
+      "b": "Celesdir",
+      "child": "Tetroise Primo"
+    },
+    {
+      "a": "Tetroise Primo",
+      "b": "Tetroise Primo",
+      "child": "Tetroise Primo"
+    },
+    {
+      "a": "Turtacle",
+      "b": "Digtoise",
+      "child": "Turtacle Terra"
+    },
+    {
+      "a": "Turtacle Terra",
+      "b": "Turtacle Terra",
+      "child": "Turtacle Terra"
+    },
+    {
+      "a": "Univolt",
+      "b": "Frostplume",
+      "child": "Univolt Cryst"
+    },
+    {
+      "a": "Univolt Cryst",
+      "b": "Univolt Cryst",
+      "child": "Univolt Cryst"
+    },
+    {
+      "a": "Vanwyrm",
+      "b": "Foxcicle",
+      "child": "Vanwyrm Cryst"
+    },
+    {
+      "a": "Vanwyrm Cryst",
+      "b": "Vanwyrm Cryst",
+      "child": "Vanwyrm Cryst"
+    },
+    {
+      "a": "Warsect",
+      "b": "Digtoise",
+      "child": "Warsect Terra"
+    },
+    {
+      "a": "Warsect Terra",
+      "b": "Warsect Terra",
+      "child": "Warsect Terra"
+    },
+    {
+      "a": "Whalaska",
+      "b": "Chillet Ignis",
+      "child": "Whalaska Ignis"
+    },
+    {
+      "a": "Whalaska Ignis",
+      "b": "Whalaska Ignis",
+      "child": "Whalaska Ignis"
+    },
+    {
+      "a": "Katress",
+      "b": "Wixen",
+      "child": "Wixen Noct",
+      "ga": "M",
+      "gb": "F"
+    },
+    {
+      "a": "Wixen Noct",
+      "b": "Wixen Noct",
+      "child": "Wixen Noct"
+    },
+    {
+      "a": "Woolipop",
+      "b": "Kikit",
+      "child": "Woolipop Terra"
+    },
+    {
+      "a": "Woolipop Terra",
+      "b": "Woolipop Terra",
+      "child": "Woolipop Terra"
+    },
+    {
+      "a": "Xenogard",
+      "b": "Xenogard",
+      "child": "Xenogard"
+    },
+    {
+      "a": "Xenolord",
+      "b": "Xenolord",
+      "child": "Xenolord"
+    },
+    {
+      "a": "Xenovader",
+      "b": "Xenovader",
+      "child": "Xenovader"
+    }
+  ]
+}

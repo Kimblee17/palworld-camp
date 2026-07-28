@@ -36,6 +36,7 @@ Le code du front est organisé ainsi (aucun bundler, modules ES natifs) :
 | `docs/js/drops.js` | recherche d'objet → Pals qui le lâchent |
 | `docs/js/sav-import.js` | import d'une sauvegarde `.sav` et comparaison |
 | `docs/js/suggest.js` | suggestion de composition depuis la boîte à Pals |
+| `docs/js/breeding.js` | calculateur de reproduction (A × B, parents d une cible, filtre boîte) |
 
 ## Mettre en ligne sur GitHub Pages
 
@@ -152,6 +153,16 @@ Les 5 onglets de tier-list du site sont extraits et fusionnés dans les Pals :
   et `zukan` (n° de Paldeck).
 - Même logique de **fetch live + repli sur cache** que les tier-lists. Rafraîchir seul :
   `python fetch_pal_data.py`.
+
+### Reproduction (breed power + combinaisons uniques)
+
+- [`fetch_breeding.py`](fetch_breeding.py) extrait du même chunk que `fetch_pal_data.py` le
+  **breed power** (`CombiRank`) de chaque espèce, le champ de départage `combiPriority`
+  (`CombiDuplicatePriority`), l indicateur `ignoreCombi`, et les **combinaisons uniques**
+  (paires dont l enfant est imposé). Cache : `data/breeding.json`.
+- `build_data.py` pose `breedPower` sur chaque Pal et embarque `uniqueCombos` dans
+  `PAL_DATA`. La matrice des ~45 000 paires n est **pas** embarquée : le client la
+  recalcule à la demande (`docs/js/breeding.js`), ce qui coûte ~8 Ko au lieu de plusieurs Mo.
 
 ### Drops (butin)
 

@@ -4,6 +4,7 @@ Génère les données de l'application depuis les fichiers CSV :
   - docs/data.js                            (données embarquées par le site statique)
   - docs/sw.js                              (version du cache = hash git court)
   - data/changelog.json                     (Pals ajoutés/retirés depuis le build précédent)
+  - data/breeding.json                      (breed power + combinaisons uniques)
 
 Les rangs de tier-list (palworld.gg) sont fusionnés dans chaque Pal de pals.json
 via fetch_tier_lists.load_tier_lists (téléchargement live + cache de repli).
@@ -20,6 +21,7 @@ from pathlib import Path
 from fetch_tier_lists import load_tier_lists
 from fetch_pal_data import load_pal_data
 from fetch_pal_drops import load_pal_drops
+from fetch_breeding import load_breeding
 
 BASE_DIR = Path(__file__).parent
 PALS_CSV = BASE_DIR / "Liste pals.csv"
@@ -184,6 +186,51 @@ def build_pals():
     return pals
 
 
+def merge_breeding(pals):
+    """Ajoute breedPower à chaque Pal et renvoie les combos uniques en identifiants app.
+
+    On embarque le pouvoir de reproduction (et les deux champs qui conditionnent le
+    calcul) plutôt que la matrice des ~45 000 paires : le client recalcule l'enfant à
+    la demande, cf. docs/js/breeding.js.
+    """
+    data = load_breeding()
+    species = data["species"]
+    id_by_name = {p["name"]: p["id"] for p in pals}
+
+    sans = []
+    for p in pals:
+        sp = species.get(p["name"])
+        if not sp or sp.get("breedPower") is None:
+            sans.append(p["name"])
+            continue
+        p["breedPower"] = sp["breedPower"]
+        p["breedPriority"] = sp["combiPriority"]
+        # Espèce qui ne peut pas naître de la règle générale (légendaires, variantes…).
+        if sp.get("ignoreCombi"):
+            p["breedNoResult"] = True
+        if sp.get("isBoss"):
+            p["breedIsBoss"] = True
+
+    combos, perdus = [], 0
+    for c in data["uniqueCombos"]:
+        try:
+            combo = {"a": id_by_name[c["a"]], "b": id_by_name[c["b"]], "child": id_by_name[c["child"]]}
+        except KeyError:
+            perdus += 1        # espèce absente de notre CSV (ex. Zoe & Grizzbolt)
+            continue
+        if c.get("ga"): combo["ga"] = c["ga"]
+        if c.get("gb"): combo["gb"] = c["gb"]
+        combos.append(combo)
+
+    print(f"Reproduction : {len(pals) - len(sans)}/{len(pals)} Pals avec breed power, "
+          f"{len(combos)} combinaison(s) unique(s)")
+    if sans:
+        print(f"  ⚠ {len(sans)} Pal(s) sans breed power : {', '.join(sans)}")
+    if perdus:
+        print(f"  ⚠ {perdus} combinaison(s) ignorée(s) : espèce inconnue du CSV")
+    return combos
+
+
 def build_structures():
     structures = []
     unknown = set()
@@ -267,9 +314,10 @@ def build_changelog(pals):
     return data
 
 
-def build_static(pals, structures):
+def build_static(pals, structures, unique_combos):
     """Écrit docs/data.js : données embarquées pour la version statique (GitHub Pages)."""
-    data = {"workTypes": WORK_TYPES, "pals": pals, "structures": structures}
+    data = {"workTypes": WORK_TYPES, "pals": pals, "structures": structures,
+            "uniqueCombos": unique_combos}
     js = "// Généré par build_data.py — ne pas éditer à la main.\n"
     js += "window.PAL_DATA = " + json.dumps(data, ensure_ascii=False) + ";\n"
     STATIC_OUT.parent.mkdir(exist_ok=True)
@@ -310,6 +358,7 @@ def stamp_service_worker():
 if __name__ == "__main__":
     pals = build_pals()
     structures = build_structures()
+    unique_combos = merge_breeding(pals)
     build_changelog(pals)        # avant build_static : compare au docs/data.js encore en place
-    build_static(pals, structures)
+    build_static(pals, structures, unique_combos)
     stamp_service_worker()

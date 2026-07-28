@@ -175,7 +175,7 @@ export function buildLegend() {
 function palIconUrl(pal) {
   return pal.code ? "icons/pals/" + pal.code + ".png" : null;
 }
-function palIconEl(pal) {
+export function palIconEl(pal) {
   const url = palIconUrl(pal);
   if (url) {
     const img = document.createElement("img");

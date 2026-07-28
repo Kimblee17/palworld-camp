@@ -37,6 +37,7 @@
       <button class="view-btn active" data-view="camp"><span aria-hidden="true">🏕️</span> Assistant de camp</button>
       <button class="view-btn" data-view="palpedia"><span aria-hidden="true">📖</span> Palpedia</button>
       <button class="view-btn" data-view="drops"><span aria-hidden="true">💎</span> Drops</button>
+      <button class="view-btn" data-view="breeding"><span aria-hidden="true">🥚</span> Reproduction</button>
       <button class="view-btn" data-view="import"><span aria-hidden="true">📥</span> Importer une save</button>
     </div>
     <span id="sync-status" class="sync-status">Chargement…</span>
@@ -166,6 +167,42 @@
       <span class="pedia-total"><span id="drop-count">0</span> objets</span>
     </div>
     <ul id="drop-list" class="drop-list"></ul>
+  </section>
+
+  <!-- Vue Reproduction : calculateur d'accouplement -->
+  <section class="panel view-breeding" id="breeding" hidden>
+    <h2>🥚 Calculateur de reproduction</h2>
+    <div class="bd-modes">
+      <button id="bd-mode-couple" class="bd-mode active" type="button">A × B → enfant</button>
+      <button id="bd-mode-cible" class="bd-mode" type="button">Je veux ce Pal → parents</button>
+    </div>
+
+    <div id="bd-couple-ctrl" class="bd-ctrl">
+      <div class="bd-pick">
+        <label for="bd-a">Parent A</label>
+        <input type="search" id="bd-a-search" placeholder="Rechercher…" autocomplete="off">
+        <select id="bd-a" size="1"></select>
+      </div>
+      <button id="bd-swap" class="bar-btn" type="button" title="Échanger les deux parents">⇄</button>
+      <div class="bd-pick">
+        <label for="bd-b">Parent B</label>
+        <input type="search" id="bd-b-search" placeholder="Rechercher…" autocomplete="off">
+        <select id="bd-b" size="1"></select>
+      </div>
+    </div>
+
+    <div id="bd-cible-ctrl" class="bd-ctrl" hidden>
+      <div class="bd-pick">
+        <label for="bd-cible">Pal recherché</label>
+        <input type="search" id="bd-cible-search" placeholder="Rechercher…" autocomplete="off">
+        <select id="bd-cible" size="1"></select>
+      </div>
+      <label class="night-toggle" title="Ne garder que les paires réalisables avec les Pals que tu possèdes">
+        <input type="checkbox" id="bd-box-only"> 🎒 uniquement parmi ma boîte
+      </label>
+    </div>
+
+    <div id="bd-result" class="bd-result"></div>
   </section>
 
   <!-- Vue Importer une save : import .sav configurable (100% navigateur) -->

@@ -1,4 +1,5 @@
 import { renderDrops } from "./drops.js";
+import { initBreeding, renderBreeding } from "./breeding.js";
 import { renderPalpedia, setPediaSort } from "./palpedia.js";
 import { ELEMENT_META, ELEMENT_ORDER, buildLegend, closePalModal, openPalDetail, renderAll, renderBoxCatalog, renderPalCatalog, renderStructCatalog } from "./render.js";
 import { _savPending, applySavImport, onSavFile, renderSavPreview } from "./sav-import.js";
@@ -233,6 +234,7 @@ export function init() {
   if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 
   buildLegend();
+  initBreeding();
   renderAll();
   // Applique la vue demandée par l'URL (sans hash : #camp, URL laissée intacte).
   switchView(viewFromHash(), false);
@@ -250,7 +252,7 @@ export function switchTab(tab) {
 // Routage par hash : #camp (défaut) · #palpedia · #drops · #import.
 // Le hash est indépendant des paramètres ?ws= / ?r= de la synchro (firebase-sync.js
 // nettoie la query en conservant le hash), les deux cohabitent donc sans interférence.
-const VIEWS = ["camp", "palpedia", "drops", "import"];
+const VIEWS = ["camp", "palpedia", "drops", "breeding", "import"];
 function viewFromHash() {
   const v = decodeURIComponent(location.hash.replace(/^#/, ""));
   return VIEWS.includes(v) ? v : "camp";
@@ -264,9 +266,11 @@ function switchView(view, updateHash = true) {
   document.querySelectorAll(".view-camp").forEach(el => el.hidden = view !== "camp");
   document.querySelectorAll(".view-palpedia").forEach(el => el.hidden = view !== "palpedia");
   document.querySelectorAll(".view-drops").forEach(el => el.hidden = view !== "drops");
+  document.querySelectorAll(".view-breeding").forEach(el => el.hidden = view !== "breeding");
   document.querySelectorAll(".view-import").forEach(el => el.hidden = view !== "import");
   if (view === "palpedia") renderPalpedia();
   else if (view === "drops") renderDrops();
+  else if (view === "breeding") renderBreeding();
   // Nouvelle entrée d'historique -> le bouton retour revient à la vue précédente.
   if (updateHash && location.hash !== "#" + view) location.hash = view;
 }
