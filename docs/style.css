@@ -715,3 +715,31 @@ body.read-only #import-btn { display: none; }
                  border-radius: 6px; padding: 5px 10px; font-size: 0.85rem; }
 .pr-stations { display: flex; gap: 8px; flex-wrap: wrap; }
 .pr-stations .pr-station { margin-left: 0; }
+
+/* ===== Indicateur alimentaire (récapitulatif du camp) ===== */
+.food-block {
+  border: 2px solid var(--border); border-radius: var(--radius);
+  background: var(--panel-2); padding: 12px 14px; margin-top: 6px;
+}
+.food-block.ko { border-color: var(--lvl-1); }
+.food-grid { display: grid; grid-template-columns: minmax(150px, 1fr) 2fr; gap: 14px; }
+@media (max-width: 720px) { .food-grid { grid-template-columns: 1fr; } }
+.food-block h4 {
+  margin: 0 0 7px; font-size: 0.74rem; font-weight: 900; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+.food-conso { display: flex; flex-direction: column; gap: 3px; }
+.food-val { font-size: 1.7rem; font-weight: 900; line-height: 1; color: var(--amber); cursor: help; }
+.food-scale, .food-unknown { font-size: 0.76rem; color: var(--muted); font-weight: 700; }
+.food-unknown { color: var(--lvl-2); }
+.food-sources { display: flex; flex-wrap: wrap; gap: 6px; }
+.food-chip {
+  font-size: 0.8rem; font-weight: 800; padding: 3px 9px; border-radius: 999px;
+  border: 2px solid var(--edge); background: var(--chip); color: var(--text);
+}
+.food-chip.role-culture { background: var(--lvl-4); color: #14260a; }
+.food-chip.role-elevage { background: var(--lvl-3); color: #2e2500; }
+.food-chip.role-distribution { background: var(--accent-2); color: var(--accent-2-ink); }
+.food-chip.role-cuisine { background: var(--chip); color: var(--muted); }
+.food-warn { margin: 0; font-size: 0.86rem; font-weight: 800; color: var(--lvl-1); }
+.food-help { margin: 10px 0 0; font-size: 0.74rem; color: var(--muted); line-height: 1.45; }

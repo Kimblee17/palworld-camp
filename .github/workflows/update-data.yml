@@ -49,10 +49,11 @@ jobs:
         env: { PALWORLD_STRICT_FETCH: "1" }
         run: python fetch_work_suitability.py
 
-      # build_data.py appelle lui-même load_tier_lists / load_pal_data / load_pal_drops :
-      # les données de jeu et les drops sont donc récupérés ici, en direct. On ne lance
-      # pas fetch_pal_data.py ni fetch_pal_drops.py séparément, ce serait exactement le
-      # même travail en double (~300 requêtes de plus pour les drops).
+      # build_data.py appelle lui-même load_tier_lists / load_pal_data / load_pal_drops /
+      # load_breeding / load_recipes / load_pal_food : les données de jeu, les drops, les
+      # recettes et les appétits sont donc récupérés ici, en direct. On ne lance pas ces
+      # scripts séparément, ce serait exactement le même travail en double (~600 requêtes
+      # de plus, une par Pal pour les drops et une autre pour les appétits).
       - name: Construire les données
         env: { PALWORLD_STRICT_FETCH: "1" }
         run: python build_data.py

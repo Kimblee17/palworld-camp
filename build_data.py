@@ -24,6 +24,7 @@ from fetch_pal_data import load_pal_data
 from fetch_pal_drops import load_pal_drops
 from fetch_breeding import load_breeding
 from fetch_recipes import load_recipes
+from fetch_pal_food import load_pal_food
 
 BASE_DIR = Path(__file__).parent
 PALS_CSV = BASE_DIR / "Liste pals.csv"
@@ -80,6 +81,23 @@ TIER_CATEGORIES = {
 }
 
 
+# Production de ranch (extraite de la compétence de partenaire) -> est-ce un aliment ?
+# Table exhaustive du vocabulaire observé : un produit absent d'ici est signalé au build
+# plutôt que classé au hasard, pour qu'une mise à jour du jeu ne passe pas inaperçue.
+RANCH_PRODUCT_IS_FOOD = {
+    "Honey": True, "Red Berries": True, "Mushroom or Cavern Mushroom": True,
+    "Cotton Candy": True, "Caramel Cotton Candy": True,
+    "Aquatic Pal Fluids": False, "Bone": False, "Electric Organ": False,
+    "Flame Organ": False, "Gold Coin": False, "High Quality Cloth": False,
+    "High Quality Pal Oil": False, "Ice Organ": False, "Iceorgan": False,
+    "Leather": False, "Venom Gland": False, "Wool": False,
+    "items from the ground": False, "various seeds": False,
+}
+# Ces deux-là produisent au ranch sans que leur compétence de partenaire le dise —
+# ce sont pourtant l'œuf et le lait, les deux productions les plus courantes du jeu.
+RANCH_FOOD_IMPLICIT = {"Chikipi", "Mozzarina"}
+
+
 def _norm(name):
     """Normalise un nom de Pal pour faire correspondre CSV et tier-list."""
     return name.lower().strip().replace(" ", "").replace("-", "")
@@ -119,6 +137,10 @@ def build_pals():
     slugs = [info["slug"] for info in (tier_index.get(_norm(n)) for n in names)
              if info and info.get("slug")]
     drops_data = load_pal_drops(slugs)
+
+    # Appétit (FoodAmount) — source distincte, cf. l'en-tête de fetch_pal_food.py :
+    # palworld.gg ne publie pas cette statistique.
+    food_data = load_pal_food(names)
 
     pals = []
     matched = set()
@@ -169,6 +191,10 @@ def build_pals():
             pal["captureRate"] = gd["captureRate"]
             pal["zukan"] = gd["zukan"]
             data_matched.add(_norm(name))
+        if food_data.get(name) is not None:
+            pal["food"] = food_data[name]     # appétit, échelle entière 1-9
+        if name in RANCH_FOOD_IMPLICIT or RANCH_PRODUCT_IS_FOOD.get((gd or {}).get("ranch")):
+            pal["ranchFood"] = True           # produit de la nourriture placé au ranch
         pals.append(pal)
 
     PALS_OUT.parent.mkdir(exist_ok=True)
@@ -178,6 +204,17 @@ def build_pals():
     no_data = [p["name"] for p in pals if "level" not in p]
     if no_data:
         print(f"  ⚠ {len(no_data)} Pal(s) sans données de jeu (level/rareté) : {', '.join(no_data)}")
+
+    inconnus = sorted({v["ranch"] for v in pal_data.values()
+                       if v.get("ranch") and v["ranch"] not in RANCH_PRODUCT_IS_FOOD})
+    if inconnus:
+        print(f"  ⚠ {len(inconnus)} production(s) de ranch non classée(s) dans "
+              f"RANCH_PRODUCT_IS_FOOD : {', '.join(inconnus)}")
+    print(f"  {sum(1 for p in pals if p.get('ranchFood'))} Pal(s) produisent de la nourriture au ranch")
+
+    no_food = [p["name"] for p in pals if "food" not in p]
+    if no_food:
+        print(f"  ⚠ {len(no_food)} Pal(s) sans appétit : {', '.join(no_food)}")
 
     no_tier = [p["name"] for p in pals if all(v is None for v in p["tiers"].values())]
     if no_tier:

@@ -125,8 +125,25 @@ def parse_dataset(js):
             "rarityCategory": rarity_category(rarity),
             "captureRate": _grp(s, r",captureRate:([0-9.]+),bossCaptureRate:", float),
             "zukan": _grp(s, r",index:(\d+),suffix:", int),
+            "ranch": _ranch_product(s),
         }
     return out
+
+
+# « Sometimes drops Honey when assigned to Ranch » -> "Honey". La production d'un Pal
+# au ranch n'existe que dans cette prose de compétence de partenaire ; c'est la seule
+# façon de la distinguer de ce qu'il lâche en mourant (Lamball : Laine au ranch, mais
+# Viande de Lamball à l'abattage).
+_RANCH = re.compile(
+    r"(?:drops|makes|digs up)\s+(.+?)\s+(?:from its back\s+)?when assigned to (?:a\s+)?Ranch", re.I)
+
+
+def _ranch_product(s):
+    m = re.search(r"partnerSkill:\{name:\"[^\"]*\",desc:`(.*?)`", s, re.S)
+    if not m:
+        return None
+    r = _RANCH.search(re.sub(r"\s+", " ", m.group(1)))
+    return r.group(1).strip() if r else None
 
 
 def scrape(verbose=True):

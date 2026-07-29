@@ -71,7 +71,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 139
+    "zukan": 139,
+    "food": 8
   },
   {
     "id": 2,
@@ -112,7 +113,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 58
+    "zukan": 58,
+    "food": 3
   },
   {
     "id": 3,
@@ -184,7 +186,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 158
+    "zukan": 158,
+    "food": 7
   },
   {
     "id": 4,
@@ -249,7 +252,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 161
+    "zukan": 161,
+    "food": 8
   },
   {
     "id": 5,
@@ -320,7 +324,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 41
+    "zukan": 41,
+    "food": 5
   },
   {
     "id": 6,
@@ -393,7 +398,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 41
+    "zukan": 41,
+    "food": 5
   },
   {
     "id": 7,
@@ -470,7 +476,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 191
+    "zukan": 191,
+    "food": 9
   },
   {
     "id": 8,
@@ -537,7 +544,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 96
+    "zukan": 96,
+    "food": 5
   },
   {
     "id": 9,
@@ -575,7 +583,9 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 67
+    "zukan": 67,
+    "food": 3,
+    "ranchFood": true
   },
   {
     "id": 10,
@@ -609,7 +619,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 195
+    "zukan": 195,
+    "food": 7
   },
   {
     "id": 11,
@@ -648,7 +659,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 195
+    "zukan": 195,
+    "food": 7
   },
   {
     "id": 12,
@@ -719,7 +731,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 137
+    "zukan": 137,
+    "food": 9
   },
   {
     "id": 13,
@@ -788,7 +801,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 137
+    "zukan": 137,
+    "food": 9
   },
   {
     "id": 14,
@@ -854,7 +868,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 112
+    "zukan": 112,
+    "food": 6
   },
   {
     "id": 15,
@@ -918,7 +933,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 112
+    "zukan": 112,
+    "food": 6
   },
   {
     "id": 16,
@@ -950,7 +966,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "food": 2
   },
   {
     "id": 17,
@@ -1030,7 +1047,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 110
+    "zukan": 110,
+    "food": 7
   },
   {
     "id": 18,
@@ -1071,7 +1089,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 60
+    "zukan": 60,
+    "food": 2
   },
   {
     "id": 19,
@@ -1141,7 +1160,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 108
+    "zukan": 108,
+    "food": 6
   },
   {
     "id": 20,
@@ -1209,7 +1229,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 108
+    "zukan": 108,
+    "food": 6
   },
   {
     "id": 21,
@@ -1250,7 +1271,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 85
+    "zukan": 85,
+    "food": 5
   },
   {
     "id": 22,
@@ -1297,7 +1319,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 85
+    "zukan": 85,
+    "food": 5
   },
   {
     "id": 23,
@@ -1340,7 +1363,9 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 34
+    "zukan": 34,
+    "food": 2,
+    "ranchFood": true
   },
   {
     "id": 24,
@@ -1388,7 +1413,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 34
+    "zukan": 34,
+    "food": 2
   },
   {
     "id": 25,
@@ -1423,7 +1449,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.5,
-    "zukan": 2
+    "zukan": 2,
+    "food": 1
   },
   {
     "id": 26,
@@ -1455,7 +1482,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "food": 2
   },
   {
     "id": 27,
@@ -1498,7 +1526,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 57
+    "zukan": 57,
+    "food": 3
   },
   {
     "id": 28,
@@ -1531,7 +1560,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 7
+    "zukan": 7,
+    "food": 2
   },
   {
     "id": 29,
@@ -1566,7 +1596,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 7
+    "zukan": 7,
+    "food": 2
   },
   {
     "id": 30,
@@ -1642,7 +1673,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 157
+    "zukan": 157,
+    "food": 8
   },
   {
     "id": 31,
@@ -1680,7 +1712,9 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.5,
-    "zukan": 3
+    "zukan": 3,
+    "food": 1,
+    "ranchFood": true
   },
   {
     "id": 32,
@@ -1752,7 +1786,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 103
+    "zukan": 103,
+    "food": 3
   },
   {
     "id": 33,
@@ -1821,7 +1856,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 103
+    "zukan": 103,
+    "food": 3
   },
   {
     "id": 34,
@@ -1865,7 +1901,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 61
+    "zukan": 61,
+    "food": 2
   },
   {
     "id": 35,
@@ -1898,7 +1935,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.3,
-    "zukan": 8
+    "zukan": 8,
+    "food": 1
   },
   {
     "id": 36,
@@ -1938,7 +1976,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 9
+    "zukan": 9,
+    "food": 2
   },
   {
     "id": 37,
@@ -1984,7 +2023,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 9
+    "zukan": 9,
+    "food": 2
   },
   {
     "id": 38,
@@ -2019,7 +2059,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 132
+    "zukan": 132,
+    "food": 7
   },
   {
     "id": 39,
@@ -2054,7 +2095,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 132
+    "zukan": 132,
+    "food": 7
   },
   {
     "id": 40,
@@ -2093,7 +2135,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 22
+    "zukan": 22,
+    "food": 1
   },
   {
     "id": 41,
@@ -2128,7 +2171,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 123
+    "zukan": 123,
+    "food": 3
   },
   {
     "id": 42,
@@ -2167,7 +2211,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 92
+    "zukan": 92,
+    "food": 2
   },
   {
     "id": 43,
@@ -2213,7 +2258,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 92
+    "zukan": 92,
+    "food": 2
   },
   {
     "id": 44,
@@ -2245,7 +2291,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "food": 2
   },
   {
     "id": 45,
@@ -2280,7 +2327,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 16
+    "zukan": 16,
+    "food": 1
   },
   {
     "id": 46,
@@ -2317,7 +2365,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 107
+    "zukan": 107,
+    "food": 5
   },
   {
     "id": 47,
@@ -2359,7 +2408,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 84
+    "zukan": 84,
+    "food": 4
   },
   {
     "id": 48,
@@ -2398,7 +2448,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 84
+    "zukan": 84,
+    "food": 4
   },
   {
     "id": 49,
@@ -2443,7 +2494,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 33
+    "zukan": 33,
+    "food": 2
   },
   {
     "id": 50,
@@ -2479,7 +2531,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 155
+    "zukan": 155,
+    "food": 5
   },
   {
     "id": 51,
@@ -2520,7 +2573,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 109
+    "zukan": 109,
+    "food": 3
   },
   {
     "id": 52,
@@ -2566,7 +2620,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 109
+    "zukan": 109,
+    "food": 3
   },
   {
     "id": 53,
@@ -2641,7 +2696,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 32
+    "zukan": 32,
+    "food": 2
   },
   {
     "id": 54,
@@ -2713,7 +2769,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 32
+    "zukan": 32,
+    "food": 2
   },
   {
     "id": 55,
@@ -2754,7 +2811,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 68
+    "zukan": 68,
+    "food": 5
   },
   {
     "id": 56,
@@ -2819,7 +2877,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 63
+    "zukan": 63,
+    "food": 3
   },
   {
     "id": 57,
@@ -2886,7 +2945,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 63
+    "zukan": 63,
+    "food": 3
   },
   {
     "id": 58,
@@ -2918,7 +2978,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "food": 2
   },
   {
     "id": 59,
@@ -2950,7 +3011,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "food": 2
   },
   {
     "id": 60,
@@ -3026,7 +3088,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 188
+    "zukan": 188,
+    "food": 9
   },
   {
     "id": 61,
@@ -3102,7 +3165,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 188
+    "zukan": 188,
+    "food": 9
   },
   {
     "id": 62,
@@ -3139,7 +3203,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 65
+    "zukan": 65,
+    "food": 7
   },
   {
     "id": 63,
@@ -3209,7 +3274,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 83
+    "zukan": 83,
+    "food": 5
   },
   {
     "id": 64,
@@ -3282,7 +3348,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 83
+    "zukan": 83,
+    "food": 5
   },
   {
     "id": 65,
@@ -3325,7 +3392,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 88
+    "zukan": 88,
+    "food": 2
   },
   {
     "id": 66,
@@ -3370,7 +3438,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 88
+    "zukan": 88,
+    "food": 2
   },
   {
     "id": 67,
@@ -3410,7 +3479,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 25
+    "zukan": 25,
+    "food": 2
   },
   {
     "id": 68,
@@ -3451,7 +3521,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 77
+    "zukan": 77,
+    "food": 2
   },
   {
     "id": 69,
@@ -3489,7 +3560,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 95
+    "zukan": 95,
+    "food": 4
   },
   {
     "id": 70,
@@ -3526,7 +3598,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 29
+    "zukan": 29,
+    "food": 1
   },
   {
     "id": 71,
@@ -3563,7 +3636,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 29
+    "zukan": 29,
+    "food": 1
   },
   {
     "id": 72,
@@ -3603,7 +3677,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 200
+    "zukan": 200,
+    "food": 9
   },
   {
     "id": 73,
@@ -3643,7 +3718,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 200
+    "zukan": 200,
+    "food": 9
   },
   {
     "id": 74,
@@ -3676,7 +3752,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 114
+    "zukan": 114,
+    "food": 5
   },
   {
     "id": 75,
@@ -3715,7 +3792,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 5
+    "zukan": 5,
+    "food": 1
   },
   {
     "id": 76,
@@ -3761,7 +3839,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 5
+    "zukan": 5,
+    "food": 1
   },
   {
     "id": 77,
@@ -3795,7 +3874,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 31
+    "zukan": 31,
+    "food": 2
   },
   {
     "id": 78,
@@ -3832,7 +3912,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 49
+    "zukan": 49,
+    "food": 2
   },
   {
     "id": 79,
@@ -3871,7 +3952,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 97
+    "zukan": 97,
+    "food": 7
   },
   {
     "id": 80,
@@ -3911,7 +3993,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 97
+    "zukan": 97,
+    "food": 7
   },
   {
     "id": 81,
@@ -3946,7 +4029,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 154
+    "zukan": 154,
+    "food": 8
   },
   {
     "id": 82,
@@ -3986,7 +4070,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 48
+    "zukan": 48,
+    "food": 3
   },
   {
     "id": 83,
@@ -4020,7 +4105,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 55
+    "zukan": 55,
+    "food": 2
   },
   {
     "id": 84,
@@ -4054,7 +4140,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 55
+    "zukan": 55,
+    "food": 2
   },
   {
     "id": 85,
@@ -4123,7 +4210,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 74
+    "zukan": 74,
+    "food": 3
   },
   {
     "id": 86,
@@ -4192,7 +4280,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 74
+    "zukan": 74,
+    "food": 3
   },
   {
     "id": 87,
@@ -4224,7 +4313,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "food": 2
   },
   {
     "id": 88,
@@ -4259,7 +4349,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 70
+    "zukan": 70,
+    "food": 4
   },
   {
     "id": 89,
@@ -4334,7 +4425,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 185
+    "zukan": 185,
+    "food": 6
   },
   {
     "id": 90,
@@ -4372,7 +4464,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.3,
-    "zukan": 12
+    "zukan": 12,
+    "food": 1
   },
   {
     "id": 91,
@@ -4411,7 +4504,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 38
+    "zukan": 38,
+    "food": 1
   },
   {
     "id": 92,
@@ -4451,7 +4545,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 38
+    "zukan": 38,
+    "food": 1
   },
   {
     "id": 93,
@@ -4494,7 +4589,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 197
+    "zukan": 197,
+    "food": 9
   },
   {
     "id": 94,
@@ -4564,7 +4660,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 80
+    "zukan": 80,
+    "food": 7
   },
   {
     "id": 95,
@@ -4636,7 +4733,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 80
+    "zukan": 80,
+    "food": 7
   },
   {
     "id": 96,
@@ -4676,7 +4774,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 10
+    "zukan": 10,
+    "food": 1
   },
   {
     "id": 97,
@@ -4713,7 +4812,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 19
+    "zukan": 19,
+    "food": 1
   },
   {
     "id": 98,
@@ -4748,7 +4848,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 119
+    "zukan": 119,
+    "food": 5
   },
   {
     "id": 99,
@@ -4780,7 +4881,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "food": 2
   },
   {
     "id": 100,
@@ -4812,7 +4914,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "food": 3
   },
   {
     "id": 101,
@@ -4853,7 +4956,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 91
+    "zukan": 91,
+    "food": 5
   },
   {
     "id": 102,
@@ -4892,7 +4996,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 91
+    "zukan": 91,
+    "food": 5
   },
   {
     "id": 103,
@@ -4931,7 +5036,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 45
+    "zukan": 45,
+    "food": 3
   },
   {
     "id": 104,
@@ -4972,7 +5078,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 46
+    "zukan": 46,
+    "food": 3
   },
   {
     "id": 105,
@@ -5022,7 +5129,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 202
+    "zukan": 202,
+    "food": 9
   },
   {
     "id": 106,
@@ -5054,7 +5162,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.2,
-    "zukan": 15
+    "zukan": 15,
+    "food": 1
   },
   {
     "id": 107,
@@ -5086,7 +5195,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 15
+    "zukan": 15,
+    "food": 1
   },
   {
     "id": 108,
@@ -5152,7 +5262,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 121
+    "zukan": 121,
+    "food": 8
   },
   {
     "id": 109,
@@ -5223,7 +5334,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 121
+    "zukan": 121,
+    "food": 8
   },
   {
     "id": 110,
@@ -5267,7 +5379,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 79
+    "zukan": 79,
+    "food": 4
   },
   {
     "id": 111,
@@ -5313,7 +5426,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 79
+    "zukan": 79,
+    "food": 4
   },
   {
     "id": 112,
@@ -5351,7 +5465,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 43
+    "zukan": 43,
+    "food": 1
   },
   {
     "id": 113,
@@ -5389,7 +5504,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 43
+    "zukan": 43,
+    "food": 1
   },
   {
     "id": 114,
@@ -5431,7 +5547,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 126
+    "zukan": 126,
+    "food": 3
   },
   {
     "id": 115,
@@ -5476,7 +5593,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 30
+    "zukan": 30,
+    "food": 2
   },
   {
     "id": 116,
@@ -5516,7 +5634,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 30
+    "zukan": 30,
+    "food": 2
   },
   {
     "id": 117,
@@ -5581,7 +5700,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 21
+    "zukan": 21,
+    "food": 4
   },
   {
     "id": 118,
@@ -5619,7 +5739,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 21
+    "zukan": 21,
+    "food": 4
   },
   {
     "id": 119,
@@ -5659,7 +5780,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 111
+    "zukan": 111,
+    "food": 5
   },
   {
     "id": 120,
@@ -5701,7 +5823,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 111
+    "zukan": 111,
+    "food": 5
   },
   {
     "id": 121,
@@ -5775,7 +5898,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 159
+    "zukan": 159,
+    "food": 9
   },
   {
     "id": 122,
@@ -5814,7 +5938,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.5,
-    "zukan": 1
+    "zukan": 1,
+    "food": 1
   },
   {
     "id": 123,
@@ -5858,7 +5983,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 73
+    "zukan": 73,
+    "food": 2
   },
   {
     "id": 124,
@@ -5903,7 +6029,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 73
+    "zukan": 73,
+    "food": 2
   },
   {
     "id": 125,
@@ -5944,7 +6071,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 0.9,
-    "zukan": 4
+    "zukan": 4,
+    "food": 1
   },
   {
     "id": 126,
@@ -5976,7 +6104,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 56
+    "zukan": 56,
+    "food": 3
   },
   {
     "id": 127,
@@ -6009,7 +6138,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 56
+    "zukan": 56,
+    "food": 3
   },
   {
     "id": 128,
@@ -6064,7 +6194,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 69
+    "zukan": 69,
+    "food": 4
   },
   {
     "id": 129,
@@ -6104,7 +6235,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 125
+    "zukan": 125,
+    "food": 4
   },
   {
     "id": 130,
@@ -6138,7 +6270,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 82
+    "zukan": 82,
+    "food": 4
   },
   {
     "id": 131,
@@ -6223,7 +6356,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 186
+    "zukan": 186,
+    "food": 8
   },
   {
     "id": 132,
@@ -6307,7 +6441,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 186
+    "zukan": 186,
+    "food": 8
   },
   {
     "id": 133,
@@ -6385,7 +6520,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 87
+    "zukan": 87,
+    "food": 6
   },
   {
     "id": 134,
@@ -6460,7 +6596,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 87
+    "zukan": 87,
+    "food": 6
   },
   {
     "id": 135,
@@ -6506,7 +6643,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 117
+    "zukan": 117,
+    "food": 5
   },
   {
     "id": 136,
@@ -6544,7 +6682,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 27
+    "zukan": 27,
+    "food": 1
   },
   {
     "id": 137,
@@ -6582,7 +6721,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 27
+    "zukan": 27,
+    "food": 1
   },
   {
     "id": 138,
@@ -6622,7 +6762,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 20
+    "zukan": 20,
+    "food": 2
   },
   {
     "id": 139,
@@ -6661,7 +6802,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 99
+    "zukan": 99,
+    "food": 6
   },
   {
     "id": 140,
@@ -6699,7 +6841,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 99
+    "zukan": 99,
+    "food": 6
   },
   {
     "id": 141,
@@ -6742,7 +6885,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 0.8,
-    "zukan": 144
+    "zukan": 144,
+    "food": 3
   },
   {
     "id": 142,
@@ -6817,7 +6961,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 102
+    "zukan": 102,
+    "food": 4
   },
   {
     "id": 143,
@@ -6897,7 +7042,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 102
+    "zukan": 102,
+    "food": 4
   },
   {
     "id": 144,
@@ -6934,7 +7080,9 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 40
+    "zukan": 40,
+    "food": 2,
+    "ranchFood": true
   },
   {
     "id": 145,
@@ -6979,7 +7127,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 86
+    "zukan": 86,
+    "food": 3
   },
   {
     "id": 146,
@@ -7025,7 +7174,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 199
+    "zukan": 199,
+    "food": 9
   },
   {
     "id": 147,
@@ -7072,7 +7222,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 201
+    "zukan": 201,
+    "food": 9
   },
   {
     "id": 148,
@@ -7105,7 +7256,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 148
+    "zukan": 148,
+    "food": 6
   },
   {
     "id": 149,
@@ -7140,7 +7292,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 51
+    "zukan": 51,
+    "food": 2
   },
   {
     "id": 150,
@@ -7177,7 +7330,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 24
+    "zukan": 24,
+    "food": 1
   },
   {
     "id": 151,
@@ -7212,7 +7366,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 143
+    "zukan": 143,
+    "food": 6
   },
   {
     "id": 152,
@@ -7244,7 +7399,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 150
+    "zukan": 150,
+    "food": 5
   },
   {
     "id": 153,
@@ -7319,7 +7475,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 187
+    "zukan": 187,
+    "food": 9
   },
   {
     "id": 154,
@@ -7365,7 +7522,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 198
+    "zukan": 198,
+    "food": 9
   },
   {
     "id": 155,
@@ -7409,7 +7567,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 106
+    "zukan": 106,
+    "food": 6
   },
   {
     "id": 156,
@@ -7450,7 +7609,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 17
+    "zukan": 17,
+    "food": 1
   },
   {
     "id": 157,
@@ -7491,7 +7651,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 0.9,
-    "zukan": 17
+    "zukan": 17,
+    "food": 1
   },
   {
     "id": 158,
@@ -7533,7 +7694,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 18
+    "zukan": 18,
+    "food": 4
   },
   {
     "id": 159,
@@ -7575,7 +7737,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 18
+    "zukan": 18,
+    "food": 4
   },
   {
     "id": 160,
@@ -7616,7 +7779,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 89
+    "zukan": 89,
+    "food": 6
   },
   {
     "id": 161,
@@ -7650,7 +7814,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 72
+    "zukan": 72,
+    "food": 4
   },
   {
     "id": 162,
@@ -7685,7 +7850,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 141
+    "zukan": 141,
+    "food": 5
   },
   {
     "id": 163,
@@ -7732,7 +7898,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 147
+    "zukan": 147,
+    "food": 5
   },
   {
     "id": 164,
@@ -7764,7 +7931,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "food": 3
   },
   {
     "id": 165,
@@ -7835,7 +8003,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 93
+    "zukan": 93,
+    "food": 4
   },
   {
     "id": 166,
@@ -7904,7 +8073,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 93
+    "zukan": 93,
+    "food": 4
   },
   {
     "id": 167,
@@ -7972,7 +8142,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 124
+    "zukan": 124,
+    "food": 6
   },
   {
     "id": 168,
@@ -8052,7 +8223,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 124
+    "zukan": 124,
+    "food": 6
   },
   {
     "id": 169,
@@ -8118,7 +8290,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 104
+    "zukan": 104,
+    "food": 7
   },
   {
     "id": 170,
@@ -8150,7 +8323,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "food": 3
   },
   {
     "id": 171,
@@ -8185,7 +8359,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 98
+    "zukan": 98,
+    "food": 4
   },
   {
     "id": 172,
@@ -8217,7 +8392,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "food": 3
   },
   {
     "id": 173,
@@ -8298,7 +8474,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 101
+    "zukan": 101,
+    "food": 4
   },
   {
     "id": 174,
@@ -8367,7 +8544,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 94
+    "zukan": 94,
+    "food": 7
   },
   {
     "id": 175,
@@ -8441,7 +8619,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 94
+    "zukan": 94,
+    "food": 7
   },
   {
     "id": 176,
@@ -8478,7 +8657,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 129
+    "zukan": 129,
+    "food": 7
   },
   {
     "id": 177,
@@ -8512,7 +8692,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 129
+    "zukan": 129,
+    "food": 7
   },
   {
     "id": 178,
@@ -8561,7 +8742,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 44
+    "zukan": 44,
+    "food": 1
   },
   {
     "id": 179,
@@ -8611,7 +8793,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 44
+    "zukan": 44,
+    "food": 1
   },
   {
     "id": 180,
@@ -8653,7 +8836,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 76
+    "zukan": 76,
+    "food": 3
   },
   {
     "id": 181,
@@ -8695,7 +8879,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 76
+    "zukan": 76,
+    "food": 3
   },
   {
     "id": 182,
@@ -8733,7 +8918,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 26
+    "zukan": 26,
+    "food": 1
   },
   {
     "id": 183,
@@ -8778,7 +8964,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 28
+    "zukan": 28,
+    "food": 1
   },
   {
     "id": 184,
@@ -8861,7 +9048,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 190
+    "zukan": 190,
+    "food": 9
   },
   {
     "id": 185,
@@ -8941,7 +9129,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 189
+    "zukan": 189,
+    "food": 8
   },
   {
     "id": 186,
@@ -9020,7 +9209,9 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 118
+    "zukan": 118,
+    "food": 5,
+    "ranchFood": true
   },
   {
     "id": 187,
@@ -9064,7 +9255,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 118
+    "zukan": 118,
+    "food": 5
   },
   {
     "id": 188,
@@ -9103,7 +9295,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 116
+    "zukan": 116,
+    "food": 5
   },
   {
     "id": 189,
@@ -9168,7 +9361,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 160
+    "zukan": 160,
+    "food": 8
   },
   {
     "id": 190,
@@ -9200,7 +9394,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 149
+    "zukan": 149,
+    "food": 3
   },
   {
     "id": 191,
@@ -9247,7 +9442,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 135
+    "zukan": 135,
+    "food": 7
   },
   {
     "id": 192,
@@ -9282,7 +9478,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 42
+    "zukan": 42,
+    "food": 1
   },
   {
     "id": 193,
@@ -9347,7 +9544,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 153
+    "zukan": 153,
+    "food": 7
   },
   {
     "id": 194,
@@ -9417,7 +9615,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 130
+    "zukan": 130,
+    "food": 6
   },
   {
     "id": 195,
@@ -9453,7 +9652,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 75
+    "zukan": 75,
+    "food": 3
   },
   {
     "id": 196,
@@ -9490,7 +9690,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 75
+    "zukan": 75,
+    "food": 3
   },
   {
     "id": 197,
@@ -9555,7 +9756,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 122
+    "zukan": 122,
+    "food": 7
   },
   {
     "id": 198,
@@ -9620,7 +9822,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 122
+    "zukan": 122,
+    "food": 7
   },
   {
     "id": 199,
@@ -9658,7 +9861,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 35
+    "zukan": 35,
+    "food": 1
   },
   {
     "id": 200,
@@ -9694,7 +9898,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 36
+    "zukan": 36,
+    "food": 4
   },
   {
     "id": 201,
@@ -9730,7 +9935,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 23
+    "zukan": 23,
+    "food": 1
   },
   {
     "id": 202,
@@ -9770,7 +9976,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 71
+    "zukan": 71,
+    "food": 4
   },
   {
     "id": 203,
@@ -9802,7 +10009,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.3,
-    "zukan": 11
+    "zukan": 11,
+    "food": 1
   },
   {
     "id": 204,
@@ -9839,7 +10047,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 53
+    "zukan": 53,
+    "food": 2
   },
   {
     "id": 205,
@@ -9878,7 +10087,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 52
+    "zukan": 52,
+    "food": 2
   },
   {
     "id": 206,
@@ -9917,7 +10127,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 37
+    "zukan": 37,
+    "food": 3
   },
   {
     "id": 207,
@@ -9957,7 +10168,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 37
+    "zukan": 37,
+    "food": 3
   },
   {
     "id": 208,
@@ -10033,7 +10245,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 0.9,
-    "zukan": 54
+    "zukan": 54,
+    "food": 3
   },
   {
     "id": 209,
@@ -10080,7 +10293,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 66
+    "zukan": 66,
+    "food": 5
   },
   {
     "id": 210,
@@ -10127,7 +10341,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 64
+    "zukan": 64,
+    "food": 5
   },
   {
     "id": 211,
@@ -10174,7 +10389,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 64
+    "zukan": 64,
+    "food": 5
   },
   {
     "id": 212,
@@ -10215,7 +10431,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 152
+    "zukan": 152,
+    "food": 6
   },
   {
     "id": 213,
@@ -10253,7 +10470,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.3,
-    "zukan": 6
+    "zukan": 6,
+    "food": 1
   },
   {
     "id": 214,
@@ -10319,7 +10537,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 113
+    "zukan": 113,
+    "food": 6
   },
   {
     "id": 215,
@@ -10353,7 +10572,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 113
+    "zukan": 113,
+    "food": 6
   },
   {
     "id": 216,
@@ -10432,7 +10652,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 151
+    "zukan": 151,
+    "food": 8
   },
   {
     "id": 217,
@@ -10521,7 +10742,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 151
+    "zukan": 151,
+    "food": 8
   },
   {
     "id": 218,
@@ -10560,7 +10782,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 78
+    "zukan": 78,
+    "food": 4
   },
   {
     "id": 219,
@@ -10600,7 +10823,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 78
+    "zukan": 78,
+    "food": 4
   },
   {
     "id": 220,
@@ -10637,7 +10861,9 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 39
+    "zukan": 39,
+    "food": 1,
+    "ranchFood": true
   },
   {
     "id": 221,
@@ -10710,7 +10936,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 134
+    "zukan": 134,
+    "food": 7
   },
   {
     "id": 222,
@@ -10785,7 +11012,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 134
+    "zukan": 134,
+    "food": 7
   },
   {
     "id": 223,
@@ -10825,7 +11053,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 146
+    "zukan": 146,
+    "food": 7
   },
   {
     "id": 224,
@@ -10861,7 +11090,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 196
+    "zukan": 196,
+    "food": 8
   },
   {
     "id": 225,
@@ -10894,7 +11124,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 145
+    "zukan": 145,
+    "food": 4
   },
   {
     "id": 226,
@@ -10929,7 +11160,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 127
+    "zukan": 127,
+    "food": 3
   },
   {
     "id": 227,
@@ -10947,7 +11179,8 @@
       "combat": null,
       "flyingMount": null,
       "groundMount": null
-    }
+    },
+    "food": 6
   },
   {
     "id": 228,
@@ -11023,7 +11256,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 184
+    "zukan": 184,
+    "food": 9
   },
   {
     "id": 229,
@@ -11057,7 +11291,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 47
+    "zukan": 47,
+    "food": 3
   },
   {
     "id": 230,
@@ -11089,7 +11324,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 204
+    "zukan": 204,
+    "food": 9
   },
   {
     "id": 231,
@@ -11133,7 +11369,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 168
+    "zukan": 168,
+    "food": 5
   },
   {
     "id": 232,
@@ -11205,7 +11442,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 96
+    "zukan": 96,
+    "food": 5
   },
   {
     "id": 233,
@@ -11246,7 +11484,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 156
+    "zukan": 156,
+    "food": 6
   },
   {
     "id": 234,
@@ -11321,7 +11560,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 136
+    "zukan": 136,
+    "food": 7
   },
   {
     "id": 235,
@@ -11402,7 +11642,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 157
+    "zukan": 157,
+    "food": 8
   },
   {
     "id": 236,
@@ -11436,7 +11677,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 14
+    "zukan": 14,
+    "food": 1
   },
   {
     "id": 237,
@@ -11518,7 +11760,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 194
+    "zukan": 194,
+    "food": 9
   },
   {
     "id": 238,
@@ -11598,7 +11841,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 138
+    "zukan": 138,
+    "food": 8
   },
   {
     "id": 239,
@@ -11678,7 +11922,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 138
+    "zukan": 138,
+    "food": 8
   },
   {
     "id": 240,
@@ -11753,7 +11998,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 176
+    "zukan": 176,
+    "food": 8
   },
   {
     "id": 241,
@@ -11790,7 +12036,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 172
+    "zukan": 172,
+    "food": 6
   },
   {
     "id": 242,
@@ -11861,7 +12108,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 171
+    "zukan": 171,
+    "food": 9
   },
   {
     "id": 243,
@@ -11943,7 +12191,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 171
+    "zukan": 171,
+    "food": 9
   },
   {
     "id": 244,
@@ -12019,7 +12268,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 81
+    "zukan": 81,
+    "food": 8
   },
   {
     "id": 245,
@@ -12099,7 +12349,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 81
+    "zukan": 81,
+    "food": 8
   },
   {
     "id": 246,
@@ -12173,7 +12424,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 174
+    "zukan": 174,
+    "food": 8
   },
   {
     "id": 247,
@@ -12213,7 +12465,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 120
+    "zukan": 120,
+    "food": 6
   },
   {
     "id": 248,
@@ -12253,7 +12506,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 48
+    "zukan": 48,
+    "food": 3
   },
   {
     "id": 249,
@@ -12291,7 +12545,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 166
+    "zukan": 166,
+    "food": 3
   },
   {
     "id": 250,
@@ -12365,7 +12620,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 159
+    "zukan": 159,
+    "food": 9
   },
   {
     "id": 251,
@@ -12400,7 +12656,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 165
+    "zukan": 165,
+    "food": 4
   },
   {
     "id": 252,
@@ -12433,7 +12690,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 170
+    "zukan": 170,
+    "food": 7
   },
   {
     "id": 253,
@@ -12468,7 +12726,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 90
+    "zukan": 90,
+    "food": 7
   },
   {
     "id": 254,
@@ -12548,7 +12807,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 180
+    "zukan": 180,
+    "food": 7
   },
   {
     "id": 255,
@@ -12624,7 +12884,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 115
+    "zukan": 115,
+    "food": 8
   },
   {
     "id": 256,
@@ -12696,7 +12957,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 105
+    "zukan": 105,
+    "food": 8
   },
   {
     "id": 257,
@@ -12738,7 +13000,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 105
+    "zukan": 105,
+    "food": 8
   },
   {
     "id": 258,
@@ -12771,7 +13034,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 59
+    "zukan": 59,
+    "food": 3
   },
   {
     "id": 259,
@@ -12846,7 +13110,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 179
+    "zukan": 179,
+    "food": 7
   },
   {
     "id": 260,
@@ -12880,7 +13145,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 100
+    "zukan": 100,
+    "food": 2
   },
   {
     "id": 261,
@@ -12920,7 +13186,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 100
+    "zukan": 100,
+    "food": 2
   },
   {
     "id": 262,
@@ -12989,7 +13256,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 148
+    "zukan": 148,
+    "food": 6
   },
   {
     "id": 263,
@@ -13061,7 +13329,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 175
+    "zukan": 175,
+    "food": 9
   },
   {
     "id": 264,
@@ -13099,7 +13368,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 203
+    "zukan": 203,
+    "food": 9
   },
   {
     "id": 265,
@@ -13171,7 +13441,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 89
+    "zukan": 89,
+    "food": 6
   },
   {
     "id": 266,
@@ -13213,7 +13484,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 131
+    "zukan": 131,
+    "food": 8
   },
   {
     "id": 267,
@@ -13291,7 +13563,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 131
+    "zukan": 131,
+    "food": 8
   },
   {
     "id": 268,
@@ -13368,7 +13641,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 72
+    "zukan": 72,
+    "food": 4
   },
   {
     "id": 269,
@@ -13404,7 +13678,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 141
+    "zukan": 141,
+    "food": 5
   },
   {
     "id": 270,
@@ -13437,7 +13712,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 62
+    "zukan": 62,
+    "food": 3
   },
   {
     "id": 271,
@@ -13471,7 +13747,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 13
+    "zukan": 13,
+    "food": 1
   },
   {
     "id": 272,
@@ -13541,7 +13818,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 98
+    "zukan": 98,
+    "food": 4
   },
   {
     "id": 273,
@@ -13616,7 +13894,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 183
+    "zukan": 183,
+    "food": 8
   },
   {
     "id": 274,
@@ -13692,7 +13971,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 177
+    "zukan": 177,
+    "food": 8
   },
   {
     "id": 275,
@@ -13761,7 +14041,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 140
+    "zukan": 140,
+    "food": 7
   },
   {
     "id": 276,
@@ -13843,7 +14124,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 192
+    "zukan": 192,
+    "food": 9
   },
   {
     "id": 277,
@@ -13916,7 +14198,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 116
+    "zukan": 116,
+    "food": 5
   },
   {
     "id": 278,
@@ -13992,7 +14275,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 193
+    "zukan": 193,
+    "food": 9
   },
   {
     "id": 279,
@@ -14031,7 +14315,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 128
+    "zukan": 128,
+    "food": 5
   },
   {
     "id": 280,
@@ -14107,7 +14392,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 128
+    "zukan": 128,
+    "food": 5
   },
   {
     "id": 281,
@@ -14144,7 +14430,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 167
+    "zukan": 167,
+    "food": 4
   },
   {
     "id": 282,
@@ -14218,7 +14505,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 149
+    "zukan": 149,
+    "food": 3
   },
   {
     "id": 283,
@@ -14255,7 +14543,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 163
+    "zukan": 163,
+    "food": 4
   },
   {
     "id": 284,
@@ -14328,7 +14617,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 163
+    "zukan": 163,
+    "food": 4
   },
   {
     "id": 285,
@@ -14403,7 +14693,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 133
+    "zukan": 133,
+    "food": 5
   },
   {
     "id": 286,
@@ -14478,7 +14769,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 182
+    "zukan": 182,
+    "food": 9
   },
   {
     "id": 287,
@@ -14518,7 +14810,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 169
+    "zukan": 169,
+    "food": 6
   },
   {
     "id": 288,
@@ -14595,7 +14888,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 169
+    "zukan": 169,
+    "food": 6
   },
   {
     "id": 289,
@@ -14628,7 +14922,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 164
+    "zukan": 164,
+    "food": 3
   },
   {
     "id": 290,
@@ -14703,7 +14998,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 130
+    "zukan": 130,
+    "food": 6
   },
   {
     "id": 291,
@@ -14743,7 +15039,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 23
+    "zukan": 23,
+    "food": 1
   },
   {
     "id": 292,
@@ -14813,7 +15110,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 142
+    "zukan": 142,
+    "food": 8
   },
   {
     "id": 293,
@@ -14888,7 +15186,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 142
+    "zukan": 142,
+    "food": 8
   },
   {
     "id": 294,
@@ -14926,7 +15225,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 173
+    "zukan": 173,
+    "food": 6
   },
   {
     "id": 295,
@@ -15007,7 +15307,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 0.9,
-    "zukan": 54
+    "zukan": 54,
+    "food": 3
   },
   {
     "id": 296,
@@ -15039,7 +15340,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 162
+    "zukan": 162,
+    "food": 4
   },
   {
     "id": 297,
@@ -15114,7 +15416,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 178
+    "zukan": 178,
+    "food": 6
   },
   {
     "id": 298,
@@ -15189,7 +15492,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 50
+    "zukan": 50,
+    "food": 6
   },
   {
     "id": 299,
@@ -15263,7 +15567,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 181
+    "zukan": 181,
+    "food": 5
   },
   {
     "id": 300,
@@ -15300,6 +15605,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 39
+    "zukan": 39,
+    "food": 1,
+    "ranchFood": true
   }
 ]

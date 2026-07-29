@@ -112,6 +112,65 @@ export function flashLimit() {
   flashTimer = setTimeout(() => el.classList.remove("show"), 3000);
 }
 
+// ===== Indicateur alimentaire =====
+//
+// `food` de chaque Pal = FoodAmount du jeu : ce qu'une espèce mange par repas, sur une
+// échelle entière 1-9. On en fait une SOMME, donc un ordre de grandeur comparatif
+// entre compos — pas une simulation. Le jeu ne consomme pas cette valeur par unité de
+// temps, et nous ne connaissons ni le débit des plantations, ni le rendement d'un
+// ranch, ni le stock de la mangeoire : aucun taux chiffré n'est donc affiché en face.
+const FOOD_MIN = 1, FOOD_MAX = 9;
+
+// Constructions vivrières, listées explicitement plutôt que déduites de la catégorie.
+// La catégorie « Nourriture » du CSV mélange trois rôles très différents — produire,
+// cuisiner, distribuer — et le Ranch, qui est la principale source de nourriture d'un
+// camp, n'y figure même pas (il est rangé dans « Pals »).
+const FOOD_STRUCTURES = {
+  "Plantation de baies": "culture",
+  "Plantation de blé": "culture",
+  "Plantation de carottes": "culture",
+  "Plantation de laitues": "culture",
+  "Plantation d'oignons": "culture",
+  "Plantation de pommes de terre": "culture",
+  "Plantation de tomates": "culture",
+  "Ranch": "élevage",
+  "Mangeoire réfrigérée": "distribution",
+  "Feu de camp": "cuisine",
+  "Marmite": "cuisine",
+  "Cuisine électrique": "cuisine",
+  "Grand four en pierre": "cuisine",
+};
+// Rôles qui apportent réellement de la nourriture au camp. La cuisine transforme des
+// ingrédients, elle n'en produit pas : son absence n'est pas une pénurie.
+const SOURCE_ROLES = ["culture", "élevage", "distribution"];
+
+function computeFood(palMembers, structMembers) {
+  const consumption = palMembers.reduce((a, [p, q]) => a + (p.food || 0) * q, 0);
+  const unknown = palMembers.reduce((a, [p, q]) => a + (p.food == null ? q : 0), 0);
+  const eaters = palMembers
+    .filter(([p]) => p.food != null)
+    .map(([p, q]) => ({ name: p.name, food: p.food, qty: q }))
+    .sort((a, b) => b.food * b.qty - a.food * a.qty || a.name.localeCompare(b.name, "fr"));
+
+  const structures = structMembers
+    .filter(([s]) => FOOD_STRUCTURES[s.name])
+    .map(([s, q]) => ({ name: s.name, qty: q, role: FOOD_STRUCTURES[s.name] }))
+    .sort((a, b) => a.name.localeCompare(b.name, "fr"));
+
+  // Pal de ranch nourricier : `ranchFood` est calculé au build à partir de la production
+  // de ranch déclarée par la compétence de partenaire. On ne se fie PAS aux seuls drops
+  // comestibles : ceux-ci mélangent production et abattage, et retiendraient à tort
+  // Lamball (laine au ranch, viande à l'abattage) ou Caprity Noct (venin au ranch).
+  const ranchPals = palMembers
+    .filter(([p]) => p.ranchFood)
+    .map(([p, q]) => ({ name: p.name, qty: q }))
+    .sort((a, b) => a.name.localeCompare(b.name, "fr"));
+
+  const sources = structures.filter(s => SOURCE_ROLES.includes(s.role));
+  const sourceCount = sources.reduce((a, s) => a + s.qty, 0) + ranchPals.reduce((a, p) => a + p.qty, 0);
+  return { consumption, unknown, eaters, structures, ranchPals, sources, sourceCount };
+}
+
 // ===== Calcul du récapitulatif (offre vs demande), en local =====
 function computeSummary() {
   const palsById = Object.fromEntries(PALS.map(p => [p.id, p]));
@@ -149,7 +208,8 @@ function computeSummary() {
     };
   });
 
-  return { summary, campSize, nightWorkers, structureCount, uncovered };
+  return { summary, campSize, nightWorkers, structureCount, uncovered,
+           food: computeFood(palMembers, structMembers) };
 }
 
 export function buildLegend() {
@@ -665,6 +725,52 @@ function renderSummary() {
       </span>`;
     list.appendChild(li);
   });
+
+  renderFood(data.food, data.campSize);
+}
+
+// Trois états : aucun Pal -> aucun signal ; des Pals mais rien pour les nourrir ->
+// avertissement ; sinon consommation et sources, sans le moindre débit inventé.
+function renderFood(f, campSize) {
+  const box = document.getElementById("food-block");
+  const section = document.getElementById("food-section");
+  if (!box || !section) return;
+  if (campSize === 0) { section.hidden = true; return; }
+  section.hidden = false;
+
+  const manque = f.sourceCount === 0;
+  box.classList.toggle("ko", manque);
+
+  const detail = f.eaters.map(e => `${e.name} ×${e.qty} : ${e.food}`).join("\n");
+  const conso = `
+    <div class="food-conso">
+      <span class="food-val" title="${escHtml("Appétit par Pal :\n" + (detail || "aucun"))}">${f.consumption}</span>
+      <span class="food-scale">appétit cumulé — échelle ${FOOD_MIN} à ${FOOD_MAX} par Pal</span>
+      ${f.unknown ? `<span class="food-unknown">${f.unknown} Pal(s) sans appétit connu</span>` : ""}
+    </div>`;
+
+  let sources;
+  if (manque) {
+    sources = `<p class="food-warn" role="status">⚠ Aucune source de nourriture dans ce camp :
+      ni plantation, ni ranch, ni mangeoire.</p>`;
+  } else {
+    const chip = (txt, cls, title) =>
+      `<span class="food-chip ${cls}"${title ? ` title="${escHtml(title)}"` : ""}>${txt}</span>`;
+    const parts = f.structures.map(s =>
+      chip(`${s.name} ×${s.qty}`, "role-" + s.role.replace("é", "e"), `Rôle : ${s.role}`));
+    const pals = f.ranchPals.map(p =>
+      chip(`🐾 ${p.name} ×${p.qty}`, "role-elevage", "Produit de la nourriture placé au ranch"));
+    sources = `<div class="food-sources">${[...parts, ...pals].join("")}</div>`;
+  }
+
+  box.innerHTML = `
+    <div class="food-grid">
+      <div><h4>Consommation</h4>${conso}</div>
+      <div><h4>Sources de nourriture</h4>${sources}</div>
+    </div>
+    <p class="food-help">Indicateur d'ordre de grandeur, pas une simulation : il compare
+    l'appétit cumulé d'une compo à la présence de sources, sans estimer aucun débit de
+    production — le jeu ne publie ni rendement de plantation ni vitesse de consommation.</p>`;
 }
 
 // ===== Rendu global =====

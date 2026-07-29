@@ -8,7 +8,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.5,
-    "zukan": 1
+    "zukan": 1,
+    "ranch": "Wool"
   },
   "Cattiva": {
     "code": "PinkCat",
@@ -19,7 +20,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.5,
-    "zukan": 2
+    "zukan": 2,
+    "ranch": null
   },
   "Chikipi": {
     "code": "ChickenPal",
@@ -30,7 +32,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.5,
-    "zukan": 3
+    "zukan": 3,
+    "ranch": null
   },
   "Lifmunk": {
     "code": "Carbunclo",
@@ -41,7 +44,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 0.9,
-    "zukan": 4
+    "zukan": 4,
+    "ranch": null
   },
   "Fuack": {
     "code": "BluePlatypus",
@@ -52,7 +56,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 5
+    "zukan": 5,
+    "ranch": null
   },
   "Fuack Ignis": {
     "code": "BluePlatypus_Fire",
@@ -64,7 +69,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 5
+    "zukan": 5,
+    "ranch": null
   },
   "Vixy": {
     "code": "CuteFox",
@@ -75,7 +81,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.3,
-    "zukan": 6
+    "zukan": 6,
+    "ranch": "items from the ground"
   },
   "Celaray": {
     "code": "FlyingManta",
@@ -86,7 +93,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 7
+    "zukan": 7,
+    "ranch": null
   },
   "Celaray Lux": {
     "code": "FlyingManta_Thunder",
@@ -98,7 +106,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 7
+    "zukan": 7,
+    "ranch": null
   },
   "Cremis": {
     "code": "WoolFox",
@@ -109,7 +118,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.3,
-    "zukan": 8
+    "zukan": 8,
+    "ranch": "Wool"
   },
   "Croajiro": {
     "code": "KendoFrog",
@@ -120,7 +130,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 9
+    "zukan": 9,
+    "ranch": null
   },
   "Croajiro Noct": {
     "code": "KendoFrog_Dark",
@@ -132,7 +143,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 9
+    "zukan": 9,
+    "ranch": null
   },
   "Herbil": {
     "code": "LeafMomonga",
@@ -144,7 +156,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 10
+    "zukan": 10,
+    "ranch": null
   },
   "Teafant": {
     "code": "Ganesha",
@@ -155,7 +168,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.3,
-    "zukan": 11
+    "zukan": 11,
+    "ranch": null
   },
   "Gumoss": {
     "code": "PlantSlime",
@@ -167,7 +181,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.3,
-    "zukan": 12
+    "zukan": 12,
+    "ranch": null
   },
   "Pupperai": {
     "code": "SamuraiDog",
@@ -178,7 +193,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 13
+    "zukan": 13,
+    "ranch": null
   },
   "Clovee": {
     "code": "CloverFairy",
@@ -190,7 +206,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 14
+    "zukan": 14,
+    "ranch": null
   },
   "Jolthog": {
     "code": "Hedgehog",
@@ -201,7 +218,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.2,
-    "zukan": 15
+    "zukan": 15,
+    "ranch": null
   },
   "Jolthog Cryst": {
     "code": "Hedgehog_Ice",
@@ -212,7 +230,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 15
+    "zukan": 15,
+    "ranch": null
   },
   "Depresso": {
     "code": "NegativeKoala",
@@ -223,7 +242,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 16
+    "zukan": 16,
+    "ranch": "Venom Gland"
   },
   "Pengullet": {
     "code": "Penguin",
@@ -235,7 +255,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 17
+    "zukan": 17,
+    "ranch": null
   },
   "Pengullet Lux": {
     "code": "Penguin_Electric",
@@ -247,7 +268,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 0.9,
-    "zukan": 17
+    "zukan": 17,
+    "ranch": null
   },
   "Penking": {
     "code": "CaptainPenguin",
@@ -259,7 +281,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 18
+    "zukan": 18,
+    "ranch": null
   },
   "Penking Lux": {
     "code": "CaptainPenguin_Black",
@@ -271,7 +294,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 18
+    "zukan": 18,
+    "ranch": null
   },
   "Hoocrates": {
     "code": "WizardOwl",
@@ -282,7 +306,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 19
+    "zukan": 19,
+    "ranch": null
   },
   "Melpaca": {
     "code": "Alpaca",
@@ -293,7 +318,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 20
+    "zukan": 20,
+    "ranch": "Wool"
   },
   "Kingpaca": {
     "code": "KingAlpaca",
@@ -304,7 +330,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 21
+    "zukan": 21,
+    "ranch": null
   },
   "Kingpaca Cryst": {
     "code": "KingAlpaca_Ice",
@@ -315,7 +342,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 21
+    "zukan": 21,
+    "ranch": null
   },
   "Daedream": {
     "code": "DreamDemon",
@@ -326,7 +354,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 22
+    "zukan": 22,
+    "ranch": null
   },
   "Tanzee": {
     "code": "Monkey",
@@ -337,7 +366,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 23
+    "zukan": 23,
+    "ranch": null
   },
   "Tanzee Ignis": {
     "code": "Monkey_Fire",
@@ -348,7 +378,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 23
+    "zukan": 23,
+    "ranch": null
   },
   "Nox": {
     "code": "NightFox",
@@ -359,7 +390,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 24
+    "zukan": 24,
+    "ranch": null
   },
   "Flambelle": {
     "code": "LavaGirl",
@@ -370,7 +402,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 25
+    "zukan": 25,
+    "ranch": "Flame Organ"
   },
   "Rooby": {
     "code": "FlameBambi",
@@ -381,7 +414,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 26
+    "zukan": 26,
+    "ranch": "Flame Organ"
   },
   "Mau": {
     "code": "Bastet",
@@ -392,7 +426,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 27
+    "zukan": 27,
+    "ranch": "Gold Coin"
   },
   "Mau Cryst": {
     "code": "Bastet_Ice",
@@ -403,7 +438,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 27
+    "zukan": 27,
+    "ranch": "Iceorgan"
   },
   "Rushoar": {
     "code": "Boar",
@@ -414,7 +450,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 28
+    "zukan": 28,
+    "ranch": null
   },
   "Foxparks": {
     "code": "Kitsunebi",
@@ -425,7 +462,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 29
+    "zukan": 29,
+    "ranch": null
   },
   "Foxparks Cryst": {
     "code": "Kitsunebi_Ice",
@@ -436,7 +474,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 29
+    "zukan": 29,
+    "ranch": null
   },
   "Killamari": {
     "code": "NegativeOctopus",
@@ -448,7 +487,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 30
+    "zukan": 30,
+    "ranch": null
   },
   "Killamari Primo": {
     "code": "NegativeOctopus_Neutral",
@@ -460,7 +500,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 30
+    "zukan": 30,
+    "ranch": null
   },
   "Fuddler": {
     "code": "CuteMole",
@@ -471,7 +512,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 31
+    "zukan": 31,
+    "ranch": null
   },
   "Eikthyrdeer": {
     "code": "Deer",
@@ -482,7 +524,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 32
+    "zukan": 32,
+    "ranch": null
   },
   "Eikthyrdeer Terra": {
     "code": "Deer_Ground",
@@ -493,7 +536,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 32
+    "zukan": 32,
+    "ranch": null
   },
   "Direhowl": {
     "code": "Garm",
@@ -504,7 +548,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 33
+    "zukan": 33,
+    "ranch": null
   },
   "Caprity": {
     "code": "BerryGoat",
@@ -515,7 +560,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 34
+    "zukan": 34,
+    "ranch": "Red Berries"
   },
   "Caprity Noct": {
     "code": "BerryGoat_Dark",
@@ -526,7 +572,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 34
+    "zukan": 34,
+    "ranch": "Venom Gland"
   },
   "Swee": {
     "code": "MopBaby",
@@ -537,7 +584,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 35
+    "zukan": 35,
+    "ranch": null
   },
   "Sweepa": {
     "code": "MopKing",
@@ -548,7 +596,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 36
+    "zukan": 36,
+    "ranch": null
   },
   "Turtacle": {
     "code": "TentacleTurtle",
@@ -559,7 +608,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 37
+    "zukan": 37,
+    "ranch": null
   },
   "Turtacle Terra": {
     "code": "TentacleTurtle_Ground",
@@ -571,7 +621,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 37
+    "zukan": 37,
+    "ranch": null
   },
   "Hangyu": {
     "code": "WindChimes",
@@ -582,7 +633,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 38
+    "zukan": 38,
+    "ranch": null
   },
   "Hangyu Cryst": {
     "code": "WindChimes_Ice",
@@ -593,7 +645,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 38
+    "zukan": 38,
+    "ranch": null
   },
   "Woolipop": {
     "code": "SweetsSheep",
@@ -604,7 +657,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 39
+    "zukan": 39,
+    "ranch": "Cotton Candy"
   },
   "Woolipop Terra": {
     "code": "SweetsSheep_Ground",
@@ -615,7 +669,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 39
+    "zukan": 39,
+    "ranch": "Caramel Cotton Candy"
   },
   "Mozzarina": {
     "code": "CowPal",
@@ -626,7 +681,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 40
+    "zukan": 40,
+    "ranch": null
   },
   "Azurobe": {
     "code": "BlueDragon",
@@ -638,7 +694,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 41
+    "zukan": 41,
+    "ranch": null
   },
   "Azurobe Cryst": {
     "code": "BlueDragon_Ice",
@@ -650,7 +707,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 41
+    "zukan": 41,
+    "ranch": null
   },
   "Sparkit": {
     "code": "ElecCat",
@@ -661,7 +719,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.1,
-    "zukan": 42
+    "zukan": 42,
+    "ranch": "Electric Organ"
   },
   "Kelpsea": {
     "code": "Kelpie",
@@ -672,7 +731,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 43
+    "zukan": 43,
+    "ranch": "Aquatic Pal Fluids"
   },
   "Kelpsea Ignis": {
     "code": "Kelpie_Fire",
@@ -683,7 +743,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 43
+    "zukan": 43,
+    "ranch": "Flame Organ"
   },
   "Ribbuny": {
     "code": "PinkRabbit",
@@ -694,7 +755,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 44
+    "zukan": 44,
+    "ranch": null
   },
   "Ribbuny Botan": {
     "code": "PinkRabbit_Grass",
@@ -705,7 +767,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 44
+    "zukan": 44,
+    "ranch": null
   },
   "Jelliette": {
     "code": "JellyfishFairy",
@@ -716,7 +779,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 45
+    "zukan": 45,
+    "ranch": null
   },
   "Jellroy": {
     "code": "JellyfishGhost",
@@ -728,7 +792,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 46
+    "zukan": 46,
+    "ranch": null
   },
   "Amione": {
     "code": "ClioneTwins",
@@ -739,7 +804,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 47
+    "zukan": 47,
+    "ranch": null
   },
   "Gloopie": {
     "code": "OctopusGirl",
@@ -751,7 +817,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 48
+    "zukan": 48,
+    "ranch": null
   },
   "Gloopie Primo": {
     "code": "OctopusGirl_Neutral",
@@ -763,7 +830,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 48
+    "zukan": 48,
+    "ranch": null
   },
   "Galeclaw": {
     "code": "Eagle",
@@ -774,7 +842,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 49
+    "zukan": 49,
+    "ranch": null
   },
   "Wispaw": {
     "code": "GhostBlackCat",
@@ -785,7 +854,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 50
+    "zukan": 50,
+    "ranch": null
   },
   "Nitewing": {
     "code": "HawkBird",
@@ -796,7 +866,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 51
+    "zukan": 51,
+    "ranch": null
   },
   "Tombat": {
     "code": "CatBat",
@@ -807,7 +878,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 52
+    "zukan": 52,
+    "ranch": null
   },
   "Tocotoco": {
     "code": "ColorfulBird",
@@ -818,7 +890,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 53
+    "zukan": 53,
+    "ranch": null
   },
   "Univolt": {
     "code": "Kirin",
@@ -829,7 +902,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 0.9,
-    "zukan": 54
+    "zukan": 54,
+    "ranch": null
   },
   "Univolt Cryst": {
     "code": "Kirin_Ice",
@@ -840,7 +914,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 0.9,
-    "zukan": 54
+    "zukan": 54,
+    "ranch": null
   },
   "Gobfin": {
     "code": "SharkKid",
@@ -851,7 +926,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 55
+    "zukan": 55,
+    "ranch": null
   },
   "Gobfin Ignis": {
     "code": "SharkKid_Fire",
@@ -862,7 +938,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 55
+    "zukan": 55,
+    "ranch": null
   },
   "Loupmoon": {
     "code": "Werewolf",
@@ -873,7 +950,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 56
+    "zukan": 56,
+    "ranch": null
   },
   "Loupmoon Cryst": {
     "code": "Werewolf_Ice",
@@ -884,7 +962,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 56
+    "zukan": 56,
+    "ranch": null
   },
   "Cawgnito": {
     "code": "DarkCrow",
@@ -895,7 +974,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 57
+    "zukan": 57,
+    "ranch": "Bone"
   },
   "Arsox": {
     "code": "FlameBuffalo",
@@ -906,7 +986,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 58
+    "zukan": 58,
+    "ranch": null
   },
   "Muffly": {
     "code": "FluffyBird",
@@ -917,7 +998,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 59
+    "zukan": 59,
+    "ranch": null
   },
   "Bristla": {
     "code": "LittleBriarRose",
@@ -928,7 +1010,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 60
+    "zukan": 60,
+    "ranch": null
   },
   "Cinnamoth": {
     "code": "CuteButterfly",
@@ -939,7 +1022,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 61
+    "zukan": 61,
+    "ranch": null
   },
   "Puffolt": {
     "code": "ElecPomeranian",
@@ -950,7 +1034,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 62
+    "zukan": 62,
+    "ranch": null
   },
   "Elphidran": {
     "code": "FairyDragon",
@@ -961,7 +1046,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 63
+    "zukan": 63,
+    "ranch": null
   },
   "Elphidran Aqua": {
     "code": "FairyDragon_Water",
@@ -973,7 +1059,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 63
+    "zukan": 63,
+    "ranch": null
   },
   "Vanwyrm": {
     "code": "BirdDragon",
@@ -985,7 +1072,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 64
+    "zukan": 64,
+    "ranch": null
   },
   "Vanwyrm Cryst": {
     "code": "BirdDragon_Ice",
@@ -997,7 +1085,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 64
+    "zukan": 64,
+    "ranch": null
   },
   "Felbat": {
     "code": "CatVampire",
@@ -1008,7 +1097,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 65
+    "zukan": 65,
+    "ranch": null
   },
   "Vaelet": {
     "code": "VioletFairy",
@@ -1019,7 +1109,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 66
+    "zukan": 66,
+    "ranch": "various seeds"
   },
   "Beegarde": {
     "code": "SoldierBee",
@@ -1030,7 +1121,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 67
+    "zukan": 67,
+    "ranch": "Honey"
   },
   "Elizabee": {
     "code": "QueenBee",
@@ -1041,7 +1133,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 68
+    "zukan": 68,
+    "ranch": null
   },
   "Lovander": {
     "code": "PinkLizard",
@@ -1052,7 +1145,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 69
+    "zukan": 69,
+    "ranch": null
   },
   "Grintale": {
     "code": "NaughtyCat",
@@ -1063,7 +1157,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 70
+    "zukan": 70,
+    "ranch": null
   },
   "Tarantriss": {
     "code": "PurpleSpider",
@@ -1074,7 +1169,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 71
+    "zukan": 71,
+    "ranch": null
   },
   "Polapup": {
     "code": "IceSeal",
@@ -1086,7 +1182,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 72
+    "zukan": 72,
+    "ranch": null
   },
   "Polapup Terra": {
     "code": "IceSeal_Ground",
@@ -1098,7 +1195,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 72
+    "zukan": 72,
+    "ranch": null
   },
   "Leezpunk": {
     "code": "LizardMan",
@@ -1109,7 +1207,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 73
+    "zukan": 73,
+    "ranch": null
   },
   "Leezpunk Ignis": {
     "code": "LizardMan_Fire",
@@ -1120,7 +1219,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 73
+    "zukan": 73,
+    "ranch": null
   },
   "Gorirat": {
     "code": "Gorilla",
@@ -1131,7 +1231,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 74
+    "zukan": 74,
+    "ranch": null
   },
   "Gorirat Terra": {
     "code": "Gorilla_Ground",
@@ -1142,7 +1243,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 74
+    "zukan": 74,
+    "ranch": null
   },
   "Surfent": {
     "code": "Serpent",
@@ -1153,7 +1255,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 75
+    "zukan": 75,
+    "ranch": "Leather"
   },
   "Surfent Terra": {
     "code": "Serpent_Ground",
@@ -1164,7 +1267,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 75
+    "zukan": 75,
+    "ranch": null
   },
   "Robinquill": {
     "code": "RobinHood",
@@ -1175,7 +1279,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 76
+    "zukan": 76,
+    "ranch": null
   },
   "Robinquill Terra": {
     "code": "RobinHood_Ground",
@@ -1187,7 +1292,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 76
+    "zukan": 76,
+    "ranch": null
   },
   "Flopie": {
     "code": "FlowerRabbit",
@@ -1198,7 +1304,8 @@
     "rarity": 1,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 77
+    "zukan": 77,
+    "ranch": null
   },
   "Wixen": {
     "code": "FoxMage",
@@ -1209,7 +1316,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 78
+    "zukan": 78,
+    "ranch": null
   },
   "Wixen Noct": {
     "code": "FoxMage_Dark",
@@ -1221,7 +1329,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 78
+    "zukan": 78,
+    "ranch": null
   },
   "Katress": {
     "code": "CatMage",
@@ -1232,7 +1341,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 79
+    "zukan": 79,
+    "ranch": null
   },
   "Katress Ignis": {
     "code": "CatMage_Fire",
@@ -1244,7 +1354,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 79
+    "zukan": 79,
+    "ranch": null
   },
   "Helzephyr": {
     "code": "HadesBird",
@@ -1255,7 +1366,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 80
+    "zukan": 80,
+    "ranch": null
   },
   "Helzephyr Lux": {
     "code": "HadesBird_Electric",
@@ -1267,7 +1379,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 80
+    "zukan": 80,
+    "ranch": null
   },
   "Elgrove": {
     "code": "GrassMinotaur",
@@ -1278,7 +1391,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 81
+    "zukan": 81,
+    "ranch": null
   },
   "Elgrove Cryst": {
     "code": "GrassMinotaur_Ice",
@@ -1289,7 +1403,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 81
+    "zukan": 81,
+    "ranch": null
   },
   "Lunaris": {
     "code": "Mutant",
@@ -1300,7 +1415,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 82
+    "zukan": 82,
+    "ranch": null
   },
   "Fenglope": {
     "code": "FengyunDeeper",
@@ -1311,7 +1427,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 83
+    "zukan": 83,
+    "ranch": null
   },
   "Fenglope Lux": {
     "code": "FengyunDeeper_Electric",
@@ -1322,7 +1439,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 83
+    "zukan": 83,
+    "ranch": null
   },
   "Dinossom": {
     "code": "FlowerDinosaur",
@@ -1334,7 +1452,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 84
+    "zukan": 84,
+    "ranch": null
   },
   "Dinossom Lux": {
     "code": "FlowerDinosaur_Electric",
@@ -1346,7 +1465,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 84
+    "zukan": 84,
+    "ranch": null
   },
   "Bushi": {
     "code": "Ronin",
@@ -1357,7 +1477,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 85
+    "zukan": 85,
+    "ranch": null
   },
   "Bushi Noct": {
     "code": "Ronin_Dark",
@@ -1369,7 +1490,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 85
+    "zukan": 85,
+    "ranch": null
   },
   "Munchill": {
     "code": "IceCrocodile",
@@ -1381,7 +1503,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 86
+    "zukan": 86,
+    "ranch": null
   },
   "Mammorest": {
     "code": "GrassMammoth",
@@ -1393,7 +1516,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 87
+    "zukan": 87,
+    "ranch": null
   },
   "Mammorest Cryst": {
     "code": "GrassMammoth_Ice",
@@ -1405,7 +1529,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 87
+    "zukan": 87,
+    "ranch": null
   },
   "Finsider": {
     "code": "StuffedShark",
@@ -1416,7 +1541,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 88
+    "zukan": 88,
+    "ranch": null
   },
   "Finsider Ignis": {
     "code": "StuffedShark_Fire",
@@ -1428,7 +1554,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 88
+    "zukan": 88,
+    "ranch": null
   },
   "Petallia": {
     "code": "FlowerDoll",
@@ -1439,7 +1566,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 89
+    "zukan": 89,
+    "ranch": null
   },
   "Petallia Ignis": {
     "code": "FlowerDoll_Fire",
@@ -1451,7 +1579,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 89
+    "zukan": 89,
+    "ranch": null
   },
   "Leafan": {
     "code": "PandaGirl",
@@ -1462,7 +1591,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 90
+    "zukan": 90,
+    "ranch": null
   },
   "Incineram": {
     "code": "Baphomet",
@@ -1474,7 +1604,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 91
+    "zukan": 91,
+    "ranch": null
   },
   "Incineram Noct": {
     "code": "Baphomet_Dark",
@@ -1485,7 +1616,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 91
+    "zukan": 91,
+    "ranch": null
   },
   "Dazzi": {
     "code": "RaijinDaughter",
@@ -1496,7 +1628,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 92
+    "zukan": 92,
+    "ranch": null
   },
   "Dazzi Noct": {
     "code": "RaijinDaughter_Water",
@@ -1508,7 +1641,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 92
+    "zukan": 92,
+    "ranch": null
   },
   "Pyrin": {
     "code": "FireKirin",
@@ -1519,7 +1653,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 93
+    "zukan": 93,
+    "ranch": null
   },
   "Pyrin Noct": {
     "code": "FireKirin_Dark",
@@ -1531,7 +1666,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 93
+    "zukan": 93,
+    "ranch": null
   },
   "Relaxaurus": {
     "code": "LazyDragon",
@@ -1543,7 +1679,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 94
+    "zukan": 94,
+    "ranch": null
   },
   "Relaxaurus Lux": {
     "code": "LazyDragon_Electric",
@@ -1555,7 +1692,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 94
+    "zukan": 94,
+    "ranch": null
   },
   "Foxcicle": {
     "code": "IceFox",
@@ -1566,7 +1704,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 95
+    "zukan": 95,
+    "ranch": "Ice Organ"
   },
   "Beakon": {
     "code": "ThunderBird",
@@ -1577,7 +1716,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 96
+    "zukan": 96,
+    "ranch": null
   },
   "Beakon Cryst": {
     "code": "ThunderBird_Ice",
@@ -1588,7 +1728,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 96
+    "zukan": 96,
+    "ranch": null
   },
   "Ghangler": {
     "code": "GhostAnglerfish",
@@ -1600,7 +1741,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 97
+    "zukan": 97,
+    "ranch": null
   },
   "Ghangler Ignis": {
     "code": "GhostAnglerfish_Fire",
@@ -1612,7 +1754,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 97
+    "zukan": 97,
+    "ranch": null
   },
   "Rayhound": {
     "code": "ThunderDog",
@@ -1623,7 +1766,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 98
+    "zukan": 98,
+    "ranch": null
   },
   "Rayhound Cryst": {
     "code": "ThunderDog_Ice",
@@ -1634,7 +1778,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 98
+    "zukan": 98,
+    "ranch": null
   },
   "Menasting": {
     "code": "DarkScorpion",
@@ -1646,7 +1791,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 99
+    "zukan": 99,
+    "ranch": null
   },
   "Menasting Terra": {
     "code": "DarkScorpion_Ground",
@@ -1657,7 +1803,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 99
+    "zukan": 99,
+    "ranch": null
   },
   "Needoll": {
     "code": "CactusDoll",
@@ -1668,7 +1815,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 100
+    "zukan": 100,
+    "ranch": null
   },
   "Needoll Noct": {
     "code": "CactusDoll_Dark",
@@ -1680,7 +1828,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 100
+    "zukan": 100,
+    "ranch": null
   },
   "Reindrix": {
     "code": "IceDeer",
@@ -1691,7 +1840,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 101
+    "zukan": 101,
+    "ranch": null
   },
   "Mossanda": {
     "code": "GrassPanda",
@@ -1702,7 +1852,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 102
+    "zukan": 102,
+    "ranch": null
   },
   "Mossanda Lux": {
     "code": "GrassPanda_Electric",
@@ -1713,7 +1864,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 102
+    "zukan": 102,
+    "ranch": null
   },
   "Chillet": {
     "code": "WeaselDragon",
@@ -1725,7 +1877,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 103
+    "zukan": 103,
+    "ranch": null
   },
   "Chillet Ignis": {
     "code": "WeaselDragon_Fire",
@@ -1737,7 +1890,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 103
+    "zukan": 103,
+    "ranch": null
   },
   "Ragnahawk": {
     "code": "RedArmorBird",
@@ -1748,7 +1902,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 104
+    "zukan": 104,
+    "ranch": null
   },
   "Moldron": {
     "code": "VolcanoDragon",
@@ -1760,7 +1915,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 105
+    "zukan": 105,
+    "ranch": null
   },
   "Moldron Cryst": {
     "code": "VolcanoDragon_Ice",
@@ -1772,7 +1928,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 105
+    "zukan": 105,
+    "ranch": null
   },
   "Palumba": {
     "code": "TropicalOstrich",
@@ -1783,7 +1940,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 106
+    "zukan": 106,
+    "ranch": null
   },
   "Digtoise": {
     "code": "DrillGame",
@@ -1794,7 +1952,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 107
+    "zukan": 107,
+    "ranch": null
   },
   "Broncherry": {
     "code": "SakuraSaurus",
@@ -1805,7 +1964,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 108
+    "zukan": 108,
+    "ranch": null
   },
   "Broncherry Aqua": {
     "code": "SakuraSaurus_Water",
@@ -1817,7 +1977,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 108
+    "zukan": 108,
+    "ranch": null
   },
   "Dumud": {
     "code": "LazyCatfish",
@@ -1829,7 +1990,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 109
+    "zukan": 109,
+    "ranch": "High Quality Pal Oil"
   },
   "Dumud Gild": {
     "code": "LazyCatfish_Gold",
@@ -1841,7 +2003,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 109
+    "zukan": 109,
+    "ranch": "High Quality Pal Oil"
   },
   "Braloha": {
     "code": "Plesiosaur",
@@ -1853,7 +2016,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 110
+    "zukan": 110,
+    "ranch": null
   },
   "Kitsun": {
     "code": "AmaterasuWolf",
@@ -1864,7 +2028,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 111
+    "zukan": 111,
+    "ranch": null
   },
   "Kitsun Noct": {
     "code": "AmaterasuWolf_Dark",
@@ -1875,7 +2040,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 111
+    "zukan": 111,
+    "ranch": null
   },
   "Blazehowl": {
     "code": "Manticore",
@@ -1886,7 +2052,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 112
+    "zukan": 112,
+    "ranch": null
   },
   "Blazehowl Noct": {
     "code": "Manticore_Dark",
@@ -1898,7 +2065,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 112
+    "zukan": 112,
+    "ranch": null
   },
   "Warsect": {
     "code": "HerculesBeetle",
@@ -1910,7 +2078,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 113
+    "zukan": 113,
+    "ranch": null
   },
   "Warsect Terra": {
     "code": "HerculesBeetle_Ground",
@@ -1921,7 +2090,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 113
+    "zukan": 113,
+    "ranch": null
   },
   "Frostplume": {
     "code": "SnowPeafowl",
@@ -1932,7 +2102,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 114
+    "zukan": 114,
+    "ranch": null
   },
   "Majex": {
     "code": "DarkFlameFox",
@@ -1944,7 +2115,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 115
+    "zukan": 115,
+    "ranch": null
   },
   "Sibelyx": {
     "code": "WhiteMoth",
@@ -1955,7 +2127,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 116
+    "zukan": 116,
+    "ranch": "High Quality Cloth"
   },
   "Sibelyx Primo": {
     "code": "WhiteMoth_Neutral",
@@ -1966,7 +2139,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 116
+    "zukan": 116,
+    "ranch": "High Quality Cloth"
   },
   "Maraith": {
     "code": "GhostBeast",
@@ -1977,7 +2151,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 117
+    "zukan": 117,
+    "ranch": null
   },
   "Shroomer": {
     "code": "MushroomDragon",
@@ -1988,7 +2163,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 118
+    "zukan": 118,
+    "ranch": "Mushroom or Cavern Mushroom"
   },
   "Shroomer Noct": {
     "code": "MushroomDragon_Dark",
@@ -2000,7 +2176,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 118
+    "zukan": 118,
+    "ranch": null
   },
   "Icelyn": {
     "code": "IceWitch",
@@ -2011,7 +2188,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 119
+    "zukan": 119,
+    "ranch": null
   },
   "Gildra": {
     "code": "MummyPal",
@@ -2023,7 +2201,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 120
+    "zukan": 120,
+    "ranch": null
   },
   "Jormuntide": {
     "code": "Umihebi",
@@ -2035,7 +2214,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 121
+    "zukan": 121,
+    "ranch": null
   },
   "Jormuntide Ignis": {
     "code": "Umihebi_Fire",
@@ -2047,7 +2227,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 121
+    "zukan": 121,
+    "ranch": null
   },
   "Suzaku": {
     "code": "Suzaku",
@@ -2058,7 +2239,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 122
+    "zukan": 122,
+    "ranch": null
   },
   "Suzaku Aqua": {
     "code": "Suzaku_Water",
@@ -2069,7 +2251,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 122
+    "zukan": 122,
+    "ranch": null
   },
   "Dazemu": {
     "code": "FeatherOstrich",
@@ -2080,7 +2263,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 123
+    "zukan": 123,
+    "ranch": null
   },
   "Quivern": {
     "code": "SkyDragon",
@@ -2091,7 +2275,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 124
+    "zukan": 124,
+    "ranch": null
   },
   "Quivern Botan": {
     "code": "SkyDragon_Grass",
@@ -2103,7 +2288,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 124
+    "zukan": 124,
+    "ranch": null
   },
   "Lullu": {
     "code": "LeafPrincess",
@@ -2114,7 +2300,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 125
+    "zukan": 125,
+    "ranch": null
   },
   "Kikit": {
     "code": "SmallArmadillo",
@@ -2125,7 +2312,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 126
+    "zukan": 126,
+    "ranch": null
   },
   "Yakumo": {
     "code": "GuardianDog",
@@ -2136,7 +2324,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 127
+    "zukan": 127,
+    "ranch": null
   },
   "Skutlass": {
     "code": "SwordCutlassfish",
@@ -2147,7 +2336,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 128
+    "zukan": 128,
+    "ranch": null
   },
   "Skutlass Ignis": {
     "code": "SwordCutlassfish_Fire",
@@ -2159,7 +2349,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 128
+    "zukan": 128,
+    "ranch": null
   },
   "Reptyro": {
     "code": "VolcanicMonster",
@@ -2171,7 +2362,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 129
+    "zukan": 129,
+    "ranch": null
   },
   "Reptyro Cryst": {
     "code": "VolcanicMonster_Ice",
@@ -2183,7 +2375,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 129
+    "zukan": 129,
+    "ranch": null
   },
   "Starryon": {
     "code": "NightBlueHorse",
@@ -2194,7 +2387,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 130
+    "zukan": 130,
+    "ranch": null
   },
   "Starryon Primo": {
     "code": "NightBlueHorse_Neutral",
@@ -2205,7 +2399,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 130
+    "zukan": 130,
+    "ranch": null
   },
   "Pierdon": {
     "code": "RockBeast",
@@ -2216,7 +2411,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 131
+    "zukan": 131,
+    "ranch": null
   },
   "Pierdon Cryst": {
     "code": "RockBeast_Ice",
@@ -2227,7 +2423,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 131
+    "zukan": 131,
+    "ranch": null
   },
   "Cryolinx": {
     "code": "WhiteTiger",
@@ -2238,7 +2435,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 132
+    "zukan": 132,
+    "ranch": null
   },
   "Cryolinx Terra": {
     "code": "WhiteTiger_Ground",
@@ -2249,7 +2447,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 132
+    "zukan": 132,
+    "ranch": null
   },
   "Snugloo": {
     "code": "SmallYeti",
@@ -2260,7 +2459,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 133
+    "zukan": 133,
+    "ranch": null
   },
   "Wumpo": {
     "code": "Yeti",
@@ -2271,7 +2471,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 134
+    "zukan": 134,
+    "ranch": null
   },
   "Wumpo Botan": {
     "code": "Yeti_Grass",
@@ -2282,7 +2483,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 134
+    "zukan": 134,
+    "ranch": null
   },
   "Sootseer": {
     "code": "CandleGhost",
@@ -2294,7 +2496,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 135
+    "zukan": 135,
+    "ranch": "Bone"
   },
   "Carnibora": {
     "code": "VenusFlytrap",
@@ -2305,7 +2508,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 136
+    "zukan": 136,
+    "ranch": null
   },
   "Blazamut": {
     "code": "KingBahamut",
@@ -2316,7 +2520,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 137
+    "zukan": 137,
+    "ranch": null
   },
   "Blazamut Ryu": {
     "code": "KingBahamut_Dragon",
@@ -2328,7 +2533,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 137
+    "zukan": 137,
+    "ranch": null
   },
   "Dualith": {
     "code": "GrassGolem",
@@ -2340,7 +2546,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 138
+    "zukan": 138,
+    "ranch": null
   },
   "Dualith Noct": {
     "code": "GrassGolem_Dark",
@@ -2352,7 +2559,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 138
+    "zukan": 138,
+    "ranch": null
   },
   "Anubis": {
     "code": "Anubis",
@@ -2363,7 +2571,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 139
+    "zukan": 139,
+    "ranch": null
   },
   "Sekhmet": {
     "code": "Sekhmet",
@@ -2374,7 +2583,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 140
+    "zukan": 140,
+    "ranch": null
   },
   "Prixter": {
     "code": "ScorpionMan",
@@ -2386,7 +2596,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 141
+    "zukan": 141,
+    "ranch": null
   },
   "Prixter Lux": {
     "code": "ScorpionMan_Electric",
@@ -2398,7 +2609,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 141
+    "zukan": 141,
+    "ranch": null
   },
   "Tetroise ": {
     "code": "CubeTurtle",
@@ -2409,7 +2621,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 142
+    "zukan": 142,
+    "ranch": null
   },
   "Tetroise Primo": {
     "code": "CubeTurtle_Neutral",
@@ -2420,7 +2633,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 142
+    "zukan": 142,
+    "ranch": null
   },
   "Nyafia": {
     "code": "BadCatgirl",
@@ -2431,7 +2645,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 143
+    "zukan": 143,
+    "ranch": null
   },
   "Mimog": {
     "code": "MimicDog",
@@ -2442,7 +2657,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 0.8,
-    "zukan": 144
+    "zukan": 144,
+    "ranch": null
   },
   "Xenovader": {
     "code": "DarkAlien",
@@ -2453,7 +2669,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 145
+    "zukan": 145,
+    "ranch": null
   },
   "Xenogard": {
     "code": "WhiteAlienDragon",
@@ -2464,7 +2681,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 146
+    "zukan": 146,
+    "ranch": null
   },
   "Prunelia": {
     "code": "BlueberryFairy",
@@ -2476,7 +2694,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 147
+    "zukan": 147,
+    "ranch": null
   },
   "Nitemary": {
     "code": "GhostRabbit",
@@ -2487,7 +2706,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 148
+    "zukan": 148,
+    "ranch": null
   },
   "Nitemary Botan": {
     "code": "GhostRabbit_Grass",
@@ -2498,7 +2718,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 148
+    "zukan": 148,
+    "ranch": null
   },
   "Smokie": {
     "code": "BlackPuppy",
@@ -2509,7 +2730,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 149
+    "zukan": 149,
+    "ranch": null
   },
   "Smokie Cryst": {
     "code": "BlackPuppy_Ice",
@@ -2521,7 +2743,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 149
+    "zukan": 149,
+    "ranch": null
   },
   "Omascul": {
     "code": "MysteryMask",
@@ -2532,7 +2755,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 150
+    "zukan": 150,
+    "ranch": null
   },
   "Whalaska": {
     "code": "IceNarwhal",
@@ -2544,7 +2768,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 151
+    "zukan": 151,
+    "ranch": null
   },
   "Whalaska Ignis": {
     "code": "IceNarwhal_Fire",
@@ -2556,7 +2781,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 151
+    "zukan": 151,
+    "ranch": null
   },
   "Verdash": {
     "code": "GrassRabbitMan",
@@ -2567,7 +2793,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 152
+    "zukan": 152,
+    "ranch": null
   },
   "Splatterina": {
     "code": "GrimGirl",
@@ -2578,7 +2805,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 153
+    "zukan": 153,
+    "ranch": null
   },
   "Gildane": {
     "code": "GoldenHorse",
@@ -2589,7 +2817,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 154
+    "zukan": 154,
+    "ranch": null
   },
   "Dogen": {
     "code": "SifuDog",
@@ -2600,7 +2829,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 155
+    "zukan": 155,
+    "ranch": null
   },
   "Bulldosu": {
     "code": "SumoDog",
@@ -2611,7 +2841,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 156
+    "zukan": 156,
+    "ranch": null
   },
   "Celesdir": {
     "code": "WhiteDeer",
@@ -2622,7 +2853,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 157
+    "zukan": 157,
+    "ranch": null
   },
   "Celesdir Noct": {
     "code": "WhiteDeer_Dark",
@@ -2633,7 +2865,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 157
+    "zukan": 157,
+    "ranch": null
   },
   "Astegon": {
     "code": "BlackMetalDragon",
@@ -2645,7 +2878,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 158
+    "zukan": 158,
+    "ranch": null
   },
   "Knocklem": {
     "code": "WingGolem",
@@ -2656,7 +2890,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 159
+    "zukan": 159,
+    "ranch": null
   },
   "Knocklem Ignis": {
     "code": "WingGolem_Fire",
@@ -2667,7 +2902,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 159
+    "zukan": 159,
+    "ranch": null
   },
   "Silvegis": {
     "code": "WhiteShieldDragon",
@@ -2678,7 +2914,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 160
+    "zukan": 160,
+    "ranch": null
   },
   "Azurmane": {
     "code": "BlueThunderHorse",
@@ -2689,7 +2926,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 161
+    "zukan": 161,
+    "ranch": null
   },
   "Valentail": {
     "code": "LongCat",
@@ -2700,7 +2938,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 162
+    "zukan": 162,
+    "ranch": null
   },
   "Snock": {
     "code": "ElecSnail",
@@ -2711,7 +2950,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 163
+    "zukan": 163,
+    "ranch": null
   },
   "Snock Lux": {
     "code": "ElecSnail_Ground",
@@ -2723,7 +2963,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 163
+    "zukan": 163,
+    "ranch": null
   },
   "Souffline": {
     "code": "DandelionGirl",
@@ -2734,7 +2975,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 164
+    "zukan": 164,
+    "ranch": null
   },
   "Lapiron": {
     "code": "BrownRabbit",
@@ -2745,7 +2987,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 165
+    "zukan": 165,
+    "ranch": null
   },
   "Hoodle": {
     "code": "HoodGhost",
@@ -2756,7 +2999,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 166
+    "zukan": 166,
+    "ranch": null
   },
   "Slowatt": {
     "code": "ElecLizard",
@@ -2767,7 +3011,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 167
+    "zukan": 167,
+    "ranch": null
   },
   "Bakemi": {
     "code": "OniGhostGirl",
@@ -2778,7 +3023,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 168
+    "zukan": 168,
+    "ranch": null
   },
   "Solmora": {
     "code": "KingSunfish",
@@ -2789,7 +3035,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 169
+    "zukan": 169,
+    "ranch": null
   },
   "Solmora Lux": {
     "code": "KingSunfish_Thunder",
@@ -2801,7 +3048,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 169
+    "zukan": 169,
+    "ranch": null
   },
   "Lapure": {
     "code": "SleeveRabbit",
@@ -2812,7 +3060,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 170
+    "zukan": 170,
+    "ranch": null
   },
   "Eidrolon": {
     "code": "GhostDragon",
@@ -2824,7 +3073,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 171
+    "zukan": 171,
+    "ranch": null
   },
   "Eidrolon Ignis": {
     "code": "GhostDragon_Fire",
@@ -2836,7 +3086,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 171
+    "zukan": 171,
+    "ranch": null
   },
   "Dynamoff": {
     "code": "ThunderFluffyBird",
@@ -2847,7 +3098,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 172
+    "zukan": 172,
+    "ranch": null
   },
   "Tropicaw": {
     "code": "RedFlowerBird",
@@ -2858,7 +3110,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 173
+    "zukan": 173,
+    "ranch": null
   },
   "Flaracle": {
     "code": "FoxExorcist",
@@ -2869,7 +3122,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 174
+    "zukan": 174,
+    "ranch": null
   },
   "Ophydia": {
     "code": "LotusDragon",
@@ -2881,7 +3135,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 175
+    "zukan": 175,
+    "ranch": null
   },
   "Dupin": {
     "code": "ClownRabbit",
@@ -2892,7 +3147,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 176
+    "zukan": 176,
+    "ranch": null
   },
   "Roujay": {
     "code": "ThiefBird",
@@ -2903,7 +3159,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 177
+    "zukan": 177,
+    "ranch": null
   },
   "Venusa": {
     "code": "SnakeGirl",
@@ -2914,7 +3171,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 178
+    "zukan": 178,
+    "ranch": null
   },
   "Mycora": {
     "code": "MushroomLady",
@@ -2925,7 +3183,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 179
+    "zukan": 179,
+    "ranch": null
   },
   "Loomen": {
     "code": "LanternButler",
@@ -2937,7 +3196,8 @@
     "rarity": 5,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 180
+    "zukan": 180,
+    "ranch": null
   },
   "Wistella": {
     "code": "MoonChild",
@@ -2948,7 +3208,8 @@
     "rarity": 2,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": 181
+    "zukan": 181,
+    "ranch": null
   },
   "Solenne": {
     "code": "MonochromeQueen",
@@ -2960,7 +3221,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 182
+    "zukan": 182,
+    "ranch": null
   },
   "Renjishi": {
     "code": "KabukiMan",
@@ -2971,7 +3233,8 @@
     "rarity": 7,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": 183
+    "zukan": 183,
+    "ranch": null
   },
   "Aegidron": {
     "code": "DomeArmorDragon",
@@ -2983,7 +3246,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 184
+    "zukan": 184,
+    "ranch": null
   },
   "Grizzbolt": {
     "code": "ElecPanda",
@@ -2994,7 +3258,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 185
+    "zukan": 185,
+    "ranch": null
   },
   "Lyleen": {
     "code": "LilyQueen",
@@ -3005,7 +3270,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 186
+    "zukan": 186,
+    "ranch": null
   },
   "Lyleen Noct": {
     "code": "LilyQueen_Dark",
@@ -3016,7 +3282,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 186
+    "zukan": 186,
+    "ranch": null
   },
   "Orserk": {
     "code": "ThunderDragonMan",
@@ -3028,7 +3295,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 187
+    "zukan": 187,
+    "ranch": null
   },
   "Faleris": {
     "code": "Horus",
@@ -3039,7 +3307,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 188
+    "zukan": 188,
+    "ranch": null
   },
   "Faleris Aqua": {
     "code": "Horus_Water",
@@ -3050,7 +3319,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 188
+    "zukan": 188,
+    "ranch": null
   },
   "Shadowbeak": {
     "code": "BlackGriffon",
@@ -3061,7 +3331,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 189
+    "zukan": 189,
+    "ranch": null
   },
   "Selyne": {
     "code": "MoonQueen",
@@ -3073,7 +3344,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 190
+    "zukan": 190,
+    "ranch": null
   },
   "Bastigor": {
     "code": "SnowTigerBeastman",
@@ -3084,7 +3356,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 191
+    "zukan": 191,
+    "ranch": null
   },
   "Shaolong": {
     "code": "BlueSkyDragon",
@@ -3096,7 +3369,8 @@
     "rarity": 9,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 192
+    "zukan": 192,
+    "ranch": null
   },
   "Silvance": {
     "code": "Mothman",
@@ -3107,7 +3381,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 193
+    "zukan": 193,
+    "ranch": null
   },
   "Dandilord": {
     "code": "FlowerPrince",
@@ -3119,7 +3394,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 194
+    "zukan": 194,
+    "ranch": null
   },
   "Bellanoir": {
     "code": "NightLady",
@@ -3130,7 +3406,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 195
+    "zukan": 195,
+    "ranch": null
   },
   "Bellanoir Libero": {
     "code": "NightLady_Dark",
@@ -3141,7 +3418,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 195
+    "zukan": 195,
+    "ranch": null
   },
   "Xenolord": {
     "code": "DarkMechaDragon",
@@ -3153,7 +3431,8 @@
     "rarity": 8,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 196
+    "zukan": 196,
+    "ranch": null
   },
   "Hartalis": {
     "code": "LegendDeer",
@@ -3164,7 +3443,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 197
+    "zukan": 197,
+    "ranch": null
   },
   "Paladius": {
     "code": "SaintCentaur",
@@ -3175,7 +3455,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 198
+    "zukan": 198,
+    "ranch": null
   },
   "Necromus": {
     "code": "BlackCentaur",
@@ -3186,7 +3467,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 199
+    "zukan": 199,
+    "ranch": null
   },
   "Frostallion": {
     "code": "IceHorse",
@@ -3197,7 +3479,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 200
+    "zukan": 200,
+    "ranch": null
   },
   "Frostallion Noct": {
     "code": "IceHorse_Dark",
@@ -3208,7 +3491,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 200
+    "zukan": 200,
+    "ranch": null
   },
   "Neptilius": {
     "code": "PoseidonOrca",
@@ -3219,7 +3503,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 201
+    "zukan": 201,
+    "ranch": null
   },
   "Jetragon": {
     "code": "JetDragon",
@@ -3230,7 +3515,8 @@
     "rarity": 20,
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
-    "zukan": 202
+    "zukan": 202,
+    "ranch": null
   },
   "Panthalus": {
     "code": "KingWhale",
@@ -3241,7 +3527,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 203
+    "zukan": 203,
+    "ranch": null
   },
   "Astralym": {
     "code": "WorldTreeDragon",
@@ -3250,7 +3537,8 @@
     "rarity": 10,
     "rarityCategory": "Epic",
     "captureRate": 1.0,
-    "zukan": 204
+    "zukan": 204,
+    "ranch": null
   },
   "Eye of Cthulhu": {
     "code": "YakushimaBoss001",
@@ -3261,7 +3549,8 @@
     "rarity": 6,
     "rarityCategory": "Rare",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "ranch": null
   },
   "Demon Eye": {
     "code": "YakushimaBoss001_Small",
@@ -3272,7 +3561,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "ranch": null
   },
   "Green Slime": {
     "code": "YakushimaMonster001",
@@ -3283,7 +3573,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "ranch": null
   },
   "Blue Slime": {
     "code": "YakushimaMonster001_Blue",
@@ -3294,7 +3585,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "ranch": null
   },
   "Illuminant Slime": {
     "code": "YakushimaMonster001_Pink",
@@ -3305,7 +3597,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "ranch": null
   },
   "Purple Slime": {
     "code": "YakushimaMonster001_Purple",
@@ -3316,7 +3609,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "ranch": null
   },
   "Rainbow Slime": {
     "code": "YakushimaMonster001_Rainbow",
@@ -3327,7 +3621,8 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "ranch": null
   },
   "Red Slime": {
     "code": "YakushimaMonster001_Red",
@@ -3338,7 +3633,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "ranch": null
   },
   "Enchanted Sword": {
     "code": "YakushimaMonster002",
@@ -3349,7 +3645,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "ranch": null
   },
   "Cave Bat": {
     "code": "YakushimaMonster003",
@@ -3360,7 +3657,8 @@
     "rarity": 3,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "ranch": null
   },
   "Illuminant Bat": {
     "code": "YakushimaMonster003_Purple",
@@ -3371,6 +3669,7 @@
     "rarity": 4,
     "rarityCategory": "Common",
     "captureRate": 1.0,
-    "zukan": null
+    "zukan": null,
+    "ranch": null
   }
 }
