@@ -1138,3 +1138,7 @@ body.camp-actions-open .limit-ctrl { display: flex; }
   .sync-menu { right: auto; left: 0; min-width: 0; width: calc(100vw - 28px); }
   .sync-wrap { position: static; }
 }
+
+/* Compteur de constructions partiel : la base contient des machines sans équivalent
+   dans notre liste. Le pointillé signale « ce n'est pas tout », l'infobulle explique. */
+#struct-count.partiel { border-bottom: 1px dotted var(--muted); cursor: help; }

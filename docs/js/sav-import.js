@@ -305,25 +305,42 @@ function buildImportedCamps(res, instToPal) {
         slots: m.slots, assigned,
       };
     });
-    const { pals, structures } = deriveFromMachines(machines);
-    if (!Object.keys(pals).length)               // aucune affectation -> repli sur la liste de la base
-      for (const iid of c.pal_instance_ids || []) {
-        const r = instToPal[iid];
-        if (r && r.palId) pals[r.palId] = (pals[r.palId] || 0) + 1;
-      }
+    // Effectif RÉEL de la base : tous les Pals qui y résident, affectés ou non.
+    // `pal_instance_ids` est le conteneur de la base, c'est lui qui fait foi.
+    const roster = {};
+    for (const iid of c.pal_instance_ids || []) {
+      const r = instToPal[iid];
+      if (r && r.palId) roster[r.palId] = (roster[r.palId] || 0) + 1;
+    }
+    const { pals: affectes, structures } = deriveFromMachines(machines);
+    const pals = fusionEffectif(roster, affectes);
     // La limite suit ce que contient RÉELLEMENT la base. Elle était figée à 15, ce qui
     // rebloquait le camp à chaque import dès qu'une base dépassait ce seuil (serveurs
     // configurés au-delà du défaut). La save fait foi ; la limite reste éditable.
     const dedans = Object.values(pals).reduce((a, n) => a + n, 0);
     out[c.base_id] = {
       name: `Base ${c.index}`,
-      pals, structures, limit: Math.max(DEFAULT_LIMIT, dedans),
+      pals, structures, roster, limit: Math.max(DEFAULT_LIMIT, dedans),
+      // Machines dont la station n'a pas d'équivalent dans notre liste de
+      // constructions : elles restent dans l'agencement, mais ne peuvent pas
+      // entrer dans `structures`, qui est indexé par identifiant de construction.
+      unmappedMachines: machines.filter(m => m.structId == null).length,
       source: "save", base_id: c.base_id, index: c.index, guild_id: c.guild_id || null,
       location: c.location || null,
       palCount: c.pal_count || 0, machineCount: c.machine_count || 0,
       machines, importedAt: now,
     };
   }
+  return out;
+}
+
+// Effectif de la base + Pals affectés à une machine -> effectif affiché.
+// Un Pal peut résider dans la base sans être affecté (au repos, ou sur une station
+// que nous ne savons pas rattacher) : il compte quand même. On prend le maximum des
+// deux plutôt que la somme, un Pal affecté étant aussi dans le conteneur.
+export function fusionEffectif(roster, affectes) {
+  const out = { ...(roster || {}) };
+  for (const [id, n] of Object.entries(affectes || {})) out[id] = Math.max(out[id] || 0, n);
   return out;
 }
 

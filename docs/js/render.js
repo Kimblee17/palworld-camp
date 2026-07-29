@@ -1,5 +1,5 @@
 import { currentTab, switchTab } from "./main.js";
-import { deriveFromMachines, escHtml, prettyStation } from "./sav-import.js";
+import { deriveFromMachines, escHtml, fusionEffectif, prettyStation } from "./sav-import.js";
 import { renderSuggestPrefs } from "./suggest.js";
 import { renderPediaProgress } from "./palpedia.js";
 import { renderNotes } from "./notes.js";
@@ -379,8 +379,12 @@ function synWorkId() { return `synw_${Date.now().toString(36)}_${(_cmSeq++).toSt
 // puis persiste et rafraîchit toute l'UI (récap, sélecteur, listes).
 function cmSync(c) {
   const d = deriveFromMachines(c.machines);
-  c.pals = d.pals; c.structures = d.structures;
+  // L'effectif de la base ne se déduit pas des affectations : éditer l'agencement ne
+  // doit pas faire disparaître les Pals au repos.
+  c.pals = fusionEffectif(c.roster, d.pals);
+  c.structures = d.structures;
   c.machineCount = c.machines.length;
+  c.unmappedMachines = (c.machines || []).filter(m => m.structId == null).length;
   saveStore(); renderAll();
 }
 function cmGroups(c) {                    // regroupe les machines par nom de station (ordre d'apparition)
@@ -777,7 +781,16 @@ function renderSummary() {
   document.getElementById("camp-count").textContent = data.campSize;
   document.getElementById("camp-limit").textContent = active().limit;
   document.getElementById("night-count").textContent = data.nightWorkers;
-  document.getElementById("struct-count").textContent = data.structureCount;
+  const sc = document.getElementById("struct-count");
+  sc.textContent = data.structureCount;
+  // Une base importée peut contenir des machines sans équivalent dans notre liste :
+  // on explique l'écart plutôt que de laisser deux chiffres se contredire.
+  const cA = active(), orphelines = cA.source === "save" ? (cA.unmappedMachines || 0) : 0;
+  sc.title = orphelines
+    ? `${data.structureCount} construction(s) reconnue(s) sur ${cA.machineCount} machines de la base — `
+      + `${orphelines} sans équivalent dans notre liste.`
+    : "";
+  sc.classList.toggle("partiel", orphelines > 0);
   // Rouge seulement en DÉPASSEMENT, pas à égalité : une base importée a une limite
   // calée sur son contenu, elle serait donc rouge en permanence sans rien signaler.
   // À égalité, le signal reste porté par chaque ligne du catalogue : le « + » y est
