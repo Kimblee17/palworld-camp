@@ -853,3 +853,129 @@ body.read-only #import-btn { display: none; }
   background: #2a1614; border: 2px solid var(--lvl-1); border-radius: 8px;
   color: #ffc9c5; font-size: 0.85rem; font-weight: 700; line-height: 1.45;
 }
+
+/* =====================================================================
+   MOBILE (<= 700px) — téléphone posé à côté, manette en main.
+   Tout est confiné dans cette media query : le desktop est inchangé.
+   `.camp-actions` est en display:contents hors mobile, donc la barre de
+   camp desktop se comporte comme avant l'introduction du conteneur.
+   ===================================================================== */
+.camp-actions { display: contents; }
+.camp-more { display: none; }
+
+@media (max-width: 700px) {
+  /* --- Place pour la barre de navigation fixe, encoche comprise --- */
+  body {
+    padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px));
+  }
+
+  header { padding: 12px 14px 4px; }
+  .brand { padding: 5px 12px; }
+  .brand h1 { font-size: 1.25rem; }
+
+  /* --- 1. Navigation en barre fixe en bas --- */
+  .view-switch {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 95;
+    margin: 0; gap: 0; flex-wrap: nowrap;
+    background: var(--panel);
+    border-top: 3px solid var(--edge);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    box-shadow: 0 -4px 0 rgba(0, 0, 0, 0.35);
+  }
+  .view-btn {
+    flex: 1 1 0; min-width: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+    /* Cible tactile : 56px de haut, bien au-delà des 44px recommandés. */
+    min-height: 56px; padding: 6px 2px;
+    border: none; border-radius: 0; box-shadow: none;
+    font-size: 0.62rem; font-weight: 800; line-height: 1.1;
+  }
+  .view-btn:active { transform: none; box-shadow: none; }
+  .view-btn .vb-ic { font-size: 1.2rem; line-height: 1; }
+  /* Libellé long remplacé par la forme courte portée par data-court. */
+  .view-btn .vb-txt { display: none; }
+  .view-btn::after { content: attr(data-court); }
+  /* Le focus clavier doit rester lisible malgré le fond plein de l'onglet actif. */
+  .view-btn:focus-visible { outline-offset: -3px; }
+
+  /* La barre de synchro perd les onglets : elle ne porte plus que l'état. */
+  .sync-bar { padding: 8px 14px; gap: 8px; }
+
+  /* --- 2. Vue Camp : le camp d'abord, le catalogue ensuite --- */
+  main { padding: 6px 14px 20px; gap: 14px; }
+  #camp { order: 1; }
+  #catalog { order: 2; }
+  .panel { padding: 14px; }
+
+  /* Sélecteur de camp en tête, seul sur sa ligne. */
+  .camp-bar { padding: 10px 14px; gap: 8px; }
+  .camp-select-label { flex: 1 1 100%; display: flex; align-items: center; gap: 6px; }
+  #camp-select { flex: 1; min-width: 0; }
+
+  /* Actions secondaires repliées derrière « ⋯ ». */
+  .camp-more { display: inline-block; margin-left: auto; }
+  .camp-actions { display: none; }
+  body.camp-actions-open .camp-actions {
+    display: flex; flex-wrap: wrap; gap: 8px; flex-basis: 100%;
+  }
+  .camp-head { flex-wrap: wrap; }
+  .limit-ctrl { display: none; }
+  body.camp-actions-open .limit-ctrl { display: flex; }
+
+  /* Listes : pas de zone de défilement imbriquée, la page défile d'un bloc. */
+  .pal-list, .pal-list.compact { max-height: none; overflow-y: visible; }
+
+  /* --- 4. Cibles tactiles : steppers et boutons d'ajout --- */
+  .btn-step { width: 44px; height: 44px; font-size: 1.15rem; border-radius: 9px; }
+  .stepper { gap: 6px; }
+  .stepper .qty { min-width: 32px; font-size: 1.05rem; }
+  .btn { padding: 11px 16px; font-size: 0.92rem; }
+  .bar-btn { padding: 11px 14px; font-size: 0.9rem; }
+  .tab { padding: 13px 8px; }
+  .pal-row { padding: 10px; gap: 9px; }
+  .pal-row .skills { max-width: 100%; }
+
+  /* --- 3. Palpedia : colonnes secondaires masquées --- */
+  /* Ordre des colonnes : 1 ⚖️ · 2 N° · 3 Pal · 4 Niv · 5 Rareté · 6 Capture ·
+     7 Compétences · 8 Global · 9 Workers · 10 Combat · 11 Vol · 12 Sol.
+     On garde 3, 7 et 9 ; le reste est à un tap dans la fiche détail. */
+  .pedia-table th:nth-child(1), .pedia-table td:nth-child(1),
+  .pedia-table th:nth-child(2), .pedia-table td:nth-child(2),
+  .pedia-table th:nth-child(4), .pedia-table td:nth-child(4),
+  .pedia-table th:nth-child(5), .pedia-table td:nth-child(5),
+  .pedia-table th:nth-child(6), .pedia-table td:nth-child(6),
+  .pedia-table th:nth-child(8), .pedia-table td:nth-child(8),
+  .pedia-table th:nth-child(10), .pedia-table td:nth-child(10),
+  .pedia-table th:nth-child(11), .pedia-table td:nth-child(11),
+  .pedia-table th:nth-child(12), .pedia-table td:nth-child(12) { display: none; }
+  .pedia-table { font-size: 0.82rem; }
+  .pedia-table th, .pedia-table td { padding: 7px 6px; }
+  .pedia-skills { max-width: none; }
+  .pedia-wrap { overflow-x: visible; }
+  /* La barre du comparateur ne doit pas passer sous la navigation fixe. */
+  .cmp-bar { bottom: calc(68px + env(safe-area-inset-bottom, 0px)); }
+
+  /* --- Anti-débordement horizontal ---
+     `min-width: auto` est la valeur par défaut des éléments de grille et de flex :
+     un libellé long y impose sa largeur et pousse toute la page. On l'annule là où
+     du texte non sécable existe, plutôt que de masquer le débordement. */
+  main > .panel { min-width: 0; }
+  .camp-select-label, #camp-select { min-width: 0; }
+  .tabs { gap: 6px; }
+  .tab { min-width: 0; font-size: 0.8rem; padding: 12px 4px; }
+  .controls input, .controls select { min-width: 0; flex: 1 1 140px; }
+  .pal-row { flex-wrap: wrap; }
+  .pal-row .info { min-width: 0; flex: 1 1 auto; }
+  .pal-row .skills { min-width: 0; margin-left: 0; justify-content: flex-start; flex-basis: 100%; }
+  .summary-row { flex-wrap: wrap; }
+  .summary-row .stats { margin-left: 0; flex-wrap: wrap; }
+  .camp-head h2 { font-size: 0.95rem; }
+
+  /* --- Divers : tout ce qui a une largeur fixe --- */
+  .controls { gap: 8px; }
+  .controls input, .controls select { padding: 11px; font-size: 0.95rem; }
+  .pm-card, .pm-card.pm-wide { width: 94vw; max-height: 82vh; }
+  .personal-panel, .share-banner, .pedia-progress { margin-left: 14px; margin-right: 14px; }
+  .view-palpedia, .view-drops, .view-breeding, .view-production, .view-import { margin: 6px 14px 20px; }
+  .legend { margin: 0 14px 12px; }
+}

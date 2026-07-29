@@ -275,6 +275,16 @@ export function init() {
   // Annuler
   document.getElementById("undo-btn").addEventListener("click", doUndo);
 
+  // « ⋯ » : replie les actions secondaires du camp sur mobile. Le bouton n'est visible
+  // qu'en dessous de 700px (CSS) ; l'état vit sur <body> car la limite du camp, qu'il
+  // révèle aussi, se trouve dans un autre conteneur.
+  document.getElementById("camp-more").addEventListener("click", e => {
+    const on = document.body.classList.toggle("camp-actions-open");
+    e.currentTarget.setAttribute("aria-expanded", String(on));
+    e.currentTarget.setAttribute("aria-label",
+      on ? "Masquer les autres actions du camp" : "Afficher les autres actions du camp");
+  });
+
   // Modale détail Pal + raccourcis clavier
   document.querySelectorAll("#pal-modal .pm-close, #pal-modal .pm-backdrop")
     .forEach(el => el.addEventListener("click", closePalModal));

@@ -34,12 +34,12 @@
   <!-- Barre : onglets (gauche) + espaces/synchro (droite) -->
   <div class="sync-bar" id="sync-bar">
     <div class="view-switch">
-      <button class="view-btn active" data-view="camp"><span aria-hidden="true">🏕️</span> Assistant de camp</button>
-      <button class="view-btn" data-view="palpedia"><span aria-hidden="true">📖</span> Palpedia</button>
-      <button class="view-btn" data-view="drops"><span aria-hidden="true">💎</span> Drops</button>
-      <button class="view-btn" data-view="breeding"><span aria-hidden="true">🥚</span> Reproduction</button>
-      <button class="view-btn" data-view="production"><span aria-hidden="true">🏭</span> Production</button>
-      <button class="view-btn" data-view="import"><span aria-hidden="true">📥</span> Importer une save</button>
+      <button class="view-btn active" data-view="camp" data-court="Camp"><span class="vb-ic" aria-hidden="true">🏕️</span><span class="vb-txt">Assistant de camp</span></button>
+      <button class="view-btn" data-view="palpedia" data-court="Palpedia"><span class="vb-ic" aria-hidden="true">📖</span><span class="vb-txt">Palpedia</span></button>
+      <button class="view-btn" data-view="drops" data-court="Drops"><span class="vb-ic" aria-hidden="true">💎</span><span class="vb-txt">Drops</span></button>
+      <button class="view-btn" data-view="breeding" data-court="Élevage"><span class="vb-ic" aria-hidden="true">🥚</span><span class="vb-txt">Reproduction</span></button>
+      <button class="view-btn" data-view="production" data-court="Prod."><span class="vb-ic" aria-hidden="true">🏭</span><span class="vb-txt">Production</span></button>
+      <button class="view-btn" data-view="import" data-court="Save"><span class="vb-ic" aria-hidden="true">📥</span><span class="vb-txt">Importer une save</span></button>
     </div>
     <span id="sync-status" class="sync-status">Chargement…</span>
     <button id="presence" class="bar-btn presence" hidden title="En ligne — clique pour ton nom"><span aria-hidden="true">👥</span></button>
@@ -78,12 +78,18 @@
       <select id="camp-select"></select>
     </label>
     <button id="camp-new" class="bar-btn"><span aria-hidden="true">＋</span> Nouveau</button>
-    <button id="camp-rename" class="bar-btn"><span aria-hidden="true">✎</span> Renommer</button>
-    <button id="camp-delete" class="bar-btn danger"><span aria-hidden="true">🗑</span> Supprimer</button>
     <button id="undo-btn" class="bar-btn" hidden><span aria-hidden="true">↩</span> Annuler</button>
-    <button id="export-btn" class="bar-btn" title="Télécharger tes camps et ta boîte dans un fichier"><span aria-hidden="true">⬇</span> Exporter</button>
-    <button id="import-btn" class="bar-btn" title="Remplacer tes camps et ta boîte depuis un fichier exporté"><span aria-hidden="true">⬆</span> Importer</button>
-    <button id="camp-share" class="bar-btn" title="Copier un lien contenant cette compo — aucun compte requis"><span aria-hidden="true">🔗</span> Partager cette compo</button>
+    <!-- Sur mobile ces actions se replient derrière « ⋯ ». `display: contents` sur le
+         conteneur laisse la barre desktop strictement identique. -->
+    <button id="camp-more" class="bar-btn camp-more" aria-expanded="false" aria-controls="camp-actions"
+            aria-label="Afficher les autres actions du camp"><span aria-hidden="true">⋯</span></button>
+    <div id="camp-actions" class="camp-actions">
+      <button id="camp-rename" class="bar-btn"><span aria-hidden="true">✎</span> Renommer</button>
+      <button id="camp-delete" class="bar-btn danger"><span aria-hidden="true">🗑</span> Supprimer</button>
+      <button id="export-btn" class="bar-btn" title="Télécharger tes camps et ta boîte dans un fichier"><span aria-hidden="true">⬇</span> Exporter</button>
+      <button id="import-btn" class="bar-btn" title="Remplacer tes camps et ta boîte depuis un fichier exporté"><span aria-hidden="true">⬆</span> Importer</button>
+      <button id="camp-share" class="bar-btn" title="Copier un lien contenant cette compo — aucun compte requis"><span aria-hidden="true">🔗</span> Partager cette compo</button>
+    </div>
     <input type="file" id="import-file" accept="application/json,.json" hidden>
   </div>
 
