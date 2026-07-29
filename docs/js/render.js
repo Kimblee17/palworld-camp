@@ -1,6 +1,7 @@
 import { currentTab, switchTab } from "./main.js";
 import { deriveFromMachines, escHtml, prettyStation } from "./sav-import.js";
 import { renderSuggestPrefs } from "./suggest.js";
+import { renderPediaProgress } from "./palpedia.js";
 import { active, addBox, addPal, addStruct, boxQty, cyclePalPref, palPref, isFull, palQty, readOnly, saveStore, setBoxQty, setPalQty, setStructQty, store, structQty, totalBox, updateUndoUI } from "./state.js";
 import { PALS, STRUCTURES, WORK_TYPES, palsById, structById, workById } from "./dataset.js";
 
@@ -879,5 +880,8 @@ export function renderAll() {
   renderCampMachines();
   renderSummary();
   renderSuggestPrefs();
+  // La progression du Paldeck dépend de la boîte : on la rafraîchit à chaque rendu
+  // global (import de save, ajout manuel), sans reconstruire les 300 lignes du tableau.
+  renderPediaProgress();
   updateUndoUI();
 }

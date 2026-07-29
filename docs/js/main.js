@@ -2,7 +2,7 @@ import { renderDrops } from "./drops.js";
 import { initBreeding, renderBreeding } from "./breeding.js";
 import { initProduction, renderProduction, DEBUG as prodDebug } from "./production.js";
 import { initShare } from "./share.js";
-import { clearPediaSelection, openPediaCompare, renderPalpedia, setPediaSort, togglePediaSelection } from "./palpedia.js";
+import { clearPediaSelection, cyclePediaOwned, openPediaCompare, renderPalpedia, setPediaSort, togglePediaSelection } from "./palpedia.js";
 import { ELEMENT_META, ELEMENT_ORDER, buildLegend, closePalModal, openPalDetail, renderAll, renderBoxCatalog, renderPalCatalog, renderStructCatalog } from "./render.js";
 import { _savPending, applySavImport, onSavFile, renderSavPreview } from "./sav-import.js";
 import { SPACE_CACHE_KEY, active, doUndo, exportStore, loadStore, normalize, pushUndo, readOnly, runStoreImport, saveStore, setStore, showRoBanner, store, touchBox, uid } from "./state.js";
@@ -123,7 +123,8 @@ export function init() {
   ELEMENT_ORDER.forEach(e => pe.add(new Option(ELEMENT_META[e].fr, e)));
   pw.addEventListener("change", renderPalpedia);
   pe.addEventListener("change", renderPalpedia);
-  document.getElementById("pedia-owned").addEventListener("change", renderPalpedia);
+  // Filtre de possession : bouton à trois états (tous / possédés / manquants).
+  document.getElementById("pedia-owned").addEventListener("click", cyclePediaOwned);
   // Le tri est porté par un <button> dans le th : focalisable, Entrée et Espace natifs.
   document.querySelectorAll(".pedia-table th[data-sort] > button").forEach(btn =>
     btn.addEventListener("click", () => setPediaSort(btn.parentElement.dataset.sort)));

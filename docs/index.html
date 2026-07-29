@@ -141,12 +141,14 @@
 
   <!-- Vue Palpedia : tous les Pals + toutes les tier-lists -->
   <section class="panel view-palpedia" id="palpedia" hidden>
+    <!-- Progression du Paldeck : remplie par renderPediaProgress() -->
+    <div id="pedia-progress" class="pedia-progress"></div>
     <div class="legend"><span class="legend-label">Niveau :</span></div>
     <div class="controls">
       <input type="search" id="pedia-search" placeholder="Rechercher un Pal…" autocomplete="off">
       <select id="pedia-work"><option value="">Toutes les compétences</option></select>
       <select id="pedia-element"><option value="">Tous les éléments</option></select>
-      <label class="night-toggle"><input type="checkbox" id="pedia-owned"> 🎒 possédés</label>
+      <button type="button" id="pedia-owned" class="night-toggle pedia-owned" data-etat="tous"><span aria-hidden="true">🎒</span> Tous</button>
       <span class="pedia-total"><span id="pedia-count">0</span> Pals</span>
       <a class="pedia-link" href="https://palworld.gg/capture-rate" target="_blank" rel="noopener">🎯 Calculateur de capture</a>
     </div>
@@ -155,6 +157,7 @@
         <thead>
           <tr>
             <th class="pedia-pick" scope="col" title="Cocher jusqu'à 4 Pals pour les comparer">⚖️</th>
+            <th class="sortable" data-sort="zukan" title="Numéro de Paldeck"><button type="button">N°</button></th>
             <th class="sortable" data-sort="name"><button type="button">Pal</button></th>
             <th class="sortable" data-sort="level" title="Niveau suggéré (calculateur de capture palworld.gg)"><button type="button">Niv.</button></th>
             <th class="sortable" data-sort="rarity"><button type="button">Rareté</button></th>

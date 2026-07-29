@@ -1,8 +1,70 @@
 import { TIER_CATS, TIER_RANK, elementChipsHtml, levelClass, levelName, openPalCompare, palElements, palIconHtml, tierClass } from "./render.js";
-import { boxQty } from "./state.js";
+import { boxQty, palBoxCounts } from "./state.js";
 import { PALS, WORK_TYPES, palsById } from "./dataset.js";
 
 let pediaSort = { key: "name", dir: 1 };              // dir: 1 = croissant, -1 = décroissant
+
+// ===== Filtre de possession : cycle à trois états =====
+// « manquants » est le mode qui sert vraiment à compléter un Paldeck ; l'ancien
+// interrupteur à deux positions ne le permettait pas.
+const POSSESSION = [
+  { cle: "tous",      libelle: "Tous",      icone: "🎒", titre: "Afficher tous les Pals" },
+  { cle: "possedes",  libelle: "Possédés",  icone: "✅", titre: "N'afficher que les Pals de ma boîte" },
+  { cle: "manquants", libelle: "Manquants", icone: "🔍", titre: "N'afficher que les Pals absents de ma boîte" },
+];
+let possession = 0;
+
+export function cyclePediaOwned() {
+  possession = (possession + 1) % POSSESSION.length;
+  majBoutonPossession();
+  renderPalpedia();
+}
+
+function majBoutonPossession() {
+  const b = document.getElementById("pedia-owned");
+  if (!b) return;
+  const e = POSSESSION[possession];
+  b.innerHTML = `<span aria-hidden="true">${e.icone}</span> ${e.libelle}`;
+  b.title = e.titre;
+  b.dataset.etat = e.cle;
+  // Le libellé visible change à chaque clic : on annonce l'état ET l'action suivante.
+  const suivant = POSSESSION[(possession + 1) % POSSESSION.length];
+  b.setAttribute("aria-label", `Possession : ${e.libelle}. Cliquer pour : ${suivant.libelle}`);
+}
+
+// ===== Progression du Paldeck =====
+// Une espèce compte possédée dès UN exemplaire en boîte. Le dénominateur compte les
+// espèces répertoriées, pas les numéros : les variantes (Fuack / Fuack Ignis) partagent
+// le n°5 mais sont deux captures distinctes — 288 espèces pour 204 numéros.
+export function renderPediaProgress() {
+  const hote = document.getElementById("pedia-progress");
+  if (!hote) return;
+  const box = palBoxCounts();
+  const repertories = PALS.filter(p => p.zukan != null);
+  const horsPaldeck = PALS.filter(p => p.zukan == null);
+  const possedes = repertories.filter(p => (box[p.id] || 0) > 0).length;
+  const total = repertories.length;
+  const pct = total ? Math.round((possedes / total) * 100) : 0;
+  const horsPossedes = horsPaldeck.filter(p => (box[p.id] || 0) > 0).length;
+
+  const numeros = new Set(repertories.map(p => p.zukan)).size;
+  hote.innerHTML = `
+    <div class="pp-head">
+      <span class="pp-label">Paldeck</span>
+      <span class="pp-count"><b>${possedes}</b> / ${total} espèces possédées</span>
+      <span class="pp-pct">${pct}%</span>
+    </div>
+    <div class="pp-bar" role="progressbar" aria-valuenow="${possedes}" aria-valuemin="0"
+         aria-valuemax="${total}" aria-label="Progression du Paldeck : ${possedes} sur ${total} espèces">
+      <div class="pp-fill" style="width:${pct}%"></div>
+    </div>
+    <p class="pp-note" title="Les variantes partagent le numéro de leur espèce de base : ${total} espèces se répartissent sur ${numeros} numéros.">
+      ${total} espèces répertoriées sur ${numeros} numéros de Paldeck (les variantes partagent le numéro de base).${
+        horsPaldeck.length
+          ? ` ${horsPaldeck.length} entrée(s) hors Paldeck, non comptée(s) ici — dont ${horsPossedes} possédée(s).`
+          : ""}
+    </p>`;
+}
 
 // ===== Sélection pour le comparateur =====
 // État de SESSION : volontairement ni dans le store ni dans localStorage. Comparer
@@ -79,7 +141,10 @@ function pediaRow(pal) {
     `${selection.has(pal.id) ? " checked" : ""}` +
     `${selection.size >= CMP_MAX && !selection.has(pal.id) ? " disabled" : ""}` +
     ` aria-label="Comparer ${pal.name}"></td>`;
-  tr.innerHTML = pick +
+  const num = pal.zukan != null
+    ? `<td class="pedia-num pedia-zukan">#${String(pal.zukan).padStart(3, "0")}</td>`
+    : `<td class="pedia-num pedia-zukan">${MUTED}</td>`;
+  tr.innerHTML = pick + num +
     `<td class="pedia-name">${palIconHtml(pal)}${name}${night}` +
       `${boxQty(pal.id) > 0 ? ' <span class="owned-badge" title="Dans ma boîte">✓</span>' : ''}` +
       `<div class="pedia-el">${elementChipsHtml(pal)}</div></td>` +
@@ -94,6 +159,7 @@ function pediaRow(pal) {
 }
 
 function pediaSortValue(pal, key) {
+  if (key === "zukan") return pal.zukan ?? null;      // sans numéro : rejeté en fin de liste
   if (key === "name") return pal.name.toLowerCase();
   if (key === "skills") return WORK_TYPES.reduce((n, w) => n + ((pal.work[w.id] || 0) > 0 ? 1 : 0), 0);
   if (key === "level") return pal.level ?? null;
@@ -135,7 +201,8 @@ export function renderPalpedia() {
   const q = document.getElementById("pedia-search").value.trim().toLowerCase();
   const wf = document.getElementById("pedia-work").value;
   const ef = document.getElementById("pedia-element").value;
-  const owned = document.getElementById("pedia-owned").checked;
+  majBoutonPossession();                 // garde le libellé et l'aria-label en phase
+  const mode = POSSESSION[possession].cle;
   const body = document.getElementById("pedia-body");
   body.innerHTML = "";
   const rows = PALS
@@ -143,7 +210,8 @@ export function renderPalpedia() {
       (!q || p.name.toLowerCase().includes(q)) &&
       (!wf || (p.work[wf] || 0) > 0) &&
       (!ef || palElements(p).includes(ef)) &&
-      (!owned || boxQty(p.id) > 0))
+      (mode === "tous"
+        || (mode === "possedes" ? boxQty(p.id) > 0 : boxQty(p.id) === 0)))
     .sort((a, b) => {
       const va = pediaSortValue(a, pediaSort.key);
       const vb = pediaSortValue(b, pediaSort.key);
@@ -157,8 +225,9 @@ export function renderPalpedia() {
     });
   document.getElementById("pedia-count").textContent = rows.length;
   updatePediaHeaders();
+  renderPediaProgress();
   if (!rows.length) {
-    body.innerHTML = `<tr><td class="empty" colspan="${6 + TIER_CATS.length}">Aucun Pal trouvé.</td></tr>`;
+    body.innerHTML = `<tr><td class="empty" colspan="${7 + TIER_CATS.length}">Aucun Pal trouvé.</td></tr>`;
     syncPediaSelection();
     return;
   }

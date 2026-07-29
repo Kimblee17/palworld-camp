@@ -805,3 +805,35 @@ body.read-only #import-btn { display: none; }
 .sb-txt { font-size: 0.92rem; font-weight: 700; margin-right: auto; }
 .sb-detail { color: var(--muted); font-weight: 700; font-size: 0.84rem; }
 .sb-go { background: var(--violet); color: #120a2e; }
+
+/* ===== Progression du Paldeck (Palpedia) ===== */
+.pedia-progress {
+  margin: 0 0 14px; padding: 12px 15px;
+  background: var(--panel-2); border: 2px solid var(--border);
+  border-radius: var(--radius);
+}
+.pp-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+.pp-label {
+  font-size: 0.76rem; font-weight: 900; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+.pp-count { font-size: 0.95rem; font-weight: 700; }
+.pp-count b { font-size: 1.25rem; color: var(--accent); }
+.pp-pct { margin-left: auto; font-size: 1.1rem; font-weight: 900; color: var(--accent-2); }
+.pp-bar {
+  height: 14px; background: var(--bg); border: 2px solid var(--edge);
+  border-radius: 999px; overflow: hidden;
+}
+.pp-fill {
+  height: 100%; background: var(--accent);
+  border-radius: 999px; transition: width 0.35s ease;
+}
+.pp-note { margin: 7px 0 0; font-size: 0.74rem; color: var(--muted); line-height: 1.45; cursor: help; }
+
+/* Filtre de possession : bouton à trois états */
+.pedia-owned { cursor: pointer; font-family: inherit; }
+.pedia-owned[data-etat="possedes"] { background: var(--accent); color: var(--accent-ink); border-color: var(--edge); }
+.pedia-owned[data-etat="manquants"] { background: var(--lvl-2); color: #3a2306; border-color: var(--edge); }
+
+/* Numéro de Paldeck */
+.pedia-zukan { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
