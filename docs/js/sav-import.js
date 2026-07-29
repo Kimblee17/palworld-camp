@@ -1,5 +1,5 @@
 import { renderAll } from "./render.js";
-import { migrateBox, normalize, pushUndo, readOnly, saveStore, store, synKey, touchBox } from "./state.js";
+import { DEFAULT_LIMIT, migrateBox, normalize, pushUndo, readOnly, saveStore, store, synKey, touchBox } from "./state.js";
 import { PALS, STRUCTURES, palsById } from "./dataset.js";
 
 // ===== Noms de code des Pals (utilisés par l'import de sauvegarde) =====
@@ -311,9 +311,13 @@ function buildImportedCamps(res, instToPal) {
         const r = instToPal[iid];
         if (r && r.palId) pals[r.palId] = (pals[r.palId] || 0) + 1;
       }
+    // La limite suit ce que contient RÉELLEMENT la base. Elle était figée à 15, ce qui
+    // rebloquait le camp à chaque import dès qu'une base dépassait ce seuil (serveurs
+    // configurés au-delà du défaut). La save fait foi ; la limite reste éditable.
+    const dedans = Object.values(pals).reduce((a, n) => a + n, 0);
     out[c.base_id] = {
       name: `Base ${c.index}`,
-      pals, structures, limit: 15,
+      pals, structures, limit: Math.max(DEFAULT_LIMIT, dedans),
       source: "save", base_id: c.base_id, index: c.index, guild_id: c.guild_id || null,
       location: c.location || null,
       palCount: c.pal_count || 0, machineCount: c.machine_count || 0,
@@ -555,16 +559,19 @@ export function applySavImport() {
   if (wantCamps) {
     const instToPal = buildInstToPal(res, r);
     const built = buildImportedCamps(res, instToPal);
-    const prevNames = {};                             // conserve un éventuel renommage manuel
+    // Conserve renommage ET limite relevée à la main : un réimport ne doit pas défaire
+    // ce que l'utilisateur a ajusté.
+    const prevNames = {}, prevLimits = {};
     for (const [id, c] of Object.entries(store.camps))
-      if (c.source === "save") prevNames[id] = c.name;
+      if (c.source === "save") { prevNames[id] = c.name; prevLimits[id] = c.limit; }
     if (mode === "replace")                           // ne retire que les bases importées
       for (const id of Object.keys(store.camps))
         if (store.camps[id].source === "save") delete store.camps[id];
     let cadded = 0, cupdated = 0;
     for (const [id, camp] of Object.entries(built)) {
       if (store.camps[id]) cupdated++; else cadded++;
-      store.camps[id] = { ...camp, name: prevNames[id] || camp.name };
+      store.camps[id] = { ...camp, name: prevNames[id] || camp.name,
+                          limit: Math.max(camp.limit, prevLimits[id] || 0) };
     }
     normalize(store);                                 // répare activeId si besoin
     parts.push(`Camps : ${cadded} ajouté(s)${cupdated ? `, ${cupdated} mis à jour` : ""}`);

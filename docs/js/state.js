@@ -10,6 +10,11 @@ const SPACE_ID_KEY = "palworld-space";
 export const SPACE_CACHE_KEY = "palworld-space-cache";
 // Déclarés avant `store` : loadStore() -> normalize() les lit dès le chargement du
 // module, et un const reste inaccessible tant que sa ligne n'a pas été exécutée.
+// Limite de Pals par défaut d'un camp créé à la main. Ce n'est PAS une règle du jeu :
+// le plafond réel est un réglage de monde (BaseCampWorkerMaxNum, 15 par défaut, que les
+// serveurs modifient couramment) et il n'apparaît pas dans Level.sav. La limite est donc
+// un repère éditable, jamais une vérité imposée aux données importées.
+export const DEFAULT_LIMIT = 15;
 const PAL_PREFS = ["pin", "exclude"];
 const WORK_PREFS = ["priority", "ignore"];
 export let store = loadStore();
@@ -44,7 +49,7 @@ export function loadStore() {
     else if (old && typeof old === "object") pals = old;
   } catch { /* ignore */ }
   let limit = parseInt(localStorage.getItem("palworld-limit"), 10);
-  if (!Number.isFinite(limit) || limit < 1) limit = 15;
+  if (!Number.isFinite(limit) || limit < 1) limit = DEFAULT_LIMIT;
 
   const id = uid();
   // normalize() aussi sur ce chemin : sinon un store tout neuf n'aurait pas les champs
@@ -59,7 +64,11 @@ export function normalize(s) {
   for (const c of Object.values(s.camps)) {
     c.pals = c.pals || {};
     c.structures = c.structures || {};
-    if (!Number.isFinite(c.limit) || c.limit < 1) c.limit = 15;
+    // Une limite plus basse que le contenu réel bloquerait le camp et afficherait un
+    // compteur en rouge à tort : on la remonte au contenu constaté.
+    const dedans = Object.values(c.pals || {}).reduce((a, n) => a + (Number(n) || 0), 0);
+    if (!Number.isFinite(c.limit) || c.limit < 1) c.limit = DEFAULT_LIMIT;
+    if (c.limit < dedans) c.limit = dedans;
     if (!c.name) c.name = "Camp";
     // Camps importés d'une save : garantir un tableau de machines exploitable par l'agencement.
     if (c.source === "save" && !Array.isArray(c.machines)) c.machines = [];
@@ -75,7 +84,7 @@ export function normalize(s) {
   if (!s.camps[s.activeId]) s.activeId = Object.keys(s.camps)[0];
   if (!s.activeId) {
     const id = uid();
-    s.camps[id] = { name: "Camp 1", pals: {}, structures: {}, limit: 15 };
+    s.camps[id] = { name: "Camp 1", pals: {}, structures: {}, limit: DEFAULT_LIMIT };
     s.activeId = id;
   }
   return s;
