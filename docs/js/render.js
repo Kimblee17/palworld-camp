@@ -778,7 +778,11 @@ function renderSummary() {
   document.getElementById("camp-limit").textContent = active().limit;
   document.getElementById("night-count").textContent = data.nightWorkers;
   document.getElementById("struct-count").textContent = data.structureCount;
-  document.getElementById("count-wrap").classList.toggle("full", data.campSize >= active().limit);
+  // Rouge seulement en DÉPASSEMENT, pas à égalité : une base importée a une limite
+  // calée sur son contenu, elle serait donc rouge en permanence sans rien signaler.
+  // À égalité, le signal reste porté par chaque ligne du catalogue : le « + » y est
+  // désactivé, avec title et aria-label « Limite atteinte ».
+  document.getElementById("count-wrap").classList.toggle("full", data.campSize > active().limit);
 
   // Le bandeau compte les deux problèmes séparément : « absente » et « trop faible »
   // n'appellent pas le même geste (ajouter un Pal / en ajouter un meilleur).
