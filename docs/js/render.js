@@ -258,7 +258,7 @@ function computeSummary() {
   const nightWorkers = palMembers.reduce((a, [p, q]) => a + (p.nightWorker ? q : 0), 0);
   const structureCount = structMembers.reduce((a, [, q]) => a + q, 0);
 
-  let uncovered = 0;
+  let uncovered = 0, underLevelled = 0;
   const summary = WORK_TYPES.map(w => {
     const wid = w.id;
     const pals = palMembers
@@ -267,22 +267,33 @@ function computeSummary() {
       .sort((a, b) => b.level - a.level || a.name.localeCompare(b.name, "fr"));
     const structures = structMembers
       .filter(([s]) => s.requires.includes(wid))
-      .map(([s, q]) => ({ id: s.id, name: s.name, qty: q }))
+      .map(([s, q]) => ({ id: s.id, name: s.name, qty: q,
+                          reqLevel: (s.requiredLevels && s.requiredLevels[wid]) || 1 }))
       .sort((a, b) => a.name.localeCompare(b.name, "fr"));
 
     const count = pals.reduce((a, c) => a + c.qty, 0);
     const demand = structures.reduce((a, c) => a + c.qty, 0);
     const covered = demand === 0 || count > 0;
+
+    // Niveau exigé = le plus haut réclamé par une construction du camp ; niveau fourni
+    // = le meilleur Pal présent. Un seul Pal au bon niveau suffit à satisfaire toutes
+    // les constructions de cette compétence, comme en jeu.
+    const maxLevel = pals.reduce((m, c) => Math.max(m, c.level), 0);
+    const reqLevel = structures.reduce((m, s) => Math.max(m, s.reqLevel), 0);
+    // Troisième état : la compétence est bien fournie, mais pas assez haut.
+    const underLevel = demand > 0 && count > 0 && maxLevel < reqLevel;
+
     if (demand > 0 && count === 0) uncovered++;
+    else if (underLevel) underLevelled++;
 
     return {
       id: wid, label: w.label, icon: w.icon,
-      count, maxLevel: pals.reduce((m, c) => Math.max(m, c.level), 0),
+      count, maxLevel, reqLevel, underLevel,
       pals, demand, structures, covered,
     };
   });
 
-  return { summary, campSize, nightWorkers, structureCount, uncovered,
+  return { summary, campSize, nightWorkers, structureCount, uncovered, underLevelled,
            food: computeFood(palMembers, structMembers) };
 }
 
@@ -767,32 +778,40 @@ function renderSummary() {
   document.getElementById("struct-count").textContent = data.structureCount;
   document.getElementById("count-wrap").classList.toggle("full", data.campSize >= active().limit);
 
+  // Le bandeau compte les deux problèmes séparément : « absente » et « trop faible »
+  // n'appellent pas le même geste (ajouter un Pal / en ajouter un meilleur).
   const warn = document.getElementById("cover-warn");
-  if (data.uncovered > 0) {
-    warn.hidden = false;
-    warn.textContent = `⚠ ${data.uncovered} compétence(s) requise(s) non couverte(s)`;
-  } else warn.hidden = true;
+  const alertes = [];
+  if (data.uncovered > 0) alertes.push(`${data.uncovered} non couverte(s)`);
+  if (data.underLevelled > 0) alertes.push(`${data.underLevelled} de niveau insuffisant`);
+  warn.hidden = alertes.length === 0;
+  warn.classList.toggle("only-level", data.uncovered === 0 && data.underLevelled > 0);
+  warn.textContent = alertes.length ? "⚠ " + alertes.join(" · ") : "";
 
   const list = document.getElementById("summary");
   list.innerHTML = "";
   data.summary.forEach(s => {
     const li = document.createElement("li");
     let state = "";
-    if (s.demand > 0) state = s.count > 0 ? " covered" : " uncovered";
+    if (s.demand > 0) state = s.count === 0 ? " uncovered" : (s.underLevel ? " underlevel" : " covered");
     else if (s.count === 0) state = " absent";
     li.className = "summary-row" + state;
 
     const palDetail = s.pals.map(p => `${p.name} ×${p.qty} (niv. ${p.level})`).join(", ");
-    const stDetail = s.structures.map(c => `${c.name} ×${c.qty}`).join(", ");
+    const stDetail = s.structures.map(c =>
+      `${c.name} ×${c.qty}${c.reqLevel > 1 ? ` (niv. ${c.reqLevel} requis)` : ""}`).join(", ");
     li.title = `Pals : ${palDetail || "aucun"}\nConstructions : ${stDetail || "aucune"}`;
 
     const demandChip = s.demand > 0
-      ? `<span class="demand ${s.count > 0 ? "ok" : "ko"}">🏗️ ${s.demand} requis</span>` : "";
+      ? `<span class="demand ${s.count > 0 && !s.underLevel ? "ok" : "ko"}">🏗️ ${s.demand} requis</span>` : "";
+    const levelWarn = s.underLevel
+      ? `<span class="lvl-warn">niveau insuffisant : fourni ${s.maxLevel} / requis ${s.reqLevel}</span>` : "";
 
     li.innerHTML = `
       <span class="ico">${s.icon}</span>
       <span class="label">${s.label}</span>
       <span class="stats">
+        ${levelWarn}
         ${demandChip}
         <span class="count">${s.count} Pal${s.count > 1 ? "s" : ""}</span>
         <span class="maxlvl ${levelClass(s.maxLevel)}">${s.maxLevel > 0 ? "niv. " + s.maxLevel : "—"}</span>

@@ -317,25 +317,42 @@ def build_structures():
             name = (row.get("Nom (FR)") or "").strip()
             if not name:
                 continue
-            requires = []
-            for part in (row.get("Compétences requises") or "").split(","):
+            # « Niveaux requis » est aligné positionnellement sur « Compétences
+            # requises ». Colonne absente, plus courte ou valeur illisible : on
+            # retombe sur 1, le minimum, plutôt que d'écarter la compétence.
+            niveaux = [n.strip() for n in (row.get("Niveaux requis") or "").split(",")]
+            requires, required_levels = [], {}
+            for pos, part in enumerate((row.get("Compétences requises") or "").split(",")):
                 key = part.strip()
                 if not key:
                     continue
                 wid = LABEL_TO_WORK.get(key)
                 if wid is None:
                     unknown.add(key)
-                elif wid not in requires:
+                    continue
+                try:
+                    lvl = int(niveaux[pos])
+                except (IndexError, ValueError):
+                    lvl = 1
+                lvl = min(10, max(1, lvl))
+                if wid not in requires:
                     requires.append(wid)
+                # Même compétence citée deux fois : on garde l'exigence la plus haute.
+                required_levels[wid] = max(required_levels.get(wid, 1), lvl)
             structures.append({
                 "id": i,
                 "name": name,
                 "category": (row.get("Catégorie") or "").strip(),
                 "requires": requires,
+                "requiredLevels": required_levels,
             })
     STRUCT_OUT.parent.mkdir(exist_ok=True)
     STRUCT_OUT.write_text(json.dumps(structures, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"{len(structures)} structures écrites dans {STRUCT_OUT}")
+    exigeantes = [s2["name"] for s2 in structures
+                  if any(v > 1 for v in s2["requiredLevels"].values())]
+    print(f"  {len(exigeantes)} construction(s) exigeant un niveau > 1"
+          + (f" : {', '.join(exigeantes)}" if exigeantes else ""))
     if unknown:
         print("  ⚠ Compétences non reconnues :", ", ".join(sorted(unknown)))
     return structures
