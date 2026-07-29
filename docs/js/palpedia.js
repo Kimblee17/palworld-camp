@@ -4,32 +4,12 @@ import { PALS, WORK_TYPES, palsById } from "./dataset.js";
 
 let pediaSort = { key: "name", dir: 1 };              // dir: 1 = croissant, -1 = décroissant
 
-// ===== Filtre de possession : cycle à trois états =====
-// « manquants » est le mode qui sert vraiment à compléter un Paldeck ; l'ancien
-// interrupteur à deux positions ne le permettait pas.
-const POSSESSION = [
-  { cle: "tous",      libelle: "Tous",      icone: "🎒", titre: "Afficher tous les Pals" },
-  { cle: "possedes",  libelle: "Possédés",  icone: "✅", titre: "N'afficher que les Pals de ma boîte" },
-  { cle: "manquants", libelle: "Manquants", icone: "🔍", titre: "N'afficher que les Pals absents de ma boîte" },
-];
-let possession = 0;
-
-export function cyclePediaOwned() {
-  possession = (possession + 1) % POSSESSION.length;
-  majBoutonPossession();
-  renderPalpedia();
-}
-
-function majBoutonPossession() {
-  const b = document.getElementById("pedia-owned");
-  if (!b) return;
-  const e = POSSESSION[possession];
-  b.innerHTML = `<span aria-hidden="true">${e.icone}</span> ${e.libelle}`;
-  b.title = e.titre;
-  b.dataset.etat = e.cle;
-  // Le libellé visible change à chaque clic : on annonce l'état ET l'action suivante.
-  const suivant = POSSESSION[(possession + 1) % POSSESSION.length];
-  b.setAttribute("aria-label", `Possession : ${e.libelle}. Cliquer pour : ${suivant.libelle}`);
+// ===== Filtre de possession : tous / possédés / manquants =====
+// Liste déroulante : les trois choix sont visibles d'un coup d'œil, et « Tous » reste
+// la valeur par défaut (première option, sélectionnée dans le HTML).
+function modePossession() {
+  const v = document.getElementById("pedia-owned")?.value;
+  return v === "possedes" || v === "manquants" ? v : "tous";
 }
 
 // ===== Progression du Paldeck =====
@@ -201,8 +181,7 @@ export function renderPalpedia() {
   const q = document.getElementById("pedia-search").value.trim().toLowerCase();
   const wf = document.getElementById("pedia-work").value;
   const ef = document.getElementById("pedia-element").value;
-  majBoutonPossession();                 // garde le libellé et l'aria-label en phase
-  const mode = POSSESSION[possession].cle;
+  const mode = modePossession();
   const body = document.getElementById("pedia-body");
   body.innerHTML = "";
   const rows = PALS

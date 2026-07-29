@@ -830,10 +830,5 @@ body.read-only #import-btn { display: none; }
 }
 .pp-note { margin: 7px 0 0; font-size: 0.74rem; color: var(--muted); line-height: 1.45; cursor: help; }
 
-/* Filtre de possession : bouton à trois états */
-.pedia-owned { cursor: pointer; font-family: inherit; }
-.pedia-owned[data-etat="possedes"] { background: var(--accent); color: var(--accent-ink); border-color: var(--edge); }
-.pedia-owned[data-etat="manquants"] { background: var(--lvl-2); color: #3a2306; border-color: var(--edge); }
-
 /* Numéro de Paldeck */
 .pedia-zukan { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
