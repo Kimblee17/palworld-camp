@@ -52,6 +52,9 @@
 
   <div id="ro-banner" class="ro-banner" hidden>👁 Lecture seule — tu vois cet espace en direct, mais tu ne peux pas le modifier.</div>
 
+  <!-- Bandeau d'accueil d'une compo reçue par lien (#c=…) -->
+  <div id="share-banner" class="share-banner" role="status" hidden></div>
+
   <!-- Barre de gestion des camps -->
   <div class="camp-bar view-camp">
     <label class="camp-select-label">Camp&nbsp;
@@ -63,6 +66,7 @@
     <button id="undo-btn" class="bar-btn" hidden><span aria-hidden="true">↩</span> Annuler</button>
     <button id="export-btn" class="bar-btn" title="Télécharger tes camps et ta boîte dans un fichier"><span aria-hidden="true">⬇</span> Exporter</button>
     <button id="import-btn" class="bar-btn" title="Remplacer tes camps et ta boîte depuis un fichier exporté"><span aria-hidden="true">⬆</span> Importer</button>
+    <button id="camp-share" class="bar-btn" title="Copier un lien contenant cette compo — aucun compte requis"><span aria-hidden="true">🔗</span> Partager cette compo</button>
     <input type="file" id="import-file" accept="application/json,.json" hidden>
   </div>
 

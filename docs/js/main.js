@@ -1,6 +1,7 @@
 import { renderDrops } from "./drops.js";
 import { initBreeding, renderBreeding } from "./breeding.js";
 import { initProduction, renderProduction, DEBUG as prodDebug } from "./production.js";
+import { initShare } from "./share.js";
 import { clearPediaSelection, openPediaCompare, renderPalpedia, setPediaSort, togglePediaSelection } from "./palpedia.js";
 import { ELEMENT_META, ELEMENT_ORDER, buildLegend, closePalModal, openPalDetail, renderAll, renderBoxCatalog, renderPalCatalog, renderStructCatalog } from "./render.js";
 import { _savPending, applySavImport, onSavFile, renderSavPreview } from "./sav-import.js";
@@ -248,6 +249,7 @@ export function init() {
 
   buildLegend();
   initBreeding();
+  initShare();
   initProduction();
   renderAll();
   // Applique la vue demandée par l'URL (sans hash : #camp, URL laissée intacte).
