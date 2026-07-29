@@ -31,25 +31,36 @@
     <div class="brand"><span class="mk" aria-hidden="true">🏕️</span><h1>Palworld</h1></div>
   </header>
 
-  <!-- Barre : onglets (gauche) + espaces/synchro (droite) -->
+  <!-- Barre : navigation (gauche) + menu de synchro (droite) -->
   <div class="sync-bar" id="sync-bar">
-    <div class="view-switch">
+    <nav class="view-switch" aria-label="Vues principales">
       <button class="view-btn active" data-view="camp" data-court="Camp"><span class="vb-ic" aria-hidden="true">🏕️</span><span class="vb-txt">Assistant de camp</span></button>
       <button class="view-btn" data-view="palpedia" data-court="Palpedia"><span class="vb-ic" aria-hidden="true">📖</span><span class="vb-txt">Palpedia</span></button>
       <button class="view-btn" data-view="drops" data-court="Drops"><span class="vb-ic" aria-hidden="true">💎</span><span class="vb-txt">Drops</span></button>
       <button class="view-btn" data-view="breeding" data-court="Élevage"><span class="vb-ic" aria-hidden="true">🥚</span><span class="vb-txt">Reproduction</span></button>
       <button class="view-btn" data-view="production" data-court="Prod."><span class="vb-ic" aria-hidden="true">🏭</span><span class="vb-txt">Production</span></button>
       <button class="view-btn" data-view="import" data-court="Save"><span class="vb-ic" aria-hidden="true">📥</span><span class="vb-txt">Importer une save</span></button>
-    </div>
-    <span id="sync-status" class="sync-status">Chargement…</span>
+    </nav>
     <button id="presence" class="bar-btn presence" hidden title="En ligne — clique pour ton nom"><span aria-hidden="true">👥</span></button>
-    <button id="sync-personal" class="bar-btn" hidden title="Retrouver tes camps sur ton téléphone et ton PC"><span aria-hidden="true">🔄</span> Synchroniser mes appareils</button>
-    <button id="personal-link" class="bar-btn" hidden title="Réafficher le lien d'appairage"><span aria-hidden="true">📱</span> Lien d'appairage</button>
-    <button id="space-create" class="bar-btn" hidden><span aria-hidden="true">👥</span> Créer un espace partagé</button>
-    <button id="space-join" class="bar-btn" hidden><span aria-hidden="true">＋</span> Rejoindre un espace…</button>
-    <button id="space-share" class="bar-btn" hidden><span aria-hidden="true">🔗</span> Copier le lien du groupe</button>
-    <button id="space-share-ro" class="bar-btn" hidden><span aria-hidden="true">👁</span> Lien lecture seule</button>
-    <button id="space-leave" class="bar-btn" hidden><span aria-hidden="true">🚪</span> Quitter (revenir en privé)</button>
+
+    <!-- Les actions de synchro tiennent dans un seul menu : elles sont rares, et
+         leur libellé complet encombrait la barre. L'état reste lisible en permanence
+         puisqu'il sert d'étiquette au bouton. -->
+    <div class="sync-wrap">
+      <button id="sync-menu-btn" class="bar-btn sync-menu-btn" aria-expanded="false" aria-controls="sync-menu">
+        <span id="sync-status" class="sync-status">Chargement…</span>
+        <span class="sm-caret" aria-hidden="true">▾</span>
+      </button>
+      <div id="sync-menu" class="sync-menu" hidden>
+        <button id="sync-personal" class="bar-btn" hidden title="Retrouver tes camps sur ton téléphone et ton PC"><span aria-hidden="true">🔄</span> Synchroniser mes appareils</button>
+        <button id="personal-link" class="bar-btn" hidden title="Réafficher le lien d'appairage"><span aria-hidden="true">📱</span> Lien d'appairage</button>
+        <button id="space-create" class="bar-btn" hidden><span aria-hidden="true">👥</span> Créer un espace partagé</button>
+        <button id="space-join" class="bar-btn" hidden><span aria-hidden="true">＋</span> Rejoindre un espace…</button>
+        <button id="space-share" class="bar-btn" hidden><span aria-hidden="true">🔗</span> Copier le lien du groupe</button>
+        <button id="space-share-ro" class="bar-btn" hidden><span aria-hidden="true">👁</span> Lien lecture seule</button>
+        <button id="space-leave" class="bar-btn" hidden><span aria-hidden="true">🚪</span> Quitter (revenir en privé)</button>
+      </div>
+    </div>
   </div>
 
   <!-- Appairage d'un second appareil : lien d'écriture + avertissement -->

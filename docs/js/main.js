@@ -84,7 +84,27 @@ window.setSyncUI = function (state, info = {}) {
   } else { // "local"
     st.textContent = "🖥️ Espace privé (local à cet appareil)"; st.className = "sync-status"; all(true, false, false, true, false);
   }
+  majMenuSynchro();
 };
+
+// Le bouton du menu porte l'état ; il n'a de sens que s'il reste une action à offrir
+// (pendant « Connexion… », toutes sont masquées).
+function majMenuSynchro() {
+  const menu = document.getElementById("sync-menu");
+  const btn = document.getElementById("sync-menu-btn");
+  if (!menu || !btn) return;
+  const dispo = [...menu.querySelectorAll("button")].some(b => !b.hidden);
+  btn.disabled = !dispo;
+  if (!dispo) fermerMenuSynchro();
+}
+
+function fermerMenuSynchro() {
+  const menu = document.getElementById("sync-menu");
+  const btn = document.getElementById("sync-menu-btn");
+  if (!menu || menu.hidden) return;
+  menu.hidden = true;
+  btn.setAttribute("aria-expanded", "false");
+}
 
 // ===== Présence (qui est en ligne) =====
 // Audit des recettes depuis la console du navigateur.
@@ -273,6 +293,22 @@ export function init() {
   // Présence : cliquer pour définir son nom
   document.getElementById("presence").addEventListener("click", promptName);
 
+  // Menu de synchro : un seul point d'entrée pour des actions rares.
+  const menuBtn = document.getElementById("sync-menu-btn");
+  const menu = document.getElementById("sync-menu");
+  menuBtn.addEventListener("click", e => {
+    e.stopPropagation();
+    const ouvre = menu.hidden;
+    menu.hidden = !ouvre;
+    menuBtn.setAttribute("aria-expanded", String(ouvre));
+    if (ouvre) menu.querySelector("button:not([hidden])")?.focus();
+  });
+  // Agir depuis le menu le referme : chaque action change l'état de synchro.
+  menu.addEventListener("click", e => { if (e.target.closest("button")) fermerMenuSynchro(); });
+  document.addEventListener("click", e => {
+    if (!menu.hidden && !menu.contains(e.target) && e.target !== menuBtn) fermerMenuSynchro();
+  });
+
   // Annuler
   document.getElementById("undo-btn").addEventListener("click", doUndo);
 
@@ -304,7 +340,7 @@ export function init() {
   document.getElementById("cmp-open").addEventListener("click", openPediaCompare);
   document.getElementById("cmp-clear").addEventListener("click", () => clearPediaSelection());
   document.addEventListener("keydown", e => {
-    if (e.key === "Escape") closePalModal();
+    if (e.key === "Escape") { closePalModal(); fermerMenuSynchro(); }
     const tag = (document.activeElement?.tagName || "").toLowerCase();
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z" && !["input", "textarea", "select"].includes(tag)) {
       e.preventDefault(); doUndo();
