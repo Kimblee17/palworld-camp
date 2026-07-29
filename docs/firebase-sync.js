@@ -9,6 +9,11 @@
 //     { store, updatedAt, writers: [uid...], presence: { uid: {...} } }
 //     ⚠ ne contient JAMAIS wsId : sinon le lien de lecture divulguerait l'écriture.
 //
+// Espace PERSONNEL : c'est un espace partagé ordinaire à un seul écrivain, rien de
+// plus. Aucune règle Firestore ni collection supplémentaire — seul un marqueur
+// `personal: true` DANS le store distingue l'habillage. Le marqueur voyageant avec le
+// store, le second appareil hérite du même habillage sans réglage local.
+//
 // Liens : écriture ?ws=<wsId> · lecture seule ?r=<readKey>
 // - écrivain : abonné à workspaces/{wsId} ; chaque push écrit les DEUX documents (writeBatch)
 // - lecteur  : abonné à reads/{readKey} uniquement, ne pousse jamais store
@@ -49,6 +54,7 @@ let hbTimer = null;
 let lastJson = null;
 let mirrorWarned = false;
 let mirrorSynced = false;   // le miroir a-t-il été rafraîchi durant cette session ?
+let personal = false;       // espace personnel (multi-appareils d'une seule personne)
 
 function myUid() { return auth.currentUser ? auth.currentUser.uid : null; }
 // Nom tronqué à 40 caractères : c'est la limite imposée par firestore.rules sur
@@ -98,6 +104,11 @@ function currentLinks() {
   return {
     link: wsId ? writeLink(wsId) : null,
     roLink: readKey && !reader ? readLink(readKey) : null,
+    personal,
+    // « n appareils » = nombre d'écrivains : l'uid anonyme étant propre à chaque
+    // navigateur, un écrivain vaut un appareil. Plus stable que la présence, qui ne
+    // compte que ceux connectés à l'instant.
+    devices: writers.length,
   };
 }
 function stripQueryFromUrl() {
@@ -159,9 +170,13 @@ function applySnapshot(snap) {
     const nextWriters = Array.isArray(d.writers) ? d.writers : [];
     const writersChanged = JSON.stringify(nextWriters) !== JSON.stringify(writers);
     const keyChanged = (d.readKey || null) !== readKey;
+    // Le marqueur vit dans le store : il suit l'espace, pas l'appareil.
+    const nextPersonal = !!(d.store && d.store.personal);
+    const personalChanged = nextPersonal !== personal;
     writers = nextWriters;
+    personal = nextPersonal;
     if (d.readKey) readKey = d.readKey;
-    if (writersChanged || keyChanged) {
+    if (writersChanged || keyChanged || personalChanged) {
       status("shared", { spaceId: wsId, ro: false, ...currentLinks() });
     }
     // Le miroir n'autorise l'écriture qu'aux uid de SON writers. On le rafraîchit
@@ -260,36 +275,50 @@ async function ensureWriterMembership(id) {
     return;
   }
   readKey = d.readKey || null;
+  personal = !!(d.store && d.store.personal);
+}
+
+// Création d'un espace, partagé ou personnel. Le seul écart tient au marqueur versé
+// dans le store : le document, ses champs et les règles qui le protègent sont identiques.
+async function creerEspace(seedStore, estPersonnel) {
+  try {
+    status("connecting");
+    await ensureAuth();
+    const u = myUid();
+    const id = randomKey();
+    const key = randomKey();
+    const seed = estPersonnel ? { ...seedStore, personal: true } : seedStore;
+    const batch = writeBatch(db);
+    batch.set(wsRef(id), {
+      owner: u, writers: [u], readKey: key,
+      store: seed, updatedAt: serverTimestamp(),
+    });
+    batch.set(readRef(key), { store: seed, updatedAt: serverTimestamp(), writers: [u] });
+    await batch.commit();
+    readKey = key; writers = [u]; personal = estPersonnel;
+    lastJson = JSON.stringify(seed);
+    // Le marqueur doit exister localement aussi, sinon la prochaine écriture du store
+    // local l'effacerait du document distant.
+    if (estPersonnel) window.applyRemoteStore?.(seed);
+    enterWriter(id);
+  } catch (e) {
+    wsId = null; readKey = null; reader = false; personal = false;
+    fail(e);
+  }
 }
 
 const Cloud = {
   mode: () => (wsId || reader ? "shared" : "local"),
   spaceId: () => wsId,
   isReadOnly: () => reader,
+  isPersonal: () => personal,
   shareLink: (ro) => (ro ? (readKey && !reader ? readLink(readKey) : null) : (wsId ? writeLink(wsId) : null)),
 
-  async createSharedSpace(seedStore) {
-    try {
-      status("connecting");
-      await ensureAuth();
-      const u = myUid();
-      const id = randomKey();
-      const key = randomKey();
-      const batch = writeBatch(db);
-      batch.set(wsRef(id), {
-        owner: u, writers: [u], readKey: key,
-        store: seedStore, updatedAt: serverTimestamp(),
-      });
-      batch.set(readRef(key), { store: seedStore, updatedAt: serverTimestamp(), writers: [u] });
-      await batch.commit();
-      readKey = key; writers = [u];
-      lastJson = JSON.stringify(seedStore);
-      enterWriter(id);
-    } catch (e) {
-      wsId = null; readKey = null; reader = false;
-      fail(e);
-    }
-  },
+  createSharedSpace(seedStore) { return creerEspace(seedStore, false); },
+
+  // Espace personnel : même document, même sécurité, même mécanisme d'adhésion.
+  // Seul le marqueur versé dans le store change l'habillage de l'interface.
+  createPersonalSpace(seedStore) { return creerEspace(seedStore, true); },
 
   // Rejoindre en écriture (lien ?ws= ou code brut). Un ancien lien ?ws=…&ro=1
   // n'est PAS sécurisable rétroactivement : on prévient l'utilisateur.
@@ -367,6 +396,7 @@ const Cloud = {
     dropPresence();
     if (unsub) { unsub(); unsub = null; }
     wsId = null; readKey = null; reader = false; writers = []; lastJson = null;
+    personal = false;
     localStorage.removeItem(SPACE_KEY); localStorage.removeItem(READ_KEY);
     localStorage.removeItem(LEGACY_RO); localStorage.removeItem(LEGACY_WS);
     window.setReadOnly?.(false);

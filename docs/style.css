@@ -832,3 +832,24 @@ body.read-only #import-btn { display: none; }
 
 /* Numéro de Paldeck */
 .pedia-zukan { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* ===== Panneau d'appairage (synchro de mes appareils) ===== */
+.personal-panel {
+  margin: 12px 28px 0; padding: 14px 16px;
+  background: var(--panel); border: 3px solid var(--accent-2);
+  border-radius: var(--radius); box-shadow: var(--sh);
+}
+.personal-panel h3 { margin: 0 0 6px; font-size: 1rem; font-weight: 900; }
+.pp-help { margin: 0 0 10px; font-size: 0.86rem; color: var(--muted); line-height: 1.45; }
+.pp-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: stretch; }
+#personal-url {
+  flex: 1; min-width: 220px;
+  background: var(--bg); color: var(--text);
+  border: 2px solid var(--border); border-radius: 8px;
+  padding: 9px 11px; font-size: 0.9rem; font-family: monospace;
+}
+.pp-warn {
+  margin: 10px 0 12px; padding: 9px 12px;
+  background: #2a1614; border: 2px solid var(--lvl-1); border-radius: 8px;
+  color: #ffc9c5; font-size: 0.85rem; font-weight: 700; line-height: 1.45;
+}

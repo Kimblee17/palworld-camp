@@ -43,11 +43,28 @@
     </div>
     <span id="sync-status" class="sync-status">Chargement…</span>
     <button id="presence" class="bar-btn presence" hidden title="En ligne — clique pour ton nom"><span aria-hidden="true">👥</span></button>
+    <button id="sync-personal" class="bar-btn" hidden title="Retrouver tes camps sur ton téléphone et ton PC"><span aria-hidden="true">🔄</span> Synchroniser mes appareils</button>
+    <button id="personal-link" class="bar-btn" hidden title="Réafficher le lien d'appairage"><span aria-hidden="true">📱</span> Lien d'appairage</button>
     <button id="space-create" class="bar-btn" hidden><span aria-hidden="true">👥</span> Créer un espace partagé</button>
     <button id="space-join" class="bar-btn" hidden><span aria-hidden="true">＋</span> Rejoindre un espace…</button>
     <button id="space-share" class="bar-btn" hidden><span aria-hidden="true">🔗</span> Copier le lien du groupe</button>
     <button id="space-share-ro" class="bar-btn" hidden><span aria-hidden="true">👁</span> Lien lecture seule</button>
     <button id="space-leave" class="bar-btn" hidden><span aria-hidden="true">🚪</span> Quitter (revenir en privé)</button>
+  </div>
+
+  <!-- Appairage d'un second appareil : lien d'écriture + avertissement -->
+  <div id="personal-panel" class="personal-panel" hidden role="dialog" aria-labelledby="pp-title">
+    <h3 id="pp-title">📱 Ouvre ce lien sur ton autre appareil</h3>
+    <p class="pp-help">Ouvre-le une seule fois sur ton téléphone (ou ton autre PC) : il rejoindra
+      cet espace et tes camps se synchroniseront dans les deux sens.</p>
+    <div class="pp-row">
+      <input type="text" id="personal-url" readonly aria-label="Lien d'appairage">
+      <button type="button" id="personal-copy" class="bar-btn"><span aria-hidden="true">📋</span> Copier</button>
+    </div>
+    <p class="pp-warn">⚠️ Ce lien donne le <b>contrôle complet</b> de tes camps à qui l'ouvre.
+      Ne le partage avec personne — il n'est pas fait pour inviter quelqu'un, mais pour tes
+      propres appareils.</p>
+    <button type="button" id="personal-close" class="bar-btn">Fermer</button>
   </div>
 
   <div id="ro-banner" class="ro-banner" hidden>👁 Lecture seule — tu vois cet espace en direct, mais tu ne peux pas le modifier.</div>

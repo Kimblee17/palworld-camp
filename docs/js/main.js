@@ -38,11 +38,26 @@ window.setSyncUI = function (state, info = {}) {
   const shareRo = document.getElementById("space-share-ro");
   const join = document.getElementById("space-join");
   const leave = document.getElementById("space-leave");
+  const perso = document.getElementById("sync-personal");
+  const persoLink = document.getElementById("personal-link");
   syncLink = info.link || null;
   syncRoLink = info.roLink || null;
   const show = (el, on) => { if (el) el.hidden = !on; };
   const shared = window.PWCloud ? window.PWCloud.mode() === "shared" : false;
-  const all = (a, b, c, d, e) => { show(create, a); show(share, b); show(shareRo, c); show(join, d); show(leave, e); };
+  // Espace personnel : même espace, même sécurité — seul l'habillage diffère, pour ne
+  // pas parler de « groupe » à quelqu'un qui synchronise ses propres appareils.
+  const perso_ = !!info.personal;
+  const all = (a, b, c, d, e) => {
+    show(create, a); show(share, b && !perso_); show(shareRo, c && !perso_);
+    show(join, d); show(leave, e);
+    show(perso, a);                       // proposé partout où « créer un espace » l'est
+    show(persoLink, e && perso_);         // rappel du lien, une fois la synchro active
+  };
+  if (leave) {
+    leave.innerHTML = perso_
+      ? `<span aria-hidden="true">🔌</span> Désactiver la synchro sur cet appareil`
+      : `<span aria-hidden="true">🚪</span> Quitter (revenir en privé)`;
+  }
   if (state === "connecting") {
     st.textContent = "☁️ Connexion…"; st.className = "sync-status"; all(false, false, false, false, false);
   } else if (state === "legacy-ro") {
@@ -56,7 +71,10 @@ window.setSyncUI = function (state, info = {}) {
   } else if (state === "shared" && info.ro) {
     st.textContent = "👁 Espace partagé — lecture seule"; st.className = "sync-status ok"; all(false, false, false, false, true);
   } else if (state === "shared") {
-    st.textContent = "👥 Espace partagé (synchronisé)" + (info.warn ? " — ⚠️ " + info.warn : "");
+    const n = info.devices || 1;
+    st.textContent = (perso_
+      ? `🔄 Synchronisé (${n} appareil${n > 1 ? "s" : ""})`
+      : "👥 Espace partagé (synchronisé)") + (info.warn ? " — ⚠️ " + info.warn : "");
     st.className = "sync-status ok";
     all(false, true, !!syncRoLink, false, true);
   } else if (state === "error") {
@@ -175,6 +193,44 @@ export function init() {
       window.PWCloud?.createSharedSpace(store);
     }
   });
+  // ===== Espace personnel (mes appareils) =====
+  // Techniquement un espace partagé à un seul écrivain : aucune règle Firestore ni
+  // collection en plus. Le panneau d'appairage insiste sur ce que le lien donne.
+  function ouvrirPanneauPerso() {
+    const p = document.getElementById("personal-panel");
+    const url = document.getElementById("personal-url");
+    const lien = window.PWCloud?.shareLink?.(false) || syncLink;
+    if (!p || !url || !lien) return;
+    url.value = lien;
+    p.hidden = false;
+    url.focus(); url.select();
+  }
+  document.getElementById("sync-personal").addEventListener("click", () => {
+    if (!confirm("Synchroniser tes camps entre tes appareils ?\n\n"
+      + "Tes camps seront envoyés dans le cloud, puis tu obtiendras un lien à ouvrir "
+      + "sur ton autre appareil.\n\n"
+      + "Ce lien donne le contrôle complet : ne le partage avec personne.")) return;
+    window.PWCloud?.createPersonalSpace(store);
+    // La création est asynchrone : on attend que le lien existe pour l'afficher.
+    const t0 = Date.now();
+    const attendre = setInterval(() => {
+      if (window.PWCloud?.shareLink?.(false)) { clearInterval(attendre); ouvrirPanneauPerso(); }
+      else if (Date.now() - t0 > 15000) clearInterval(attendre);   // échec : le statut l'affiche
+    }, 200);
+  });
+  document.getElementById("personal-link").addEventListener("click", ouvrirPanneauPerso);
+  document.getElementById("personal-close").addEventListener("click", () => {
+    document.getElementById("personal-panel").hidden = true;
+  });
+  document.getElementById("personal-copy").addEventListener("click", async e => {
+    const b = e.currentTarget, url = document.getElementById("personal-url");
+    try {
+      await navigator.clipboard.writeText(url.value);
+      const old = b.innerHTML; b.textContent = "✓ Copié !";
+      setTimeout(() => { b.innerHTML = old; }, 1800);
+    } catch { url.select(); }
+  });
+
   document.getElementById("space-join").addEventListener("click", () => {
     // Accepte un lien d'écriture (?ws=), un lien lecture seule (?r=) ou un code brut :
     // le module de synchro se charge de reconnaître le format.
@@ -182,9 +238,14 @@ export function init() {
     if (input) window.PWCloud?.join(input);
   });
   document.getElementById("space-leave").addEventListener("click", () => {
-    if (confirm("Quitter cet espace partagé et revenir à tes camps privés (sur cet appareil) ?")) {
-      window.PWCloud?.leave();
-    }
+    // Le libellé suit le mode : parler d'« espace partagé » à quelqu'un qui synchronise
+    // ses propres appareils lui ferait craindre de perdre ses camps.
+    const msg = window.PWCloud?.isPersonal?.()
+      ? "Désactiver la synchro sur cet appareil ?\n\nTes camps restent dans le cloud et sur "
+        + "tes autres appareils. Celui-ci repassera sur ses camps privés locaux, et pourra "
+        + "se resynchroniser avec le même lien."
+      : "Quitter cet espace partagé et revenir à tes camps privés (sur cet appareil) ?";
+    if (confirm(msg)) window.PWCloud?.leave();
   });
   document.getElementById("space-share").addEventListener("click", async e => {
     if (!syncLink) return;
