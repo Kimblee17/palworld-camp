@@ -150,6 +150,7 @@
       <table class="pedia-table">
         <thead>
           <tr>
+            <th class="pedia-pick" scope="col" title="Cocher jusqu'à 4 Pals pour les comparer">⚖️</th>
             <th class="sortable" data-sort="name"><button type="button">Pal</button></th>
             <th class="sortable" data-sort="level" title="Niveau suggéré (calculateur de capture palworld.gg)"><button type="button">Niv.</button></th>
             <th class="sortable" data-sort="rarity"><button type="button">Rareté</button></th>
@@ -164,6 +165,14 @@
         </thead>
         <tbody id="pedia-body"></tbody>
       </table>
+    </div>
+
+    <!-- Barre flottante du comparateur : apparaît dès 2 Pals cochés. Placée dans la
+         section Palpedia pour disparaître d'elle-même quand on quitte la vue. -->
+    <div id="pedia-compare-bar" class="cmp-bar" hidden>
+      <span class="cmp-bar-txt">Comparateur</span>
+      <button type="button" id="cmp-open" class="bar-btn cmp-go">Comparer (0)</button>
+      <button type="button" id="cmp-clear" class="bar-btn">Effacer</button>
     </div>
   </section>
 

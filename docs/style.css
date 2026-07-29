@@ -743,3 +743,46 @@ body.read-only #import-btn { display: none; }
 .food-chip.role-cuisine { background: var(--chip); color: var(--muted); }
 .food-warn { margin: 0; font-size: 0.86rem; font-weight: 800; color: var(--lvl-1); }
 .food-help { margin: 10px 0 0; font-size: 0.74rem; color: var(--muted); line-height: 1.45; }
+
+/* ===== Comparateur de Pals (Palpedia) ===== */
+.pedia-pick { width: 34px; text-align: center; }
+.pedia-pick input { width: 17px; height: 17px; cursor: pointer; accent-color: var(--accent-2); }
+.pedia-pick input:disabled { cursor: not-allowed; opacity: 0.35; }
+.pedia-table tbody tr.is-picked { background: rgba(79, 214, 230, 0.11); }
+
+/* Barre flottante : n'apparaît qu'à partir de 2 Pals cochés. */
+.cmp-bar {
+  position: fixed; left: 50%; transform: translateX(-50%); bottom: 18px; z-index: 90;
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 14px; background: var(--panel);
+  border: 3px solid var(--edge); border-radius: 12px; box-shadow: var(--sh-lg);
+}
+.cmp-bar-txt { font-size: 0.8rem; font-weight: 900; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+.cmp-go { background: var(--accent-2); color: var(--accent-2-ink); }
+
+/* Carte élargie quand la modale sert au comparateur. */
+.pm-card.pm-wide { width: min(1040px, 96vw); }
+.cmp-title { font-size: 1.15rem; font-weight: 900; margin-bottom: 12px; padding-right: 44px; }
+.cmp-wrap { overflow-x: auto; }
+.cmp-table { border-collapse: collapse; width: 100%; font-size: 0.86rem; }
+.cmp-table th, .cmp-table td {
+  border: 1.5px solid var(--border); padding: 6px 9px; text-align: center; vertical-align: middle;
+}
+.cmp-table thead th { background: var(--panel-2); position: sticky; top: 0; z-index: 1; }
+.cmp-table tbody th[scope="row"] {
+  background: var(--panel-2); text-align: left; font-weight: 800; white-space: nowrap;
+}
+.cmp-table tr.cmp-sep th {
+  background: var(--chip); color: var(--muted); font-size: 0.74rem;
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+.cmp-pal { display: flex; flex-direction: column; align-items: center; gap: 5px; font-weight: 900; }
+.cmp-pal .pal-ic { width: 42px; height: 42px; }
+.cmp-lvl {
+  display: inline-block; min-width: 26px; padding: 2px 7px; border-radius: 6px;
+  border: 1.5px solid var(--edge); font-weight: 900;
+}
+.cmp-table td.is-best { background: rgba(201, 242, 78, 0.12); }
+.cmp-best { margin-left: 4px; color: var(--accent); font-weight: 900; }
+.cmp-drops { margin: 0; padding-left: 16px; text-align: left; font-size: 0.8rem; }
+.cmp-drops li { margin: 2px 0; }

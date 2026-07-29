@@ -1,7 +1,7 @@
 import { renderDrops } from "./drops.js";
 import { initBreeding, renderBreeding } from "./breeding.js";
 import { initProduction, renderProduction, DEBUG as prodDebug } from "./production.js";
-import { renderPalpedia, setPediaSort } from "./palpedia.js";
+import { clearPediaSelection, openPediaCompare, renderPalpedia, setPediaSort, togglePediaSelection } from "./palpedia.js";
 import { ELEMENT_META, ELEMENT_ORDER, buildLegend, closePalModal, openPalDetail, renderAll, renderBoxCatalog, renderPalCatalog, renderStructCatalog } from "./render.js";
 import { _savPending, applySavImport, onSavFile, renderSavPreview } from "./sav-import.js";
 import { SPACE_CACHE_KEY, active, doUndo, exportStore, loadStore, normalize, pushUndo, readOnly, runStoreImport, saveStore, setStore, showRoBanner, store, touchBox, uid } from "./state.js";
@@ -217,9 +217,18 @@ export function init() {
     .forEach(el => el.addEventListener("click", closePalModal));
   document.getElementById("pedia-body").addEventListener("click", e => {
     if (e.target.closest("a")) return;
+    // La case de comparaison vit dans une ligne cliquable : sans cette sortie, cocher
+    // ouvrirait aussi la fiche détail.
+    if (e.target.closest(".pedia-pick")) return;
     const tr = e.target.closest("tr[data-pal]");
     if (tr && palsById[tr.dataset.pal]) openPalDetail(palsById[tr.dataset.pal]);
   });
+  document.getElementById("pedia-body").addEventListener("change", e => {
+    const cb = e.target.closest(".pedia-pick input");
+    if (cb) togglePediaSelection(Number(cb.dataset.pal));
+  });
+  document.getElementById("cmp-open").addEventListener("click", openPediaCompare);
+  document.getElementById("cmp-clear").addEventListener("click", () => clearPediaSelection());
   document.addEventListener("keydown", e => {
     if (e.key === "Escape") closePalModal();
     const tag = (document.activeElement?.tagName || "").toLowerCase();
@@ -274,6 +283,8 @@ function switchView(view, updateHash = true) {
   document.querySelectorAll(".view-breeding").forEach(el => el.hidden = view !== "breeding");
   document.querySelectorAll(".view-production").forEach(el => el.hidden = view !== "production");
   document.querySelectorAll(".view-import").forEach(el => el.hidden = view !== "import");
+  // Sélection du comparateur : état de session, remis à zéro en quittant la Palpedia.
+  if (view !== "palpedia") clearPediaSelection(false);
   if (view === "palpedia") renderPalpedia();
   else if (view === "drops") renderDrops();
   else if (view === "breeding") renderBreeding();

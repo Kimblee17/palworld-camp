@@ -4,11 +4,25 @@ import { renderSuggestPrefs } from "./suggest.js";
 import { active, addBox, addPal, addStruct, boxQty, cyclePalPref, palPref, isFull, palQty, readOnly, saveStore, setBoxQty, setPalQty, setStructQty, store, structQty, totalBox, updateUndoUI } from "./state.js";
 import { PALS, STRUCTURES, WORK_TYPES, palsById, structById, workById } from "./dataset.js";
 
-// ===== Modale : détail d'un Pal =====
-export function openPalDetail(pal) {
+// ===== Modale partagée =====
+// Le détail d'un Pal et le comparateur passent par la MÊME modale : mécanique unique
+// (Échap, clic sur le fond, `inert` sur l'arrière-plan, focus rendu à la fermeture),
+// donc rien à maintenir en double. Seule la largeur de la carte change.
+function openModal(html, { wide = false, label = "Détail du Pal" } = {}) {
   const modal = document.getElementById("pal-modal");
   const body = document.getElementById("pal-modal-body");
   if (!modal || !body) return;
+  body.innerHTML = html;
+  modal.setAttribute("aria-label", label);
+  modal.querySelector(".pm-card").classList.toggle("pm-wide", wide);
+  modalReturnFocus = document.activeElement;   // pour rendre le focus à la fermeture
+  modal.hidden = false;
+  setBackgroundInert(true);
+  modal.querySelector(".pm-close")?.focus();
+}
+
+// ===== Modale : détail d'un Pal =====
+export function openPalDetail(pal) {
   const url = palIconUrl(pal);
   const iconHtml = url
     ? `<img class="pm-ic" src="${url}" alt="${pal.name}">`
@@ -25,17 +39,77 @@ export function openPalDetail(pal) {
   if (pal.nightWorker) stats.push("🌙 Nuit");
   const drops = (pal.drops || []).map(d => `<li>${d.item} <span class="muted">×${d.amount} · ${d.rate}</span></li>`).join("");
   const link = pal.slug ? `<a href="https://palworld.gg/pal/${pal.slug}" target="_blank" rel="noopener">Fiche palworld.gg ↗</a>` : "";
-  body.innerHTML = `
+  openModal(`
     <div class="pm-head">${iconHtml}<div><div class="pm-name">${pal.name}</div><div class="pm-el">${elementChipsHtml(pal)}</div></div></div>
     ${stats.length ? `<div class="pm-stats">${stats.map(s => `<span>${s}</span>`).join("")}</div>` : ""}
     <div class="pm-sub">Compétences de travail</div><div class="pm-skills">${skills}</div>
     ${tiers ? `<div class="pm-sub">Rangs (palworld.gg)</div><div class="pm-tags">${tiers}</div>` : ""}
     ${drops ? `<div class="pm-sub">Butin</div><ul class="pm-drops">${drops}</ul>` : ""}
-    ${link ? `<div class="pm-linkrow">${link}</div>` : ""}`;
-  modalReturnFocus = document.activeElement;   // pour rendre le focus à la fermeture
-  modal.hidden = false;
-  setBackgroundInert(true);
-  modal.querySelector(".pm-close")?.focus();
+    ${link ? `<div class="pm-linkrow">${link}</div>` : ""}`,
+    { label: `Détail du Pal ${pal.name}` });
+}
+
+const MUTED_CMP = '<span class="muted">—</span>';
+
+// ===== Modale : comparateur (2 à 4 Pals côte à côte) =====
+// Une colonne par Pal, une ligne par caractéristique. Chaque ligne porte un en-tête
+// `<th scope="row">` et chaque colonne un `<th scope="col">` : un lecteur d'écran
+// annonce donc « Minage · Anubis · 4 » sur n'importe quelle cellule.
+export function openPalCompare(pals) {
+  const cell = (v, cls = "") => `<td${cls ? ` class="${cls}"` : ""}>${v}</td>`;
+  const ligne = (titre, cells, cls = "") =>
+    `<tr${cls ? ` class="${cls}"` : ""}><th scope="row">${titre}</th>${cells}</tr>`;
+
+  const entetes = pals.map(p =>
+    `<th scope="col"><div class="cmp-pal">${palIconHtml(p)}<span>${p.name}</span></div></th>`).join("");
+
+  const lignes = [];
+  lignes.push(ligne("Éléments", pals.map(p => cell(elementChipsHtml(p) || MUTED_CMP)).join("")));
+  lignes.push(ligne("Niveau", pals.map(p => cell(p.level != null ? "niv. " + p.level : MUTED_CMP)).join("")));
+  lignes.push(ligne("Rareté", pals.map(p => cell(p.rarityCategory
+    ? `<span class="rarity-tag rarity-${p.rarityCategory.toLowerCase()}">${p.rarityCategory} ${p.rarity}</span>`
+    : MUTED_CMP)).join("")));
+  lignes.push(ligne("Capture", pals.map(p => cell(p.captureRate != null ? "×" + p.captureRate : MUTED_CMP)).join("")));
+  lignes.push(ligne("Travail de nuit", pals.map(p => cell(p.nightWorker ? "🌙 Oui" : "Non")).join("")));
+
+  // Les 12 aptitudes. La meilleure valeur de la ligne est mise en évidence — sauf si
+  // tout le monde est à 0 (rien à départager) ou si tous sont à égalité.
+  lignes.push(`<tr class="cmp-sep"><th scope="row" colspan="${pals.length + 1}">Aptitudes de travail</th></tr>`);
+  for (const w of WORK_TYPES) {
+    const vals = pals.map(p => p.work[w.id] || 0);
+    const max = Math.max(...vals);
+    const best = max > 0 && vals.filter(v => v === max).length < vals.length;
+    lignes.push(ligne(`${w.icon} ${w.label}`, vals.map(v => {
+      const marque = best && v === max;
+      const badge = `<span class="cmp-lvl ${levelClass(v)}">${v || "–"}</span>`;
+      return cell(marque ? `${badge}<span class="cmp-best" title="Meilleure valeur">★</span>` : badge,
+                  marque ? "is-best" : "");
+    }).join("")));
+  }
+
+  lignes.push(`<tr class="cmp-sep"><th scope="row" colspan="${pals.length + 1}">Rangs (palworld.gg)</th></tr>`);
+  for (const c of TIER_CATS) {
+    lignes.push(ligne(c.label, pals.map(p => {
+      const t = p.tiers ? p.tiers[c.key] : null;
+      return cell(`<span class="tier-badge ${tierClass(t)}">${t || "–"}</span>`);
+    }).join("")));
+  }
+
+  lignes.push(`<tr class="cmp-sep"><th scope="row" colspan="${pals.length + 1}">Butin</th></tr>`);
+  lignes.push(ligne("Objets lâchés", pals.map(p => {
+    const d = (p.drops || []).map(x => `<li>${x.item} <span class="muted">×${x.amount} · ${x.rate}</span></li>`).join("");
+    return cell(d ? `<ul class="cmp-drops">${d}</ul>` : MUTED_CMP);
+  }).join("")));
+
+  openModal(`
+    <div class="cmp-title">Comparaison de ${pals.length} Pals</div>
+    <div class="cmp-wrap">
+      <table class="cmp-table">
+        <thead><tr><th scope="col">Caractéristique</th>${entetes}</tr></thead>
+        <tbody>${lignes.join("")}</tbody>
+      </table>
+    </div>`,
+    { wide: true, label: `Comparaison de ${pals.map(p => p.name).join(", ")}` });
 }
 
 // Élément qui avait ouvert la modale (ligne de Pal, entrée de Palpedia…).

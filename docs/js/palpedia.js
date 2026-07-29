@@ -1,8 +1,53 @@
-import { TIER_CATS, TIER_RANK, elementChipsHtml, levelClass, levelName, palElements, palIconHtml, tierClass } from "./render.js";
+import { TIER_CATS, TIER_RANK, elementChipsHtml, levelClass, levelName, openPalCompare, palElements, palIconHtml, tierClass } from "./render.js";
 import { boxQty } from "./state.js";
-import { PALS, WORK_TYPES } from "./dataset.js";
+import { PALS, WORK_TYPES, palsById } from "./dataset.js";
 
 let pediaSort = { key: "name", dir: 1 };              // dir: 1 = croissant, -1 = décroissant
+
+// ===== Sélection pour le comparateur =====
+// État de SESSION : volontairement ni dans le store ni dans localStorage. Comparer
+// deux Pals est un geste de consultation, pas une donnée de camp — le recharger au
+// prochain lancement n'aurait aucun sens. Vidé en quittant la vue.
+const CMP_MAX = 4;
+const selection = new Set();
+
+export function clearPediaSelection(rerender = true) {
+  if (!selection.size) return;
+  selection.clear();
+  // La table n'est reconstruite que si on reste dans la vue ; la barre, elle, est
+  // toujours remise à jour pour ne pas garder un « Comparer (3) » périmé.
+  if (rerender) renderPalpedia();
+  else syncPediaSelection();
+}
+
+export function togglePediaSelection(id) {
+  if (selection.has(id)) selection.delete(id);
+  else if (selection.size < CMP_MAX) selection.add(id);
+  // Les cases sont désactivées au-delà de CMP_MAX : on ne rejoue que leur état
+  // désactivé et la barre, sans reconstruire la table (le tri et le scroll restent).
+  syncPediaSelection();
+}
+
+export function openPediaCompare() {
+  if (selection.size < 2) return;
+  openPalCompare([...selection].map(id => palsById[id]).filter(Boolean));
+}
+
+// Reflète la sélection sur les cases déjà rendues + met à jour la barre flottante.
+function syncPediaSelection() {
+  const plein = selection.size >= CMP_MAX;
+  document.querySelectorAll("#pedia-body .pedia-pick input").forEach(cb => {
+    const id = Number(cb.dataset.pal);
+    cb.checked = selection.has(id);
+    cb.disabled = plein && !cb.checked;
+    cb.closest("tr")?.classList.toggle("is-picked", cb.checked);
+  });
+  const bar = document.getElementById("pedia-compare-bar");
+  if (!bar) return;
+  bar.hidden = selection.size < 2;
+  const btn = document.getElementById("cmp-open");
+  if (btn) btn.textContent = `Comparer (${selection.size})`;
+}
 
 // ===== Palpedia (tous les Pals + toutes les tier-lists) =====
 function tierCell(pal, cat) {
@@ -30,7 +75,11 @@ function pediaRow(pal) {
     .map(w => `<span class="skill-chip ${levelClass(pal.work[w.id])}" title="${w.label} — niv. ${pal.work[w.id]} (${levelName(pal.work[w.id])})">${w.icon} <b>${pal.work[w.id]}</b></span>`)
     .join("");
   const tiers = TIER_CATS.map(c => tierCell(pal, c)).join("");
-  tr.innerHTML =
+  const pick = `<td class="pedia-pick"><input type="checkbox" data-pal="${pal.id}"` +
+    `${selection.has(pal.id) ? " checked" : ""}` +
+    `${selection.size >= CMP_MAX && !selection.has(pal.id) ? " disabled" : ""}` +
+    ` aria-label="Comparer ${pal.name}"></td>`;
+  tr.innerHTML = pick +
     `<td class="pedia-name">${palIconHtml(pal)}${name}${night}` +
       `${boxQty(pal.id) > 0 ? ' <span class="owned-badge" title="Dans ma boîte">✓</span>' : ''}` +
       `<div class="pedia-el">${elementChipsHtml(pal)}</div></td>` +
@@ -40,6 +89,7 @@ function pediaRow(pal) {
     `<td><div class="pedia-skills">${skills || MUTED}</div></td>` +
     tiers;
   tr.dataset.pal = pal.id;
+  if (selection.has(pal.id)) tr.classList.add("is-picked");
   return tr;
 }
 
@@ -108,8 +158,10 @@ export function renderPalpedia() {
   document.getElementById("pedia-count").textContent = rows.length;
   updatePediaHeaders();
   if (!rows.length) {
-    body.innerHTML = `<tr><td class="empty" colspan="${5 + TIER_CATS.length}">Aucun Pal trouvé.</td></tr>`;
+    body.innerHTML = `<tr><td class="empty" colspan="${6 + TIER_CATS.length}">Aucun Pal trouvé.</td></tr>`;
+    syncPediaSelection();
     return;
   }
   rows.forEach(p => body.appendChild(pediaRow(p)));
+  syncPediaSelection();
 }
