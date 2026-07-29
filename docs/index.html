@@ -148,6 +148,30 @@
       <ul id="camp-structs" class="pal-list compact"></ul>
       <button id="clear-camp" class="btn-clear" hidden>Vider ce camp</button>
 
+      <!-- Suivi léger du camp : notes libres + checklist. Tout vit dans le store. -->
+      <section class="notes-block">
+        <h3 class="sub notes-head">
+          <button type="button" id="notes-toggle" class="notes-toggle" aria-expanded="false" aria-controls="notes-body">
+            <span class="nt-caret" aria-hidden="true">▸</span>
+            <span>📝 Notes &amp; tâches</span>
+            <span id="notes-count" class="notes-count"></span>
+          </button>
+        </h3>
+        <div id="notes-body" class="notes-body" hidden>
+          <label class="notes-lbl" for="camp-notes">Notes libres</label>
+          <textarea id="camp-notes" class="camp-notes" rows="2"
+                    placeholder="Ce qu'il reste à faire, un plan d'agencement, un rappel…"></textarea>
+
+          <label class="notes-lbl" for="todo-input">Ajouter une tâche</label>
+          <div class="todo-add">
+            <input type="text" id="todo-input" autocomplete="off"
+                   placeholder="Ex. : capturer 2 Digtoise pour le minage">
+            <button type="button" id="todo-add" class="btn btn-add">Ajouter</button>
+          </div>
+          <ul id="todo-list" class="todo-list"></ul>
+        </div>
+      </section>
+
       <!-- Agencement d'une base importée depuis une save (masqué pour les camps utilisateur) -->
       <section id="camp-machines" class="camp-machines" hidden></section>
 

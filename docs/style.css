@@ -546,7 +546,11 @@ main {
 body.read-only .btn-add, body.read-only .stepper, body.read-only .btn-suggest,
 body.read-only #camp-new, body.read-only #camp-rename, body.read-only #camp-delete,
 body.read-only #clear-camp, body.read-only #undo-btn,
-body.read-only .limit-ctrl input, body.read-only .sav-import {
+body.read-only .limit-ctrl input, body.read-only .sav-import,
+/* Notes & tâches : les champs sont déjà `disabled` en JS (donc hors tabulation) ;
+   cette règle ne fait qu'accorder l'apparence au reste de la lecture seule. */
+body.read-only .camp-notes, body.read-only .todo-add, body.read-only .todo-actions,
+body.read-only .todo-row input[type="checkbox"] {
   opacity: 0.4; pointer-events: none;
 }
 /* Lecture seule : l'import écraserait l'espace, on le masque. L'export reste
@@ -978,4 +982,65 @@ body.read-only #import-btn { display: none; }
   .personal-panel, .share-banner, .pedia-progress { margin-left: 14px; margin-right: 14px; }
   .view-palpedia, .view-drops, .view-breeding, .view-production, .view-import { margin: 6px 14px 20px; }
   .legend { margin: 0 14px 12px; }
+}
+
+/* ===== Notes & tâches du camp ===== */
+.notes-block { margin-top: 16px; }
+.notes-head { margin: 0; }
+.notes-toggle {
+  display: flex; align-items: center; gap: 8px; width: 100%;
+  background: none; border: none; padding: 6px 0; cursor: pointer;
+  color: var(--muted); font: inherit; font-size: 0.78rem; font-weight: 900;
+  text-transform: uppercase; letter-spacing: 0.5px; text-align: left;
+}
+.notes-toggle:hover { color: var(--text); }
+.nt-caret { font-size: 0.9rem; }
+.notes-count {
+  margin-left: auto; text-transform: none; letter-spacing: 0;
+  background: var(--chip); border: 1.5px solid var(--edge); border-radius: 999px;
+  padding: 2px 9px; font-size: 0.76rem; color: var(--text);
+}
+.notes-body {
+  border: 2px solid var(--border); border-radius: var(--radius);
+  background: var(--panel-2); padding: 12px 13px; margin-top: 4px;
+}
+.notes-lbl {
+  display: block; font-size: 0.74rem; font-weight: 900; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 5px;
+}
+.camp-notes {
+  width: 100%; resize: vertical; overflow: hidden;
+  background: var(--bg); color: var(--text);
+  border: 2px solid var(--border); border-radius: 8px;
+  padding: 9px 11px; font: inherit; font-size: 0.92rem; line-height: 1.45;
+  margin-bottom: 12px;
+}
+.camp-notes::placeholder { color: var(--muted); opacity: 1; }
+.todo-add { display: flex; gap: 8px; margin-bottom: 10px; }
+#todo-input {
+  flex: 1; min-width: 0;
+  background: var(--bg); color: var(--text);
+  border: 2px solid var(--border); border-radius: 8px;
+  padding: 9px 11px; font: inherit; font-size: 0.92rem;
+}
+#todo-input::placeholder { color: var(--muted); opacity: 1; }
+.todo-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.todo-row {
+  display: flex; align-items: center; gap: 9px;
+  background: var(--panel); border: 2px solid var(--border);
+  border-radius: 9px; padding: 7px 9px;
+}
+.todo-row input[type="checkbox"] { width: 20px; height: 20px; flex-shrink: 0; accent-color: var(--accent); cursor: pointer; }
+.todo-txt { flex: 1; min-width: 0; font-size: 0.92rem; font-weight: 700; cursor: pointer; overflow-wrap: anywhere; }
+.todo-row.done { border-color: var(--ok); }
+.todo-row.done .todo-txt { text-decoration: line-through; color: var(--muted); font-weight: 600; }
+.todo-actions { display: flex; gap: 4px; flex-shrink: 0; }
+.todo-actions .btn-step { width: 30px; height: 30px; font-size: 0.9rem; }
+.todo-actions .btn-step:disabled { opacity: 0.3; cursor: not-allowed; }
+
+@media (max-width: 700px) {
+  .todo-actions .btn-step { width: 40px; height: 40px; }
+  .todo-row { flex-wrap: wrap; }
+  .todo-txt { flex-basis: calc(100% - 32px); }
+  .todo-actions { margin-left: auto; }
 }

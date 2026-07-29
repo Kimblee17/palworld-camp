@@ -63,6 +63,13 @@ export function normalize(s) {
     if (!c.name) c.name = "Camp";
     // Camps importés d'une save : garantir un tableau de machines exploitable par l'agencement.
     if (c.source === "save" && !Array.isArray(c.machines)) c.machines = [];
+    // Notes & tâches : migration douce des camps créés avant leur introduction.
+    // Les données peuvent venir d'un espace partagé ou d'un fichier importé : on ne
+    // fait confiance ni au type ni à la forme des entrées.
+    if (typeof c.notes !== "string") c.notes = "";
+    c.todos = (Array.isArray(c.todos) ? c.todos : [])
+      .filter(t => t && typeof t === "object" && typeof t.text === "string")
+      .map(t => ({ id: String(t.id || uid()), text: t.text.slice(0, 200), done: !!t.done }));
   }
   // Garantit un camp actif valide (utile quand on applique un store distant).
   if (!s.camps[s.activeId]) s.activeId = Object.keys(s.camps)[0];
