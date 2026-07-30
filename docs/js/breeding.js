@@ -42,11 +42,12 @@ const uniqueChildIds = new Set(UNIQUE_COMBOS.map(c => c.child));
 const uniquePairs = new Set();
 for (const c of UNIQUE_COMBOS) { uniquePairs.add(c.a + "|" + c.b); uniquePairs.add(c.b + "|" + c.a); }
 
-// Parents possibles : il faut un breed power ; une espèce sans résultat générique reste
-// utilisable comme parent si elle apparaît dans au moins une combinaison unique.
-export const BREEDERS = PALS.filter(p =>
-  p.breedPower && !p.breedIsBoss &&
-  !(p.breedNoResult && !(combosByPal.get(p.id) || []).length));
+// Parents possibles : il suffit d'avoir un breed power.
+// `breedNoResult` (l'ignoreCombi de palworld.gg) veut dire « ne peut pas être l'ENFANT
+// d'un croisement générique ». Il ne dit rien de la capacité à être PARENT : deux Pals
+// de la même espèce donnent toujours cette espèce, y compris pour un légendaire. Cette
+// nuance manquait, et écartait Astralym et Panthalus de la recherche.
+export const BREEDERS = PALS.filter(p => p.breedPower && !p.breedIsBoss);
 // Enfants possibles par la règle générale.
 const GENERIC_CHILDREN = BREEDERS.filter(p => !uniqueChildIds.has(p.id) && !p.breedNoResult);
 
@@ -88,7 +89,12 @@ export function parentsFor(target) {
     const a = palsById[c.a], b = palsById[c.b];
     if (a && b) out.push({ a, b, unique: true, ga: c.ga || null, gb: c.gb || null });
   }
-  if (!uniqueChildIds.has(target.id) && !target.breedNoResult && target.breedPower) {
+  // Espèce exclue de la table générique : aucun couple mixte ne la redonne, mais
+  // deux individus de son espèce si — c'est la seule voie d'élevage pour Astralym
+  // ou Panthalus, et ne pas la proposer laissait croire qu'ils étaient inélevables.
+  if (!uniqueChildIds.has(target.id) && target.breedNoResult && target.breedPower) {
+    out.push({ a: target, b: target, unique: false });
+  } else if (!uniqueChildIds.has(target.id) && !target.breedNoResult && target.breedPower) {
     const T = table();
     for (let i = 0; i < BREEDERS.length; i++) {
       for (let j = i; j < BREEDERS.length; j++) {
