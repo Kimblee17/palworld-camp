@@ -39,6 +39,7 @@
       <button class="view-btn" data-view="drops" data-court="Drops"><span class="vb-ic" aria-hidden="true">💎</span><span class="vb-txt">Drops</span></button>
       <button class="view-btn" data-view="breeding" data-court="Élevage"><span class="vb-ic" aria-hidden="true">🥚</span><span class="vb-txt">Reproduction</span></button>
       <button class="view-btn" data-view="production" data-court="Prod."><span class="vb-ic" aria-hidden="true">🏭</span><span class="vb-txt">Production</span></button>
+      <button class="view-btn" data-view="passives" data-court="Passifs"><span class="vb-ic" aria-hidden="true">⭐</span><span class="vb-txt">Passifs</span></button>
       <button class="view-btn" data-view="import" data-court="Save"><span class="vb-ic" aria-hidden="true">📥</span><span class="vb-txt">Importer une save</span></button>
     </nav>
     <button id="presence" class="bar-btn presence" hidden title="En ligne — clique pour ton nom"><span aria-hidden="true">👥</span></button>
@@ -243,6 +244,38 @@
       <button type="button" id="cmp-open" class="bar-btn cmp-go">Comparer (0)</button>
       <button type="button" id="cmp-clear" class="bar-btn">Effacer</button>
     </div>
+  </section>
+
+  <!-- Vue Passifs : catalogue des compétences passives transmissibles par reproduction -->
+  <section class="panel view-passives" id="passives" hidden>
+    <h2>⭐ Compétences passives</h2>
+    <p class="pv-intro">Les <b>93</b> passifs qu'un Pal peut porter. La couleur vient du rang :
+      un rang négatif est rouge quelle que soit son amplitude. Les noms sont en anglais —
+      aucune source ne publie de correspondance française fiable.</p>
+    <div class="controls">
+      <input type="search" id="pv-search" placeholder="Rechercher un passif ou un effet…"
+             aria-label="Rechercher une compétence passive" autocomplete="off">
+      <select id="pv-rarete" aria-label="Filtrer par rareté">
+        <option value="">Toutes les raretés</option>
+        <option value="arcenciel">Arc-en-ciel</option>
+        <option value="dore">Doré</option>
+        <option value="commun">Commun</option>
+        <option value="negatif">Négatif</option>
+      </select>
+      <select id="pv-cat" aria-label="Filtrer par catégorie"><option value="">Toutes les catégories</option></select>
+      <select id="pv-polarite" aria-label="Filtrer par polarité">
+        <option value="">Positifs et négatifs</option>
+        <option value="true">Positifs seulement</option>
+        <option value="false">Négatifs seulement</option>
+      </select>
+      <select id="pv-tri" aria-label="Trier">
+        <option value="rarete">Trier par rareté</option>
+        <option value="nom">Trier par nom</option>
+        <option value="categorie">Trier par catégorie</option>
+      </select>
+      <span class="pedia-total"><span id="pv-count">0</span> passifs</span>
+    </div>
+    <ul id="pv-list" class="pv-list"></ul>
   </section>
 
   <!-- Vue Drops : recherche d'objet -> Pals qui le lâchent -->

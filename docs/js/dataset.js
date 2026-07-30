@@ -8,6 +8,9 @@ export const DB = window.PAL_DATA || { workTypes: [], pals: [], structures: [] }
 export const WORK_TYPES = DB.workTypes;
 export const PALS = DB.pals;
 export const STRUCTURES = DB.structures;
+// Catalogue des compétences passives (paldb.cc) + libellés de catégorie.
+export const PASSIVES = DB.passives || [];
+export const PASSIVE_CATEGORIES = DB.passiveCategories || {};
 export const workById = Object.fromEntries(WORK_TYPES.map(w => [w.id, w]));
 export const palsById = Object.fromEntries(PALS.map(p => [p.id, p]));
 export const structById = Object.fromEntries(STRUCTURES.map(s => [s.id, s]));

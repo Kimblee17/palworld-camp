@@ -3,6 +3,7 @@ import { initBreeding, renderBreeding } from "./breeding.js";
 import { initProduction, renderProduction, DEBUG as prodDebug } from "./production.js";
 import { initShare } from "./share.js";
 import { initNotes } from "./notes.js";
+import { initPassives, renderPassives } from "./passives.js";
 import { clearPediaSelection, openPediaCompare, renderPalpedia, setPediaSort, togglePediaSelection } from "./palpedia.js";
 import { ELEMENT_META, ELEMENT_ORDER, buildLegend, closePalModal, openPalDetail, renderAll, renderBoxCatalog, renderPalCatalog, renderStructCatalog } from "./render.js";
 import { _savPending, applySavImport, onSavFile, renderSavPreview } from "./sav-import.js";
@@ -360,6 +361,7 @@ export function init() {
   initBreeding();
   initShare();
   initNotes();
+  initPassives();
   initProduction();
   renderAll();
   // Applique la vue demandée par l'URL (sans hash : #camp, URL laissée intacte).
@@ -378,7 +380,7 @@ export function switchTab(tab) {
 // Routage par hash : #camp (défaut) · #palpedia · #drops · #import.
 // Le hash est indépendant des paramètres ?ws= / ?r= de la synchro (firebase-sync.js
 // nettoie la query en conservant le hash), les deux cohabitent donc sans interférence.
-const VIEWS = ["camp", "palpedia", "drops", "breeding", "production", "import"];
+const VIEWS = ["camp", "palpedia", "drops", "breeding", "production", "passives", "import"];
 function viewFromHash() {
   const v = decodeURIComponent(location.hash.replace(/^#/, ""));
   return VIEWS.includes(v) ? v : "camp";
@@ -394,6 +396,7 @@ function switchView(view, updateHash = true) {
   document.querySelectorAll(".view-drops").forEach(el => el.hidden = view !== "drops");
   document.querySelectorAll(".view-breeding").forEach(el => el.hidden = view !== "breeding");
   document.querySelectorAll(".view-production").forEach(el => el.hidden = view !== "production");
+  document.querySelectorAll(".view-passives").forEach(el => el.hidden = view !== "passives");
   document.querySelectorAll(".view-import").forEach(el => el.hidden = view !== "import");
   // Sélection du comparateur : état de session, remis à zéro en quittant la Palpedia.
   if (view !== "palpedia") clearPediaSelection(false);
@@ -401,6 +404,7 @@ function switchView(view, updateHash = true) {
   else if (view === "drops") renderDrops();
   else if (view === "breeding") renderBreeding();
   else if (view === "production") renderProduction();
+  else if (view === "passives") renderPassives();
   // Nouvelle entrée d'historique -> le bouton retour revient à la vue précédente.
   if (updateHash && location.hash !== "#" + view) location.hash = view;
 }

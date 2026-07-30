@@ -1142,3 +1142,49 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 /* Compteur de constructions partiel : la base contient des machines sans équivalent
    dans notre liste. Le pointillé signale « ce n'est pas tout », l'infobulle explique. */
 #struct-count.partiel { border-bottom: 1px dotted var(--muted); cursor: help; }
+
+/* ===== Catalogue des compétences passives ===== */
+.pv-intro { margin: -4px 0 14px; font-size: 0.88rem; color: var(--muted); line-height: 1.55; max-width: 78ch; }
+.pv-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+.pv-row {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--panel-2); border: 1px solid var(--border);
+  border-left-width: 4px; border-radius: 8px; padding: 9px 12px;
+}
+/* La couleur du liseré porte la rareté. Le rang négatif l'emporte sur tout : un malus
+   reste un malus, qu'il coûte 10 % ou 30 %. */
+.pv-row.rar-commun { border-left-color: var(--muted); }
+.pv-row.rar-dore { border-left-color: var(--amber); }
+.pv-row.rar-negatif { border-left-color: var(--lvl-1); }
+.pv-row.rar-arcenciel {
+  border-left-color: transparent;
+  border-image: linear-gradient(180deg, #ff6b5e, #ffc24b, #9ee04e, #4fd6e6, #9a86ff) 1;
+  border-image-width: 0 0 0 4px;
+}
+.pv-rar {
+  flex: none; width: 92px; font-size: 0.72rem; font-weight: 600;
+  color: var(--muted); text-align: right;
+}
+.rar-dore .pv-rar { color: var(--amber); }
+.rar-negatif .pv-rar { color: var(--lvl-1); }
+.rar-arcenciel .pv-rar {
+  background: linear-gradient(90deg, #ff9f43, #9ee04e, #4fd6e6, #9a86ff);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.pv-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.pv-name { font-weight: 600; font-size: 0.95rem; }
+.pv-eff { font-size: 0.8rem; color: var(--muted); line-height: 1.4; }
+.pv-tags { display: flex; flex-wrap: wrap; gap: 5px; justify-content: flex-end; flex: none; max-width: 42%; }
+.pv-cat, .pv-tir {
+  font-size: 0.72rem; padding: 2px 8px; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--chip); color: var(--text); white-space: nowrap;
+}
+.pv-tir.tir-courant { color: var(--lvl-4); border-color: #3d5a2a; }
+.pv-tir.tir-rare { color: var(--amber); border-color: #5a4526; }
+.pv-tir.tir-non { color: var(--muted); }
+
+@media (max-width: 700px) {
+  .pv-row { flex-wrap: wrap; gap: 7px; }
+  .pv-rar { width: auto; text-align: left; }
+  .pv-tags { max-width: 100%; justify-content: flex-start; flex-basis: 100%; }
+}

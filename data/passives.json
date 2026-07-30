@@ -1,0 +1,1328 @@
+{
+  "passives": [
+    {
+      "name": "Demon’s Hand",
+      "rank": 5,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Work Speed + 90 % SAN dreceases +15.0% faster World Tree harvestables won't vanish when approached.",
+      "weight": 5,
+      "badges": [],
+      "categories": [
+        "travail"
+      ],
+      "code": "WorldTree_CraftSpeed"
+    },
+    {
+      "name": "Dimensional Leap",
+      "rank": 5,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Movement Speed + 50 % Increases Hunger depletion rate by +15.0% World Tree resources will not vanish when approached.",
+      "weight": 5,
+      "badges": [],
+      "categories": [
+        "monture",
+        "entretien"
+      ],
+      "code": "WorldTree_MoveSpeed"
+    },
+    {
+      "name": "God of Destruction",
+      "rank": 5,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Attack + 40% Defense + 20% Max Health -50% World Tree resources will not vanish when approached.",
+      "weight": 5,
+      "badges": [],
+      "categories": [
+        "combat"
+      ],
+      "code": "WorldTree_ATK_DEF"
+    },
+    {
+      "name": "Hermit Sage",
+      "rank": 5,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "SAN depletion rate - 50.0% Work Speed -20 % World Tree resources will not vanish when approached.",
+      "weight": 5,
+      "badges": [],
+      "categories": [
+        "travail"
+      ]
+    },
+    {
+      "name": "Sanctified Meat Shield",
+      "rank": 5,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Defense + 50% Attack -30% World Tree resources will not vanish when approached.",
+      "weight": 5,
+      "badges": [],
+      "categories": [
+        "combat",
+        "travail"
+      ]
+    },
+    {
+      "name": "Twin-Edged Holy Blade",
+      "rank": 5,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Attack + 50% Defense -30% World Tree resources will not vanish when approached.",
+      "weight": 5,
+      "badges": [],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "World Tree Seedbed",
+      "rank": 5,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Decrease Hunger depletion rate by +50.0% HP -20 % World Tree resources will not vanish when approached.",
+      "weight": 5,
+      "badges": [],
+      "categories": [
+        "entretien"
+      ]
+    },
+    {
+      "name": "Demon God",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Attack +30% (ToSelf)",
+      "weight": 5,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Diamond Body",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Defense +30% Immune to Flinch Immune to Knockback",
+      "weight": 5,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ],
+      "code": "Deffence_up3"
+    },
+    {
+      "name": "Eternal Engine",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Max stamina +75% *This effect is only valid for rideable pals.",
+      "weight": 5,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "monture"
+      ]
+    },
+    {
+      "name": "Heart of the Immovable King",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "SAN drops +20.0% slower.",
+      "weight": 5,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ]
+    },
+    {
+      "name": "King of the Waves",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "50% increase movement speed on water.",
+      "weight": 5,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "monture",
+        "element"
+      ],
+      "code": "SwimSpeed_up_3"
+    },
+    {
+      "name": "Lavish Hospitality",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Your Dropped Items + 100%",
+      "weight": 5,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "autre"
+      ]
+    },
+    {
+      "name": "Lightfooted",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Mounted Jump Count +1",
+      "weight": 5,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "autre"
+      ]
+    },
+    {
+      "name": "Lucky",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Attack +15% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "RarePal"
+      ],
+      "categories": [
+        "combat"
+      ],
+      "code": "Rare"
+    },
+    {
+      "name": "Mastery of Fasting",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Hunger decreases +20.0% slower.",
+      "weight": 5,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "entretien"
+      ]
+    },
+    {
+      "name": "Ranch Master",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Farming's Work Suitability +2",
+      "weight": 5,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ]
+    },
+    {
+      "name": "Remarkable Craftsmanship",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Work Speed +75% (ToSelf)",
+      "weight": 5,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ]
+    },
+    {
+      "name": "Swift",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "30% increase to movement speed.",
+      "weight": 5,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "monture"
+      ],
+      "code": "MoveSpeed_up_3"
+    },
+    {
+      "name": "Vampiric",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Absorbs a portion of the damage dealt to restore Health. Does not sleep at night and continues to work.",
+      "weight": 5,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "autre"
+      ]
+    },
+    {
+      "name": "Ace Swimmer",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "40% increase movement speed on water.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "monture",
+        "element"
+      ],
+      "code": "SwimSpeed_up_2"
+    },
+    {
+      "name": "Artisan",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "Work Speed +50% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ],
+      "code": "CraftSpeed_up2"
+    },
+    {
+      "name": "Burly Body",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "Defense +20% Immune to Flinch",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Diet Lover",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "Hunger decreases +15.0% slower.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "entretien"
+      ]
+    },
+    {
+      "name": "Farmhand",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "Farming's Work Suitability +1",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ]
+    },
+    {
+      "name": "Ferocious",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "Attack +20% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Healing Coach",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "Player Auto Health Regeneration Rate +5%",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "entretien"
+      ],
+      "code": "AutoHPRegeneRate_Passive"
+    },
+    {
+      "name": "Infinite Stamina",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "Max stamina +50% *This effect is only valid for rideable pals.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "monture"
+      ],
+      "code": "Stamina_Up_1"
+    },
+    {
+      "name": "Logging Foreman",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "25% increase in Player Logging Efficiency.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ]
+    },
+    {
+      "name": "Mine Foreman",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "25% increase in Player Mining Efficiency.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ]
+    },
+    {
+      "name": "Motivational Leader",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "25% increase in Player Work Speed.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ]
+    },
+    {
+      "name": "Noble",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "Increases the value of items when sold by +5%",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "autre"
+      ]
+    },
+    {
+      "name": "Philanthropist",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "When assigned to a Breeding Farm, breeding speed is increased by 100%.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "autre"
+      ]
+    },
+    {
+      "name": "Reload Master",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "Player Reload Speed +4%",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "autre"
+      ],
+      "code": "ReloadSpeedUp_Passive"
+    },
+    {
+      "name": "Runner",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "20% increase to movement speed.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "monture"
+      ],
+      "code": "MoveSpeed_up_2"
+    },
+    {
+      "name": "Serenity",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "Active skill cooldown reduction 30% Attack +10%",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ],
+      "code": "CoolTimeReduction_Up_1"
+    },
+    {
+      "name": "Service-Minded",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "Your Dropped Items + 50%",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "element"
+      ]
+    },
+    {
+      "name": "Stronghold Strategist",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "10% increase in Player Defense.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ],
+      "code": "TrainerDEF_UP_1"
+    },
+    {
+      "name": "Vanguard",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "10% increase in Player Attack.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ],
+      "code": "TrainerATK_UP_1"
+    },
+    {
+      "name": "Wellness Watcher",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "Player Stamina Consumption - 5.0 %",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "monture"
+      ]
+    },
+    {
+      "name": "Workaholic",
+      "rank": 3,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "SAN drops +15.0% slower.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ]
+    },
+    {
+      "name": "Heavyweight",
+      "rank": 2,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "Defense +20% Immune to Knockback",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Musclehead",
+      "rank": 2,
+      "rarity": "dore",
+      "positive": true,
+      "effect": "Attack +30% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Abnormal",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% decrease in incoming Neutral damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "element"
+      ]
+    },
+    {
+      "name": "Aggressive",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "Attack +10% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Blood of the Dragon",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% increase in Dragon attack damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat",
+        "element"
+      ]
+    },
+    {
+      "name": "Botanical Barrier",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% decrease in incoming Grass damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "autre"
+      ]
+    },
+    {
+      "name": "Brave",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "Attack +10% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Capacitor",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% increase in Lightning attack damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Cheery",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% decrease in incoming Dark damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "element"
+      ]
+    },
+    {
+      "name": "Coldblooded",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% increase in Ice attack damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat",
+        "element"
+      ]
+    },
+    {
+      "name": "Conceited",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "Work Speed +10% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ]
+    },
+    {
+      "name": "Dainty Eater",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "Hunger decreases +10.0% slower.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "entretien"
+      ]
+    },
+    {
+      "name": "Dragonkiller",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% decrease in incoming Dragon damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "element"
+      ]
+    },
+    {
+      "name": "Earthquake Resistant",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% decrease in incoming Earth damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "element"
+      ]
+    },
+    {
+      "name": "Fine Furs",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "Increases the value of items when sold by +3%",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "autre"
+      ]
+    },
+    {
+      "name": "Fit as a Fiddle",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "Max stamina +25% *This effect is only valid for rideable pals.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "monture"
+      ]
+    },
+    {
+      "name": "Fragrant Foliage",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% increase in Grass attack damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Hard Skin",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "Defense +10% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Heated Body",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% decrease in incoming Ice damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "element"
+      ]
+    },
+    {
+      "name": "Hooligan",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "Attack +15% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Hydromaniac",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% increase in Water attack damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat",
+        "element"
+      ]
+    },
+    {
+      "name": "Impatient",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "Active skill cooldown reduction 15%",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Insomnia",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "Does not sleep and continues to work even at night.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "autre"
+      ]
+    },
+    {
+      "name": "Insulated Body",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% decrease in incoming Lightning damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "autre"
+      ]
+    },
+    {
+      "name": "Masochist",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "Defense +15% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Nimble",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% increase to movement speed.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "monture"
+      ]
+    },
+    {
+      "name": "Positive Thinker",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "SAN drops +10.0% slower.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ]
+    },
+    {
+      "name": "Power of Gaia",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% increase in Earth attack damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat",
+        "element"
+      ]
+    },
+    {
+      "name": "Pyromaniac",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% increase in Fire attack damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat",
+        "element"
+      ]
+    },
+    {
+      "name": "Sadist",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "Attack +15% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Serious",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "Work Speed +20% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ]
+    },
+    {
+      "name": "Sleek Stroke",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "30% increase movement speed on water.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "monture",
+        "element"
+      ]
+    },
+    {
+      "name": "Spirit of Zen",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% increase in Neutral attack damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Suntan Lover",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% decrease in incoming Fire damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "element"
+      ]
+    },
+    {
+      "name": "Veil of Darkness",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% increase in Dark attack damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat",
+        "element"
+      ]
+    },
+    {
+      "name": "Waterproof",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "10% decrease in incoming Water damage.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "element"
+      ]
+    },
+    {
+      "name": "Work Slave",
+      "rank": 1,
+      "rarity": "commun",
+      "positive": true,
+      "effect": "Work Speed +30% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ],
+      "code": "PAL_CorporateSlave"
+    },
+    {
+      "name": "Clumsy",
+      "rank": -1,
+      "rarity": "negatif",
+      "positive": false,
+      "effect": "Work Speed -10% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ]
+    },
+    {
+      "name": "Coward",
+      "rank": -1,
+      "rarity": "negatif",
+      "positive": false,
+      "effect": "Attack -10% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Downtrodden",
+      "rank": -1,
+      "rarity": "negatif",
+      "positive": false,
+      "effect": "Defense -10% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Easygoing",
+      "rank": -1,
+      "rarity": "negatif",
+      "positive": false,
+      "effect": "Active skill cooldown extension -15%",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Glutton",
+      "rank": -1,
+      "rarity": "negatif",
+      "positive": false,
+      "effect": "Hunger decreases +10.0% faster.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "entretien"
+      ]
+    },
+    {
+      "name": "Mercy Hit",
+      "rank": -1,
+      "rarity": "negatif",
+      "positive": false,
+      "effect": "Pacifist. Will not reduce the target's Health below 1.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "autre"
+      ]
+    },
+    {
+      "name": "Night Owl",
+      "rank": -1,
+      "rarity": "negatif",
+      "positive": false,
+      "effect": "Tends to nap through the day, due to being nocturnal.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "entretien"
+      ]
+    },
+    {
+      "name": "Shabby",
+      "rank": -1,
+      "rarity": "negatif",
+      "positive": false,
+      "effect": "Decrease the value of items when sold by -10%",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "autre"
+      ]
+    },
+    {
+      "name": "Sickly",
+      "rank": -1,
+      "rarity": "negatif",
+      "positive": false,
+      "effect": "Max Stamina -25% *This effect is only valid for rideable pals.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "monture"
+      ]
+    },
+    {
+      "name": "Unstable",
+      "rank": -1,
+      "rarity": "negatif",
+      "positive": false,
+      "effect": "SAN drops +10.0% faster.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ]
+    },
+    {
+      "name": "Bottomless Stomach",
+      "rank": -2,
+      "rarity": "negatif",
+      "positive": false,
+      "effect": "Hunger decreases +15.0% faster.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "entretien"
+      ]
+    },
+    {
+      "name": "Destructive",
+      "rank": -2,
+      "rarity": "negatif",
+      "positive": false,
+      "effect": "SAN drops +15.0% faster.",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ]
+    },
+    {
+      "name": "Brittle",
+      "rank": -3,
+      "rarity": "negatif",
+      "positive": false,
+      "effect": "Defense -20% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Pacifist",
+      "rank": -3,
+      "rarity": "negatif",
+      "positive": false,
+      "effect": "Attack -20% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "combat"
+      ]
+    },
+    {
+      "name": "Slacker",
+      "rank": -3,
+      "rarity": "negatif",
+      "positive": false,
+      "effect": "Work Speed -30% (ToSelf)",
+      "weight": 100,
+      "badges": [
+        "Pal"
+      ],
+      "categories": [
+        "travail"
+      ]
+    }
+  ],
+  "categoryLabels": {
+    "combat": "Combat",
+    "travail": "Travail",
+    "monture": "Monture",
+    "entretien": "Entretien",
+    "element": "Élément",
+    "autre": "Autre"
+  }
+}

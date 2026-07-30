@@ -25,6 +25,7 @@ from fetch_pal_drops import load_pal_drops
 from fetch_breeding import load_breeding
 from fetch_recipes import load_recipes
 from fetch_pal_food import load_pal_food
+from fetch_passives import load_passives
 
 BASE_DIR = Path(__file__).parent
 PALS_CSV = BASE_DIR / "Liste pals.csv"
@@ -408,11 +409,12 @@ def build_changelog(pals):
     return data
 
 
-def build_static(pals, structures, unique_combos, recipes):
+def build_static(pals, structures, unique_combos, recipes, passives):
     """Écrit docs/data.js : données embarquées pour la version statique (GitHub Pages)."""
     data = {"workTypes": WORK_TYPES, "pals": pals, "structures": structures,
             "uniqueCombos": unique_combos, "recipes": recipes["recipes"],
-            "producedBy": recipes["producedBy"], "rawItems": recipes["rawItems"]}
+            "producedBy": recipes["producedBy"], "rawItems": recipes["rawItems"],
+            "passives": passives["passives"], "passiveCategories": passives["categoryLabels"]}
     js = "// Généré par build_data.py — ne pas éditer à la main.\n"
     js += "window.PAL_DATA = " + json.dumps(data, ensure_ascii=False) + ";\n"
     STATIC_OUT.parent.mkdir(exist_ok=True)
@@ -455,6 +457,7 @@ if __name__ == "__main__":
     structures = build_structures()
     unique_combos = merge_breeding(pals)
     recipes = merge_recipes(structures)
+    passives = load_passives()
     build_changelog(pals)        # avant build_static : compare au docs/data.js encore en place
-    build_static(pals, structures, unique_combos, recipes)
+    build_static(pals, structures, unique_combos, recipes, passives)
     stamp_service_worker()
