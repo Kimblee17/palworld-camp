@@ -135,7 +135,7 @@
     },
     "Depresso": {
       "id": "negativekoala",
-      "breedPower": 3,
+      "breedPower": 3000,
       "combiPriority": 300000.0,
       "ignoreCombi": false,
       "isBoss": false
@@ -1689,7 +1689,7 @@
     },
     "Souffline": {
       "id": "dandeliongirl",
-      "breedPower": 2,
+      "breedPower": 2000,
       "combiPriority": 200000.0,
       "ignoreCombi": false,
       "isBoss": false
@@ -1731,7 +1731,7 @@
     },
     "Solmora Lux": {
       "id": "kingsunfish_thunder",
-      "breedPower": 1,
+      "breedPower": 1000,
       "combiPriority": 100000.0,
       "ignoreCombi": false,
       "isBoss": false

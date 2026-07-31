@@ -57,7 +57,12 @@ def parse_breeding(js):
         by_id[pid] = name
         species[name] = {
             "id": pid,
-            "breedPower": _grp(s, r",combiRank:(\d+)", int),
+            # ⚠ NOTATION EXPONENTIELLE. Le bundle écrit les rangs ronds en notation
+            # JavaScript : `combiRank:3e3`. Un `(\d+)` n'y lisait que « 3 », soit un
+            # rang 1000 fois trop petit — Depresso passait de 3000 à 3, et le
+            # calculateur en tirait des couples faux (Depresso × Ophydia « donnait »
+            # Aegidron). Il faut donc accepter le point et l'exposant, puis arrondir.
+            "breedPower": _grp(s, r",combiRank:([0-9.e+]+)", lambda v: int(float(v))),
             "combiPriority": _grp(s, r",combiPriority:([0-9.e+]+)", float),
             "ignoreCombi": ",ignoreCombi:!0" in s,
             "isBoss": ",isBoss:!0" in s,
@@ -89,6 +94,16 @@ def scrape(verbose=True):
     data = parse_breeding(find_dataset_js(verbose=verbose))
     if not data["species"]:
         raise RuntimeError("Aucune espèce extraite du chunk de données.")
+    # Garde-fou contre une troncature silencieuse : dans ce jeu de données les rangs
+    # sont des multiples de 10 et le plus petit vaut 10. Une valeur en dessous trahit
+    # une notation exponentielle mal lue, et fausserait tout le calculateur sans
+    # qu'aucune erreur ne se manifeste.
+    trop_petits = {n: v["breedPower"] for n, v in data["species"].items()
+                   if v["breedPower"] is not None and v["breedPower"] < 10}
+    if trop_petits:
+        raise RuntimeError(
+            f"Rangs de reproduction implausibles (< 10) : {trop_petits} — "
+            "la notation exponentielle du bundle est probablement mal lue.")
     if verbose:
         n_ign = sum(1 for v in data["species"].values() if v["ignoreCombi"])
         print(f"  {len(data['species'])} espèces ({n_ign} hors résultat générique), "
