@@ -1188,3 +1188,23 @@ body.camp-actions-open .limit-ctrl { display: flex; }
   .pv-rar { width: auto; text-align: left; }
   .pv-tags { max-width: 100%; justify-content: flex-start; flex-basis: 100%; }
 }
+
+/* ===== Plan d'élevage : arbre généalogique ===== */
+.bd-plan-help { flex-basis: 100%; margin: 6px 0 0; }
+.bd-tree, .bd-children { list-style: none; margin: 0; padding: 0; }
+/* Les parents sont décalés sous leur enfant, reliés par un filet : on lit l'arbre
+   de haut en bas, du Pal visé vers ce qu'on possède déjà. */
+.bd-children { margin-left: 18px; padding-left: 16px; border-left: 1px solid var(--border); }
+.bd-node { margin: 5px 0; }
+.bd-nhead {
+  display: flex; align-items: center; gap: 9px;
+  background: var(--panel-2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 7px 10px;
+}
+.bd-node.is-owned > .bd-nhead { border-color: var(--ok); }
+.bd-nname { font-weight: 600; }
+.bd-gen {
+  margin-left: auto; font-size: 0.74rem; color: var(--muted);
+  border: 1px solid var(--border); border-radius: 999px; padding: 2px 9px;
+}
+.bd-node.is-owned .bd-own { margin-left: auto; }

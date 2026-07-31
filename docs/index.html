@@ -291,8 +291,9 @@
   <section class="panel view-breeding" id="breeding" hidden>
     <h2>🥚 Calculateur de reproduction</h2>
     <div class="bd-modes">
-      <button id="bd-mode-couple" class="bd-mode active" type="button">A × B → enfant</button>
-      <button id="bd-mode-cible" class="bd-mode" type="button">Je veux ce Pal → parents</button>
+      <button id="bd-mode-couple" class="bd-mode active" type="button" aria-pressed="true">A × B → enfant</button>
+      <button id="bd-mode-cible" class="bd-mode" type="button" aria-pressed="false">Je veux ce Pal → parents</button>
+      <button id="bd-mode-plan" class="bd-mode" type="button" aria-pressed="false">Depuis ma boîte → plan d'élevage</button>
     </div>
 
     <div id="bd-couple-ctrl" class="bd-ctrl">
@@ -318,6 +319,16 @@
       <label class="night-toggle" title="Ne garder que les paires réalisables avec les Pals que tu possèdes">
         <input type="checkbox" id="bd-box-only"> 🎒 uniquement parmi ma boîte
       </label>
+    </div>
+
+    <div id="bd-plan-ctrl" class="bd-ctrl" hidden>
+      <div class="bd-pick">
+        <label for="bd-plan">Pal à obtenir</label>
+        <input type="search" id="bd-plan-search" placeholder="Rechercher…" autocomplete="off">
+        <select id="bd-plan" size="1"></select>
+      </div>
+      <p class="bd-note bd-plan-help">Cherche le chemin le plus court entre les espèces de ta
+        boîte et le Pal visé, en enchaînant les croisements sur plusieurs générations.</p>
     </div>
 
     <div id="bd-result" class="bd-result"></div>

@@ -108,8 +108,68 @@ export function parentsFor(target) {
   return out;
 }
 
+// ===== Plan d'élevage sur plusieurs générations =====
+//
+// « Comment obtenir X à partir de ce que j'ai ? » Parcours en LARGEUR sur les espèces
+// atteignables : chaque génération croise tout ce qu'on possède déjà, et la largeur
+// d'abord garantit le plan le plus court en nombre de générations.
+//
+// Une subtilité qui change le résultat : croiser une espèce avec ELLE-MÊME exige d'en
+// posséder deux exemplaires. En revanche, dès qu'une espèce est PRODUITE par le plan,
+// on peut en faire éclore autant d'œufs qu'on veut — elle devient donc disponible en
+// quantité, et son auto-croisement redevient possible.
+const MAX_GENERATIONS = 5;
+
+export function planDeReproduction(cibleId, quantites, maxGen = MAX_GENERATIONS) {
+  const possede = new Set();
+  const illimite = new Set();          // espèces qu'on sait reproduire à volonté
+  for (const [id, n] of Object.entries(quantites || {})) {
+    if (n > 0) possede.add(Number(id));
+    if (n > 1) illimite.add(Number(id));
+  }
+  if (!possede.size) return { vide: true };
+  if (possede.has(cibleId)) return { deja: true };
+
+  const via = new Map();               // id produit -> { a, b, gen }
+  let frontiere = [...possede];
+
+  for (let gen = 1; gen <= maxGen && frontiere.length; gen++) {
+    const dispo = [...possede];
+    const nouveaux = [];
+    // On ne recroise que les paires impliquant au moins un nouveau venu : les paires
+    // entièrement anciennes ont déjà été explorées à la génération précédente.
+    for (const idA of dispo) {
+      for (const idB of frontiere) {
+        if (idA === idB && !illimite.has(idA)) continue;   // il en faut deux
+        const enfant = childOf(palsById[idA], palsById[idB]);
+        if (!enfant || possede.has(enfant.id)) continue;
+        possede.add(enfant.id);
+        illimite.add(enfant.id);                          // produit = reproductible
+        via.set(enfant.id, { a: idA, b: idB, gen });
+        nouveaux.push(enfant.id);
+        if (enfant.id === cibleId) {
+          return { arbre: construireArbre(cibleId, via), generations: gen };
+        }
+      }
+    }
+    frontiere = nouveaux;
+  }
+  return { introuvable: true, generations: maxGen };
+}
+
+// Remonte la chaîne de production jusqu'aux espèces déjà possédées (les feuilles).
+function construireArbre(id, via) {
+  const source = via.get(id);
+  const pal = palsById[id];
+  if (!source) return { pal, possede: true };
+  return {
+    pal, gen: source.gen,
+    parents: [construireArbre(source.a, via), construireArbre(source.b, via)],
+  };
+}
+
 // ===== Vue =====
-let modeCible = false;          // false = A × B, true = cible
+let mode = "couple";            // "couple" (A × B) · "cible" (parents directs) · "plan"
 let cibleId = null;
 let selA = null, selB = null;
 let boiteSeule = false;
@@ -234,32 +294,105 @@ function rendreModeCible() {
   }
 }
 
+// Un nœud de l'arbre : soit une espèce déjà en boîte (feuille), soit un croisement.
+function noeudPlan(n, counts) {
+  const li = document.createElement("li");
+  li.className = "bd-node" + (n.possede ? " is-owned" : "");
+  const tete = document.createElement("div");
+  tete.className = "bd-nhead";
+  tete.appendChild(palIconEl(n.pal));
+  const q = counts[n.pal.id] || 0;
+  tete.insertAdjacentHTML("beforeend",
+    `<span class="bd-nname">${n.pal.name}</span>`
+    + (n.possede
+        ? `<span class="bd-own" title="Déjà dans ta boîte">🎒 ${q}</span>`
+        : `<span class="bd-gen">génération ${n.gen}</span>`));
+  li.appendChild(tete);
+  if (n.parents) {
+    const ul = document.createElement("ul");
+    ul.className = "bd-children";
+    for (const p of n.parents) ul.appendChild(noeudPlan(p, counts));
+    li.appendChild(ul);
+  }
+  return li;
+}
+
+function rendreModePlan() {
+  const host = document.getElementById("bd-result");
+  const cible = palsById[cibleId];
+  if (!cible) { host.innerHTML = ""; return; }
+  const counts = palBoxCounts();
+  const res = planDeReproduction(cible.id, counts);
+
+  if (res.vide) {
+    host.innerHTML = `<p class="bd-msg">Ta boîte est vide. Remplis-la depuis l'onglet `
+      + `📥 Importer une save, ou à la main dans « Ma boîte ».</p>`;
+    return;
+  }
+  if (res.deja) {
+    host.innerHTML = `<p class="bd-msg">Tu possèdes déjà <b>${cible.name}</b> `
+      + `(${counts[cible.id]} exemplaire(s)). Aucun élevage nécessaire.</p>`;
+    return;
+  }
+  if (res.introuvable) {
+    host.innerHTML = `<p class="bd-msg">Aucun chemin trouvé vers <b>${cible.name}</b> `
+      + `en ${res.generations} générations à partir de ta boîte.</p>`
+      + `<p class="bd-note">Certaines espèces ne s'obtiennent pas par reproduction : il faut `
+      + `alors en capturer une, puis relancer le calcul.</p>`;
+    return;
+  }
+
+  const feuilles = new Set();
+  (function compter(n) {
+    if (n.possede) feuilles.add(n.pal.name); else n.parents.forEach(compter);
+  })(res.arbre);
+
+  host.innerHTML = `<div class="bd-head"><b>${cible.name}</b> en `
+    + `${res.generations} génération${res.generations > 1 ? "s" : ""}, `
+    + `à partir de ${feuilles.size} espèce(s) de ta boîte</div>`
+    + `<p class="bd-note">🎒 = déjà en boîte. <b>Le sexe n'est pas pris en compte</b> : `
+    + `la boîte ne mémorise pas cette information. Vérifie en jeu que chaque couple a `
+    + `bien un mâle et une femelle.</p>`;
+  const ul = document.createElement("ul");
+  ul.className = "bd-tree";
+  ul.appendChild(noeudPlan(res.arbre, counts));
+  host.appendChild(ul);
+}
+
 export function renderBreeding() {
   const host = document.getElementById("bd-result");
   if (!host) return;
-  document.getElementById("bd-mode-couple").classList.toggle("active", !modeCible);
-  document.getElementById("bd-mode-cible").classList.toggle("active", modeCible);
-  document.getElementById("bd-couple-ctrl").hidden = modeCible;
-  document.getElementById("bd-cible-ctrl").hidden = !modeCible;
-  if (modeCible) rendreModeCible(); else rendreModeCouple();
+  for (const m of ["couple", "cible", "plan"]) {
+    document.getElementById("bd-mode-" + m).classList.toggle("active", mode === m);
+    document.getElementById("bd-mode-" + m).setAttribute("aria-pressed", String(mode === m));
+    document.getElementById("bd-" + m + "-ctrl").hidden = mode !== m;
+  }
+  if (mode === "cible") rendreModeCible();
+  else if (mode === "plan") rendreModePlan();
+  else rendreModeCouple();
 }
 
 export function initBreeding() {
   const sa = document.getElementById("bd-a"), sb = document.getElementById("bd-b");
   const sc = document.getElementById("bd-cible");
+  const sp = document.getElementById("bd-plan");
   if (!sa) return;
   const parDefaut = nomsTries();
   selA = parDefaut[0]?.id; selB = parDefaut[1]?.id; cibleId = parDefaut[0]?.id;
   remplirSelect(sa, selA); remplirSelect(sb, selB); remplirSelect(sc, cibleId);
+  // Le mode « plan » vise le même Pal que le mode « cible » : passer de l'un à l'autre
+  // garde la recherche en cours.
+  remplirSelect(sp, cibleId);
 
   sa.addEventListener("change", () => { selA = Number(sa.value); renderBreeding(); });
   sb.addEventListener("change", () => { selB = Number(sb.value); renderBreeding(); });
-  sc.addEventListener("change", () => { cibleId = Number(sc.value); renderBreeding(); });
+  sc.addEventListener("change", () => { cibleId = Number(sc.value); sp.value = sc.value; renderBreeding(); });
+  sp.addEventListener("change", () => { cibleId = Number(sp.value); sc.value = sp.value; renderBreeding(); });
   document.getElementById("bd-swap").addEventListener("click", () => {
     [selA, selB] = [selB, selA]; sa.value = String(selA); sb.value = String(selB); renderBreeding();
   });
-  document.getElementById("bd-mode-couple").addEventListener("click", () => { modeCible = false; renderBreeding(); });
-  document.getElementById("bd-mode-cible").addEventListener("click", () => { modeCible = true; renderBreeding(); });
+  for (const m of ["couple", "cible", "plan"])
+    document.getElementById("bd-mode-" + m).addEventListener("click", () => { mode = m; renderBreeding(); });
   document.getElementById("bd-box-only").addEventListener("change", e => {
     boiteSeule = e.target.checked; renderBreeding();
   });
@@ -277,4 +410,5 @@ export function initBreeding() {
   brancherRecherche("bd-a-search", sa, id => { selA = id; });
   brancherRecherche("bd-b-search", sb, id => { selB = id; });
   brancherRecherche("bd-cible-search", sc, id => { cibleId = id; });
+  brancherRecherche("bd-plan-search", sp, id => { cibleId = id; });
 }
