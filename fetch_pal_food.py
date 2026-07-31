@@ -71,10 +71,17 @@ def parse_food(html):
 
 
 def food_for(name):
-    try:
-        return name, parse_food(fetch(BASE_URL + slug_for(name)))
-    except Exception:
-        return name, None
+    # Une seconde tentative : sur 300 requêtes, un échec réseau isolé est banal, et
+    # sans cela il effacerait silencieusement l'appétit d'un Pal (vécu sur
+    # « Zoe & Grizzbolt », dont la valeur a disparu d'un build à l'autre).
+    for _ in range(2):
+        try:
+            v = parse_food(fetch(BASE_URL + slug_for(name)))
+            if v is not None:
+                return name, v
+        except Exception:
+            pass
+    return name, None
 
 
 def scrape(names, verbose=True):
@@ -98,12 +105,26 @@ def scrape(names, verbose=True):
 
 def load_pal_food(names, cache=CACHE, verbose=True):
     """Appétits pour build_data : fetch live + cache, repli sur cache si réseau KO."""
+    ancien = {}
+    if cache.exists():
+        try:
+            ancien = json.loads(cache.read_text(encoding="utf-8"))
+        except Exception:
+            ancien = {}
     try:
         data = scrape(names, verbose=verbose)
+        # On FUSIONNE avec le cache au lieu de le remplacer : un Pal absent de cette
+        # passe (page injoignable) garde la valeur déjà connue. Un scraping cassé se
+        # signale par le seuil MIN_COVERAGE, pas en effaçant des données valides.
+        conserves = [n for n in ancien if n not in data and n in set(names)]
+        if conserves and verbose:
+            print(f"  ↳ {len(conserves)} appétit(s) repris du cache : "
+                  f"{', '.join(sorted(conserves)[:5])}{'…' if len(conserves) > 5 else ''}")
+        fusion = {**{n: v for n, v in ancien.items() if n in set(names)}, **data}
         cache.parent.mkdir(exist_ok=True)
-        cache.write_text(json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True),
+        cache.write_text(json.dumps(fusion, ensure_ascii=False, indent=2, sort_keys=True),
                          encoding="utf-8")
-        return data
+        return fusion
     except Exception as exc:
         if STRICT:
             raise
