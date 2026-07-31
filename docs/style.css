@@ -1230,3 +1230,11 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 .bd-node.is-focus > .bd-nhead { border-color: var(--accent-2); }
 .bd-nbtn { margin-left: auto; flex: none; }
 .bd-nbtn[aria-pressed="true"] { background: var(--accent-2); color: var(--accent-2-ink); }
+
+.bd-pair-filter {
+  width: 100%; margin: 0 0 10px;
+  background: var(--bg); color: var(--text);
+  border: 1px solid var(--edge); border-radius: 8px;
+  padding: 9px 11px; font: inherit; font-size: 0.9rem;
+}
+.bd-pair-filter::placeholder { color: var(--muted); opacity: 1; }

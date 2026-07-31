@@ -181,12 +181,13 @@ let boiteSeule = false;
 // et deux branches identiques ne doivent pas se déplier ensemble.
 let arbre = null;               // { id, parents: [noeud, noeud] | null }
 let focus = null;               // chemin du nœud dont on liste les couples
+let filtreParent = "";          // filtre sur le nom d'un des deux parents
 
 // `focus` vaut null quand rien n'est sélectionné : on retombe alors sur la racine.
 const noeudA = chemin => (chemin || []).reduce((n, i) => n && n.parents && n.parents[i], arbre);
 const memeChemin = (x, y) => x && y && x.length === y.length && x.every((v, i) => v === y[i]);
 
-function reinitArbre(id) { arbre = { id, parents: null }; focus = []; }
+function reinitArbre(id) { arbre = { id, parents: null }; focus = []; filtreParent = ""; }
 
 const nomsTries = () => [...BREEDERS].sort((a, b) => a.name.localeCompare(b.name, "fr"));
 
@@ -276,12 +277,12 @@ function noeudArbre(n, chemin, counts) {
   if (n.parents) {
     btn.textContent = "×";
     btn.setAttribute("aria-label", `Détacher les parents de ${pal.name}`);
-    btn.onclick = () => { n.parents = null; focus = chemin; renderBreeding(); };
+    btn.onclick = () => { n.parents = null; focus = chemin; filtreParent = ""; renderBreeding(); };
   } else {
     btn.textContent = "+";
     btn.setAttribute("aria-label", `Choisir les parents de ${pal.name}`);
     btn.setAttribute("aria-pressed", String(memeChemin(chemin, focus)));
-    btn.onclick = () => { focus = chemin; renderBreeding(); };
+    btn.onclick = () => { focus = chemin; filtreParent = ""; renderBreeding(); };
   }
   tete.appendChild(btn);
   li.appendChild(tete);
@@ -305,15 +306,24 @@ function rendreModeCible() {
   const noeudFocus = noeudA(focus) || arbre;
   const palFocus = palsById[noeudFocus.id];
 
-  let paires = parentsFor(palFocus);
+  const toutesPaires = parentsFor(palFocus);
+  const total = toutesPaires.length;
+  // Filtre sur l'un OU l'autre parent : on cherche « avec qui puis-je faire ce Pal »,
+  // et la position du parent dans le couple n'a pas de sens ici.
+  const filtrer = () => {
+    if (!filtreParent) return toutesPaires.slice();
+    const q = filtreParent.toLowerCase();
+    return toutesPaires.filter(({ a, b }) =>
+      a.name.toLowerCase().includes(q) || b.name.toLowerCase().includes(q));
+  };
   const counts = palBoxCounts();
   let filtre = "";
+  const filtrerBoite = liste => !boiteSeule ? liste : liste.filter(({ a, b }) => {
+    const qa = counts[a.id] || 0, qb = counts[b.id] || 0;
+    // Un seul exemplaire ne peut pas être son propre partenaire.
+    return a.id === b.id ? qa >= 2 : qa >= 1 && qb >= 1;
+  });
   if (boiteSeule) {
-    paires = paires.filter(({ a, b }) => {
-      const qa = counts[a.id] || 0, qb = counts[b.id] || 0;
-      // Un seul exemplaire ne peut pas être son propre partenaire.
-      return a.id === b.id ? qa >= 2 : qa >= 1 && qb >= 1;
-    });
     filtre = `<p class="bd-note">🎒 Filtré sur ta boîte. `
       + `<b>Le sexe n'est pas pris en compte</b> : la boîte ne mémorise pas cette information `
       + `(l'import de sauvegarde ne la conserve pas). Vérifie en jeu que tu as bien un mâle et une femelle.</p>`;
@@ -332,16 +342,40 @@ function rendreModeCible() {
   host.appendChild(split);
 
   // --- Colonne gauche : les couples donnant le Pal sélectionné
-  gauche.innerHTML = `<div class="bd-head">`
-    + `<b>${paires.length} paire(s) donnant ${palFocus.name}</b>`
+  gauche.innerHTML = `<div class="bd-head"><b id="bd-pair-count"></b>`
     + (palFocus.id !== cible.id ? `<span class="bd-focus-tag">branche en cours</span>` : "")
     + `</div>${filtre}`;
 
+  const champ = document.createElement("input");
+  champ.type = "search";
+  champ.id = "bd-pair-filter";
+  champ.className = "bd-pair-filter";
+  champ.placeholder = "Filtrer par parent…";
+  champ.setAttribute("aria-label", `Filtrer les couples donnant ${palFocus.name} par nom de parent`);
+  champ.autocomplete = "off";
+  champ.value = filtreParent;
+  // On ne rejoue PAS tout le rendu : le champ resterait détruit et recréé à chaque
+  // touche, et la saisie perdrait le focus. Seule la liste est repeuplée.
+  champ.addEventListener("input", e => {
+    filtreParent = e.target.value.trim();
+    peupler();
+  });
+  gauche.appendChild(champ);
+
+  // Repeuple le compteur et la liste, sans toucher au champ de filtre.
+  function peupler() {
+  const paires = filtrerBoite(filtrer());
+  gauche.querySelectorAll(".bd-pairs, .bd-msg, .bd-note.bd-trop").forEach(e => e.remove());
+  document.getElementById("bd-pair-count").textContent =
+    `${paires.length}${filtreParent ? ` sur ${total}` : ""} paire(s) donnant ${palFocus.name}`;
   if (!paires.length) {
     gauche.insertAdjacentHTML("beforeend", boiteSeule
       ? `<p class="bd-msg">Aucune paire réalisable avec ta boîte pour obtenir <b>${palFocus.name}</b>.</p>`
-      : `<p class="bd-msg"><b>${palFocus.name}</b> ne peut pas être obtenu par reproduction : `
-        + `il faut le capturer.</p>`);
+      : filtreParent
+        ? `<p class="bd-msg">Aucun couple donnant <b>${palFocus.name}</b> ne fait intervenir `
+          + `« ${filtreParent} » (sur ${total} paires).</p>`
+        : `<p class="bd-msg"><b>${palFocus.name}</b> ne peut pas être obtenu par reproduction : `
+          + `il faut le capturer.</p>`);
   } else {
     // Les combinaisons uniques d'abord, puis par nom.
     paires.sort((x, y) => Number(y.unique) - Number(x.unique)
@@ -368,6 +402,7 @@ function rendreModeCible() {
         const n = noeudA(focus) || arbre;
         n.parents = [{ id: a.id, parents: null }, { id: b.id, parents: null }];
         focus = null;                       // rien de sélectionné : on regarde la racine
+        filtreParent = "";
         renderBreeding();
       };
       li.appendChild(btn);
@@ -376,9 +411,11 @@ function rendreModeCible() {
     gauche.appendChild(ul);
     if (paires.length > 300) {
       gauche.insertAdjacentHTML("beforeend",
-        `<p class="bd-note">Seules les 300 premières paires sont affichées (sur ${paires.length}).</p>`);
+        `<p class="bd-note bd-trop">Seules les 300 premières paires sont affichées (sur ${paires.length}).</p>`);
     }
   }
+  }
+  peupler();
 
   // --- Colonne droite : l'arbre
   const entete = document.createElement("div");
