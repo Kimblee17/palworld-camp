@@ -1208,3 +1208,25 @@ body.camp-actions-open .limit-ctrl { display: flex; }
   border: 1px solid var(--border); border-radius: 999px; padding: 2px 9px;
 }
 .bd-node.is-owned .bd-own { margin-left: auto; }
+
+/* ===== Constructeur d'arbre (mode « Je veux ce Pal → parents ») ===== */
+.bd-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+@media (max-width: 900px) { .bd-split { grid-template-columns: 1fr; } }
+.bd-couples .bd-pairs { max-height: 62vh; overflow-y: auto; }
+.bd-arbre-head { display: flex; align-items: center; gap: 12px; }
+.bd-arbre-head .bar-btn { margin-left: auto; }
+.bd-focus-tag {
+  margin-left: 8px; font-size: 0.72rem; font-weight: 400;
+  border: 1px solid var(--edge); border-radius: 999px; padding: 2px 9px; color: var(--muted);
+}
+/* Le couple entier est un bouton : c'est lui qu'on active pour greffer la branche. */
+.bd-pair-btn {
+  display: flex; align-items: center; gap: 9px; width: 100%;
+  background: none; border: 0; padding: 0; font: inherit; color: inherit;
+  cursor: pointer; text-align: left;
+}
+.bd-pair:hover { border-color: var(--edge); }
+/* Le nœud sélectionné est celui dont les couples s'affichent à gauche. */
+.bd-node.is-focus > .bd-nhead { border-color: var(--accent-2); }
+.bd-nbtn { margin-left: auto; flex: none; }
+.bd-nbtn[aria-pressed="true"] { background: var(--accent-2); color: var(--accent-2-ink); }

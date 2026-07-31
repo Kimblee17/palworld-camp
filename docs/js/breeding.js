@@ -174,6 +174,20 @@ let cibleId = null;
 let selA = null, selB = null;
 let boiteSeule = false;
 
+// ===== Arbre construit à la main (mode « cible ») =====
+// L'arbre n'est PAS calculé : c'est l'utilisateur qui choisit, à chaque nœud, le couple
+// qui l'intéresse. On identifie un nœud par son CHEMIN (suite d'indices 0/1 depuis la
+// racine) et non par son espèce : la même espèce peut apparaître à plusieurs endroits,
+// et deux branches identiques ne doivent pas se déplier ensemble.
+let arbre = null;               // { id, parents: [noeud, noeud] | null }
+let focus = null;               // chemin du nœud dont on liste les couples
+
+// `focus` vaut null quand rien n'est sélectionné : on retombe alors sur la racine.
+const noeudA = chemin => (chemin || []).reduce((n, i) => n && n.parents && n.parents[i], arbre);
+const memeChemin = (x, y) => x && y && x.length === y.length && x.every((v, i) => v === y[i]);
+
+function reinitArbre(id) { arbre = { id, parents: null }; focus = []; }
+
 const nomsTries = () => [...BREEDERS].sort((a, b) => a.name.localeCompare(b.name, "fr"));
 
 function palLigne(pal, extra = "") {
@@ -241,12 +255,57 @@ function rendreModeCouple() {
   host.appendChild(bloc);
 }
 
+// Un nœud de l'arbre manuel. Une feuille porte un « + » pour choisir ses parents ;
+// un nœud déplié porte un « × » pour détacher la branche et essayer autre chose.
+function noeudArbre(n, chemin, counts) {
+  const li = document.createElement("li");
+  const pal = palsById[n.id];
+  const enBoite = counts[pal.id] || 0;
+  li.className = "bd-node" + (enBoite ? " is-owned" : "")
+    + (memeChemin(chemin, focus) ? " is-focus" : "");
+
+  const tete = document.createElement("div");
+  tete.className = "bd-nhead";
+  tete.appendChild(palIconEl(pal));
+  tete.insertAdjacentHTML("beforeend", `<span class="bd-nname">${pal.name}</span>`
+    + (enBoite ? `<span class="bd-own" title="Dans ta boîte">🎒 ${enBoite}</span>` : ""));
+
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "btn-step bd-nbtn";
+  if (n.parents) {
+    btn.textContent = "×";
+    btn.setAttribute("aria-label", `Détacher les parents de ${pal.name}`);
+    btn.onclick = () => { n.parents = null; focus = chemin; renderBreeding(); };
+  } else {
+    btn.textContent = "+";
+    btn.setAttribute("aria-label", `Choisir les parents de ${pal.name}`);
+    btn.setAttribute("aria-pressed", String(memeChemin(chemin, focus)));
+    btn.onclick = () => { focus = chemin; renderBreeding(); };
+  }
+  tete.appendChild(btn);
+  li.appendChild(tete);
+
+  if (n.parents) {
+    const ul = document.createElement("ul");
+    ul.className = "bd-children";
+    n.parents.forEach((p, i) => ul.appendChild(noeudArbre(p, [...chemin, i], counts)));
+    li.appendChild(ul);
+  }
+  return li;
+}
+
 function rendreModeCible() {
   const host = document.getElementById("bd-result");
   const cible = palsById[cibleId];
   if (!cible) { host.innerHTML = ""; return; }
 
-  let paires = parentsFor(cible);
+  // L'arbre suit la cible : changer de cible repart d'une racine neuve.
+  if (!arbre || arbre.id !== cibleId) reinitArbre(cibleId);
+  const noeudFocus = noeudA(focus) || arbre;
+  const palFocus = palsById[noeudFocus.id];
+
+  let paires = parentsFor(palFocus);
   const counts = palBoxCounts();
   let filtre = "";
   if (boiteSeule) {
@@ -260,38 +319,86 @@ function rendreModeCible() {
       + `(l'import de sauvegarde ne la conserve pas). Vérifie en jeu que tu as bien un mâle et une femelle.</p>`;
   }
 
+  // Deux colonnes : à gauche les couples du nœud sélectionné, à droite l'arbre en
+  // cours de construction.
+  host.innerHTML = "";
+  const split = document.createElement("div");
+  split.className = "bd-split";
+  const gauche = document.createElement("div");
+  gauche.className = "bd-couples";
+  const droite = document.createElement("div");
+  droite.className = "bd-arbre";
+  split.append(gauche, droite);
+  host.appendChild(split);
+
+  // --- Colonne gauche : les couples donnant le Pal sélectionné
+  gauche.innerHTML = `<div class="bd-head">`
+    + `<b>${paires.length} paire(s) donnant ${palFocus.name}</b>`
+    + (palFocus.id !== cible.id ? `<span class="bd-focus-tag">branche en cours</span>` : "")
+    + `</div>${filtre}`;
+
   if (!paires.length) {
-    host.innerHTML = (boiteSeule
-      ? `<p class="bd-msg">Aucune paire réalisable avec les Pals de ta boîte pour obtenir <b>${cible.name}</b>.</p>`
-      : `<p class="bd-msg"><b>${cible.name}</b> ne peut pas être obtenu par reproduction.</p>`) + filtre;
-    return;
+    gauche.insertAdjacentHTML("beforeend", boiteSeule
+      ? `<p class="bd-msg">Aucune paire réalisable avec ta boîte pour obtenir <b>${palFocus.name}</b>.</p>`
+      : `<p class="bd-msg"><b>${palFocus.name}</b> ne peut pas être obtenu par reproduction : `
+        + `il faut le capturer.</p>`);
+  } else {
+    // Les combinaisons uniques d'abord, puis par nom.
+    paires.sort((x, y) => Number(y.unique) - Number(x.unique)
+      || x.a.name.localeCompare(y.a.name, "fr") || x.b.name.localeCompare(y.b.name, "fr"));
+
+    const ul = document.createElement("ul");
+    ul.className = "bd-pairs";
+    for (const { a, b, unique, ga, gb } of paires.slice(0, 300)) {
+      const li = document.createElement("li");
+      li.className = "bd-pair" + (unique ? " is-unique" : "");
+      const g = s => s === "F" ? " ♀" : s === "M" ? " ♂" : "";
+      const dispo = q => boiteSeule ? "" : (counts[q.id] ? ` <span class="bd-own" title="Dans ta boîte">🎒${counts[q.id]}</span>` : "");
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "bd-pair-btn";
+      btn.setAttribute("aria-label",
+        `Ajouter ${a.name} et ${b.name} comme parents de ${palFocus.name}`);
+      btn.innerHTML = `<span class="bd-pn">${a.name}${g(ga)}${dispo(a)}</span>`
+        + `<span class="bd-x" aria-hidden="true">×</span>`
+        + `<span class="bd-pn">${b.name}${g(gb)}${dispo(b)}</span>`
+        + (unique ? `<span class="bd-tag">unique</span>` : "");
+      // Choisir un couple greffe les deux parents sous le nœud sélectionné.
+      btn.onclick = () => {
+        const n = noeudA(focus) || arbre;
+        n.parents = [{ id: a.id, parents: null }, { id: b.id, parents: null }];
+        focus = null;                       // rien de sélectionné : on regarde la racine
+        renderBreeding();
+      };
+      li.appendChild(btn);
+      ul.appendChild(li);
+    }
+    gauche.appendChild(ul);
+    if (paires.length > 300) {
+      gauche.insertAdjacentHTML("beforeend",
+        `<p class="bd-note">Seules les 300 premières paires sont affichées (sur ${paires.length}).</p>`);
+    }
   }
 
-  // Les combinaisons uniques d'abord, puis par nom.
-  paires.sort((x, y) => Number(y.unique) - Number(x.unique)
-    || x.a.name.localeCompare(y.a.name, "fr") || x.b.name.localeCompare(y.b.name, "fr"));
+  // --- Colonne droite : l'arbre
+  const entete = document.createElement("div");
+  entete.className = "bd-head bd-arbre-head";
+  entete.innerHTML = `<b>Arbre de ${cible.name}</b>`;
+  const raz = document.createElement("button");
+  raz.type = "button";
+  raz.className = "bar-btn";
+  raz.textContent = "Effacer l'arbre";
+  raz.onclick = () => { reinitArbre(cibleId); renderBreeding(); };
+  entete.appendChild(raz);
+  droite.appendChild(entete);
+  droite.insertAdjacentHTML("beforeend",
+    `<p class="bd-note">Clique un couple à gauche pour l'attacher, puis <b>+</b> sur un `
+    + `parent pour choisir à son tour ses parents. <b>×</b> détache une branche.</p>`);
 
-  host.innerHTML = `<div class="bd-head"><b>${paires.length} paire(s) donnant ${cible.name}</b></div>${filtre}`;
   const ul = document.createElement("ul");
-  ul.className = "bd-pairs";
-  for (const { a, b, unique, ga, gb } of paires.slice(0, 300)) {
-    const li = document.createElement("li");
-    li.className = "bd-pair" + (unique ? " is-unique" : "");
-    const g = s => s === "F" ? " ♀" : s === "M" ? " ♂" : "";
-    const dispo = q => boiteSeule ? "" : (counts[q.id] ? ` <span class="bd-own" title="Dans ta boîte">🎒${counts[q.id]}</span>` : "");
-    li.innerHTML = `<span class="bd-pn">${a.name}${g(ga)}${dispo(a)}</span>`
-      + `<span class="bd-x" aria-hidden="true">×</span>`
-      + `<span class="bd-pn">${b.name}${g(gb)}${dispo(b)}</span>`
-      + (unique ? `<span class="bd-tag">unique</span>` : "");
-    ul.appendChild(li);
-  }
-  host.appendChild(ul);
-  if (paires.length > 300) {
-    const p = document.createElement("p");
-    p.className = "bd-note";
-    p.textContent = `Seules les 300 premières paires sont affichées (sur ${paires.length}).`;
-    host.appendChild(p);
-  }
+  ul.className = "bd-tree";
+  ul.appendChild(noeudArbre(arbre, [], counts));
+  droite.appendChild(ul);
 }
 
 // Un nœud de l'arbre : soit une espèce déjà en boîte (feuille), soit un croisement.
