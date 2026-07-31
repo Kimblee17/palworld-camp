@@ -104,6 +104,17 @@ def scrape(verbose=True):
     for _, code, nom in CODE_LIEN.findall(h):
         codes[H.unescape(nom).strip()] = urllib.parse.unquote(code)
 
+    # L'implant est un lien FRERE de l'infobulle, pas dedans : le chercher dans la
+    # seule infobulle ratait la moitie des codes (Musclehead, Burly Body, Noble...).
+    # On balaie donc chaque carte entiere, d'une banniere de rang a la suivante.
+    bornes = [m.start() for m in re.finditer(r'passive_banner_rank(?:-?\d+)"', h)]
+    for i, deb in enumerate(bornes):
+        bloc = h[deb: bornes[i + 1] if i + 1 < len(bornes) else deb + 4000]
+        n = re.search(r'passive-rank-?\d+ ps-2 py-1">([^<]+)</div>', bloc)
+        c = CODE_IMPLANT.search(bloc)
+        if n and c:
+            codes.setdefault(H.unescape(n.group(1)).strip(), urllib.parse.unquote(c.group(1)))
+
     out = []
     for rang, nom, tip, eff in CARTE.findall(h):
         tip = H.unescape(tip)

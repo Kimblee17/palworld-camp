@@ -50,7 +50,8 @@
       "badges": [],
       "categories": [
         "travail"
-      ]
+      ],
+      "code": "Consumable_WorldTree_Sanity"
     },
     {
       "name": "Sanctified Meat Shield",
@@ -63,7 +64,8 @@
       "categories": [
         "combat",
         "travail"
-      ]
+      ],
+      "code": "Consumable_WorldTree_DEF"
     },
     {
       "name": "Twin-Edged Holy Blade",
@@ -75,7 +77,8 @@
       "badges": [],
       "categories": [
         "combat"
-      ]
+      ],
+      "code": "Consumable_WorldTree_ATK"
     },
     {
       "name": "World Tree Seedbed",
@@ -87,7 +90,8 @@
       "badges": [],
       "categories": [
         "entretien"
-      ]
+      ],
+      "code": "Consumable_WorldTree_FullStomach"
     },
     {
       "name": "Demon God",
@@ -101,7 +105,8 @@
       ],
       "categories": [
         "combat"
-      ]
+      ],
+      "code": "Consumable_PAL_ALLAttack_up3"
     },
     {
       "name": "Diamond Body",
@@ -130,7 +135,8 @@
       ],
       "categories": [
         "monture"
-      ]
+      ],
+      "code": "Consumable_Stamina_Up_3"
     },
     {
       "name": "Heart of the Immovable King",
@@ -144,7 +150,8 @@
       ],
       "categories": [
         "travail"
-      ]
+      ],
+      "code": "Consumable_PAL_Sanity_Down_3"
     },
     {
       "name": "King of the Waves",
@@ -217,7 +224,8 @@
       ],
       "categories": [
         "entretien"
-      ]
+      ],
+      "code": "Consumable_PAL_FullStomach_Down_3"
     },
     {
       "name": "Ranch Master",
@@ -245,7 +253,8 @@
       ],
       "categories": [
         "travail"
-      ]
+      ],
+      "code": "Consumable_CraftSpeed_up3"
     },
     {
       "name": "Swift",
@@ -319,7 +328,8 @@
       ],
       "categories": [
         "combat"
-      ]
+      ],
+      "code": "Deffence_up2"
     },
     {
       "name": "Diet Lover",
@@ -447,7 +457,8 @@
       ],
       "categories": [
         "autre"
-      ]
+      ],
+      "code": "SalePrice_Up_1"
     },
     {
       "name": "Philanthropist",
@@ -564,7 +575,8 @@
       ],
       "categories": [
         "monture"
-      ]
+      ],
+      "code": "PlayerSP_DecreaseRate_Passive"
     },
     {
       "name": "Workaholic",
@@ -606,7 +618,8 @@
       ],
       "categories": [
         "combat"
-      ]
+      ],
+      "code": "Noukin"
     },
     {
       "name": "Abnormal",

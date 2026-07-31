@@ -1,0 +1,89 @@
+﻿Code;Occurrences;Famille;Signe;Palier ou detail;Nom EN;Rarete;Rang;Nom FR;A verifier
+CraftSpeed_up2;80;Vitesse de travail;+;palier 2;Artisan;dore;3;;
+CraftSpeed_up1;68;Vitesse de travail;+;palier 1;;;;;oui
+Nocturnal;65;;;;;;;;oui
+PAL_rude;50;;;;;;;;oui
+ElementResist_Fire_1_PAL;29;Résistance élémentaire;;Fire;;;;;oui
+Deffence_up1;29;Défense;+;palier 1;;;;;oui
+PAL_FullStomach_Up_1;28;Satiété;+;palier 1;;;;;oui
+Deffence_up2_2;27;Défense;+;palier 2;;;;;oui
+Stamina_Up_1;24;Endurance;+;palier 1;Infinite Stamina;dore;3;;
+TrainerDEF_UP_1;24;Bonus au joueur;;DEF;Stronghold Strategist;dore;3;;
+CoolTimeReduction_Up_1;23;Recharge de compétence;+;palier 1;Serenity;dore;3;;
+PAL_ALLAttack_up2;23;Attaque;+;palier 2;;;;;oui
+PAL_ALLAttack_down1;22;Attaque;−;palier 1;;;;;oui
+ElementBoost_Fire_1_PAL;22;Attaque élémentaire;;Fire;;;;;oui
+Stamina_Down_1;22;Endurance;−;palier 1;;;;;oui
+ElementResist_Dragon_1_PAL;22;Résistance élémentaire;;Dragon;;;;;oui
+PAL_ALLAttack_up1;21;Attaque;+;palier 1;;;;;oui
+CraftSpeed_down2;21;Vitesse de travail;−;palier 2;;;;;oui
+TrainerLogging_up1;21;Bonus au joueur;;Logging;;;;;oui
+ElementResist_Normal_1_PAL;21;Résistance élémentaire;;Normal;;;;;oui
+ElementBoost_Earth_1_PAL;20;Attaque élémentaire;;Earth;;;;;oui
+PAL_masochist;20;;;;;;;;oui
+PAL_FullStomach_Up_2;20;Satiété;+;palier 2;;;;;oui
+ElementBoost_Ice_1_PAL;19;Attaque élémentaire;;Ice;;;;;oui
+CoolTimeReduction_Up_2;19;Recharge de compétence;+;palier 2;;;;;oui
+ElementResist_Dark_1_PAL;19;Résistance élémentaire;;Dark;;;;;oui
+ElementBoost_Dark_1_PAL;19;Attaque élémentaire;;Dark;;;;;oui
+SwimSpeed_up_1;19;Nage;+;palier 1;;;;;oui
+PAL_Sanity_Up_1;18;Moral (SAN);+;palier 1;;;;;oui
+TrainerATK_UP_1;17;Bonus au joueur;;ATK;Vanguard;dore;3;;
+ElementResist_Thunder_1_PAL;17;Résistance élémentaire;;Thunder;;;;;oui
+PAL_Sanity_Down_2;17;Moral (SAN);−;palier 2;;;;;oui
+CoolTimeReduction_Down_1;17;Recharge de compétence;−;palier 1;;;;;oui
+CraftSpeed_down1;16;Vitesse de travail;−;palier 1;;;;;oui
+PAL_sadist;16;;;;;;;;oui
+Deffence_up2;16;Défense;+;palier 2;Burly Body;dore;3;;
+ElementBoost_Aqua_1_PAL;16;Attaque élémentaire;;Aqua;;;;;oui
+NonKilling;16;;;;;;;;oui
+ElementResist_Aqua_1_PAL;15;Résistance élémentaire;;Aqua;;;;;oui
+ElementResist_Ice_1_PAL;15;Résistance élémentaire;;Ice;;;;;oui
+PAL_FullStomach_Down_2;15;Satiété;−;palier 2;;;;;oui
+Stamina_Up_2;14;Endurance;+;palier 2;;;;;oui
+ElementResist_Leaf_1_PAL;14;Résistance élémentaire;;Leaf;;;;;oui
+PAL_ALLAttack_down2;14;Attaque;−;palier 2;;;;;oui
+TrainerWorkSpeed_UP_1;14;Bonus au joueur;;WorkSpeed;;;;;oui
+PAL_Sanity_Up_2;14;Moral (SAN);+;palier 2;;;;;oui
+Deffence_down1;14;Défense;−;palier 1;;;;;oui
+MoveSpeed_up_1;13;Déplacement;+;palier 1;;;;;oui
+ElementBoost_Thunder_1_PAL;13;Attaque élémentaire;;Thunder;;;;;oui
+Test_PalEgg_HatchingSpeed_Up;13;;;;;;;;oui
+SwimSpeed_up_2;13;Nage;+;palier 2;Ace Swimmer;dore;3;;
+Noukin;13;;;;Musclehead;dore;2;;
+MoveSpeed_up_2;12;Déplacement;+;palier 2;Runner;dore;3;;
+PAL_FullStomach_Down_1;12;Satiété;−;palier 1;;;;;oui
+PAL_CorporateSlave;12;;;;Work Slave;commun;1;;
+PAL_conceited;11;;;;;;;;oui
+ElementResist_Earth_1_PAL;10;Résistance élémentaire;;Earth;;;;;oui
+Deffence_down2;10;Défense;−;palier 2;;;;;oui
+PAL_oraora;10;;;;;;;;oui
+SalePrice_Up_2;10;Prix de vente;+;palier 2;;;;;oui
+TrainerMining_up1;10;Bonus au joueur;;Mining;;;;;oui
+SalePrice_Up_1;10;Prix de vente;+;palier 1;Noble;dore;3;;
+ElementBoost_Leaf_1_PAL;9;Attaque élémentaire;;Leaf;;;;;oui
+ElementBoost_Normal_1_PAL;9;Attaque élémentaire;;Normal;;;;;oui
+Alien;9;;;;;;;;oui
+MiniNushi;9;;;;;;;;oui
+Rare;9;;;;Lucky;arcenciel;4;;
+SalePrice_Down_1;8;Prix de vente;−;palier 1;;;;;oui
+ElementBoost_Dragon_1_PAL;7;Attaque élémentaire;;Dragon;;;;;oui
+PAL_Sanity_Down_1;7;Moral (SAN);−;palier 1;;;;;oui
+SelfDeathAddItemDrop_up_2;6;Butin à la mort;+;palier 2;;;;;oui
+WorkSuitabilityAddRank_MonsterFarm_1;6;Aptitude de travail;;MonsterFarm;;;;;oui
+ReloadSpeedUp_Passive;5;;;;Reload Master;dore;3;;
+PlayerSP_DecreaseRate_Passive;5;;;;Wellness Watcher;dore;3;;
+NightOwl;4;;;;Night Owl;negatif;-1;;
+AutoHPRegeneRate_Passive;3;;;;Healing Coach;dore;3;;
+PAL_FullStomach_Down_3;3;Satiété;−;palier 3;;;;;oui
+Deffence_up3;3;Défense;+;palier 3;Diamond Body;arcenciel;4;;
+CraftSpeed_up3;3;Vitesse de travail;+;palier 3;;;;;oui
+MoveSpeed_up_3;2;Déplacement;+;palier 3;Swift;arcenciel;4;;
+Vampire;2;;;;;;;;oui
+SelfDeathAddItemDrop_up_3;1;Butin à la mort;+;palier 3;;;;;oui
+Stamina_Up_3;1;Endurance;+;palier 3;;;;;oui
+Nushi;1;;;;;;;;oui
+MutationPal_Mutant;1;;;;;;;;oui
+PAL_ALLAttack_up3;1;Attaque;+;palier 3;;;;;oui
+MutationPal_Immortal;1;;;;;;;;oui
+SwimSpeed_up_3;1;Nage;+;palier 3;King of the Waves;arcenciel;4;;
