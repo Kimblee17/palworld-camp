@@ -86,13 +86,13 @@ CAT_LABELS = {
 
 
 # Passifs qu'on peut se procurer autrement qu'au hasard. Table RELEVÉE EN JEU par
-# l'utilisateur, pas collectée : aucune des deux sources ne publie l'inventaire des
-# marchands ni celui des chasseurs de primes.
+# l'utilisateur, pas collectée : aucune des deux sources ne publie ces inventaires.
 #
-# ⚠ Ce que dit cette table : « ce passif s'achète ici ». Ce qu'elle NE dit PAS :
-# « la liste est complète ». Un marchand qu'on n'a pas croisé peut en vendre d'autres.
-# L'absence d'étiquette signifie donc « pas de source connue », jamais « au hasard
-# uniquement » — c'est le poids de tirage, lui, qui porte cette information.
+# Elle est EXHAUSTIVE, et c'est ce qui la rend exploitable : le jeu ne compte qu'un
+# marchand et qu'un chasseur de primes, et voici tout ce qu'ils vendent. Les 79 autres
+# passifs ne s'obtiennent qu'au hasard sur un Pal. Les données corroborent : aucun des
+# 79 n'a un poids de tirage nul (60 courants, 19 rares), donc aucun n'est hors
+# d'atteinte du hasard — la table et le catalogue ne se contredisent pas.
 #
 # Clé = nom FRANÇAIS, celui que l'utilisateur lit dans le jeu. Toute entrée qui ne
 # retrouve pas exactement un passif fait échouer la collecte (cf. `_provenances`) :

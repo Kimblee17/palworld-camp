@@ -33,10 +33,10 @@ function tirage(p) {
   return { txt: "courant au hasard", cls: "tir-courant" };
 }
 
-// Une provenance connue veut dire « on peut se le procurer ainsi », pas « la liste est
-// complète » : elle est relevée en jeu, aucune source ne la publie. « Sans source
-// connue » filtre donc sur notre ignorance, pas sur une propriété du jeu — le libellé
-// le dit, et le poids de tirage reste la seule information sur le hasard.
+// Le jeu ne compte qu'un marchand et qu'un chasseur de primes, et la table de
+// fetch_passives.py liste tout leur inventaire. L'absence de provenance est donc une
+// information positive — « celui-ci, il faut le tirer au hasard » — et non un aveu
+// d'ignorance. Le poids de tirage dit ensuite à quel point ce hasard est clément.
 const provenance = p => (p.source ? PASSIVE_SOURCES[p.source] || p.source : null);
 
 let tri = "rarete";
@@ -68,7 +68,7 @@ function retenus() {
     (!filtres.rarete || p.rarity === filtres.rarete) &&
     (!filtres.categorie || p.categories.includes(filtres.categorie)) &&
     (!filtres.polarite || String(p.positive) === filtres.polarite) &&
-    (!filtres.provenance || (filtres.provenance === "aucune"
+    (!filtres.provenance || (filtres.provenance === "aleatoire"
        ? !p.source : p.source === filtres.provenance))
   ).sort(comparer);
 }
@@ -100,7 +100,7 @@ export function renderPassives() {
       </span>
       <span class="pv-tags">
         ${cats}
-        ${prov ? `<span class="pv-src src-${p.source}" title="Relevé en jeu : ce passif s'obtient auprès de cette source. La liste n'est pas exhaustive.">${esc(prov)}</span>` : ""}
+        ${prov ? `<span class="pv-src src-${p.source}" title="S'achète auprès de cette source, sans passer par le hasard.">${esc(prov)}</span>` : ""}
         ${t ? `<span class="pv-tir ${t.cls}" title="Probabilité d'apparaître au hasard sur un Pal">${t.txt}</span>` : ""}
       </span>`;
     hote.appendChild(li);
