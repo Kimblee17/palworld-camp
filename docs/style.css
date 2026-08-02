@@ -1177,10 +1177,15 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 .pv-en { font-weight: 400; font-size: 0.78rem; color: var(--muted); margin-left: 8px; }
 .pv-eff { font-size: 0.8rem; color: var(--muted); line-height: 1.4; }
 .pv-tags { display: flex; flex-wrap: wrap; gap: 5px; justify-content: flex-end; flex: none; max-width: 42%; }
-.pv-cat, .pv-tir {
+.pv-cat, .pv-tir, .pv-src {
   font-size: 0.72rem; padding: 2px 8px; border-radius: 999px;
   border: 1px solid var(--border); background: var(--chip); color: var(--text); white-space: nowrap;
 }
+/* Provenance : une étiquette d'ACTION possible, à distinguer d'un simple classement.
+   Le trait plein la sépare des catégories, qui restent en gris. */
+.pv-src { font-weight: 600; }
+.pv-src.src-marchand { color: var(--accent-2); border-color: #2c5f68; }
+.pv-src.src-chasseur { color: var(--violet); border-color: #4b4180; }
 .pv-tir.tir-courant { color: var(--lvl-4); border-color: #3d5a2a; }
 .pv-tir.tir-rare { color: var(--amber); border-color: #5a4526; }
 .pv-tir.tir-non { color: var(--muted); }

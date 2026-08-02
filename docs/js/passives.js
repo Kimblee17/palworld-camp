@@ -1,4 +1,4 @@
-import { PASSIVES, PASSIVE_CATEGORIES } from "./dataset.js";
+import { PASSIVES, PASSIVE_CATEGORIES, PASSIVE_SOURCES } from "./dataset.js";
 
 // ===== Catalogue des compétences passives =====
 //
@@ -33,8 +33,14 @@ function tirage(p) {
   return { txt: "courant au hasard", cls: "tir-courant" };
 }
 
+// Une provenance connue veut dire « on peut se le procurer ainsi », pas « la liste est
+// complète » : elle est relevée en jeu, aucune source ne la publie. « Sans source
+// connue » filtre donc sur notre ignorance, pas sur une propriété du jeu — le libellé
+// le dit, et le poids de tirage reste la seule information sur le hasard.
+const provenance = p => (p.source ? PASSIVE_SOURCES[p.source] || p.source : null);
+
 let tri = "rarete";
-const filtres = { q: "", rarete: "", categorie: "", polarite: "" };
+const filtres = { q: "", rarete: "", categorie: "", polarite: "", provenance: "" };
 
 // Le tri suit le nom AFFICHÉ, donc le français ; les rares passifs dont la source
 // n'aurait pas de traduction retombent sur l'anglais plutôt que sur du vide.
@@ -61,7 +67,9 @@ function retenus() {
              .some(t => t && t.toLowerCase().includes(q))) &&
     (!filtres.rarete || p.rarity === filtres.rarete) &&
     (!filtres.categorie || p.categories.includes(filtres.categorie)) &&
-    (!filtres.polarite || String(p.positive) === filtres.polarite)
+    (!filtres.polarite || String(p.positive) === filtres.polarite) &&
+    (!filtres.provenance || (filtres.provenance === "aucune"
+       ? !p.source : p.source === filtres.provenance))
   ).sort(comparer);
 }
 
@@ -80,6 +88,7 @@ export function renderPassives() {
     const li = document.createElement("li");
     li.className = "pv-row rar-" + p.rarity;
     const t = tirage(p);
+    const prov = provenance(p);
     const cats = p.categories
       .map(c => `<span class="pv-cat">${esc(PASSIVE_CATEGORIES[c] || c)}</span>`).join("");
     li.innerHTML = `
@@ -91,6 +100,7 @@ export function renderPassives() {
       </span>
       <span class="pv-tags">
         ${cats}
+        ${prov ? `<span class="pv-src src-${p.source}" title="Relevé en jeu : ce passif s'obtient auprès de cette source. La liste n'est pas exhaustive.">${esc(prov)}</span>` : ""}
         ${t ? `<span class="pv-tir ${t.cls}" title="Probabilité d'apparaître au hasard sur un Pal">${t.txt}</span>` : ""}
       </span>`;
     hote.appendChild(li);
@@ -109,6 +119,9 @@ export function initPassives() {
     filtres.rarete = e.target.value; renderPassives();
   });
   cat.addEventListener("change", e => { filtres.categorie = e.target.value; renderPassives(); });
+  document.getElementById("pv-provenance").addEventListener("change", e => {
+    filtres.provenance = e.target.value; renderPassives();
+  });
   document.getElementById("pv-polarite").addEventListener("change", e => {
     filtres.polarite = e.target.value; renderPassives();
   });

@@ -250,8 +250,10 @@
   <section class="panel view-passives" id="passives" hidden>
     <h2>⭐ Compétences passives</h2>
     <p class="pv-intro">Les <b>93</b> passifs qu'un Pal peut porter. La couleur vient du rang :
-      un rang négatif est rouge quelle que soit son amplitude. Les noms sont en anglais —
-      aucune source ne publie de correspondance française fiable.</p>
+      un rang négatif est rouge quelle que soit son amplitude. Le nom anglais figure en
+      second, c'est celui des wikis et des codes du jeu. Les provenances
+      <b>marchand</b> et <b>chasseur de primes</b> sont relevées en jeu et donc partielles :
+      leur absence signifie « pas de source connue », pas « au hasard uniquement ».</p>
     <div class="controls">
       <input type="search" id="pv-search" placeholder="Rechercher un passif ou un effet…"
              aria-label="Rechercher une compétence passive" autocomplete="off">
@@ -267,6 +269,12 @@
         <option value="">Positifs et négatifs</option>
         <option value="true">Positifs seulement</option>
         <option value="false">Négatifs seulement</option>
+      </select>
+      <select id="pv-provenance" aria-label="Filtrer par provenance">
+        <option value="">Toutes les provenances</option>
+        <option value="marchand">Marchand</option>
+        <option value="chasseur">Chasseur de primes</option>
+        <option value="aucune">Sans source connue</option>
       </select>
       <select id="pv-tri" aria-label="Trier">
         <option value="rarete">Trier par rareté</option>

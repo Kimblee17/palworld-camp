@@ -85,6 +85,46 @@ CAT_LABELS = {
 }
 
 
+# Passifs qu'on peut se procurer autrement qu'au hasard. Table RELEVÉE EN JEU par
+# l'utilisateur, pas collectée : aucune des deux sources ne publie l'inventaire des
+# marchands ni celui des chasseurs de primes.
+#
+# ⚠ Ce que dit cette table : « ce passif s'achète ici ». Ce qu'elle NE dit PAS :
+# « la liste est complète ». Un marchand qu'on n'a pas croisé peut en vendre d'autres.
+# L'absence d'étiquette signifie donc « pas de source connue », jamais « au hasard
+# uniquement » — c'est le poids de tirage, lui, qui porte cette information.
+#
+# Clé = nom FRANÇAIS, celui que l'utilisateur lit dans le jeu. Toute entrée qui ne
+# retrouve pas exactement un passif fait échouer la collecte (cf. `_provenances`) :
+# un libellé retouché en amont doit se voir, pas disparaître en silence.
+SOURCES = {
+    "chasseur": ["Impulsif", "Corps Robuste", "Appliqué", "Chef d'Assaut",
+                 "Stratège de Forteresse", "Motivateur", "Guide de l'effort"],
+    "marchand": ["Infatigable", "Coursier", "Coursier Marin", "Noble",
+                 "Instructeur de Tir", "Sérénité", "Ange Médecin"],
+}
+SOURCE_LABELS = {"chasseur": "Chasseur de primes", "marchand": "Marchand"}
+
+
+def _provenances(passifs):
+    """Nom français -> provenance, après contrôle que chaque nom désigne bien un passif."""
+    index = {}
+    for p in passifs:
+        index.setdefault(p["nameFr"], []).append(p)
+    out, fautifs = {}, []
+    for source, noms in SOURCES.items():
+        for nom in noms:
+            trouves = index.get(nom, [])
+            if len(trouves) != 1:
+                fautifs.append(f"{nom} ({len(trouves)} correspondance(s))")
+            else:
+                out[nom] = source
+    if fautifs:
+        raise RuntimeError(
+            "Table des provenances désynchronisée du catalogue : " + ", ".join(fautifs))
+    return out
+
+
 def categories_de(effet):
     trouvees = [c for c, motifs in CATEGORIES.items()
                 if any(m.lower() in effet.lower() for m in motifs)]
@@ -232,6 +272,11 @@ def scrape(verbose=True):
         uniques.append(p)
     uniques.sort(key=lambda p: (-p["rank"], p["name"]))
 
+    provenances = _provenances(uniques)
+    for p in uniques:
+        if p["nameFr"] in provenances:
+            p["source"] = provenances[p["nameFr"]]
+
     if verbose:
         par_rarete = {}
         for p in uniques:
@@ -243,12 +288,15 @@ def scrape(verbose=True):
               f"(alignement vérifié sur {len(en)} cartes)")
         print(f"  {sum(1 for p in uniques if 'code' in p)} avec code interne "
               f"(le reste bloque le croisement avec la boîte)")
+        print(f"  {len(provenances)} avec une provenance connue : "
+              + ", ".join(f"{len(v)} {SOURCE_LABELS[k].lower()}" for k, v in SOURCES.items()))
     if len(uniques) < 60:
         raise RuntimeError(f"Seulement {len(uniques)} passifs extraits — structure paldb.cc changée ?")
     manquants = [p["name"] for p in uniques if not p["nameFr"]]
     if manquants:
         raise RuntimeError(f"{len(manquants)} passifs sans nom français : {manquants[:5]}")
-    return {"passives": uniques, "categoryLabels": CAT_LABELS}
+    return {"passives": uniques, "categoryLabels": CAT_LABELS,
+            "sourceLabels": SOURCE_LABELS}
 
 
 def load_passives(cache=CACHE, verbose=True):
