@@ -1,4 +1,4 @@
-68 noms du catalogue encore attribues a aucun code.
+50 noms du catalogue encore attribues a aucun code.
 Rang / rarete / nom FR / nom EN / effet.
 
 r 5  arcenciel  Berceau Divin                  World Tree Seedbed           Decrease Hunger depletion rate by +50.0% HP -20 % World Tree resources
@@ -21,40 +21,22 @@ r 3  dore       Généreux                       Service-Minded               Yo
 r 3  dore       Nutritionniste                 Diet Lover                   Hunger decreases +15.0% slower.
 r 3  dore       Philanthrope                   Philanthropist               When assigned to a Breeding Farm, breeding speed is increased by 100%.
 r 2  dore       Poids Lourd                    Heavyweight                  Defense +20% Immune to Knockback
-r 1  commun     Anormal                        Abnormal                     10% decrease in incoming Neutral damage.
 r 1  commun     Belle Fourrure                 Fine Furs                    Increases the value of items when sold by +3%
 r 1  commun     Brave                          Brave                        Attack +10% (ToSelf)
-r 1  commun     Bronzage Naturel               Suntan Lover                 10% decrease in incoming Fire damage.
-r 1  commun     Condensateur                   Capacitor                    10% increase in Lightning attack damage.
-r 1  commun     Esprit Zen                     Spirit of Zen                10% increase in Neutral attack damage.
-r 1  commun     Force Tellurique               Power of Gaia                10% increase in Earth attack damage.
 r 1  commun     Force de la Nature             Fit as a Fiddle              Max stamina +25% *This effect is only valid for rideable pals.
-r 1  commun     Fragrance Boisée               Fragrant Foliage             10% increase in Grass attack damage.
 r 1  commun     Frugal                         Dainty Eater                 Hunger decreases +10.0% slower.
-r 1  commun     Hydrophile                     Hydromaniac                  10% increase in Water attack damage.
 r 1  commun     Impatient                      Impatient                    Active skill cooldown reduction 15%
-r 1  commun     Imperméabilité                 Waterproof                   10% decrease in incoming Water damage.
-r 1  commun     Isolant                        Insulated Body               10% decrease in incoming Lightning damage.
-r 1  commun     Lumineux                       Cheery                       10% decrease in incoming Dark damage.
 r 1  commun     Masochiste                     Masochist                    Defense +15% (ToSelf)
 r 1  commun     Nage Fluide                    Sleek Stroke                 30% increase movement speed on water.
 r 1  commun     Nocturne                       Insomnia                     Does not sleep and continues to work even at night.
 r 1  commun     Optimiste                      Positive Thinker             SAN drops +10.0% slower.
-r 1  commun     Parasismique                   Earthquake Resistant         10% decrease in incoming Earth damage.
 r 1  commun     Peau dure                      Hard Skin                    Defense +10% (ToSelf)
-r 1  commun     Protection Végétale            Botanical Barrier            10% decrease in incoming Grass damage.
-r 1  commun     Pyromane                       Pyromaniac                   10% increase in Fire attack damage.
 r 1  commun     Rentre-Dedans                  Aggressive                   Attack +10% (ToSelf)
 r 1  commun     Sadique                        Sadist                       Attack +15% (ToSelf)
-r 1  commun     Sang Chaud                     Heated Body                  10% decrease in incoming Ice damage.
-r 1  commun     Sang Froid                     Coldblooded                  10% increase in Ice attack damage.
-r 1  commun     Sang de Dragon                 Blood of the Dragon          10% increase in Dragon attack damage.
 r 1  commun     Sérieux                        Serious                      Work Speed +20% (ToSelf)
 r 1  commun     Trouble-Fête                   Hooligan                     Attack +15% (ToSelf)
-r 1  commun     Tueur de Dragons               Dragonkiller                 10% decrease in incoming Dragon damage.
 r 1  commun     Vaniteux                       Conceited                    Work Speed +10% (ToSelf)
 r 1  commun     Vif                            Nimble                       10% increase to movement speed.
-r 1  commun     Voile des Ténèbres             Veil of Darkness             10% increase in Dark attack damage.
 r-1  negatif    Glouton                        Glutton                      Hunger decreases +10.0% faster.
 r-1  negatif    Lâche                          Coward                       Attack -10% (ToSelf)
 r-1  negatif    Maladroit                      Clumsy                       Work Speed -10% (ToSelf)

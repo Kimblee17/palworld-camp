@@ -1,89 +1,89 @@
-﻿Code;Occurrences;Famille;Signe;Palier ou detail;Nom EN;Rarete;Rang;Nom FR;A verifier
-CraftSpeed_up2;80;Vitesse de travail;+;palier 2;Artisan;dore;3;Appliqué;
-CraftSpeed_up1;68;Vitesse de travail;+;palier 1;;;;;oui
-Nocturnal;65;;;;;;;;oui
-PAL_rude;50;;;;;;;;oui
-ElementResist_Fire_1_PAL;29;Résistance élémentaire;;Fire;;;;;oui
-Deffence_up1;29;Défense;+;palier 1;;;;;oui
-PAL_FullStomach_Up_1;28;Satiété;+;palier 1;;;;;oui
-Deffence_up2_2;27;Défense;+;palier 2;;;;;oui
-Stamina_Up_1;24;Endurance;+;palier 1;Infinite Stamina;dore;3;Infatigable;
-TrainerDEF_UP_1;24;Bonus au joueur;;DEF;Stronghold Strategist;dore;3;Stratège de Forteresse;
-CoolTimeReduction_Up_1;23;Recharge de compétence;+;palier 1;Serenity;dore;3;Sérénité;
-PAL_ALLAttack_up2;23;Attaque;+;palier 2;;;;;oui
-PAL_ALLAttack_down1;22;Attaque;−;palier 1;;;;;oui
-ElementBoost_Fire_1_PAL;22;Attaque élémentaire;;Fire;;;;;oui
-Stamina_Down_1;22;Endurance;−;palier 1;;;;;oui
-ElementResist_Dragon_1_PAL;22;Résistance élémentaire;;Dragon;;;;;oui
-PAL_ALLAttack_up1;21;Attaque;+;palier 1;;;;;oui
-CraftSpeed_down2;21;Vitesse de travail;−;palier 2;;;;;oui
-TrainerLogging_up1;21;Bonus au joueur;;Logging;;;;;oui
-ElementResist_Normal_1_PAL;21;Résistance élémentaire;;Normal;;;;;oui
-ElementBoost_Earth_1_PAL;20;Attaque élémentaire;;Earth;;;;;oui
-PAL_masochist;20;;;;;;;;oui
-PAL_FullStomach_Up_2;20;Satiété;+;palier 2;;;;;oui
-ElementBoost_Ice_1_PAL;19;Attaque élémentaire;;Ice;;;;;oui
-CoolTimeReduction_Up_2;19;Recharge de compétence;+;palier 2;;;;;oui
-ElementResist_Dark_1_PAL;19;Résistance élémentaire;;Dark;;;;;oui
-ElementBoost_Dark_1_PAL;19;Attaque élémentaire;;Dark;;;;;oui
-SwimSpeed_up_1;19;Nage;+;palier 1;;;;;oui
-PAL_Sanity_Up_1;18;Moral (SAN);+;palier 1;;;;;oui
-TrainerATK_UP_1;17;Bonus au joueur;;ATK;Vanguard;dore;3;Chef d'Assaut;
-ElementResist_Thunder_1_PAL;17;Résistance élémentaire;;Thunder;;;;;oui
-PAL_Sanity_Down_2;17;Moral (SAN);−;palier 2;;;;;oui
-CoolTimeReduction_Down_1;17;Recharge de compétence;−;palier 1;;;;;oui
-CraftSpeed_down1;16;Vitesse de travail;−;palier 1;;;;;oui
-PAL_sadist;16;;;;;;;;oui
-Deffence_up2;16;Défense;+;palier 2;Burly Body;dore;3;Corps Robuste;
-ElementBoost_Aqua_1_PAL;16;Attaque élémentaire;;Aqua;;;;;oui
-NonKilling;16;;;;;;;;oui
-ElementResist_Aqua_1_PAL;15;Résistance élémentaire;;Aqua;;;;;oui
-ElementResist_Ice_1_PAL;15;Résistance élémentaire;;Ice;;;;;oui
-PAL_FullStomach_Down_2;15;Satiété;−;palier 2;;;;;oui
-Stamina_Up_2;14;Endurance;+;palier 2;;;;;oui
-ElementResist_Leaf_1_PAL;14;Résistance élémentaire;;Leaf;;;;;oui
-PAL_ALLAttack_down2;14;Attaque;−;palier 2;;;;;oui
-TrainerWorkSpeed_UP_1;14;Bonus au joueur;;WorkSpeed;Motivational Leader;dore;3;Motivateur;
-PAL_Sanity_Up_2;14;Moral (SAN);+;palier 2;;;;;oui
-Deffence_down1;14;Défense;−;palier 1;;;;;oui
-MoveSpeed_up_1;13;Déplacement;+;palier 1;;;;;oui
-ElementBoost_Thunder_1_PAL;13;Attaque élémentaire;;Thunder;;;;;oui
-Test_PalEgg_HatchingSpeed_Up;13;;;;;;;;oui
-SwimSpeed_up_2;13;Nage;+;palier 2;Ace Swimmer;dore;3;Coursier Marin;
-Noukin;13;;;;Musclehead;dore;2;Impulsif;
-MoveSpeed_up_2;12;Déplacement;+;palier 2;Runner;dore;3;Coursier;
-PAL_FullStomach_Down_1;12;Satiété;−;palier 1;;;;;oui
-PAL_CorporateSlave;12;;;;Work Slave;commun;1;Soumis;
-PAL_conceited;11;;;;;;;;oui
-ElementResist_Earth_1_PAL;10;Résistance élémentaire;;Earth;;;;;oui
-Deffence_down2;10;Défense;−;palier 2;;;;;oui
-PAL_oraora;10;;;;;;;;oui
-SalePrice_Up_2;10;Prix de vente;+;palier 2;;;;;oui
-TrainerMining_up1;10;Bonus au joueur;;Mining;;;;;oui
-SalePrice_Up_1;10;Prix de vente;+;palier 1;Noble;dore;3;Noble;
-ElementBoost_Leaf_1_PAL;9;Attaque élémentaire;;Leaf;;;;;oui
-ElementBoost_Normal_1_PAL;9;Attaque élémentaire;;Normal;;;;;oui
-Alien;9;;;;;;;;oui
-MiniNushi;9;;;;;;;;oui
-Rare;9;;;;Lucky;arcenciel;4;Chanceux;
-SalePrice_Down_1;8;Prix de vente;−;palier 1;;;;;oui
-ElementBoost_Dragon_1_PAL;7;Attaque élémentaire;;Dragon;;;;;oui
-PAL_Sanity_Down_1;7;Moral (SAN);−;palier 1;;;;;oui
-SelfDeathAddItemDrop_up_2;6;Butin à la mort;+;palier 2;;;;;oui
-WorkSuitabilityAddRank_MonsterFarm_1;6;Aptitude de travail;;MonsterFarm;;;;;oui
-ReloadSpeedUp_Passive;5;;;;Reload Master;dore;3;Instructeur de Tir;
-PlayerSP_DecreaseRate_Passive;5;;;;Wellness Watcher;dore;3;Guide de l'effort;
-NightOwl;4;;;;Night Owl;negatif;-1;;
-AutoHPRegeneRate_Passive;3;;;;Healing Coach;dore;3;Ange Médecin;
-PAL_FullStomach_Down_3;3;Satiété;−;palier 3;Mastery of Fasting;arcenciel;4;Maîtrise de la Faim;
-Deffence_up3;3;Défense;+;palier 3;Diamond Body;arcenciel;4;Corps Adamantin;
-CraftSpeed_up3;3;Vitesse de travail;+;palier 3;Remarkable Craftsmanship;arcenciel;4;Maîtrise Exceptionnelle;
-MoveSpeed_up_3;2;Déplacement;+;palier 3;Swift;arcenciel;4;Sprinteur;
-Vampire;2;;;;Vampiric;arcenciel;4;Vampire;
-SelfDeathAddItemDrop_up_3;1;Butin à la mort;+;palier 3;;;;;oui
-Stamina_Up_3;1;Endurance;+;palier 3;Eternal Engine;arcenciel;4;Vigueur Éternelle;
-Nushi;1;;;;;;;;oui
-MutationPal_Mutant;1;;;;;;;;oui
-PAL_ALLAttack_up3;1;Attaque;+;palier 3;Demon God;arcenciel;4;Colère Divine;
-MutationPal_Immortal;1;;;;;;;;oui
-SwimSpeed_up_3;1;Nage;+;palier 3;King of the Waves;arcenciel;4;Roi des Vagues;
+﻿Code;Occurrences;Famille;Signe;Palier ou detail;Nom FR;Nom EN;Rarete;Rang;Origine;Candidats
+CraftSpeed_up2;80;Vitesse de travail;+;palier 2;Appliqué;Artisan;dore;3;paldb;
+CraftSpeed_up1;68;Vitesse de travail;+;palier 1;;;;;;Vaniteux (10%) | Sérieux (20%)
+Nocturnal;65;;;;;;;;;
+PAL_rude;50;;;;;;;;;
+ElementResist_Fire_1_PAL;29;Résistance élémentaire;;Fire;Bronzage Naturel;Suntan Lover;commun;1;bijection élémentaire;
+Deffence_up1;29;Défense;+;palier 1;;;;;;Peau dure (10%) | Masochiste (15%) | Poids Lourd (20%) | Rempart Sacré (50%)
+PAL_FullStomach_Up_1;28;Satiété;+;palier 1;;;;;;Frugal (10%) | Nutritionniste (15%)
+Deffence_up2_2;27;Défense;+;palier 2;;;;;;Peau dure (10%) | Masochiste (15%) | Poids Lourd (20%) | Rempart Sacré (50%)
+Stamina_Up_1;24;Endurance;+;palier 1;Infatigable;Infinite Stamina;dore;3;paldb;
+TrainerDEF_UP_1;24;Bonus au joueur;;DEF;Stratège de Forteresse;Stronghold Strategist;dore;3;paldb;
+CoolTimeReduction_Up_1;23;Recharge de compétence;+;palier 1;Sérénité;Serenity;dore;3;paldb;
+PAL_ALLAttack_up2;23;Attaque;+;palier 2;;;;;;Rentre-Dedans (10%) | Brave (10%) | Trouble-Fête (15%) | Sadique (15%) | Féroce (20%)
+PAL_ALLAttack_down1;22;Attaque;−;palier 1;;;;;;Lâche (10%) | Pacifiste (20%)
+ElementBoost_Fire_1_PAL;22;Attaque élémentaire;;Fire;Pyromane;Pyromaniac;commun;1;bijection élémentaire;
+Stamina_Down_1;22;Endurance;−;palier 1;;;;;;Reclus (25%)
+ElementResist_Dragon_1_PAL;22;Résistance élémentaire;;Dragon;Tueur de Dragons;Dragonkiller;commun;1;bijection élémentaire;
+PAL_ALLAttack_up1;21;Attaque;+;palier 1;;;;;;Rentre-Dedans (10%) | Brave (10%) | Trouble-Fête (15%) | Sadique (15%) | Féroce (20%)
+CraftSpeed_down2;21;Vitesse de travail;−;palier 2;;;;;;Maladroit (10%) | Négligent (30%)
+TrainerLogging_up1;21;Bonus au joueur;;Logging;;;;;;
+ElementResist_Normal_1_PAL;21;Résistance élémentaire;;Normal;Anormal;Abnormal;commun;1;bijection élémentaire;
+ElementBoost_Earth_1_PAL;20;Attaque élémentaire;;Earth;Force Tellurique;Power of Gaia;commun;1;bijection élémentaire;
+PAL_masochist;20;;;;;;;;;
+PAL_FullStomach_Up_2;20;Satiété;+;palier 2;;;;;;Frugal (10%) | Nutritionniste (15%)
+ElementBoost_Ice_1_PAL;19;Attaque élémentaire;;Ice;Sang Froid;Coldblooded;commun;1;bijection élémentaire;
+CoolTimeReduction_Up_2;19;Recharge de compétence;+;palier 2;;;;;;Impatient (15%)
+ElementResist_Dark_1_PAL;19;Résistance élémentaire;;Dark;Lumineux;Cheery;commun;1;bijection élémentaire;
+ElementBoost_Dark_1_PAL;19;Attaque élémentaire;;Dark;Voile des Ténèbres;Veil of Darkness;commun;1;bijection élémentaire;
+SwimSpeed_up_1;19;Nage;+;palier 1;;;;;;Nage Fluide (30%)
+PAL_Sanity_Up_1;18;Moral (SAN);+;palier 1;;;;;;
+TrainerATK_UP_1;17;Bonus au joueur;;ATK;Chef d'Assaut;Vanguard;dore;3;paldb;
+ElementResist_Thunder_1_PAL;17;Résistance élémentaire;;Thunder;Isolant;Insulated Body;commun;1;bijection élémentaire;
+PAL_Sanity_Down_2;17;Moral (SAN);−;palier 2;;;;;;
+CoolTimeReduction_Down_1;17;Recharge de compétence;−;palier 1;;;;;;Tranquille (15%)
+CraftSpeed_down1;16;Vitesse de travail;−;palier 1;;;;;;Maladroit (10%) | Négligent (30%)
+PAL_sadist;16;;;;;;;;;
+Deffence_up2;16;Défense;+;palier 2;Corps Robuste;Burly Body;dore;3;paldb;
+ElementBoost_Aqua_1_PAL;16;Attaque élémentaire;;Aqua;Hydrophile;Hydromaniac;commun;1;bijection élémentaire;
+NonKilling;16;;;;;;;;;
+ElementResist_Aqua_1_PAL;15;Résistance élémentaire;;Aqua;Imperméabilité;Waterproof;commun;1;bijection élémentaire;
+ElementResist_Ice_1_PAL;15;Résistance élémentaire;;Ice;Sang Chaud;Heated Body;commun;1;bijection élémentaire;
+PAL_FullStomach_Down_2;15;Satiété;−;palier 2;;;;;;Glouton (10%) | Estomac sans Fond (15%)
+Stamina_Up_2;14;Endurance;+;palier 2;;;;;;Force de la Nature (25%)
+ElementResist_Leaf_1_PAL;14;Résistance élémentaire;;Leaf;Protection Végétale;Botanical Barrier;commun;1;bijection élémentaire;
+PAL_ALLAttack_down2;14;Attaque;−;palier 2;;;;;;Lâche (10%) | Pacifiste (20%)
+TrainerWorkSpeed_UP_1;14;Bonus au joueur;;WorkSpeed;Motivateur;Motivational Leader;dore;3;paldb;
+PAL_Sanity_Up_2;14;Moral (SAN);+;palier 2;;;;;;
+Deffence_down1;14;Défense;−;palier 1;;;;;;Vulnérable aux Coups (10%) | Os fragiles (20%)
+MoveSpeed_up_1;13;Déplacement;+;palier 1;;;;;;Vif (10%)
+ElementBoost_Thunder_1_PAL;13;Attaque élémentaire;;Thunder;Condensateur;Capacitor;commun;1;bijection élémentaire;
+Test_PalEgg_HatchingSpeed_Up;13;;;;;;;;;
+SwimSpeed_up_2;13;Nage;+;palier 2;Coursier Marin;Ace Swimmer;dore;3;paldb;
+Noukin;13;;;;Impulsif;Musclehead;dore;2;paldb;
+MoveSpeed_up_2;12;Déplacement;+;palier 2;Coursier;Runner;dore;3;paldb;
+PAL_FullStomach_Down_1;12;Satiété;−;palier 1;;;;;;Glouton (10%) | Estomac sans Fond (15%)
+PAL_CorporateSlave;12;;;;Soumis;Work Slave;commun;1;paldb;
+PAL_conceited;11;;;;;;;;;
+ElementResist_Earth_1_PAL;10;Résistance élémentaire;;Earth;Parasismique;Earthquake Resistant;commun;1;bijection élémentaire;
+Deffence_down2;10;Défense;−;palier 2;;;;;;Vulnérable aux Coups (10%) | Os fragiles (20%)
+PAL_oraora;10;;;;;;;;;
+SalePrice_Up_2;10;Prix de vente;+;palier 2;;;;;;Belle Fourrure (3%)
+TrainerMining_up1;10;Bonus au joueur;;Mining;;;;;;
+SalePrice_Up_1;10;Prix de vente;+;palier 1;Noble;Noble;dore;3;paldb;
+ElementBoost_Leaf_1_PAL;9;Attaque élémentaire;;Leaf;Fragrance Boisée;Fragrant Foliage;commun;1;bijection élémentaire;
+ElementBoost_Normal_1_PAL;9;Attaque élémentaire;;Normal;Esprit Zen;Spirit of Zen;commun;1;bijection élémentaire;
+Alien;9;;;;;;;;;
+MiniNushi;9;;;;;;;;;
+Rare;9;;;;Chanceux;Lucky;arcenciel;4;paldb;
+SalePrice_Down_1;8;Prix de vente;−;palier 1;;;;;;Miteux (10%)
+ElementBoost_Dragon_1_PAL;7;Attaque élémentaire;;Dragon;Sang de Dragon;Blood of the Dragon;commun;1;bijection élémentaire;
+PAL_Sanity_Down_1;7;Moral (SAN);−;palier 1;;;;;;
+SelfDeathAddItemDrop_up_2;6;Butin à la mort;+;palier 2;;;;;;
+WorkSuitabilityAddRank_MonsterFarm_1;6;Aptitude de travail;;MonsterFarm;;;;;;
+ReloadSpeedUp_Passive;5;;;;Instructeur de Tir;Reload Master;dore;3;paldb;
+PlayerSP_DecreaseRate_Passive;5;;;;Guide de l'effort;Wellness Watcher;dore;3;paldb;
+NightOwl;4;;;;Oiseau de Nuit;Night Owl;negatif;-1;etabli;
+AutoHPRegeneRate_Passive;3;;;;Ange Médecin;Healing Coach;dore;3;paldb;
+PAL_FullStomach_Down_3;3;Satiété;−;palier 3;Maîtrise de la Faim;Mastery of Fasting;arcenciel;4;paldb;
+Deffence_up3;3;Défense;+;palier 3;Corps Adamantin;Diamond Body;arcenciel;4;paldb;
+CraftSpeed_up3;3;Vitesse de travail;+;palier 3;Maîtrise Exceptionnelle;Remarkable Craftsmanship;arcenciel;4;paldb;
+MoveSpeed_up_3;2;Déplacement;+;palier 3;Sprinteur;Swift;arcenciel;4;paldb;
+Vampire;2;;;;Vampire;Vampiric;arcenciel;4;paldb;
+SelfDeathAddItemDrop_up_3;1;Butin à la mort;+;palier 3;;;;;;
+Stamina_Up_3;1;Endurance;+;palier 3;Vigueur Éternelle;Eternal Engine;arcenciel;4;paldb;
+Nushi;1;;;;;;;;;
+MutationPal_Mutant;1;;;;;;;;;
+PAL_ALLAttack_up3;1;Attaque;+;palier 3;Colère Divine;Demon God;arcenciel;4;paldb;
+MutationPal_Immortal;1;;;;;;;;;
+SwimSpeed_up_3;1;Nage;+;palier 3;Roi des Vagues;King of the Waves;arcenciel;4;paldb;
