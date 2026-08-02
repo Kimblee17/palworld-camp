@@ -6,20 +6,23 @@ palworld.gg ne rend côté serveur que 60 passifs, tous positifs et de rang 3 à
 communs et ses négatifs sont chargés en JavaScript et restent hors de portée. paldb.cc
 publie les 412, avec un rang SIGNÉ qui donne la polarité sans interprétation.
 
-⚠ NOMS EN ANGLAIS, assumé. Aucune source ne permet de joindre les noms français de
-façon fiable :
-  - palworld.gg publie 60 noms FR, mais triés par langue : l'appariement positionnel
-    avec la liste anglaise est faux (vérifié) ;
-  - la jonction par signature numérique des effets ne lève l'ambiguïté que sur 2 des
-    60 — trop de passifs partagent « +20 % / -10 % ».
-Les noms français viendront de la table code -> nom, remplie à la main (lot B).
+NOMS FRANÇAIS : paldb publie la même page en neuf langues, engendrée à partir de la
+même liste et DANS LE MÊME ORDRE. La correspondance se fait donc par position, ce qui
+n'est pas une conjecture mais un fait vérifié à chaque exécution (`_aligner`) :
+  - même nombre de cartes ;
+  - même rang à chaque position, 412 fois sur 412 ;
+  - jamais deux codes internes différents à la même position.
+Contrôle indépendant fait une fois à la main : les 60 passifs que palworld.gg rend en
+clair ont, dans ses versions FR et EN, une signature d'effet chiffrée identique ;
+sur les 29 dont cette signature est unique, les 29 traductions concordent avec paldb,
+zéro désaccord. L'appariement positionnel entre les deux LISTES de palworld.gg, lui,
+reste faux — chaque langue y est triée alphabétiquement.
 
 Ce que paldb fournit par passif :
   - `rank`   : entier signé de -3 à +5. Le SIGNE porte la polarité, la VALEUR la rareté.
   - `weight` : poids de tirage aléatoire (100 courant, 5 rare, 0 jamais au hasard).
   - `badges` : Pal / RarePal / Armor / Accessory — sert à écarter l'équipement.
-  - `code`   : identifiant interne du jeu, présent seulement quand un implant existe
-               (21 sur ~90). C'est ce qui bloque le croisement avec la boîte (lot B).
+  - `code`   : identifiant interne du jeu, présent seulement quand un implant existe.
 
 Cache : data/passives.json. Lançable seul :  python fetch_passives.py
 """
@@ -29,13 +32,23 @@ import os
 import re
 import urllib.parse
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
 # En intégration continue on veut un échec franc plutôt qu'un repli silencieux.
 STRICT = os.getenv("PALWORLD_STRICT_FETCH") == "1"
 CACHE = BASE_DIR / "data" / "passives.json"
-URL = "https://paldb.cc/en/Passive_Skills"
+URL = "https://paldb.cc/{lang}/Passive_Skills"
+
+# Les deux langues dont on lit les NOMS. Un échec ici est fatal.
+LANGUES_NOM = ("en", "fr")
+# Langues d'appoint dont on ne prend QUE le code interne, jamais un libellé. paldb
+# n'affiche le lien vers l'implant que si l'objet est traduit dans la langue lue :
+# aucune page ne les a tous, l'union en donne 35 contre 30 pour l'anglais seul. Un
+# échec ici n'est pas fatal — on y perd quelques codes, pas une donnée affichée.
+LANGUES_CODE = ("de", "es", "it", "ja", "ko", "ru")
+
 
 # Rang -> rareté d'affichage. Correspondance donnée par l'utilisateur, qui a le jeu
 # sous les yeux. Tout rang négatif est « négatif » quelle que soit son amplitude.
@@ -52,6 +65,8 @@ def rarete(rang):
 # Effet -> catégorie. Table explicite plutôt qu'une heuristique floue : chaque motif
 # est un terme que paldb emploie littéralement. Un passif peut relever de plusieurs
 # catégories (Dieu de la Destruction touche l'attaque ET les PV), on les cumule.
+# ⚠ Les motifs sont ANGLAIS et le restent : la catégorisation se fait sur le texte
+# anglais, seul stable, même quand l'affichage est français.
 CATEGORIES = {
     "combat": ["Attack", "Defense", "Max Health", "Critical", "Shot", "Melee",
                "ActiveSkillCoolTime", "Active skill cooldown"],
@@ -82,59 +97,119 @@ def fetch(url):
         return r.read().decode("utf-8", "replace")
 
 
-# Une carte = bannière (rang + nom) puis infobulle (effets bruts + badges) puis effet lisible.
-CARTE = re.compile(
-    r'passive_banner_rank(-?\d+)".*?passive-rank-?\d+ ps-2 py-1">([^<]+)</div>'
-    r'.*?data-bs-title="(.*?)"\s*/>.*?<div class="p-2"[^>]*>\s*<div>(.*?)</div><div>', re.S)
-# Le code interne n'apparaît que sur les passifs pourvus d'un implant.
+# Chaque carte commence à sa bannière de rang ; la suivante en marque la fin. On
+# découpe d'abord, on extrait ensuite : c'est ce découpage qui rend les positions
+# comparables d'une langue à l'autre.
+BANNIERE = re.compile(r'passive_banner_rank(-?\d+)"')
+NOM = re.compile(r'passive-rank-?\d+ ps-2 py-1">([^<]+)</div>')
+TIP = re.compile(r'data-bs-title="(.*?)"\s*/>', re.S)
+EFFET = re.compile(r'<div class="p-2"[^>]*>\s*<div>(.*?)</div><div>', re.S)
+# Le code interne n'apparaît que sur les passifs pourvus d'un implant. C'est un lien
+# FRÈRE de l'infobulle, pas dedans : le chercher dans la seule infobulle en ratait
+# la moitié (Musclehead, Burly Body, Noble…).
 CODE_IMPLANT = re.compile(r'PalPassiveSkillChange_([A-Za-z0-9_]+)"')
 CODE_LIEN = re.compile(
     r'class="itemname[^"]*passive-rank(-?\d+)"[^>]*data-hover="\?s=PassiveSkills%2F([^"]+)">([^<]+)</a>')
+# Garde-fou du dernier bloc, qui court sinon jusqu'au pied de page.
+FIN_CARTE = 6000
 
 
 def _texte(frag):
     return H.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", frag))).strip()
 
 
+def decouper(h):
+    """La page en cartes, dans l'ordre. Une entrée par bannière de rang."""
+    bornes = [(m.start(), int(m.group(1))) for m in BANNIERE.finditer(h)]
+    cartes = []
+    for i, (deb, rang) in enumerate(bornes):
+        fin = bornes[i + 1][0] if i + 1 < len(bornes) else min(len(h), deb + FIN_CARTE)
+        bloc = h[deb:fin]
+        nom, tip, eff = NOM.search(bloc), TIP.search(bloc), EFFET.search(bloc)
+        code = CODE_IMPLANT.search(bloc)
+        cartes.append({
+            "rang": rang,
+            "nom": H.unescape(nom.group(1)).strip() if nom else None,
+            "tip": H.unescape(tip.group(1)) if tip else "",
+            "effet": _texte(eff.group(1)) if eff else "",
+            "code": urllib.parse.unquote(code.group(1)) if code else None,
+        })
+    return cartes
+
+
+def _aligner(pages):
+    """Vérifie que toutes les langues décrivent la même liste, dans le même ordre.
+
+    Si ce contrôle passe, lire le nom français à la position i de la page FR et le nom
+    anglais à la position i de la page EN désigne bien le même passif. S'il échoue, la
+    page a changé de forme et toute traduction déduite serait fausse : on s'arrête.
+    """
+    ref_lang, ref = next(iter(pages.items()))
+    for lang, cartes in pages.items():
+        if len(cartes) != len(ref):
+            raise RuntimeError(
+                f"Alignement impossible : {len(cartes)} cartes en {lang} contre "
+                f"{len(ref)} en {ref_lang} — structure paldb.cc changée ?")
+        ecarts = [i for i, (a, b) in enumerate(zip(cartes, ref)) if a["rang"] != b["rang"]]
+        if ecarts:
+            raise RuntimeError(
+                f"Alignement impossible : {len(ecarts)} rangs divergent entre {lang} et "
+                f"{ref_lang} (position {ecarts[0]}) — l'ordre des pages a changé.")
+    # Le code interne est indépendant de la langue : deux valeurs différentes à la même
+    # position signeraient un décalage que l'égalité des rangs n'aurait pas révélé.
+    codes = []
+    for i in range(len(ref)):
+        vus = {c[i]["code"] for c in pages.values() if c[i]["code"]}
+        if len(vus) > 1:
+            raise RuntimeError(
+                f"Alignement impossible : codes contradictoires en position {i} ({vus}).")
+        codes.append(vus.pop() if vus else None)
+    return codes
+
+
 def scrape(verbose=True):
-    h = fetch(URL)
+    def charger(lang, obligatoire):
+        try:
+            return lang, decouper(fetch(URL.format(lang=lang)))
+        except Exception as exc:
+            if obligatoire:
+                raise
+            if verbose:
+                print(f"  ⚠ page {lang} injoignable ({exc}) — quelques codes en moins.")
+            return lang, None
 
-    # Codes internes glanés dans les liens (utiles au lot B, croisement avec la boîte).
-    codes = {}
-    for _, code, nom in CODE_LIEN.findall(h):
-        codes[H.unescape(nom).strip()] = urllib.parse.unquote(code)
+    taches = [(l, True) for l in LANGUES_NOM] + [(l, False) for l in LANGUES_CODE]
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        pages = {l: c for l, c in pool.map(lambda a: charger(*a), taches) if c}
 
-    # L'implant est un lien FRERE de l'infobulle, pas dedans : le chercher dans la
-    # seule infobulle ratait la moitie des codes (Musclehead, Burly Body, Noble...).
-    # On balaie donc chaque carte entiere, d'une banniere de rang a la suivante.
-    bornes = [m.start() for m in re.finditer(r'passive_banner_rank(?:-?\d+)"', h)]
-    for i, deb in enumerate(bornes):
-        bloc = h[deb: bornes[i + 1] if i + 1 < len(bornes) else deb + 4000]
-        n = re.search(r'passive-rank-?\d+ ps-2 py-1">([^<]+)</div>', bloc)
-        c = CODE_IMPLANT.search(bloc)
-        if n and c:
-            codes.setdefault(H.unescape(n.group(1)).strip(), urllib.parse.unquote(c.group(1)))
+    codes = _aligner(pages)
+    en, fr = pages["en"], pages["fr"]
+
+    # Codes glanés dans les liens des autres pages du site, indexés par nom anglais.
+    par_nom = {}
+    for _, code, nom in CODE_LIEN.findall(fetch(URL.format(lang="en"))):
+        par_nom[H.unescape(nom).strip()] = urllib.parse.unquote(code)
 
     out = []
-    for rang, nom, tip, eff in CARTE.findall(h):
-        tip = H.unescape(tip)
-        nom = H.unescape(nom).strip()
-        poids = re.search(r"Weight (\d+)", tip)
-        badges = [b for b in re.findall(r'badge bg-primary">([^<]+)</span>', tip)
+    for i, c in enumerate(en):
+        rang = c["rang"]
+        poids = re.search(r"Weight (\d+)", c["tip"])
+        badges = [b for b in re.findall(r'badge bg-primary">([^<]+)</span>', c["tip"])
                   if not b.startswith("Weight")]
-        implant = CODE_IMPLANT.search(tip)
-        effet = _texte(eff)
+        code = codes[i] or par_nom.get(c["nom"])
         out.append({
-            "name": nom,
-            "rank": int(rang),
-            "rarity": rarete(int(rang)),
-            "positive": int(rang) > 0,
-            "effect": effet,
+            "name": c["nom"],
+            # Le français vient de la MÊME POSITION dans la page FR (cf. _aligner).
+            "nameFr": fr[i]["nom"],
+            "rank": rang,
+            "rarity": rarete(rang),
+            "positive": rang > 0,
+            "effect": c["effet"],
+            "effectFr": fr[i]["effet"],
             "weight": int(poids.group(1)) if poids else None,
             "badges": badges,
-            "categories": categories_de(effet + " " + nom),
-            **({"code": codes.get(nom) or implant.group(1)}
-               if (codes.get(nom) or implant) else {}),
+            "categories": categories_de(c["effet"] + " " + c["nom"]),
+            **({"code": code} if code else {}),
         })
 
     # Seuls les passifs QUE PEUT PORTER UN PAL nous intéressent : la reproduction ne
@@ -161,13 +236,18 @@ def scrape(verbose=True):
         par_rarete = {}
         for p in uniques:
             par_rarete[p["rarity"]] = par_rarete.get(p["rarity"], 0) + 1
-        print(f"  {len(out)} passifs lus, {len(equipement)} d'équipement écartés, "
-              f"{len(uniques)} retenus")
+        print(f"  {len(out)} passifs lus en {len(pages)} langues, "
+              f"{len(equipement)} d'équipement écartés, {len(uniques)} retenus")
         print(f"  répartition : {par_rarete}")
+        print(f"  {sum(1 for p in uniques if p['nameFr'] != p['name'])} noms traduits "
+              f"(alignement vérifié sur {len(en)} cartes)")
         print(f"  {sum(1 for p in uniques if 'code' in p)} avec code interne "
               f"(le reste bloque le croisement avec la boîte)")
     if len(uniques) < 60:
         raise RuntimeError(f"Seulement {len(uniques)} passifs extraits — structure paldb.cc changée ?")
+    manquants = [p["name"] for p in uniques if not p["nameFr"]]
+    if manquants:
+        raise RuntimeError(f"{len(manquants)} passifs sans nom français : {manquants[:5]}")
     return {"passives": uniques, "categoryLabels": CAT_LABELS}
 
 

@@ -1,0 +1,71 @@
+68 noms du catalogue encore attribues a aucun code.
+Rang / rarete / nom FR / nom EN / effet.
+
+r 5  arcenciel  Berceau Divin                  World Tree Seedbed           Decrease Hunger depletion rate by +50.0% HP -20 % World Tree resources
+r 5  arcenciel  Dieu de la Destruction         God of Destruction           Attack + 40% Defense + 20% Max Health -50% World Tree resources will n
+r 5  arcenciel  Lame du Jugement               Twin-Edged Holy Blade        Attack + 50% Defense -30% World Tree resources will not vanish when ap
+r 5  arcenciel  Main du Démon                  Demon’s Hand                 Work Speed + 90 % SAN dreceases +15.0% faster World Tree harvestables 
+r 5  arcenciel  Rempart Sacré                  Sanctified Meat Shield       Defense + 50% Attack -30% World Tree resources will not vanish when ap
+r 5  arcenciel  Sage Immortel                  Hermit Sage                  SAN depletion rate - 50.0% Work Speed -20 % World Tree resources will 
+r 5  arcenciel  Traverse-Mondes                Dimensional Leap             Movement Speed + 50 % Increases Hunger depletion rate by +15.0% World 
+r 4  arcenciel  Grand Prince                   Lavish Hospitality           Your Dropped Items + 100%
+r 4  arcenciel  Inébranlable                   Heart of the Immovable King  SAN drops +20.0% slower.
+r 4  arcenciel  Légèreté                       Lightfooted                  Mounted Jump Count +1
+r 4  arcenciel  Maître Éleveur                 Ranch Master                 Farming's Work Suitability +2
+r 3  dore       Acharné                        Workaholic                   SAN drops +15.0% slower.
+r 3  dore       Apprenti Éleveur               Farmhand                     Farming's Work Suitability +1
+r 3  dore       Chef d'Abattage                Logging Foreman              25% increase in Player Logging Efficiency.
+r 3  dore       Chef d'Extraction              Mine Foreman                 25% increase in Player Mining Efficiency.
+r 3  dore       Féroce                         Ferocious                    Attack +20% (ToSelf)
+r 3  dore       Généreux                       Service-Minded               Your Dropped Items + 50%
+r 3  dore       Nutritionniste                 Diet Lover                   Hunger decreases +15.0% slower.
+r 3  dore       Philanthrope                   Philanthropist               When assigned to a Breeding Farm, breeding speed is increased by 100%.
+r 2  dore       Poids Lourd                    Heavyweight                  Defense +20% Immune to Knockback
+r 1  commun     Anormal                        Abnormal                     10% decrease in incoming Neutral damage.
+r 1  commun     Belle Fourrure                 Fine Furs                    Increases the value of items when sold by +3%
+r 1  commun     Brave                          Brave                        Attack +10% (ToSelf)
+r 1  commun     Bronzage Naturel               Suntan Lover                 10% decrease in incoming Fire damage.
+r 1  commun     Condensateur                   Capacitor                    10% increase in Lightning attack damage.
+r 1  commun     Esprit Zen                     Spirit of Zen                10% increase in Neutral attack damage.
+r 1  commun     Force Tellurique               Power of Gaia                10% increase in Earth attack damage.
+r 1  commun     Force de la Nature             Fit as a Fiddle              Max stamina +25% *This effect is only valid for rideable pals.
+r 1  commun     Fragrance Boisée               Fragrant Foliage             10% increase in Grass attack damage.
+r 1  commun     Frugal                         Dainty Eater                 Hunger decreases +10.0% slower.
+r 1  commun     Hydrophile                     Hydromaniac                  10% increase in Water attack damage.
+r 1  commun     Impatient                      Impatient                    Active skill cooldown reduction 15%
+r 1  commun     Imperméabilité                 Waterproof                   10% decrease in incoming Water damage.
+r 1  commun     Isolant                        Insulated Body               10% decrease in incoming Lightning damage.
+r 1  commun     Lumineux                       Cheery                       10% decrease in incoming Dark damage.
+r 1  commun     Masochiste                     Masochist                    Defense +15% (ToSelf)
+r 1  commun     Nage Fluide                    Sleek Stroke                 30% increase movement speed on water.
+r 1  commun     Nocturne                       Insomnia                     Does not sleep and continues to work even at night.
+r 1  commun     Optimiste                      Positive Thinker             SAN drops +10.0% slower.
+r 1  commun     Parasismique                   Earthquake Resistant         10% decrease in incoming Earth damage.
+r 1  commun     Peau dure                      Hard Skin                    Defense +10% (ToSelf)
+r 1  commun     Protection Végétale            Botanical Barrier            10% decrease in incoming Grass damage.
+r 1  commun     Pyromane                       Pyromaniac                   10% increase in Fire attack damage.
+r 1  commun     Rentre-Dedans                  Aggressive                   Attack +10% (ToSelf)
+r 1  commun     Sadique                        Sadist                       Attack +15% (ToSelf)
+r 1  commun     Sang Chaud                     Heated Body                  10% decrease in incoming Ice damage.
+r 1  commun     Sang Froid                     Coldblooded                  10% increase in Ice attack damage.
+r 1  commun     Sang de Dragon                 Blood of the Dragon          10% increase in Dragon attack damage.
+r 1  commun     Sérieux                        Serious                      Work Speed +20% (ToSelf)
+r 1  commun     Trouble-Fête                   Hooligan                     Attack +15% (ToSelf)
+r 1  commun     Tueur de Dragons               Dragonkiller                 10% decrease in incoming Dragon damage.
+r 1  commun     Vaniteux                       Conceited                    Work Speed +10% (ToSelf)
+r 1  commun     Vif                            Nimble                       10% increase to movement speed.
+r 1  commun     Voile des Ténèbres             Veil of Darkness             10% increase in Dark attack damage.
+r-1  negatif    Glouton                        Glutton                      Hunger decreases +10.0% faster.
+r-1  negatif    Lâche                          Coward                       Attack -10% (ToSelf)
+r-1  negatif    Maladroit                      Clumsy                       Work Speed -10% (ToSelf)
+r-1  negatif    Mentalement Instable           Unstable                     SAN drops +10.0% faster.
+r-1  negatif    Miteux                         Shabby                       Decrease the value of items when sold by -10%
+r-1  negatif    Pitié                          Mercy Hit                    Pacifist. Will not reduce the target's Health below 1.
+r-1  negatif    Reclus                         Sickly                       Max Stamina -25% *This effect is only valid for rideable pals.
+r-1  negatif    Tranquille                     Easygoing                    Active skill cooldown extension -15%
+r-1  negatif    Vulnérable aux Coups           Downtrodden                  Defense -10% (ToSelf)
+r-2  negatif    Estomac sans Fond              Bottomless Stomach           Hunger decreases +15.0% faster.
+r-2  negatif    Soif de Destruction            Destructive                  SAN drops +15.0% faster.
+r-3  negatif    Négligent                      Slacker                      Work Speed -30% (ToSelf)
+r-3  negatif    Os fragiles                    Brittle                      Defense -20% (ToSelf)
+r-3  negatif    Pacifiste                      Pacifist                     Attack -20% (ToSelf)

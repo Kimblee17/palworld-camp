@@ -9,9 +9,10 @@ import { PASSIVES, PASSIVE_CATEGORIES } from "./dataset.js";
 // couleur. Un rang négatif est rouge quelle que soit son amplitude — un malus reste un
 // malus, qu'il coûte 10 % ou 30 %.
 //
-// ⚠ Les noms sont en anglais : aucune source ne permet de joindre les noms français de
-// façon fiable (cf. l'en-tête de fetch_passives.py). Ils suivront avec la table de
-// correspondance des codes internes.
+// Noms et effets sont en français, pris sur la page francophone de la source et
+// appariés PAR POSITION avec l'anglaise — appariement vérifié à chaque collecte
+// (cf. `_aligner` dans fetch_passives.py). Le nom anglais reste affiché en second :
+// c'est celui des wikis, des guides et des codes internes du jeu.
 
 const RARETES = {
   arcenciel: { libelle: "Arc-en-ciel", ordre: 0 },
@@ -35,21 +36,29 @@ function tirage(p) {
 let tri = "rarete";
 const filtres = { q: "", rarete: "", categorie: "", polarite: "" };
 
+// Le tri suit le nom AFFICHÉ, donc le français ; les rares passifs dont la source
+// n'aurait pas de traduction retombent sur l'anglais plutôt que sur du vide.
+const nomDe = p => p.nameFr || p.name;
+const effetDe = p => p.effectFr || p.effect;
+
 function comparer(a, b) {
-  if (tri === "nom") return a.name.localeCompare(b.name, "fr");
+  if (tri === "nom") return nomDe(a).localeCompare(nomDe(b), "fr");
   if (tri === "categorie")
     return (a.categories[0] || "").localeCompare(b.categories[0] || "", "fr")
-        || a.name.localeCompare(b.name, "fr");
+        || nomDe(a).localeCompare(nomDe(b), "fr");
   // Par défaut : arc-en-ciel d'abord, négatifs en dernier, puis rang décroissant.
   return RARETES[a.rarity].ordre - RARETES[b.rarity].ordre
       || Math.abs(b.rank) - Math.abs(a.rank)
-      || a.name.localeCompare(b.name, "fr");
+      || nomDe(a).localeCompare(nomDe(b), "fr");
 }
 
 function retenus() {
   const q = filtres.q.toLowerCase();
+  // La recherche porte sur les DEUX langues : on tape aussi bien « Artisan » que
+  // « Appliqué », et les guides anglophones restent utilisables tels quels.
   return PASSIVES.filter(p =>
-    (!q || p.name.toLowerCase().includes(q) || p.effect.toLowerCase().includes(q)) &&
+    (!q || [nomDe(p), p.name, effetDe(p), p.effect]
+             .some(t => t && t.toLowerCase().includes(q))) &&
     (!filtres.rarete || p.rarity === filtres.rarete) &&
     (!filtres.categorie || p.categories.includes(filtres.categorie)) &&
     (!filtres.polarite || String(p.positive) === filtres.polarite)
@@ -76,8 +85,9 @@ export function renderPassives() {
     li.innerHTML = `
       <span class="pv-rar" title="Rang ${p.rank} — ${RARETES[p.rarity].libelle}">${RARETES[p.rarity].libelle}</span>
       <span class="pv-main">
-        <span class="pv-name">${esc(p.name)}</span>
-        <span class="pv-eff">${esc(p.effect)}</span>
+        <span class="pv-name">${esc(nomDe(p))}${
+          nomDe(p) !== p.name ? `<span class="pv-en">${esc(p.name)}</span>` : ""}</span>
+        <span class="pv-eff">${esc(effetDe(p))}</span>
       </span>
       <span class="pv-tags">
         ${cats}
