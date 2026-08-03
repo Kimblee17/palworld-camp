@@ -3,6 +3,7 @@ import { deriveFromMachines, escHtml, fusionEffectif, prettyStation } from "./sa
 import { renderSuggestPrefs } from "./suggest.js";
 import { renderPediaProgress } from "./palpedia.js";
 import { renderNotes } from "./notes.js";
+import { insererCarte } from "./carte.js";
 import { active, addBox, addPal, addStruct, boxQty, cyclePalPref, palPref, isFull, palQty, readOnly, saveStore, setBoxQty, setPalQty, setStructQty, store, structQty, totalBox, updateUndoUI } from "./state.js";
 import { PALS, STRUCTURES, WORK_TYPES, palsById, structById, workById } from "./dataset.js";
 
@@ -47,8 +48,13 @@ export function openPalDetail(pal) {
     <div class="pm-sub">Compétences de travail</div><div class="pm-skills">${skills}</div>
     ${tiers ? `<div class="pm-sub">Rangs (palworld.gg)</div><div class="pm-tags">${tiers}</div>` : ""}
     ${drops ? `<div class="pm-sub">Butin</div><ul class="pm-drops">${drops}</ul>` : ""}
+    <div class="pm-sub">Où le trouver</div><div class="pm-carte" data-pal="${escHtml(pal.name)}"></div>
     ${link ? `<div class="pm-linkrow">${link}</div>` : ""}`,
     { label: `Détail du Pal ${pal.name}` });
+  // La carte pèse 300 Ko : on ne la charge qu'ici, à la première fiche ouverte, et
+  // jamais au démarrage de l'application.
+  const hote = document.querySelector("#pal-modal-body .pm-carte");
+  if (hote) insererCarte(hote, pal);
 }
 
 const MUTED_CMP = '<span class="muted">—</span>';
@@ -122,8 +128,12 @@ let modalReturnFocus = null;
 // directs de <body> sauf la modale, pour ne rien oublier quand la page évolue.
 function setBackgroundInert(on) {
   const modal = document.getElementById("pal-modal");
+  // La carte plein écran s'ouvre PAR-DESSUS la fiche : la rendre inerte comme le reste
+  // de l'arrière-plan la figerait au moment même où elle prend la main. Elle est
+  // `hidden` tant qu'on ne l'ouvre pas, donc l'exclure ne laisse rien de focalisable.
+  const carte = document.getElementById("carte-plein");
   for (const el of document.body.children) {
-    if (el === modal) continue;
+    if (el === modal || el === carte) continue;
     if (on) el.inert = true; else el.inert = false;
   }
 }

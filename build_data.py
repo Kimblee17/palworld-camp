@@ -26,6 +26,7 @@ from fetch_breeding import load_breeding
 from fetch_recipes import load_recipes
 from fetch_pal_food import load_pal_food
 from fetch_passives import load_passives
+from fetch_spawns import load_spawns
 
 BASE_DIR = Path(__file__).parent
 PALS_CSV = BASE_DIR / "Liste pals.csv"
@@ -34,6 +35,9 @@ PALS_OUT = BASE_DIR / "data" / "pals.json"
 STRUCT_OUT = BASE_DIR / "data" / "structures.json"
 STATIC_OUT = BASE_DIR / "docs" / "data.js"
 SW_OUT = BASE_DIR / "docs" / "sw.js"
+# Les apparitions vivent HORS de data.js : 300 Ko compressés qu'on ne veut pas
+# faire porter au démarrage. Le module de carte les demande à la première fiche.
+SPAWNS_OUT = BASE_DIR / "docs" / "data" / "spawns.json"
 CHANGELOG_OUT = BASE_DIR / "data" / "changelog.json"
 
 # Définition centralisée des 12 compétences de travail (source unique de vérité),
@@ -423,6 +427,15 @@ def build_static(pals, structures, unique_combos, recipes, passives):
     print(f"Données embarquées écrites dans {STATIC_OUT}")
 
 
+def publish_spawns(spawns):
+    """Copie les apparitions dans docs/. Fichier à part, servi à la demande."""
+    SPAWNS_OUT.parent.mkdir(parents=True, exist_ok=True)
+    SPAWNS_OUT.write_text(json.dumps(spawns, ensure_ascii=False, separators=(",", ":")),
+                          encoding="utf-8")
+    print(f"Apparitions écrites dans {SPAWNS_OUT} "
+          f"({SPAWNS_OUT.stat().st_size // 1024} Ko)")
+
+
 def stamp_service_worker():
     """Aligne la version du cache du service worker sur le commit courant.
 
@@ -459,6 +472,8 @@ if __name__ == "__main__":
     unique_combos = merge_breeding(pals)
     recipes = merge_recipes(structures)
     passives = load_passives()
+    spawns = load_spawns(pals)
     build_changelog(pals)        # avant build_static : compare au docs/data.js encore en place
     build_static(pals, structures, unique_combos, recipes, passives)
+    publish_spawns(spawns)
     stamp_service_worker()

@@ -3,6 +3,7 @@ import { initBreeding, renderBreeding } from "./breeding.js";
 import { initProduction, renderProduction, DEBUG as prodDebug } from "./production.js";
 import { initShare } from "./share.js";
 import { initNotes } from "./notes.js";
+import { initCarte } from "./carte.js";
 import { initPassives, renderPassives } from "./passives.js";
 import { clearPediaSelection, openPediaCompare, renderPalpedia, setPediaSort, togglePediaSelection } from "./palpedia.js";
 import { ELEMENT_META, ELEMENT_ORDER, buildLegend, closePalModal, openPalDetail, renderAll, renderBoxCatalog, renderPalCatalog, renderStructCatalog } from "./render.js";
@@ -361,6 +362,7 @@ export function init() {
   initBreeding();
   initShare();
   initNotes();
+  initCarte();
   initPassives();
   initProduction();
   renderAll();

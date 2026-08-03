@@ -395,6 +395,21 @@
     </div>
   </div>
 
+  <!-- Carte plein écran : au-dessus de la fiche, fermée en premier par Échap -->
+  <div id="carte-plein" class="carte-plein" hidden role="dialog" aria-modal="true"
+       aria-label="Carte des points d'apparition">
+    <div class="cp-backdrop"></div>
+    <div class="cp-card">
+      <div class="cp-bar">
+        <span class="cp-titre"></span>
+        <div class="cp-heure" hidden></div>
+        <button class="cp-close" aria-label="Fermer la carte"><span aria-hidden="true">✕</span></button>
+      </div>
+      <canvas class="cp-canvas" role="img" aria-label="Carte agrandie des points d'apparition"></canvas>
+      <div class="cp-legende"></div>
+    </div>
+  </div>
+
   <!-- Données embarquées (générées par build_data.py) puis logique -->
   <script src="data.js"></script>
   <script type="module" src="js/main.js"></script>
