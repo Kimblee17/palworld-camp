@@ -1210,6 +1210,18 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 }
 .bd-node.is-owned > .bd-nhead { border-color: var(--ok); }
 .bd-nname { font-weight: 600; }
+/* Nom qui ouvre la fiche : soulignement discret, franc au survol. Sans ce repère,
+   rien ne distingue un nom cliquable d'un nom décoratif. */
+.bd-fiche {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 3px;
+}
+.bd-fiche:hover { text-decoration-color: var(--accent-2); }
+/* Le nom d'une ligne de couple est un bloc : sans cela, la zone cliquable
+   s'étendrait sur toute la largeur, bien au-delà du soulignement. */
+.bd-pal .name.bd-fiche { display: inline-block; }
 .bd-gen {
   margin-left: auto; font-size: 0.74rem; color: var(--muted);
   border: 1px solid var(--border); border-radius: 999px; padding: 2px 9px;

@@ -1,4 +1,4 @@
-import { palIconEl, elementChipsHtml } from "./render.js";
+import { palIconEl, elementChipsHtml, openPalDetail } from "./render.js";
 import { palBoxCounts } from "./state.js";
 import { PALS, palsById, DB } from "./dataset.js";
 
@@ -191,16 +191,36 @@ function reinitArbre(id) { arbre = { id, parents: null }; focus = []; filtrePare
 
 const nomsTries = () => [...BREEDERS].sort((a, b) => a.name.localeCompare(b.name, "fr"));
 
+// Vignette et nom ouvrent la fiche détaillée, comme dans la Palpedia. Le nom porte le
+// rôle de bouton et l'accès clavier ; la vignette se contente du clic — c'est déjà la
+// répartition du catalogue, et deux arrêts de tabulation pour un même Pal
+// n'apporteraient rien à un écran qui en compte déjà beaucoup.
+function rendreFiche(icone, nom, pal) {
+  const ouvrir = () => openPalDetail(pal);
+  if (icone) { icone.style.cursor = "pointer"; icone.onclick = ouvrir; }
+  if (!nom) return;
+  nom.classList.add("bd-fiche");
+  nom.tabIndex = 0;
+  nom.setAttribute("role", "button");
+  nom.setAttribute("aria-label", "Détails de " + pal.name);
+  nom.onclick = ouvrir;
+  nom.onkeydown = e => {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); ouvrir(); }
+  };
+}
+
 function palLigne(pal, extra = "") {
   const li = document.createElement("li");
   li.className = "bd-pal";
-  li.appendChild(palIconEl(pal));
+  const icone = palIconEl(pal);
+  li.appendChild(icone);
   const info = document.createElement("div");
   info.className = "info";
   info.innerHTML = `<div class="name">${pal.name}</div>`
     + `<div class="bd-sub">${elementChipsHtml(pal)}`
     + `<span class="bd-power" title="Breed power (CombiRank) — sert au calcul">⚖ ${pal.breedPower ?? "—"}</span>${extra}</div>`;
   li.appendChild(info);
+  rendreFiche(icone, info.querySelector(".name"), pal);
   return li;
 }
 
@@ -267,9 +287,11 @@ function noeudArbre(n, chemin, counts) {
 
   const tete = document.createElement("div");
   tete.className = "bd-nhead";
-  tete.appendChild(palIconEl(pal));
+  const icone = palIconEl(pal);
+  tete.appendChild(icone);
   tete.insertAdjacentHTML("beforeend", `<span class="bd-nname">${pal.name}</span>`
     + (enBoite ? `<span class="bd-own" title="Dans ta boîte">🎒 ${enBoite}</span>` : ""));
+  rendreFiche(icone, tete.querySelector(".bd-nname"), pal);
 
   const btn = document.createElement("button");
   btn.type = "button";
@@ -444,13 +466,15 @@ function noeudPlan(n, counts) {
   li.className = "bd-node" + (n.possede ? " is-owned" : "");
   const tete = document.createElement("div");
   tete.className = "bd-nhead";
-  tete.appendChild(palIconEl(n.pal));
+  const icone = palIconEl(n.pal);
+  tete.appendChild(icone);
   const q = counts[n.pal.id] || 0;
   tete.insertAdjacentHTML("beforeend",
     `<span class="bd-nname">${n.pal.name}</span>`
     + (n.possede
         ? `<span class="bd-own" title="Déjà dans ta boîte">🎒 ${q}</span>`
         : `<span class="bd-gen">génération ${n.gen}</span>`));
+  rendreFiche(icone, tete.querySelector(".bd-nname"), n.pal);
   li.appendChild(tete);
   if (n.parents) {
     const ul = document.createElement("ul");
