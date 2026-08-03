@@ -14,9 +14,20 @@
 
 const URL_DONNEES = "data/spawns.json";
 
+// Tuiles de paldb.cc, avec l'accord de son auteur (u/chuanhsing) pour un usage
+// PERSONNEL ET NON COMMERCIAL. Cet accord porte sur son hébergement, pas sur une
+// licence : la texture reste l'œuvre de Pocketpair. Si ce site devenait commercial,
+// ces trois lignes sont à retirer — le fond reconstitué ci-dessous suffit à tourner
+// sans elles, c'est justement pourquoi il reste là.
+const TUILES = "https://cdn.paldb.cc/image/map8/z{z}x{x}y{y}.webp";
+const ZOOM = 2;             // 4×4 tuiles de 512 px = 2048 px, 229 Ko, une seule fois
+const COTE = 512 * 2 ** ZOOM;
+
 let DONNEES = null;
 let chargement = null;
-let fond = null;            // littoral pré-rendu, partagé par toutes les cartes
+let fond = null;            // littoral reconstitué, repli hors ligne
+let tuiles = null;          // fond photographique, null tant qu'il n'est pas prêt
+let tuilesEnCours = null;
 
 export function chargerCarte() {
   if (DONNEES) return Promise.resolve(DONNEES);
@@ -48,6 +59,35 @@ function fondLittoral(d) {
   g.putImageData(img, 0, 0);
   return fond;
 }
+
+// Le fond photographique : 16 tuiles assemblées une fois dans un canevas hors écran.
+// Le CDN ne renvoie pas d'en-tête CORS, donc ce canevas est « teinté » — on peut y
+// dessiner, pas en relire les pixels. Aucun code d'affichage n'en a besoin.
+//
+// Hors ligne, ces requêtes échouent : c'est prévu, on retombe alors sur le littoral
+// reconstitué, qui lui est précaché. La carte ne disparaît jamais, elle se dégrade.
+function chargerTuiles() {
+  if (tuiles) return Promise.resolve(tuiles);
+  if (tuilesEnCours) return tuilesEnCours;
+  const n = 2 ** ZOOM;
+  const cv = document.createElement("canvas");
+  cv.width = cv.height = COTE;
+  const g = cv.getContext("2d");
+  const une = (x, y) => new Promise((ok, ko) => {
+    const im = new Image();
+    im.onload = () => { g.drawImage(im, x * 512, y * 512); ok(); };
+    im.onerror = ko;
+    im.src = TUILES.replace("{z}", ZOOM).replace("{x}", x).replace("{y}", y);
+  });
+  const toutes = [];
+  for (let x = 0; x < n; x++) for (let y = 0; y < n; y++) toutes.push(une(x, y));
+  tuilesEnCours = Promise.all(toutes)
+    .then(() => (tuiles = cv))
+    .catch(() => { tuilesEnCours = null; return null; });
+  return tuilesEnCours;
+}
+
+export const fondPhoto = () => !!tuiles;
 
 const points = (d, nom, nuit) => {
   const s = d.spawns[nom];
@@ -113,7 +153,9 @@ export function dessinerCarte(canvas, nom, { nuit = false, noms = false } = {}) 
   g.clearRect(0, 0, T, T);
   g.imageSmoothingEnabled = true;
   g.imageSmoothingQuality = "high";
-  g.drawImage(fondLittoral(d), 0, 0, T, T);
+  // Le relief quand on l'a, le littoral reconstitué sinon. Les deux couvrent
+  // exactement la même étendue : les coordonnées relatives ne changent pas.
+  g.drawImage(tuiles || fondLittoral(d), 0, 0, T, T);
 
   const pts = points(d, nom, nuit) || [];
   // Halo large puis point net : la zone se repère de loin, la position se lit de près.
@@ -172,6 +214,12 @@ function legende({ nb, boss, inconnu, videIci }, nom, nuit) {
   }
   for (const b of boss)
     l.push(`<span class="cm-boss${b.nuit ? " nuit" : ""}"></span>Boss de terrain, niv. ${b.niveau}${b.nuit ? " — la nuit" : ""}`);
+  // Attribution due : le relief vient de paldb, avec l'accord de son auteur. Quand
+  // elle manque, c'est le fond reconstitué qui est à l'écran, et le dire évite de
+  // laisser croire à une carte incomplète.
+  l.push(fondPhoto()
+    ? `<span class="cm-muted">Fond de carte : <a href="https://paldb.cc/en/Map" target="_blank" rel="noopener">paldb.cc</a></span>`
+    : `<span class="cm-muted">Fond reconstitué à partir des coordonnées (relief indisponible hors ligne)</span>`);
   return l.join("<br>");
 }
 
@@ -202,6 +250,9 @@ export function insererCarte(hote, pal) {
       hote.querySelector(".cm-legende").innerHTML = legende(info, pal.name, n);
     };
     peindre(nuit);
+    // Les tuiles arrivent après coup : on repeint quand elles sont là plutôt que de
+    // faire attendre devant un cadre vide. La carte est utilisable entre-temps.
+    chargerTuiles().then(t => { if (t && hote.dataset.pal === pal.name) peindre(nuit); });
     hote.querySelector(".cm-zoom").onclick = () => ouvrirPleinEcran(pal, nuit);
     hote.querySelectorAll(".cm-h").forEach(b => b.onclick = () => {
       nuit = b.dataset.nuit === "1";
@@ -232,14 +283,18 @@ export function ouvrirPleinEcran(pal, nuit = false) {
 
   const canvas = ov.querySelector(".cp-canvas");
   const peindre = n => {
-    // Le canevas est carré et tient dans la plus petite dimension de la fenêtre.
-    const c = Math.min(ov.clientWidth - 32, ov.clientHeight - 128);
+    // Le canevas est carré et tient dans la plus petite dimension de la fenêtre. La
+    // réserve verticale couvre la barre de titre ET les quatre lignes que la légende
+    // peut atteindre (points, boss, attribution, régions nommées) : sous-estimer la
+    // légende la faisait sortir de l'écran.
+    const c = Math.min(ov.clientWidth - 32, ov.clientHeight - 190);
     canvas.style.width = canvas.style.height = Math.max(240, c) + "px";
     const info = dessinerCarte(canvas, pal.name, { nuit: n, noms: true });
     ov.querySelector(".cp-legende").innerHTML = legende(info, pal.name, n)
       + (info.nbNoms ? `<br><span class="cm-muted">${info.nbNoms} régions nommées sur ${info.total} — les autres se chevaucheraient</span>` : "");
   };
   peindre(nuit);
+  chargerTuiles().then(t => { if (t && !ov.hidden) peindre(nuit); });
   barre.querySelectorAll(".cm-h").forEach(b => b.onclick = () => {
     barre.querySelectorAll(".cm-h").forEach(x => x.classList.toggle("on", x === b));
     peindre(b.dataset.nuit === "1");
