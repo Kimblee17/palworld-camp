@@ -510,6 +510,8 @@ main {
 }
 .pedia-table th.sorted { color: var(--accent); }
 .pedia-table th .arrow { font-size: 0.72rem; }
+/* Aptitude sur laquelle porte le tri « Compétences » quand un filtre est actif. */
+.pedia-qual { color: var(--accent-2); font-weight: 600; text-transform: none; }
 .pedia-num { text-align: center; white-space: nowrap; font-weight: 600; }
 .pedia-name a { color: var(--accent-2); text-decoration: none; }
 .pedia-name a:hover { text-decoration: underline; }

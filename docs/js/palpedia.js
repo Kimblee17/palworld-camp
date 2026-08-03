@@ -1,6 +1,6 @@
 import { TIER_CATS, TIER_RANK, elementChipsHtml, levelClass, levelName, openPalCompare, palElements, palIconHtml, tierClass } from "./render.js";
 import { boxQty, palBoxCounts } from "./state.js";
-import { PALS, WORK_TYPES, palsById } from "./dataset.js";
+import { PALS, WORK_TYPES, palsById, workById } from "./dataset.js";
 
 let pediaSort = { key: "name", dir: 1 };              // dir: 1 = croissant, -1 = décroissant
 
@@ -138,10 +138,20 @@ function pediaRow(pal) {
   return tr;
 }
 
-function pediaSortValue(pal, key) {
+// Aptitude sur laquelle porte le filtre, ou "" — le tri « Compétences » s'y adapte.
+const filtreTravail = () => document.getElementById("pedia-work")?.value || "";
+
+function pediaSortValue(pal, key, travail = "") {
   if (key === "zukan") return pal.zukan ?? null;      // sans numéro : rejeté en fin de liste
   if (key === "name") return pal.name.toLowerCase();
-  if (key === "skills") return WORK_TYPES.reduce((n, w) => n + ((pal.work[w.id] || 0) > 0 ? 1 : 0), 0);
+  // Sans filtre, la colonne répond à « qui sait faire le plus de choses » et compte les
+  // aptitudes. Avec un filtre, la question posée est devenue « qui est le meilleur À
+  // CELA » : on trie sur le niveau de cette aptitude-là. Sinon Aegidron, meilleur mineur
+  // du jeu avec 8, se retrouvait derrière des Pals à 2 en extraction mais polyvalents.
+  if (key === "skills")
+    return travail
+      ? (pal.work[travail] || 0)
+      : WORK_TYPES.reduce((n, w) => n + ((pal.work[w.id] || 0) > 0 ? 1 : 0), 0);
   if (key === "level") return pal.level ?? null;
   if (key === "rarity") return pal.rarity ?? null;
   if (key === "capture") return pal.captureRate ?? null;
@@ -166,6 +176,21 @@ function updatePediaHeaders() {
     const active = th.dataset.sort === pediaSort.key;
     th.classList.toggle("sorted", active);
     th.querySelector(".arrow")?.remove();
+    th.querySelector(".pedia-qual")?.remove();
+    // L'en-tête « Compétences » annonce l'aptitude sur laquelle il trie, et seulement
+    // quand il trie vraiment : un tri qui change de sens en silence est un piège.
+    if (th.dataset.sort === "skills") {
+      const w = workById[filtreTravail()];
+      th.title = active && w
+        ? `Trié sur le niveau de « ${w.label} », l'aptitude filtrée`
+        : "Nombre d'aptitudes de travail";
+      if (active && w) {
+        const q = document.createElement("span");
+        q.className = "pedia-qual";
+        q.textContent = " " + w.label;
+        (th.querySelector("button") || th).appendChild(q);
+      }
+    }
     if (!active) { th.removeAttribute("aria-sort"); return; }
     // L'état de tri est porté par aria-sort sur le th ; la flèche n'est que visuelle.
     th.setAttribute("aria-sort", pediaSort.dir === 1 ? "ascending" : "descending");
@@ -192,8 +217,8 @@ export function renderPalpedia() {
       (mode === "tous"
         || (mode === "possedes" ? boxQty(p.id) > 0 : boxQty(p.id) === 0)))
     .sort((a, b) => {
-      const va = pediaSortValue(a, pediaSort.key);
-      const vb = pediaSortValue(b, pediaSort.key);
+      const va = pediaSortValue(a, pediaSort.key, wf);
+      const vb = pediaSortValue(b, pediaSort.key, wf);
       // Valeurs absentes toujours en fin, quel que soit le sens.
       if (va == null && vb == null) return a.name.localeCompare(b.name, "fr");
       if (va == null) return 1;
