@@ -5,6 +5,14 @@ Récupère les points d'apparition des Pals et les repères de la carte, depuis 
 ne publie qu'une image de carte sans coordonnées. paldb sert, pour chaque espèce, la
 liste des positions du jeu :  https://paldb.cc/paldex/<code>.json
 
+NOMS DE LIEUX EN FRANÇAIS. paldb publie la même carte en plusieurs langues. On lit
+donc les 80 régions dans la version française, appariées PAR POSITION avec l'anglaise
+— appariement contrôlé à chaque collecte sur les coordonnées elles-mêmes, qui doivent
+coïncider aux 80 rangs (cf. `noms_francais`). Seuls les LIEUX sont traduits : les noms
+de Pals restent anglais, comme dans tout le reste de l'application, et c'est sur eux
+que les boss se rattachent aux espèces. Le fichier des repères, lui, n'a PAS le même
+nombre d'entrées d'une langue à l'autre (13 812 contre 13 755) : on ne l'apparie pas.
+
 ⚠ AUCUN ASSET DU JEU N'EST REPRIS. On ne prend que des COORDONNÉES — des nombres. Le
 fond de carte de l'application est reconstitué à partir de ces mêmes nombres (cf.
 `grille_terre`) : les Pals et les ressources n'apparaissant que sur la terre ferme,
@@ -45,7 +53,10 @@ BASE_DIR = Path(__file__).parent
 STRICT = os.getenv("PALWORLD_STRICT_FETCH") == "1"
 CACHE = BASE_DIR / "data" / "spawns.json"
 PALDEX = "https://paldb.cc/paldex/{code}.json"
-CARTE = "https://paldb.cc/js/map_data_en.js"
+CARTE = "https://paldb.cc/js/map_data_{lang}.js"
+# L'anglais porte les repères et les noms de Pals (ceux de tout le reste de l'appli) ;
+# le français ne sert qu'aux NOMS DE LIEUX, qui sont ceux du jeu.
+LANG_REF, LANG_FR = "en", "fr"
 ENTETES = {"User-Agent": "Mozilla/5.0", "Referer": "https://paldb.cc/en/Map"}
 
 # 300 fiches : en parallèle pour tenir la minute, sans charger la source.
@@ -138,11 +149,35 @@ def grille_terre(nuages, proj):
     return plat
 
 
+def noms_francais(regions_ref):
+    """Nom de lieu français pour chaque région, apparié PAR POSITION.
+
+    L'appariement n'est pas supposé : les deux fichiers portent les mêmes coordonnées
+    `ipos`, et on exige qu'elles coïncident à chaque rang. Deux listes de 80 entrées
+    dont les 80 positions concordent ne peuvent pas décrire des lieux différents.
+
+    Seuls les LIEUX sont traduits. Les noms de Pals restent anglais — ce sont ceux du
+    reste de l'application, et c'est sur eux que les boss se rattachent aux espèces.
+    """
+    fr = _blocs(fetch(CARTE.format(lang=LANG_FR))).get("regionData")
+    if not fr:
+        raise RuntimeError("regionData absent de la carte française.")
+    if len(fr) != len(regions_ref):
+        raise RuntimeError(
+            f"Carte française désalignée : {len(fr)} régions contre {len(regions_ref)}.")
+    ecarts = [i for i, (a, b) in enumerate(zip(fr, regions_ref)) if a.get("ipos") != b.get("ipos")]
+    if ecarts:
+        raise RuntimeError(
+            f"Carte française désalignée : {len(ecarts)} coordonnées divergent "
+            f"(position {ecarts[0]}) — l'ordre des fichiers a changé.")
+    return [x.get("item") for x in fr]
+
+
 def scrape(pals, verbose=True):
-    donnees = _blocs(fetch(CARTE))
+    donnees = _blocs(fetch(CARTE.format(lang=LANG_REF)))
     for cle in ("config", "fixedDungeon", "regionData"):
         if cle not in donnees:
-            raise RuntimeError(f"« {cle} » absent de map_data_en.js — structure changée ?")
+            raise RuntimeError(f"« {cle} » absent de map_data_{LANG_REF}.js — structure changée ?")
     proj = Projection(donnees["config"])
 
     avec_code = [p for p in pals if p.get("code")]
@@ -188,15 +223,27 @@ def scrape(pals, verbose=True):
     pp = 459
     tx, ty = (proj.x1 - proj.x0) / pp, (proj.y1 - proj.y0) / pp
     sx, sy = 1000 + (-582888 - proj.x0) / pp, 1000 + (-301000 - proj.y0) / pp
-    regions = []
-    for x in donnees["regionData"]:
+    libelles_fr = noms_francais(donnees["regionData"])
+    regions, sans_fr = [], 0
+    for x, fr in zip(donnees["regionData"], libelles_fr):
         ip = x.get("ipos")
         if not ip:
             continue
         u, v = (ip["X"] + sy) / ty, 1 - (ip["Y"] + sx) / tx
-        m = re.match(r"Lv\.([\d-]+)\s*(.*)", x["item"])
-        regions.append({"nom": (m.group(2) if m else x["item"]).strip(),
-                        "niveaux": m.group(1) if m else None,
+        # Le préfixe de niveau (« Lv.30-40 ») est dans les deux langues, même format.
+        def coupe(t):
+            m = re.match(r"Lv\.([\d-]+)\s*(.*)", t or "")
+            return ((m.group(2) if m else (t or "")).strip(), m.group(1) if m else None)
+        nom_en, niveaux = coupe(x["item"])
+        nom_fr, _ = coupe(fr)
+        # paldb garde une entrée dont le libellé est « - » dans toutes les langues :
+        # un enregistrement vide, qui n'afficherait qu'un tiret égaré sur la carte.
+        if nom_en in ("", "-") and nom_fr in ("", "-"):
+            continue
+        if not nom_fr:
+            sans_fr += 1
+        regions.append({"nom": nom_fr or nom_en, "nomEn": nom_en,
+                        "niveaux": niveaux,
                         "p": [round(u * 10000), round(v * 10000)]})
 
     if verbose:
@@ -205,8 +252,12 @@ def scrape(pals, verbose=True):
         print(f"  {len(spawns)}/{len(avec_code)} espèces interrogées, {avec} avec des "
               f"apparitions sauvages ({total} points)")
         print(f"  {len(divergents)} espèce(s) avec des zones de nuit distinctes")
-        print(f"  {len(boss)} boss de terrain, {len(regions)} régions, "
+        traduits = sum(1 for r in regions if r["nom"] != r["nomEn"])
+        print(f"  {len(boss)} boss de terrain, {len(regions)} régions "
+              f"({traduits} noms de lieux en français), "
               f"{len(terre) // 3} cellules de littoral")
+        if sans_fr:
+            print(f"  ⚠ {sans_fr} région(s) sans libellé français, repli sur l'anglais")
         if sans_fiche:
             print(f"  ⚠ {len(sans_fiche)} sans fiche paldb : "
                   f"{', '.join(sans_fiche[:6])}{'…' if len(sans_fiche) > 6 else ''}")

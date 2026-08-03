@@ -75,9 +75,13 @@ function etiquettes(g, d, T, avecNiveaux) {
   g.font = "11px 'Segoe UI',system-ui,sans-serif";
   g.textAlign = "center";
   const prises = [];
+  // Les noms français sont nettement plus longs que les anglais (« Archipel de la
+  // Brise salée » contre « Sea Breeze Archipelago »). La coupe suit donc la taille du
+  // canevas : serrée dans la vignette de la fiche, généreuse en plein écran.
+  const max = T > 600 ? 42 : 24;
   for (const R of [...d.regions].sort((a, b) => a.nom.length - b.nom.length)) {
     const x = R.p[0] / 10000 * T, y = R.p[1] / 10000 * T;
-    const t = R.nom.length > 26 ? R.nom.slice(0, 25) + "…" : R.nom;
+    const t = R.nom.length > max ? R.nom.slice(0, max - 1) + "…" : R.nom;
     const w = g.measureText(t).width;
     const b = [x - w / 2 - 3, y - 9, w + 6, 18];
     if (prises.some(p => b[0] < p[0] + p[2] && b[0] + b[2] > p[0]
