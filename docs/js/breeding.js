@@ -297,10 +297,11 @@ function noeudArbre(n, chemin, counts) {
 
   const tete = document.createElement("div");
   tete.className = "bd-pal bd-nhead";
-  garnirCarte(tete, pal);
-  if (enBoite)
-    tete.insertAdjacentHTML("beforeend",
-      `<span class="bd-own" title="Dans ta boîte">🎒 ${enBoite}</span>`);
+  // Le badge se range DANS la ligne d'informations, pas après la carte : ajouté en
+  // queue il élargissait le nœud, et des cartes de largeurs différentes désalignent
+  // les colonnes de l'arbre. Seul le bouton reste en queue, et il est partout.
+  garnirCarte(tete, pal,
+    enBoite ? ` <span class="bd-own" title="Dans ta boîte">🎒 ${enBoite}</span>` : "");
 
   const btn = document.createElement("button");
   btn.type = "button";
@@ -479,11 +480,10 @@ function noeudPlan(n, counts) {
   li.className = "bd-node" + (n.possede ? " is-owned" : "");
   const tete = document.createElement("div");
   tete.className = "bd-pal bd-nhead";
-  garnirCarte(tete, n.pal);
   const q = counts[n.pal.id] || 0;
-  tete.insertAdjacentHTML("beforeend", n.possede
-    ? `<span class="bd-own" title="Déjà dans ta boîte">🎒 ${q}</span>`
-    : `<span class="bd-gen">génération ${n.gen}</span>`);
+  garnirCarte(tete, n.pal, n.possede
+    ? ` <span class="bd-own" title="Déjà dans ta boîte">🎒 ${q}</span>`
+    : ` <span class="bd-gen">génération ${n.gen}</span>`);
   li.appendChild(tete);
   if (n.parents) {
     const ul = document.createElement("ul");

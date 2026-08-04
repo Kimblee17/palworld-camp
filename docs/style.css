@@ -1256,16 +1256,53 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 
 /* ===== Plan d'élevage : arbre généalogique ===== */
 .bd-plan-help { flex-basis: 100%; margin: 6px 0 0; }
+
+/* ===== Arbre généalogique =====
+   Le Pal visé en haut, ses deux parents côte à côte en dessous, et ainsi de suite :
+   c'est un arbre d'ascendance, on descend vers ce qu'il faut posséder. Le balisage
+   est déjà celui d'un arbre — une liste imbriquée — seule la mise en page change.
+   Les traits de liaison sont des BORDURES de pseudo-éléments : chaque enfant dessine
+   sa moitié de barre, et le premier comme le dernier effacent la moitié qui sortirait
+   dans le vide. Rien à calculer, la largeur des sous-arbres n'entre jamais en jeu. */
 .bd-tree, .bd-children { list-style: none; margin: 0; padding: 0; }
-/* Les parents sont décalés sous leur enfant, reliés par un filet : on lit l'arbre
-   de haut en bas, du Pal visé vers ce qu'on possède déjà. */
-.bd-children { margin-left: 18px; padding-left: 16px; border-left: 1px solid var(--border); }
-.bd-node { margin: 6px 0; }
-/* Un nœud d'arbre EST une carte de Pal (.bd-pal) : même vignette, mêmes éléments,
-   même pouvoir que dans le mode « A × B ». `.bd-nhead` ne porte plus que ce qui
-   distingue un nœud — il pousse ses commandes à droite et s'étire sur la largeur
-   disponible, là où une carte de couple garde sa taille propre. */
-.bd-nhead { width: 100%; }
+.bd-tree {
+  display: flex; justify-content: safe center;
+  overflow-x: auto; padding: 4px 2px 10px;
+}
+.bd-node { display: flex; flex-direction: column; align-items: center; flex: none; }
+.bd-children { display: flex; justify-content: center; align-items: flex-start; }
+
+/* Descente du parent vers la barre de ses enfants. */
+.bd-node > .bd-children { position: relative; padding-top: 26px; }
+.bd-node > .bd-children::before {
+  content: ""; position: absolute; top: 0; left: 50%;
+  width: 1px; height: 26px; background: var(--edge);
+}
+/* Remontée de chaque enfant vers cette barre, plus sa moitié de barre.
+   `flex: none` est indispensable : sans lui la rangée comprime les sous-arbres, la
+   ligne éléments + pouvoir se replie sur deux lignes, et les cartes d'un même rang
+   n'ont plus la même hauteur ni la même largeur. L'arbre déborde alors en largeur —
+   c'est pour cela que `.bd-tree` défile. */
+.bd-children > .bd-node { position: relative; padding: 26px 9px 0; flex: none; }
+.bd-children > .bd-node::before, .bd-children > .bd-node::after {
+  content: ""; position: absolute; top: 0; width: 50%; height: 26px;
+  border-top: 1px solid var(--edge);
+}
+.bd-children > .bd-node::before { right: 50%; }
+.bd-children > .bd-node::after  { left: 50%; border-left: 1px solid var(--edge); }
+.bd-children > .bd-node:first-child::before { border-top: 0; }
+.bd-children > .bd-node:last-child::after { border-top: 0; border-left: 0; }
+.bd-children > .bd-node:last-child::before {
+  border-right: 1px solid var(--edge); border-radius: 0 7px 0 0;
+}
+.bd-children > .bd-node:first-child::after { border-radius: 7px 0 0 0; }
+/* Enfant unique : un simple trait vertical, pas de barre à partager. */
+.bd-children > .bd-node:only-child::before { border-top: 0; border-right: 0; }
+.bd-children > .bd-node:only-child::after { border-radius: 0; }
+
+/* Dans un arbre, une carte prend sa largeur propre : l'étirer ferait des colonnes
+   inégales et casserait l'alignement des traits sur le centre des cartes. */
+.bd-nhead { min-width: 230px; }
 .bd-node.is-owned > .bd-nhead { border-color: var(--ok); }
 /* Nom qui ouvre la fiche : soulignement discret, franc au survol. Sans ce repère,
    rien ne distingue un nom cliquable d'un nom décoratif. */
@@ -1283,14 +1320,14 @@ body.camp-actions-open .limit-ctrl { display: flex; }
   margin-left: auto; font-size: 0.74rem; color: var(--muted);
   border: 1px solid var(--border); border-radius: 999px; padding: 2px 9px;
 }
-/* Le premier élément de queue est poussé à droite ; ceux qui le suivent restent
-   collés à lui. Deux marges automatiques se partageraient l'espace et planteraient le
-   badge au milieu de la carte. */
-.bd-nhead > .bd-own, .bd-nhead > .bd-gen { margin-left: auto; }
-.bd-nhead > .bd-own ~ .bd-nbtn { margin-left: 0; }
+/* Badge et génération vivent dans la ligne d'informations : ils suivent le pouvoir
+   de reproduction au lieu d'élargir la carte par la droite. */
+.bd-gen { margin-left: 0; }
 
 /* ===== Constructeur d'arbre (mode « Je veux ce Pal → parents ») ===== */
-.bd-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+/* L'arbre prend la plus grande part : une liste de couples se lit en colonne étroite,
+   un arbre a besoin de largeur — chaque génération double le nombre de cartes. */
+.bd-split { display: grid; grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr); gap: 16px; align-items: start; }
 @media (max-width: 900px) { .bd-split { grid-template-columns: 1fr; } }
 .bd-couples .bd-pairs { max-height: 62vh; overflow-y: auto; }
 .bd-arbre-head { display: flex; align-items: center; gap: 12px; }
