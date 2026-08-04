@@ -1,4 +1,4 @@
-import { palIconEl, elementChipsHtml, openPalDetail } from "./render.js";
+import { palIconEl, palIconHtml, elementChipsHtml, openPalDetail } from "./render.js";
 import { palBoxCounts } from "./state.js";
 import { PALS, palsById, DB } from "./dataset.js";
 
@@ -209,18 +209,28 @@ function rendreFiche(icone, nom, pal) {
   };
 }
 
-function palLigne(pal, extra = "") {
-  const li = document.createElement("li");
-  li.className = "bd-pal";
+// Carte d'un Pal : vignette, nom, éléments, pouvoir de reproduction. Les TROIS modes
+// s'en servent — c'est elle qui donne à la vue son air d'arbre généalogique, et la
+// réserver au mode « A × B » laissait les deux autres en simples listes.
+// Le contenu de `extra` se range à la suite du pouvoir ; ce qui doit aller à droite
+// (bouton, badge) s'ajoute par le sujet appelant, en frère de `.info`.
+function garnirCarte(hote, pal, extra = "") {
   const icone = palIconEl(pal);
-  li.appendChild(icone);
+  hote.appendChild(icone);
   const info = document.createElement("div");
   info.className = "info";
   info.innerHTML = `<div class="name">${pal.name}</div>`
     + `<div class="bd-sub">${elementChipsHtml(pal)}`
     + `<span class="bd-power" title="Breed power (CombiRank) — sert au calcul">⚖ ${pal.breedPower ?? "—"}</span>${extra}</div>`;
-  li.appendChild(info);
+  hote.appendChild(info);
   rendreFiche(icone, info.querySelector(".name"), pal);
+  return info;
+}
+
+function palLigne(pal, extra = "") {
+  const li = document.createElement("li");
+  li.className = "bd-pal";
+  garnirCarte(li, pal, extra);
   return li;
 }
 
@@ -286,12 +296,11 @@ function noeudArbre(n, chemin, counts) {
     + (memeChemin(chemin, focus) ? " is-focus" : "");
 
   const tete = document.createElement("div");
-  tete.className = "bd-nhead";
-  const icone = palIconEl(pal);
-  tete.appendChild(icone);
-  tete.insertAdjacentHTML("beforeend", `<span class="bd-nname">${pal.name}</span>`
-    + (enBoite ? `<span class="bd-own" title="Dans ta boîte">🎒 ${enBoite}</span>` : ""));
-  rendreFiche(icone, tete.querySelector(".bd-nname"), pal);
+  tete.className = "bd-pal bd-nhead";
+  garnirCarte(tete, pal);
+  if (enBoite)
+    tete.insertAdjacentHTML("beforeend",
+      `<span class="bd-own" title="Dans ta boîte">🎒 ${enBoite}</span>`);
 
   const btn = document.createElement("button");
   btn.type = "button";
@@ -415,9 +424,13 @@ function rendreModeCible() {
       btn.className = "bd-pair-btn";
       btn.setAttribute("aria-label",
         `Ajouter ${a.name} et ${b.name} comme parents de ${palFocus.name}`);
-      btn.innerHTML = `<span class="bd-pn">${a.name}${g(ga)}${dispo(a)}</span>`
+      // Vignettes ici aussi : une liste de 300 noms nus se parcourt mal, alors qu'on
+      // reconnaît un Pal à son image bien avant de lire son nom.
+      const cote = (p, sexe) => `<span class="bd-pn">${palIconHtml(p)}`
+        + `<span class="bd-pn-nom">${p.name}${g(sexe)}${dispo(p)}</span></span>`;
+      btn.innerHTML = cote(a, ga)
         + `<span class="bd-x" aria-hidden="true">×</span>`
-        + `<span class="bd-pn">${b.name}${g(gb)}${dispo(b)}</span>`
+        + cote(b, gb)
         + (unique ? `<span class="bd-tag">unique</span>` : "");
       // Choisir un couple greffe les deux parents sous le nœud sélectionné.
       btn.onclick = () => {
@@ -465,16 +478,12 @@ function noeudPlan(n, counts) {
   const li = document.createElement("li");
   li.className = "bd-node" + (n.possede ? " is-owned" : "");
   const tete = document.createElement("div");
-  tete.className = "bd-nhead";
-  const icone = palIconEl(n.pal);
-  tete.appendChild(icone);
+  tete.className = "bd-pal bd-nhead";
+  garnirCarte(tete, n.pal);
   const q = counts[n.pal.id] || 0;
-  tete.insertAdjacentHTML("beforeend",
-    `<span class="bd-nname">${n.pal.name}</span>`
-    + (n.possede
-        ? `<span class="bd-own" title="Déjà dans ta boîte">🎒 ${q}</span>`
-        : `<span class="bd-gen">génération ${n.gen}</span>`));
-  rendreFiche(icone, tete.querySelector(".bd-nname"), n.pal);
+  tete.insertAdjacentHTML("beforeend", n.possede
+    ? `<span class="bd-own" title="Déjà dans ta boîte">🎒 ${q}</span>`
+    : `<span class="bd-gen">génération ${n.gen}</span>`);
   li.appendChild(tete);
   if (n.parents) {
     const ul = document.createElement("ul");

@@ -739,7 +739,10 @@ body.read-only #import-btn { display: none; }
   border-radius: 8px; padding: 7px 11px; font-size: 0.88rem;
 }
 .bd-pair.is-unique { border-color: var(--accent); }
-.bd-pn { font-weight: 600; }
+/* Un parent dans la liste des couples : vignette réduite + nom, les deux alignés. */
+.bd-pn { font-weight: 600; display: inline-flex; align-items: center; gap: 7px; min-width: 0; }
+.bd-pn .pal-ic { width: 30px; height: 30px; }
+.bd-pn-nom { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .bd-x { color: var(--muted); font-weight: 600; }
 .bd-own { color: var(--accent); font-size: 0.74rem; font-weight: 600; }
 .bd-tag {
@@ -1257,14 +1260,13 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 /* Les parents sont décalés sous leur enfant, reliés par un filet : on lit l'arbre
    de haut en bas, du Pal visé vers ce qu'on possède déjà. */
 .bd-children { margin-left: 18px; padding-left: 16px; border-left: 1px solid var(--border); }
-.bd-node { margin: 5px 0; }
-.bd-nhead {
-  display: flex; align-items: center; gap: 9px;
-  background: var(--panel-2); border: 1px solid var(--border);
-  border-radius: 8px; padding: 7px 10px;
-}
+.bd-node { margin: 6px 0; }
+/* Un nœud d'arbre EST une carte de Pal (.bd-pal) : même vignette, mêmes éléments,
+   même pouvoir que dans le mode « A × B ». `.bd-nhead` ne porte plus que ce qui
+   distingue un nœud — il pousse ses commandes à droite et s'étire sur la largeur
+   disponible, là où une carte de couple garde sa taille propre. */
+.bd-nhead { width: 100%; }
 .bd-node.is-owned > .bd-nhead { border-color: var(--ok); }
-.bd-nname { font-weight: 600; }
 /* Nom qui ouvre la fiche : soulignement discret, franc au survol. Sans ce repère,
    rien ne distingue un nom cliquable d'un nom décoratif. */
 .bd-fiche {
@@ -1281,7 +1283,11 @@ body.camp-actions-open .limit-ctrl { display: flex; }
   margin-left: auto; font-size: 0.74rem; color: var(--muted);
   border: 1px solid var(--border); border-radius: 999px; padding: 2px 9px;
 }
-.bd-node.is-owned .bd-own { margin-left: auto; }
+/* Le premier élément de queue est poussé à droite ; ceux qui le suivent restent
+   collés à lui. Deux marges automatiques se partageraient l'espace et planteraient le
+   badge au milieu de la carte. */
+.bd-nhead > .bd-own, .bd-nhead > .bd-gen { margin-left: auto; }
+.bd-nhead > .bd-own ~ .bd-nbtn { margin-left: 0; }
 
 /* ===== Constructeur d'arbre (mode « Je veux ce Pal → parents ») ===== */
 .bd-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; }
