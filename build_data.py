@@ -25,7 +25,7 @@ from fetch_pal_drops import load_pal_drops
 from fetch_breeding import load_breeding
 from fetch_recipes import load_recipes
 from fetch_pal_food import load_pal_food
-from fetch_passives import load_passives
+from fetch_passives import load_code_table, load_passives
 from fetch_spawns import load_spawns
 
 BASE_DIR = Path(__file__).parent
@@ -419,12 +419,36 @@ def build_static(pals, structures, unique_combos, recipes, passives):
             "uniqueCombos": unique_combos, "recipes": recipes["recipes"],
             "producedBy": recipes["producedBy"], "rawItems": recipes["rawItems"],
             "passives": passives["passives"], "passiveCategories": passives["categoryLabels"],
-            "passiveSources": passives["sourceLabels"]}
+            "passiveSources": passives["sourceLabels"],
+            "passiveCodes": passives["codeTable"]}
     js = "// Généré par build_data.py — ne pas éditer à la main.\n"
     js += "window.PAL_DATA = " + json.dumps(data, ensure_ascii=False) + ";\n"
     STATIC_OUT.parent.mkdir(exist_ok=True)
     STATIC_OUT.write_text(js, encoding="utf-8")
     print(f"Données embarquées écrites dans {STATIC_OUT}")
+
+
+def _index_codes(passives):
+    """Attache à chaque passif les codes de sauvegarde qui le désignent.
+
+    La liaison est une LISTE et non un champ simple : rien n'interdit à deux codes de
+    sauvegarde de désigner le même passif, et n'en garder qu'un ferait disparaître la
+    moitié des Pals concernés du décompte. Aucun cas dans la table actuelle, mais la
+    structure ne coûte rien et le jour où il y en aura un, il sera compté.
+    """
+    par_nom = {p["name"]: p for p in passives["passives"]}
+    orphelins = []
+    for code, nom in passives["codeTable"].items():
+        p = par_nom.get(nom)
+        if p is None:
+            orphelins.append((code, nom))
+            continue
+        p.setdefault("codes", []).append(code)
+    if orphelins:
+        print(f"  ⚠ {len(orphelins)} code(s) nommé(s) sans passif correspondant : "
+              f"{', '.join(n for _, n in orphelins[:4])}")
+    couverts = sum(1 for p in passives["passives"] if p.get("codes"))
+    print(f"  {couverts}/{len(passives['passives'])} passifs reliés à un code de boîte")
 
 
 def publish_spawns(spawns):
@@ -472,6 +496,10 @@ if __name__ == "__main__":
     unique_combos = merge_breeding(pals)
     recipes = merge_recipes(structures)
     passives = load_passives()
+    # Codes de sauvegarde -> nom : c'est ce qui rend lisibles les passifs d'une boîte
+    # importée. Chaque passif reçoit la liste des codes qui le désignent.
+    passives["codeTable"] = load_code_table()
+    _index_codes(passives)
     spawns = load_spawns(pals)
     build_changelog(pals)        # avant build_static : compare au docs/data.js encore en place
     build_static(pals, structures, unique_combos, recipes, passives)

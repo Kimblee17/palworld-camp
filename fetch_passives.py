@@ -306,6 +306,30 @@ def scrape(verbose=True):
             "sourceLabels": SOURCE_LABELS}
 
 
+# Table code interne -> nom, remplie à la main dans data/passives-codes.csv. Elle
+# existe parce que la sauvegarde du jeu ne stocke QUE des codes, et que la source n'en
+# publie qu'une quarantaine : sans elle, une boîte de 960 Pals reste illisible.
+# La colonne `Origine` dit d'où vient chaque nom — source, bijection, élimination —
+# pour qu'une ligne déduite ne se confonde jamais avec une ligne relevée.
+TABLE_CODES = BASE_DIR / "data" / "passives-codes.csv"
+
+
+def load_code_table(chemin=TABLE_CODES, verbose=True):
+    """Codes de sauvegarde -> nom anglais du catalogue. Silencieusement vide si absente."""
+    if not chemin.exists():
+        return {}
+    import csv
+    with chemin.open(encoding="utf-8-sig", newline="") as f:
+        lignes = list(csv.DictReader(f, delimiter=";"))
+    table = {r["Code"]: r["Nom EN"].strip() for r in lignes
+             if r.get("Code") and (r.get("Nom EN") or "").strip()}
+    if verbose:
+        manque = [r["Code"] for r in lignes if not (r.get("Nom EN") or "").strip()]
+        print(f"  {len(table)}/{len(lignes)} codes de boîte nommés"
+              + (f", {len(manque)} sans nom : {', '.join(manque[:4])}…" if manque else ""))
+    return table
+
+
 def load_passives(cache=CACHE, verbose=True):
     """Passifs pour build_data : fetch live + cache, repli sur cache si réseau KO."""
     try:

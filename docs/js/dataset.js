@@ -12,6 +12,9 @@ export const STRUCTURES = DB.structures;
 export const PASSIVES = DB.passives || [];
 export const PASSIVE_CATEGORIES = DB.passiveCategories || {};
 export const PASSIVE_SOURCES = DB.passiveSources || {};
+// Code interne de sauvegarde -> nom anglais. La boîte importée ne stocke que des
+// codes ; sans cette table, ses passifs restent illisibles.
+export const PASSIVE_CODES = DB.passiveCodes || {};
 export const workById = Object.fromEntries(WORK_TYPES.map(w => [w.id, w]));
 export const palsById = Object.fromEntries(PALS.map(p => [p.id, p]));
 export const structById = Object.fromEntries(STRUCTURES.map(s => [s.id, s]));

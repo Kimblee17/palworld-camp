@@ -1,8 +1,9 @@
-import { PASSIVES, PASSIVE_CATEGORIES, PASSIVE_SOURCES } from "./dataset.js";
+import { PASSIVES, PASSIVE_CATEGORIES, PASSIVE_CODES, PASSIVE_SOURCES } from "./dataset.js";
+import { store } from "./state.js";
 
 // ===== Catalogue des compétences passives =====
 //
-// 93 passifs que peut porter un Pal — l'équipement est écarté à la source, un passif
+// 100 passifs que peut porter un Pal — l'équipement est écarté à la source, un passif
 // d'armure ne se transmettant pas par la reproduction.
 //
 // La rareté vient du RANG, qui est signé : son signe donne la polarité, sa valeur la
@@ -42,8 +43,56 @@ function tirage(p) {
 // un tirage rare, ou pas de tirage du tout.
 const provenance = p => (p.source ? PASSIVE_SOURCES[p.source] || p.source : null);
 
+// ===== Croisement avec la boîte =====
+// La sauvegarde ne stocke que des codes internes ; la table code -> nom permet de
+// dire, passif par passif, combien de Pals le portent déjà. Recalculé à chaque rendu :
+// la boîte change à l'import d'une save et rien ne préviendrait cette vue.
+function effectifsBoite() {
+  const parCode = new Map();
+  let inconnus = 0;
+  const codesConnus = PASSIVE_CODES;
+  for (const e of Object.values(store.palBox || {})) {
+    for (const code of (e && e.passives) || []) {
+      if (!codesConnus[code]) { inconnus++; continue; }
+      parCode.set(code, (parCode.get(code) || 0) + 1);
+    }
+  }
+  const parPassif = new Map();
+  for (const p of PASSIVES) {
+    const n = (p.codes || []).reduce((s, c) => s + (parCode.get(c) || 0), 0);
+    if (n) parPassif.set(p.name, n);
+  }
+  return { parPassif, inconnus };
+}
+// Ce que la boîte dit, et ce qu'elle ne dit pas. Les codes encore sans nom sont
+// annoncés plutôt que passés sous silence : sans cela, un passif absent du décompte
+// se lirait comme « je ne l'ai pas », alors qu'il signifie « je ne sais pas ».
+function majBandeauBoite() {
+  const el = document.getElementById("pv-boite-etat");
+  if (!el) return;
+  const total = Object.keys(store.palBox || {}).length;
+  if (!total) {
+    el.innerHTML = `Ta boîte est vide : importe une save pour voir quels passifs tu possèdes déjà.`;
+    return;
+  }
+  const traçables = PASSIVES.filter(traçable).length;
+  const possedes = effectifs.parPassif.size;
+  el.innerHTML =
+    `<b>${possedes}</b> passif${possedes > 1 ? "s" : ""} sur ${traçables} identifiables `
+    + `présent${possedes > 1 ? "s" : ""} dans ta boîte de <b>${total}</b> Pals.`
+    + (effectifs.inconnus
+        ? ` <span class="pv-inconnu">${effectifs.inconnus} passif(s) portent un code encore sans nom — ils ne sont comptés nulle part.</span>`
+        : "");
+}
+
+let effectifs = { parPassif: new Map(), inconnus: 0 };
+const enBoite = p => effectifs.parPassif.get(p.name) || 0;
+// Un passif sans code rattaché n'est pas « absent de la boîte » : on ne sait pas.
+// Le filtre « qui me manquent » ne doit donc pas le compter comme manquant.
+const traçable = p => !!(p.codes && p.codes.length);
+
 let tri = "rarete";
-const filtres = { q: "", rarete: "", categorie: "", polarite: "", provenance: "" };
+const filtres = { q: "", rarete: "", categorie: "", polarite: "", provenance: "", boite: "" };
 
 // Le tri suit le nom AFFICHÉ, donc le français ; les rares passifs dont la source
 // n'aurait pas de traduction retombent sur l'anglais plutôt que sur du vide.
@@ -77,13 +126,17 @@ function retenus() {
        // les autres reviendrait à promettre une chance qui n'existe pas.
        aleatoire: !p.source && p.weight > 0,
        implant: !p.source && !p.weight,
-     }[filtres.provenance] ?? p.source === filtres.provenance))
+     }[filtres.provenance] ?? p.source === filtres.provenance)) &&
+    (!filtres.boite || (filtres.boite === "possedes"
+       ? enBoite(p) > 0 : traçable(p) && enBoite(p) === 0))
   ).sort(comparer);
 }
 
 export function renderPassives() {
   const hote = document.getElementById("pv-list");
   if (!hote) return;
+  effectifs = effectifsBoite();
+  majBandeauBoite();
   const liste = retenus();
   document.getElementById("pv-count").textContent = liste.length;
 
@@ -97,6 +150,8 @@ export function renderPassives() {
     li.className = "pv-row rar-" + p.rarity;
     const t = tirage(p);
     const prov = provenance(p);
+    const n = enBoite(p);
+    if (n) li.classList.add("is-owned");
     const cats = p.categories
       .map(c => `<span class="pv-cat">${esc(PASSIVE_CATEGORIES[c] || c)}</span>`).join("");
     li.innerHTML = `
@@ -107,6 +162,7 @@ export function renderPassives() {
         <span class="pv-eff">${esc(effetDe(p))}</span>
       </span>
       <span class="pv-tags">
+        ${n ? `<span class="pv-box" title="Nombre de Pals de ta boîte qui portent ce passif">🎒 ${n}</span>` : ""}
         ${cats}
         ${prov ? `<span class="pv-src src-${p.source}" title="S'achète auprès de cette source, sans passer par le hasard.">${esc(prov)}</span>` : ""}
         ${t ? `<span class="pv-tir ${t.cls}" title="Probabilité d'apparaître au hasard sur un Pal">${t.txt}</span>` : ""}
@@ -129,6 +185,9 @@ export function initPassives() {
   cat.addEventListener("change", e => { filtres.categorie = e.target.value; renderPassives(); });
   document.getElementById("pv-provenance").addEventListener("change", e => {
     filtres.provenance = e.target.value; renderPassives();
+  });
+  document.getElementById("pv-boite").addEventListener("change", e => {
+    filtres.boite = e.target.value; renderPassives();
   });
   document.getElementById("pv-polarite").addEventListener("change", e => {
     filtres.polarite = e.target.value; renderPassives();

@@ -1,6 +1,17 @@
 import { renderAll } from "./render.js";
 import { DEFAULT_LIMIT, migrateBox, normalize, pushUndo, readOnly, saveStore, store, synKey, touchBox } from "./state.js";
-import { PALS, STRUCTURES, palsById } from "./dataset.js";
+import { PALS, PASSIVES, PASSIVE_CODES, STRUCTURES, palsById } from "./dataset.js";
+
+// Passifs d'un Pal importé, en clair. La sauvegarde ne stocke que des codes internes ;
+// la table de data/passives-codes.csv en nomme 81 sur 88. Les autres restent affichés
+// TELS QUELS, entre chevrons : mieux vaut un code brut reconnaissable qu'un trou, et
+// c'est ainsi qu'on repère ceux qui manquent encore à la table.
+const NOM_FR_PASSIF = Object.fromEntries(PASSIVES.map(p => [p.name, p.nameFr || p.name]));
+function nomsPassifs(codes) {
+  return (codes || [])
+    .map(c => { const en = PASSIVE_CODES[c]; return en ? (NOM_FR_PASSIF[en] || en) : `‹${c}›`; })
+    .join(", ");
+}
 
 // ===== Noms de code des Pals (utilisés par l'import de sauvegarde) =====
 // Table nom de code interne Palworld (BPClass) -> nom d'affichage.
@@ -465,7 +476,7 @@ export function renderSavPreview() {
         const iv = it.ivs ? `${it.ivs.hp}/${it.ivs.shot}/${it.ivs.defense}` : "—";
         const np = it.passives ? it.passives.length : 0;
         const pass = np
-          ? `<span class="sav-pass" title="${escHtml(it.passives.join(", "))}">${np}</span>` : "–";
+          ? `<span class="sav-pass" title="${escHtml(nomsPassifs(it.passives))}">${np}</span>` : "–";
         const owner = ownerName[it.owner_uid]
           ? escHtml(ownerName[it.owner_uid])
           : (it.owner_uid ? "?" : "—");   // "—" = sans propriétaire (base / sauvage)

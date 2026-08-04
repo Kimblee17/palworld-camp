@@ -260,6 +260,7 @@
       marchand ou du chasseur de primes, <b>81</b> se tirent au hasard sur un Pal — plus
       ou moins facilement selon leur poids — et <b>5</b> ne s'obtiennent d'aucune de ces
       deux façons : ce sont des implants de mutation.</p>
+    <p id="pv-boite-etat" class="pv-boite-etat"></p>
     <div class="controls">
       <input type="search" id="pv-search" placeholder="Rechercher un passif ou un effet…"
              aria-label="Rechercher une compétence passive" autocomplete="off">
@@ -282,6 +283,11 @@
         <option value="chasseur">Chasseur de primes</option>
         <option value="aleatoire">Au hasard uniquement</option>
         <option value="implant">Ni achat ni tirage (implant)</option>
+      </select>
+      <select id="pv-boite" aria-label="Filtrer selon ma boîte">
+        <option value="">Toute la liste</option>
+        <option value="possedes">Déjà dans ma boîte</option>
+        <option value="manquants">Qui me manquent</option>
       </select>
       <select id="pv-tri" aria-label="Trier">
         <option value="rarete">Trier par rareté</option>

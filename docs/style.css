@@ -1373,3 +1373,18 @@ body.camp-actions-open .limit-ctrl { display: flex; }
   .cm-h { padding: 9px 16px; font-size: .82rem; min-height: 44px; }
   .cp-card { padding: 10px; }
 }
+
+/* ===== Passifs : croisement avec la boîte ===== */
+.pv-boite-etat {
+  margin: -8px 0 14px; font-size: 0.84rem; color: var(--muted); line-height: 1.55;
+}
+.pv-boite-etat b { color: var(--text); }
+/* Les codes sans nom sont une lacune de NOTRE table, pas une absence dans la boîte :
+   l'ambre les signale comme une réserve, pas comme une erreur. */
+.pv-inconnu { color: var(--amber); }
+.pv-box {
+  font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; white-space: nowrap;
+  border: 1px solid #3d5a2a; background: var(--chip); color: var(--lvl-4); font-weight: 600;
+}
+/* Un liseré, pas un fond : la couleur de la ligne porte déjà la rareté. */
+.pv-row.is-owned { border-left: 3px solid var(--lvl-4); }
