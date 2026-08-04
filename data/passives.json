@@ -108,6 +108,21 @@
       "code": "Consumable_WorldTree_FullStomach"
     },
     {
+      "name": "Babysitter",
+      "nameFr": "Baby-sitter",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "While at a base, increases egg production speed by +30% and incubation speed by +30% for Pals assigned to a Breeding Farm.",
+      "effectFr": "Dans la base, vitesse de production d'œufs des Pals affectés au ranch : +30 % ; vitesse d'éclosion : +30 %",
+      "weight": null,
+      "badges": [],
+      "categories": [
+        "autre"
+      ],
+      "code": "Consumable_MutationPal_Babysitter"
+    },
+    {
       "name": "Demon God",
       "nameFr": "Colère Divine",
       "rank": 4,
@@ -176,6 +191,53 @@
       "code": "Consumable_PAL_Sanity_Down_3"
     },
     {
+      "name": "Heavily Armored",
+      "nameFr": "Blindage",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Immune to Explosion Damage",
+      "effectFr": "Immunité aux dégâts explosifs",
+      "weight": null,
+      "badges": [],
+      "categories": [
+        "autre"
+      ],
+      "code": "Consumable_MutationPal_ExplosionResist"
+    },
+    {
+      "name": "Idiosyncratic",
+      "nameFr": "Anomalie",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Pal and Player Auto Health Regeneration Rate +50% Defense +25% Immune to Poison Damage Immune to Burn Damage",
+      "effectFr": "Restauration automatique des PV des Pals et du joueur +50 % Défense +25 % Immunité aux dégâts de Poison Immunité aux dégâts de Brûlure",
+      "weight": null,
+      "badges": [],
+      "categories": [
+        "combat",
+        "entretien"
+      ],
+      "code": "Consumable_MutationPal_Mutant"
+    },
+    {
+      "name": "Immortality",
+      "nameFr": "Immortel",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Life Steal +5% Pal Auto Health Regeneration Rate +100% Attack +15%",
+      "effectFr": "Vol de vie +5 % Restauration automatique des PV des Pals +100 % Attaque +15 %",
+      "weight": null,
+      "badges": [],
+      "categories": [
+        "combat",
+        "entretien"
+      ],
+      "code": "Consumable_MutationPal_Immortal"
+    },
+    {
       "name": "King of the Waves",
       "nameFr": "Roi des Vagues",
       "rank": 4,
@@ -208,6 +270,22 @@
       "categories": [
         "autre"
       ]
+    },
+    {
+      "name": "Legend",
+      "nameFr": "Légende",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Attack +20% Defense +20% Movement Speed increases 20%",
+      "effectFr": "Attaque +20 % Défense +20 % Vitesse de déplacement +20 %",
+      "weight": 100,
+      "badges": [],
+      "categories": [
+        "combat",
+        "monture"
+      ],
+      "code": "Legend"
     },
     {
       "name": "Lightfooted",
@@ -291,6 +369,37 @@
         "travail"
       ],
       "code": "Consumable_CraftSpeed_up3"
+    },
+    {
+      "name": "Siren of the Void",
+      "nameFr": "Sorcière",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "30% increase in Dark attack damage. 30% increase in Ice attack damage.",
+      "effectFr": "Les dégâts de type Ténèbres augmentent de 30 % Les dégâts de type Glace augmentent de 30 %.",
+      "weight": 100,
+      "badges": [],
+      "categories": [
+        "combat",
+        "element"
+      ],
+      "code": "Witch"
+    },
+    {
+      "name": "Skymarcher",
+      "nameFr": "Marche Céleste",
+      "rank": 4,
+      "rarity": "arcenciel",
+      "positive": true,
+      "effect": "Mounted Jump Count +2",
+      "effectFr": "Nombre de sauts en monture +2",
+      "weight": null,
+      "badges": [],
+      "categories": [
+        "autre"
+      ],
+      "code": "Consumable_RideJumpCount_Increase2"
     },
     {
       "name": "Swift",

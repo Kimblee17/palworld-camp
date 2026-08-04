@@ -28,15 +28,18 @@ const esc = s => String(s).replace(/[&<>"']/g,
 // 0 signifie seulement que le passif n'apparaît jamais au hasard sur un Pal sauvage.
 function tirage(p) {
   if (p.weight === 0) return { txt: "jamais au hasard", cls: "tir-non" };
-  if (p.weight === null || p.weight === undefined) return null;
+  // Pas de poids du tout : la source n'en publie pas parce qu'il n'y en a pas. Ces
+  // cinq-là se posent par un implant de mutation, jamais par un tirage.
+  if (p.weight === null || p.weight === undefined)
+    return { txt: "implant de mutation", cls: "tir-non" };
   if (p.weight <= 5) return { txt: "rare au hasard", cls: "tir-rare" };
   return { txt: "courant au hasard", cls: "tir-courant" };
 }
 
 // Le jeu ne compte qu'un marchand et qu'un chasseur de primes, et la table de
-// fetch_passives.py liste tout leur inventaire. L'absence de provenance est donc une
-// information positive — « celui-ci, il faut le tirer au hasard » — et non un aveu
-// d'ignorance. Le poids de tirage dit ensuite à quel point ce hasard est clément.
+// fetch_passives.py liste tout leur inventaire. L'absence de provenance signifie donc
+// « pas d'achat possible » ; c'est ensuite le poids qui départage un tirage clément,
+// un tirage rare, ou pas de tirage du tout.
 const provenance = p => (p.source ? PASSIVE_SOURCES[p.source] || p.source : null);
 
 let tri = "rarete";
@@ -68,8 +71,13 @@ function retenus() {
     (!filtres.rarete || p.rarity === filtres.rarete) &&
     (!filtres.categorie || p.categories.includes(filtres.categorie)) &&
     (!filtres.polarite || String(p.positive) === filtres.polarite) &&
-    (!filtres.provenance || (filtres.provenance === "aleatoire"
-       ? !p.source : p.source === filtres.provenance))
+    (!filtres.provenance || ({
+       // « Au hasard » exige un poids de tirage réel : cinq passifs n'en ont aucun,
+       // ce sont des implants de mutation qu'aucun tirage ne pose. Les ranger avec
+       // les autres reviendrait à promettre une chance qui n'existe pas.
+       aleatoire: !p.source && p.weight > 0,
+       implant: !p.source && !p.weight,
+     }[filtres.provenance] ?? p.source === filtres.provenance))
   ).sort(comparer);
 }
 

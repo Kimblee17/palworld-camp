@@ -256,10 +256,17 @@ def scrape(verbose=True):
     # transmet ni passif d'armure ni passif d'accessoire. Deux familles les identifient :
     #   - badge Pal / RarePal : 86 entrées, à comparer aux 88 codes distincts relevés
     #     dans une boîte de 960 Pals — la convergence valide le filtre ;
-    #   - rang 5 sans badge : les 7 passifs de l'Arbre-Monde, que palworld.gg classe
-    #     bien comme une source de Pal.
+    #   - AUCUN badge mais un CODE D'IMPLANT : si l'objet qui pose ce passif existe,
+    #     c'est bien sur un Pal qu'on le pose. Sur les 179 cartes sans badge, 12
+    #     seulement portent un code — les 7 de l'Arbre-Monde, les 4 de mutation
+    #     (Anomalie, Immortel, Baby-sitter, Blindage) et Marche Céleste. Les 167
+    #     autres sont des enchantements d'équipement, qui n'ont jamais de code.
+    #
+    # ⚠ La règle précédente ne rattrapait que le RANG 5, donc l'Arbre-Monde seul. Elle
+    # écartait Anomalie et Immortel, que des Pals de la boîte portent pourtant — c'est
+    # le croisement code par code avec l'export qui l'a révélé.
     def pour_pal(p):
-        return bool(set(p["badges"]) & {"Pal", "RarePal"}) or (p["rank"] == 5 and not p["badges"])
+        return bool(set(p["badges"]) & {"Pal", "RarePal"}) or ("code" in p and not p["badges"])
     equipement = [p for p in out if not pour_pal(p)]
     pals = [p for p in out if pour_pal(p)]
 
