@@ -160,6 +160,23 @@
       <ul id="camp-structs" class="pal-list compact"></ul>
       <button id="clear-camp" class="btn-clear" hidden>Vider ce camp</button>
 
+      <!-- Agencement d'une base importée depuis une save (masqué pour les camps utilisateur) -->
+      <section id="camp-machines" class="camp-machines" hidden></section>
+
+    </section>
+
+    <!-- Colonne de droite sur grand écran, empilée sous le camp en dessous de 1500 px.
+         Ce qu'on CONSULTE (couverture, nourriture, notes) plutôt que ce qu'on modifie. -->
+    <section class="panel" id="camp-side">
+      <h2>Compétences <span id="cover-warn" class="cover-warn" hidden></span></h2>
+      <ul id="summary" class="summary"></ul>
+
+      <!-- Masqué tant que le camp est vide : sans Pal, il n'y a aucun signal à donner. -->
+      <section id="food-section" hidden>
+        <h2>🍖 Alimentation</h2>
+        <div id="food-block" class="food-block"></div>
+      </section>
+
       <!-- Suivi léger du camp : notes libres + checklist. Tout vit dans le store. -->
       <section class="notes-block">
         <h3 class="sub notes-head">
@@ -182,18 +199,6 @@
           </div>
           <ul id="todo-list" class="todo-list"></ul>
         </div>
-      </section>
-
-      <!-- Agencement d'une base importée depuis une save (masqué pour les camps utilisateur) -->
-      <section id="camp-machines" class="camp-machines" hidden></section>
-
-      <h2>Compétences <span id="cover-warn" class="cover-warn" hidden></span></h2>
-      <ul id="summary" class="summary"></ul>
-
-      <!-- Masqué tant que le camp est vide : sans Pal, il n'y a aucun signal à donner. -->
-      <section id="food-section" hidden>
-        <h2>🍖 Alimentation</h2>
-        <div id="food-block" class="food-block"></div>
       </section>
     </section>
   </main>

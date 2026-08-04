@@ -139,11 +139,60 @@ header { padding: 20px 28px 6px; display: flex; flex-direction: column; align-it
 .tab.active { background: var(--accent-2); color: var(--accent-2-ink); }
 
 /* ===== Disposition ===== */
+/* GRANDS ÉCRANS. Rien ne s'élargit avec la fenêtre, seuls les vides grandissent :
+   mesuré à 1920 px, la table de la Palpedia n'a besoin que de 1215 px pour ses douze
+   colonnes mais en occupait 1794, et le champ de recherche atteignait 1022 px pour
+   filtrer un nom. On borne donc le contenu à la largeur dont il se sert vraiment.
+   La vue Camp fait exception : elle a trois colonnes à loger, cf. plus bas. */
+:root { --lisible: 1320px; --lisible-camp: 1680px; }
+/* Une vue courte n'a pas de barre de défilement, une vue longue en a une : le contenu
+   centré sautait de 7 px à chaque changement d'onglet. On réserve la gouttière en
+   permanence. Sans centrage le décalage existait aussi, il se voyait juste moins. */
+html { scrollbar-gutter: stable; }
+header, .sync-bar, .camp-bar, .legend, body > .panel, #personal-panel,
+#ro-banner, #share-banner {
+  max-width: var(--lisible); margin-left: auto; margin-right: auto;
+}
 main {
   display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
   padding: 6px 28px 44px; align-items: start;
+  max-width: var(--lisible); margin-left: auto; margin-right: auto;
 }
-@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+
+/* La vue Camp a trois panneaux : catalogue, contenu, récapitulatif. Sous 1500 px le
+   récapitulatif se range sous le contenu, DANS SA COLONNE — sans placement explicite
+   la grille l'enverrait sous le catalogue, à l'autre bout de l'écran. */
+main.view-camp { max-width: var(--lisible-camp); }
+/* La vue Camp étant plus large que les autres, l'en-tête et les barres s'alignent sur
+   elle quand c'est elle qui est à l'écran — sinon elles flotteraient 180 px en retrait
+   des panneaux qu'elles surplombent. `:has()` n'est pas indispensable : sans lui tout
+   reste à 1320 px, simplement moins bien aligné. */
+body:has(main.view-camp:not([hidden])) header,
+body:has(main.view-camp:not([hidden])) .sync-bar,
+.camp-bar, .legend.view-camp {
+  max-width: var(--lisible-camp);
+}
+main.view-camp > #catalog   { grid-column: 1; grid-row: 1 / span 2; }
+main.view-camp > #camp      { grid-column: 2; grid-row: 1; }
+main.view-camp > #camp-side { grid-column: 2; grid-row: 2; }
+
+/* Seuil calé sur le plafond, pas choisi à vue : à 1500 px les trois colonnes tombent
+   à 463 px et 27 lignes de catalogue sur 120 passent sur deux lignes ; à 1620 px, 16 ;
+   au plafond de 1680, plus que 4. Au-delà de 1700 la grille est donc toujours à sa
+   largeur maximale, et la troisième colonne ne coûte rien. En dessous, deux colonnes. */
+@media (min-width: 1700px) {
+  main.view-camp { grid-template-columns: 1fr 1.05fr 0.95fr; }
+  main.view-camp > #catalog   { grid-column: 1; grid-row: 1; }
+  main.view-camp > #camp      { grid-column: 2; grid-row: 1; }
+  main.view-camp > #camp-side { grid-column: 3; grid-row: 1; }
+}
+
+@media (max-width: 900px) {
+  main { grid-template-columns: 1fr; }
+  main.view-camp > #catalog,
+  main.view-camp > #camp,
+  main.view-camp > #camp-side { grid-column: 1; grid-row: auto; }
+}
 
 .sub { font-size: 0.78rem; color: var(--muted); margin: 14px 0 8px; font-weight: 600; }
 .cover-warn { font-size: 0.8rem; font-weight: 600; color: var(--lvl-1); margin-left: 8px; }
@@ -168,7 +217,10 @@ main {
   border: 1px solid var(--border); border-radius: 8px;
   padding: 9px 11px; font-size: 0.95rem;
 }
-.controls input { flex: 1; min-width: 140px; }
+/* Un champ de recherche large n'aide personne : `flex: 1` lui faisait manger toute la
+   ligne restante — 1022 px mesurés à 1920 — alors qu'il reçoit rarement plus d'un nom.
+   Il garde le droit de rétrécir, jamais celui de s'étendre au-delà. */
+.controls input { flex: 0 1 340px; min-width: 140px; }
 .controls input::placeholder { color: var(--muted); opacity: 1; }
 .controls select option { background: var(--panel); color: var(--text); }
 .night-toggle {
@@ -926,7 +978,8 @@ body.camp-actions-open .limit-ctrl { display: flex; }
   /* --- 2. Vue Camp : le camp d'abord, le catalogue ensuite --- */
   main { padding: 6px 14px 20px; gap: 14px; }
   #camp { order: 1; }
-  #catalog { order: 2; }
+  #camp-side { order: 2; }        /* le récapitulatif suit son camp, pas le catalogue */
+  #catalog { order: 3; }
   .panel { padding: 14px; }
 
   /* Sélecteur de camp en tête, seul sur sa ligne. */
