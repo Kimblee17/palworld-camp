@@ -1265,10 +1265,40 @@ body.camp-actions-open .limit-ctrl { display: flex; }
    sa moitié de barre, et le premier comme le dernier effacent la moitié qui sortirait
    dans le vide. Rien à calculer, la largeur des sous-arbres n'entre jamais en jeu. */
 .bd-tree, .bd-children { list-style: none; margin: 0; padding: 0; }
-.bd-tree {
-  display: flex; justify-content: safe center;
-  overflow-x: auto; padding: 4px 2px 10px;
+/* Le cadre porte le défilement et les commandes ; l'arbre, lui, se contente d'être
+   mis à l'échelle. Séparer les deux évite que le zoom déplace la barre de défilement. */
+.bd-zoom {
+  position: relative; overflow: auto;
+  max-height: 70vh; padding: 4px 2px 10px;
+  border: 1px solid var(--border); border-radius: 10px; background: var(--bg);
+  overscroll-behavior: contain;
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+  background-size: 22px 22px;
 }
+.bd-zoom.is-tire { cursor: grabbing; user-select: none; }
+/* `margin: auto` centre l'arbre quand il est plus étroit que le cadre ; sa largeur
+   est posée en JS, à la taille naturelle multipliée par le facteur de zoom. */
+.bd-zoom-inner { transform-origin: top left; margin: 0 auto; }
+/* `max-content` est indispensable : sans lui l'arbre adopte la largeur du cadre et
+   son contenu déborde en silence — offsetWidth renvoie alors la taille du cadre, et
+   l'ajustement automatique ne se déclenche jamais. */
+.bd-tree { display: flex; width: max-content; transform-origin: top left; }
+
+/* Commandes en bas à gauche, au-dessus du contenu, comme sur les canevas de graphe. */
+.bd-zoom-ctl {
+  position: sticky; bottom: 0; left: 0; z-index: 2;
+  display: inline-flex; align-items: center; gap: 4px;
+  margin: 6px 0 0 6px; padding: 4px;
+  background: var(--panel); border: 1px solid var(--edge); border-radius: 9px;
+}
+.bd-zoom-ctl button {
+  appearance: none; cursor: pointer; font: inherit; line-height: 1;
+  width: 30px; height: 30px; padding: 0;
+  background: var(--panel-2); color: var(--text);
+  border: 1px solid var(--border); border-radius: 7px;
+}
+.bd-zoom-ctl button:hover { border-color: var(--accent-2); }
+.bd-zoom-val { font-size: 0.74rem; color: var(--muted); padding: 0 6px; min-width: 46px; }
 .bd-node { display: flex; flex-direction: column; align-items: center; flex: none; }
 .bd-children { display: flex; justify-content: center; align-items: flex-start; }
 
@@ -1328,7 +1358,11 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 /* L'arbre prend la plus grande part : une liste de couples se lit en colonne étroite,
    un arbre a besoin de largeur — chaque génération double le nombre de cartes. */
 .bd-split { display: grid; grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr); gap: 16px; align-items: start; }
-@media (max-width: 900px) { .bd-split { grid-template-columns: 1fr; } }
+/* `minmax(0, 1fr)` et non `1fr` : la valeur par défaut `min-width: auto` d'un élément
+   de grille laisse un enfant large imposer sa taille, et le cadre de l'arbre — pourtant
+   en overflow — atteignait 1274 px dans une fenêtre de 375. */
+@media (max-width: 900px) { .bd-split { grid-template-columns: minmax(0, 1fr); } }
+.bd-split > * { min-width: 0; }
 .bd-couples .bd-pairs { max-height: 62vh; overflow-y: auto; }
 .bd-arbre-head { display: flex; align-items: center; gap: 12px; }
 .bd-arbre-head .bar-btn { margin-left: auto; }
@@ -1411,6 +1445,9 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 .cp-legende b { color: var(--text); }
 
 @media (max-width: 700px) {
+  /* Cible tactile : les commandes de zoom passent à 44 px. */
+  .bd-zoom-ctl button { width: 44px; height: 44px; }
+  .bd-zoom { max-height: 60vh; }
   .cm-wrap { max-width: 100%; }
   .cm-zoom { width: 44px; height: 44px; }
   .cm-h { padding: 9px 16px; font-size: .82rem; min-height: 44px; }

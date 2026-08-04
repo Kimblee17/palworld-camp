@@ -234,6 +234,90 @@ function palLigne(pal, extra = "") {
   return li;
 }
 
+// ===== Zoom de l'arbre =====
+// Une mise à l'échelle CSS, rien de plus : les traits de liaison sont des bordures,
+// ils suivent la transformation sans qu'on redessine quoi que ce soit.
+//
+// ⚠ `transform` ne change pas la mise en page : le conteneur qui défile continuerait
+// de croire l'arbre à sa taille d'origine — bandeau vide en dézoom, contenu coupé en
+// zoom. On redonne donc au calque intérieur la taille naturelle multipliée par le
+// facteur. (`zoom` en CSS ferait ça tout seul, mais son support reste trop récent.)
+const ZOOM_MIN = 0.4, ZOOM_MAX = 1.6, ZOOM_PAS = 0.15;
+let zoom = 1;          // conservé d'un rendu à l'autre : greffer un couple redessine tout
+// Tant que personne n'a touché aux commandes, un arbre trop large s'ajuste tout seul :
+// l'ouvrir coupé serait un mauvais accueil. Dès le premier réglage manuel, on ne
+// décide plus rien à la place de l'utilisateur, même quand l'arbre grandit.
+let zoomManuel = false;
+
+function installerZoom(cadre, arbre) {
+  const inner = arbre.parentElement;
+  const nat = { l: arbre.offsetWidth, h: arbre.offsetHeight };
+  const appliquer = () => {
+    arbre.style.transform = `scale(${zoom})`;
+    inner.style.width = nat.l * zoom + "px";
+    inner.style.height = nat.h * zoom + "px";
+    cadre.querySelector(".bd-zoom-val").textContent = Math.round(zoom * 100) + " %";
+  };
+  const regler = z => { zoom = Math.min(ZOOM_MAX, Math.max(ZOOM_MIN, z)); appliquer(); };
+  const reglerMain = z => { zoomManuel = true; regler(z); };
+  const ajuster = () => Math.min(1, (cadre.clientWidth - 24) / (nat.l || 1));
+
+  cadre.querySelector(".bd-zoom-plus").onclick = () => reglerMain(zoom + ZOOM_PAS);
+  cadre.querySelector(".bd-zoom-moins").onclick = () => reglerMain(zoom - ZOOM_PAS);
+  // « Ajuster » ne grossit jamais au-delà de 100 % : un petit arbre étiré au format du
+  // cadre serait grotesque, et l'utilisateur demande à voir l'ensemble, pas à remplir.
+  cadre.querySelector(".bd-zoom-fit").onclick = () => {
+    reglerMain(ajuster());
+    cadre.scrollLeft = (cadre.scrollWidth - cadre.clientWidth) / 2;
+  };
+
+  // Ctrl + molette, comme partout ailleurs. La molette seule reste au défilement de
+  // la page : la détourner piège l'utilisateur qui traverse la section.
+  cadre.addEventListener("wheel", e => {
+    if (!e.ctrlKey) return;
+    e.preventDefault();
+    reglerMain(zoom - Math.sign(e.deltaY) * ZOOM_PAS);
+  }, { passive: false });
+
+  // Glisser pour déplacer : sur un arbre large, viser la barre de défilement est
+  // pénible. On ignore les clics sur un bouton ou un nom, qui ont déjà une action.
+  let tire = null;
+  cadre.addEventListener("pointerdown", e => {
+    if (e.button !== 0 || e.target.closest("button, [role=button], a")) return;
+    tire = { x: e.clientX, y: e.clientY, gx: cadre.scrollLeft, gy: cadre.scrollTop };
+    cadre.classList.add("is-tire");
+  });
+  const fin = () => { tire = null; cadre.classList.remove("is-tire"); };
+  cadre.addEventListener("pointermove", e => {
+    if (!tire) return;
+    cadre.scrollLeft = tire.gx - (e.clientX - tire.x);
+    cadre.scrollTop = tire.gy - (e.clientY - tire.y);
+  });
+  cadre.addEventListener("pointerup", fin);
+  cadre.addEventListener("pointerleave", fin);
+
+  if (!zoomManuel && nat.l > cadre.clientWidth) regler(ajuster());
+  else appliquer();
+}
+
+// Enveloppe l'arbre dans un cadre défilant muni de ses commandes de zoom.
+function cadreZoom(arbre) {
+  const cadre = document.createElement("div");
+  cadre.className = "bd-zoom";
+  const inner = document.createElement("div");
+  inner.className = "bd-zoom-inner";
+  inner.appendChild(arbre);
+  cadre.appendChild(inner);
+  cadre.insertAdjacentHTML("beforeend", `
+    <div class="bd-zoom-ctl">
+      <button type="button" class="bd-zoom-plus" aria-label="Zoom avant sur l'arbre">+</button>
+      <button type="button" class="bd-zoom-moins" aria-label="Zoom arrière sur l'arbre">−</button>
+      <button type="button" class="bd-zoom-fit" aria-label="Ajuster l'arbre au cadre">⤢</button>
+      <span class="bd-zoom-val" aria-live="polite"></span>
+    </div>`);
+  return cadre;
+}
+
 function remplirSelect(sel, valeur) {
   sel.innerHTML = "";
   for (const p of nomsTries()) {
@@ -471,7 +555,9 @@ function rendreModeCible() {
   const ul = document.createElement("ul");
   ul.className = "bd-tree";
   ul.appendChild(noeudArbre(arbre, [], counts));
-  droite.appendChild(ul);
+  const cadre = cadreZoom(ul);
+  droite.appendChild(cadre);
+  installerZoom(cadre, ul);
 }
 
 // Un nœud de l'arbre : soit une espèce déjà en boîte (feuille), soit un croisement.
@@ -533,7 +619,9 @@ function rendreModePlan() {
   const ul = document.createElement("ul");
   ul.className = "bd-tree";
   ul.appendChild(noeudPlan(res.arbre, counts));
-  host.appendChild(ul);
+  const cadre = cadreZoom(ul);
+  host.appendChild(cadre);
+  installerZoom(cadre, ul);
 }
 
 export function renderBreeding() {
