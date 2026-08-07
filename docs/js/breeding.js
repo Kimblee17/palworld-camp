@@ -912,8 +912,14 @@ export function initBreeding() {
   document.getElementById("bd-box-only").addEventListener("change", e => {
     boiteSeule = e.target.checked; renderBreeding();
   });
-  document.getElementById("bd-mutation").addEventListener("change", e => {
-    montrerMutations = e.target.checked; renderBreeding();
+  // Bouton à bascule, comme les trois boutons de mode juste au-dessus : même registre
+  // visuel, `aria-pressed` pour l'état, et rien à cocher.
+  const bmut = document.getElementById("bd-mutation");
+  bmut.addEventListener("click", () => {
+    montrerMutations = !montrerMutations;
+    bmut.classList.toggle("active", montrerMutations);
+    bmut.setAttribute("aria-pressed", String(montrerMutations));
+    renderBreeding();
   });
 
   // Recherche : filtre les options d'un <select> sans dépendance externe.

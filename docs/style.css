@@ -1487,6 +1487,10 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 .bd-chemin.is-non { border-left-color: var(--amber); color: var(--amber); }
 
 /* ===== Mutation (mode « A × B ») ===== */
+/* Le bouton reprend le registre des boutons de mode, mais ne s'étire pas : c'est une
+   option à côté des deux sélecteurs, pas un troisième choix de même rang. */
+.bd-mut-btn { flex: none; align-self: flex-end; }
+.bd-mut-btn.active { background: var(--accent); color: var(--accent-ink); }
 .bd-mut { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 14px; }
 .bd-mut-titre { font-size: 0.95rem; font-weight: 600; margin: 0 0 10px; text-align: center; }
 .bd-mut-liste { gap: 10px; }
