@@ -912,13 +912,12 @@ export function initBreeding() {
   document.getElementById("bd-box-only").addEventListener("change", e => {
     boiteSeule = e.target.checked; renderBreeding();
   });
-  // Bouton à bascule, comme les trois boutons de mode juste au-dessus : même registre
-  // visuel, `aria-pressed` pour l'état, et rien à cocher.
+  // Interrupteur : l'état vit dans `aria-checked`, que le CSS lit pour déplacer le
+  // curseur. Pas de classe en double — un seul endroit dit si c'est allumé.
   const bmut = document.getElementById("bd-mutation");
   bmut.addEventListener("click", () => {
     montrerMutations = !montrerMutations;
-    bmut.classList.toggle("active", montrerMutations);
-    bmut.setAttribute("aria-pressed", String(montrerMutations));
+    bmut.setAttribute("aria-checked", String(montrerMutations));
     renderBreeding();
   });
 

@@ -1447,9 +1447,10 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 @media (max-width: 700px) {
   /* Cible tactile : les commandes de zoom passent à 44 px. */
   .bd-zoom-ctl button { width: 44px; height: 44px; }
-  /* Les quatre bascules à case à cocher tenaient sur 21 px — sous le seuil tactile.
+  /* Les bascules à case à cocher tenaient sur 21 px — sous le seuil tactile.
      La règle est commune : les corriger ensemble évite qu'elles divergent. */
   .night-toggle { min-height: 44px; }
+  .switch { min-height: 44px; }
   .bd-zoom { max-height: 60vh; }
   .cm-wrap { max-width: 100%; }
   .cm-zoom { width: 44px; height: 44px; }
@@ -1487,10 +1488,45 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 .bd-chemin.is-non { border-left-color: var(--amber); color: var(--amber); }
 
 /* ===== Mutation (mode « A × B ») ===== */
-/* Le bouton reprend le registre des boutons de mode, mais ne s'étire pas : c'est une
-   option à côté des deux sélecteurs, pas un troisième choix de même rang. */
-.bd-mut-btn { flex: none; align-self: flex-end; }
-.bd-mut-btn.active { background: var(--accent); color: var(--accent-ink); }
+/* ===== Interrupteur =====
+   Une piste, un curseur qui glisse, ✓ ou ✕ à l'intérieur. L'état n'est écrit qu'une
+   fois, dans `aria-checked` : le CSS le lit, donc l'affichage ne peut pas mentir sur
+   ce qu'annoncent les technologies d'assistance. */
+.switch {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: none; border: 0; padding: 4px 2px; margin: 0;
+  font: inherit; color: var(--muted); cursor: pointer;
+  align-self: flex-end; flex: none;
+}
+.switch:hover { color: var(--text); }
+.sw-piste {
+  position: relative; flex: none; width: 46px; height: 26px; border-radius: 999px;
+  background: var(--panel-2); border: 1px solid var(--edge);
+  transition: background-color .18s ease, border-color .18s ease;
+}
+.sw-curseur {
+  position: absolute; top: 2px; left: 2px; width: 20px; height: 20px; border-radius: 50%;
+  background: var(--muted); transition: transform .18s ease, background-color .18s ease;
+  display: flex; align-items: center; justify-content: center;
+}
+/* Le pictogramme est dessiné, pas écrit : un « ✓ » textuel change de graisse et de
+   position selon la police installée. */
+.sw-curseur::after {
+  content: ""; width: 9px; height: 9px;
+  background: var(--panel-2);
+  -webkit-mask: no-repeat center/9px 9px; mask: no-repeat center/9px 9px;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6.5l2.5 2.5 4.5-5' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6.5l2.5 2.5 4.5-5' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  opacity: 0; transition: opacity .18s ease;
+}
+.switch[aria-checked="true"] { color: var(--text); }
+.switch[aria-checked="true"] .sw-piste { background: var(--accent); border-color: var(--accent); }
+.switch[aria-checked="true"] .sw-curseur { background: var(--accent-ink); transform: translateX(20px); }
+.switch[aria-checked="true"] .sw-curseur::after { background: var(--accent); opacity: 1; }
+.switch:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 3px; border-radius: 8px; }
+@media (prefers-reduced-motion: reduce) {
+  .sw-piste, .sw-curseur, .sw-curseur::after { transition: none; }
+}
 .bd-mut { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 14px; }
 .bd-mut-titre { font-size: 0.95rem; font-weight: 600; margin: 0 0 10px; text-align: center; }
 .bd-mut-liste { gap: 10px; }

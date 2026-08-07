@@ -329,8 +329,13 @@
         <input type="search" id="bd-b-search" placeholder="Rechercher…" autocomplete="off">
         <select id="bd-b" size="1"></select>
       </div>
-      <button type="button" id="bd-mutation" class="bd-mode bd-mut-btn" aria-pressed="false"
-              title="Un œuf peut éclore en un tout autre Pal">🧬 Mutations</button>
+      <!-- Interrupteur : `role="switch"` + `aria-checked`, la sémantique exacte d'un
+           réglage qu'on allume ou qu'on éteint. La piste et le curseur sont décoratifs. -->
+      <button type="button" id="bd-mutation" class="switch" role="switch" aria-checked="false"
+              title="Un œuf peut éclore en un tout autre Pal">
+        <span class="sw-piste" aria-hidden="true"><span class="sw-curseur"></span></span>
+        <span class="sw-txt">🧬 Mutations</span>
+      </button>
     </div>
 
     <div id="bd-cible-ctrl" class="bd-ctrl" hidden>
