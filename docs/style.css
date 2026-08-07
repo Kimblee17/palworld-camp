@@ -1447,6 +1447,9 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 @media (max-width: 700px) {
   /* Cible tactile : les commandes de zoom passent à 44 px. */
   .bd-zoom-ctl button { width: 44px; height: 44px; }
+  /* Les quatre bascules à case à cocher tenaient sur 21 px — sous le seuil tactile.
+     La règle est commune : les corriger ensemble évite qu'elles divergent. */
+  .night-toggle { min-height: 44px; }
   .bd-zoom { max-height: 60vh; }
   .cm-wrap { max-width: 100%; }
   .cm-zoom { width: 44px; height: 44px; }
@@ -1482,3 +1485,11 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 }
 .bd-chemin.is-oui { border-left-color: var(--lvl-4); }
 .bd-chemin.is-non { border-left-color: var(--amber); color: var(--amber); }
+
+/* ===== Mutation (mode « A × B ») ===== */
+.bd-mut { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 14px; }
+.bd-mut-titre { font-size: 0.95rem; font-weight: 600; margin: 0 0 10px; text-align: center; }
+.bd-mut-liste { gap: 10px; }
+/* La probabilité prend la couleur d'une valeur, pas d'une étiquette : c'est elle
+   qu'on compare d'une carte à l'autre. */
+.bd-pct { color: var(--accent); font-weight: 700; font-size: 0.78rem; margin-left: 4px; }

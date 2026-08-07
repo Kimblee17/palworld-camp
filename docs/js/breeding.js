@@ -108,6 +108,64 @@ export function parentsFor(target) {
   return out;
 }
 
+// ===== Mutation =====
+//
+// Un œuf peut éclore en un Pal tout autre que celui de la formule normale. La règle
+// n'est publiée nulle part : elle a été RETROUVÉE en interrogeant le calculateur de
+// paldb.cc sur 63 couples, puis validée hors ligne contre ces 63 relevés — les 63 jeux
+// de candidats sont exacts et les pourcentages tombent juste à l'arrondi d'affichage
+// près (un seul écart de 0,1 point, dû à l'arrondi de la source).
+//
+//   m = rang le plus BAS des deux parents (donc le Pal le plus fort), M = le plus haut
+//   fenêtre de rangs = ] (4M + m) / 10 , (4M + 2m) / 10 ]
+//   tirage UNIFORME d'un rang entier dans cette fenêtre, puis espèce la plus proche
+//
+// Deux conséquences qu'on ne devinerait pas :
+//   - la largeur de la fenêtre vaut m/10 : deux parents proches ouvrent un large
+//     éventail, deux parents très éloignés n'en laissent souvent qu'un seul ;
+//   - la population n'est PAS celle de la reproduction normale. Les variantes (Noct,
+//     Cryst, Ignis…), réservées aux combinaisons uniques, sont ici accessibles. Seules
+//     les espèces `breedNoResult` restent exclues.
+//
+// L'arithmétique est ENTIÈRE : les rangs sont des multiples de 10, et 0,1 × 260 vaut
+// 26.000000000000004 en virgule flottante — un `floor` mal placé décalerait la fenêtre.
+const MUTABLES = PALS.filter(p => p.breedPower && !p.breedIsBoss && !p.breedNoResult);
+
+let _procheMut = null;
+function procheMut() {
+  if (_procheMut) return _procheMut;
+  const max = Math.max(...MUTABLES.map(p => p.breedPower)) + 1;
+  _procheMut = new Array(max + 1);
+  for (let t = 0; t <= max; t++) {
+    let best = null, bd = Infinity;
+    for (const p of MUTABLES) {
+      const d = Math.abs(p.breedPower - t);
+      if (d < bd || (d === bd && p.breedPriority > best.breedPriority)) { bd = d; best = p; }
+    }
+    _procheMut[t] = best;
+  }
+  return _procheMut;
+}
+
+/** Enfants possibles par mutation, avec leur probabilité. Décroissant. */
+export function mutationsDe(a, b) {
+  if (!a || !b || !a.breedPower || !b.breedPower) return [];
+  const m = Math.min(a.breedPower, b.breedPower), M = Math.max(a.breedPower, b.breedPower);
+  const lo = Math.floor((4 * M + m) / 10) + 1;
+  const hi = Math.floor((4 * M + 2 * m) / 10);
+  if (hi < lo) return [];
+  const T = procheMut();
+  const compte = new Map();
+  for (let t = lo; t <= hi; t++) {
+    const p = T[Math.min(t, T.length - 1)];
+    if (p) compte.set(p, (compte.get(p) || 0) + 1);
+  }
+  const total = hi - lo + 1;
+  return [...compte.entries()]
+    .map(([pal, n]) => ({ pal, pct: n * 100 / total }))
+    .sort((x, y) => y.pct - x.pct || x.pal.name.localeCompare(y.pal.name, "fr"));
+}
+
 // ===== Plan d'élevage sur plusieurs générations =====
 //
 // « Comment obtenir X à partir de ce que j'ai ? » Parcours en LARGEUR sur les espèces
@@ -260,6 +318,7 @@ let cibleId = null;
 let sourceId = null;            // contrainte « à partir de », null = aucune
 let selA = null, selB = null;
 let boiteSeule = false;
+let montrerMutations = false;   // bascule du mode « A × B »
 
 // ===== Arbre construit à la main (mode « cible ») =====
 // L'arbre n'est PAS calculé : c'est l'utilisateur qui choisit, à chaque nœud, le couple
@@ -460,6 +519,40 @@ function rendreModeCouple() {
   }
   bloc.appendChild(note);
   host.appendChild(bloc);
+
+  if (montrerMutations) host.appendChild(blocMutations(a, b));
+}
+
+// Les enfants de mutation, sous le résultat normal. Le pourcentage n'est affiché que
+// s'il y a plusieurs issues : « 100 % » sur une liste d'un seul élément n'apprend rien.
+function blocMutations(a, b) {
+  const liste = mutationsDe(a, b);
+  const bloc = document.createElement("section");
+  bloc.className = "bd-mut";
+  if (!liste.length) {
+    bloc.innerHTML = `<h3 class="bd-mut-titre">🧬 Mutation</h3>`
+      + `<p class="bd-note">Aucune mutation possible pour ce couple.</p>`;
+    return bloc;
+  }
+  const plusieurs = liste.length > 1;
+  bloc.innerHTML = `<h3 class="bd-mut-titre">🧬 Mutation — ${liste.length} enfant`
+    + `${plusieurs ? "s possibles" : " possible"}</h3>`;
+  const ul = document.createElement("ul");
+  ul.className = "bd-parents bd-mut-liste";
+  for (const { pal, pct } of liste) {
+    ul.appendChild(palLigne(pal, plusieurs
+      ? ` <span class="bd-pct">${pct.toFixed(1).replace(".0", "")} %</span>` : ""));
+  }
+  bloc.appendChild(ul);
+  // ⚠ La probabilité affichée est celle du CHOIX DE L'ESPÈCE une fois la mutation
+  // survenue, pas la chance de muter. Confondre les deux ferait espérer un Pal rare à
+  // chaque œuf ; on le dit plutôt que de laisser le pourcentage parler seul.
+  bloc.insertAdjacentHTML("beforeend",
+    `<p class="bd-note">Répartition <b>entre les mutations</b>, pas la probabilité qu'une `
+    + `mutation survienne — celle-ci reste rare et le jeu ne la publie pas. `
+    + `Règle retrouvée depuis <a href="https://paldb.cc/en/Breed" target="_blank" rel="noopener">paldb.cc</a> `
+    + `et vérifiée sur 63 couples.</p>`);
+  return bloc;
 }
 
 // Un nœud de l'arbre manuel. Une feuille porte un « + » pour choisir ses parents ;
@@ -818,6 +911,9 @@ export function initBreeding() {
     document.getElementById("bd-mode-" + m).addEventListener("click", () => { mode = m; renderBreeding(); });
   document.getElementById("bd-box-only").addEventListener("change", e => {
     boiteSeule = e.target.checked; renderBreeding();
+  });
+  document.getElementById("bd-mutation").addEventListener("change", e => {
+    montrerMutations = e.target.checked; renderBreeding();
   });
 
   // Recherche : filtre les options d'un <select> sans dépendance externe.
