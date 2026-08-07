@@ -168,9 +168,96 @@ function construireArbre(id, via) {
   };
 }
 
+// ===== Chemin d'une espèce vers une autre =====
+//
+// « Je veux A, en partant de B. » Ce n'est PAS le plan d'élevage : celui-là part de
+// tout ce qu'on possède et cherche le plus court chemin depuis n'importe quoi. Ici une
+// espèce est imposée comme ancêtre, et on cherche la lignée qui y mène.
+//
+// Le parcours est en largeur sur les espèces atteignables depuis B en croisant, à
+// chaque génération, l'individu courant avec un partenaire quelconque. La largeur
+// d'abord garantit le plus petit nombre de générations ; à nombre égal, on essaie les
+// partenaires DÉJÀ EN BOÎTE en premier, pour que le chemin proposé soit jouable tout
+// de suite plutôt qu'élégant sur le papier.
+//
+// Le résultat est une CHAÎNE — B × P1 → C1, C1 × P2 → C2, … → A — donc un arbre dont
+// l'épine dorsale descend jusqu'à B. C'est exactement ce que fait un joueur avec une
+// seule lignée, et c'est modifiable nœud par nœud comme n'importe quel arbre construit
+// à la main.
+export function cheminDepuis(sourceId, cibleId, quantites = {}, maxGen = MAX_GENERATIONS) {
+  if (sourceId === cibleId) return { memeEspece: true };
+  const source = palsById[sourceId], cible = palsById[cibleId];
+  if (!source || !cible || !source.breedPower || !cible.breedPower) return { impossible: true };
+  // Certaines espèces ne naissent que de deux individus de leur propre espèce : aucune
+  // lignée ne peut y mener depuis une autre. C'est une règle, pas une limite de
+  // profondeur, et le dire évite de laisser croire qu'une recherche plus longue
+  // finirait par aboutir.
+  //
+  // ⚠ On le DÉDUIT des couples réellement possibles, on ne le lit pas dans un drapeau.
+  // `breedNoResult` combiné à « enfant d'une combinaison unique » donnait un verdict
+  // faux pour Jetragon ; interroger parentsFor, qui est la fonction dont dépend déjà
+  // tout l'écran, ne peut pas diverger de ce que l'utilisateur voit.
+  const couples = parentsFor(cible);
+  if (!couples.length) return { impossible: true };
+  if (couples.every(c => c.a.id === cibleId && c.b.id === cibleId))
+    return { seulementSoiMeme: true };
+
+  // Partenaires possibles, ceux de la boîte d'abord (cf. commentaire ci-dessus).
+  //
+  // ⚠ LA CIBLE EST ÉCARTÉE DES PARTENAIRES. Sans cela le parcours proposait des
+  // lignées qui consomment un Anubis pour finir par produire un Anubis : le croisement
+  // est exact, le conseil est circulaire. Qui possède déjà l'espèce visée n'a pas
+  // besoin d'un plan pour l'obtenir.
+  const enBoite = new Set(Object.entries(quantites || {})
+    .filter(([, n]) => n > 0).map(([id]) => Number(id)));
+  const partenaires = BREEDERS.filter(p => p.id !== cibleId).sort((a, b) =>
+    (enBoite.has(b.id) ? 1 : 0) - (enBoite.has(a.id) ? 1 : 0));
+
+  const via = new Map();               // espèce atteinte -> { depuis, partenaire }
+  let frontiere = [sourceId];
+  const vus = new Set([sourceId]);
+
+  for (let gen = 1; gen <= maxGen && frontiere.length; gen++) {
+    const suivants = [];
+    for (const courant of frontiere) {
+      for (const p of partenaires) {
+        const enfant = childOf(palsById[courant], p);
+        if (!enfant || vus.has(enfant.id)) continue;
+        vus.add(enfant.id);
+        via.set(enfant.id, { depuis: courant, partenaire: p.id });
+        if (enfant.id === cibleId) {
+          // On remonte la chaîne et on la retourne : l'arbre se lit de la cible
+          // vers la source, chaque nœud ayant pour parents l'étape précédente et
+          // le partenaire de ce croisement.
+          const etapes = [];
+          for (let id = cibleId; via.has(id); id = via.get(id).depuis) {
+            const v = via.get(id);
+            etapes.unshift({ enfant: id, depuis: v.depuis, partenaire: v.partenaire });
+          }
+          return { etapes, generations: gen };
+        }
+        suivants.push(enfant.id);
+      }
+    }
+    frontiere = suivants;
+  }
+  return { introuvable: true, generations: maxGen };
+}
+
+/** La chaîne d'étapes en arbre pour le constructeur : la cible en racine. */
+function arbreDepuisChemin(etapes) {
+  let noeud = null;
+  for (const e of etapes) {
+    const gauche = noeud || { id: e.depuis, parents: null };
+    noeud = { id: e.enfant, parents: [gauche, { id: e.partenaire, parents: null }] };
+  }
+  return noeud;
+}
+
 // ===== Vue =====
 let mode = "couple";            // "couple" (A × B) · "cible" (parents directs) · "plan"
 let cibleId = null;
+let sourceId = null;            // contrainte « à partir de », null = aucune
 let selA = null, selB = null;
 let boiteSeule = false;
 
@@ -182,6 +269,11 @@ let boiteSeule = false;
 let arbre = null;               // { id, parents: [noeud, noeud] | null }
 let focus = null;               // chemin du nœud dont on liste les couples
 let filtreParent = "";          // filtre sur le nom d'un des deux parents
+// Couple (cible, source) dont l'arbre affiché est issu. Sert à ne PAS reconstruire
+// l'arbre à chaque rendu : greffer un couple redessine tout, et repartir du chemin
+// suggéré effacerait le travail de l'utilisateur à chaque clic.
+let arbreCle = null;
+let cheminInfo = null;          // résultat de cheminDepuis, pour le bandeau
 
 // `focus` vaut null quand rien n'est sélectionné : on retombe alors sur la racine.
 const noeudA = chemin => (chemin || []).reduce((n, i) => n && n.parents && n.parents[i], arbre);
@@ -412,13 +504,51 @@ function noeudArbre(n, chemin, counts) {
   return li;
 }
 
+// Ce que la contrainte de départ a donné. Un chemin suggéré n'est PAS un plan validé :
+// on le dit, parce que l'arbre a exactement l'air de ceux que l'utilisateur construit
+// lui-même et que rien d'autre ne signalerait qu'une machine l'a rempli.
+function messageChemin(cible) {
+  if (!sourceId || !cheminInfo) return "";
+  const source = palsById[sourceId];
+  if (cheminInfo.memeEspece)
+    return `<p class="bd-msg bd-chemin">${cible.name} <b>est</b> l'espèce de départ : `
+      + `deux individus suffisent, aucun croisement intermédiaire.</p>`;
+  if (cheminInfo.impossible)
+    return `<p class="bd-msg bd-chemin is-non">${source.name} ou ${cible.name} ne se reproduit pas.</p>`;
+  if (cheminInfo.seulementSoiMeme)
+    return `<p class="bd-msg bd-chemin is-non"><b>${cible.name}</b> ne naît que de deux `
+      + `${cible.name}. Aucune lignée ne peut y mener depuis une autre espèce — ce n'est `
+      + `pas une limite du calcul, c'est la règle du jeu. Il faut en capturer un.</p>`;
+  if (cheminInfo.introuvable)
+    return `<p class="bd-msg bd-chemin is-non">Aucune lignée trouvée de <b>${source.name}</b> `
+      + `vers <b>${cible.name}</b> en ${cheminInfo.generations} générations. `
+      + `L'arbre repart à vide : construis-le à la main, ou change d'espèce de départ.</p>`;
+  const g = cheminInfo.generations;
+  return `<p class="bd-msg bd-chemin is-oui">Lignée proposée depuis <b>${source.name}</b> : `
+    + `<b>${g} génération${g > 1 ? "s" : ""}</b>${g === 1 ? " — un croisement direct suffit" : ""}. `
+    + `Les partenaires de ta boîte sont privilégiés à nombre de générations égal. `
+    + `Chaque nœud reste modifiable.</p>`;
+}
+
 function rendreModeCible() {
   const host = document.getElementById("bd-result");
   const cible = palsById[cibleId];
   if (!cible) { host.innerHTML = ""; return; }
 
-  // L'arbre suit la cible : changer de cible repart d'une racine neuve.
-  if (!arbre || arbre.id !== cibleId) reinitArbre(cibleId);
+  // L'arbre suit la cible ET la contrainte de départ. Tant que ce couple ne change
+  // pas, on garde l'arbre tel que l'utilisateur l'a modifié.
+  const counts = palBoxCounts();
+  const cle = cibleId + "|" + (sourceId ?? "");
+  if (!arbre || arbre.id !== cibleId || arbreCle !== cle) {
+    cheminInfo = sourceId ? cheminDepuis(sourceId, cibleId, counts) : null;
+    if (cheminInfo && cheminInfo.etapes) {
+      arbre = arbreDepuisChemin(cheminInfo.etapes);
+      focus = []; filtreParent = "";
+    } else {
+      reinitArbre(cibleId);
+    }
+    arbreCle = cle;
+  }
   const noeudFocus = noeudA(focus) || arbre;
   const palFocus = palsById[noeudFocus.id];
 
@@ -432,7 +562,6 @@ function rendreModeCible() {
     return toutesPaires.filter(({ a, b }) =>
       a.name.toLowerCase().includes(q) || b.name.toLowerCase().includes(q));
   };
-  const counts = palBoxCounts();
   let filtre = "";
   const filtrerBoite = liste => !boiteSeule ? liste : liste.filter(({ a, b }) => {
     const qa = counts[a.id] || 0, qb = counts[b.id] || 0;
@@ -545,11 +674,11 @@ function rendreModeCible() {
   raz.type = "button";
   raz.className = "bar-btn";
   raz.textContent = "Effacer l'arbre";
-  raz.onclick = () => { reinitArbre(cibleId); renderBreeding(); };
+  raz.onclick = () => { reinitArbre(cibleId); arbreCle = null; renderBreeding(); };
   entete.appendChild(raz);
   droite.appendChild(entete);
-  droite.insertAdjacentHTML("beforeend",
-    `<p class="bd-note">Clique un couple à gauche pour l'attacher, puis <b>+</b> sur un `
+  droite.insertAdjacentHTML("beforeend", messageChemin(cible)
+    + `<p class="bd-note">Clique un couple à gauche pour l'attacher, puis <b>+</b> sur un `
     + `parent pour choisir à son tour ses parents. <b>×</b> détache une branche.</p>`);
 
   const ul = document.createElement("ul");
@@ -652,6 +781,35 @@ export function initBreeding() {
   sa.addEventListener("change", () => { selA = Number(sa.value); renderBreeding(); });
   sb.addEventListener("change", () => { selB = Number(sb.value); renderBreeding(); });
   sc.addEventListener("change", () => { cibleId = Number(sc.value); sp.value = sc.value; renderBreeding(); });
+
+  // --- Contrainte « à partir de ». Vide au départ : la vue garde son comportement
+  // d'origine tant qu'on ne l'utilise pas.
+  const sd = document.getElementById("bd-depuis");
+  const effacer = document.getElementById("bd-depuis-clear");
+  remplirSelect(sd);
+  sd.insertBefore(new Option("— aucune contrainte —", ""), sd.firstChild);
+  sd.value = "";
+  const majDepuis = () => {
+    sourceId = sd.value ? Number(sd.value) : null;
+    effacer.hidden = !sourceId;
+    renderBreeding();
+  };
+  sd.addEventListener("change", majDepuis);
+  effacer.addEventListener("click", () => {
+    sd.value = ""; document.getElementById("bd-depuis-search").value = "";
+    remplirSelect(sd); sd.insertBefore(new Option("— aucune contrainte —", ""), sd.firstChild);
+    sd.value = ""; majDepuis();
+  });
+  document.getElementById("bd-depuis-search").addEventListener("input", e => {
+    const q = e.target.value.trim().toLowerCase();
+    const gardes = nomsTries().filter(p => !q || p.name.toLowerCase().includes(q));
+    sd.innerHTML = "";
+    sd.appendChild(new Option("— aucune contrainte —", ""));
+    for (const p of gardes) sd.appendChild(new Option(`${p.name} (${p.breedPower})`, String(p.id)));
+    // Une recherche vidée relâche la contrainte plutôt que d'en imposer une au hasard.
+    sd.value = q && gardes.length ? String(gardes[0].id) : "";
+    majDepuis();
+  });
   sp.addEventListener("change", () => { cibleId = Number(sp.value); sc.value = sp.value; renderBreeding(); });
   document.getElementById("bd-swap").addEventListener("click", () => {
     [selA, selB] = [selB, selA]; sa.value = String(selA); sb.value = String(selB); renderBreeding();

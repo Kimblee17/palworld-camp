@@ -1468,3 +1468,17 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 }
 /* Un liseré, pas un fond : la couleur de la ligne porte déjà la rareté. */
 .pv-row.is-owned { border-left: 3px solid var(--lvl-4); }
+
+/* ===== Contrainte « à partir de » (mode « Je veux ce Pal ») ===== */
+.bd-opt { font-weight: 400; color: var(--muted); font-size: 0.82em; }
+.bd-depuis-row { display: flex; gap: 8px; align-items: center; }
+.bd-depuis-row select { flex: 1; min-width: 0; }
+/* Le bandeau du chemin suggéré : vert quand une lignée existe, ambre sinon. Un arbre
+   rempli par la machine ressemble trait pour trait à un arbre construit à la main —
+   sans ce repère, rien ne dirait lequel on regarde. */
+.bd-chemin {
+  border-left: 3px solid var(--border); padding-left: 10px;
+  text-align: left; margin: 8px 0;
+}
+.bd-chemin.is-oui { border-left-color: var(--lvl-4); }
+.bd-chemin.is-non { border-left-color: var(--amber); color: var(--amber); }

@@ -337,6 +337,15 @@
         <input type="search" id="bd-cible-search" placeholder="Rechercher…" autocomplete="off">
         <select id="bd-cible" size="1"></select>
       </div>
+      <!-- Contrainte facultative : imposer une espèce de départ dans la lignée. -->
+      <div class="bd-pick bd-depuis">
+        <label for="bd-depuis">À partir de <span class="bd-opt">(facultatif)</span></label>
+        <input type="search" id="bd-depuis-search" placeholder="Rechercher…" autocomplete="off">
+        <div class="bd-depuis-row">
+          <select id="bd-depuis" size="1"></select>
+          <button type="button" id="bd-depuis-clear" class="bar-btn" hidden>Retirer</button>
+        </div>
+      </div>
       <label class="night-toggle" title="Ne garder que les paires réalisables avec les Pals que tu possèdes">
         <input type="checkbox" id="bd-box-only"> 🎒 uniquement parmi ma boîte
       </label>
