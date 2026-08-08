@@ -1555,3 +1555,12 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 .drop-sens { margin-bottom: 0; flex: none; }
 .drop-sens .bd-mode { flex: none; }
 .drop-item-name .pal-ic { width: 26px; height: 26px; vertical-align: middle; margin-right: 6px; }
+
+/* Le nom d'un Pal ouvre sa fiche : un vrai bouton, mis en forme comme un lien. */
+.drop-pal-btn {
+  appearance: none; background: none; border: 0; padding: 0; font: inherit;
+  color: var(--accent-2); cursor: pointer; text-align: left;
+}
+.drop-pal-btn:hover { text-decoration: underline; }
+.drop-tete { color: inherit; font: inherit; display: inline-flex; align-items: center; gap: 6px; }
+.drop-plus { padding-top: 4px; }
