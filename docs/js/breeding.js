@@ -505,21 +505,15 @@ function rendreModeCouple() {
   res.className = "bd-child";
   res.appendChild(palLigne(enfant));
   bloc.appendChild(res);
-  const note = document.createElement("p");
-  note.className = "bd-note";
+  // Plus aucun texte explicatif : la vue montre le résultat, pas son mode d'emploi.
+  // Une combinaison unique garde son verrou, réduit à un badge — c'est une propriété
+  // du couple, pas une explication.
   if (combo) {
     const sexe = combo.ga || combo.gb
-      ? ` (uniquement ${combo.a === a.id ? a.name : b.name} ${combo.ga === "F" ? "♀" : "♂"} × ${combo.a === a.id ? b.name : a.name} ${combo.gb === "F" ? "♀" : "♂"})` : "";
-    note.innerHTML = `🔒 <b>Combinaison unique</b> : cette paire donne toujours ${enfant.name}${sexe}.`;
-  } else if (a.id === b.id) {
-    note.textContent = "Deux parents de la même espèce donnent cette espèce.";
-  } else {
-    // La règle reste énoncée, sans ses nombres : savoir POURQUOI l'enfant est celui-là
-    // aide, connaître les rangs internes non.
-    note.innerHTML = `Hors combinaison unique, l'enfant est l'espèce dont le pouvoir de `
-      + `reproduction est le plus proche de la moyenne des deux parents — ici <b>${enfant.name}</b>.`;
+      ? ` — ${combo.a === a.id ? a.name : b.name} ${combo.ga === "F" ? "♀" : "♂"} × ${combo.a === a.id ? b.name : a.name} ${combo.gb === "F" ? "♀" : "♂"}` : "";
+    bloc.insertAdjacentHTML("beforeend",
+      `<div class="bd-verrou"><span aria-hidden="true">🔒</span> Combinaison unique${sexe}</div>`);
   }
-  bloc.appendChild(note);
   host.appendChild(bloc);
 
   if (montrerMutations) host.appendChild(blocMutations(a, b));
@@ -537,8 +531,11 @@ function blocMutations(a, b) {
     return bloc;
   }
   const plusieurs = liste.length > 1;
-  bloc.innerHTML = `<h3 class="bd-mut-titre">🧬 Mutation — ${liste.length} enfant`
-    + `${plusieurs ? "s possibles" : " possible"}</h3>`;
+  // L'avertissement n'est plus affiché mais reste atteignable : le pourcentage donne la
+  // répartition ENTRE les mutations, pas la chance qu'une mutation survienne.
+  bloc.innerHTML = `<h3 class="bd-mut-titre" title="Répartition entre les mutations, pas la `
+    + `probabilité qu'une mutation survienne — celle-ci reste rare et le jeu ne la publie pas.">`
+    + `🧬 Mutation — ${liste.length} enfant${plusieurs ? "s possibles" : " possible"}</h3>`;
   const ul = document.createElement("ul");
   ul.className = "bd-parents bd-mut-liste";
   for (const { pal, pct } of liste) {
@@ -549,11 +546,6 @@ function blocMutations(a, b) {
   // ⚠ La probabilité affichée est celle du CHOIX DE L'ESPÈCE une fois la mutation
   // survenue, pas la chance de muter. Confondre les deux ferait espérer un Pal rare à
   // chaque œuf ; on le dit plutôt que de laisser le pourcentage parler seul.
-  bloc.insertAdjacentHTML("beforeend",
-    `<p class="bd-note">Répartition <b>entre les mutations</b>, pas la probabilité qu'une `
-    + `mutation survienne — celle-ci reste rare et le jeu ne la publie pas. `
-    + `Règle retrouvée depuis <a href="https://paldb.cc/en/Breed" target="_blank" rel="noopener">paldb.cc</a> `
-    + `et vérifiée sur 63 couples.</p>`);
   return bloc;
 }
 
@@ -606,23 +598,18 @@ function messageChemin(cible) {
   if (!sourceId || !cheminInfo) return "";
   const source = palsById[sourceId];
   if (cheminInfo.memeEspece)
-    return `<p class="bd-msg bd-chemin">${cible.name} <b>est</b> l'espèce de départ : `
-      + `deux individus suffisent, aucun croisement intermédiaire.</p>`;
+    return `<p class="bd-msg bd-chemin">${cible.name} <b>est</b> l'espèce de départ.</p>`;
   if (cheminInfo.impossible)
     return `<p class="bd-msg bd-chemin is-non">${source.name} ou ${cible.name} ne se reproduit pas.</p>`;
   if (cheminInfo.seulementSoiMeme)
     return `<p class="bd-msg bd-chemin is-non"><b>${cible.name}</b> ne naît que de deux `
-      + `${cible.name}. Aucune lignée ne peut y mener depuis une autre espèce — ce n'est `
-      + `pas une limite du calcul, c'est la règle du jeu. Il faut en capturer un.</p>`;
+      + `${cible.name}.</p>`;
   if (cheminInfo.introuvable)
-    return `<p class="bd-msg bd-chemin is-non">Aucune lignée trouvée de <b>${source.name}</b> `
-      + `vers <b>${cible.name}</b> en ${cheminInfo.generations} générations. `
-      + `L'arbre repart à vide : construis-le à la main, ou change d'espèce de départ.</p>`;
+    return `<p class="bd-msg bd-chemin is-non">Aucune lignée de <b>${source.name}</b> `
+      + `vers <b>${cible.name}</b> en ${cheminInfo.generations} générations.</p>`;
   const g = cheminInfo.generations;
-  return `<p class="bd-msg bd-chemin is-oui">Lignée proposée depuis <b>${source.name}</b> : `
-    + `<b>${g} génération${g > 1 ? "s" : ""}</b>${g === 1 ? " — un croisement direct suffit" : ""}. `
-    + `Les partenaires de ta boîte sont privilégiés à nombre de générations égal. `
-    + `Chaque nœud reste modifiable.</p>`;
+  return `<p class="bd-msg bd-chemin is-oui">Lignée depuis <b>${source.name}</b> : `
+    + `<b>${g} génération${g > 1 ? "s" : ""}</b>.</p>`;
 }
 
 function rendreModeCible() {
@@ -657,17 +644,12 @@ function rendreModeCible() {
     return toutesPaires.filter(({ a, b }) =>
       a.name.toLowerCase().includes(q) || b.name.toLowerCase().includes(q));
   };
-  let filtre = "";
+  const filtre = "";
   const filtrerBoite = liste => !boiteSeule ? liste : liste.filter(({ a, b }) => {
     const qa = counts[a.id] || 0, qb = counts[b.id] || 0;
     // Un seul exemplaire ne peut pas être son propre partenaire.
     return a.id === b.id ? qa >= 2 : qa >= 1 && qb >= 1;
   });
-  if (boiteSeule) {
-    filtre = `<p class="bd-note">🎒 Filtré sur ta boîte. `
-      + `<b>Le sexe n'est pas pris en compte</b> : la boîte ne mémorise pas cette information `
-      + `(l'import de sauvegarde ne la conserve pas). Vérifie en jeu que tu as bien un mâle et une femelle.</p>`;
-  }
 
   // Deux colonnes : à gauche les couples du nœud sélectionné, à droite l'arbre en
   // cours de construction.
@@ -705,17 +687,18 @@ function rendreModeCible() {
   // Repeuple le compteur et la liste, sans toucher au champ de filtre.
   function peupler() {
   const paires = filtrerBoite(filtrer());
-  gauche.querySelectorAll(".bd-pairs, .bd-msg, .bd-note.bd-trop").forEach(e => e.remove());
+  gauche.querySelectorAll(".bd-pairs, .bd-msg").forEach(e => e.remove());
+  const affichees = Math.min(paires.length, 300);
   document.getElementById("bd-pair-count").textContent =
-    `${paires.length}${filtreParent ? ` sur ${total}` : ""} paire(s) donnant ${palFocus.name}`;
+    (affichees < paires.length ? `${affichees} sur ` : "")
+    + `${paires.length}${filtreParent ? ` sur ${total}` : ""} paire(s) donnant ${palFocus.name}`;
   if (!paires.length) {
     gauche.insertAdjacentHTML("beforeend", boiteSeule
       ? `<p class="bd-msg">Aucune paire réalisable avec ta boîte pour obtenir <b>${palFocus.name}</b>.</p>`
       : filtreParent
         ? `<p class="bd-msg">Aucun couple donnant <b>${palFocus.name}</b> ne fait intervenir `
           + `« ${filtreParent} » (sur ${total} paires).</p>`
-        : `<p class="bd-msg"><b>${palFocus.name}</b> ne peut pas être obtenu par reproduction : `
-          + `il faut le capturer.</p>`);
+        : `<p class="bd-msg"><b>${palFocus.name}</b> ne peut pas être obtenu par reproduction.</p>`);
   } else {
     // Les combinaisons uniques d'abord, puis par nom.
     paires.sort((x, y) => Number(y.unique) - Number(x.unique)
@@ -754,8 +737,7 @@ function rendreModeCible() {
     }
     gauche.appendChild(ul);
     if (paires.length > 300) {
-      gauche.insertAdjacentHTML("beforeend",
-        `<p class="bd-note bd-trop">Seules les 300 premières paires sont affichées (sur ${paires.length}).</p>`);
+
     }
   }
   }
@@ -772,9 +754,7 @@ function rendreModeCible() {
   raz.onclick = () => { reinitArbre(cibleId); arbreCle = null; renderBreeding(); };
   entete.appendChild(raz);
   droite.appendChild(entete);
-  droite.insertAdjacentHTML("beforeend", messageChemin(cible)
-    + `<p class="bd-note">Clique un couple à gauche pour l'attacher, puis <b>+</b> sur un `
-    + `parent pour choisir à son tour ses parents. <b>×</b> détache une branche.</p>`);
+  droite.insertAdjacentHTML("beforeend", messageChemin(cible));
 
   const ul = document.createElement("ul");
   ul.className = "bd-tree";
@@ -812,20 +792,17 @@ function rendreModePlan() {
   const res = planDeReproduction(cible.id, counts);
 
   if (res.vide) {
-    host.innerHTML = `<p class="bd-msg">Ta boîte est vide. Remplis-la depuis l'onglet `
-      + `📥 Importer une save, ou à la main dans « Ma boîte ».</p>`;
+    host.innerHTML = `<p class="bd-msg">Ta boîte est vide.</p>`;
     return;
   }
   if (res.deja) {
-    host.innerHTML = `<p class="bd-msg">Tu possèdes déjà <b>${cible.name}</b> `
-      + `(${counts[cible.id]} exemplaire(s)). Aucun élevage nécessaire.</p>`;
+    host.innerHTML = `<p class="bd-msg">Tu possèdes déjà <b>${cible.name}</b> (${counts[cible.id]}).</p>`;
     return;
   }
   if (res.introuvable) {
     host.innerHTML = `<p class="bd-msg">Aucun chemin trouvé vers <b>${cible.name}</b> `
       + `en ${res.generations} générations à partir de ta boîte.</p>`
-      + `<p class="bd-note">Certaines espèces ne s'obtiennent pas par reproduction : il faut `
-      + `alors en capturer une, puis relancer le calcul.</p>`;
+;
     return;
   }
 
@@ -836,10 +813,7 @@ function rendreModePlan() {
 
   host.innerHTML = `<div class="bd-head"><b>${cible.name}</b> en `
     + `${res.generations} génération${res.generations > 1 ? "s" : ""}, `
-    + `à partir de ${feuilles.size} espèce(s) de ta boîte</div>`
-    + `<p class="bd-note">🎒 = déjà en boîte. <b>Le sexe n'est pas pris en compte</b> : `
-    + `la boîte ne mémorise pas cette information. Vérifie en jeu que chaque couple a `
-    + `bien un mâle et une femelle.</p>`;
+    + `à partir de ${feuilles.size} espèce(s) de ta boîte</div>`;
   const ul = document.createElement("ul");
   ul.className = "bd-tree";
   ul.appendChild(noeudPlan(res.arbre, counts));

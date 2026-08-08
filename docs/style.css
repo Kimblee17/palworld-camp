@@ -1248,7 +1248,6 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 }
 
 /* ===== Plan d'élevage : arbre généalogique ===== */
-.bd-plan-help { flex-basis: 100%; margin: 6px 0 0; }
 
 /* ===== Arbre généalogique =====
    Le Pal visé en haut, ses deux parents côte à côte en dessous, et ainsi de suite :
@@ -1572,3 +1571,9 @@ body.camp-actions-open .limit-ctrl { display: flex; }
    atteint à la tabulation et l'anneau désignerait un bloc entier. */
 main:focus, body > .panel:focus { outline: none; }
 @media (prefers-reduced-motion: reduce) { .skip-link { transition: none; } }
+
+/* Verrou d'une combinaison unique : un badge, plus une phrase. */
+.bd-verrou {
+  margin-top: 10px; text-align: center; font-size: 0.78rem; font-weight: 600;
+  color: var(--amber);
+}
