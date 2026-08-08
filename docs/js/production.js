@@ -191,7 +191,10 @@ function render() {
 
   const arbre = document.createElement("ul");
   arbre.className = "pr-tree";
-  arbre.appendChild(noeudEl(racine, "r"));
+  // La clé de la racine porte le NOM de l'objet : une clé fixe faisait hériter au
+  // suivant l'état replié du précédent, et on changeait de sélection pour tomber sur
+  // un arbre fermé.
+  arbre.appendChild(noeudEl(racine, "r:" + objetChoisi));
   host.appendChild(arbre);
 
   // Récapitulatif des ressources de base
