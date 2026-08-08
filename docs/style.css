@@ -1533,3 +1533,11 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 /* La probabilité prend la couleur d'une valeur, pas d'une étiquette : c'est elle
    qu'on compare d'une carte à l'autre. */
 .bd-pct { color: var(--accent); font-weight: 700; font-size: 0.78rem; margin-left: 4px; }
+
+/* ===== Catalogue plafonné ===== */
+/* La dernière ligne n'est pas un résultat : elle dit ce qui reste et permet de le voir. */
+.cat-plus {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  flex-wrap: wrap; padding: 10px 2px 2px; border-top: 1px dashed var(--border); margin-top: 6px;
+}
+.cat-reste { font-size: 0.8rem; color: var(--muted); }

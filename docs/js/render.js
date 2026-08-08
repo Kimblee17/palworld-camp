@@ -718,6 +718,49 @@ function stepperOrAdd(mode, q, onAdd, onStep, onDel, disabledAdd) {
 }
 
 // ===== Catalogues =====
+// ===== Catalogue : on ne déverse plus tout =====
+//
+// Les trois onglets rendaient l'intégralité de leur catalogue : 673 lignes et 373
+// boutons « + » dans le parcours clavier, avant la moindre action. La vue Camp comptait
+// 631 arrêts de tabulation — on ne la traverse pas, on s'y noie.
+//
+// Le catalogue rend donc au plus 24 lignes, et dit combien il en cache. C'est un
+// PLAFOND D'AFFICHAGE, pas un filtre : rien ne disparaît, « Tout afficher » lève la
+// limite pour l'onglet en cours, et une recherche la rend sans objet.
+//
+// Les Pals qu'on POSSÈDE passent devant. Sans cela, les 24 premières lignes seraient
+// les 24 premières de l'alphabet — un mur tronqué plutôt qu'un mur. On compose un camp
+// avec ce qu'on a ; c'est le seul ordre qui ait une raison d'être.
+const CAP_CATALOGUE = 24;
+const capLevee = { pal: false, struct: false, box: false };
+
+function rendreCatalogue(hote, liste, cle, ligne, vide) {
+  hote.innerHTML = "";
+  if (!liste.length) { hote.innerHTML = `<li class="empty">${vide}</li>`; return; }
+  const tout = capLevee[cle];
+  const montres = tout ? liste : liste.slice(0, CAP_CATALOGUE);
+  for (const x of montres) hote.appendChild(ligne(x));
+  if (liste.length <= CAP_CATALOGUE) return;
+
+  const li = document.createElement("li");
+  li.className = "cat-plus";
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "bar-btn";
+  btn.textContent = tout ? "Réduire la liste" : `Tout afficher (${liste.length})`;
+  btn.onclick = () => { capLevee[cle] = !tout; renderAll(); };
+  if (!tout) {
+    li.insertAdjacentHTML("beforeend",
+      `<span class="cat-reste">${montres.length} sur ${liste.length} — affine ta recherche</span>`);
+  }
+  li.appendChild(btn);
+  hote.appendChild(li);
+}
+
+// Possédés d'abord, puis alphabétique.
+const parPossession = (a, b) =>
+  (boxQty(b.id) > 0) - (boxQty(a.id) > 0) || a.name.localeCompare(b.name, "fr");
+
 export function renderPalCatalog() {
   const q = document.getElementById("search").value.trim().toLowerCase();
   const wf = document.getElementById("filter-work").value;
@@ -729,10 +772,9 @@ export function renderPalCatalog() {
     (!q || p.name.toLowerCase().includes(q)) &&
     (!wf || (p.work[wf] || 0) > 0) &&
     (!nightOnly || p.nightWorker)
-  ).sort((a, b) => a.name.localeCompare(b.name, "fr"));
+  ).sort(parPossession);
 
-  if (!filtered.length) { list.innerHTML = `<li class="empty">Aucun Pal trouvé.</li>`; return; }
-  filtered.forEach(p => list.appendChild(palRow(p, "catalog")));
+  rendreCatalogue(list, filtered, "pal", p => palRow(p, "catalog"), "Aucun Pal trouvé.");
 }
 
 export function renderStructCatalog() {
@@ -746,8 +788,8 @@ export function renderStructCatalog() {
     (!cf || s.category === cf)
   ).sort((a, b) => a.name.localeCompare(b.name, "fr"));
 
-  if (!filtered.length) { list.innerHTML = `<li class="empty">Aucune construction trouvée.</li>`; return; }
-  filtered.forEach(s => list.appendChild(structRow(s, "catalog")));
+  rendreCatalogue(list, filtered, "struct", s => structRow(s, "catalog"),
+                  "Aucune construction trouvée.");
 }
 
 export function renderBoxCatalog() {
@@ -759,10 +801,9 @@ export function renderBoxCatalog() {
   const filtered = PALS.filter(p =>
     (!q || p.name.toLowerCase().includes(q)) &&
     (!ownedOnly || boxQty(p.id) > 0)
-  ).sort((a, b) => a.name.localeCompare(b.name, "fr"));
+  ).sort(parPossession);
 
-  if (!filtered.length) { list.innerHTML = `<li class="empty">Aucun Pal trouvé.</li>`; return; }
-  filtered.forEach(p => list.appendChild(palRow(p, "box")));
+  rendreCatalogue(list, filtered, "box", p => palRow(p, "box"), "Aucun Pal trouvé.");
 }
 
 // ===== Contenu du camp =====
