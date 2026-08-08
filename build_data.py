@@ -24,7 +24,7 @@ from fetch_pal_data import load_pal_data
 from fetch_pal_drops import load_pal_drops
 from fetch_breeding import load_breeding
 from fetch_recipes import load_recipes
-from fetch_pal_food import load_pal_food
+from fetch_pal_details import load_pal_details
 from fetch_passives import load_code_table, load_passives
 from fetch_spawns import load_spawns
 
@@ -143,9 +143,10 @@ def build_pals():
              if info and info.get("slug")]
     drops_data = load_pal_drops(slugs)
 
-    # Appétit (FoodAmount) — source distincte, cf. l'en-tête de fetch_pal_food.py :
-    # palworld.gg ne publie pas cette statistique.
-    food_data = load_pal_food(names)
+    # Appétit + compétence de partenaire — source distincte, cf. l'en-tête de
+    # fetch_pal_details.py : palworld.gg ne publie ni l'un ni l'autre de façon
+    # exploitable, et les deux vivent sur la même page paldb.
+    details = load_pal_details(names)
 
     pals = []
     matched = set()
@@ -196,8 +197,11 @@ def build_pals():
             pal["captureRate"] = gd["captureRate"]
             pal["zukan"] = gd["zukan"]
             data_matched.add(_norm(name))
-        if food_data.get(name) is not None:
-            pal["food"] = food_data[name]     # appétit, échelle entière 1-9
+        d = details.get(name) or {}
+        if d.get("food") is not None:
+            pal["food"] = d["food"]           # appétit, échelle entière 1-9
+        if d.get("partner"):
+            pal["partner"] = d["partner"]     # { nom, desc } en français
         if name in RANCH_FOOD_IMPLICIT or RANCH_PRODUCT_IS_FOOD.get((gd or {}).get("ranch")):
             pal["ranchFood"] = True           # produit de la nourriture placé au ranch
         pals.append(pal)

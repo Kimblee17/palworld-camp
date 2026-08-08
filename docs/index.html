@@ -209,7 +209,7 @@
     <div id="pedia-progress" class="pedia-progress"></div>
     <div class="legend"><span class="legend-label">Niveau :</span></div>
     <div class="controls">
-      <input type="search" id="pedia-search" placeholder="Rechercher un Pal…" autocomplete="off">
+      <input type="search" id="pedia-search" placeholder="Nom, ou mot de la compétence de partenaire…" autocomplete="off">
       <select id="pedia-work"><option value="">Toutes les compétences</option></select>
       <select id="pedia-element"><option value="">Tous les éléments</option></select>
       <select id="pedia-owned" title="Filtrer selon ce que contient ma boîte" aria-label="Filtre de possession">
@@ -301,9 +301,16 @@
 
   <!-- Vue Drops : recherche d'objet -> Pals qui le lâchent -->
   <section class="panel view-drops" id="drops" hidden>
+    <h2>💎 Butin</h2>
     <div class="controls">
+      <!-- Deux lectures du même tableau : par objet (« qui lâche ça ? ») ou par Pal
+           (« que lâche celui-ci ? », y compris au destructeur de Pals). -->
+      <div class="bd-modes drop-sens">
+        <button id="drop-par-objet" class="bd-mode active" type="button" aria-pressed="true">Par objet</button>
+        <button id="drop-par-pal" class="bd-mode" type="button" aria-pressed="false">Par Pal</button>
+      </div>
       <input type="search" id="drop-search" placeholder="Rechercher un objet…" autocomplete="off">
-      <span class="pedia-total"><span id="drop-count">0</span> objets</span>
+      <span class="pedia-total"><span id="drop-count">0</span> <span id="drop-unite">objets</span></span>
     </div>
     <ul id="drop-list" class="drop-list"></ul>
   </section>

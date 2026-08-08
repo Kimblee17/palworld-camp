@@ -47,6 +47,8 @@ export function openPalDetail(pal) {
     ${stats.length ? `<div class="pm-stats">${stats.map(s => `<span>${s}</span>`).join("")}</div>` : ""}
     <div class="pm-sub">Compétences de travail</div><div class="pm-skills">${skills}</div>
     ${tiers ? `<div class="pm-sub">Rangs (palworld.gg)</div><div class="pm-tags">${tiers}</div>` : ""}
+    ${pal.partner ? `<div class="pm-sub">Compétence de partenaire</div>
+      <div class="pm-partner"><b>${escHtml(pal.partner.nom)}</b> ${escHtml(pal.partner.desc)}</div>` : ""}
     ${drops ? `<div class="pm-sub">Butin</div><ul class="pm-drops">${drops}</ul>` : ""}
     <div class="pm-sub">Où le trouver</div><div class="pm-carte" data-pal="${escHtml(pal.name)}"></div>
     ${link ? `<div class="pm-linkrow">${link}</div>` : ""}`,

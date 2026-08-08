@@ -1,0 +1,2095 @@
+{
+  "Aegidron": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Réduit de (60~80) % les dégâts des attaques explosives subis par le joueur et les Pals, et immunise contre Étourdissement lorsqu'il est dans l'équipe. (Effet non cumulable) Technologies 79",
+      "nom": "Dragon Inébranlable"
+    }
+  },
+  "Amione": {
+    "food": 3,
+    "partner": {
+      "desc": "Dans la base, le niveau de la capacité de travail Arrosage des autres Pals du camp augmente de +1 . (Effet non cumulable)",
+      "nom": "Jumelage Magique"
+    }
+  },
+  "Anubis": {
+    "food": 8,
+    "partner": {
+      "desc": "Lorsqu'activé, Anubis transfère son pouvoir au joueur, convertissant ses attaques en Terre et augmentant son attaque de (30~50) % . En combat, esquive parfois les attaques grâce à des pas rapides.",
+      "nom": "Gardien du Désert"
+    }
+  },
+  "Arsox": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente de +2 la résistance au froid du joueur lorsqu'il est dans l'équipe. (effet non cumulable) Technologies 15",
+      "nom": "Chaleur Corporelle"
+    }
+  },
+  "Astegon": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les dégâts infligés aux minerais augmentent de (1100~3300)% , et la quantité de Minerai de métal obtenue augmente de (150~300)% . Technologies 39",
+      "nom": "Dragon en Armure Noire"
+    }
+  },
+  "Astralym": {
+    "food": 9,
+    "partner": {
+      "desc": "Des recherches sont en cours pour déterminer les capacités de ce Pal.",
+      "nom": "-"
+    }
+  },
+  "Azurmane": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet également d'effectuer une ruée aérienne pour se déplacer à grande vitesse. Technologies 58",
+      "nom": "Charge Plasma"
+    }
+  },
+  "Azurobe": {
+    "food": 5,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour nager. Lorsqu'il est monté, les attaques du joueur deviennent de type Eau , et son attaque augmente de (5~20)% . Technologies 24",
+      "nom": "Danse de l'eau"
+    }
+  },
+  "Azurobe Cryst": {
+    "food": 5,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour nager. Une fois monté, les attaques du joueur deviennent de type Glace et sa puissance d'attaque augmente de (5~20)% . Technologies 27",
+      "nom": "Danse Glagla"
+    }
+  },
+  "Bakemi": {
+    "food": 5,
+    "partner": {
+      "desc": "Réduit de (40~80) % l'attaque des ennemis affectés par Empoisonnement lorsqu'il est dans l'équipe. (Effet non cumulable)",
+      "nom": "Fantômette Joviale"
+    }
+  },
+  "Bastigor": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet d'attaquer avec un marteau de type Glace lorsqu'il est monté. Technologies 73",
+      "nom": "Écrasement Blizzard"
+    }
+  },
+  "Beakon": {
+    "food": 5,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les attaques du joueur deviennent de type Électricité et sa puissance d'attaque augmente de (5~20)% . La vitesse de déplacement de ce Pal augmente de (5~25)% pour chaque Pal de type Électricité dans l'équipe, à l'exception de Beakon . Technologies 29",
+      "nom": "Orage"
+    }
+  },
+  "Beakon Cryst": {
+    "food": 5,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les attaques du joueur sont converties en Glace , et son attaque augmente de (5~20)% . La vitesse de déplacement de ce Pal augmente de (5~25)% pour chaque Pal de type Glace présent dans l'équipe, à l'exception de Beakon Cryst . Technologies 71",
+      "nom": "Grésil Céleste"
+    }
+  },
+  "Beegarde": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être assigné à une Ferme avec une chance de produire du Miel . Lorsqu'il est dans l'équipe, augmente l'attaque de Elizabee .",
+      "nom": "Abeille Ouvrière"
+    }
+  },
+  "Bellanoir": {
+    "food": 7,
+    "partner": {
+      "desc": "Lorsqu'activée, attaque l'ennemi ciblé avec Rayons Cauchemardesques . La puissance de Rayons Cauchemardesques utilisée par ce Pal est multipliée par (1.1~2.5) .",
+      "nom": "Pupille Cauchemardesque"
+    }
+  },
+  "Bellanoir Libero": {
+    "food": 7,
+    "partner": {
+      "desc": "Lorsqu'activée, attaque l'ennemi ciblé avec Floraison Cauchemardesque . La puissance de Floraison Cauchemardesque utilisée par ce Pal est multipliée par (1.1~2.5) .",
+      "nom": "Regard Cauchemardesque"
+    }
+  },
+  "Blazamut": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente de (5~10)% l'attaque et la défense des Pals en combat à chaque ennemi vaincu. Cet effet dure 20 secondes et peut se cumuler jusqu'à 5 fois. (effet non cumulable) Technologies 46",
+      "nom": "Empereur Magmatique"
+    }
+  },
+  "Blazamut Ryu": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente de (25~40)% les dégâts infligés en touchant les faiblesses avec des attaques de type Dragon . (Effet non cumulable) Technologies 55",
+      "nom": "Roi des Dragons"
+    }
+  },
+  "Blazehowl": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Herbe . (effet non cumulable) Technologies 33",
+      "nom": "Lion Infernal"
+    }
+  },
+  "Blazehowl Noct": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Non élém. . (effet non cumulable) Technologies 35",
+      "nom": "Lion des Flammes Noires"
+    }
+  },
+  "Blue Slime": {
+    "food": 2,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de sauter plus haut lorsqu'il est monté.",
+      "nom": "Corps Gélatineux"
+    }
+  },
+  "Braloha": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Dans la base, la vitesse de production des œufs des Pals affectés à un Ranch augmente de (20~50)% . (Effet non cumulable) Technologies 36",
+      "nom": "Soleil Accablant"
+    }
+  },
+  "Bristla": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (15~30)% l'attaque des Pals de type Herbe . (effet non cumulable)",
+      "nom": "Regard de Princesse"
+    }
+  },
+  "Broncherry": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, chaque œuf ramassé a (35~45)% de chances d'être remplacé par un œuf de Pal Alpha. (effet non cumulable) Technologies 33",
+      "nom": "Floraison du Premier Amour"
+    }
+  },
+  "Broncherry Aqua": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, chaque œuf ramassé a (45~55)% de chances d'être remplacé par un œuf de Pal Alpha. (effet non cumulable) Technologies 44",
+      "nom": "Floraison de Pureté"
+    }
+  },
+  "Bulldosu": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Réduit de (15~30) % les dégâts de type Électricité subis par le joueur et les Pals, et annule l'état Électrisation lorsqu'il est dans l'équipe. (Effet non cumulable) Technologies 53",
+      "nom": "Carrure de Champion"
+    }
+  },
+  "Bushi": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'il est activé, attaque l'ennemi ciblé avec Iaigiri . La puissance de cette compétence est multipliée par (1.1~2.5) .",
+      "nom": "Flash Furtif"
+    }
+  },
+  "Bushi Noct": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'activée, attaque l'ennemi visé avec Iaigiri . La puissance de Iaigiri utilisée par ce Pal est multipliée par (1.1~2.5) . Lorsqu'il est dans l'équipe, les attaques portées avec une arme de corps à corps avant l'engagement du combat infligent (30~65)% de dégâts supplémentaires. (Effet non cumulable)",
+      "nom": "Flash Furtif Inversé"
+    }
+  },
+  "Caprity": {
+    "food": 2,
+    "partner": {
+      "desc": "Placé dans une Ferme , des Baie rouge tombent parfois de son dos. Dans l'équipe, il restaure (100~200) de satiété au Pal le plus affamé toutes les 5 min. (Non cumulable)",
+      "nom": "Cueillette de baies"
+    }
+  },
+  "Caprity Noct": {
+    "food": 2,
+    "partner": {
+      "desc": "Placé dans une Ferme , de la Baie rouge tombe parfois de son dos. Dans l'équipe, il restaure (100~200) de satiété au Pal le plus affamé toutes les 5 min. (Non cumulable)",
+      "nom": "Pince-Venin"
+    }
+  },
+  "Carnibora": {
+    "food": 7,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe et que le joueur effectue une roulade ou des déplacements rapides, Carnibora génère une tornade qui inflige des dégâts aux ennemis touchés ( Herbe / Puissance : (40~80) ). (Effet non cumulable)",
+      "nom": "Langue Fourchue"
+    }
+  },
+  "Cattiva": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente la capacité de charge du joueur de (100~200) en portant une partie de son inventaire. (effet non cumulable)",
+      "nom": "Chat Porteur"
+    }
+  },
+  "Cave Bat": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, apparaît aux côtés du joueur et ramasse automatiquement les objets à proximité.",
+      "nom": "Soutien de Chauve-souris"
+    }
+  },
+  "Cawgnito": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'activée, active la Vision nocturne pour voir dans l'obscurité. L'effet est annulé lors de la prochaine activation. À affecter à une Ferme pour une chance de déterrer des Os .",
+      "nom": "Oiseau de Nuit"
+    }
+  },
+  "Celaray": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, modifie les performances du planeur équipé et annule les dégâts de chute du joueur. Permet de planer rapidement pendant une longue durée.",
+      "nom": "Planeur sur Brise"
+    }
+  },
+  "Celaray Lux": {
+    "food": 2,
+    "partner": {
+      "desc": "Modifie les performances du planeur équipé lorsqu'il est dans l'équipe et annule les dégâts de chute subis par le joueur. Permet de planer rapidement pendant une longue durée.",
+      "nom": "Planair"
+    }
+  },
+  "Celesdir": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. L'attaque et la vitesse de déplacement de ce Pal augmentent de (2~6)% pour chaque Pal de type Non élém. présent dans l'équipe, à l'exception de Celesdir . Lorsqu'il est dans l'équipe, restaure chaque seconde les PV du joueur et des Pals de l'équipe de (0.15~0.75)% en dehors des combats. (Effet non cumulable) Technologies 54",
+      "nom": "Bénédiction Purificatrice"
+    }
+  },
+  "Celesdir Noct": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente l'attaque des Pals en combat de (40~80) % lorsqu'il est dans l'équipe, mais leurs PV diminuent progressivement. (Effet non cumulable) Technologies 78",
+      "nom": "Bénédiction du Chaos"
+    }
+  },
+  "Chikipi": {
+    "food": 1,
+    "partner": {
+      "desc": "À affecter à une Ferme pour une chance d'obtenir des Œuf .",
+      "nom": "Production d'œufs"
+    }
+  },
+  "Chillet": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est monté, les attaques du joueur deviennent de type Dragon et sa puissance d'attaque augmente de (5~20)% . Technologies 11",
+      "nom": "Belette Stupéfiante"
+    }
+  },
+  "Chillet Ignis": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Une fois monté, les attaques du joueur deviennent de type Feu et sa puissance d'attaque augmente de (5~20)% . Technologies 40",
+      "nom": "Belette Crépitante"
+    }
+  },
+  "Cinnamoth": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'activée, attaque l'ennemi ciblé avec Nuage Toxique . Lorsqu'il est dans la base, augmente de +1 le niveau d'aptitude au travail Exploitation des autres Pals de la base. (Effet non cumulable)",
+      "nom": "Écailles Mystérieuses"
+    }
+  },
+  "Clovee": {
+    "food": 1,
+    "partner": {
+      "desc": "Dans la base, le niveau de la capacité de travail Collecte des autres Pals du camp augmente de +1 . (Effet non cumulable)",
+      "nom": "Joyeux Trèfle"
+    }
+  },
+  "Cremis": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente l'attaque des Pals de type Non élém. de (15~30)% . (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire de la Laine .",
+      "nom": "Laine Soyeuse"
+    }
+  },
+  "Croajiro": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'activée, Croajiro , animé par une forte loyauté, gonfle son abdomen afin d'accumuler de l'énergie. Le joueur peut alors sauter sur son dos pour être propulsé haut dans les airs. Augmente l'attaque du joueur de (50~86) % jusqu'à son atterrissage.",
+      "nom": "Position Saut"
+    }
+  },
+  "Croajiro Noct": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'activée, Croajiro Noct accumule de l'énergie grâce à sa loyauté et son ventre rebondi. Le joueur saute très haut lorsqu'il monte dessus. Lorsqu'il est dans l'équipe, augmente de (25~40)% les dégâts de type Ténèbres infligés aux points faibles. (effet non cumulable)",
+      "nom": "Posture Annonciatrice"
+    }
+  },
+  "Cryolinx": {
+    "food": 7,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Dragon . (effet non cumulable)",
+      "nom": "Chasseur de Dragons"
+    }
+  },
+  "Cryolinx Terra": {
+    "food": 7,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe et qu'un point faible est touché, les dégâts du prochain coup porté à un point faible augmentent de (30~60)% . (Effet non cumulable)",
+      "nom": "Poigne Explosive"
+    }
+  },
+  "Daedream": {
+    "food": 1,
+    "partner": {
+      "desc": "Tant qu'il est dans l'équipe, il apparaît aux côtés du joueur. Il lance des projectiles magiques de type Ténèbres pour attaquer les ennemis hostiles. Il ne peut pas achever les adversaires de lui-même.",
+      "nom": "Charognard Onirique"
+    }
+  },
+  "Dandilord": {
+    "food": 9,
+    "partner": {
+      "desc": "Lorsqu'activée, confère (2~6) de Empoisonnement aux attaques du joueur. Lorsqu'il est dans l'équipe, le joueur et les Pals deviennent immunisés contre Empoisonnement et les gaz toxiques de la zone de l'Arbre-Monde sont neutralisés. (Effet non cumulable)",
+      "nom": "Gardien du Brouillard"
+    }
+  },
+  "Dazemu": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Sa vitesse de déplacement augmente de (50~100)% lorsqu'il se trouve sur le sable . Technologies 28",
+      "nom": "Ruée Sablonneuse"
+    }
+  },
+  "Dazzi": {
+    "food": 2,
+    "partner": {
+      "desc": "Tant qu'il est dans l'équipe, il apparaît aux côtés du joueur. Il lance des éclairs de type Électricité pour attaquer les ennemis hostiles. Il ne peut pas achever les adversaires de lui-même.",
+      "nom": "Fille de la Foudre"
+    }
+  },
+  "Dazzi Noct": {
+    "food": 2,
+    "partner": {
+      "desc": "Tant qu'il est dans l'équipe, il apparaît aux côtés du joueur. Il lance des éclairs de type Ténèbres pour attaquer les ennemis hostiles. Il ne peut pas achever les adversaires de lui-même.",
+      "nom": "Fille de l'Orage Obscur"
+    }
+  },
+  "Demon Eye": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente l'attaque des Pals de type Ténèbres de (15~30)% . (Effet non cumulable)",
+      "nom": "Vision Démoniaque"
+    }
+  },
+  "Depresso": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'activée, Depresso boit une boisson énergisante, augmentant de (100~900)% sa vitesse de déplacement et de travail. Peut être assigné à une Ferme avec une chance de produire de la Glande à venin .",
+      "nom": "Shot de Caféine"
+    }
+  },
+  "Digtoise": {
+    "food": 5,
+    "partner": {
+      "desc": "Provoque Coquille Rotative lorsqu'il est appelé. Suit le joueur en tournoyant pour faciliter la destruction des minerais de (800~2000) % .",
+      "nom": "Perceuse Broyeuse"
+    }
+  },
+  "Dinossom": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente de (15~30)% la défense des Pals de type Dragon lorsqu'il est dans l'équipe. (effet non cumulable) Technologies 24",
+      "nom": "Dragon Fleurissant"
+    }
+  },
+  "Dinossom Lux": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente de (15~30)% la défense des Pals de type Électricité lorsqu'il est dans l'équipe. (effet non cumulable) Technologies 34",
+      "nom": "Dragon Orageux"
+    }
+  },
+  "Direhowl": {
+    "food": 2,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente légèrement la vitesse de déplacement lorsqu'il est monté. Technologies 9",
+      "nom": "Virée Sauvage"
+    }
+  },
+  "Dogen": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'il est activé, permet de se téléporter vers la base le plus proche. Inutilisable dans les donjons.",
+      "nom": "Prière de Retour"
+    }
+  },
+  "Dualith": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'activée, Dualith projette un puissant laser de type Herbe depuis sa main droite. Technologies 48",
+      "nom": "Laser Sylvain"
+    }
+  },
+  "Dualith Noct": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'activée, Dualith Noct projette un puissant laser de type Ténèbres depuis sa main droite. Technologies 69",
+      "nom": "Laser Corrompu"
+    }
+  },
+  "Dumud": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente l'attaque des Pals de type Terre de (15~30)% . (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire de l' Huile de Pal de qualité .",
+      "nom": "Amélioration Terrestre"
+    }
+  },
+  "Dumud Gild": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de +(100~200)% la quantité de Pièce d'or obtenue sur les ennemis vaincus. (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire de l' Huile de Pal de qualité ou, plus rarement, des Pièce d'or .",
+      "nom": "Ruée vers L'Or"
+    }
+  },
+  "Dupin": {
+    "food": 8,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, Dupin provoque une explosion autour du joueur lorsque ses PV tombent sous 50 % ( Feu / Puissance : (100~200) ). De plus, l'attaque du joueur augmente de (30~50)% tant que ses PV sont inférieurs à 50 %. (Effet non cumulable)",
+      "nom": "Passe-casse"
+    }
+  },
+  "Dynamoff": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est dans la base, augmente la vitesse d'éclosion des œufs de (20~40) % . (Effet non cumulable) Technologies 66",
+      "nom": "Couvaison Électromassante"
+    }
+  },
+  "Eidrolon": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. L'attaque et la vitesse de déplacement de ce Pal augmentent de (2~6) % pour chaque Pal de type Dragon ou Ténèbres présent dans l'équipe, à l'exception de Eidrolon . Technologies 68",
+      "nom": "Ptérodactyle Libre"
+    }
+  },
+  "Eidrolon Ignis": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. L'attaque et la vitesse de déplacement de ce Pal augmentent de (2~6) % pour chaque Pal de type Dragon ou Feu présent dans l'équipe, à l'exception de Eidrolon Ignis . Technologies 76",
+      "nom": "Ptérodactyle Furieux"
+    }
+  },
+  "Eikthyrdeer": {
+    "food": 2,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet l'utilisation du double saut lorsqu'il est monté et augmente l'efficacité de l'abattage des arbres de (220~500)% . Technologies 12",
+      "nom": "Gardien des Bois"
+    }
+  },
+  "Eikthyrdeer Terra": {
+    "food": 2,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer, ce qui permet l'utilisation du double saut . Dans la base, le niveau de la capacité de travail Abattage des autres Pals du camp augmente de 1 . (Effet non cumulable) Technologies 21",
+      "nom": "Gardien des Bois Dorés"
+    }
+  },
+  "Elgrove": {
+    "food": 8,
+    "partner": {
+      "desc": "Lorsqu'il est activé, Elgrove transfère son pouvoir au joueur, convertissant ses attaques en Herbe et augmentant son attaque de (30~50) % .",
+      "nom": "Menace Naturelle"
+    }
+  },
+  "Elgrove Cryst": {
+    "food": 8,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, lorsqu'un ennemi affecté par Trempé est attaqué par le joueur, il est immédiatement affecté par Gel .",
+      "nom": "Pergélisol Menaçant"
+    }
+  },
+  "Elizabee": {
+    "food": 5,
+    "partner": {
+      "desc": "Son attaque augmente de (12~24)% pour chaque Beegarde dans l'équipe.",
+      "nom": "Reine des Abeilles"
+    }
+  },
+  "Elphidran": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. La vitesse de déplacement augmente en vol. Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en vainquant des Pals de type Ténèbres . (effet non cumulable) Technologies 20",
+      "nom": "Dragon Sacré au Grand Cœur"
+    }
+  },
+  "Elphidran Aqua": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. La vitesse de déplacement augmente en vol. Lorsqu'il est dans l'équipe, réduit de (15~30)% les dégâts de type Feu subis par le joueur et les Pals, et annule l'état Brûlure . (effet non cumulable) Technologies 32",
+      "nom": "Dragon Aquatique au Grand Cœur"
+    }
+  },
+  "Enchanted Sword": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Ténèbres . (Effet non cumulable)",
+      "nom": "Enchantement"
+    }
+  },
+  "Eye of Cthulhu": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'activée, Œil de Cthulhu charge l'ennemi ciblé pour l'attaquer.",
+      "nom": "Ruée de l’Œil de Cthulhu"
+    }
+  },
+  "Faleris": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en vainquant des Pals de type Glace . (effet non cumulable) Technologies 60",
+      "nom": "Prédateur Brûlant"
+    }
+  },
+  "Faleris Aqua": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Feu . (Effet non cumulable) Technologies 60",
+      "nom": "Prédateur Aquatique"
+    }
+  },
+  "Felbat": {
+    "food": 7,
+    "partner": {
+      "desc": "En combattant à ses côtés, confère au joueur et à Felbat un effet de Vol de vie permettant d'absorber (5~9)% des dégâts infligés pour restaurer leurs PV .",
+      "nom": "Vol de vie"
+    }
+  },
+  "Fenglope": {
+    "food": 5,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est monté, permet d'effectuer un double saut . Technologies 26",
+      "nom": "Vent et Nuages"
+    }
+  },
+  "Fenglope Lux": {
+    "food": 5,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet d'utiliser le double saut une fois monté. Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Eau . (Effet non cumulable) Technologies 57",
+      "nom": "Nuage d'Orage"
+    }
+  },
+  "Finsider": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'activé, Finsider transfère son pouvoir au joueur, convertissant ses attaques en Eau et augmentant son attaque de (30~50) % .",
+      "nom": "Aqua-Gâchette"
+    }
+  },
+  "Finsider Ignis": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, Finsider Ignis porte les affaires du joueur et réduit de (60~100)% le poids des armes dans l'inventaire. Augmente également de (25~40)% les dégâts de type Feu infligés aux points faibles. (effet non cumulable)",
+      "nom": "Chambre de Braises"
+    }
+  },
+  "Flambelle": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, restaure chaque seconde (0.1~0.5)% des PV du joueur et des Pals de l'équipe hors combat. (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire un Organe de feu .",
+      "nom": "Larmes de Lave"
+    }
+  },
+  "Flaracle": {
+    "food": 8,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe et qu'une attaque du joueur touche un ennemi affecté par Brûlure , celui-ci explose et inflige des dégâts supplémentaires équivalents à (40~60) % de l'attaque du joueur. (Effet non cumulable)",
+      "nom": "Avenir Brûlant"
+    }
+  },
+  "Flopie": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, apparaît aux côtés du joueur et ramasse automatiquement les objets à proximité.",
+      "nom": "Lapin Serviable"
+    }
+  },
+  "Foxcicle": {
+    "food": 4,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (15~30)% l'attaque des Pals de type Glace . (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire un Organe de glace .",
+      "nom": "Instinct Boréal"
+    }
+  },
+  "Foxparks": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'activée, il se joint au joueur pour faire office de lance-flammes. Technologies 6",
+      "nom": "Câlin de Flammes"
+    }
+  },
+  "Foxparks Cryst": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'activée, se joint au joueur et permet d'attaquer en libérant un souffle glacé. Technologies 24",
+      "nom": "Câlin Glacé"
+    }
+  },
+  "Frostallion": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les attaques du joueur deviennent de type Glace , sa puissance d'attaque augmente de (10~40)% , et ses attaques appliquent (2~6) d'accumulation d'état Gel . Technologies 62",
+      "nom": "Pégase des Glaces"
+    }
+  },
+  "Frostallion Noct": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les attaques du joueur deviennent de type Ténèbres , sa puissance d'attaque augmente de (10~40)% , et ses attaques appliquent (2~6) d'accumulation d'état Cécité . Technologies 62",
+      "nom": "Pégase Noir"
+    }
+  },
+  "Frostplume": {
+    "food": 5,
+    "partner": {
+      "desc": "Tant qu'il est dans l'équipe, l'air froid de Frostplume améliore la concentration du joueur et augmente sa vitesse de recharge de +(20~50) % . (Non cumulable)",
+      "nom": "Paon Pan"
+    }
+  },
+  "Fuack": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'activée, Fuack fonce sur l'ennemi en faisant du bodyboard.",
+      "nom": "Coud'Surf"
+    }
+  },
+  "Fuack Ignis": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'activée, Fuack Ignis fonce sur l'ennemi en surfant sur des flammes.",
+      "nom": "Tacle de Feu"
+    }
+  },
+  "Fuddler": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (30~60)% les dégâts infligés lors de l'extraction de minerais par le joueur, et réduit de (80~100)% le poids de la Pierre . (Effet non cumulable)",
+      "nom": "Appui Minier"
+    }
+  },
+  "Galeclaw": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, modifie les performances du planeur équipé. Permet de planer à grande vitesse tout en tirant avec l'arme tenue dans la main droite.",
+      "nom": "Monte-Galeclaw"
+    }
+  },
+  "Ghangler": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer sur l'eau. La vitesse de déplacement de ce Pal augmente de (5~25)% pour chaque Pal de type Ténèbres ou Eau présent dans l'équipe, à l'exception de Ghangler . Technologies 31",
+      "nom": "Guide des Ténèbres"
+    }
+  },
+  "Ghangler Ignis": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour nager. La vitesse de déplacement de ce Pal augmente de (5~25)% pour chaque Pal de type Feu ou Eau présent dans l'équipe, à l'exception de Ghangler Ignis . Technologies 42",
+      "nom": "Cordon-bleu des Profondeurs"
+    }
+  },
+  "Gildane": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Une fois monté, les attaques du joueur deviennent de type Terre et sa puissance d'attaque augmente de (5~20)% . Technologies 54",
+      "nom": "Protection Sablonneuse"
+    }
+  },
+  "Gildra": {
+    "food": 6,
+    "partner": {
+      "desc": "Lorsqu'il combat à vos côtés, si Gildra est mis K.O., il est ressuscité au prix d'une satiété réduite à 0.",
+      "nom": "Résurrection"
+    }
+  },
+  "Gloopie": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (12~35)% la diminution de la jauge de capture lorsque les barres ne sont pas superposées dans le mini-jeu de pêche. (Effet non cumulable)",
+      "nom": "Tapette Princière"
+    }
+  },
+  "Gloopie Primo": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense des Pals de type Eau de (15~30) % . (Effet non cumulable)",
+      "nom": "Princesse Ventouse"
+    }
+  },
+  "Gobfin": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est activé, attaque l'ennemi ciblé avec Tir Aquatique . La puissance de cette compétence est multipliée par (1.1~2.5) . Lorsqu'il est dans l'équipe, augmente de (10~20)% l'attaque du joueur.",
+      "nom": "Squale Ronchon"
+    }
+  },
+  "Gobfin Ignis": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est activé, attaque l'ennemi ciblé avec Flammes Scindées . La puissance de cette compétence est multipliée par (1.1~2.5) . Lorsqu'il est dans l'équipe, augmente de (10~20)% l'attaque du joueur.",
+      "nom": "Squale Ronchon"
+    }
+  },
+  "Gorirat": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'activée, Gorirat libère sa nature sauvage et augmente temporairement son attaque de (75~300)% .",
+      "nom": "Mode Enragé"
+    }
+  },
+  "Gorirat Terra": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente la vitesse d'escalade du joueur de (50~100)% . (Effet non cumulable)",
+      "nom": "Bras de Gorille Ultime"
+    }
+  },
+  "Green Slime": {
+    "food": 2,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de sauter plus haut lorsqu'il est monté.",
+      "nom": "Corps Gélatineux"
+    }
+  },
+  "Grintale": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente de (50~75)% les chances de ramasser un œuf supplémentaire lorsqu'un œuf de Pal est obtenu. (effet non cumulable) Technologies 19",
+      "nom": "Œil de Lynx"
+    }
+  },
+  "Grizzbolt": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de tirer en rafale avec un minigun lorsqu'il est monté. Technologies 40",
+      "nom": "Tank Jaune"
+    }
+  },
+  "Gumoss": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (30~50)% les dégâts infligés lors de l'abattage d'arbres, et réduit de (40~60)% le poids de tous les types de bois. (effet non cumulable)",
+      "nom": "Aide aux Bûcherons"
+    }
+  },
+  "Hangyu": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, modifie les performances du planeur équipé. Permet de s'élever lentement pendant le vol plané.",
+      "nom": "Trapéziste"
+    }
+  },
+  "Hangyu Cryst": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, modifie les performances du planeur équipé. Permet de s'élever lentement pendant le vol plané.",
+      "nom": "Trapéziste du Froid"
+    }
+  },
+  "Hartalis": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de générer une barrière bloquant toutes les attaques lorsqu'il est monté. Permet également d'effectuer un triple saut . Technologies 70",
+      "nom": "Barrière Sacrée"
+    }
+  },
+  "Helzephyr": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les attaques du joueur deviennent de type Ténèbres et sa puissance d'attaque augmente de (5~20)% . Technologies 25",
+      "nom": "Ailes des Enfers"
+    }
+  },
+  "Helzephyr Lux": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Une fois monté, les attaques du joueur deviennent de type Électricité et sa puissance d'attaque augmente de (5~20)% . Technologies 47",
+      "nom": "Ailes Foudroyantes"
+    }
+  },
+  "Herbil": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, Herbil ressuscite le joueur avec (30~60)% de ses PV max lorsqu'il est mis K.O., grâce à ses pouvoirs apaisants.",
+      "nom": "Herbapulsion"
+    }
+  },
+  "Hoocrates": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente l'attaque des Pals de type Ténèbres de (15~30)% . (effet non cumulable)",
+      "nom": "Sagesse Obscure"
+    }
+  },
+  "Hoodle": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, les dégâts infligés par le joueur aux ennemis hors combat augmentent de (50~100) % . (Effet non cumulable)",
+      "nom": "Rôdeur du Néant"
+    }
+  },
+  "Icelyn": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'activé, Icelyn transfère son pouvoir au joueur, convertissant ses attaques en Glace et augmentant son attaque de (30~50) % .",
+      "nom": "Sorcière Frigorifique"
+    }
+  },
+  "Illuminant Bat": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, apparaît aux côtés du joueur et ramasse automatiquement les objets à proximité.",
+      "nom": "Soutien de Chauve-souris"
+    }
+  },
+  "Illuminant Slime": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de sauter plus haut lorsqu'il est monté.",
+      "nom": "Corps Gélatineux"
+    }
+  },
+  "Incineram": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'activée, attaque l'ennemi ciblé avec Griffe Infernale . La puissance de Griffe Infernale utilisée par ce Pal est multipliée par (1.1~2.5) .",
+      "nom": "Chasseur aux Griffes Ardentes"
+    }
+  },
+  "Incineram Noct": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'activée, attaque l'ennemi ciblé avec Griffe Cauchemardesque . La puissance de Griffe Cauchemardesque utilisée par ce Pal est multipliée par (1.1~2.5) .",
+      "nom": "Chasseur aux Griffes Noires"
+    }
+  },
+  "Jelliette": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (55~95)% la quantité d'objets obtenus à la pêche. (Effet non cumulable) De plus, lorsque Jelliette et Jellroy se trouvent dans la base, la vitesse de travail d'arrosage de Jelliette augmente de (50~120)% . (Effet non cumulable)",
+      "nom": "Largue-Jelliette"
+    }
+  },
+  "Jellroy": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (55~95)% la quantité d'objets obtenus par récupération. (Effet non cumulable) De plus, lorsque Jelliette et Jellroy se trouvent dans la base, la vitesse de travail d'arrosage de Jellroy augmente de (50~120)% . (Effet non cumulable)",
+      "nom": "Largue-Jellroy"
+    }
+  },
+  "Jetragon": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Permet de tirer en rafale avec un lance-missiles lorsqu'il est monté. Technologies 79",
+      "nom": "Missile Aérien"
+    }
+  },
+  "Jolthog": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'activée, Jolthog s'équipe dans la main du joueur. Le lancer sur un ennemi provoque une explosion de type Électricité à l'impact.",
+      "nom": "Bombe Zap"
+    }
+  },
+  "Jolthog Cryst": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est activé, Jolthog Cryst est équipé dans la main. Lorsqu'il est lancé sur un ennemi, il provoque une explosion de type Glace à l'impact.",
+      "nom": "Bombe Glagla"
+    }
+  },
+  "Jormuntide": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer sur l'eau. Lorsqu'il est dans l'équipe, augmente de (50~65)% les dégâts infligés aux ennemis affectés par Trempé . (effet non cumulable) Technologies 40",
+      "nom": "Dragon Marin Tempétueux"
+    }
+  },
+  "Jormuntide Ignis": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, annule les dégâts de lave et augmente de (50~65)% les dégâts infligés aux ennemis affectés par Brûlure . (effet non cumulable) Technologies 59",
+      "nom": "Dragon de Lave Tempétueux"
+    }
+  },
+  "Katress": {
+    "food": 4,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en battant des Pals de type Non élém. . De plus, les sphères de Pal lancées ont (10~50)% de chances de ne pas être consommées. (Effet non cumulable)",
+      "nom": "Étrange Sorcellerie"
+    }
+  },
+  "Katress Ignis": {
+    "food": 4,
+    "partner": {
+      "desc": "Dans la base, augmente de +1 le niveau de la capacité de travail Allumage de feu des autres Pals du camp. (Effet non cumulable)",
+      "nom": "Passion Magie Noire"
+    }
+  },
+  "Kelpsea": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (15~30)% l'attaque des Pals de type Eau . (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire un Fluides de Pal .",
+      "nom": "Giclée d'eau"
+    }
+  },
+  "Kelpsea Ignis": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (15~30)% l'attaque des Pals de type Feu . (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire un Organe de feu .",
+      "nom": "Jet de Lave"
+    }
+  },
+  "Kikit": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense des Pals de type Terre de (15~30)% . (Effet non cumulable)",
+      "nom": "Balle de Plage"
+    }
+  },
+  "Killamari": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, modifie les performances du planeur équipé. Permet de flotter doucement pendant une longue durée en vol plané.",
+      "nom": "Calamar Frit"
+    }
+  },
+  "Killamari Primo": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, modifie les performances du planeur équipé. Permet de flotter doucement pendant une longue durée en vol plané.",
+      "nom": "Aspirêves"
+    }
+  },
+  "Kingpaca": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. La défense et la vitesse de déplacement de ce Pal augmentent en fonction du nombre de Melpaca dans l'équipe, à raison de (5~14)% par Alpaca. Technologies 23",
+      "nom": "Montagne de Muscles"
+    }
+  },
+  "Kingpaca Cryst": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. La défense et la vitesse de déplacement de ce Pal augmentent en fonction du nombre de Melpaca dans l'équipe, à raison de (5~14)% par Alpaca. Technologies 46",
+      "nom": "Roi des Glaces"
+    }
+  },
+  "Kitsun": {
+    "food": 5,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, réduit de (15~30)% les dégâts de type Glace subis par le joueur et les Pals, et immunise contre l'effet Gel . (Effet non cumulable) Technologies 57",
+      "nom": "Loup Solaire"
+    }
+  },
+  "Kitsun Noct": {
+    "food": 5,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, réduit de (15~30)% les dégâts de type Ténèbres subis par le joueur et les Pals, et immunise contre l'état Cécité . (Effet non cumulable) Technologies 59",
+      "nom": "Loup Morose"
+    }
+  },
+  "Knocklem": {
+    "food": 9,
+    "partner": {
+      "desc": "Lorsqu'activée, la volonté de fer de Knocklem augmente temporairement son attaque de (50~200)% et sa défense de (50~200)% .",
+      "nom": "Mode Gardien d'Acier"
+    }
+  },
+  "Knocklem Ignis": {
+    "food": 9,
+    "partner": {
+      "desc": "Lorsqu'il est activé, Knocklem Ignis augmente temporairement son attaque de (60~210) % et sa défense de (60~210) % , grâce à sa volonté de fer.",
+      "nom": "Mode Gardien de Sang"
+    }
+  },
+  "Lamball": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est activé, s'équipe au joueur et sert de bouclier. Peut être assigné à une Ferme avec une chance de produire de la Laine .",
+      "nom": "Bouclier Duveteux"
+    }
+  },
+  "Lapiron": {
+    "food": 4,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (50~65)% les dégâts subis par le joueur pendant les ruées. (Effet non cumulable)",
+      "nom": "Terre Chérie"
+    }
+  },
+  "Lapure": {
+    "food": 7,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (10~50)% le temps de recharge des compétences partenaires des autres Pals de l'équipe. (Effet non cumulable)",
+      "nom": "Manches Longues Triomphantes"
+    }
+  },
+  "Leafan": {
+    "food": 7,
+    "partner": {
+      "desc": "L'attaque et la défense de ce Pal augmentent de (2~6)% pour chaque Pal de type Herbe présent dans l'équipe, à l'exception de Leafan .",
+      "nom": "Abnégation"
+    }
+  },
+  "Leezpunk": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'activée, rend le joueur et Leezpunk invisibles pendant (10~20) secondes, leur permettant d'échapper à la vigilance des ennemis.",
+      "nom": "Camouflage"
+    }
+  },
+  "Leezpunk Ignis": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'activée, rend le joueur et Leezpunk Ignis invisibles pendant (10~20) secondes, leur permettant d'échapper à la vigilance des ennemis.",
+      "nom": "Camouflage"
+    }
+  },
+  "Lifmunk": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'activée, il monte sur la tête du joueur et accompagne ses attaques avec un pistolet-mitrailleur. Technologies 11",
+      "nom": "Soutien de Lifmunk"
+    }
+  },
+  "Loomen": {
+    "food": 7,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, les flèches tirées par le joueur explosent à l'impact et infligent des dégâts supplémentaires équivalents à (15~30) % des dégâts d'attaque du joueur. (Effet non cumulable)",
+      "nom": "Lanterne Enchantée"
+    }
+  },
+  "Loupmoon": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'il est activé, attaque l'ennemi ciblé avec Griffe Sautée . La puissance de cette compétence est multipliée par (1.1~2.5) . Lorsqu'il est dans l'équipe, augmente de (15~30)% la vitesse d'attaque des armes de corps-à-corps du joueur. (effet non cumulable)",
+      "nom": "Grilles Scintillantes"
+    }
+  },
+  "Loupmoon Cryst": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'activée, attaque l'ennemi visé avec Griffe Neigeuse . La puissance de Griffe Neigeuse utilisée par ce Pal est multipliée par (1.1~2.5) . Lorsqu'il est dans l'équipe, augmente de (15~30)% la vitesse d'attaque des armes de corps à corps du joueur. (Effet non cumulable)",
+      "nom": "Coup de Griffes Glacées"
+    }
+  },
+  "Lovander": {
+    "food": 4,
+    "partner": {
+      "desc": "En combat, confère un effet de vol de vie au joueur et à lui-même, absorbant (5~9)% des dégâts infligés et restaurant leurs PV .",
+      "nom": "Draine-Cœur"
+    }
+  },
+  "Lullu": {
+    "food": 4,
+    "partner": {
+      "desc": "Dans la base, Lullu insuffle de l'énergie aux plantations pour augmenter la vitesse de croissance des cultures de (50~70)% .",
+      "nom": "Turbo Floral"
+    }
+  },
+  "Lunaris": {
+    "food": 4,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, les sphères deviennent téléguidées et suivent automatiquement les Pals, et la limite de poids porté augmente de (300~600) . (effet non cumulable)",
+      "nom": "Antigravité"
+    }
+  },
+  "Lyleen": {
+    "food": 8,
+    "partner": {
+      "desc": "Lorsqu'activée, restaure (80~90)% des PV du joueur et des Pals de l'équipe grâce aux pouvoirs curatifs de la reine.",
+      "nom": "Déesse de la Fertilité"
+    }
+  },
+  "Lyleen Noct": {
+    "food": 8,
+    "partner": {
+      "desc": "Lorsqu'activée, restaure (85~95)% des PV du joueur et des Pals de l'équipe grâce aux pouvoirs curatifs de la reine.",
+      "nom": "Déesse de la Pénombre"
+    }
+  },
+  "Majex": {
+    "food": 8,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe et qu'une attaque du joueur touche un ennemi affecté par Brûlure , des flammes apparaissent autour de l'ennemi et les ennemis en contact subissent des dégâts continus équivalents à (15~30) % de l'attaque du joueur. (Effet non cumulable)",
+      "nom": "Incantation Secrète"
+    }
+  },
+  "Mammorest": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est monté, augmente de (220~500)% l'efficacité pour détruire les arbres et de (500~2000)% l'efficacité pour détruire les minerais. Technologies 28",
+      "nom": "Broyeur Tellurique"
+    }
+  },
+  "Mammorest Cryst": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est monté, augmente de (220~500)% l'efficacité pour détruire les arbres et de (500~2000)% l'efficacité pour détruire les minerais. Technologies 41",
+      "nom": "Broyeur à Glace"
+    }
+  },
+  "Maraith": {
+    "food": 5,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, réduit le temps de recharge des compétences de tous les Pals de l'équipe de (30~60)% lors de la défaite d'un ennemi. (effet non cumulable) Technologies 37",
+      "nom": "Messager de la Mort"
+    }
+  },
+  "Mau": {
+    "food": 1,
+    "partner": {
+      "desc": "À affecter à une Ferme pour une chance de déterrer des Pièce d'or .",
+      "nom": "Chercheur d'or"
+    }
+  },
+  "Mau Cryst": {
+    "food": 1,
+    "partner": {
+      "desc": "À affecter à une Ferme pour une chance d'obtenir un Organe de glace .",
+      "nom": "Douche Froide"
+    }
+  },
+  "Melpaca": {
+    "food": 2,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente la défense et la vitesse de déplacement de Kingpaca . À affecter à une Ferme pour une chance d'obtenir de la Laine . Technologies 7",
+      "nom": "Paca-Laine"
+    }
+  },
+  "Menasting": {
+    "food": 6,
+    "partner": {
+      "desc": "Lorsqu'activé, augmente la défense du joueur de (5~10)% et augmente de (40~80)% la probabilité d'obtenir des objets en terrassant des Pals de type Électricité . (Effet non cumulable)",
+      "nom": "Scorpion d'Acier"
+    }
+  },
+  "Menasting Terra": {
+    "food": 6,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense du joueur de (5~10)% et augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Électricité . (Effet non cumulable)",
+      "nom": "Scorpion Doré"
+    }
+  },
+  "Mimog": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'il combat à vos côtés, le pouvoir de Mimog permet d'ouvrir les coffres sans utiliser de clé.",
+      "nom": "Crochetage"
+    }
+  },
+  "Moldron": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. L'attaque de ce Pal augmente de (4~8)% pour chaque Pal de type Feu ou Terre présent dans l'équipe, à l'exception de Moldron . Technologies 36",
+      "nom": "Trop-Plein de Magma"
+    }
+  },
+  "Moldron Cryst": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente de (25~40) % les dégâts infligés par le joueur et les Pals lorsqu'ils exploitent la faiblesse d'un ennemi avec des attaques de type Glace . (Effet non cumulable) Technologies 70",
+      "nom": "Trop-Plein de Glace"
+    }
+  },
+  "Mossanda": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de tirer en rafale avec un lance-grenades lorsqu'il est monté. Technologies 32",
+      "nom": "Pandanade"
+    }
+  },
+  "Mossanda Lux": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de tirer en rafale avec un lance-grenades lorsqu'il est monté. Technologies 34",
+      "nom": "Pandanade"
+    }
+  },
+  "Mozzarina": {
+    "food": 2,
+    "partner": {
+      "desc": "À affecter à une Ferme pour une chance d'obtenir du Lait .",
+      "nom": "Production de lait"
+    }
+  },
+  "Muffly": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente les chances de capturer les Pals affectés par Gel . (Effet non cumulable)",
+      "nom": "Tourontoudou"
+    }
+  },
+  "Munchill": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (30~60)% le poids des ingrédients et des plats . De plus, les aliments se détériorent (-30~-80)% plus lentement, en complément de l'effet de conservation déjà conféré par les Pals de type Glace . (Effet non cumulable)",
+      "nom": "Entrailles Glacées"
+    }
+  },
+  "Mycora": {
+    "food": 7,
+    "partner": {
+      "desc": "Dans la base, le niveau d'aptitude au travail Pharmacie des autres Pals du camp augmente de +1 . (Effet non cumulable)",
+      "nom": "Spores Charmants"
+    }
+  },
+  "Necromus": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet d'effectuer un double saut lorsqu'il est monté. Si un Paladius se trouve dans votre équipe, l'utilisation de Lance Double le fera apparaître pour combattre à vos côtés. Technologies 61",
+      "nom": "Chevalier Noir Abyssal"
+    }
+  },
+  "Needoll": {
+    "food": 2,
+    "partner": {
+      "desc": "Augmente de (50~65) % les dégâts infligés par le joueur et les Pals aux ennemis affectés par l'état Entrave lorsqu'il est dans l'équipe. (Effet non cumulable)",
+      "nom": "Free Hug"
+    }
+  },
+  "Needoll Noct": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, ajoute une valeur d'accumulation d'état Entrave de (2~6) aux attaques du joueur. (Effet non cumulable)",
+      "nom": "Câlin Piquant"
+    }
+  },
+  "Neptilius": {
+    "food": 9,
+    "partner": {
+      "desc": "Tant qu'il combat activement aux côtés du joueur, il lance des lances d'eau de type Eau pour attaquer les ennemis hostiles. Peut être chevauché pour se déplacer sur l'eau. Permet d'effectuer de grands sauts à la surface de l'eau lorsque vous êtes en selle. Technologies 64",
+      "nom": "Conquérant des Océans"
+    }
+  },
+  "Nitemary": {
+    "food": 6,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de +(100~200)% la quantité d'âmes obtenues en terrassant des Pals. (Effet non cumulable)",
+      "nom": "Lapin Volâme"
+    }
+  },
+  "Nitemary Botan": {
+    "food": 6,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense des Pals de type Herbe de (15~30)% . (Effet non cumulable)",
+      "nom": "Lapin Blokâme"
+    }
+  },
+  "Nitewing": {
+    "food": 2,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Technologies 15",
+      "nom": "Compagnon de Voyage"
+    }
+  },
+  "Nox": {
+    "food": 1,
+    "partner": {
+      "desc": "Détecte les statues de Pal à proximité lorsqu'il est appelé.",
+      "nom": "Cœur de Pierre"
+    }
+  },
+  "Nyafia": {
+    "food": 6,
+    "partner": {
+      "desc": "Lorsqu'activée, Nyafia mitraille temporairement les ennemis proches avec un fusil à pompe. Lorsqu'il est dans l'équipe, augmente les dégâts des fusils à pompe utilisés par le joueur de (10~35)% . (effet non cumulable) Technologies 52",
+      "nom": "Furie Féline"
+    }
+  },
+  "Omascul": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente la quantité d'EXP obtenue par les Pals de l'équipe de (40~80)% . (effet non cumulable)",
+      "nom": "Danse du Masque"
+    }
+  },
+  "Ophydia": {
+    "food": 9,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, ajoute (2~6) d'accumulation d'état Trempé aux attaques du joueur. (Effet non cumulable) Technologies 72",
+      "nom": "Brume Glorieuse"
+    }
+  },
+  "Orserk": {
+    "food": 9,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, chaque tir qui touche un ennemi augmente de (1~5)% l'attaque et la défense des Pals combattants. Cet effet dure 5 secondes et peut se cumuler jusqu'à 30 fois. (effet non cumulable)",
+      "nom": "Dragon Tempétueux"
+    }
+  },
+  "Paladius": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet d'effectuer un triple saut lorsqu'il est monté. Si un Necromus se trouve dans votre équipe, l'utilisation de Lance Sacrée le fera apparaître pour combattre à vos côtés. Technologies 61",
+      "nom": "Chevalier Céleste"
+    }
+  },
+  "Palumba": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. La vitesse de déplacement augmente de (155~240)% dans les hautes herbes . Technologies 35",
+      "nom": "Bain de Soleil"
+    }
+  },
+  "Panthalus": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Un seul spécimen peut être invoqué dans la base. Lorsqu'il est dans la base, il patrouille en permanence dans le ciel au-dessus de celle-ci et attaque les intrus depuis de très haut dans les airs.",
+      "nom": "Gardien des Échos"
+    }
+  },
+  "Pengullet": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est activé, équipe le joueur d'un Lance-fusées et permet d'utiliser Pengullet comme projectile. À l'impact, il explose et est mis K.O. Technologies 17",
+      "nom": "Lance-Pengullet"
+    }
+  },
+  "Pengullet Lux": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'activée, le joueur s'équipe d'un Lance-fusées et propulse Pengullet Lux comme projectile. À l'impact, il explose et est mis K.O. Technologies 18",
+      "nom": "Lance-Pengullet Lux"
+    }
+  },
+  "Penking": {
+    "food": 4,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en battant des Pals de type Feu . (Effet non cumulable)",
+      "nom": "Guerrier des Mers"
+    }
+  },
+  "Penking Lux": {
+    "food": 4,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (25~40)% les dégâts de type Eau infligés aux points faibles. (effet non cumulable)",
+      "nom": "Commandement Inflexible"
+    }
+  },
+  "Petallia": {
+    "food": 6,
+    "partner": {
+      "desc": "Déclenche une restauration des PV du joueur de (75~85)% grâce au pouvoir des fleurs. Dans la base, augmente de +1 le niveau d'aptitude au travail Semence des autres Pals de la base. (effet non cumulable)",
+      "nom": "Bénédiction Florale"
+    }
+  },
+  "Petallia Ignis": {
+    "food": 6,
+    "partner": {
+      "desc": "Lorsqu'activée, utilise le pouvoir des fleurs pour restaurer (80~90) % des PV du joueur. Réduit de (15~30) % les dégâts de type Herbe subis par le joueur et les Pals, et immunise contre Entrave lorsqu'il est dans l'équipe. (Effet non cumulable)",
+      "nom": "Ferveur Florale"
+    }
+  },
+  "Pierdon": {
+    "food": 8,
+    "partner": {
+      "desc": "Augmente de (50~65) % les dégâts infligés par le joueur et les Pals aux ennemis affectés par l'état Embourbement lorsqu'il est dans l'équipe. (Effet non cumulable)",
+      "nom": "Pierre de Force"
+    }
+  },
+  "Pierdon Cryst": {
+    "food": 8,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (15~30)% les dégâts de type Dragon subis par le joueur et les Pals. (Effet non cumulable)",
+      "nom": "Cristal de Force"
+    }
+  },
+  "Polapup": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. La vitesse de déplacement augmente de (80~160)% sur la neige . Permet également de dévaler les pentes à toute vitesse. Technologies 26",
+      "nom": "Dévale Montagne"
+    }
+  },
+  "Polapup Terra": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente de (80~160) % la vitesse de déplacement sur la neige . Permet également de dévaler les pentes à grande vitesse. Lors des glissades, la vitesse de départ est faible, mais la vitesse maximale est élevée. Technologies 55",
+      "nom": "Dévale-Montagne"
+    }
+  },
+  "Prixter": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (50~65)% les dégâts infligés aux ennemis affectés par Empoisonnement . (effet non cumulable)",
+      "nom": "Scorpion Patoxique"
+    }
+  },
+  "Prixter Lux": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'activé, Prixter Lux transfère son pouvoir au joueur, convertissant ses attaques en Électricité et augmentant son attaque de (30~50) % .",
+      "nom": "Scorpion Statique"
+    }
+  },
+  "Prunelia": {
+    "food": 5,
+    "partner": {
+      "desc": "Dans la base, les prières de Prunelia augmentent la quantité de récoltes de (18~35)% .",
+      "nom": "Prospérité Agricole"
+    }
+  },
+  "Puffolt": {
+    "food": 3,
+    "partner": {
+      "desc": "Dans la base, le niveau de la compétence de travail Génération d'énergie des autres Pals du camp augmente de 1 . (Effet non cumulable)",
+      "nom": "Poussée Crépitante"
+    }
+  },
+  "Pupperai": {
+    "food": 1,
+    "partner": {
+      "desc": "Les dégâts des armes de mêlée utilisées par le joueur augmentent de (10~35) % lorsqu'il est dans l'équipe. (Effet non cumulable)",
+      "nom": "Soutien Sincère"
+    }
+  },
+  "Purple Slime": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de sauter plus haut lorsqu'il est monté.",
+      "nom": "Corps Gélatineux"
+    }
+  },
+  "Pyrin": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est monté, les attaques du joueur deviennent de type Feu et sa puissance d'attaque augmente de (5~20)% . Technologies 29",
+      "nom": "Cheval Rouge"
+    }
+  },
+  "Pyrin Noct": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est monté, les attaques du joueur deviennent de type Ténèbres et sa puissance d'attaque augmente de (5~20)% . Technologies 34",
+      "nom": "Cheval Noir"
+    }
+  },
+  "Quivern": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est dans l'équipe, augmente l'attaque des Pals de type Dragon de (15~30)% . (effet non cumulable) Technologies 38",
+      "nom": "Compassion du Dragon Céleste"
+    }
+  },
+  "Quivern Botan": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Une fois monté, les attaques du joueur deviennent de type Herbe et sa puissance d'attaque augmente de (5~20)% . Technologies 45",
+      "nom": "Affection du Dragon Sylvestre"
+    }
+  },
+  "Ragnahawk": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les attaques du joueur deviennent de type Feu et sa puissance d'attaque augmente de (5~20)% . Technologies 33",
+      "nom": "Ailes Enflammées"
+    }
+  },
+  "Rainbow Slime": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de sauter plus haut lorsqu'il est monté.",
+      "nom": "Corps Gélatineux"
+    }
+  },
+  "Rayhound": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet d'effectuer un double saut lorsqu'il est monté. La vitesse de déplacement de ce Pal augmente de (5~25)% pour chaque Pal de type Électricité dans l'équipe, à l'exception de Rayhound . Technologies 30",
+      "nom": "Chien Électrique"
+    }
+  },
+  "Rayhound Cryst": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet d'effectuer un double saut une fois monté. Augmente la défense des Pals de type Glace de (15~30) % lorsqu'il est dans l'équipe. (Effet non cumulable) Technologies 32",
+      "nom": "Blizzarus-K9"
+    }
+  },
+  "Red Slime": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de sauter plus haut lorsqu'il est monté.",
+      "nom": "Corps Gélatineux"
+    }
+  },
+  "Reindrix": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente de 2 la résistance à la chaleur du joueur lorsqu'il est dans l'équipe. (effet non cumulable) Technologies 31",
+      "nom": "Fraîcheur Corporelle"
+    }
+  },
+  "Relaxaurus": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de tirer en rafale avec un lance-missiles lorsqu'il est monté. Technologies 45",
+      "nom": "Missile Affamé"
+    }
+  },
+  "Relaxaurus Lux": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de tirer en rafale avec un lance-missiles lorsqu'il est monté. Technologies 48",
+      "nom": "Fête aux Missiles"
+    }
+  },
+  "Renjishi": {
+    "food": 8,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, ajoute (2~6) d'accumulation d'état Brûlure aux attaques du joueur. (Effet non cumulable)",
+      "nom": "Scène de Combat"
+    }
+  },
+  "Reptyro": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, réduit de (30~60)% le poids de tous les minerais . (effet non cumulable) Technologies 42",
+      "nom": "Bête Briseuse de Cristal"
+    }
+  },
+  "Reptyro Cryst": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, réduit de (35~65)% le poids de tous les minerais . (effet non cumulable) Technologies 43",
+      "nom": "Bête Biseuse d'Icebergs"
+    }
+  },
+  "Ribbuny": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (15~30)% l'attaque des Pals de type Non élém. . (effet non cumulable) Dans la base, augmente de 1 le niveau de compétence de travail Artisanat des autres Pals. (effet non cumulable)",
+      "nom": "Princesse Lapinou Souriant"
+    }
+  },
+  "Ribbuny Botan": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (25~40)% les dégâts infligés en touchant les faiblesses avec des attaques de type Herbe . (Effet non cumulable) Augmente de (200~400)% l'efficacité de travail de Ribbuny Botan lorsqu'il travaille sur un établi ou dans une usine d'armes.",
+      "nom": "Lapin Dézerbe"
+    }
+  },
+  "Robinquill": {
+    "food": 3,
+    "partner": {
+      "desc": "Les dégâts des arcs utilisés par le joueur augmentent de (10~35) % lorsqu'il est dans l'équipe. (Effet non cumulable)",
+      "nom": "Maître Archer"
+    }
+  },
+  "Robinquill Terra": {
+    "food": 3,
+    "partner": {
+      "desc": "La vitesse de recharge des arcs utilisés par le joueur augmente de (15~30) % lorsqu'il est dans l'équipe. (Effet non cumulable)",
+      "nom": "Archer d’Elite"
+    }
+  },
+  "Rooby": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense des Pals de type Feu de (15~30)% . (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire un Organe de feu .",
+      "nom": "Petite Étincelle"
+    }
+  },
+  "Roujay": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Augmente de (50~65) % les dégâts infligés par le joueur et les Pals aux ennemis affectés par l'état Cécité lorsqu'il est dans l'équipe. (Effet non cumulable) Technologies 72",
+      "nom": "Ailes des Ténèbres"
+    }
+  },
+  "Rushoar": {
+    "food": 1,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est monté, l'efficacité contre les rochers augmente de (500~2000)% . Technologies 6",
+      "nom": "Tête Dure"
+    }
+  },
+  "Sekhmet": {
+    "food": 7,
+    "partner": {
+      "desc": "Dans la base, la vitesse de travail des Anubis présents augmente de (20~40) % . (Effet non cumulable) L'efficacité de travail de Sekhmet augmente de (30~60) % lorsqu'il travaille sur un établi ou dans une usine.",
+      "nom": "Impératrice des Sables"
+    }
+  },
+  "Selyne": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Une fois monté, les attaques de type Non élém. et Ténèbres sont renforcées de (15~30)% . Technologies 53",
+      "nom": "Ténèbres Célestes"
+    }
+  },
+  "Shadowbeak": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les attaques de type Ténèbres sont renforcées de (15~30)% . La vitesse de déplacement augmente pendant le vol. Technologies 47",
+      "nom": "Gènes modifiés"
+    }
+  },
+  "Shaolong": {
+    "food": 9,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. L'attaque de ce Pal augmente de (4~8)% pour chaque Pal de type Dragon présent dans l'équipe, à l'exception de Shaolong . Technologies 77",
+      "nom": "Souverain du Ciel d'Azur"
+    }
+  },
+  "Shroomer": {
+    "food": 5,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Peut être assigné à une Ferme avec une chance de produire un Champignon ou un Champignon des cavernes . Technologies 39",
+      "nom": "Spores Vivaces"
+    }
+  },
+  "Shroomer Noct": {
+    "food": 5,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Dans la base, les mystérieuses spores de Shroomer Noct ralentissent la diminution des points MEN des Pals de (10~15)% . Technologies 39",
+      "nom": "Spores Fumantes"
+    }
+  },
+  "Sibelyx": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'il est activé, attaque l'ennemi ciblé avec Morsure du Blizzard . La puissance de cette compétence est multipliée par (1.1~2.5) . Peut être assigné à une Ferme avec une chance de produire du Tissu de qualité .",
+      "nom": "Voile Soyeux"
+    }
+  },
+  "Sibelyx Primo": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense des Pals de type Non élém. de (15~30) % . (Effet non cumulable) À affecter à une Ferme pour avoir une chance de fabriquer du Tissu de qualité .",
+      "nom": "Voile Doré"
+    }
+  },
+  "Silvance": {
+    "food": 9,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, fait exploser les ennemis souffrant de Entrave attaqués par le joueur, et inflige des dégâts supplémentaires équivalents à (40~60) % de l'attaque du joueur. (Effet non cumulable) De plus, le joueur et les Pals sont immunisés aux spores explosives de l'Arbre-Monde .",
+      "nom": "Gardien des Spores"
+    }
+  },
+  "Silvegis": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, réduit de (30~60)% le délai avant le début de la régénération du bouclier du joueur et réduit de (65~80)% la perte de durabilité du bouclier. (Effet non cumulable) Technologies 60",
+      "nom": "Bouclier Aegis"
+    }
+  },
+  "Skutlass": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'activée, Skutlass se transforme en katana à disposition du joueur (Attaque : (2600~3900) ). S'il ne retrouve pas rapidement sa forme d'origine, Skutlass tombe K.O. Utiliser une attaque Laigiri le met également K.O.",
+      "nom": "Désossage"
+    }
+  },
+  "Skutlass Ignis": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'activée, Skutlass Ignis se transforme en katana à disposition du joueur (Attaque : (2900~4200) ). S'il ne retrouve pas rapidement sa forme d'origine, Skutlass Ignis tombe K.O. Utiliser une attaque Laigiri le met également K.O.",
+      "nom": "Barbecue"
+    }
+  },
+  "Slowatt": {
+    "food": 4,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe et qu'une attaque du joueur touche un ennemi affecté par Électrisation , celui-ci libère de l'électricité et inflige des dégâts aux ennemis proches équivalents à (40~60) % de l'attaque du joueur. (Effet non cumulable)",
+      "nom": "Mode Relax"
+    }
+  },
+  "Smokie": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'activée, son odorat très développé permet de détecter le Chromite à proximité. Lorsqu'il combat à vos côtés, la quantité de Chromite obtenue augmente de +(100~200)% . Technologies 58",
+      "nom": "Chien fidèle Smokie"
+    }
+  },
+  "Smokie Cryst": {
+    "food": 3,
+    "partner": {
+      "desc": "Dans la base, le niveau de la capacité de travail Réfrigération des autres Pals du camp augmente de +1 . (Effet non cumulable)",
+      "nom": "Froide Bête"
+    }
+  },
+  "Snock": {
+    "food": 4,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, ajoute une valeur d'accumulation d'état Électrisation de (2~6) aux attaques du joueur. (Effet non cumulable)",
+      "nom": "Batterie Dissuasive"
+    }
+  },
+  "Snock Lux": {
+    "food": 4,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (15~30) % les dégâts de type Eau subis par le joueur et les Pals, et immunise contre Trempé . (Effet non cumulable)",
+      "nom": "Coquille Invasive"
+    }
+  },
+  "Snugloo": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, réduit la probabilité d'être repéré par les ennemis. (Effet non cumulable)",
+      "nom": "Œil Invisible"
+    }
+  },
+  "Solenne": {
+    "food": 9,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, l'attaque du joueur augmente de (30~80) % si tous les Pals de l'équipe sont d'espèces différentes. (Effet non cumulable)",
+      "nom": "Princesse Indomptable"
+    }
+  },
+  "Solmora": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour nager. Augmente les chances d'attraper des Pals à potentiel lorsqu'il est dans l'équipe. Technologies 65",
+      "nom": "Môle Charismatique"
+    }
+  },
+  "Solmora Lux": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour nager. Lorsqu'il est monté, les attaques du joueur sont converties en Électricité , et son attaque augmente de (5~20) % . De plus, pêcher des Pals à potentiel devient plus facile lorsqu'il est dans l'équipe. Technologies 66",
+      "nom": "Môle Plasmique"
+    }
+  },
+  "Sootseer": {
+    "food": 7,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (15~30)% les dégâts de type Non élém. subis par le joueur et les Pals. (Effet non cumulable) Peut être assigné à une Ferme avec une chance de déterrer des Os .",
+      "nom": "Pille-Tombes"
+    }
+  },
+  "Souffline": {
+    "food": 3,
+    "partner": {
+      "desc": "Augmente le taux de capture des Pals souffrant de Entrave lorsqu'il est dans l'équipe. (Effet non cumulable)",
+      "nom": "Fée Duveteuse"
+    }
+  },
+  "Sparkit": {
+    "food": 1,
+    "partner": {
+      "desc": "Augmente l'attaque des Pals de type Électricité de (15~30) % lorsqu'il est dans l'équipe. (Effet non cumulable) À affecter à une Ferme pour une chance d'obtenir un Organe électrique .",
+      "nom": "Électricité Statique"
+    }
+  },
+  "Splatterina": {
+    "food": 7,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (100~200)% les objets obtenus lors du dépeçage avec un Couteau de boucher . (effet non cumulable)",
+      "nom": "Lame Amoureuse"
+    }
+  },
+  "Starryon": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être chevauché pour se déplacer. Augmente la hauteur des sauts lorsque vous êtes en selle. La nuit, la vitesse de déplacement de ce Pal augmente de +(50~100) % . Technologies 57",
+      "nom": "Danseur de Minuit"
+    }
+  },
+  "Starryon Primo": {
+    "food": 6,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer et permet de sauter plus haut une fois monté. La vitesse de déplacement de ce Pal augmente de (5~25) % pour chaque Pal de type Non élém. présent dans l'équipe, à l'exception de Starryon Primo . Technologies 77",
+      "nom": "Danseur Radieux"
+    }
+  },
+  "Surfent": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer sur l'eau. Peut être assigné à une Ferme avec une chance de produire du Cuir . Technologies 16",
+      "nom": "Fouisseur Furtif"
+    }
+  },
+  "Surfent Terra": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, ajoute (2~6) d'accumulation d'état Embourbement aux attaques du joueur. (effet non cumulable) Technologies 25",
+      "nom": "Fouisseur des Sables"
+    }
+  },
+  "Suzaku": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. La vitesse de déplacement de ce Pal augmente de (5~25)% pour chaque Pal de type Feu dans l'équipe, à l'exception de Suzaku . Technologies 43",
+      "nom": "Ailes de Feu"
+    }
+  },
+  "Suzaku Aqua": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. La vitesse de déplacement de ce Pal augmente de (5~25)% pour chaque Pal de type Eau dans l'équipe, à l'exception de Suzaku Aqua . Technologies 44",
+      "nom": "Ailes d'Eau"
+    }
+  },
+  "Swee": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense et l'attaque de Sweepa .",
+      "nom": "Gouzi-Gouzi"
+    }
+  },
+  "Sweepa": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. L'attaque et la défense de ce Pal augmentent de (12~24)% pour chaque Swee dans l'équipe. Technologies 20",
+      "nom": "Gouzi-Gouzi Royal"
+    }
+  },
+  "Tanzee": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'activée, Tanzee mitraille les ennemis à proximité avec un fusil d'assaut pendant un certain temps. Technologies 12",
+      "nom": "Fusil Jovial"
+    }
+  },
+  "Tanzee Ignis": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'activée, Tanzee Ignis rejoint le joueur et mitraille sans relâche les ennemis à proximité avec un fusil d'assaut de type Feu . Technologies 13",
+      "nom": "Fou de la Gâchette"
+    }
+  },
+  "Tarantriss": {
+    "food": 4,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet d'effectuer un double saut lorsqu'il est monté. Permet également de projeter une toile vers un point ciblé afin de s'y déplacer rapidement à l'aide d'un grappin. Technologies 20",
+      "nom": "Toile de Tarantriss"
+    }
+  },
+  "Teafant": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, restaure de (20~40)% les PV du joueur si ceux-ci tombent sous 30%. (effet non cumulable) * Après activation, un temps de recharge de 120 secondes est nécessaire avant une nouvelle utilisation.",
+      "nom": "Douche Apaisante"
+    }
+  },
+  "Tetroise": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans la base, augmente le niveau de la capacité de travail Extraction des autres Pals de la base de 1 . (Effet non cumulable) Technologies 48",
+      "nom": "Tortue Maçonne"
+    }
+  },
+  "Tetroise Primo": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Réduit de (80~100) % la perte de durabilité des armes et des armures lorsqu'il est dans l'équipe. (Effet non cumulable) Technologies 75",
+      "nom": "Tortue Madone"
+    }
+  },
+  "Tocotoco": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'activé, il s'équipe au joueur et se transforme en lanceur d'œufs explosifs. Technologies 18",
+      "nom": "Lance-œufs Explosifs"
+    }
+  },
+  "Tombat": {
+    "food": 2,
+    "partner": {
+      "desc": "Lorsqu'activée, détecte grâce à des ultrasons l'emplacement des donjons, coffres et débris à proximité.",
+      "nom": "Sixième Sens"
+    }
+  },
+  "Tropicaw": {
+    "food": 6,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (15~30) % la durée d'invincibilité lors des roulades et des esquives du joueur. (Effet non cumulable)",
+      "nom": "Danse Florale"
+    }
+  },
+  "Turtacle": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (80~100)% le poids du Minerai de métal . (effet non cumulable)",
+      "nom": "Support Pointu"
+    }
+  },
+  "Turtacle Terra": {
+    "food": 3,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (80~100)% le poids du Soufre et du Charbon , et augmente de (25~40)% les dégâts de type Terre infligés aux points faibles. (effet non cumulable)",
+      "nom": "Support Brillant"
+    }
+  },
+  "Univolt": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente de (25~40)% les dégâts infligés aux points faibles par les attaques de type Électricité . (effet non cumulable) Technologies 14",
+      "nom": "Éclair Foudroyant"
+    }
+  },
+  "Univolt Cryst": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Une fois monté, les attaques du joueur deviennent de type Glace et sa puissance d'attaque augmente de (5~20)% . Technologies 64",
+      "nom": "Conflit Polaire"
+    }
+  },
+  "Vaelet": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Terre . (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire diverses graines .",
+      "nom": "Purification Tellurique"
+    }
+  },
+  "Valentail": {
+    "food": 4,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, la gravité affectant le joueur est réduite, rendant les sauts et les chutes plus légers. (Effet non cumulable)",
+      "nom": "Extensibilité Féline"
+    }
+  },
+  "Vanwyrm": {
+    "food": 5,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est dans l'équipe, augmente de (20~40)% les dégâts infligés par le joueur aux points faibles ennemis. (Effet non cumulable) Technologies 21",
+      "nom": "Assaillant Céleste"
+    }
+  },
+  "Vanwyrm Cryst": {
+    "food": 5,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est dans l'équipe, augmente de (30~50)% les dégâts infligés par le joueur aux points faibles ennemis. (Effet non cumulable) Technologies 22",
+      "nom": "Assaillant Céleste"
+    }
+  },
+  "Venusa": {
+    "food": 6,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, ajoute (2~6) d'accumulation d'état Cécité aux attaques du joueur. (Effet non cumulable)",
+      "nom": "Sagacité Reptilienne"
+    }
+  },
+  "Verdash": {
+    "food": 6,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, ajoute + 1 sauts supplémentaires et + 1 sprints aériens supplémentaires. (effet non cumulable)",
+      "nom": "Acrobate des Plaines"
+    }
+  },
+  "Vixy": {
+    "food": 1,
+    "partner": {
+      "desc": "À affecter à une Ferme pour une chance de déterrer des objets.",
+      "nom": "Creuse et creuse"
+    }
+  },
+  "Warsect": {
+    "food": 6,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, crée une barrière autour du joueur si celui-ci réussit à toucher un ennemi 5 fois avec des attaques au corps-à-corps dans un délai de (5~9) secondes . (effet non cumulable)",
+      "nom": "Armure Noire"
+    }
+  },
+  "Warsect Terra": {
+    "food": 6,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, crée une barrière autour du joueur si ce dernier touche une cible 5 fois avec des attaques de corps à corps en moins de (5~9) secondes . (Effet non cumulable)",
+      "nom": "Armure Or"
+    }
+  },
+  "Whalaska": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer sur l'eau. Lorsqu'il est dans l'équipe, les mini-jeux de pêche commencent avec une jauge de capture remplie de (5~14)% supplémentaires, et la progression de la jauge augmente de (5~14)% lorsque les barres sont superposées. (Effet non cumulable) Technologies 42",
+      "nom": "Céta-Frais"
+    }
+  },
+  "Whalaska Ignis": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour nager. Lorsqu'il est dans l'équipe, les mini-jeux de pêche commencent avec une jauge de capture remplie à (7~17)% supplémentaires, et la jauge progresse de (7~17)% supplémentaires lorsque les barres se chevauchent. (effet non cumulable) Technologies 71",
+      "nom": "Céta-Chaud"
+    }
+  },
+  "Wispaw": {
+    "food": 6,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente les chances de capture des Pals lors du bonus d'attaque par derrière . (Effet non cumulable)",
+      "nom": "Félin Possédé"
+    }
+  },
+  "Wistella": {
+    "food": 5,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense des Pals de type Ténèbres de (15~30)% . (Effet non cumulable)",
+      "nom": "Énergie Noire Secrète"
+    }
+  },
+  "Wixen": {
+    "food": 4,
+    "partner": {
+      "desc": "Lorsqu'il est activé, Wixen transfère son pouvoir au joueur, convertissant ses attaques en Feu et augmentant son attaque de (30~50) % .",
+      "nom": "Maître Renard"
+    }
+  },
+  "Wixen Noct": {
+    "food": 4,
+    "partner": {
+      "desc": "Lorsqu'activé, Wixen Noct transfère son pouvoir au joueur, convertissant ses attaques en Ténèbres et augmentant son attaque de (30~50) % .",
+      "nom": "Grand Renard Noir"
+    }
+  },
+  "Woolipop": {
+    "food": 1,
+    "partner": {
+      "desc": "Placé dans une Ferme , de la Barbe à papa tombe parfois de son dos. Dans la base, il ralentit de (-10~-20)% l'évolution de la Repu des Pals. (Non cumulable)",
+      "nom": "Petit Bonbon"
+    }
+  },
+  "Woolipop Terra": {
+    "food": 1,
+    "partner": {
+      "desc": "Lorsqu'il est assigné à une Ferme , il peut laisser tomber de la Barbe à papa caramel . Lorsqu'il est dans la base, le taux de diminution de la Repu des Pals de la base est réduit de (-15~-25) % . (Effet non cumulable)",
+      "nom": "Bonbon Amer"
+    }
+  },
+  "Wumpo": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Dans la base, augmente de +1 le niveau d'aptitude au travail Transport des autres Pals de la base. (effet non cumulable) Technologies 45",
+      "nom": "Gardien des Montagnes Enneigées"
+    }
+  },
+  "Wumpo Botan": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, réduit de (15~30)% les dégâts de type Terre subis par le joueur et les Pals, et immunise contre l'état Embourbement . (effet non cumulable) Technologies 51",
+      "nom": "Gardien du Sud"
+    }
+  },
+  "Xenogard": {
+    "food": 7,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente de (10~35)% les dégâts infligés par les armes énergétiques du joueur. (Effet non cumulable) Technologies 41",
+      "nom": "Intrus Non Identifié"
+    }
+  },
+  "Xenolord": {
+    "food": 8,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est dans l'équipe, augmente de (20~50)% les dégâts des compétences partenaires des Pals équipés d'une arme . (Effet non cumulable) Technologies 66",
+      "nom": "Ailes Météores"
+    }
+  },
+  "Xenovader": {
+    "food": 4,
+    "partner": {
+      "desc": "Lorsqu'il est dans l'équipe, les dégâts infligés par la dernière balle du chargeur des armes automatiques augmentent de (100~160)% . (Effet non cumulable)",
+      "nom": "Envahisseur Non Identifié"
+    }
+  },
+  "Yakumo": {
+    "food": 3,
+    "partner": {
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il combat à vos côtés, augmente de (15~30)% les chances de rencontrer des Pals possédant la même compétence passive. * À l'exception de certaines compétences passives. Technologies 41",
+      "nom": "Qui se ressemble s'assemble"
+    }
+  }
+}

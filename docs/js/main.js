@@ -1,4 +1,4 @@
-import { renderDrops } from "./drops.js";
+import { initDrops, renderDrops } from "./drops.js";
 import { initBreeding, renderBreeding } from "./breeding.js";
 import { initProduction, renderProduction, DEBUG as prodDebug } from "./production.js";
 import { initShare } from "./share.js";
@@ -363,6 +363,7 @@ export function init() {
   initShare();
   initNotes();
   initCarte();
+  initDrops();
   initPassives();
   initProduction();
   renderAll();

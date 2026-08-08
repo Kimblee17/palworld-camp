@@ -101,6 +101,18 @@ function tierCell(pal, cat) {
 
 const MUTED = '<span class="muted">—</span>';
 
+// La description de compétence est du texte de source : elle passe par l'échappement
+// avant d'atterrir dans un attribut `title`.
+const esc = s => String(s).replace(/[&<>"']/g,
+  c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+// Un Pal correspond-il à la recherche ? Nom, puis compétence de partenaire.
+function motTrouve(pal, q) {
+  if (pal.name.toLowerCase().includes(q)) return true;
+  const ps = pal.partner;
+  return !!ps && ((ps.nom + " " + ps.desc).toLowerCase().includes(q));
+}
+
 function pediaRow(pal) {
   const tr = document.createElement("tr");
   const night = pal.nightWorker ? ` <span class="night" title="Travailleur de nuit">🌙</span>` : "";
@@ -127,7 +139,13 @@ function pediaRow(pal) {
   tr.innerHTML = pick + num +
     `<td class="pedia-name">${palIconHtml(pal)}${name}${night}` +
       `${boxQty(pal.id) > 0 ? ' <span class="owned-badge" title="Dans ma boîte">✓</span>' : ''}` +
-      `<div class="pedia-el">${elementChipsHtml(pal)}</div></td>` +
+      `<div class="pedia-el">${elementChipsHtml(pal)}</div>` +
+      // La compétence de partenaire tient sous le nom : une colonne de plus aurait
+      // élargi une table qui en compte déjà douze. Le texte complet est dans l'infobulle,
+      // et c'est lui que la recherche interroge.
+      (pal.partner
+        ? `<div class="pedia-partner" title="${esc(pal.partner.desc)}">🤝 ${esc(pal.partner.nom)}</div>`
+        : "") + `</td>` +
     `<td class="pedia-num">${lvl}</td>` +
     `<td>${rarity}</td>` +
     `<td class="pedia-num">${cap}</td>` +
@@ -211,7 +229,10 @@ export function renderPalpedia() {
   body.innerHTML = "";
   const rows = PALS
     .filter(p =>
-      (!q || p.name.toLowerCase().includes(q)) &&
+      // La recherche ne porte plus seulement sur le nom : elle balaie aussi la
+      // compétence de partenaire, nom ET description. Taper « Laine » sort tous les
+      // Pals qui en produisent, « Jellroy » sort ceux dont la compétence le mentionne.
+      (!q || motTrouve(p, q)) &&
       (!wf || (p.work[wf] || 0) > 0) &&
       (!ef || palElements(p).includes(ef)) &&
       (mode === "tous"

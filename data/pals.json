@@ -72,7 +72,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 139,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Gardien du Désert",
+      "desc": "Lorsqu'activé, Anubis transfère son pouvoir au joueur, convertissant ses attaques en Terre et augmentant son attaque de (30~50) % . En combat, esquive parfois les attaques grâce à des pas rapides."
+    }
   },
   {
     "id": 2,
@@ -114,7 +118,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 58,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Chaleur Corporelle",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente de +2 la résistance au froid du joueur lorsqu'il est dans l'équipe. (effet non cumulable) Technologies 15"
+    }
   },
   {
     "id": 3,
@@ -187,7 +195,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 158,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Dragon en Armure Noire",
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les dégâts infligés aux minerais augmentent de (1100~3300)% , et la quantité de Minerai de métal obtenue augmente de (150~300)% . Technologies 39"
+    }
   },
   {
     "id": 4,
@@ -253,7 +265,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 161,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Charge Plasma",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet également d'effectuer une ruée aérienne pour se déplacer à grande vitesse. Technologies 58"
+    }
   },
   {
     "id": 5,
@@ -325,7 +341,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 41,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Danse de l'eau",
+      "desc": "Peut être utilisé comme monture pour nager. Lorsqu'il est monté, les attaques du joueur deviennent de type Eau , et son attaque augmente de (5~20)% . Technologies 24"
+    }
   },
   {
     "id": 6,
@@ -399,7 +419,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 41,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Danse Glagla",
+      "desc": "Peut être utilisé comme monture pour nager. Une fois monté, les attaques du joueur deviennent de type Glace et sa puissance d'attaque augmente de (5~20)% . Technologies 27"
+    }
   },
   {
     "id": 7,
@@ -477,7 +501,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 191,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Écrasement Blizzard",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet d'attaquer avec un marteau de type Glace lorsqu'il est monté. Technologies 73"
+    }
   },
   {
     "id": 8,
@@ -545,7 +573,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 96,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Orage",
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les attaques du joueur deviennent de type Électricité et sa puissance d'attaque augmente de (5~20)% . La vitesse de déplacement de ce Pal augmente de (5~25)% pour chaque Pal de type Électricité dans l'équipe, à l'exception de Beakon . Technologies 29"
+    }
   },
   {
     "id": 9,
@@ -585,6 +617,10 @@
     "captureRate": 1.0,
     "zukan": 67,
     "food": 3,
+    "partner": {
+      "nom": "Abeille Ouvrière",
+      "desc": "Peut être assigné à une Ferme avec une chance de produire du Miel . Lorsqu'il est dans l'équipe, augmente l'attaque de Elizabee ."
+    },
     "ranchFood": true
   },
   {
@@ -620,7 +656,11 @@
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
     "zukan": 195,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Pupille Cauchemardesque",
+      "desc": "Lorsqu'activée, attaque l'ennemi ciblé avec Rayons Cauchemardesques . La puissance de Rayons Cauchemardesques utilisée par ce Pal est multipliée par (1.1~2.5) ."
+    }
   },
   {
     "id": 11,
@@ -660,7 +700,11 @@
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
     "zukan": 195,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Regard Cauchemardesque",
+      "desc": "Lorsqu'activée, attaque l'ennemi ciblé avec Floraison Cauchemardesque . La puissance de Floraison Cauchemardesque utilisée par ce Pal est multipliée par (1.1~2.5) ."
+    }
   },
   {
     "id": 12,
@@ -732,7 +776,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 137,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Empereur Magmatique",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente de (5~10)% l'attaque et la défense des Pals en combat à chaque ennemi vaincu. Cet effet dure 20 secondes et peut se cumuler jusqu'à 5 fois. (effet non cumulable) Technologies 46"
+    }
   },
   {
     "id": 13,
@@ -802,7 +850,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 137,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Roi des Dragons",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente de (25~40)% les dégâts infligés en touchant les faiblesses avec des attaques de type Dragon . (Effet non cumulable) Technologies 55"
+    }
   },
   {
     "id": 14,
@@ -869,7 +921,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 112,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Lion Infernal",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Herbe . (effet non cumulable) Technologies 33"
+    }
   },
   {
     "id": 15,
@@ -934,7 +990,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 112,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Lion des Flammes Noires",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Non élém. . (effet non cumulable) Technologies 35"
+    }
   },
   {
     "id": 16,
@@ -967,7 +1027,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": null,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Corps Gélatineux",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de sauter plus haut lorsqu'il est monté."
+    }
   },
   {
     "id": 17,
@@ -1048,7 +1112,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 110,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Soleil Accablant",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Dans la base, la vitesse de production des œufs des Pals affectés à un Ranch augmente de (20~50)% . (Effet non cumulable) Technologies 36"
+    }
   },
   {
     "id": 18,
@@ -1090,7 +1158,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 60,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Regard de Princesse",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (15~30)% l'attaque des Pals de type Herbe . (effet non cumulable)"
+    }
   },
   {
     "id": 19,
@@ -1161,7 +1233,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 108,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Floraison du Premier Amour",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, chaque œuf ramassé a (35~45)% de chances d'être remplacé par un œuf de Pal Alpha. (effet non cumulable) Technologies 33"
+    }
   },
   {
     "id": 20,
@@ -1230,7 +1306,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 108,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Floraison de Pureté",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, chaque œuf ramassé a (45~55)% de chances d'être remplacé par un œuf de Pal Alpha. (effet non cumulable) Technologies 44"
+    }
   },
   {
     "id": 21,
@@ -1272,7 +1352,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 85,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Flash Furtif",
+      "desc": "Lorsqu'il est activé, attaque l'ennemi ciblé avec Iaigiri . La puissance de cette compétence est multipliée par (1.1~2.5) ."
+    }
   },
   {
     "id": 22,
@@ -1320,7 +1404,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 85,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Flash Furtif Inversé",
+      "desc": "Lorsqu'activée, attaque l'ennemi visé avec Iaigiri . La puissance de Iaigiri utilisée par ce Pal est multipliée par (1.1~2.5) . Lorsqu'il est dans l'équipe, les attaques portées avec une arme de corps à corps avant l'engagement du combat infligent (30~65)% de dégâts supplémentaires. (Effet non cumulable)"
+    }
   },
   {
     "id": 23,
@@ -1365,6 +1453,10 @@
     "captureRate": 1.0,
     "zukan": 34,
     "food": 2,
+    "partner": {
+      "nom": "Cueillette de baies",
+      "desc": "Placé dans une Ferme , des Baie rouge tombent parfois de son dos. Dans l'équipe, il restaure (100~200) de satiété au Pal le plus affamé toutes les 5 min. (Non cumulable)"
+    },
     "ranchFood": true
   },
   {
@@ -1414,7 +1506,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 34,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Pince-Venin",
+      "desc": "Placé dans une Ferme , de la Baie rouge tombe parfois de son dos. Dans l'équipe, il restaure (100~200) de satiété au Pal le plus affamé toutes les 5 min. (Non cumulable)"
+    }
   },
   {
     "id": 25,
@@ -1450,7 +1546,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.5,
     "zukan": 2,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Chat Porteur",
+      "desc": "Lorsqu'il est dans l'équipe, augmente la capacité de charge du joueur de (100~200) en portant une partie de son inventaire. (effet non cumulable)"
+    }
   },
   {
     "id": 26,
@@ -1483,7 +1583,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": null,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Soutien de Chauve-souris",
+      "desc": "Lorsqu'il est dans l'équipe, apparaît aux côtés du joueur et ramasse automatiquement les objets à proximité."
+    }
   },
   {
     "id": 27,
@@ -1527,7 +1631,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 57,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Oiseau de Nuit",
+      "desc": "Lorsqu'activée, active la Vision nocturne pour voir dans l'obscurité. L'effet est annulé lors de la prochaine activation. À affecter à une Ferme pour une chance de déterrer des Os ."
+    }
   },
   {
     "id": 28,
@@ -1561,7 +1669,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.1,
     "zukan": 7,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Planeur sur Brise",
+      "desc": "Lorsqu'il est dans l'équipe, modifie les performances du planeur équipé et annule les dégâts de chute du joueur. Permet de planer rapidement pendant une longue durée."
+    }
   },
   {
     "id": 29,
@@ -1597,7 +1709,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.1,
     "zukan": 7,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Planair",
+      "desc": "Modifie les performances du planeur équipé lorsqu'il est dans l'équipe et annule les dégâts de chute subis par le joueur. Permet de planer rapidement pendant une longue durée."
+    }
   },
   {
     "id": 30,
@@ -1674,7 +1790,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 157,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Bénédiction Purificatrice",
+      "desc": "Peut être utilisé comme monture pour se déplacer. L'attaque et la vitesse de déplacement de ce Pal augmentent de (2~6)% pour chaque Pal de type Non élém. présent dans l'équipe, à l'exception de Celesdir . Lorsqu'il est dans l'équipe, restaure chaque seconde les PV du joueur et des Pals de l'équipe de (0.15~0.75)% en dehors des combats. (Effet non cumulable) Technologies 54"
+    }
   },
   {
     "id": 31,
@@ -1714,6 +1834,10 @@
     "captureRate": 1.5,
     "zukan": 3,
     "food": 1,
+    "partner": {
+      "nom": "Production d'œufs",
+      "desc": "À affecter à une Ferme pour une chance d'obtenir des Œuf ."
+    },
     "ranchFood": true
   },
   {
@@ -1787,7 +1911,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 103,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Belette Stupéfiante",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est monté, les attaques du joueur deviennent de type Dragon et sa puissance d'attaque augmente de (5~20)% . Technologies 11"
+    }
   },
   {
     "id": 33,
@@ -1857,7 +1985,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 103,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Belette Crépitante",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Une fois monté, les attaques du joueur deviennent de type Feu et sa puissance d'attaque augmente de (5~20)% . Technologies 40"
+    }
   },
   {
     "id": 34,
@@ -1902,7 +2034,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 61,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Écailles Mystérieuses",
+      "desc": "Lorsqu'activée, attaque l'ennemi ciblé avec Nuage Toxique . Lorsqu'il est dans la base, augmente de +1 le niveau d'aptitude au travail Exploitation des autres Pals de la base. (Effet non cumulable)"
+    }
   },
   {
     "id": 35,
@@ -1936,7 +2072,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.3,
     "zukan": 8,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Laine Soyeuse",
+      "desc": "Lorsqu'il est dans l'équipe, augmente l'attaque des Pals de type Non élém. de (15~30)% . (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire de la Laine ."
+    }
   },
   {
     "id": 36,
@@ -1977,7 +2117,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 9,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Position Saut",
+      "desc": "Lorsqu'activée, Croajiro , animé par une forte loyauté, gonfle son abdomen afin d'accumuler de l'énergie. Le joueur peut alors sauter sur son dos pour être propulsé haut dans les airs. Augmente l'attaque du joueur de (50~86) % jusqu'à son atterrissage."
+    }
   },
   {
     "id": 37,
@@ -2024,7 +2168,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 9,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Posture Annonciatrice",
+      "desc": "Lorsqu'activée, Croajiro Noct accumule de l'énergie grâce à sa loyauté et son ventre rebondi. Le joueur saute très haut lorsqu'il monte dessus. Lorsqu'il est dans l'équipe, augmente de (25~40)% les dégâts de type Ténèbres infligés aux points faibles. (effet non cumulable)"
+    }
   },
   {
     "id": 38,
@@ -2060,7 +2208,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 132,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Chasseur de Dragons",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Dragon . (effet non cumulable)"
+    }
   },
   {
     "id": 39,
@@ -2096,7 +2248,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 132,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Poigne Explosive",
+      "desc": "Lorsqu'il est dans l'équipe et qu'un point faible est touché, les dégâts du prochain coup porté à un point faible augmentent de (30~60)% . (Effet non cumulable)"
+    }
   },
   {
     "id": 40,
@@ -2136,7 +2292,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 22,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Charognard Onirique",
+      "desc": "Tant qu'il est dans l'équipe, il apparaît aux côtés du joueur. Il lance des projectiles magiques de type Ténèbres pour attaquer les ennemis hostiles. Il ne peut pas achever les adversaires de lui-même."
+    }
   },
   {
     "id": 41,
@@ -2172,7 +2332,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 123,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Ruée Sablonneuse",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Sa vitesse de déplacement augmente de (50~100)% lorsqu'il se trouve sur le sable . Technologies 28"
+    }
   },
   {
     "id": 42,
@@ -2212,7 +2376,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 92,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Fille de la Foudre",
+      "desc": "Tant qu'il est dans l'équipe, il apparaît aux côtés du joueur. Il lance des éclairs de type Électricité pour attaquer les ennemis hostiles. Il ne peut pas achever les adversaires de lui-même."
+    }
   },
   {
     "id": 43,
@@ -2259,7 +2427,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 92,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Fille de l'Orage Obscur",
+      "desc": "Tant qu'il est dans l'équipe, il apparaît aux côtés du joueur. Il lance des éclairs de type Ténèbres pour attaquer les ennemis hostiles. Il ne peut pas achever les adversaires de lui-même."
+    }
   },
   {
     "id": 44,
@@ -2292,7 +2464,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": null,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Vision Démoniaque",
+      "desc": "Lorsqu'il est dans l'équipe, augmente l'attaque des Pals de type Ténèbres de (15~30)% . (Effet non cumulable)"
+    }
   },
   {
     "id": 45,
@@ -2328,7 +2504,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 16,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Shot de Caféine",
+      "desc": "Lorsqu'activée, Depresso boit une boisson énergisante, augmentant de (100~900)% sa vitesse de déplacement et de travail. Peut être assigné à une Ferme avec une chance de produire de la Glande à venin ."
+    }
   },
   {
     "id": 46,
@@ -2366,7 +2546,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 107,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Perceuse Broyeuse",
+      "desc": "Provoque Coquille Rotative lorsqu'il est appelé. Suit le joueur en tournoyant pour faciliter la destruction des minerais de (800~2000) % ."
+    }
   },
   {
     "id": 47,
@@ -2409,7 +2593,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 84,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Dragon Fleurissant",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente de (15~30)% la défense des Pals de type Dragon lorsqu'il est dans l'équipe. (effet non cumulable) Technologies 24"
+    }
   },
   {
     "id": 48,
@@ -2449,7 +2637,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 84,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Dragon Orageux",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente de (15~30)% la défense des Pals de type Électricité lorsqu'il est dans l'équipe. (effet non cumulable) Technologies 34"
+    }
   },
   {
     "id": 49,
@@ -2495,7 +2687,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 33,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Virée Sauvage",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente légèrement la vitesse de déplacement lorsqu'il est monté. Technologies 9"
+    }
   },
   {
     "id": 50,
@@ -2532,7 +2728,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 155,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Prière de Retour",
+      "desc": "Lorsqu'il est activé, permet de se téléporter vers la base le plus proche. Inutilisable dans les donjons."
+    }
   },
   {
     "id": 51,
@@ -2574,7 +2774,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 109,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Amélioration Terrestre",
+      "desc": "Lorsqu'il est dans l'équipe, augmente l'attaque des Pals de type Terre de (15~30)% . (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire de l' Huile de Pal de qualité ."
+    }
   },
   {
     "id": 52,
@@ -2621,7 +2825,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 109,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Ruée vers L'Or",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de +(100~200)% la quantité de Pièce d'or obtenue sur les ennemis vaincus. (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire de l' Huile de Pal de qualité ou, plus rarement, des Pièce d'or ."
+    }
   },
   {
     "id": 53,
@@ -2697,7 +2905,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 32,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Gardien des Bois",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet l'utilisation du double saut lorsqu'il est monté et augmente l'efficacité de l'abattage des arbres de (220~500)% . Technologies 12"
+    }
   },
   {
     "id": 54,
@@ -2770,7 +2982,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 32,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Gardien des Bois Dorés",
+      "desc": "Peut être utilisé comme monture pour se déplacer, ce qui permet l'utilisation du double saut . Dans la base, le niveau de la capacité de travail Abattage des autres Pals du camp augmente de 1 . (Effet non cumulable) Technologies 21"
+    }
   },
   {
     "id": 55,
@@ -2812,7 +3028,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 68,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Reine des Abeilles",
+      "desc": "Son attaque augmente de (12~24)% pour chaque Beegarde dans l'équipe."
+    }
   },
   {
     "id": 56,
@@ -2878,7 +3098,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 63,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Dragon Sacré au Grand Cœur",
+      "desc": "Peut être utilisé comme monture pour voler. La vitesse de déplacement augmente en vol. Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en vainquant des Pals de type Ténèbres . (effet non cumulable) Technologies 20"
+    }
   },
   {
     "id": 57,
@@ -2946,7 +3170,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 63,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Dragon Aquatique au Grand Cœur",
+      "desc": "Peut être utilisé comme monture pour voler. La vitesse de déplacement augmente en vol. Lorsqu'il est dans l'équipe, réduit de (15~30)% les dégâts de type Feu subis par le joueur et les Pals, et annule l'état Brûlure . (effet non cumulable) Technologies 32"
+    }
   },
   {
     "id": 58,
@@ -2979,7 +3207,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": null,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Enchantement",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Ténèbres . (Effet non cumulable)"
+    }
   },
   {
     "id": 59,
@@ -3012,7 +3244,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": null,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Ruée de l’Œil de Cthulhu",
+      "desc": "Lorsqu'activée, Œil de Cthulhu charge l'ennemi ciblé pour l'attaquer."
+    }
   },
   {
     "id": 60,
@@ -3089,7 +3325,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 188,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Prédateur Brûlant",
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en vainquant des Pals de type Glace . (effet non cumulable) Technologies 60"
+    }
   },
   {
     "id": 61,
@@ -3166,7 +3406,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 188,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Prédateur Aquatique",
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Feu . (Effet non cumulable) Technologies 60"
+    }
   },
   {
     "id": 62,
@@ -3204,7 +3448,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 65,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Vol de vie",
+      "desc": "En combattant à ses côtés, confère au joueur et à Felbat un effet de Vol de vie permettant d'absorber (5~9)% des dégâts infligés pour restaurer leurs PV ."
+    }
   },
   {
     "id": 63,
@@ -3275,7 +3523,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 83,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Vent et Nuages",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est monté, permet d'effectuer un double saut . Technologies 26"
+    }
   },
   {
     "id": 64,
@@ -3349,7 +3601,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 83,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Nuage d'Orage",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet d'utiliser le double saut une fois monté. Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Eau . (Effet non cumulable) Technologies 57"
+    }
   },
   {
     "id": 65,
@@ -3393,7 +3649,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 88,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Aqua-Gâchette",
+      "desc": "Lorsqu'activé, Finsider transfère son pouvoir au joueur, convertissant ses attaques en Eau et augmentant son attaque de (30~50) % ."
+    }
   },
   {
     "id": 66,
@@ -3439,7 +3699,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 88,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Chambre de Braises",
+      "desc": "Lorsqu'il est dans l'équipe, Finsider Ignis porte les affaires du joueur et réduit de (60~100)% le poids des armes dans l'inventaire. Augmente également de (25~40)% les dégâts de type Feu infligés aux points faibles. (effet non cumulable)"
+    }
   },
   {
     "id": 67,
@@ -3480,7 +3744,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.1,
     "zukan": 25,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Larmes de Lave",
+      "desc": "Lorsqu'il est dans l'équipe, restaure chaque seconde (0.1~0.5)% des PV du joueur et des Pals de l'équipe hors combat. (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire un Organe de feu ."
+    }
   },
   {
     "id": 68,
@@ -3522,7 +3790,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 77,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Lapin Serviable",
+      "desc": "Lorsqu'il est dans l'équipe, apparaît aux côtés du joueur et ramasse automatiquement les objets à proximité."
+    }
   },
   {
     "id": 69,
@@ -3561,7 +3833,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 95,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Instinct Boréal",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (15~30)% l'attaque des Pals de type Glace . (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire un Organe de glace ."
+    }
   },
   {
     "id": 70,
@@ -3599,7 +3875,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.1,
     "zukan": 29,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Câlin de Flammes",
+      "desc": "Lorsqu'activée, il se joint au joueur pour faire office de lance-flammes. Technologies 6"
+    }
   },
   {
     "id": 71,
@@ -3637,7 +3917,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.1,
     "zukan": 29,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Câlin Glacé",
+      "desc": "Lorsqu'activée, se joint au joueur et permet d'attaquer en libérant un souffle glacé. Technologies 24"
+    }
   },
   {
     "id": 72,
@@ -3678,7 +3962,11 @@
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
     "zukan": 200,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Pégase des Glaces",
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les attaques du joueur deviennent de type Glace , sa puissance d'attaque augmente de (10~40)% , et ses attaques appliquent (2~6) d'accumulation d'état Gel . Technologies 62"
+    }
   },
   {
     "id": 73,
@@ -3719,7 +4007,11 @@
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
     "zukan": 200,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Pégase Noir",
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les attaques du joueur deviennent de type Ténèbres , sa puissance d'attaque augmente de (10~40)% , et ses attaques appliquent (2~6) d'accumulation d'état Cécité . Technologies 62"
+    }
   },
   {
     "id": 74,
@@ -3753,7 +4045,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 114,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Paon Pan",
+      "desc": "Tant qu'il est dans l'équipe, l'air froid de Frostplume améliore la concentration du joueur et augmente sa vitesse de recharge de +(20~50) % . (Non cumulable)"
+    }
   },
   {
     "id": 75,
@@ -3793,7 +4089,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.1,
     "zukan": 5,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Coud'Surf",
+      "desc": "Lorsqu'activée, Fuack fonce sur l'ennemi en faisant du bodyboard."
+    }
   },
   {
     "id": 76,
@@ -3840,7 +4140,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.1,
     "zukan": 5,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Tacle de Feu",
+      "desc": "Lorsqu'activée, Fuack Ignis fonce sur l'ennemi en surfant sur des flammes."
+    }
   },
   {
     "id": 77,
@@ -3875,7 +4179,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 31,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Appui Minier",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (30~60)% les dégâts infligés lors de l'extraction de minerais par le joueur, et réduit de (80~100)% le poids de la Pierre . (Effet non cumulable)"
+    }
   },
   {
     "id": 78,
@@ -3913,7 +4221,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 49,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Monte-Galeclaw",
+      "desc": "Lorsqu'il est dans l'équipe, modifie les performances du planeur équipé. Permet de planer à grande vitesse tout en tirant avec l'arme tenue dans la main droite."
+    }
   },
   {
     "id": 79,
@@ -3953,7 +4265,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 97,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Guide des Ténèbres",
+      "desc": "Peut être utilisé comme monture pour se déplacer sur l'eau. La vitesse de déplacement de ce Pal augmente de (5~25)% pour chaque Pal de type Ténèbres ou Eau présent dans l'équipe, à l'exception de Ghangler . Technologies 31"
+    }
   },
   {
     "id": 80,
@@ -3994,7 +4310,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 97,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Cordon-bleu des Profondeurs",
+      "desc": "Peut être utilisé comme monture pour nager. La vitesse de déplacement de ce Pal augmente de (5~25)% pour chaque Pal de type Feu ou Eau présent dans l'équipe, à l'exception de Ghangler Ignis . Technologies 42"
+    }
   },
   {
     "id": 81,
@@ -4030,7 +4350,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 154,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Protection Sablonneuse",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Une fois monté, les attaques du joueur deviennent de type Terre et sa puissance d'attaque augmente de (5~20)% . Technologies 54"
+    }
   },
   {
     "id": 82,
@@ -4071,7 +4395,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 48,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Tapette Princière",
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (12~35)% la diminution de la jauge de capture lorsque les barres ne sont pas superposées dans le mini-jeu de pêche. (Effet non cumulable)"
+    }
   },
   {
     "id": 83,
@@ -4106,7 +4434,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 55,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Squale Ronchon",
+      "desc": "Lorsqu'il est activé, attaque l'ennemi ciblé avec Tir Aquatique . La puissance de cette compétence est multipliée par (1.1~2.5) . Lorsqu'il est dans l'équipe, augmente de (10~20)% l'attaque du joueur."
+    }
   },
   {
     "id": 84,
@@ -4141,7 +4473,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 55,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Squale Ronchon",
+      "desc": "Lorsqu'il est activé, attaque l'ennemi ciblé avec Flammes Scindées . La puissance de cette compétence est multipliée par (1.1~2.5) . Lorsqu'il est dans l'équipe, augmente de (10~20)% l'attaque du joueur."
+    }
   },
   {
     "id": 85,
@@ -4211,7 +4547,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 74,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Mode Enragé",
+      "desc": "Lorsqu'activée, Gorirat libère sa nature sauvage et augmente temporairement son attaque de (75~300)% ."
+    }
   },
   {
     "id": 86,
@@ -4281,7 +4621,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 74,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Bras de Gorille Ultime",
+      "desc": "Lorsqu'il est dans l'équipe, augmente la vitesse d'escalade du joueur de (50~100)% . (Effet non cumulable)"
+    }
   },
   {
     "id": 87,
@@ -4314,7 +4658,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": null,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Corps Gélatineux",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de sauter plus haut lorsqu'il est monté."
+    }
   },
   {
     "id": 88,
@@ -4350,7 +4698,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 70,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Œil de Lynx",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente de (50~75)% les chances de ramasser un œuf supplémentaire lorsqu'un œuf de Pal est obtenu. (effet non cumulable) Technologies 19"
+    }
   },
   {
     "id": 89,
@@ -4426,7 +4778,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 185,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Tank Jaune",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de tirer en rafale avec un minigun lorsqu'il est monté. Technologies 40"
+    }
   },
   {
     "id": 90,
@@ -4465,7 +4821,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.3,
     "zukan": 12,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Aide aux Bûcherons",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (30~50)% les dégâts infligés lors de l'abattage d'arbres, et réduit de (40~60)% le poids de tous les types de bois. (effet non cumulable)"
+    }
   },
   {
     "id": 91,
@@ -4505,7 +4865,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 38,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Trapéziste",
+      "desc": "Lorsqu'il est dans l'équipe, modifie les performances du planeur équipé. Permet de s'élever lentement pendant le vol plané."
+    }
   },
   {
     "id": 92,
@@ -4546,7 +4910,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 38,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Trapéziste du Froid",
+      "desc": "Lorsqu'il est dans l'équipe, modifie les performances du planeur équipé. Permet de s'élever lentement pendant le vol plané."
+    }
   },
   {
     "id": 93,
@@ -4590,7 +4958,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 197,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Barrière Sacrée",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de générer une barrière bloquant toutes les attaques lorsqu'il est monté. Permet également d'effectuer un triple saut . Technologies 70"
+    }
   },
   {
     "id": 94,
@@ -4661,7 +5033,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 80,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Ailes des Enfers",
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les attaques du joueur deviennent de type Ténèbres et sa puissance d'attaque augmente de (5~20)% . Technologies 25"
+    }
   },
   {
     "id": 95,
@@ -4734,7 +5110,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 80,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Ailes Foudroyantes",
+      "desc": "Peut être utilisé comme monture pour voler. Une fois monté, les attaques du joueur deviennent de type Électricité et sa puissance d'attaque augmente de (5~20)% . Technologies 47"
+    }
   },
   {
     "id": 96,
@@ -4775,7 +5155,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 10,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Herbapulsion",
+      "desc": "Lorsqu'il est dans l'équipe, Herbil ressuscite le joueur avec (30~60)% de ses PV max lorsqu'il est mis K.O., grâce à ses pouvoirs apaisants."
+    }
   },
   {
     "id": 97,
@@ -4813,7 +5197,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 19,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Sagesse Obscure",
+      "desc": "Lorsqu'il est dans l'équipe, augmente l'attaque des Pals de type Ténèbres de (15~30)% . (effet non cumulable)"
+    }
   },
   {
     "id": 98,
@@ -4849,7 +5237,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 119,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Sorcière Frigorifique",
+      "desc": "Lorsqu'activé, Icelyn transfère son pouvoir au joueur, convertissant ses attaques en Glace et augmentant son attaque de (30~50) % ."
+    }
   },
   {
     "id": 99,
@@ -4882,7 +5274,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": null,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Soutien de Chauve-souris",
+      "desc": "Lorsqu'il est dans l'équipe, apparaît aux côtés du joueur et ramasse automatiquement les objets à proximité."
+    }
   },
   {
     "id": 100,
@@ -4915,7 +5311,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": null,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Corps Gélatineux",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de sauter plus haut lorsqu'il est monté."
+    }
   },
   {
     "id": 101,
@@ -4957,7 +5357,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 91,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Chasseur aux Griffes Ardentes",
+      "desc": "Lorsqu'activée, attaque l'ennemi ciblé avec Griffe Infernale . La puissance de Griffe Infernale utilisée par ce Pal est multipliée par (1.1~2.5) ."
+    }
   },
   {
     "id": 102,
@@ -4997,7 +5401,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 91,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Chasseur aux Griffes Noires",
+      "desc": "Lorsqu'activée, attaque l'ennemi ciblé avec Griffe Cauchemardesque . La puissance de Griffe Cauchemardesque utilisée par ce Pal est multipliée par (1.1~2.5) ."
+    }
   },
   {
     "id": 103,
@@ -5037,7 +5445,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 45,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Largue-Jelliette",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (55~95)% la quantité d'objets obtenus à la pêche. (Effet non cumulable) De plus, lorsque Jelliette et Jellroy se trouvent dans la base, la vitesse de travail d'arrosage de Jelliette augmente de (50~120)% . (Effet non cumulable)"
+    }
   },
   {
     "id": 104,
@@ -5079,7 +5491,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 46,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Largue-Jellroy",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (55~95)% la quantité d'objets obtenus par récupération. (Effet non cumulable) De plus, lorsque Jelliette et Jellroy se trouvent dans la base, la vitesse de travail d'arrosage de Jellroy augmente de (50~120)% . (Effet non cumulable)"
+    }
   },
   {
     "id": 105,
@@ -5130,7 +5546,11 @@
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
     "zukan": 202,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Missile Aérien",
+      "desc": "Peut être utilisé comme monture pour voler. Permet de tirer en rafale avec un lance-missiles lorsqu'il est monté. Technologies 79"
+    }
   },
   {
     "id": 106,
@@ -5163,7 +5583,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.2,
     "zukan": 15,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Bombe Zap",
+      "desc": "Lorsqu'activée, Jolthog s'équipe dans la main du joueur. Le lancer sur un ennemi provoque une explosion de type Électricité à l'impact."
+    }
   },
   {
     "id": 107,
@@ -5196,7 +5620,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 15,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Bombe Glagla",
+      "desc": "Lorsqu'il est activé, Jolthog Cryst est équipé dans la main. Lorsqu'il est lancé sur un ennemi, il provoque une explosion de type Glace à l'impact."
+    }
   },
   {
     "id": 108,
@@ -5263,7 +5691,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 121,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Dragon Marin Tempétueux",
+      "desc": "Peut être utilisé comme monture pour se déplacer sur l'eau. Lorsqu'il est dans l'équipe, augmente de (50~65)% les dégâts infligés aux ennemis affectés par Trempé . (effet non cumulable) Technologies 40"
+    }
   },
   {
     "id": 109,
@@ -5335,7 +5767,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 121,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Dragon de Lave Tempétueux",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, annule les dégâts de lave et augmente de (50~65)% les dégâts infligés aux ennemis affectés par Brûlure . (effet non cumulable) Technologies 59"
+    }
   },
   {
     "id": 110,
@@ -5380,7 +5816,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 79,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Étrange Sorcellerie",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en battant des Pals de type Non élém. . De plus, les sphères de Pal lancées ont (10~50)% de chances de ne pas être consommées. (Effet non cumulable)"
+    }
   },
   {
     "id": 111,
@@ -5427,7 +5867,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 79,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Passion Magie Noire",
+      "desc": "Dans la base, augmente de +1 le niveau de la capacité de travail Allumage de feu des autres Pals du camp. (Effet non cumulable)"
+    }
   },
   {
     "id": 112,
@@ -5466,7 +5910,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 43,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Giclée d'eau",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (15~30)% l'attaque des Pals de type Eau . (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire un Fluides de Pal ."
+    }
   },
   {
     "id": 113,
@@ -5505,7 +5953,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 43,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Jet de Lave",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (15~30)% l'attaque des Pals de type Feu . (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire un Organe de feu ."
+    }
   },
   {
     "id": 114,
@@ -5548,7 +6000,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 126,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Balle de Plage",
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense des Pals de type Terre de (15~30)% . (Effet non cumulable)"
+    }
   },
   {
     "id": 115,
@@ -5594,7 +6050,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 30,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Calamar Frit",
+      "desc": "Lorsqu'il est dans l'équipe, modifie les performances du planeur équipé. Permet de flotter doucement pendant une longue durée en vol plané."
+    }
   },
   {
     "id": 116,
@@ -5635,7 +6095,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 30,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Aspirêves",
+      "desc": "Lorsqu'il est dans l'équipe, modifie les performances du planeur équipé. Permet de flotter doucement pendant une longue durée en vol plané."
+    }
   },
   {
     "id": 117,
@@ -5701,7 +6165,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 21,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Montagne de Muscles",
+      "desc": "Peut être utilisé comme monture pour se déplacer. La défense et la vitesse de déplacement de ce Pal augmentent en fonction du nombre de Melpaca dans l'équipe, à raison de (5~14)% par Alpaca. Technologies 23"
+    }
   },
   {
     "id": 118,
@@ -5740,7 +6208,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 21,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Roi des Glaces",
+      "desc": "Peut être utilisé comme monture pour se déplacer. La défense et la vitesse de déplacement de ce Pal augmentent en fonction du nombre de Melpaca dans l'équipe, à raison de (5~14)% par Alpaca. Technologies 46"
+    }
   },
   {
     "id": 119,
@@ -5781,7 +6253,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 111,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Loup Solaire",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, réduit de (15~30)% les dégâts de type Glace subis par le joueur et les Pals, et immunise contre l'effet Gel . (Effet non cumulable) Technologies 57"
+    }
   },
   {
     "id": 120,
@@ -5824,7 +6300,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 111,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Loup Morose",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, réduit de (15~30)% les dégâts de type Ténèbres subis par le joueur et les Pals, et immunise contre l'état Cécité . (Effet non cumulable) Technologies 59"
+    }
   },
   {
     "id": 121,
@@ -5899,7 +6379,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 159,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Mode Gardien d'Acier",
+      "desc": "Lorsqu'activée, la volonté de fer de Knocklem augmente temporairement son attaque de (50~200)% et sa défense de (50~200)% ."
+    }
   },
   {
     "id": 122,
@@ -5939,7 +6423,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.5,
     "zukan": 1,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Bouclier Duveteux",
+      "desc": "Lorsqu'il est activé, s'équipe au joueur et sert de bouclier. Peut être assigné à une Ferme avec une chance de produire de la Laine ."
+    }
   },
   {
     "id": 123,
@@ -5984,7 +6472,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 73,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Camouflage",
+      "desc": "Lorsqu'activée, rend le joueur et Leezpunk invisibles pendant (10~20) secondes, leur permettant d'échapper à la vigilance des ennemis."
+    }
   },
   {
     "id": 124,
@@ -6030,7 +6522,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 73,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Camouflage",
+      "desc": "Lorsqu'activée, rend le joueur et Leezpunk Ignis invisibles pendant (10~20) secondes, leur permettant d'échapper à la vigilance des ennemis."
+    }
   },
   {
     "id": 125,
@@ -6072,7 +6568,11 @@
     "rarityCategory": "Common",
     "captureRate": 0.9,
     "zukan": 4,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Soutien de Lifmunk",
+      "desc": "Lorsqu'activée, il monte sur la tête du joueur et accompagne ses attaques avec un pistolet-mitrailleur. Technologies 11"
+    }
   },
   {
     "id": 126,
@@ -6105,7 +6605,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 56,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Grilles Scintillantes",
+      "desc": "Lorsqu'il est activé, attaque l'ennemi ciblé avec Griffe Sautée . La puissance de cette compétence est multipliée par (1.1~2.5) . Lorsqu'il est dans l'équipe, augmente de (15~30)% la vitesse d'attaque des armes de corps-à-corps du joueur. (effet non cumulable)"
+    }
   },
   {
     "id": 127,
@@ -6139,7 +6643,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 56,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Coup de Griffes Glacées",
+      "desc": "Lorsqu'activée, attaque l'ennemi visé avec Griffe Neigeuse . La puissance de Griffe Neigeuse utilisée par ce Pal est multipliée par (1.1~2.5) . Lorsqu'il est dans l'équipe, augmente de (15~30)% la vitesse d'attaque des armes de corps à corps du joueur. (Effet non cumulable)"
+    }
   },
   {
     "id": 128,
@@ -6195,7 +6703,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 69,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Draine-Cœur",
+      "desc": "En combat, confère un effet de vol de vie au joueur et à lui-même, absorbant (5~9)% des dégâts infligés et restaurant leurs PV ."
+    }
   },
   {
     "id": 129,
@@ -6236,7 +6748,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 125,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Turbo Floral",
+      "desc": "Dans la base, Lullu insuffle de l'énergie aux plantations pour augmenter la vitesse de croissance des cultures de (50~70)% ."
+    }
   },
   {
     "id": 130,
@@ -6271,7 +6787,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 82,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Antigravité",
+      "desc": "Lorsqu'il est dans l'équipe, les sphères deviennent téléguidées et suivent automatiquement les Pals, et la limite de poids porté augmente de (300~600) . (effet non cumulable)"
+    }
   },
   {
     "id": 131,
@@ -6357,7 +6877,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 186,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Déesse de la Fertilité",
+      "desc": "Lorsqu'activée, restaure (80~90)% des PV du joueur et des Pals de l'équipe grâce aux pouvoirs curatifs de la reine."
+    }
   },
   {
     "id": 132,
@@ -6442,7 +6966,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 186,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Déesse de la Pénombre",
+      "desc": "Lorsqu'activée, restaure (85~95)% des PV du joueur et des Pals de l'équipe grâce aux pouvoirs curatifs de la reine."
+    }
   },
   {
     "id": 133,
@@ -6521,7 +7049,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 87,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Broyeur Tellurique",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est monté, augmente de (220~500)% l'efficacité pour détruire les arbres et de (500~2000)% l'efficacité pour détruire les minerais. Technologies 28"
+    }
   },
   {
     "id": 134,
@@ -6597,7 +7129,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 87,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Broyeur à Glace",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est monté, augmente de (220~500)% l'efficacité pour détruire les arbres et de (500~2000)% l'efficacité pour détruire les minerais. Technologies 41"
+    }
   },
   {
     "id": 135,
@@ -6644,7 +7180,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 117,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Messager de la Mort",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, réduit le temps de recharge des compétences de tous les Pals de l'équipe de (30~60)% lors de la défaite d'un ennemi. (effet non cumulable) Technologies 37"
+    }
   },
   {
     "id": 136,
@@ -6683,7 +7223,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 27,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Chercheur d'or",
+      "desc": "À affecter à une Ferme pour une chance de déterrer des Pièce d'or ."
+    }
   },
   {
     "id": 137,
@@ -6722,7 +7266,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 27,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Douche Froide",
+      "desc": "À affecter à une Ferme pour une chance d'obtenir un Organe de glace ."
+    }
   },
   {
     "id": 138,
@@ -6763,7 +7311,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 20,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Paca-Laine",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente la défense et la vitesse de déplacement de Kingpaca . À affecter à une Ferme pour une chance d'obtenir de la Laine . Technologies 7"
+    }
   },
   {
     "id": 139,
@@ -6803,7 +7355,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 99,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Scorpion d'Acier",
+      "desc": "Lorsqu'activé, augmente la défense du joueur de (5~10)% et augmente de (40~80)% la probabilité d'obtenir des objets en terrassant des Pals de type Électricité . (Effet non cumulable)"
+    }
   },
   {
     "id": 140,
@@ -6842,7 +7398,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 99,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Scorpion Doré",
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense du joueur de (5~10)% et augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Électricité . (Effet non cumulable)"
+    }
   },
   {
     "id": 141,
@@ -6886,7 +7446,11 @@
     "rarityCategory": "Rare",
     "captureRate": 0.8,
     "zukan": 144,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Crochetage",
+      "desc": "Lorsqu'il combat à vos côtés, le pouvoir de Mimog permet d'ouvrir les coffres sans utiliser de clé."
+    }
   },
   {
     "id": 142,
@@ -6962,7 +7526,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 102,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Pandanade",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de tirer en rafale avec un lance-grenades lorsqu'il est monté. Technologies 32"
+    }
   },
   {
     "id": 143,
@@ -7043,7 +7611,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 102,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Pandanade",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de tirer en rafale avec un lance-grenades lorsqu'il est monté. Technologies 34"
+    }
   },
   {
     "id": 144,
@@ -7082,6 +7654,10 @@
     "captureRate": 1.0,
     "zukan": 40,
     "food": 2,
+    "partner": {
+      "nom": "Production de lait",
+      "desc": "À affecter à une Ferme pour une chance d'obtenir du Lait ."
+    },
     "ranchFood": true
   },
   {
@@ -7128,7 +7704,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 86,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Entrailles Glacées",
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (30~60)% le poids des ingrédients et des plats . De plus, les aliments se détériorent (-30~-80)% plus lentement, en complément de l'effet de conservation déjà conféré par les Pals de type Glace . (Effet non cumulable)"
+    }
   },
   {
     "id": 146,
@@ -7175,7 +7755,11 @@
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
     "zukan": 199,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Chevalier Noir Abyssal",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet d'effectuer un double saut lorsqu'il est monté. Si un Paladius se trouve dans votre équipe, l'utilisation de Lance Double le fera apparaître pour combattre à vos côtés. Technologies 61"
+    }
   },
   {
     "id": 147,
@@ -7223,7 +7807,11 @@
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
     "zukan": 201,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Conquérant des Océans",
+      "desc": "Tant qu'il combat activement aux côtés du joueur, il lance des lances d'eau de type Eau pour attaquer les ennemis hostiles. Peut être chevauché pour se déplacer sur l'eau. Permet d'effectuer de grands sauts à la surface de l'eau lorsque vous êtes en selle. Technologies 64"
+    }
   },
   {
     "id": 148,
@@ -7257,7 +7845,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 148,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Lapin Volâme",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de +(100~200)% la quantité d'âmes obtenues en terrassant des Pals. (Effet non cumulable)"
+    }
   },
   {
     "id": 149,
@@ -7293,7 +7885,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 51,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Compagnon de Voyage",
+      "desc": "Peut être utilisé comme monture pour voler. Technologies 15"
+    }
   },
   {
     "id": 150,
@@ -7331,7 +7927,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 24,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Cœur de Pierre",
+      "desc": "Détecte les statues de Pal à proximité lorsqu'il est appelé."
+    }
   },
   {
     "id": 151,
@@ -7367,7 +7967,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 143,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Furie Féline",
+      "desc": "Lorsqu'activée, Nyafia mitraille temporairement les ennemis proches avec un fusil à pompe. Lorsqu'il est dans l'équipe, augmente les dégâts des fusils à pompe utilisés par le joueur de (10~35)% . (effet non cumulable) Technologies 52"
+    }
   },
   {
     "id": 152,
@@ -7400,7 +8004,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 150,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Danse du Masque",
+      "desc": "Lorsqu'il est dans l'équipe, augmente la quantité d'EXP obtenue par les Pals de l'équipe de (40~80)% . (effet non cumulable)"
+    }
   },
   {
     "id": 153,
@@ -7476,7 +8084,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 187,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Dragon Tempétueux",
+      "desc": "Lorsqu'il est dans l'équipe, chaque tir qui touche un ennemi augmente de (1~5)% l'attaque et la défense des Pals combattants. Cet effet dure 5 secondes et peut se cumuler jusqu'à 30 fois. (effet non cumulable)"
+    }
   },
   {
     "id": 154,
@@ -7523,7 +8135,11 @@
     "rarityCategory": "Legendary",
     "captureRate": 1.0,
     "zukan": 198,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Chevalier Céleste",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet d'effectuer un triple saut lorsqu'il est monté. Si un Necromus se trouve dans votre équipe, l'utilisation de Lance Sacrée le fera apparaître pour combattre à vos côtés. Technologies 61"
+    }
   },
   {
     "id": 155,
@@ -7568,7 +8184,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 106,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Bain de Soleil",
+      "desc": "Peut être utilisé comme monture pour se déplacer. La vitesse de déplacement augmente de (155~240)% dans les hautes herbes . Technologies 35"
+    }
   },
   {
     "id": 156,
@@ -7610,7 +8230,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 17,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Lance-Pengullet",
+      "desc": "Lorsqu'il est activé, équipe le joueur d'un Lance-fusées et permet d'utiliser Pengullet comme projectile. À l'impact, il explose et est mis K.O. Technologies 17"
+    }
   },
   {
     "id": 157,
@@ -7652,7 +8276,11 @@
     "rarityCategory": "Common",
     "captureRate": 0.9,
     "zukan": 17,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Lance-Pengullet Lux",
+      "desc": "Lorsqu'activée, le joueur s'équipe d'un Lance-fusées et propulse Pengullet Lux comme projectile. À l'impact, il explose et est mis K.O. Technologies 18"
+    }
   },
   {
     "id": 158,
@@ -7695,7 +8323,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 18,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Guerrier des Mers",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en battant des Pals de type Feu . (Effet non cumulable)"
+    }
   },
   {
     "id": 159,
@@ -7738,7 +8370,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 18,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Commandement Inflexible",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (25~40)% les dégâts de type Eau infligés aux points faibles. (effet non cumulable)"
+    }
   },
   {
     "id": 160,
@@ -7780,7 +8416,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 89,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Bénédiction Florale",
+      "desc": "Déclenche une restauration des PV du joueur de (75~85)% grâce au pouvoir des fleurs. Dans la base, augmente de +1 le niveau d'aptitude au travail Semence des autres Pals de la base. (effet non cumulable)"
+    }
   },
   {
     "id": 161,
@@ -7815,7 +8455,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 72,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Dévale Montagne",
+      "desc": "Peut être utilisé comme monture pour se déplacer. La vitesse de déplacement augmente de (80~160)% sur la neige . Permet également de dévaler les pentes à toute vitesse. Technologies 26"
+    }
   },
   {
     "id": 162,
@@ -7851,7 +8495,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 141,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Scorpion Patoxique",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (50~65)% les dégâts infligés aux ennemis affectés par Empoisonnement . (effet non cumulable)"
+    }
   },
   {
     "id": 163,
@@ -7899,7 +8547,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 147,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Prospérité Agricole",
+      "desc": "Dans la base, les prières de Prunelia augmentent la quantité de récoltes de (18~35)% ."
+    }
   },
   {
     "id": 164,
@@ -7932,7 +8584,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": null,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Corps Gélatineux",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de sauter plus haut lorsqu'il est monté."
+    }
   },
   {
     "id": 165,
@@ -8004,7 +8660,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 93,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Cheval Rouge",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est monté, les attaques du joueur deviennent de type Feu et sa puissance d'attaque augmente de (5~20)% . Technologies 29"
+    }
   },
   {
     "id": 166,
@@ -8074,7 +8734,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 93,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Cheval Noir",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est monté, les attaques du joueur deviennent de type Ténèbres et sa puissance d'attaque augmente de (5~20)% . Technologies 34"
+    }
   },
   {
     "id": 167,
@@ -8143,7 +8807,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 124,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Compassion du Dragon Céleste",
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est dans l'équipe, augmente l'attaque des Pals de type Dragon de (15~30)% . (effet non cumulable) Technologies 38"
+    }
   },
   {
     "id": 168,
@@ -8224,7 +8892,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 124,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Affection du Dragon Sylvestre",
+      "desc": "Peut être utilisé comme monture pour voler. Une fois monté, les attaques du joueur deviennent de type Herbe et sa puissance d'attaque augmente de (5~20)% . Technologies 45"
+    }
   },
   {
     "id": 169,
@@ -8291,7 +8963,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 104,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Ailes Enflammées",
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les attaques du joueur deviennent de type Feu et sa puissance d'attaque augmente de (5~20)% . Technologies 33"
+    }
   },
   {
     "id": 170,
@@ -8324,7 +9000,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": null,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Corps Gélatineux",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de sauter plus haut lorsqu'il est monté."
+    }
   },
   {
     "id": 171,
@@ -8360,7 +9040,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 98,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Chien Électrique",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet d'effectuer un double saut lorsqu'il est monté. La vitesse de déplacement de ce Pal augmente de (5~25)% pour chaque Pal de type Électricité dans l'équipe, à l'exception de Rayhound . Technologies 30"
+    }
   },
   {
     "id": 172,
@@ -8393,7 +9077,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": null,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Corps Gélatineux",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de sauter plus haut lorsqu'il est monté."
+    }
   },
   {
     "id": 173,
@@ -8475,7 +9163,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 101,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Fraîcheur Corporelle",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente de 2 la résistance à la chaleur du joueur lorsqu'il est dans l'équipe. (effet non cumulable) Technologies 31"
+    }
   },
   {
     "id": 174,
@@ -8545,7 +9237,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 94,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Missile Affamé",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de tirer en rafale avec un lance-missiles lorsqu'il est monté. Technologies 45"
+    }
   },
   {
     "id": 175,
@@ -8620,7 +9316,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 94,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Fête aux Missiles",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet de tirer en rafale avec un lance-missiles lorsqu'il est monté. Technologies 48"
+    }
   },
   {
     "id": 176,
@@ -8658,7 +9358,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 129,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Bête Briseuse de Cristal",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, réduit de (30~60)% le poids de tous les minerais . (effet non cumulable) Technologies 42"
+    }
   },
   {
     "id": 177,
@@ -8693,7 +9397,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 129,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Bête Biseuse d'Icebergs",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, réduit de (35~65)% le poids de tous les minerais . (effet non cumulable) Technologies 43"
+    }
   },
   {
     "id": 178,
@@ -8743,7 +9451,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 44,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Princesse Lapinou Souriant",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (15~30)% l'attaque des Pals de type Non élém. . (effet non cumulable) Dans la base, augmente de 1 le niveau de compétence de travail Artisanat des autres Pals. (effet non cumulable)"
+    }
   },
   {
     "id": 179,
@@ -8794,7 +9506,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 44,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Lapin Dézerbe",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (25~40)% les dégâts infligés en touchant les faiblesses avec des attaques de type Herbe . (Effet non cumulable) Augmente de (200~400)% l'efficacité de travail de Ribbuny Botan lorsqu'il travaille sur un établi ou dans une usine d'armes."
+    }
   },
   {
     "id": 180,
@@ -8837,7 +9553,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 76,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Maître Archer",
+      "desc": "Les dégâts des arcs utilisés par le joueur augmentent de (10~35) % lorsqu'il est dans l'équipe. (Effet non cumulable)"
+    }
   },
   {
     "id": 181,
@@ -8880,7 +9600,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 76,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Archer d’Elite",
+      "desc": "La vitesse de recharge des arcs utilisés par le joueur augmente de (15~30) % lorsqu'il est dans l'équipe. (Effet non cumulable)"
+    }
   },
   {
     "id": 182,
@@ -8919,7 +9643,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.1,
     "zukan": 26,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Petite Étincelle",
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense des Pals de type Feu de (15~30)% . (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire un Organe de feu ."
+    }
   },
   {
     "id": 183,
@@ -8965,7 +9693,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 28,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Tête Dure",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est monté, l'efficacité contre les rochers augmente de (500~2000)% . Technologies 6"
+    }
   },
   {
     "id": 184,
@@ -9049,7 +9781,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 190,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Ténèbres Célestes",
+      "desc": "Peut être utilisé comme monture pour voler. Une fois monté, les attaques de type Non élém. et Ténèbres sont renforcées de (15~30)% . Technologies 53"
+    }
   },
   {
     "id": 185,
@@ -9130,7 +9866,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 189,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Gènes modifiés",
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les attaques de type Ténèbres sont renforcées de (15~30)% . La vitesse de déplacement augmente pendant le vol. Technologies 47"
+    }
   },
   {
     "id": 186,
@@ -9211,6 +9951,10 @@
     "captureRate": 1.0,
     "zukan": 118,
     "food": 5,
+    "partner": {
+      "nom": "Spores Vivaces",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Peut être assigné à une Ferme avec une chance de produire un Champignon ou un Champignon des cavernes . Technologies 39"
+    },
     "ranchFood": true
   },
   {
@@ -9256,7 +10000,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 118,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Spores Fumantes",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Dans la base, les mystérieuses spores de Shroomer Noct ralentissent la diminution des points MEN des Pals de (10~15)% . Technologies 39"
+    }
   },
   {
     "id": 188,
@@ -9296,7 +10044,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 116,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Voile Soyeux",
+      "desc": "Lorsqu'il est activé, attaque l'ennemi ciblé avec Morsure du Blizzard . La puissance de cette compétence est multipliée par (1.1~2.5) . Peut être assigné à une Ferme avec une chance de produire du Tissu de qualité ."
+    }
   },
   {
     "id": 189,
@@ -9362,7 +10114,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 160,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Bouclier Aegis",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, réduit de (30~60)% le délai avant le début de la régénération du bouclier du joueur et réduit de (65~80)% la perte de durabilité du bouclier. (Effet non cumulable) Technologies 60"
+    }
   },
   {
     "id": 190,
@@ -9395,7 +10151,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 149,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Chien fidèle Smokie",
+      "desc": "Lorsqu'activée, son odorat très développé permet de détecter le Chromite à proximité. Lorsqu'il combat à vos côtés, la quantité de Chromite obtenue augmente de +(100~200)% . Technologies 58"
+    }
   },
   {
     "id": 191,
@@ -9443,7 +10203,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 135,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Pille-Tombes",
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (15~30)% les dégâts de type Non élém. subis par le joueur et les Pals. (Effet non cumulable) Peut être assigné à une Ferme avec une chance de déterrer des Os ."
+    }
   },
   {
     "id": 192,
@@ -9479,7 +10243,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.1,
     "zukan": 42,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Électricité Statique",
+      "desc": "Augmente l'attaque des Pals de type Électricité de (15~30) % lorsqu'il est dans l'équipe. (Effet non cumulable) À affecter à une Ferme pour une chance d'obtenir un Organe électrique ."
+    }
   },
   {
     "id": 193,
@@ -9545,7 +10313,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 153,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Lame Amoureuse",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (100~200)% les objets obtenus lors du dépeçage avec un Couteau de boucher . (effet non cumulable)"
+    }
   },
   {
     "id": 194,
@@ -9616,7 +10388,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 130,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Danseur de Minuit",
+      "desc": "Peut être chevauché pour se déplacer. Augmente la hauteur des sauts lorsque vous êtes en selle. La nuit, la vitesse de déplacement de ce Pal augmente de +(50~100) % . Technologies 57"
+    }
   },
   {
     "id": 195,
@@ -9653,7 +10429,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 75,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Fouisseur Furtif",
+      "desc": "Peut être utilisé comme monture pour se déplacer sur l'eau. Peut être assigné à une Ferme avec une chance de produire du Cuir . Technologies 16"
+    }
   },
   {
     "id": 196,
@@ -9691,7 +10471,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 75,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Fouisseur des Sables",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, ajoute (2~6) d'accumulation d'état Embourbement aux attaques du joueur. (effet non cumulable) Technologies 25"
+    }
   },
   {
     "id": 197,
@@ -9757,7 +10541,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 122,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Ailes de Feu",
+      "desc": "Peut être utilisé comme monture pour voler. La vitesse de déplacement de ce Pal augmente de (5~25)% pour chaque Pal de type Feu dans l'équipe, à l'exception de Suzaku . Technologies 43"
+    }
   },
   {
     "id": 198,
@@ -9823,7 +10611,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 122,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Ailes d'Eau",
+      "desc": "Peut être utilisé comme monture pour voler. La vitesse de déplacement de ce Pal augmente de (5~25)% pour chaque Pal de type Eau dans l'équipe, à l'exception de Suzaku Aqua . Technologies 44"
+    }
   },
   {
     "id": 199,
@@ -9862,7 +10654,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.1,
     "zukan": 35,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Gouzi-Gouzi",
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense et l'attaque de Sweepa ."
+    }
   },
   {
     "id": 200,
@@ -9899,7 +10695,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 36,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Gouzi-Gouzi Royal",
+      "desc": "Peut être utilisé comme monture pour se déplacer. L'attaque et la défense de ce Pal augmentent de (12~24)% pour chaque Swee dans l'équipe. Technologies 20"
+    }
   },
   {
     "id": 201,
@@ -9936,7 +10736,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.1,
     "zukan": 23,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Fusil Jovial",
+      "desc": "Lorsqu'activée, Tanzee mitraille les ennemis à proximité avec un fusil d'assaut pendant un certain temps. Technologies 12"
+    }
   },
   {
     "id": 202,
@@ -9977,7 +10781,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 71,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Toile de Tarantriss",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet d'effectuer un double saut lorsqu'il est monté. Permet également de projeter une toile vers un point ciblé afin de s'y déplacer rapidement à l'aide d'un grappin. Technologies 20"
+    }
   },
   {
     "id": 203,
@@ -10010,7 +10818,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.3,
     "zukan": 11,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Douche Apaisante",
+      "desc": "Lorsqu'il est dans l'équipe, restaure de (20~40)% les PV du joueur si ceux-ci tombent sous 30%. (effet non cumulable) * Après activation, un temps de recharge de 120 secondes est nécessaire avant une nouvelle utilisation."
+    }
   },
   {
     "id": 204,
@@ -10048,7 +10860,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 53,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Lance-œufs Explosifs",
+      "desc": "Lorsqu'activé, il s'équipe au joueur et se transforme en lanceur d'œufs explosifs. Technologies 18"
+    }
   },
   {
     "id": 205,
@@ -10088,7 +10904,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 52,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Sixième Sens",
+      "desc": "Lorsqu'activée, détecte grâce à des ultrasons l'emplacement des donjons, coffres et débris à proximité."
+    }
   },
   {
     "id": 206,
@@ -10128,7 +10948,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 37,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Support Pointu",
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (80~100)% le poids du Minerai de métal . (effet non cumulable)"
+    }
   },
   {
     "id": 207,
@@ -10169,7 +10993,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 37,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Support Brillant",
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (80~100)% le poids du Soufre et du Charbon , et augmente de (25~40)% les dégâts de type Terre infligés aux points faibles. (effet non cumulable)"
+    }
   },
   {
     "id": 208,
@@ -10246,7 +11074,11 @@
     "rarityCategory": "Rare",
     "captureRate": 0.9,
     "zukan": 54,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Éclair Foudroyant",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente de (25~40)% les dégâts infligés aux points faibles par les attaques de type Électricité . (effet non cumulable) Technologies 14"
+    }
   },
   {
     "id": 209,
@@ -10294,7 +11126,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 66,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Purification Tellurique",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (40~80)% la quantité d'objets obtenus en terrassant des Pals de type Terre . (effet non cumulable) Peut être assigné à une Ferme avec une chance de produire diverses graines ."
+    }
   },
   {
     "id": 210,
@@ -10342,7 +11178,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 64,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Assaillant Céleste",
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est dans l'équipe, augmente de (20~40)% les dégâts infligés par le joueur aux points faibles ennemis. (Effet non cumulable) Technologies 21"
+    }
   },
   {
     "id": 211,
@@ -10390,7 +11230,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 64,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Assaillant Céleste",
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est dans l'équipe, augmente de (30~50)% les dégâts infligés par le joueur aux points faibles ennemis. (Effet non cumulable) Technologies 22"
+    }
   },
   {
     "id": 212,
@@ -10432,7 +11276,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 152,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Acrobate des Plaines",
+      "desc": "Lorsqu'il est dans l'équipe, ajoute + 1 sauts supplémentaires et + 1 sprints aériens supplémentaires. (effet non cumulable)"
+    }
   },
   {
     "id": 213,
@@ -10471,7 +11319,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.3,
     "zukan": 6,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Creuse et creuse",
+      "desc": "À affecter à une Ferme pour une chance de déterrer des objets."
+    }
   },
   {
     "id": 214,
@@ -10538,7 +11390,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 113,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Armure Noire",
+      "desc": "Lorsqu'il est dans l'équipe, crée une barrière autour du joueur si celui-ci réussit à toucher un ennemi 5 fois avec des attaques au corps-à-corps dans un délai de (5~9) secondes . (effet non cumulable)"
+    }
   },
   {
     "id": 215,
@@ -10573,7 +11429,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 113,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Armure Or",
+      "desc": "Lorsqu'il est dans l'équipe, crée une barrière autour du joueur si ce dernier touche une cible 5 fois avec des attaques de corps à corps en moins de (5~9) secondes . (Effet non cumulable)"
+    }
   },
   {
     "id": 216,
@@ -10653,7 +11513,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 151,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Céta-Frais",
+      "desc": "Peut être utilisé comme monture pour se déplacer sur l'eau. Lorsqu'il est dans l'équipe, les mini-jeux de pêche commencent avec une jauge de capture remplie de (5~14)% supplémentaires, et la progression de la jauge augmente de (5~14)% lorsque les barres sont superposées. (Effet non cumulable) Technologies 42"
+    }
   },
   {
     "id": 217,
@@ -10743,7 +11607,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 151,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Céta-Chaud",
+      "desc": "Peut être utilisé comme monture pour nager. Lorsqu'il est dans l'équipe, les mini-jeux de pêche commencent avec une jauge de capture remplie à (7~17)% supplémentaires, et la jauge progresse de (7~17)% supplémentaires lorsque les barres se chevauchent. (effet non cumulable) Technologies 71"
+    }
   },
   {
     "id": 218,
@@ -10783,7 +11651,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 78,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Maître Renard",
+      "desc": "Lorsqu'il est activé, Wixen transfère son pouvoir au joueur, convertissant ses attaques en Feu et augmentant son attaque de (30~50) % ."
+    }
   },
   {
     "id": 219,
@@ -10824,7 +11696,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 78,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Grand Renard Noir",
+      "desc": "Lorsqu'activé, Wixen Noct transfère son pouvoir au joueur, convertissant ses attaques en Ténèbres et augmentant son attaque de (30~50) % ."
+    }
   },
   {
     "id": 220,
@@ -10863,6 +11739,10 @@
     "captureRate": 1.0,
     "zukan": 39,
     "food": 1,
+    "partner": {
+      "nom": "Petit Bonbon",
+      "desc": "Placé dans une Ferme , de la Barbe à papa tombe parfois de son dos. Dans la base, il ralentit de (-10~-20)% l'évolution de la Repu des Pals. (Non cumulable)"
+    },
     "ranchFood": true
   },
   {
@@ -10937,7 +11817,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 134,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Gardien des Montagnes Enneigées",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Dans la base, augmente de +1 le niveau d'aptitude au travail Transport des autres Pals de la base. (effet non cumulable) Technologies 45"
+    }
   },
   {
     "id": 222,
@@ -11013,7 +11897,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 134,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Gardien du Sud",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, réduit de (15~30)% les dégâts de type Terre subis par le joueur et les Pals, et immunise contre l'état Embourbement . (effet non cumulable) Technologies 51"
+    }
   },
   {
     "id": 223,
@@ -11054,7 +11942,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 146,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Intrus Non Identifié",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans l'équipe, augmente de (10~35)% les dégâts infligés par les armes énergétiques du joueur. (Effet non cumulable) Technologies 41"
+    }
   },
   {
     "id": 224,
@@ -11091,7 +11983,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 196,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Ailes Météores",
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est dans l'équipe, augmente de (20~50)% les dégâts des compétences partenaires des Pals équipés d'une arme . (Effet non cumulable) Technologies 66"
+    }
   },
   {
     "id": 225,
@@ -11125,7 +12021,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 145,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Envahisseur Non Identifié",
+      "desc": "Lorsqu'il est dans l'équipe, les dégâts infligés par la dernière balle du chargeur des armes automatiques augmentent de (100~160)% . (Effet non cumulable)"
+    }
   },
   {
     "id": 226,
@@ -11161,7 +12061,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 127,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Qui se ressemble s'assemble",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il combat à vos côtés, augmente de (15~30)% les chances de rencontrer des Pals possédant la même compétence passive. * À l'exception de certaines compétences passives. Technologies 41"
+    }
   },
   {
     "id": 227,
@@ -11179,8 +12083,7 @@
       "combat": null,
       "flyingMount": null,
       "groundMount": null
-    },
-    "food": 6
+    }
   },
   {
     "id": 228,
@@ -11257,7 +12160,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 184,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Dragon Inébranlable",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Réduit de (60~80) % les dégâts des attaques explosives subis par le joueur et les Pals, et immunise contre Étourdissement lorsqu'il est dans l'équipe. (Effet non cumulable) Technologies 79"
+    }
   },
   {
     "id": 229,
@@ -11292,7 +12199,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 47,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Jumelage Magique",
+      "desc": "Dans la base, le niveau de la capacité de travail Arrosage des autres Pals du camp augmente de +1 . (Effet non cumulable)"
+    }
   },
   {
     "id": 230,
@@ -11325,7 +12236,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 204,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "-",
+      "desc": "Des recherches sont en cours pour déterminer les capacités de ce Pal."
+    }
   },
   {
     "id": 231,
@@ -11370,7 +12285,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 168,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Fantômette Joviale",
+      "desc": "Réduit de (40~80) % l'attaque des ennemis affectés par Empoisonnement lorsqu'il est dans l'équipe. (Effet non cumulable)"
+    }
   },
   {
     "id": 232,
@@ -11443,7 +12362,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 96,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Grésil Céleste",
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est monté, les attaques du joueur sont converties en Glace , et son attaque augmente de (5~20)% . La vitesse de déplacement de ce Pal augmente de (5~25)% pour chaque Pal de type Glace présent dans l'équipe, à l'exception de Beakon Cryst . Technologies 71"
+    }
   },
   {
     "id": 233,
@@ -11485,7 +12408,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 156,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Carrure de Champion",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Réduit de (15~30) % les dégâts de type Électricité subis par le joueur et les Pals, et annule l'état Électrisation lorsqu'il est dans l'équipe. (Effet non cumulable) Technologies 53"
+    }
   },
   {
     "id": 234,
@@ -11561,7 +12488,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 136,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Langue Fourchue",
+      "desc": "Lorsqu'il est dans l'équipe et que le joueur effectue une roulade ou des déplacements rapides, Carnibora génère une tornade qui inflige des dégâts aux ennemis touchés ( Herbe / Puissance : (40~80) ). (Effet non cumulable)"
+    }
   },
   {
     "id": 235,
@@ -11643,7 +12574,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 157,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Bénédiction du Chaos",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente l'attaque des Pals en combat de (40~80) % lorsqu'il est dans l'équipe, mais leurs PV diminuent progressivement. (Effet non cumulable) Technologies 78"
+    }
   },
   {
     "id": 236,
@@ -11678,7 +12613,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 14,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Joyeux Trèfle",
+      "desc": "Dans la base, le niveau de la capacité de travail Collecte des autres Pals du camp augmente de +1 . (Effet non cumulable)"
+    }
   },
   {
     "id": 237,
@@ -11761,7 +12700,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 194,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Gardien du Brouillard",
+      "desc": "Lorsqu'activée, confère (2~6) de Empoisonnement aux attaques du joueur. Lorsqu'il est dans l'équipe, le joueur et les Pals deviennent immunisés contre Empoisonnement et les gaz toxiques de la zone de l'Arbre-Monde sont neutralisés. (Effet non cumulable)"
+    }
   },
   {
     "id": 238,
@@ -11842,7 +12785,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 138,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Laser Sylvain",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'activée, Dualith projette un puissant laser de type Herbe depuis sa main droite. Technologies 48"
+    }
   },
   {
     "id": 239,
@@ -11923,7 +12870,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 138,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Laser Corrompu",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'activée, Dualith Noct projette un puissant laser de type Ténèbres depuis sa main droite. Technologies 69"
+    }
   },
   {
     "id": 240,
@@ -11999,7 +12950,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 176,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Passe-casse",
+      "desc": "Lorsqu'il est dans l'équipe, Dupin provoque une explosion autour du joueur lorsque ses PV tombent sous 50 % ( Feu / Puissance : (100~200) ). De plus, l'attaque du joueur augmente de (30~50)% tant que ses PV sont inférieurs à 50 %. (Effet non cumulable)"
+    }
   },
   {
     "id": 241,
@@ -12037,7 +12992,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 172,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Couvaison Électromassante",
+      "desc": "Peut être utilisé comme monture pour voler. Lorsqu'il est dans la base, augmente la vitesse d'éclosion des œufs de (20~40) % . (Effet non cumulable) Technologies 66"
+    }
   },
   {
     "id": 242,
@@ -12109,7 +13068,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 171,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Ptérodactyle Libre",
+      "desc": "Peut être utilisé comme monture pour voler. L'attaque et la vitesse de déplacement de ce Pal augmentent de (2~6) % pour chaque Pal de type Dragon ou Ténèbres présent dans l'équipe, à l'exception de Eidrolon . Technologies 68"
+    }
   },
   {
     "id": 243,
@@ -12192,7 +13155,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 171,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Ptérodactyle Furieux",
+      "desc": "Peut être utilisé comme monture pour voler. L'attaque et la vitesse de déplacement de ce Pal augmentent de (2~6) % pour chaque Pal de type Dragon ou Feu présent dans l'équipe, à l'exception de Eidrolon Ignis . Technologies 76"
+    }
   },
   {
     "id": 244,
@@ -12269,7 +13236,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 81,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Menace Naturelle",
+      "desc": "Lorsqu'il est activé, Elgrove transfère son pouvoir au joueur, convertissant ses attaques en Herbe et augmentant son attaque de (30~50) % ."
+    }
   },
   {
     "id": 245,
@@ -12350,7 +13321,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 81,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Pergélisol Menaçant",
+      "desc": "Lorsqu'il est dans l'équipe, lorsqu'un ennemi affecté par Trempé est attaqué par le joueur, il est immédiatement affecté par Gel ."
+    }
   },
   {
     "id": 246,
@@ -12425,7 +13400,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 174,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Avenir Brûlant",
+      "desc": "Lorsqu'il est dans l'équipe et qu'une attaque du joueur touche un ennemi affecté par Brûlure , celui-ci explose et inflige des dégâts supplémentaires équivalents à (40~60) % de l'attaque du joueur. (Effet non cumulable)"
+    }
   },
   {
     "id": 247,
@@ -12466,7 +13445,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 120,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Résurrection",
+      "desc": "Lorsqu'il combat à vos côtés, si Gildra est mis K.O., il est ressuscité au prix d'une satiété réduite à 0."
+    }
   },
   {
     "id": 248,
@@ -12507,7 +13490,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 48,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Princesse Ventouse",
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense des Pals de type Eau de (15~30) % . (Effet non cumulable)"
+    }
   },
   {
     "id": 249,
@@ -12546,7 +13533,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 166,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Rôdeur du Néant",
+      "desc": "Lorsqu'il est dans l'équipe, les dégâts infligés par le joueur aux ennemis hors combat augmentent de (50~100) % . (Effet non cumulable)"
+    }
   },
   {
     "id": 250,
@@ -12621,7 +13612,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 159,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Mode Gardien de Sang",
+      "desc": "Lorsqu'il est activé, Knocklem Ignis augmente temporairement son attaque de (60~210) % et sa défense de (60~210) % , grâce à sa volonté de fer."
+    }
   },
   {
     "id": 251,
@@ -12657,7 +13652,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 165,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Terre Chérie",
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (50~65)% les dégâts subis par le joueur pendant les ruées. (Effet non cumulable)"
+    }
   },
   {
     "id": 252,
@@ -12691,7 +13690,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 170,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Manches Longues Triomphantes",
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (10~50)% le temps de recharge des compétences partenaires des autres Pals de l'équipe. (Effet non cumulable)"
+    }
   },
   {
     "id": 253,
@@ -12727,7 +13730,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 90,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Abnégation",
+      "desc": "L'attaque et la défense de ce Pal augmentent de (2~6)% pour chaque Pal de type Herbe présent dans l'équipe, à l'exception de Leafan ."
+    }
   },
   {
     "id": 254,
@@ -12808,7 +13815,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 180,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Lanterne Enchantée",
+      "desc": "Lorsqu'il est dans l'équipe, les flèches tirées par le joueur explosent à l'impact et infligent des dégâts supplémentaires équivalents à (15~30) % des dégâts d'attaque du joueur. (Effet non cumulable)"
+    }
   },
   {
     "id": 255,
@@ -12885,7 +13896,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 115,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Incantation Secrète",
+      "desc": "Lorsqu'il est dans l'équipe et qu'une attaque du joueur touche un ennemi affecté par Brûlure , des flammes apparaissent autour de l'ennemi et les ennemis en contact subissent des dégâts continus équivalents à (15~30) % de l'attaque du joueur. (Effet non cumulable)"
+    }
   },
   {
     "id": 256,
@@ -12958,7 +13973,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 105,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Trop-Plein de Magma",
+      "desc": "Peut être utilisé comme monture pour se déplacer. L'attaque de ce Pal augmente de (4~8)% pour chaque Pal de type Feu ou Terre présent dans l'équipe, à l'exception de Moldron . Technologies 36"
+    }
   },
   {
     "id": 257,
@@ -13001,7 +14020,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 105,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Trop-Plein de Glace",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente de (25~40) % les dégâts infligés par le joueur et les Pals lorsqu'ils exploitent la faiblesse d'un ennemi avec des attaques de type Glace . (Effet non cumulable) Technologies 70"
+    }
   },
   {
     "id": 258,
@@ -13035,7 +14058,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 59,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Tourontoudou",
+      "desc": "Lorsqu'il est dans l'équipe, augmente les chances de capturer les Pals affectés par Gel . (Effet non cumulable)"
+    }
   },
   {
     "id": 259,
@@ -13111,7 +14138,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 179,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Spores Charmants",
+      "desc": "Dans la base, le niveau d'aptitude au travail Pharmacie des autres Pals du camp augmente de +1 . (Effet non cumulable)"
+    }
   },
   {
     "id": 260,
@@ -13146,7 +14177,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 100,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Free Hug",
+      "desc": "Augmente de (50~65) % les dégâts infligés par le joueur et les Pals aux ennemis affectés par l'état Entrave lorsqu'il est dans l'équipe. (Effet non cumulable)"
+    }
   },
   {
     "id": 261,
@@ -13187,7 +14222,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 100,
-    "food": 2
+    "food": 2,
+    "partner": {
+      "nom": "Câlin Piquant",
+      "desc": "Lorsqu'il est dans l'équipe, ajoute une valeur d'accumulation d'état Entrave de (2~6) aux attaques du joueur. (Effet non cumulable)"
+    }
   },
   {
     "id": 262,
@@ -13257,7 +14296,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 148,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Lapin Blokâme",
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense des Pals de type Herbe de (15~30)% . (Effet non cumulable)"
+    }
   },
   {
     "id": 263,
@@ -13330,7 +14373,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 175,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Brume Glorieuse",
+      "desc": "Lorsqu'il est dans l'équipe, ajoute (2~6) d'accumulation d'état Trempé aux attaques du joueur. (Effet non cumulable) Technologies 72"
+    }
   },
   {
     "id": 264,
@@ -13369,7 +14416,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 203,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Gardien des Échos",
+      "desc": "Peut être utilisé comme monture pour voler. Un seul spécimen peut être invoqué dans la base. Lorsqu'il est dans la base, il patrouille en permanence dans le ciel au-dessus de celle-ci et attaque les intrus depuis de très haut dans les airs."
+    }
   },
   {
     "id": 265,
@@ -13442,7 +14493,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 89,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Ferveur Florale",
+      "desc": "Lorsqu'activée, utilise le pouvoir des fleurs pour restaurer (80~90) % des PV du joueur. Réduit de (15~30) % les dégâts de type Herbe subis par le joueur et les Pals, et immunise contre Entrave lorsqu'il est dans l'équipe. (Effet non cumulable)"
+    }
   },
   {
     "id": 266,
@@ -13485,7 +14540,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 131,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Pierre de Force",
+      "desc": "Augmente de (50~65) % les dégâts infligés par le joueur et les Pals aux ennemis affectés par l'état Embourbement lorsqu'il est dans l'équipe. (Effet non cumulable)"
+    }
   },
   {
     "id": 267,
@@ -13564,7 +14623,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 131,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Cristal de Force",
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (15~30)% les dégâts de type Dragon subis par le joueur et les Pals. (Effet non cumulable)"
+    }
   },
   {
     "id": 268,
@@ -13642,7 +14705,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 72,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Dévale-Montagne",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Augmente de (80~160) % la vitesse de déplacement sur la neige . Permet également de dévaler les pentes à grande vitesse. Lors des glissades, la vitesse de départ est faible, mais la vitesse maximale est élevée. Technologies 55"
+    }
   },
   {
     "id": 269,
@@ -13679,7 +14746,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 141,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Scorpion Statique",
+      "desc": "Lorsqu'activé, Prixter Lux transfère son pouvoir au joueur, convertissant ses attaques en Électricité et augmentant son attaque de (30~50) % ."
+    }
   },
   {
     "id": 270,
@@ -13713,7 +14784,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 62,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Poussée Crépitante",
+      "desc": "Dans la base, le niveau de la compétence de travail Génération d'énergie des autres Pals du camp augmente de 1 . (Effet non cumulable)"
+    }
   },
   {
     "id": 271,
@@ -13748,7 +14823,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 13,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Soutien Sincère",
+      "desc": "Les dégâts des armes de mêlée utilisées par le joueur augmentent de (10~35) % lorsqu'il est dans l'équipe. (Effet non cumulable)"
+    }
   },
   {
     "id": 272,
@@ -13819,7 +14898,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 98,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Blizzarus-K9",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Permet d'effectuer un double saut une fois monté. Augmente la défense des Pals de type Glace de (15~30) % lorsqu'il est dans l'équipe. (Effet non cumulable) Technologies 32"
+    }
   },
   {
     "id": 273,
@@ -13895,7 +14978,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 183,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Scène de Combat",
+      "desc": "Lorsqu'il est dans l'équipe, ajoute (2~6) d'accumulation d'état Brûlure aux attaques du joueur. (Effet non cumulable)"
+    }
   },
   {
     "id": 274,
@@ -13972,7 +15059,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 177,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Ailes des Ténèbres",
+      "desc": "Peut être utilisé comme monture pour voler. Augmente de (50~65) % les dégâts infligés par le joueur et les Pals aux ennemis affectés par l'état Cécité lorsqu'il est dans l'équipe. (Effet non cumulable) Technologies 72"
+    }
   },
   {
     "id": 275,
@@ -14042,7 +15133,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 140,
-    "food": 7
+    "food": 7,
+    "partner": {
+      "nom": "Impératrice des Sables",
+      "desc": "Dans la base, la vitesse de travail des Anubis présents augmente de (20~40) % . (Effet non cumulable) L'efficacité de travail de Sekhmet augmente de (30~60) % lorsqu'il travaille sur un établi ou dans une usine."
+    }
   },
   {
     "id": 276,
@@ -14125,7 +15220,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 192,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Souverain du Ciel d'Azur",
+      "desc": "Peut être utilisé comme monture pour voler. L'attaque de ce Pal augmente de (4~8)% pour chaque Pal de type Dragon présent dans l'équipe, à l'exception de Shaolong . Technologies 77"
+    }
   },
   {
     "id": 277,
@@ -14199,7 +15298,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 116,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Voile Doré",
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense des Pals de type Non élém. de (15~30) % . (Effet non cumulable) À affecter à une Ferme pour avoir une chance de fabriquer du Tissu de qualité ."
+    }
   },
   {
     "id": 278,
@@ -14276,7 +15379,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 193,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Gardien des Spores",
+      "desc": "Lorsqu'il est dans l'équipe, fait exploser les ennemis souffrant de Entrave attaqués par le joueur, et inflige des dégâts supplémentaires équivalents à (40~60) % de l'attaque du joueur. (Effet non cumulable) De plus, le joueur et les Pals sont immunisés aux spores explosives de l'Arbre-Monde ."
+    }
   },
   {
     "id": 279,
@@ -14316,7 +15423,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 128,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Désossage",
+      "desc": "Lorsqu'activée, Skutlass se transforme en katana à disposition du joueur (Attaque : (2600~3900) ). S'il ne retrouve pas rapidement sa forme d'origine, Skutlass tombe K.O. Utiliser une attaque Laigiri le met également K.O."
+    }
   },
   {
     "id": 280,
@@ -14393,7 +15504,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 128,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Barbecue",
+      "desc": "Lorsqu'activée, Skutlass Ignis se transforme en katana à disposition du joueur (Attaque : (2900~4200) ). S'il ne retrouve pas rapidement sa forme d'origine, Skutlass Ignis tombe K.O. Utiliser une attaque Laigiri le met également K.O."
+    }
   },
   {
     "id": 281,
@@ -14431,7 +15546,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 167,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Mode Relax",
+      "desc": "Lorsqu'il est dans l'équipe et qu'une attaque du joueur touche un ennemi affecté par Électrisation , celui-ci libère de l'électricité et inflige des dégâts aux ennemis proches équivalents à (40~60) % de l'attaque du joueur. (Effet non cumulable)"
+    }
   },
   {
     "id": 282,
@@ -14506,7 +15625,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 149,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Froide Bête",
+      "desc": "Dans la base, le niveau de la capacité de travail Réfrigération des autres Pals du camp augmente de +1 . (Effet non cumulable)"
+    }
   },
   {
     "id": 283,
@@ -14544,7 +15667,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 163,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Batterie Dissuasive",
+      "desc": "Lorsqu'il est dans l'équipe, ajoute une valeur d'accumulation d'état Électrisation de (2~6) aux attaques du joueur. (Effet non cumulable)"
+    }
   },
   {
     "id": 284,
@@ -14618,7 +15745,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 163,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Coquille Invasive",
+      "desc": "Lorsqu'il est dans l'équipe, réduit de (15~30) % les dégâts de type Eau subis par le joueur et les Pals, et immunise contre Trempé . (Effet non cumulable)"
+    }
   },
   {
     "id": 285,
@@ -14694,7 +15825,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 133,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Œil Invisible",
+      "desc": "Lorsqu'il est dans l'équipe, réduit la probabilité d'être repéré par les ennemis. (Effet non cumulable)"
+    }
   },
   {
     "id": 286,
@@ -14770,7 +15905,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 182,
-    "food": 9
+    "food": 9,
+    "partner": {
+      "nom": "Princesse Indomptable",
+      "desc": "Lorsqu'il est dans l'équipe, l'attaque du joueur augmente de (30~80) % si tous les Pals de l'équipe sont d'espèces différentes. (Effet non cumulable)"
+    }
   },
   {
     "id": 287,
@@ -14811,7 +15950,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 169,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Môle Charismatique",
+      "desc": "Peut être utilisé comme monture pour nager. Augmente les chances d'attraper des Pals à potentiel lorsqu'il est dans l'équipe. Technologies 65"
+    }
   },
   {
     "id": 288,
@@ -14889,7 +16032,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 169,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Môle Plasmique",
+      "desc": "Peut être utilisé comme monture pour nager. Lorsqu'il est monté, les attaques du joueur sont converties en Électricité , et son attaque augmente de (5~20) % . De plus, pêcher des Pals à potentiel devient plus facile lorsqu'il est dans l'équipe. Technologies 66"
+    }
   },
   {
     "id": 289,
@@ -14923,7 +16070,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 164,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Fée Duveteuse",
+      "desc": "Augmente le taux de capture des Pals souffrant de Entrave lorsqu'il est dans l'équipe. (Effet non cumulable)"
+    }
   },
   {
     "id": 290,
@@ -14999,7 +16150,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 130,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Danseur Radieux",
+      "desc": "Peut être utilisé comme monture pour se déplacer et permet de sauter plus haut une fois monté. La vitesse de déplacement de ce Pal augmente de (5~25) % pour chaque Pal de type Non élém. présent dans l'équipe, à l'exception de Starryon Primo . Technologies 77"
+    }
   },
   {
     "id": 291,
@@ -15040,7 +16195,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.1,
     "zukan": 23,
-    "food": 1
+    "food": 1,
+    "partner": {
+      "nom": "Fou de la Gâchette",
+      "desc": "Lorsqu'activée, Tanzee Ignis rejoint le joueur et mitraille sans relâche les ennemis à proximité avec un fusil d'assaut de type Feu . Technologies 13"
+    }
   },
   {
     "id": 292,
@@ -15111,7 +16270,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 142,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Tortue Maçonne",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Lorsqu'il est dans la base, augmente le niveau de la capacité de travail Extraction des autres Pals de la base de 1 . (Effet non cumulable) Technologies 48"
+    }
   },
   {
     "id": 293,
@@ -15187,7 +16350,11 @@
     "rarityCategory": "Epic",
     "captureRate": 1.0,
     "zukan": 142,
-    "food": 8
+    "food": 8,
+    "partner": {
+      "nom": "Tortue Madone",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Réduit de (80~100) % la perte de durabilité des armes et des armures lorsqu'il est dans l'équipe. (Effet non cumulable) Technologies 75"
+    }
   },
   {
     "id": 294,
@@ -15226,7 +16393,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 173,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Danse Florale",
+      "desc": "Lorsqu'il est dans l'équipe, augmente de (15~30) % la durée d'invincibilité lors des roulades et des esquives du joueur. (Effet non cumulable)"
+    }
   },
   {
     "id": 295,
@@ -15308,7 +16479,11 @@
     "rarityCategory": "Rare",
     "captureRate": 0.9,
     "zukan": 54,
-    "food": 3
+    "food": 3,
+    "partner": {
+      "nom": "Conflit Polaire",
+      "desc": "Peut être utilisé comme monture pour se déplacer. Une fois monté, les attaques du joueur deviennent de type Glace et sa puissance d'attaque augmente de (5~20)% . Technologies 64"
+    }
   },
   {
     "id": 296,
@@ -15341,7 +16516,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 162,
-    "food": 4
+    "food": 4,
+    "partner": {
+      "nom": "Extensibilité Féline",
+      "desc": "Lorsqu'il est dans l'équipe, la gravité affectant le joueur est réduite, rendant les sauts et les chutes plus légers. (Effet non cumulable)"
+    }
   },
   {
     "id": 297,
@@ -15417,7 +16596,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 178,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Sagacité Reptilienne",
+      "desc": "Lorsqu'il est dans l'équipe, ajoute (2~6) d'accumulation d'état Cécité aux attaques du joueur. (Effet non cumulable)"
+    }
   },
   {
     "id": 298,
@@ -15493,7 +16676,11 @@
     "rarityCategory": "Rare",
     "captureRate": 1.0,
     "zukan": 50,
-    "food": 6
+    "food": 6,
+    "partner": {
+      "nom": "Félin Possédé",
+      "desc": "Lorsqu'il est dans l'équipe, augmente les chances de capture des Pals lors du bonus d'attaque par derrière . (Effet non cumulable)"
+    }
   },
   {
     "id": 299,
@@ -15568,7 +16755,11 @@
     "rarityCategory": "Common",
     "captureRate": 1.0,
     "zukan": 181,
-    "food": 5
+    "food": 5,
+    "partner": {
+      "nom": "Énergie Noire Secrète",
+      "desc": "Lorsqu'il est dans l'équipe, augmente la défense des Pals de type Ténèbres de (15~30)% . (Effet non cumulable)"
+    }
   },
   {
     "id": 300,
@@ -15607,6 +16798,10 @@
     "captureRate": 1.0,
     "zukan": 39,
     "food": 1,
+    "partner": {
+      "nom": "Bonbon Amer",
+      "desc": "Lorsqu'il est assigné à une Ferme , il peut laisser tomber de la Barbe à papa caramel . Lorsqu'il est dans la base, le taux de diminution de la Repu des Pals de la base est réduit de (-15~-25) % . (Effet non cumulable)"
+    },
     "ranchFood": true
   }
 ]

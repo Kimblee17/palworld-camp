@@ -1541,3 +1541,17 @@ body.camp-actions-open .limit-ctrl { display: flex; }
   flex-wrap: wrap; padding: 10px 2px 2px; border-top: 1px dashed var(--border); margin-top: 6px;
 }
 .cat-reste { font-size: 0.8rem; color: var(--muted); }
+
+/* ===== Compétence de partenaire ===== */
+.pm-partner { font-size: 0.86rem; line-height: 1.55; color: var(--muted); }
+.pm-partner b { color: var(--text); }
+/* Sous le nom dans la Palpedia : une ligne discrète, le texte complet en infobulle. */
+.pedia-partner {
+  font-size: 0.72rem; color: var(--muted); margin-top: 3px;
+  max-width: 240px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+/* Bascule de sens dans la vue Butin : deux lectures du même tableau. */
+.drop-sens { margin-bottom: 0; flex: none; }
+.drop-sens .bd-mode { flex: none; }
+.drop-item-name .pal-ic { width: 26px; height: 26px; vertical-align: middle; margin-right: 6px; }
