@@ -370,9 +370,10 @@ function garnirCarte(hote, pal, extra = "") {
   hote.appendChild(icone);
   const info = document.createElement("div");
   info.className = "info";
+  // Le pouvoir de reproduction (CombiRank) reste le moteur du calcul, mais il ne
+  // s'affiche plus : c'est un rouage interne, sans usage pour qui compose un couple.
   info.innerHTML = `<div class="name">${pal.name}</div>`
-    + `<div class="bd-sub">${elementChipsHtml(pal)}`
-    + `<span class="bd-power" title="Breed power (CombiRank) — sert au calcul">⚖ ${pal.breedPower ?? "—"}</span>${extra}</div>`;
+    + `<div class="bd-sub">${elementChipsHtml(pal)}${extra}</div>`;
   hote.appendChild(info);
   rendreFiche(icone, info.querySelector(".name"), pal);
   return info;
@@ -472,7 +473,7 @@ function cadreZoom(arbre) {
 function remplirSelect(sel, valeur) {
   sel.innerHTML = "";
   for (const p of nomsTries()) {
-    const o = new Option(`${p.name} (${p.breedPower})`, String(p.id));
+    const o = new Option(p.name, String(p.id));
     sel.appendChild(o);
   }
   if (valeur != null) sel.value = String(valeur);
@@ -513,9 +514,10 @@ function rendreModeCouple() {
   } else if (a.id === b.id) {
     note.textContent = "Deux parents de la même espèce donnent cette espèce.";
   } else {
-    const cible = (a.breedPower + b.breedPower + 1) >> 1;
-    note.innerHTML = `Moyenne des pouvoirs : (${a.breedPower} + ${b.breedPower} + 1) ÷ 2 = <b>${cible}</b> `
-      + `→ espèce la plus proche : ${enfant.name} (${enfant.breedPower}).`;
+    // La règle reste énoncée, sans ses nombres : savoir POURQUOI l'enfant est celui-là
+    // aide, connaître les rangs internes non.
+    note.innerHTML = `Hors combinaison unique, l'enfant est l'espèce dont le pouvoir de `
+      + `reproduction est le plus proche de la moyenne des deux parents — ici <b>${enfant.name}</b>.`;
   }
   bloc.appendChild(note);
   host.appendChild(bloc);
@@ -898,7 +900,7 @@ export function initBreeding() {
     const gardes = nomsTries().filter(p => !q || p.name.toLowerCase().includes(q));
     sd.innerHTML = "";
     sd.appendChild(new Option("— aucune contrainte —", ""));
-    for (const p of gardes) sd.appendChild(new Option(`${p.name} (${p.breedPower})`, String(p.id)));
+    for (const p of gardes) sd.appendChild(new Option(p.name, String(p.id)));
     // Une recherche vidée relâche la contrainte plutôt que d'en imposer une au hasard.
     sd.value = q && gardes.length ? String(gardes[0].id) : "";
     majDepuis();
@@ -927,7 +929,7 @@ export function initBreeding() {
       const q = e.target.value.trim().toLowerCase();
       const gardes = nomsTries().filter(p => !q || p.name.toLowerCase().includes(q));
       sel.innerHTML = "";
-      for (const p of gardes) sel.appendChild(new Option(`${p.name} (${p.breedPower})`, String(p.id)));
+      for (const p of gardes) sel.appendChild(new Option(p.name, String(p.id)));
       if (gardes.length) { sel.value = String(gardes[0].id); onPick(gardes[0].id); renderBreeding(); }
     });
   };

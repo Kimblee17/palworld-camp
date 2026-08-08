@@ -724,7 +724,6 @@ body.read-only #import-btn { display: none; }
 }
 .bd-pal .name { font-weight: 600; }
 .bd-sub { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: 3px; }
-.bd-power { color: var(--muted); font-size: 0.72rem; font-weight: 600; }
 .bd-arrow { color: var(--accent); font-size: 1.5rem; font-weight: 600; line-height: 1; }
 .bd-child .bd-pal { border-color: var(--accent); background: #24310f; }
 .bd-note { color: var(--muted); font-size: 0.82rem; text-align: center; margin: 10px 0 0; line-height: 1.5; }
