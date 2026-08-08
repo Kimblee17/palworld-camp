@@ -1,6 +1,5 @@
 import { palIconEl } from "./render.js";
-import { addStruct } from "./state.js";
-import { PALS, DB, structById } from "./dataset.js";
+import { PALS, DB } from "./dataset.js";
 
 // ===== Vue Production : d'un objectif de fabrication vers les ressources de base =====
 //
@@ -45,7 +44,7 @@ function dropIndex() {
  * `chemin` porte les objets déjà traversés sur cette branche : si un objet réapparaît,
  * c'est un cycle — on s'arrête là plutôt que de boucler à l'infini.
  */
-export function buildTree(nom, besoin, totaux = {}, stations = new Map(), chemin = [], depth = 0) {
+export function buildTree(nom, besoin, totaux = {}, chemin = [], depth = 0) {
   const recette = RECIPES[nom];
   const noeud = { nom, besoin, enfants: [], depth };
 
@@ -53,21 +52,20 @@ export function buildTree(nom, besoin, totaux = {}, stations = new Map(), chemin
   if (depth >= MAX_DEPTH) { noeud.tropProfond = true; return noeud; }
 
   if (!recette) {
-    // Feuille : ressource de base. On cumule et on note d'où elle vient.
+    // Feuille : un ingrédient sans recette. On cumule la quantité et on liste les Pals
+    // qui le lâchent — c'est la seule provenance dont la donnée soit vérifiée.
+    //
+    // ⚠ ON N'AFFIRME PLUS D'OÙ VIENT UN INGRÉDIENT NI AVEC QUELLE MACHINE. Les
+    // étiquettes « ressource de base » et « à récolter dans le monde » se déduisaient
+    // d'une absence — pas de recette, pas de structure, pas de Pal — ce qui les rendait
+    // fausses dès qu'une donnée manquait au lieu d'être nulle. Quant aux établis, la
+    // cartographie est erronée même hors devinettes : la farine sortait d'une marmite
+    // au lieu d'un broyeur, sans être signalée « probable ».
     noeud.feuille = true;
     totaux[nom] = (totaux[nom] || 0) + besoin;
-    const src = PRODUCED_BY[nom];
-    if (src) {
-      noeud.station = src.station;
-      noeud.stationId = src.stationId;
-      if (src.stationId) stations.set(src.stationId, src.station);
-    }
     noeud.pals = (dropIndex()[nom] || []).slice(0, 3);
     // Nom absent du catalogue d'objets : ni recette ni ressource connue.
     noeud.inconnu = !RAW.has(nom);
-    // Ressource connue mais sans structure d'extraction ni Pal : elle se récolte,
-    // se cultive ou se ramasse dans le monde — on le dit plutôt que de rester muet.
-    noeud.recolte = !noeud.inconnu && !src && !noeud.pals.length;
     return noeud;
   }
 
@@ -75,28 +73,27 @@ export function buildTree(nom, besoin, totaux = {}, stations = new Map(), chemin
   const crafts = Math.ceil(besoin / parCraft);
   noeud.crafts = crafts;
   noeud.parCraft = parCraft;
-  noeud.station = recette.station || null;
-  noeud.stationId = recette.stationId || null;
-  noeud.stationGuessed = !!recette.stationGuessed;
-  if (recette.stationId) stations.set(recette.stationId, recette.station);
 
   for (const ing of recette.ingredients) {
     noeud.enfants.push(
-      buildTree(ing.name, ing.count * crafts, totaux, stations, [...chemin, nom], depth + 1));
+      buildTree(ing.name, ing.count * crafts, totaux, chemin.concat(nom), depth + 1));
   }
   return noeud;
 }
 
 export function planFor(nom, qte) {
-  const totaux = {}, stations = new Map();
-  const racine = buildTree(nom, qte, totaux, stations);
-  return { racine, totaux, stations };
+  const totaux = {};
+  const racine = buildTree(nom, qte, totaux);
+  return { racine, totaux };
 }
 
 /**
  * Audit des données de recettes, à appeler depuis la console (`PW_PROD_DEBUG()`).
  * Sert à repérer un scraping qui se dégraderait : ingrédients hors catalogue,
  * ressources sans provenance connue, objets fabriqués sans station rattachée.
+ *
+ * Ces deux derniers compteurs ne servent PLUS l'affichage — la vue n'affirme plus de
+ * provenance — mais ils restent le meilleur signal de santé du scraping de recettes.
  */
 export function DEBUG() {
   const ingredients = new Set();
@@ -116,26 +113,6 @@ let objetChoisi = null, quantite = 1;
 const replies = new Set();          // noeuds repliés (clé = chemin)
 
 const objetsCraftables = () => Object.keys(RECIPES).sort((a, b) => a.localeCompare(b, "fr"));
-
-function boutonStation(stationId, nom, devine) {
-  const st = structById[stationId];
-  if (!st) return null;
-  const b = document.createElement("button");
-  b.type = "button";
-  b.className = "pr-station";
-  b.innerHTML = `<span aria-hidden="true">🏗️</span> ${nom}${devine ? " <i>(probable)</i>" : ""} <b>+</b>`;
-  b.title = devine
-    ? `Station probable (déduite du type d'objet) — ajouter « ${nom} » au camp actif`
-    : `Ajouter « ${nom} » au camp actif`;
-  b.setAttribute("aria-label", `Ajouter la construction ${nom} au camp actif`);
-  b.onclick = () => {
-    addStruct(stationId);
-    const old = b.innerHTML;
-    b.innerHTML = `<span aria-hidden="true">✓</span> Ajouté`;
-    setTimeout(() => { b.innerHTML = old; }, 1500);
-  };
-  return b;
-}
 
 function noeudEl(n, cle) {
   const li = document.createElement("li");
@@ -177,18 +154,6 @@ function noeudEl(n, cle) {
   if (n.inconnu)
     tete.insertAdjacentHTML("beforeend",
       `<span class="pr-warn" title="Cet ingrédient ne figure pas dans notre catalogue d'objets">? ingrédient inconnu</span>`);
-  if (n.recolte)
-    tete.insertAdjacentHTML("beforeend",
-      `<span class="pr-meta" title="Ni fabriquée, ni extraite par une construction, ni lâchée par un Pal">à récolter dans le monde</span>`);
-  else if (n.feuille && !n.inconnu && !n.station)
-    tete.insertAdjacentHTML("beforeend", `<span class="pr-meta">ressource de base</span>`);
-
-  if (n.stationId) {
-    const b = boutonStation(n.stationId, n.station, n.stationGuessed);
-    if (b) tete.appendChild(b);
-  } else if (n.station) {
-    tete.insertAdjacentHTML("beforeend", `<span class="pr-meta">🏗️ ${n.station}</span>`);
-  }
   li.appendChild(tete);
 
   // Feuille : les 3 meilleurs Pals qui la lâchent (taux décroissant).
@@ -221,7 +186,7 @@ function render() {
     host.innerHTML = `<p class="pr-msg">Choisis un objet à fabriquer.</p>`;
     return;
   }
-  const { racine, totaux, stations } = planFor(objetChoisi, Math.max(1, quantite));
+  const { racine, totaux } = planFor(objetChoisi, Math.max(1, quantite));
   host.innerHTML = "";
 
   const arbre = document.createElement("ul");
@@ -233,34 +198,18 @@ function render() {
   const noms = Object.keys(totaux).sort((a, b) => totaux[b] - totaux[a] || a.localeCompare(b, "fr"));
   const rec = document.createElement("div");
   rec.className = "pr-summary";
-  rec.innerHTML = `<h3>Ressources de base — ${noms.length} type(s)</h3>`;
+  rec.innerHTML = `<h3>Ingrédients à réunir — ${noms.length}</h3>`;
   const ul = document.createElement("ul");
   for (const n of noms) {
-    const src = PRODUCED_BY[n];
     const pals = (dropIndex()[n] || []).slice(0, 3).map(d => d.pal.name).join(", ");
     const li = document.createElement("li");
     li.innerHTML = `<b>${totaux[n]}</b> × ${n}`
-      + (src ? ` <span class="pr-meta">🏗️ ${src.station}</span>` : "")
       + (pals ? ` <span class="pr-meta">🐾 ${pals}</span>` : "");
     ul.appendChild(li);
   }
   rec.appendChild(ul);
   host.appendChild(rec);
 
-  // Stations à prévoir
-  if (stations.size) {
-    const box = document.createElement("div");
-    box.className = "pr-summary";
-    box.innerHTML = `<h3>Constructions nécessaires — ${stations.size}</h3>`;
-    const row = document.createElement("div");
-    row.className = "pr-stations";
-    for (const [id, nom] of stations) {
-      const b = boutonStation(id, nom, false);
-      if (b) row.appendChild(b);
-    }
-    box.appendChild(row);
-    host.appendChild(box);
-  }
 }
 
 export const renderProduction = render;
