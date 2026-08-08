@@ -20,6 +20,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Premier élément focalisable de la page : il saute la navigation d'un coup.
+       Sa cible n'est pas fixe — sept vues se partagent l'écran — donc le lien mène
+       à celle qui est affichée, choisie au clic (cf. main.js). -->
+  <a href="#contenu" class="skip-link">Aller au contenu</a>
   <noscript>
     <div class="noscript-warn">
       ⚠️ Cette application a besoin de JavaScript pour fonctionner : sans lui, les Pals et
@@ -205,6 +209,7 @@
 
   <!-- Vue Palpedia : tous les Pals + toutes les tier-lists -->
   <section class="panel view-palpedia" id="palpedia" hidden>
+    <h2>📖 Palpedia</h2>
     <!-- Progression du Paldeck : remplie par renderPediaProgress() -->
     <div id="pedia-progress" class="pedia-progress"></div>
     <div class="legend"><span class="legend-label">Niveau :</span></div>

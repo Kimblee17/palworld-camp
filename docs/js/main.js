@@ -324,6 +324,16 @@ export function init() {
       on ? "Masquer les autres actions du camp" : "Afficher les autres actions du camp");
   });
 
+  // Lien d'évitement : on ne suit pas l'ancre, on donne le focus au conteneur de la
+  // vue en cours. `tabindex="-1"` le rend focalisable sans l'ajouter au parcours.
+  document.querySelector(".skip-link")?.addEventListener("click", e => {
+    e.preventDefault();
+    const c = conteneurVisible();
+    if (!c) return;
+    c.setAttribute("tabindex", "-1");
+    c.focus({ preventScroll: false });
+  });
+
   // Modale détail Pal + raccourcis clavier
   document.querySelectorAll("#pal-modal .pm-close, #pal-modal .pm-backdrop")
     .forEach(el => el.addEventListener("click", closePalModal));
@@ -391,6 +401,12 @@ function viewFromHash() {
 
 // updateHash=false quand l'URL porte déjà la vue (chargement initial, hashchange) :
 // on évite ainsi d'écrire « #camp » sur une URL nue, dont le comportement est inchangé.
+// Conteneur de la vue affichée. Le lien d'évitement y envoie le focus : un `href`
+// figé ne pourrait pas suivre sept vues qui se relaient au même endroit.
+function conteneurVisible() {
+  return document.querySelector("main:not([hidden]), body > .panel:not([hidden])");
+}
+
 function switchView(view, updateHash = true) {
   currentView = view;
   document.querySelectorAll(".view-btn").forEach(b => b.classList.toggle("active", b.dataset.view === view));

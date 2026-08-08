@@ -1564,3 +1564,18 @@ body.camp-actions-open .limit-ctrl { display: flex; }
 .drop-pal-btn:hover { text-decoration: underline; }
 .drop-tete { color: inherit; font: inherit; display: inline-flex; align-items: center; gap: 6px; }
 .drop-plus { padding-top: 4px; }
+
+/* ===== Lien d'évitement =====
+   Hors écran tant qu'il n'a pas le focus — le masquer avec `display: none` le
+   retirerait aussi du parcours clavier, ce qui annulerait sa raison d'être. */
+.skip-link {
+  position: absolute; left: 8px; top: -60px; z-index: 200;
+  background: var(--accent); color: var(--accent-ink);
+  padding: 10px 16px; border-radius: 0 0 8px 8px; font-weight: 600;
+  text-decoration: none; transition: top .12s ease;
+}
+.skip-link:focus { top: 0; }
+/* Le conteneur reçoit le focus par programme : pas de contour, il n'a pas été
+   atteint à la tabulation et l'anneau désignerait un bloc entier. */
+main:focus, body > .panel:focus { outline: none; }
+@media (prefers-reduced-motion: reduce) { .skip-link { transition: none; } }
